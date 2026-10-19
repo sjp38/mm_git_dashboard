@@ -2,43 +2,35 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: various (urgent?) fixes", v1. (10)
-      - b2f831bf347f "mm/vma: don't leak the commit charge on mmap failure (0/10)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
-      - 67b58031f27d "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
+- mm-hotfixes-unstable: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 18 -> 18 commits (no change)
   - series: 3 (8) -> 3 (8) (no change)
     - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 25 -> 25 commits (no change)
-  - series: 2 (20) -> 2 (20) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 11 -> 12 commits
-    - no role, reviewer: 11 -> 11 commits (no change)
+- mm-unstable: 25 -> 27 commits
+  - series: 2 (20) -> 3 (22)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 12 -> 13 commits
+    - no role, reviewer: 11 -> 12 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - fe7873a285f7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org"
-      - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
-      - added "Tested-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
-      - dropped "Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - ce53818c185e "mm/vma: don't leak the commit charge on mmap failure (0/10)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
+      - cd6d47088671 "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

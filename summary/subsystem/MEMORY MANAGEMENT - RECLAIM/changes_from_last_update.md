@@ -11,13 +11,13 @@
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 6 commits
   - series: 0 (4) -> 0 (4) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
+  - dropped commits
     - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org

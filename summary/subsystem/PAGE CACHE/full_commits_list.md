@@ -36,27 +36,27 @@
     - no role, maintainer: 4 commits
   - full commits list
     - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4 commits)
-      - a6f4b9e57de2 "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
+      - 0854e416513a "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-      - f46eb1c6e60f "mm/truncate: look up the end-edge straddler by index" (1/4)
+      - ac8ebdfd27ef "mm/truncate: look up the end-edge straddler by index" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-      - ebdde3787b19 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+      - 6d76fbfca030 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - 88659313bec8 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
+      - 625ff5297744 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
-      - 3d171215dfd6 "mm: remove hugetlb_inline.h" (26/39)
+      - 5f0d3cb33128 "mm: remove hugetlb_inline.h" (26/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-    - f606d7b83c35 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+    - 85f6e151aa46 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

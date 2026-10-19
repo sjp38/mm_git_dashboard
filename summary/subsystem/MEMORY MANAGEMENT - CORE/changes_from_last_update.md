@@ -4,19 +4,7 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 2 commits
-  - changed commits
-    - 2ae7e7bc0d92 "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
-      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-stable: 57 -> 57 commits (no change)
   - series: 9 (46) -> 9 (46) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -27,13 +15,13 @@
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 42 -> 43 commits
+- mm-unstable: 43 -> 42 commits
   - series: 3 (35) -> 3 (35) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 24 -> 24 commits (no change)
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-  - new commits
+  - dropped commits
     - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org

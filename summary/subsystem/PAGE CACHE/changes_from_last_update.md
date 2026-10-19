@@ -9,15 +9,11 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-  - new commits
-    - f606d7b83c35 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

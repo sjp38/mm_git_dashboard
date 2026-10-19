@@ -29,22 +29,23 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 1bbceea3deea "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/39)
+      - d27bef3da602 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-24-1aa3c9b139f9@kernel.org
-      - cbc7368305a5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - e1d75164f613 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 0e6bdcd65d2e "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 0e2c48c3bb2c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - f9e2493f093d "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - 8f6ea5b5a57f "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
-    - c9129e9adf82 "mm/rmap: don't discard lazyfree THPs at PMD level"
+    - b52cd34e8446 "mm/rmap: don't discard lazyfree THPs at PMD level"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261012-lazyfree-stable-fix-v2-1-6387d6e30063@nvidia.com
-    - b306deee4cba "mm/page_vma_mapped: continue past nonmatching huge PMDs"
+      - Link: : https://lore.kernel.org/CADQRuqvXQ=YE=7T3oR66vTxE33pi=ygEeZKPTOU=cALZL0Figw@mail.gmail.com
+    - 4fa8854164ff "mm/page_vma_mapped: continue past nonmatching huge PMDs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016011549.61146-1-kylebot@openai.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

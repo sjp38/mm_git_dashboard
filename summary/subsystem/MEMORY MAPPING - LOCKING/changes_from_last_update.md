@@ -9,17 +9,7 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 2 commits
-  - changed commits
-    - fe7873a285f7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org"
-      - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
-      - added "Tested-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
-      - dropped "Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

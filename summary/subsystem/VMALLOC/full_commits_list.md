@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - b2b5c61bd1a8 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - ba1e774241e6 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - e9dc5e0e7ce3 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - efcc45d5d2c3 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-stable: 10 total, 2 (9) series, 1 non-series commits
@@ -50,33 +50,36 @@
     - 25aa09142ecc "mm/vmalloc: use %p for pointer formatting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
-- mm-unstable: 6 total, 1 (2) series, 4 non-series commits
+- mm-unstable: 7 total, 1 (2) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - de025f67fc18 "mm: fix typos in various comments"
+    - 4353c07a6f07 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - e42f2e82c663 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+    - ecd592f6b9c9 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
     - series "mm/vmalloc: fix vmalloc_dump_obj VA lookup", v4. (2 commits)
-      - eeae23aef723 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups" (0/2)
+      - 813441567a83 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-0-6f288a431edc@linux.dev
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-1-6f288a431edc@linux.dev
-      - 791a01840c8f "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup" (1/2)
+      - d73d66304ecb "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-2-6f288a431edc@linux.dev
-    - c2fc50de19f7 "mm: kmsan: fix iounmap metadata teardown"
+    - 2aa547dc4a23 "mm: kmsan: fix iounmap metadata teardown"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
       - Link: https://lkml.iu.edu/2609.3/12748.html
-    - 563c0c936389 "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
+    - 76b9ffe4be5b "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004071639.119857-1-jiangwenxiaomi@gmail.com
+    - df8a25ee435e "mm/vmalloc: read vm_map_ram block regions from the requested offset"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

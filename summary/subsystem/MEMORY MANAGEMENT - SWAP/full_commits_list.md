@@ -116,25 +116,25 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - de025f67fc18 "mm: fix typos in various comments"
+    - 4353c07a6f07 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - cbc7368305a5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - e1d75164f613 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 0e6bdcd65d2e "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 0e2c48c3bb2c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - f53222d4c8e8 "mm: make swapoff interruptible when unusing mms/shmem"
+    - e2ade7f2412b "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - 166dd3c48eb4 "mm/swap: submit the last readahead batch before unplugging"
+    - d23c8e052a19 "mm/swap: submit the last readahead batch before unplugging"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-    - 73bbaa6c229f "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 9f4d9af25422 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-    - 96f09a5a6c90 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+    - 715ac3d71240 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

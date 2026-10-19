@@ -22,11 +22,11 @@
     - no role, no role : 2 commits
   - full commits list
     - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3 commits)
-      - ec842ae1df3e "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
+      - 72c4bf42defb "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
-    - fe7873a285f7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+    - fe858e4bc8d0 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

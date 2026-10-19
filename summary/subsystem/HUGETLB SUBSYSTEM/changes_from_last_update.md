@@ -1,33 +1,11 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 9 -> 9 commits (no change)
-  - series: 0 (8) -> 0 (8) (no change)
+- mm-hotfixes-unstable: 9 -> 1 commits
+  - series: 0 (8) -> 0 (0)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 8 -> 4 commits
-    - no role, maintainer: 0 -> 4 commits
-  - changed commits
-    - series "mm: various (urgent?) fixes", v1. (10)
-      - 65c6c71d5197 "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
-      - 43297682189b "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
-      - 1b3c0f06c703 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
-      - 3c8818bb832c "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+    - no role, no role : 4 -> 0 commits
+    - no role, maintainer: 4 -> 0 commits
 - mm-stable: 25 -> 25 commits (no change)
   - series: 4 (18) -> 4 (18) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -36,11 +14,54 @@
     - no role, maintainer: 11 -> 11 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 13 -> 13 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-unstable: 13 -> 21 commits
+  - series: 1 (4) -> 1 (12)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 4 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 11 -> 11 commits (no change)
+    - no role, maintainer: 11 -> 15 commits
+  - changed commits
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - cb334780cc56 "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
+      - b5b9eff7a778 "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
+      - cc9941cf021a "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
+      - 5d93c3df04c9 "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+      - 9a0e5d2e4461 "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
+      - de096d2c507e "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - 0bbc84e6bef7 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
+      - 2940b3a4ccc3 "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
