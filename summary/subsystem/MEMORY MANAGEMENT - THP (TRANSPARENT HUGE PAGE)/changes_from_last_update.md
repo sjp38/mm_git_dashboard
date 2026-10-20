@@ -17,6 +17,13 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/collapse: separate a collapse from its callers", v5. (9)
+      - b1cd01bbf8c5 "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -2,35 +2,38 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 18 -> 18 commits (no change)
   - series: 3 (8) -> 3 (8) (no change)
     - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 25 -> 27 commits
-  - series: 2 (20) -> 3 (22)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 12 -> 13 commits
-    - no role, reviewer: 11 -> 12 commits
+- mm-unstable: 27 -> 31 commits
+  - series: 3 (22) -> 3 (22) (no change)
+    - no role, nobody: 1 -> 4 commits
+    - no role, no role : 13 -> 13 commits (no change)
+    - no role, reviewer: 12 -> 12 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 4150cd1c019f "mm/mremap: populate calculated fields in vrm state correctly"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261019-mremap-fix-shrink-charge-v1-1-a3ce209e5360@kernel.org
+    - b78ed86d838f "mm/mremap: correctly uncharge accountable VMAs in error path"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261019-other-mremap-charge-leak-v1-1-d94477fe6545@kernel.org
+    - 3e95b24ba5b6 "fs/proc/task_mmu: pin mm_users in do_pagemap_scan()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014095540.3261469-1-ngocquy0700@gmail.com
+    - 37a0919f068e "fs-proc-task_mmu-pin-mm_users-in-do_pagemap_scan-fix"
+      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - series "mm: various (urgent?) fixes", v1. (10)
-      - ce53818c185e "mm/vma: don't leak the commit charge on mmap failure (0/10)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
-      - cd6d47088671 "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
+    - dcce08ea1b89 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: <stable@vger.kernel.org> # 7.3.x"
+      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

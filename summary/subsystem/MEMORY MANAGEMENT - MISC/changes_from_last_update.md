@@ -13,16 +13,27 @@
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 19 -> 20 commits
+- mm-unstable: 20 -> 20 commits (no change)
   - series: 2 (8) -> 2 (8) (no change)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 10 -> 10 commits (no change)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 10 -> 12 commits
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - new commits
-    - 4dbe24720eb3 "mm: bdi: reset min_ratio after the sysfs attributes are gone"
-      - Authored by no role player, reviewed by nobody
+  - changed commits
+    - 71aaee02e2ca "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
+    - dcce08ea1b89 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: <stable@vger.kernel.org> # 7.3.x"
+      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
+    - 07b172fd351f "mm: bdi: reset min_ratio after the sysfs attributes are gone"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
       - Link: https://lore.kernel.org/20261017030620.793108-1-nickolai@csail.mit.edu
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

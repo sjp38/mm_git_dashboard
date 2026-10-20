@@ -5,111 +5,110 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 21 -> 12 commits
-  - series: 2 (12) -> 1 (2)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 12 -> 7 commits
-    - no role, reviewer: 2 -> 1 commits
-    - no role, maintainer: 4 -> 0 commits
-  - new commits
-    - bbd29fc63039 "block: restore the iterator when rejecting a misaligned bio"
+- mm-hotfixes-unstable: 12 -> 12 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - d4ee6948bcab "block: restore the iterator when rejecting a misaligned bio"
       - Authored by no role player, reviewed by nobody
+      - added "Cc: Hannes Reinecke <hare@kernel.org>"
+      - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
+    - 039fc32147a4 "iov_iter: validate extracted segment for bvec alignment"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: Haocheng Yu <l1za0.sec@gmail.com>"
+      - added "Cc: Christoph Hellwig <hch@lst.de>"
+      - added "Cc: Tal Zussman <tz2294@columbia.edu>"
+      - Link: https://lore.kernel.org/20261015061907.2713943-1-4ncienth@gmail.com
 - mm-stable: 539 -> 539 commits (no change)
   - series: 84 (430) -> 84 (430) (no change)
-    - no role, nobody: 41 -> 41 commits (no change)
-    - no role, no role : 163 -> 163 commits (no change)
-    - no role, reviewer: 79 -> 79 commits (no change)
+    - no role, nobody: 41 -> 40 commits
+    - no role, no role : 163 -> 158 commits
+    - no role, reviewer: 79 -> 77 commits
     - no role, maintainer: 110 -> 110 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 90 -> 90 commits (no change)
-    - maintainer, no role : 31 -> 31 commits (no change)
-    - maintainer, reviewer: 6 -> 6 commits (no change)
-- mm-unstable: 198 -> 209 commits
-  - series: 21 (134) -> 22 (144)
-    - no role, nobody: 26 -> 27 commits
-    - no role, no role : 84 -> 89 commits
-    - no role, reviewer: 41 -> 42 commits
-    - no role, maintainer: 38 -> 42 commits
-    - maintainer, nobody: 8 -> 8 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 90 -> 91 commits
+    - maintainer, no role : 31 -> 36 commits
+    - maintainer, reviewer: 6 -> 8 commits
+- mm-unstable: 209 -> 221 commits
+  - series: 22 (144) -> 22 (144) (no change)
+    - no role, nobody: 27 -> 28 commits
+    - no role, no role : 89 -> 88 commits
+    - no role, reviewer: 42 -> 44 commits
+    - no role, maintainer: 42 -> 44 commits
+    - maintainer, nobody: 8 -> 11 commits
+    - maintainer, no role : 1 -> 6 commits
   - new commits
-    - df8a25ee435e "mm/vmalloc: read vm_map_ram block regions from the requested offset"
+    - 715aaf09fdde "MAINTAINERS: add an entry for MEMORY MANAGEMENT - MEMORY MAP"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261019-memmap-maint-v1-1-80850871d0cc@kernel.org
+    - 4150cd1c019f "mm/mremap: populate calculated fields in vrm state correctly"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
-    - 4dbe24720eb3 "mm: bdi: reset min_ratio after the sysfs attributes are gone"
+      - Link: https://lore.kernel.org/20261019-mremap-fix-shrink-charge-v1-1-a3ce209e5360@kernel.org
+    - b78ed86d838f "mm/mremap: correctly uncharge accountable VMAs in error path"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261017030620.793108-1-nickolai@csail.mit.edu
-  - changed commits
-    - series "mm: various (urgent?) fixes", v1. (10)
-      - ce53818c185e "mm/vma: don't leak the commit charge on mmap failure (0/10)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
-      - cb334780cc56 "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
-      - b5b9eff7a778 "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
-      - cc9941cf021a "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
-      - 5d93c3df04c9 "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
-      - 9a0e5d2e4461 "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
-      - de096d2c507e "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
-      - 0bbc84e6bef7 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
-      - 2940b3a4ccc3 "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
-      - cd6d47088671 "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
-    - b52cd34e8446 "mm/rmap: don't discard lazyfree THPs at PMD level"
+      - Link: https://lore.kernel.org/20261019-other-mremap-charge-leak-v1-1-d94477fe6545@kernel.org
+    - d1221679d58a "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
+    - 5542689cb3e3 "mm/mempolicy: apply bind policies against the scoped allocation zone"
       - Authored by no role player, reviewed by a reviewer
-      - added "Link: : https://lore.kernel.org/CADQRuqvXQ=YE=7T3oR66vTxE33pi=ygEeZKPTOU=cALZL0Figw@mail.gmail.com"
-      - added "Tested-by: JongHyuk Kim(MalHyuk) <malhyuk97@gmail.com>"
-      - Link: https://lore.kernel.org/20261012-lazyfree-stable-fix-v2-1-6387d6e30063@nvidia.com
-      - Link: : https://lore.kernel.org/CADQRuqvXQ=YE=7T3oR66vTxE33pi=ygEeZKPTOU=cALZL0Figw@mail.gmail.com
-  - dropped commits
-    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
+      - Link: https://lore.kernel.org/20261018023349.1697434-1-gourry@gourry.net
+    - 3e95b24ba5b6 "fs/proc/task_mmu: pin mm_users in do_pagemap_scan()"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
-      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
-- mm-new: 2 -> 2 commits (no change)
+      - Link: https://lore.kernel.org/20261014095540.3261469-1-ngocquy0700@gmail.com
+    - 37a0919f068e "fs-proc-task_mmu-pin-mm_users-in-do_pagemap_scan-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - 0aee933b06af "mm/damon/core: filter out damos address filter-split failed region"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261020004119.106690-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260801203121.117449-1-sj@kernel.org [1]
+    - b36b71cb2202 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019-vstor-144715-shrinker_info_unit-kmem_cache-v3-1-0fb061e09bf4@virtuozzo.com
+    - 880a2031a540 "mm/damon/core: remove unreachable damos charge_{target,addr}_from"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261020023958.108276-1-sj@kernel.org
+    - 3eb3e848d72c "tools/testing/shared: catch a failed posix_memalign()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261020033128.1934349-1-liam@infradead.org
+  - changed commits
+    - 71aaee02e2ca "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
+    - series "mm/collapse: separate a collapse from its callers", v5. (9)
+      - b1cd01bbf8c5 "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
+    - dcce08ea1b89 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: <stable@vger.kernel.org> # 7.3.x"
+      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
+    - 37e21e4cc3c6 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
+    - 07b172fd351f "mm: bdi: reset min_ratio after the sysfs attributes are gone"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - Link: https://lore.kernel.org/20261017030620.793108-1-nickolai@csail.mit.edu
+    - b7f8529922a5 "riscv: mm: exclude invalid THP PMDs from page table check"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
 - mm-nonmm-stable: 97 -> 97 commits (no change)
   - series: 10 (31) -> 10 (31) (no change)
     - no role, nobody: 36 -> 36 commits (no change)
@@ -118,10 +117,20 @@
     - no role, maintainer: 15 -> 15 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-- mm-nonmm-unstable: 31 -> 31 commits (no change)
+- mm-nonmm-unstable: 31 -> 34 commits
   - series: 6 (15) -> 6 (15) (no change)
     - no role, nobody: 11 -> 11 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 10 -> 10 commits (no change)
+    - no role, maintainer: 10 -> 13 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
+  - new commits
+    - d4f340ac7b18 "ocfs2: Pin refcount trees before dropping the lookup lock"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0037-v4-9f1a261dfbc341721689@gmail.com
+    - 4e334c47a851 "ocfs2/cluster: Initialize heartbeat regions before publishing them"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0079-v5-f931a29339cadc0a2a70@gmail.com
+    - f2a1ca5268bf "ocfs2: Pin owning modules for open debugfs files"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0089-v6-f7fda843f80887488145@gmail.com

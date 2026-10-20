@@ -3,14 +3,15 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 43 total, 4 (34) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, nobody: 2 commits
     - no role, no role : 2 commits
-    - no role, reviewer: 24 commits
+    - no role, reviewer: 22 commits
     - no role, maintainer: 3 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 7 commits
+    - maintainer, nobody: 1 commits
     - maintainer, no role : 1 commits
-    - maintainer, reviewer: 1 commits
+    - maintainer, reviewer: 3 commits
   - full commits list
     - 46fa67175c2e "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
@@ -127,13 +128,13 @@
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
       - 74c32c8ccdea "mm/sparse-vmemmap: allocate shared tail page array dynamically" (1/12)
-        - Authored by no role player, reviewed by nobody
+        - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260930140627.57431-3-songmuchun@bytedance.com
       - d8777177dcb9 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (2/12)
-        - Authored by no role player, reviewed by a reviewer
+        - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260930140627.57431-4-songmuchun@bytedance.com
       - ba9164f880bf "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
-        - Authored by no role player, reviewed by a reviewer
+        - Authored by a maintainer, reviewed by a reviewer
         - Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
       - d3a699634c2a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header" (7/12)
@@ -158,44 +159,47 @@
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-- mm-unstable: 10 total, 0 (7) series, 3 non-series commits
+- mm-unstable: 11 total, 0 (7) series, 4 non-series commits
   - author/reviewer role stat
     - no role, no role : 4 commits
     - no role, reviewer: 4 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
   - full commits list
-      - e95c1e9cf8c0 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 4742c355e023 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - 56907fac901f "mm: remove the unused zone->unaccepted_cleanup"
+    - 77851c6fc611 "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
-      - a4218d5b267a "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 41681041be66 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - ff24176085c7 "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - 62d018ef8cd7 "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - ea169780de25 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - a38a8f0d670c "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - e1d75164f613 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - fc3c7b26305c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - bce783ef74df "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - d7346a3b0f86 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - b081ed56a94f "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
+      - bd7eb1f01d1b "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
-    - 3cfac451f187 "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+    - e2d7b28d38ce "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
       - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
-    - 0b717970e40f "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+    - 8a993d3adcd1 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
       - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
+    - d1221679d58a "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

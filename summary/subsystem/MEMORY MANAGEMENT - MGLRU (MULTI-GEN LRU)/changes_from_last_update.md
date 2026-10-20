@@ -5,26 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 43 -> 43 commits (no change)
   - series: 4 (34) -> 4 (34) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, nobody: 3 -> 2 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 24 -> 24 commits (no change)
+    - no role, reviewer: 24 -> 22 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 11 -> 10 commits
+    - maintainer, reviewer: 1 -> 3 commits
+- mm-unstable: 10 -> 11 commits
   - series: 0 (7) -> 0 (7) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-  - dropped commits
-    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
-      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
+    - no role, maintainer: 2 -> 3 commits
+  - new commits
+    - d1221679d58a "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,28 +5,23 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-stable: 57 -> 57 commits (no change)
-  - series: 9 (46) -> 9 (46) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 36 -> 36 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+- mm-stable: 57 -> 48 commits
+  - series: 9 (46) -> 8 (37)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 36 -> 27 commits
+    - no role, reviewer: 7 -> 5 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 43 -> 42 commits
-  - series: 3 (35) -> 3 (35) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 24 -> 24 commits (no change)
+    - maintainer, reviewer: 2 -> 4 commits
+- mm-unstable: 42 -> 30 commits
+  - series: 3 (35) -> 1 (23)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 24 -> 12 commits
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-  - dropped commits
-    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
-      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

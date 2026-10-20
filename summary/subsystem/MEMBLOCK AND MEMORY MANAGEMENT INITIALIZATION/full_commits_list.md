@@ -4,8 +4,9 @@
 - mm-stable: 9 total, 1 (9) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 7 commits
+    - no role, no role : 5 commits
     - no role, reviewer: 1 commits
+    - maintainer, no role : 2 commits
   - full commits list
       - 89fb8ed75e3c "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
@@ -33,26 +34,27 @@
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
       - 2ef77f4a7d5a "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
-        - Authored by no role player, reviewed by no role player
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
       - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/12)
-        - Authored by no role player, reviewed by no role player
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
 - mm-unstable: 4 total, 0 (2) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 2 commits
+    - no role, no role : 1 commits
+    - maintainer, no role : 1 commits
   - full commits list
-      - d87d11ddf71d "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
-        - Authored by no role player, reviewed by no role player
+      - 3cdee1b43e0f "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
-      - 33612a819d11 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - c7f4bd66953e "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
-    - 01c3ed7624bd "fixup! mm/mm_init: add zone mismatch warning during page init"
+    - c98b2e707b09 "fixup! mm/mm_init: add zone mismatch warning during page init"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
-    - 194c775914c0 "mm: warn on unaligned compound zone device ranges"
+    - 429508ec6f48 "mm: warn on unaligned compound zone device ranges"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
       - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com
