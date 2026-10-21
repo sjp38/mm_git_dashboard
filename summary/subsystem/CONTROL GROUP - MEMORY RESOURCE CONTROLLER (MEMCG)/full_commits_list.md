@@ -162,30 +162,30 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - 4378915b0c56 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
+      - 9a6ecad33537 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
     - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4 commits)
-      - 5ffca6ab0fb3 "memcg: keep swap charging under RCU protection" (0/4)
+      - 8f348dbe53b9 "memcg: keep swap charging under RCU protection" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
-      - d8f3b2a565ff "memcg: base swap charge accounting on memcgid root status" (1/4)
+      - 54c20e052761 "memcg: base swap charge accounting on memcgid root status" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
-      - 4f922bfb3f1c "memcg: manipulate memcg private ID references by ID" (2/4)
+      - ffd0f623f7ff "memcg: manipulate memcg private ID references by ID" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
-      - 090fb1840d66 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 9fad008556b4 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - 995d395afa40 "mm: fix typos in various comments"
+    - c99a1df4ab32 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - 74a6445b25f5 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
+    - 2b07168af20e "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019-vstor-144715-shrinker_info_unit-kmem_cache-v3-1-0fb061e09bf4@virtuozzo.com
-    - bc19040d3fb5 "mm/memcontrol: publish null pointer before dropping css reference"
+    - 5f980b2d53ab "mm/memcontrol: publish null pointer before dropping css reference"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021010051.1529261-1-joshua.hahnjy@gmail.com
       - Link: https://sashiko.dev/#/patchset/20260928192349.3432886-1-joshua.hahnjy%40gmail.com [1]

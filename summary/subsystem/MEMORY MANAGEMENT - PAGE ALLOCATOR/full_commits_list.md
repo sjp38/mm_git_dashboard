@@ -60,10 +60,10 @@
     - no role, no role : 2 commits
     - no role, reviewer: 3 commits
   - full commits list
-      - af12a0266145 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - bf3397b301b0 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - b346d700c159 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 990eb32df397 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
@@ -71,18 +71,18 @@
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
       - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
       - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
-    - b09ae822a578 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 042dfee5908b "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
-    - 810e0bb229a1 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 4c3bf88fda71 "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
-    - 6d3ec8e12526 "mm: stop recalculating min_free_kbytes once set by userspace"
+    - 9332ca9d458c "mm: stop recalculating min_free_kbytes once set by userspace"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
       - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
       - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
-    - d3a388ce5d0a "mm/page_alloc: count guard pages as free again when their buddy merges"
+    - 8b67ebf4ad5f "mm/page_alloc: count guard pages as free again when their buddy merges"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

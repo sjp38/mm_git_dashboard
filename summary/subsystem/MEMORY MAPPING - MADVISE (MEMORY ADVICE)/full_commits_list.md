@@ -27,31 +27,31 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 995d395afa40 "mm: fix typos in various comments"
+    - c99a1df4ab32 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - 698b26ea40bc "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - bf7a169cffee "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 55e9ed285ee5 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
+      - 50074357ab69 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - 9b479f5ac31e "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed()" (30/39)
+      - 9331591f0a6c "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed()" (30/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-31-1aa3c9b139f9@kernel.org
-      - 33e785c585f0 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (32/39)
+      - 8a23837236c1 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (32/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org
-      - 0947643d675c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - b15096faf705 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 3a7175fb72c8 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 5595b5c08956 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 026eb9232f64 "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
+    - 653f159761d8 "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
-    - 2696dc104216 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
+    - 321cac5eb43b "mm/madvise: atomically clear the young bit on THP MADV_COLD"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

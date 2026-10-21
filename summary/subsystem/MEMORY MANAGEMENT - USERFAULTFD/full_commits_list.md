@@ -5,7 +5,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - 5894a909f65a "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - 560ea67708e3 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -34,25 +34,25 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - e7689b5317a5 "mm: remove hugetlb_inline.h" (26/39)
+      - 776cf1b63b4f "mm: remove hugetlb_inline.h" (26/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-      - 698b26ea40bc "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - bf7a169cffee "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - cdb51dbbfcb6 "mm/uffd: use predicates for userfaultfd checks" (31/39)
+      - 9a19f8af3d84 "mm/uffd: use predicates for userfaultfd checks" (31/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-32-1aa3c9b139f9@kernel.org
-      - 0947643d675c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - b15096faf705 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 3a7175fb72c8 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 5595b5c08956 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - cfc6b1a5aa9e "mm/userfaultfd: only allocate anon_vma in CoW mappings"
+    - 080172f1e8f4 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
-    - 8add39d60f67 "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
+    - bc3692319289 "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261012201514.97015-1-cenzhang@linux.microsoft.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

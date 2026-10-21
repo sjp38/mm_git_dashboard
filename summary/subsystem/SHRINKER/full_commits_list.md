@@ -17,13 +17,13 @@
     - no role, nobody: 1 commits
     - no role, reviewer: 2 commits
   - full commits list
-      - 090fb1840d66 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 9fad008556b4 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - 995d395afa40 "mm: fix typos in various comments"
+    - c99a1df4ab32 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - 74a6445b25f5 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
+    - 2b07168af20e "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019-vstor-144715-shrinker_info_unit-kmem_cache-v3-1-0fb061e09bf4@virtuozzo.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

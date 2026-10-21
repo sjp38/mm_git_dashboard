@@ -165,46 +165,46 @@
     - no role, reviewer: 4 commits
     - no role, maintainer: 3 commits
   - full commits list
-      - 090fb1840d66 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 9fad008556b4 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - b165439956c1 "mm: remove the unused zone->unaccepted_cleanup"
+    - e58c83540c4f "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
-      - af12a0266145 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - bf3397b301b0 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 47dbe2d4730c "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - e36a2bf89e46 "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - 0324311d2510 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - fd1e83d23db7 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 698b26ea40bc "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - bf7a169cffee "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - b3d74a2d4127 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - 8085aab301dc "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - dc503e423eda "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
+      - 51e400f2d94b "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
-    - 8b4f2e1fb401 "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+    - 2d54011476b5 "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
       - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
-    - 6338b2039101 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+    - c3ee9c88a711 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
       - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
-    - e14fe91ab6e6 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+    - 085c8f941723 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 4655fe7ad1e3 "mm: unqueue deferred split folios outside the lruvec lock"
+    - d1fdcebd7b1c "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]

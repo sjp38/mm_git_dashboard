@@ -23,49 +23,136 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 36 -> 36 commits (no change)
     - maintainer, reviewer: 8 -> 8 commits (no change)
-- mm-unstable: 224 -> 225 commits
+- mm-unstable: 225 -> 225 commits (no change)
   - series: 23 (146) -> 23 (146) (no change)
     - no role, nobody: 27 -> 27 commits (no change)
     - no role, no role : 91 -> 91 commits (no change)
     - no role, reviewer: 44 -> 44 commits (no change)
-    - no role, maintainer: 45 -> 46 commits
+    - no role, maintainer: 46 -> 46 commits (no change)
     - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
-  - new commits
-    - bc19040d3fb5 "mm/memcontrol: publish null pointer before dropping css reference"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261021010051.1529261-1-joshua.hahnjy@gmail.com
-      - Link: https://sashiko.dev/#/patchset/20260928192349.3432886-1-joshua.hahnjy%40gmail.com [1]
-      - Link: https://lore.kernel.org/all/atfMngq7nyZpt4u-@linux.dev/ [2]
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 4655fe7ad1e3 "mm: unqueue deferred split folios outside the lruvec lock"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-- mm-nonmm-stable: 97 -> 97 commits (no change)
-  - series: 10 (31) -> 10 (31) (no change)
-    - no role, nobody: 36 -> 36 commits (no change)
-    - no role, no role : 27 -> 27 commits (no change)
+- mm-nonmm-stable: 97 -> 120 commits
+  - series: 10 (31) -> 13 (40)
+    - no role, nobody: 36 -> 37 commits
+    - no role, no role : 27 -> 28 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 15 -> 15 commits (no change)
-    - maintainer, nobody: 12 -> 12 commits (no change)
-    - maintainer, reviewer: 5 -> 5 commits (no change)
-- mm-nonmm-unstable: 39 -> 40 commits
-  - series: 6 (15) -> 6 (15) (no change)
-    - no role, nobody: 13 -> 13 commits (no change)
-    - no role, no role : 5 -> 6 commits
-    - no role, maintainer: 13 -> 13 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, reviewer: 5 -> 5 commits (no change)
-  - new commits
-    - cc2fbb1a34b9 "watchdog: force console verbose when reporting lockups"
+    - no role, maintainer: 15 -> 28 commits
+    - maintainer, nobody: 12 -> 15 commits
+    - maintainer, reviewer: 5 -> 10 commits
+  - changed commits
+    - series "ocfs2: fix metadata reservation for xattr value trees". (3)
+      - 8ad5fa0c1124 "ocfs2: reserve metadata for a new xattr block and its value tree (0/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261010113454.1420939-1-joseph.qi@linux.alibaba.com
+        - Link: https://lore.kernel.org/20261010113454.1420939-2-joseph.qi@linux.alibaba.com
+      - f5aee8ae5f85 "ocfs2: reserve value tree metadata when moving an xattr into the inode (1/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261010113454.1420939-3-joseph.qi@linux.alibaba.com
+      - 5365f1f417b3 "ocfs2: reserve xattr value tree metadata only once (2/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261010113454.1420939-4-joseph.qi@linux.alibaba.com
+    - 3ccd24c3f7a5 "ocfs2/heartbeat: unlink live slots when their node is missing"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0058-v2-9446113c2b16c817c538@gmail.com
+    - 5d72266218b1 "lib/cmdline: fix get_options() count and overflow with large ranges"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261007051726.4154849-1-tzungbi@kernel.org
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - added "[akpm@linux-foundation.org: add additional test case from Leizhen]"
+      - Link: https://lore.kernel.org/20261005213945.359905-1-armaan.sandhu0504@gmail.com
+    - series "ocfs2: deal with legacy signed name hash values", v2. (3)
+      - d1b49d5ea1bf "ocfs2: deal with legacy signed dir index name hash values (0/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261009083002.2621201-1-joseph.qi@linux.alibaba.com
+        - Link: https://lore.kernel.org/20261009083002.2621201-2-joseph.qi@linux.alibaba.com
+      - e39baff18b85 "ocfs2: use the stored hash when checking xattr bucket collision (1/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261009083002.2621201-3-joseph.qi@linux.alibaba.com
+      - 824d26d11448 "ocfs2: deal with legacy signed xattr name hash values (2/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261009083002.2621201-4-joseph.qi@linux.alibaba.com
+    - f6bfa6c45828 "ocfs2: initialize status waiters before publishing them"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0066-v1-437a0422801b292a2879@gmail.com
+    - e062baf56808 "ocfs2: publish the filecheck owner before adding sysfs attributes"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0086-v4-1b3a3c5fd05c1fb41df9@gmail.com
+    - e60b8f7a1d05 "lib: kstrtox: use isdigit() in _parse_integer_limit()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20261013072108.4407-3-blum@kernel.org
+    - edb528227f55 "fat: roll back the new entry when create/mkdir fails to build the inode"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - added "[akpm@linux-foundation.org" export _fat_msg() to modules]"
+      - Link: https://lore.kernel.org/tencent_4EDD66523CED299DB0C99498B4D8C939A009@qq.com
+    - series "fat: allocate multiple clusters in fallocate", v2. (3)
+      - 930256458a8a "fat: remove cluster allocation size limit (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261012171106.146243-1-matheus.aalmeida@inf.ufrgs.br
+        - Link: https://lore.kernel.org/20261012171106.146243-2-matheus.aalmeida@inf.ufrgs.br
+      - d2febfdc2b7f "fat: support adding multiple clusters (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261012171106.146243-3-matheus.aalmeida@inf.ufrgs.br
+      - 8d40831419c4 "fat: allocate multiple clusters in fallocate (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20261012171106.146243-4-matheus.aalmeida@inf.ufrgs.br
+    - 71743471204e "ocfs2/dlm: hold a lock reference across grant AST enqueue"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0043-v5-1ad07df761ff49638789@gmail.com
+    - 1dd1f005026d "ocfs2: cancel quota sync work before freeing quota info"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0052-v3-b4904bd6c85daf033adf@gmail.com
+    - 125fe08ff6cf "ocfs2/dlm: hold the lookup reference across convert AST enqueue"
+      - Authored by a maintainer, reviewed by a reviewer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20261014112321.2955584-1-joseph.qi@linux.alibaba.com
+    - 0d0be10a74f7 "ocfs2: validate the xattr tree root of an indexed xattr block"
+      - Authored by a maintainer, reviewed by a reviewer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20261014105856.2909777-1-joseph.qi@linux.alibaba.com
+    - 8c714a074074 "ocfs2: pin refcount trees before dropping the lookup lock"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0037-v4-9f1a261dfbc341721689@gmail.com
+    - c4d9005e7e1e "selftests/proc: proc-pid-vm: fix unused variable warning on non-x86"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20261012115330.3777115-1-sashal@kernel.org
+    - c5b7a30a5172 "ocfs2/cluster: initialize heartbeat regions before publishing them"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0079-v5-f931a29339cadc0a2a70@gmail.com
+    - 26d7e34b4226 "ocfs2: pin owning modules for open debugfs files"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0089-v6-f7fda843f80887488145@gmail.com
+- mm-nonmm-unstable: 40 -> 15 commits
+  - series: 6 (15) -> 3 (6)
+    - no role, nobody: 13 -> 10 commits
+    - no role, no role : 6 -> 5 commits
+    - no role, maintainer: 13 -> 0 commits
+    - maintainer, nobody: 3 -> 0 commits
+    - maintainer, reviewer: 5 -> 0 commits
+  - dropped commits
+    - fa1f207742d4 "lib-cmdline-fix-get_options-count-and-overflow-with-large-ranges-fix"
+      - Authored by no role player, reviewed by nobody
+    - 715039b46743 "fat-roll-back-the-new-entry-when-create-mkdir-fails-to-build-the-inode-fix"
+      - Authored by no role player, reviewed by nobody

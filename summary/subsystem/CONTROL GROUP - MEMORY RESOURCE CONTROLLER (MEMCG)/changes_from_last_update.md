@@ -11,17 +11,11 @@
     - no role, maintainer: 24 -> 24 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-unstable: 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - new commits
-    - bc19040d3fb5 "mm/memcontrol: publish null pointer before dropping css reference"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261021010051.1529261-1-joshua.hahnjy@gmail.com
-      - Link: https://sashiko.dev/#/patchset/20260928192349.3432886-1-joshua.hahnjy%40gmail.com [1]
-      - Link: https://lore.kernel.org/all/atfMngq7nyZpt4u-@linux.dev/ [2]
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
