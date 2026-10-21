@@ -5,14 +5,11 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 12 -> 11 commits
+- mm-hotfixes-unstable: 11 -> 11 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 4 -> 3 commits
+    - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - dropped commits
-    - d4ee6948bcab "block: restore the iterator when rejecting a misaligned bio"
-      - Authored by no role player, reviewed by nobody
 - mm-stable: 539 -> 539 commits (no change)
   - series: 84 (430) -> 84 (430) (no change)
     - no role, nobody: 40 -> 40 commits (no change)
@@ -26,122 +23,31 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 36 -> 36 commits (no change)
     - maintainer, reviewer: 8 -> 8 commits (no change)
-- mm-unstable: 221 -> 224 commits
-  - series: 22 (144) -> 23 (146)
-    - no role, nobody: 28 -> 27 commits
-    - no role, no role : 88 -> 91 commits
+- mm-unstable: 224 -> 225 commits
+  - series: 23 (146) -> 23 (146) (no change)
+    - no role, nobody: 27 -> 27 commits (no change)
+    - no role, no role : 91 -> 91 commits (no change)
     - no role, reviewer: 44 -> 44 commits (no change)
-    - no role, maintainer: 44 -> 45 commits
+    - no role, maintainer: 45 -> 46 commits
     - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
   - new commits
-    - ff3c75c172c4 "mm/vma: avoid broken uffd merge on mremap"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261020-uffd-remap-fix-v1-1-0f34fc181f0a@kernel.org
-    - series "maple_tree: fix maple_range_64 crashes in RCU mode", v3. (2)
-      - 399ca9f7192d "maple_tree: fix maple_range_64 crashes in RCU mode (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261005-fix-maple-tree-range64-rcu-v3-0-ebe7fb278e20@cslab.ece.ntua.gr
-        - Link: https://lore.kernel.org/20261005-fix-maple-tree-range64-rcu-v3-1-ebe7fb278e20@cslab.ece.ntua.gr
-      - 71cd1c576a8c "test_maple_tree: test maple_range_64 node in RCU mode (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261005-fix-maple-tree-range64-rcu-v3-2-ebe7fb278e20@cslab.ece.ntua.gr
-  - changed commits
-    - series "mm: various (urgent?) fixes", v1. (10)
-      - 0a826d056e99 "mm/vma: don't leak the commit charge on mmap failure (0/10)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
-      - bb8a9d53ba6f "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
-      - 2fd2d4a0a75c "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
-      - dddfdef10798 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
-      - f8e25c1c1022 "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
-      - 4bce68545fbc "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
-      - d3af476ddf09 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
-      - 4fcaeb8ae324 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
-      - 3fee6416aab3 "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
-      - 0ff2c623094c "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
-        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - e47ea9040695 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-0-1aa3c9b139f9@kernel.org
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-1-1aa3c9b139f9@kernel.org
-      - 75e6e1e39e18 "mm: assert mmap lock held, use new flags API in vm_insert_page[s] (6/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-7-1aa3c9b139f9@kernel.org
-    - 0e5feba2df87 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+    - bc19040d3fb5 "mm/memcontrol: publish null pointer before dropping css reference"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
-    - ffbd23d4f529 "mm/page_alloc: count guard pages as free again when their buddy merges"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
-    - 234e77cb9d83 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
-      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
-    - 71a1e8449523 "tools/testing/shared: catch a failed posix_memalign()"
-      - Authored by no role player, reviewed by no role player
-      - added "Fixes: 8801c35c3672c ("tools: fix -Wunused-result in linux.c")"
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20261020033128.1934349-1-liam@infradead.org
-- mm-new: 1 -> 2 commits
+      - Link: https://lore.kernel.org/20261021010051.1529261-1-joshua.hahnjy@gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260928192349.3432886-1-joshua.hahnjy%40gmail.com [1]
+      - Link: https://lore.kernel.org/all/atfMngq7nyZpt4u-@linux.dev/ [2]
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - d6854edd86fd "mm: unqueue deferred split folios outside the lruvec lock"
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 4655fe7ad1e3 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
 - mm-nonmm-stable: 97 -> 97 commits (no change)
@@ -152,43 +58,14 @@
     - no role, maintainer: 15 -> 15 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-- mm-nonmm-unstable: 34 -> 39 commits
+- mm-nonmm-unstable: 39 -> 40 commits
   - series: 6 (15) -> 6 (15) (no change)
-    - no role, nobody: 11 -> 13 commits
-    - no role, no role : 2 -> 5 commits
+    - no role, nobody: 13 -> 13 commits (no change)
+    - no role, no role : 5 -> 6 commits
     - no role, maintainer: 13 -> 13 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
   - new commits
-    - efb37fce00bf "ocfs2: pin refcount trees before dropping the lookup lock"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0037-v4-9f1a261dfbc341721689@gmail.com
-    - 8fff7e1c17a4 "ocfs2/cluster: initialize heartbeat regions before publishing them"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0079-v5-f931a29339cadc0a2a70@gmail.com
-    - 24621b69336d "ocfs2: pin owning modules for open debugfs files"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0089-v6-f7fda843f80887488145@gmail.com
-    - 300d91368fb1 "compat: avoid double rounding in times()"
+    - cc2fbb1a34b9 "watchdog: force console verbose when reporting lockups"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261020210157.52057-1-dennylin0707@gmail.com
-    - 6cddd7f3cecb "kernel/reboot: Avoid potential deadlocks during suspension"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261020010559.23031-1-eadavis@sina.com
-    - 2069cf7c8874 "profiling: fix sampling step on 64-bit big-endian systems"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261020101225.917959-1-thnkslprpt@gmail.com
-    - d0f59c47d974 "profile: account for partial /proc/profile reads"
-      - Authored by no role player, reviewed by nobody
-    - 62838fe06af7 "profile: simplify /proc/profile read layout"
-      - Authored by no role player, reviewed by nobody
-  - dropped commits
-    - d4f340ac7b18 "ocfs2: Pin refcount trees before dropping the lookup lock"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0037-v4-9f1a261dfbc341721689@gmail.com
-    - 4e334c47a851 "ocfs2/cluster: Initialize heartbeat regions before publishing them"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0079-v5-f931a29339cadc0a2a70@gmail.com
-    - f2a1ca5268bf "ocfs2: Pin owning modules for open debugfs files"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0089-v6-f7fda843f80887488145@gmail.com
+      - Link: https://lore.kernel.org/20261007051726.4154849-1-tzungbi@kernel.org

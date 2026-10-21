@@ -26,13 +26,13 @@
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
   - full commits list
-      - c8fdeb9ba018 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - b3d74a2d4127 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - 972b65d1b750 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 0947643d675c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - e5cc40e3499e "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 3a7175fb72c8 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

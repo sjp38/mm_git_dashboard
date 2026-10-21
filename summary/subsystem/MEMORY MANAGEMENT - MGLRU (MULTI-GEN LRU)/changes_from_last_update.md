@@ -19,19 +19,16 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - 234e77cb9d83 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - d6854edd86fd "mm: unqueue deferred split folios outside the lruvec lock"
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 4655fe7ad1e3 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)

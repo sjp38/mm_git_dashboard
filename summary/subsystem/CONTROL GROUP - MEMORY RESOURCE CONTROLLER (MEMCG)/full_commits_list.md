@@ -156,35 +156,40 @@
       - de6be06f4a2d "mm: memcontrol: constify the zswap and socket pressure helpers" (10/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-11-c239a6010b58@columbia.edu
-- mm-unstable: 7 total, 1 (5) series, 2 non-series commits
+- mm-unstable: 8 total, 1 (5) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, reviewer: 5 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-      - 365804a55e1a "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
+      - 4378915b0c56 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
     - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4 commits)
-      - af919346b0f3 "memcg: keep swap charging under RCU protection" (0/4)
+      - 5ffca6ab0fb3 "memcg: keep swap charging under RCU protection" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
-      - 21fb99dc280a "memcg: base swap charge accounting on memcgid root status" (1/4)
+      - d8f3b2a565ff "memcg: base swap charge accounting on memcgid root status" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
-      - e2d8cc1785cf "memcg: manipulate memcg private ID references by ID" (2/4)
+      - 4f922bfb3f1c "memcg: manipulate memcg private ID references by ID" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
-      - 136f2e37243c "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 090fb1840d66 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - e354efbe105a "mm: fix typos in various comments"
+    - 995d395afa40 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - 7256813d6358 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
+    - 74a6445b25f5 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019-vstor-144715-shrinker_info_unit-kmem_cache-v3-1-0fb061e09bf4@virtuozzo.com
+    - bc19040d3fb5 "mm/memcontrol: publish null pointer before dropping css reference"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021010051.1529261-1-joshua.hahnjy@gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260928192349.3432886-1-joshua.hahnjy%40gmail.com [1]
+      - Link: https://lore.kernel.org/all/atfMngq7nyZpt4u-@linux.dev/ [2]
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
