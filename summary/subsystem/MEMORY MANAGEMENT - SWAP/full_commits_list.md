@@ -111,31 +111,31 @@
       - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
 - mm-unstable: 7 total, 0 (2) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, nobody: 2 commits
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - 20509292c490 "mm: fix typos in various comments"
+    - e354efbe105a "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - fc3c7b26305c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - 3c7a3bc6a6ad "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 4cb3e7d1ab70 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 972b65d1b750 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - 0281174641b6 "mm: make swapoff interruptible when unusing mms/shmem"
+    - e367dc92103a "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - a6b1b0148d8a "mm/swap: submit the last readahead batch before unplugging"
+    - 6dc2d38bfb4a "mm/swap: submit the last readahead batch before unplugging"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-    - a54fed3c7459 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - b3a9e870c2e6 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-    - 24066022b623 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
-      - Authored by no role player, reviewed by nobody
+    - 0e5feba2df87 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

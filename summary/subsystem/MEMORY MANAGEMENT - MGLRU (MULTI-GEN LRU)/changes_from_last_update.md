@@ -5,26 +5,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 43 -> 43 commits (no change)
   - series: 4 (34) -> 4 (34) (no change)
-    - no role, nobody: 3 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 24 -> 22 commits
+    - no role, reviewer: 22 -> 22 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 3 commits
-- mm-unstable: 10 -> 11 commits
+    - maintainer, reviewer: 3 -> 3 commits (no change)
+- mm-unstable: 11 -> 11 commits (no change)
   - series: 0 (7) -> 0 (7) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
-  - new commits
-    - d1221679d58a "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+    - no role, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - 234e77cb9d83 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
       - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
       - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - d6854edd86fd "mm: unqueue deferred split folios outside the lruvec lock"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

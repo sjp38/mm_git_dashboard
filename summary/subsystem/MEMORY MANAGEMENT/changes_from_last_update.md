@@ -10,71 +10,118 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 365 -> 365 commits (no change)
   - series: 59 (288) -> 59 (288) (no change)
-    - no role, nobody: 22 -> 21 commits
-    - no role, no role : 87 -> 82 commits
-    - no role, reviewer: 64 -> 62 commits
+    - no role, nobody: 21 -> 21 commits (no change)
+    - no role, no role : 82 -> 82 commits (no change)
+    - no role, reviewer: 62 -> 62 commits (no change)
     - no role, maintainer: 78 -> 78 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 65 -> 66 commits
-    - maintainer, no role : 26 -> 31 commits
-    - maintainer, reviewer: 5 -> 7 commits
-- mm-unstable: 131 -> 138 commits
+    - maintainer, nobody: 66 -> 66 commits (no change)
+    - maintainer, no role : 31 -> 31 commits (no change)
+    - maintainer, reviewer: 7 -> 7 commits (no change)
+- mm-unstable: 138 -> 139 commits
   - series: 14 (91) -> 14 (91) (no change)
-    - no role, nobody: 11 -> 11 commits (no change)
-    - no role, no role : 48 -> 44 commits
-    - no role, reviewer: 34 -> 36 commits
-    - no role, maintainer: 33 -> 35 commits
-    - maintainer, nobody: 4 -> 6 commits
-    - maintainer, no role : 1 -> 6 commits
+    - no role, nobody: 11 -> 10 commits
+    - no role, no role : 44 -> 45 commits
+    - no role, reviewer: 36 -> 36 commits (no change)
+    - no role, maintainer: 35 -> 36 commits
+    - maintainer, nobody: 6 -> 6 commits (no change)
+    - maintainer, no role : 6 -> 6 commits (no change)
   - new commits
-    - 4150cd1c019f "mm/mremap: populate calculated fields in vrm state correctly"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261019-mremap-fix-shrink-charge-v1-1-a3ce209e5360@kernel.org
-    - b78ed86d838f "mm/mremap: correctly uncharge accountable VMAs in error path"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261019-other-mremap-charge-leak-v1-1-d94477fe6545@kernel.org
-    - d1221679d58a "mm/vmscan: reclaim every zone in per-node proactive reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
-    - 5542689cb3e3 "mm/mempolicy: apply bind policies against the scoped allocation zone"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261018023349.1697434-1-gourry@gourry.net
-    - 0aee933b06af "mm/damon/core: filter out damos address filter-split failed region"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20261020004119.106690-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260801203121.117449-1-sj@kernel.org [1]
-    - b36b71cb2202 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261019-vstor-144715-shrinker_info_unit-kmem_cache-v3-1-0fb061e09bf4@virtuozzo.com
-    - 880a2031a540 "mm/damon/core: remove unreachable damos charge_{target,addr}_from"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20261020023958.108276-1-sj@kernel.org
+    - ff3c75c172c4 "mm/vma: avoid broken uffd merge on mremap"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261020-uffd-remap-fix-v1-1-0f34fc181f0a@kernel.org
   - changed commits
-    - series "mm/collapse: separate a collapse from its callers", v5. (9)
-      - b1cd01bbf8c5 "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - 0a826d056e99 "mm/vma: don't leak the commit charge on mmap failure (0/10)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
-    - dcce08ea1b89 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: <stable@vger.kernel.org> # 7.3.x"
-      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
-    - 37e21e4cc3c6 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
+      - bb8a9d53ba6f "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
+      - 2fd2d4a0a75c "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
+      - dddfdef10798 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
+      - f8e25c1c1022 "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+      - 4bce68545fbc "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
+      - d3af476ddf09 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - 4fcaeb8ae324 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
+      - 3fee6416aab3 "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
+      - 0ff2c623094c "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Mel Gorman <mgorman@techsingularity.net>"
+        - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - e47ea9040695 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-0-1aa3c9b139f9@kernel.org
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-1-1aa3c9b139f9@kernel.org
+      - 75e6e1e39e18 "mm: assert mmap lock held, use new flags API in vm_insert_page[s] (6/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-7-1aa3c9b139f9@kernel.org
+    - 0e5feba2df87 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
-      - dropped "Cc: Jan Kara <jack@suse.cz>"
-      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
-    - 07b172fd351f "mm: bdi: reset min_ratio after the sysfs attributes are gone"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
-      - dropped "Cc: Jan Kara <jack@suse.cz>"
-      - Link: https://lore.kernel.org/20261017030620.793108-1-nickolai@csail.mit.edu
-- mm-new: 0 -> 0 commits (no change)
+      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+      - dropped "Cc: Kairui Song <kasong@tencent.com>"
+      - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
+    - ffbd23d4f529 "mm/page_alloc: count guard pages as free again when their buddy merges"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
+    - 234e77cb9d83 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
+      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
+      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - d6854edd86fd "mm: unqueue deferred split folios outside the lruvec lock"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

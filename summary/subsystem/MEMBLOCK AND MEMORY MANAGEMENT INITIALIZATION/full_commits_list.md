@@ -45,16 +45,16 @@
     - no role, no role : 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-      - 3cdee1b43e0f "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - c2e2f1935154 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
-      - c7f4bd66953e "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 19f8903ed25a "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
-    - c98b2e707b09 "fixup! mm/mm_init: add zone mismatch warning during page init"
+    - b8bedb8b0c03 "fixup! mm/mm_init: add zone mismatch warning during page init"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
-    - 429508ec6f48 "mm: warn on unaligned compound zone device ranges"
+    - 1e000ed5cb11 "mm: warn on unaligned compound zone device ranges"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
       - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com

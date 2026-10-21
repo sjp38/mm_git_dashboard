@@ -5,25 +5,43 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-stable: 57 -> 48 commits
-  - series: 9 (46) -> 8 (37)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 36 -> 27 commits
-    - no role, reviewer: 7 -> 5 commits
+- mm-stable: 48 -> 48 commits (no change)
+  - series: 8 (37) -> 8 (37) (no change)
+    - no role, no role : 27 -> 27 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, reviewer: 2 -> 4 commits
-- mm-unstable: 42 -> 30 commits
-  - series: 3 (35) -> 1 (23)
+    - maintainer, reviewer: 4 -> 4 commits (no change)
+- mm-unstable: 30 -> 30 commits (no change)
+  - series: 1 (23) -> 1 (23) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 24 -> 12 commits
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - e47ea9040695 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-0-1aa3c9b139f9@kernel.org
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-1-1aa3c9b139f9@kernel.org
+      - 75e6e1e39e18 "mm: assert mmap lock held, use new flags API in vm_insert_page[s] (6/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-7-1aa3c9b139f9@kernel.org
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - d6854edd86fd "mm: unqueue deferred split folios outside the lruvec lock"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
