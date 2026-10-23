@@ -9,10 +9,19 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
+- mm-unstable: 6 -> 7 commits
   - series: 1 (5) -> 1 (5) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, maintainer: 5 -> 6 commits
+  - new commits
+    - cad06d043d9b "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
+  - changed commits
+    - 97fe9fa0379b "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Baokun Li <libaokun@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -42,10 +42,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - e11c518b807d "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (20/39)
+      - fd6f68986821 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (20/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-21-1aa3c9b139f9@kernel.org
-      - bf7a169cffee "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

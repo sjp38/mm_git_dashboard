@@ -23,136 +23,140 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 36 -> 36 commits (no change)
     - maintainer, reviewer: 8 -> 8 commits (no change)
-- mm-unstable: 225 -> 225 commits (no change)
-  - series: 23 (146) -> 23 (146) (no change)
+- mm-unstable: 225 -> 232 commits
+  - series: 23 (146) -> 24 (149)
     - no role, nobody: 27 -> 27 commits (no change)
-    - no role, no role : 91 -> 91 commits (no change)
-    - no role, reviewer: 44 -> 44 commits (no change)
-    - no role, maintainer: 46 -> 46 commits (no change)
+    - no role, no role : 91 -> 94 commits
+    - no role, reviewer: 44 -> 46 commits
+    - no role, maintainer: 46 -> 47 commits
     - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - bf49bc9639d7 "mm/page_counter: use WRITE_ONCE() for emin/elow when parent is the root"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261021204818.3431099-1-shakeel.butt@linux.dev
+    - 92a61dc2d9e7 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261017050928.128582-1-sidchintamaneni@gmail.com
+    - cad06d043d9b "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
+    - 86b2c543aa7e "selftests/mm: merge: keep the far mremap() targets in the carveout"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
+    - 70b032482cb5 "mm/page_alloc: let the highest memory node recover from hopeless state"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
+    - series "mm/hugetlb: fix mremap bugs", v3. (3)
+      - 6d4b572ceccf "mm/hugetlb: fix mremap move length truncation (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
+      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+      - 4f05d73c3e33 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
+    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
+  - changed commits
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - c9cabf385cbe "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - 952533a342df "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
+    - 97fe9fa0379b "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Baokun Li <libaokun@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
+    - 2faed6cb2cd0 "mm/mremap: populate calculated fields in vrm state correctly"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+      - Link: https://lore.kernel.org/20261019-mremap-fix-shrink-charge-v1-1-a3ce209e5360@kernel.org
+    - 314daebd326b "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Acked-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
+    - 055fb2d59efd "tools/testing/shared: catch a failed posix_memalign()"
+      - Authored by no role player, reviewed by no role player
+      - added "Fixes: 8801c35c3672 ("tools: fix -Wunused-result in linux.c")"
+      - dropped "Fixes: 8801c35c3672c ("tools: fix -Wunused-result in linux.c")"
+      - Link: https://lore.kernel.org/20261020033128.1934349-1-liam@infradead.org
+    - 6a10214eb0e2 "mm/vma: avoid broken uffd merge on mremap"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+      - Link: https://lore.kernel.org/20261020-uffd-remap-fix-v1-1-0f34fc181f0a@kernel.org
+  - dropped commits
+    - 9a11e61ea59f "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
+- mm-new: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-stable: 97 -> 120 commits
-  - series: 10 (31) -> 13 (40)
-    - no role, nobody: 36 -> 37 commits
-    - no role, no role : 27 -> 28 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 15 -> 28 commits
-    - maintainer, nobody: 12 -> 15 commits
-    - maintainer, reviewer: 5 -> 10 commits
+    - no role, reviewer: 1 -> 2 commits
   - changed commits
-    - series "ocfs2: fix metadata reservation for xattr value trees". (3)
-      - 8ad5fa0c1124 "ocfs2: reserve metadata for a new xattr block and its value tree (0/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261010113454.1420939-1-joseph.qi@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261010113454.1420939-2-joseph.qi@linux.alibaba.com
-      - f5aee8ae5f85 "ocfs2: reserve value tree metadata when moving an xattr into the inode (1/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261010113454.1420939-3-joseph.qi@linux.alibaba.com
-      - 5365f1f417b3 "ocfs2: reserve xattr value tree metadata only once (2/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261010113454.1420939-4-joseph.qi@linux.alibaba.com
-    - 3ccd24c3f7a5 "ocfs2/heartbeat: unlink live slots when their node is missing"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0058-v2-9446113c2b16c817c538@gmail.com
-    - 5d72266218b1 "lib/cmdline: fix get_options() count and overflow with large ranges"
+    - 184d4ac96a53 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
+      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
+      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
+- mm-nonmm-stable: 120 -> 120 commits (no change)
+  - series: 13 (40) -> 13 (40) (no change)
+    - no role, nobody: 37 -> 37 commits (no change)
+    - no role, no role : 28 -> 28 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 28 -> 28 commits (no change)
+    - maintainer, nobody: 15 -> 15 commits (no change)
+    - maintainer, reviewer: 10 -> 10 commits (no change)
+- mm-nonmm-unstable: 15 -> 22 commits
+  - series: 3 (6) -> 4 (8)
+    - no role, nobody: 10 -> 12 commits
+    - no role, no role : 5 -> 6 commits
+    - no role, maintainer: 0 -> 4 commits
+  - new commits
+    - 979d4ef71e12 "kernel/reboot: avoid potential deadlocks during suspension"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - added "[akpm@linux-foundation.org: add additional test case from Leizhen]"
-      - Link: https://lore.kernel.org/20261005213945.359905-1-armaan.sandhu0504@gmail.com
-    - series "ocfs2: deal with legacy signed name hash values", v2. (3)
-      - d1b49d5ea1bf "ocfs2: deal with legacy signed dir index name hash values (0/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261009083002.2621201-1-joseph.qi@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261009083002.2621201-2-joseph.qi@linux.alibaba.com
-      - e39baff18b85 "ocfs2: use the stored hash when checking xattr bucket collision (1/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261009083002.2621201-3-joseph.qi@linux.alibaba.com
-      - 824d26d11448 "ocfs2: deal with legacy signed xattr name hash values (2/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261009083002.2621201-4-joseph.qi@linux.alibaba.com
-    - f6bfa6c45828 "ocfs2: initialize status waiters before publishing them"
+      - Link: https://lore.kernel.org/20261020010559.23031-1-eadavis@sina.com
+    - 6bf2376afa5b "ocfs2: drain quorum work before removing the cluster"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0066-v1-437a0422801b292a2879@gmail.com
-    - e062baf56808 "ocfs2: publish the filecheck owner before adding sysfs attributes"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0086-v4-1b3a3c5fd05c1fb41df9@gmail.com
-    - e60b8f7a1d05 "lib: kstrtox: use isdigit() in _parse_integer_limit()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20261013072108.4407-3-blum@kernel.org
-    - edb528227f55 "fat: roll back the new entry when create/mkdir fails to build the inode"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - added "[akpm@linux-foundation.org" export _fat_msg() to modules]"
-      - Link: https://lore.kernel.org/tencent_4EDD66523CED299DB0C99498B4D8C939A009@qq.com
-    - series "fat: allocate multiple clusters in fallocate", v2. (3)
-      - 930256458a8a "fat: remove cluster allocation size limit (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261012171106.146243-1-matheus.aalmeida@inf.ufrgs.br
-        - Link: https://lore.kernel.org/20261012171106.146243-2-matheus.aalmeida@inf.ufrgs.br
-      - d2febfdc2b7f "fat: support adding multiple clusters (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261012171106.146243-3-matheus.aalmeida@inf.ufrgs.br
-      - 8d40831419c4 "fat: allocate multiple clusters in fallocate (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20261012171106.146243-4-matheus.aalmeida@inf.ufrgs.br
-    - 71743471204e "ocfs2/dlm: hold a lock reference across grant AST enqueue"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0043-v5-1ad07df761ff49638789@gmail.com
-    - 1dd1f005026d "ocfs2: cancel quota sync work before freeing quota info"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0052-v3-b4904bd6c85daf033adf@gmail.com
-    - 125fe08ff6cf "ocfs2/dlm: hold the lookup reference across convert AST enqueue"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20261014112321.2955584-1-joseph.qi@linux.alibaba.com
-    - 0d0be10a74f7 "ocfs2: validate the xattr tree root of an indexed xattr block"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20261014105856.2909777-1-joseph.qi@linux.alibaba.com
-    - 8c714a074074 "ocfs2: pin refcount trees before dropping the lookup lock"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0037-v4-9f1a261dfbc341721689@gmail.com
-    - c4d9005e7e1e "selftests/proc: proc-pid-vm: fix unused variable warning on non-x86"
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0064-v5-e3870bf6571b80b07b52@gmail.com
+    - 6331368e9d48 "stackdepot: stop preallocating after the final pool"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261022083330.3159793-1-matt@readmodwrite.com
+    - de3c3f7f84b9 "mailmap: add entries for Andrew Jones"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20261012115330.3777115-1-sashal@kernel.org
-    - c5b7a30a5172 "ocfs2/cluster: initialize heartbeat regions before publishing them"
+      - Link: https://lore.kernel.org/20261022154532.1374661-1-andrew.jones@linux.dev
+    - 066919e0f084 "MAINTAINERS: update Markus's e-mail address"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261022211949.42939-1-markus.mayer@broadcom.com
+    - b6bd5e39ead0 "ocfs2/dlm: drain join handlers before releasing module text"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0079-v5-f931a29339cadc0a2a70@gmail.com
-    - 26d7e34b4226 "ocfs2: pin owning modules for open debugfs files"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0089-v6-f7fda843f80887488145@gmail.com
-- mm-nonmm-unstable: 40 -> 15 commits
-  - series: 6 (15) -> 3 (6)
-    - no role, nobody: 13 -> 10 commits
-    - no role, no role : 6 -> 5 commits
-    - no role, maintainer: 13 -> 0 commits
-    - maintainer, nobody: 3 -> 0 commits
-    - maintainer, reviewer: 5 -> 0 commits
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0076-v6-12de5f4628f57fba3be3@gmail.com
+    - series "ocfs2: stabilize dentry names in file and setattr traces", v4. (2)
+      - 5663731f246b "ocfs2: snapshot dentry names in file and setattr traces (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0088-v7-6324344256f0c3b1c3d8-0@gmail.com
+        - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0088-v7-6324344256f0c3b1c3d8-1@gmail.com
+      - 9865d0f7d898 "ocfs2: snapshot the dentry name while tracing file release (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0088-v7-6324344256f0c3b1c3d8-2@gmail.com
   - dropped commits
-    - fa1f207742d4 "lib-cmdline-fix-get_options-count-and-overflow-with-large-ranges-fix"
-      - Authored by no role player, reviewed by nobody
-    - 715039b46743 "fat-roll-back-the-new-entry-when-create-mkdir-fails-to-build-the-inode-fix"
-      - Authored by no role player, reviewed by nobody
+    - c52a370d0b99 "kernel/reboot: Avoid potential deadlocks during suspension"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261020010559.23031-1-eadavis@sina.com

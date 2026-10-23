@@ -12,12 +12,36 @@
     - no role, maintainer: 11 -> 11 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 21 -> 21 commits (no change)
-  - series: 1 (12) -> 1 (12) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+- mm-unstable: 21 -> 24 commits
+  - series: 1 (12) -> 2 (15)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 4 -> 6 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 15 -> 15 commits (no change)
+  - new commits
+    - series "mm/hugetlb: fix mremap bugs", v3. (3)
+      - 6d4b572ceccf "mm/hugetlb: fix mremap move length truncation (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
+      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+      - 4f05d73c3e33 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
+  - changed commits
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - c9cabf385cbe "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - 952533a342df "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

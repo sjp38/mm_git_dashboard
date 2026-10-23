@@ -274,69 +274,69 @@
     - maintainer, nobody: 2 commits
   - full commits list
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - 28cf722fe5fe "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - 307ca7179014 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - a117bd4edeb3 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - 3ee81f371d1f "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - a58549978fed "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+    - 1ab06a04863f "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
-      - 9a8fd5f0f944 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+      - 9a55862c8903 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
         - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - 9506392519d9 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
+      - af967c4013e8 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
-      - 529eee72e6f1 "kselftest: mm: integrate huge page checks" (2/4)
+      - 4d79ce927faf "kselftest: mm: integrate huge page checks" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
-      - e512eceace99 "kselftest: mm: remove check_huge_shmem()" (3/4)
+      - 3ef571ff1b1b "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
-      - 75eca149d5cc "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
+      - e1e9e2dfce37 "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-7-sj@kernel.org
-      - bfa9f0653154 "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
+      - 19e53b67d73a "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-8-sj@kernel.org
-    - 900638f800d6 "selftests/mm: mrelease_test: fix retry limit"
+    - ebb28a1ebab4 "selftests/mm: mrelease_test: fix retry limit"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
-    - 5083e49abf98 "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+    - ec907d58052c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 485f00d122ec "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
+    - 10eb01f36da1 "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
-    - 9a11e61ea59f "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
-    - 58818c08645d "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+    - e3dd3a48327f "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
-    - 931e76bd991c "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
+    - 6e5fe3191fff "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261011163527.95988-1-zenghui.yu@linux.dev
-    - 42ba73b9e7d9 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+    - 59442ea21c30 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
-    - 5181c52c1d71 "selftests/mm: report the configuration check on stderr"
+    - fde92a27d21b "selftests/mm: report the configuration check on stderr"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261014200137.1364121-1-sashal@kernel.org
-    - b988d029f277 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+    - 036511252ce7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
-    - 10aa8ce18736 "selftests/mm: skip hugetlb cgroup v2 tests without the needed controllers"
+    - a16a9f1b280d "selftests/mm: skip hugetlb cgroup v2 tests without the needed controllers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016-bug-selftests-mm-hugetlb-cgroup2-skip-v1-1-7c78883a67b4@gmail.com
-    - a3fc05b741fd "mm: bdi: reset min_ratio after the sysfs attributes are gone"
+    - 33cdbb4b2ce1 "mm: bdi: reset min_ratio after the sysfs attributes are gone"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261017030620.793108-1-nickolai@csail.mit.edu
+    - 86b2c543aa7e "selftests/mm: merge: keep the far mremap() targets in the carveout"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

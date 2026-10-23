@@ -9,11 +9,16 @@
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 5 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

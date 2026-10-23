@@ -20,6 +20,14 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - 86b2c543aa7e "selftests/mm: merge: keep the far mremap() targets in the carveout"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
+  - dropped commits
+    - 9a11e61ea59f "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

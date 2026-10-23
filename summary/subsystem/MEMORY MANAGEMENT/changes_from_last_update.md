@@ -21,17 +21,86 @@
     - maintainer, nobody: 66 -> 66 commits (no change)
     - maintainer, no role : 31 -> 31 commits (no change)
     - maintainer, reviewer: 7 -> 7 commits (no change)
-- mm-unstable: 140 -> 140 commits (no change)
-  - series: 14 (91) -> 14 (91) (no change)
+- mm-unstable: 140 -> 147 commits
+  - series: 14 (91) -> 15 (94)
     - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 45 -> 45 commits (no change)
-    - no role, reviewer: 36 -> 36 commits (no change)
-    - no role, maintainer: 37 -> 37 commits (no change)
+    - no role, no role : 45 -> 48 commits
+    - no role, reviewer: 36 -> 38 commits
+    - no role, maintainer: 37 -> 38 commits
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - bf49bc9639d7 "mm/page_counter: use WRITE_ONCE() for emin/elow when parent is the root"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261021204818.3431099-1-shakeel.butt@linux.dev
+    - 92a61dc2d9e7 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261017050928.128582-1-sidchintamaneni@gmail.com
+    - cad06d043d9b "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
+    - 70b032482cb5 "mm/page_alloc: let the highest memory node recover from hopeless state"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
+    - series "mm/hugetlb: fix mremap bugs", v3. (3)
+      - 6d4b572ceccf "mm/hugetlb: fix mremap move length truncation (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
+      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+      - 4f05d73c3e33 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
+    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
+  - changed commits
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - c9cabf385cbe "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - 952533a342df "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
+    - 97fe9fa0379b "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Baokun Li <libaokun@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
+    - 2faed6cb2cd0 "mm/mremap: populate calculated fields in vrm state correctly"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+      - Link: https://lore.kernel.org/20261019-mremap-fix-shrink-charge-v1-1-a3ce209e5360@kernel.org
+    - 314daebd326b "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Acked-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
+    - 6a10214eb0e2 "mm/vma: avoid broken uffd merge on mremap"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+      - Link: https://lore.kernel.org/20261020-uffd-remap-fix-v1-1-0f34fc181f0a@kernel.org
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
+  - changed commits
+    - 184d4ac96a53 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
+      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
+      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

@@ -11,11 +11,16 @@
     - no role, maintainer: 24 -> 24 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
+- mm-unstable: 8 -> 9 commits
   - series: 1 (5) -> 1 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - bf49bc9639d7 "mm/page_counter: use WRITE_ONCE() for emin/elow when parent is the root"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261021204818.3431099-1-shakeel.butt@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

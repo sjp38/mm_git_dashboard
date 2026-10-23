@@ -9,11 +9,16 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 0 (5) -> 0 (5) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+- mm-unstable: 7 -> 8 commits
+  - series: 0 (5) -> 0 (6)
+    - no role, no role : 3 -> 4 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+  - new commits
+    - series "mm/hugetlb: fix mremap bugs", v3. (3)
+      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
