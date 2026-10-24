@@ -1,11 +1,12 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 31 total, 3 (22) series, 9 non-series commits
+- mm-stable: 39 total, 3 (26) series, 13 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, reviewer: 18 commits
-    - no role, maintainer: 2 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 22 commits
+    - no role, maintainer: 4 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 6 commits
     - maintainer, no role : 1 commits
@@ -117,43 +118,38 @@
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-- mm-unstable: 8 total, 0 (4) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-      - b3476956a0de "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 8290f45995f5 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 405da0e4e741 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - fee1ca017dad "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
+      - 5997da57a09b "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
-    - da89056abbd1 "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+    - 00a51d09912a "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
       - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
-    - a1249017389a "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+    - 2ca8b38962f2 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
       - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
-    - 314daebd326b "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+    - d0a12d80d2f7 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
-    - 92a61dc2d9e7 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
+    - 183895979c44 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261017050928.128582-1-sidchintamaneni@gmail.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 8b19d55d0b74 "mm: unqueue deferred split folios outside the lruvec lock"
+    - 914a87cba06c "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]

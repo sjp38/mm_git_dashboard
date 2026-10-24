@@ -3,37 +3,52 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 13 -> 13 commits (no change)
-  - series: 3 (7) -> 3 (7) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
+- mm-stable: 13 -> 17 commits
+  - series: 3 (7) -> 3 (8)
+    - no role, no role : 2 -> 4 commits
+    - no role, reviewer: 9 -> 11 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 7 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
-  - new commits
-    - 70b032482cb5 "mm/page_alloc: let the highest memory node recover from hopeless state"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
-    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
   - changed commits
-    - 184d4ac96a53 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
+      - a8c5020eeb96 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
+    - 4cd78a2dcfbb "mm: page_alloc: make defrag_mode retries follow the promoted order"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - added "[kas@kernel.org: s/order_nofrag_promoted/order_defrag_promoted/, per hannes]"
+      - added "Link: : https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation"
+      - Link: : https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
+      - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
+    - 397e08760552 "mm: stop recalculating min_free_kbytes once set by userspace"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
-      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
+      - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
+      - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
+    - 1503710b3b0c "mm/page_alloc: count guard pages as free again when their buddy merges"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
+- mm-unstable: 7 -> 2 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 4 -> 2 commits
+  - changed commits
+    - 367de6dc5a32 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Fixes: d224eb0287fb ("codetag: debug: mark codetags for reserved pages as empty")"
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
+  - dropped commits
+    - 936129282db7 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

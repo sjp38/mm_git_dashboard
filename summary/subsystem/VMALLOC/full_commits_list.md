@@ -4,16 +4,17 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - 5cff66b59bf5 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - dc6b7ec19fb3 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - 73c65b5b6445 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - 65805c050183 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
-- mm-stable: 10 total, 2 (9) series, 1 non-series commits
+- mm-stable: 16 total, 3 (11) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 8 commits
+    - no role, nobody: 4 commits
+    - no role, no role : 11 commits
+    - no role, maintainer: 1 commits
   - full commits list
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6 commits)
       - be7dacb9c1d4 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
@@ -50,34 +51,32 @@
     - 25aa09142ecc "mm/vmalloc: use %p for pointer formatting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
-- mm-unstable: 7 total, 1 (2) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 20fd08cd500a "mm: fix typos in various comments"
+    - c2d4ccfbba3f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - 51029c50ed94 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+    - 499baaff382a "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
     - series "mm/vmalloc: fix vmalloc_dump_obj VA lookup", v4. (2 commits)
-      - 05a825316619 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups" (0/2)
+      - f4399c9927c4 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-0-6f288a431edc@linux.dev
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-1-6f288a431edc@linux.dev
-      - 3bb8ebabdaa4 "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup" (1/2)
+      - 4b52da012040 "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-2-6f288a431edc@linux.dev
-    - 77028853f583 "mm: kmsan: fix iounmap metadata teardown"
+    - 101fea09a860 "mm: kmsan: fix iounmap metadata teardown"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
       - Link: https://lkml.iu.edu/2609.3/12748.html
-    - bdaa31ef2d18 "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
+    - bf033d04366e "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004071639.119857-1-jiangwenxiaomi@gmail.com
-    - 2bba28e98578 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - d10295141a98 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

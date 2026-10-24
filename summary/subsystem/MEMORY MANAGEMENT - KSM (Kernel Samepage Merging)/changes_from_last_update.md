@@ -3,14 +3,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
+- mm-stable: 4 -> 7 commits
+  - series: 1 (2) -> 1 (5)
+    - no role, no role : 2 -> 3 commits
+    - no role, reviewer: 2 -> 4 commits
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/39)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-unstable: 3 -> 1 commits
+  - series: 0 (3) -> 0 (0)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 0 commits
+  - new commits
+    - 139767cfd8b1 "mm/ksm: keep soft-dirty when merging a page"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

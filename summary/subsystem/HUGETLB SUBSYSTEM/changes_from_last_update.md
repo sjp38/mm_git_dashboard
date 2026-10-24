@@ -4,44 +4,122 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 25 -> 25 commits (no change)
-  - series: 4 (18) -> 4 (18) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 11 -> 11 commits (no change)
+- mm-stable: 25 -> 46 commits
+  - series: 4 (18) -> 5 (30)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 6 -> 10 commits
+    - no role, reviewer: 2 -> 3 commits
+    - no role, maintainer: 11 -> 26 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 21 -> 24 commits
-  - series: 1 (12) -> 2 (15)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 4 -> 6 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 15 -> 15 commits (no change)
-  - new commits
-    - series "mm/hugetlb: fix mremap bugs", v3. (3)
-      - 6d4b572ceccf "mm/hugetlb: fix mremap move length truncation (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
-        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - 4f05d73c3e33 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
   - changed commits
     - series "mm: various (urgent?) fixes", v1. (10)
-      - c9cabf385cbe "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+      - 824cc56bf43c "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - added "[david@kernel.org: simplify+move comment]"
+        - dropped "[ david: simplify+move comment ]"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
+      - d8a9cd7fd2fb "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
+      - ae99c503eb36 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - added "[david@kernel.org: switch to vma_filebacked_address, add VM_WARN_ON_ONCE, refine comments]"
+        - dropped "[ david: switch to vma_filebacked_address, add VM_WARN_ON_ONCE, refine comments]"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
+      - d42032c0fe3c "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - added "[david: avoid local variable, move and refine comment, description cleanups+simplifications]"
+        - dropped "[ david: avoid local variable, move and refine comment, description cleanups+simplifications ]"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+      - f61e1cf15fb4 "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - branch: mm-unstable -> mm-stable
+        - added "[rppt@kernel.org: massage commit message]"
+        - added "[david@kernel.org: convert comment into a TODO]"
+        - dropped "[rppt: massage commit message]"
+        - dropped "[ david: convert comment into a TODO ]"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
+      - 811777d82038 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
-      - 952533a342df "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+      - c37e9d9411a1 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
+      - f6605fc6b14b "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[david@kernel.org: a bit of description overhaul+simplification]"
+        - dropped "[ david: a bit of description overhaul+simplification ]"
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
+    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
+      - 92635a3ffe8b "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
+      - 02e0c8cc2815 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
+    - c2d4ccfbba3f "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - bdf6fbf21268 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+    - 1a5c751385dc "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/tencent_AA61551D1F50E61F46C8542F5C8874512C05@qq.com
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - 2dc36cf60dde "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
+    - fa71cee86530 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
+    - 4d1a248a38c6 "mm/hugetlb: prefix log messages via pr_fmt"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261010092333.137126-1-lienze@kylinos.cn
+    - 1b0f9f70a30f "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261009142010.552614-1-lienze@kylinos.cn
+    - bd918fca0207 "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261014031147.444733-1-lienze@kylinos.cn
+    - 514c9247db30 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
+- mm-unstable: 24 -> 3 commits
+  - series: 2 (15) -> 1 (3)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 6 -> 2 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 15 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

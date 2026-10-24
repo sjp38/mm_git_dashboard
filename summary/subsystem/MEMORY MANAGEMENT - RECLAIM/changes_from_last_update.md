@@ -3,31 +3,57 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 31 -> 31 commits (no change)
-  - series: 3 (22) -> 3 (22) (no change)
+- mm-stable: 31 -> 39 commits
+  - series: 3 (22) -> 3 (26)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, reviewer: 18 -> 18 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 18 -> 22 commits
+    - no role, maintainer: 2 -> 4 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 8 commits
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
-  - new commits
-    - 92a61dc2d9e7 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261017050928.128582-1-sidchintamaneni@gmail.com
   - changed commits
-    - 314daebd326b "mm/vmscan: reclaim every zone in per-node proactive reclaim"
+    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
+      - 8290f45995f5 "memcg: move memcg private ID refcount to objcg (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/39)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
+      - 5997da57a09b "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (34/39)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
+    - 00a51d09912a "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
+      - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
+    - 2ca8b38962f2 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
+      - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
+    - d0a12d80d2f7 "mm/vmscan: reclaim every zone in per-node proactive reclaim"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
-      - added "Acked-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20261019185002.3428594-1-gourry@gourry.net
+    - 183895979c44 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261017050928.128582-1-sidchintamaneni@gmail.com
+- mm-unstable: 8 -> 0 commits
+  - series: 0 (4) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 4 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

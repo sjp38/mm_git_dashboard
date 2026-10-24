@@ -1,10 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 13 total, 3 (7) series, 6 non-series commits
+- mm-stable: 17 total, 3 (8) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 9 commits
+    - no role, no role : 4 commits
+    - no role, reviewer: 11 commits
     - no role, maintainer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
@@ -54,40 +54,36 @@
     - 331f94007d79 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-- mm-unstable: 7 total, 0 (1) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 4 commits
-  - full commits list
-      - f01f62d48bc2 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - a8c5020eeb96 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 0c86ade40f69 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 4cd78a2dcfbb "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by no role player
+      - Link: : https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
       - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
-    - 936129282db7 "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
-    - a6e8d9ab122d "mm: stop recalculating min_free_kbytes once set by userspace"
+    - 397e08760552 "mm: stop recalculating min_free_kbytes once set by userspace"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
       - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
       - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
-    - 106df946f7aa "mm/page_alloc: count guard pages as free again when their buddy merges"
+    - 1503710b3b0c "mm/page_alloc: count guard pages as free again when their buddy merges"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
-    - 70b032482cb5 "mm/page_alloc: let the highest memory node recover from hopeless state"
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 2 commits
+  - full commits list
+    - e08f2ab6e103 "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
-    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - 367de6dc5a32 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 184d4ac96a53 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 65b43d232ea9 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

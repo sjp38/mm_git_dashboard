@@ -1,12 +1,12 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 9 total, 1 (9) series, 0 non-series commits
+- mm-stable: 12 total, 1 (11) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 5 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
     - no role, reviewer: 1 commits
-    - maintainer, no role : 2 commits
+    - maintainer, no role : 3 commits
   - full commits list
       - 89fb8ed75e3c "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
@@ -39,30 +39,25 @@
       - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/12)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-- mm-unstable: 5 total, 0 (2) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-    - maintainer, no role : 1 commits
-  - full commits list
-    - 1a0e119d5c51 "mm: warn on unaligned compound zone device ranges"
+      - bd0862382adb "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
+      - 3d670c0dcea4 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
+    - c82dba3183ac "mm: warn on unaligned compound zone device ranges"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
       - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com
       - Link: https://lore.kernel.org/r/20261016054914.2601510-1-songmuchun@bytedance.com
-    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 367de6dc5a32 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-      - e5cb3b413ac2 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
-      - 32236f6002a8 "mm/mm_init: add zone mismatch warning during page init" (5/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
-    - 245898445412 "fixup! mm/mm_init: add zone mismatch warning during page init"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

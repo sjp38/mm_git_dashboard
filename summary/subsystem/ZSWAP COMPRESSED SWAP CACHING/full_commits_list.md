@@ -79,19 +79,22 @@
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr
         - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]
-- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-unstable: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
   - full commits list
-    - series "mm: zswap: reduce request contention on loads", v2. (2 commits)
-      - 220d4465f198 "mm: zswap: use separate compression and decompression requests" (0/2)
+    - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
+      - 097f0b0e7065 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261009163146.83112-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20261009163146.83112-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 82b17da2a768 "mm: zswap: use stack requests for synchronous decompression" (1/2)
+      - 4457a5b340ae "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261009163146.83112-3-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
+    - 9d81cede6cff "mm/zswap: validate dlen and normalize comp_ret on compression success"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -3,17 +3,46 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+- mm-stable: 4 -> 10 commits
+  - series: 1 (2) -> 1 (5)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 3 commits
+    - no role, reviewer: 1 -> 4 commits
+    - no role, maintainer: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - aea83f2694ed "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (23/39)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-24-1aa3c9b139f9@kernel.org
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+    - dc0b17144d62 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
+    - 984c0700854e "mm/rmap: don't discard lazyfree THPs at PMD level"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261012-lazyfree-stable-fix-v2-1-6387d6e30063@nvidia.com
+      - Link: : https://lore.kernel.org/CADQRuqvXQ=YE=7T3oR66vTxE33pi=ygEeZKPTOU=cALZL0Figw@mail.gmail.com
+    - 1a2993227e8a "mm/page_vma_mapped: continue past nonmatching huge PMDs"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261016011549.61146-1-kylebot@openai.com
+- mm-unstable: 6 -> 0 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 3 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,9 +1,12 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 5 total, 0 (2) series, 3 non-series commits
+- mm-stable: 14 total, 0 (8) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 9 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 1 commits
   - full commits list
       - ab7ace574f3d "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
@@ -20,40 +23,46 @@
     - 5a6c9cf117fc "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
-- mm-unstable: 9 total, 0 (6) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 4 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 20fd08cd500a "mm: fix typos in various comments"
+    - c2d4ccfbba3f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 45e44f8f51e2 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
+      - 44debd840ec9 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - 282b1aa49a6a "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed()" (30/39)
+      - fc95d1cf4a13 "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed()" (30/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-31-1aa3c9b139f9@kernel.org
-      - 56fad789b175 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (32/39)
+      - 1d1104fe6dc6 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (32/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org
-      - 0ca9235a472c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - e33a7d78d000 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 8c060b880aae "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
+    - f5cfc8e3b20a "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
-    - 910da1436f93 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
+    - 246c8cc33438 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
+      - e54a10e758f0 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
+      - 5b8a317f491b "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

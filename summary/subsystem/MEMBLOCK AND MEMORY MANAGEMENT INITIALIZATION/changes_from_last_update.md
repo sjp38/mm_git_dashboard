@@ -3,22 +3,46 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 9 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+- mm-stable: 9 -> 12 commits
+  - series: 1 (9) -> 1 (11)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 5 -> 6 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 2 -> 2 commits (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - 8bada01383da "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - maintainer, no role : 2 -> 3 commits
+  - changed commits
+    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v4. (6)
+      - bd0862382adb "mm/sparse-vmemmap: drop Device DAX-specific population path (2/6)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
+      - 3d670c0dcea4 "mm/mm_init: add zone mismatch warning during page init (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[muchun.song@linux.dev: document ordering of shared and retained struct page initialization]"
+        - added "Link: : https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com"
+        - Link: : https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
+    - c82dba3183ac "mm: warn on unaligned compound zone device ranges"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016054914.2601510-1-songmuchun@bytedance.com
+- mm-unstable: 5 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 0 commits
+  - changed commits
+    - 367de6dc5a32 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
+      - added "Fixes: d224eb0287fb ("codetag: debug: mark codetags for reserved pages as empty")"
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
+  - dropped commits
+    - 245898445412 "fixup! mm/mm_init: add zone mismatch warning during page init"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -11,18 +11,19 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - e3b40a74d1d8 "mm: memory: fix truncation removing mapped folios"
+    - 782c02b0635b "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
-    - 00f24a39558a "mm: fix address wraparound when scanning large folio PTEs"
+    - be93ac85599e "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-- mm-stable: 48 total, 8 (37) series, 11 non-series commits
+- mm-stable: 77 total, 9 (60) series, 17 non-series commits
   - author/reviewer role stat
-    - no role, no role : 27 commits
-    - no role, reviewer: 5 commits
-    - no role, maintainer: 2 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 38 commits
+    - no role, reviewer: 18 commits
+    - no role, maintainer: 6 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 4 commits
     - maintainer, nobody: 1 commits
@@ -196,113 +197,116 @@
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
-- mm-unstable: 30 total, 1 (23) series, 7 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 12 commits
-    - no role, reviewer: 13 commits
-    - no role, maintainer: 4 commits
-  - full commits list
-    - 20fd08cd500a "mm: fix typos in various comments"
+    - c2d4ccfbba3f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - 5d1d225f0156 "mm: remove the unused zone->unaccepted_cleanup"
+    - 7c7180be976c "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
-    - 3656fa5d823d "arch, mm: promote DEBUG_WX to CHECK_WX"
+    - 2e83e2ce34ff "arch, mm: promote DEBUG_WX to CHECK_WX"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
-      - 3b0dbf13300c "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+      - ad2747979368 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - f01f62d48bc2 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - a8c5020eeb96 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 4fedc9c094a6 "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - dff2d55bf794 "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - 130854c9316d "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - da7acb8982ed "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-    - 05aa46b91035 "mm: disallow ioremap'ing ordinary RAM in generic_access_phys()"
+    - 4590752e20aa "mm: disallow ioremap'ing ordinary RAM in generic_access_phys()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013-generic_access_phys-v1-1-b3963ef76e37@kernel.org
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39 commits)
-      - ae6cd0c8c523 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get" (0/39)
+      - f85eb0656c40 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get" (0/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-0-1aa3c9b139f9@kernel.org
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-1-1aa3c9b139f9@kernel.org
-      - 3088291377db "mm/vma: introduce and use vma_[flags_]can_merge()" (1/39)
+      - 86a779c53204 "mm/vma: introduce and use vma_[flags_]can_merge()" (1/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-2-1aa3c9b139f9@kernel.org
-      - 36d408fa5fb6 "mm: consistently validate VMA state after mmap[_prepare] hooks" (2/39)
+      - 9cae38dc11da "mm: consistently validate VMA state after mmap[_prepare] hooks" (2/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-3-1aa3c9b139f9@kernel.org
-      - 4b4911755e64 "mm: make map_kernel_pages_[prepare,complete] internal and unexported" (4/39)
+      - 2a234f79d416 "mm: make map_kernel_pages_[prepare,complete] internal and unexported" (4/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-5-1aa3c9b139f9@kernel.org
-      - bcf4b3ed54bc "mm/vma: tidy up map kernel pages enum values" (5/39)
+      - 4852f3421456 "mm/vma: tidy up map kernel pages enum values" (5/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-6-1aa3c9b139f9@kernel.org
-      - 26ae535bbe3e "mm: assert mmap lock held, use new flags API in vm_insert_page[s]" (6/39)
+      - dad8e88fcfce "mm: assert mmap lock held, use new flags API in vm_insert_page[s]" (6/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-7-1aa3c9b139f9@kernel.org
-      - b47cce77c275 "mm: add mmap action for discontiguous kernel page mapping" (7/39)
+      - b7b4d8f37a4f "mm: add mmap action for discontiguous kernel page mapping" (7/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-8-1aa3c9b139f9@kernel.org
-      - 7be8b60ae66a "mm/vma: add vma[_flags]_is_mm_managed() predicates" (14/39)
+      - 7fdbc26b69c0 "mm/vma: add vma[_flags]_is_mm_managed() predicates" (14/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-15-1aa3c9b139f9@kernel.org
-      - 3da20115224d "mm/vma: add and use vma_[flags]_is_fixed_mapping" (16/39)
+      - 9201d0f5b9d5 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (16/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-17-1aa3c9b139f9@kernel.org
-      - 0862aad00510 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback" (22/39)
+      - 61e012ab9a1c "mm/mlock: clear VMA_LOCKED_MASK over mmap callback" (22/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-23-1aa3c9b139f9@kernel.org
-      - 393abc8d944d "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/39)
+      - aea83f2694ed "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-24-1aa3c9b139f9@kernel.org
-      - e9d435e24fac "mm: remove VMA_IO_BIT check in vma[_flags]_is_mm_managed()" (25/39)
+      - 88d77002e1a1 "mm: remove VMA_IO_BIT check in vma[_flags]_is_mm_managed()" (25/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-26-1aa3c9b139f9@kernel.org
-      - 0fd9a8a4cb3a "mm: remove hugetlb_inline.h" (26/39)
+      - 94c86564538e "mm: remove hugetlb_inline.h" (26/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 45e44f8f51e2 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
+      - 44debd840ec9 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - 405da0e4e741 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - e7806f53a595 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS" (36/39)
+      - 72a993449cb0 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS" (36/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-37-1aa3c9b139f9@kernel.org
-      - 0ca9235a472c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - e33a7d78d000 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 72d01d9353f4 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - dc0b17144d62 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
-    - d6e3634fe440 "mm: fix missing page-table destructor in pagetable_free()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261010112457.49485-2-songmuchun@bytedance.com
-    - a6e8d9ab122d "mm: stop recalculating min_free_kbytes once set by userspace"
+    - 397e08760552 "mm: stop recalculating min_free_kbytes once set by userspace"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
       - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
       - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
+- mm-unstable: 2 total, 2 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
+      - e54a10e758f0 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
+      - d247db742a0d "mm: fix missing page-table destructor in pagetable_free()" (None/None)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261010112457.49485-2-songmuchun@bytedance.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 8b19d55d0b74 "mm: unqueue deferred split folios outside the lruvec lock"
+    - 914a87cba06c "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]

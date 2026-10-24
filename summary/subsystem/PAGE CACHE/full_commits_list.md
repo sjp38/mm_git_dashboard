@@ -1,11 +1,11 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 0 (5) series, 2 non-series commits
+- mm-stable: 13 total, 1 (10) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 3 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 6 commits
     - reviewer, no role : 2 commits
   - full commits list
     - e59c9a971a9f "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
@@ -29,36 +29,35 @@
       - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-- mm-unstable: 7 total, 1 (5) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 6 commits
-  - full commits list
     - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4 commits)
-      - 90f037f37b9f "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
+      - d1450631619d "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-      - 64cc01a5622c "mm/truncate: look up the end-edge straddler by index" (1/4)
+      - f47dee903b9f "mm/truncate: look up the end-edge straddler by index" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-      - 3b0dbf13300c "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+      - ad2747979368 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - 1bf7801ce400 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
+      - f9be69fcacf0 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
-      - 0fd9a8a4cb3a "mm: remove hugetlb_inline.h" (26/39)
+      - 94c86564538e "mm: remove hugetlb_inline.h" (26/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-    - 97fe9fa0379b "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+    - 8f9039840588 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
-    - cad06d043d9b "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 4a2fb42336e8 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

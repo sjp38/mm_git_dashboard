@@ -7,13 +7,13 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260927162419.820609-1-cmllamas@google.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 75 total, 8 (55) series, 20 non-series commits
+- mm-stable: 94 total, 10 (63) series, 31 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 11 commits
-    - no role, no role : 29 commits
-    - no role, reviewer: 15 commits
-    - no role, maintainer: 9 commits
-    - maintainer, nobody: 9 commits
+    - no role, nobody: 12 commits
+    - no role, no role : 40 commits
+    - no role, reviewer: 19 commits
+    - no role, maintainer: 10 commits
+    - maintainer, nobody: 11 commits
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
@@ -265,76 +265,72 @@
       - 9640bb559a5d "selftests/mm: zap whole PTE tables in the khugepaged race harness" (18/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-20-kirill@shutemov.name
-- mm-unstable: 20 total, 2 (8) series, 12 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 12 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 1 commits
-    - maintainer, nobody: 2 commits
-  - full commits list
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - 307ca7179014 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - bd212a7dbdb1 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - 3ee81f371d1f "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - f6c9f1aab305 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - 1ab06a04863f "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+    - 52b64a9a7eed "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
-      - 9a55862c8903 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+      - f60ee3f51f28 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
         - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - af967c4013e8 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
+      - 6d6404c897a2 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
-      - 4d79ce927faf "kselftest: mm: integrate huge page checks" (2/4)
+      - f47d99c9beb3 "kselftest: mm: integrate huge page checks" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
-      - 3ef571ff1b1b "kselftest: mm: remove check_huge_shmem()" (3/4)
+      - 49c77c5de353 "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
-      - e1e9e2dfce37 "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
+      - 18ab75fb3cd2 "Docs/mm/damon/design: document damos quota goal complement flag" (5/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-7-sj@kernel.org
-      - 19e53b67d73a "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
+      - 0a2965de3ddc "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-8-sj@kernel.org
-    - ebb28a1ebab4 "selftests/mm: mrelease_test: fix retry limit"
+    - 8930760d468d "selftests/mm: mrelease_test: fix retry limit"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
-    - ec907d58052c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+    - 2dc36cf60dde "docs: hugetlbpage.rst: fix typo in per-node attribute description"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 10eb01f36da1 "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
+    - ecaccc8c889e "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
-    - e3dd3a48327f "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+    - cbe319858c1d "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
-    - 6e5fe3191fff "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
+    - 9f5c2aec3388 "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261011163527.95988-1-zenghui.yu@linux.dev
-    - 59442ea21c30 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+    - 4425c6730022 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
-    - fde92a27d21b "selftests/mm: report the configuration check on stderr"
+    - 4a0ef6078731 "selftests/mm: report the configuration check on stderr"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261014200137.1364121-1-sashal@kernel.org
-    - 036511252ce7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+    - 7135a05838e8 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
-    - a16a9f1b280d "selftests/mm: skip hugetlb cgroup v2 tests without the needed controllers"
+    - 8730e622bfff "selftests/mm: skip hugetlb cgroup v2 tests without the needed controllers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016-bug-selftests-mm-hugetlb-cgroup2-skip-v1-1-7c78883a67b4@gmail.com
-    - 33cdbb4b2ce1 "mm: bdi: reset min_ratio after the sysfs attributes are gone"
+    - b428f1966821 "mm: bdi: reset min_ratio after the sysfs attributes are gone"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261017030620.793108-1-nickolai@csail.mit.edu
-    - 86b2c543aa7e "selftests/mm: merge: keep the far mremap() targets in the carveout"
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 8b8435b73f01 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

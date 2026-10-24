@@ -1,10 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 4 total, 1 (2) series, 2 non-series commits
+- mm-stable: 7 total, 1 (5) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 2 commits
+    - no role, no role : 3 commits
+    - no role, reviewer: 4 commits
   - full commits list
     - d3863210464f "mm/ksm: mark migration stores with WRITE_ONCE()"
       - Authored by no role player, reviewed by no role player
@@ -21,20 +21,22 @@
     - 1e1ef39523fc "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-- mm-unstable: 3 total, 0 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
-  - full commits list
-      - 405da0e4e741 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - 0ca9235a472c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - e33a7d78d000 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 139767cfd8b1 "mm/ksm: keep soft-dirty when merging a page"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

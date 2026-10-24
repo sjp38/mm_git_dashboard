@@ -1,8 +1,9 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 4 total, 1 (4) series, 0 non-series commits
+- mm-stable: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
     - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5 commits)
@@ -19,13 +20,10 @@
       - 69567ac40ee3 "mm: selftests: Add shmem into memory failure test" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 20fd08cd500a "mm: fix typos in various comments"
+    - c2d4ccfbba3f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

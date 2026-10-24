@@ -4,16 +4,16 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - a01c45e707f4 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+    - a34f8fdd54d0 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
       - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
-- mm-stable: 25 total, 4 (18) series, 7 non-series commits
+- mm-stable: 46 total, 5 (30) series, 16 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 6 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 11 commits
+    - no role, nobody: 3 commits
+    - no role, no role : 10 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 26 commits
     - maintainer, no role : 3 commits
     - maintainer, reviewer: 1 commits
   - full commits list
@@ -100,87 +100,85 @@
       - 23fac055c211 "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-2-2b6d8c2bdc36@kylinos.cn
-- mm-unstable: 24 total, 2 (15) series, 9 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 6 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 15 commits
-  - full commits list
-      - 4c45ef16a1b4 "mm/hugetlb: fix use-after-free of a new anon folio" (1/10)
+      - 824cc56bf43c "mm/hugetlb: fix use-after-free of a new anon folio" (1/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
-      - 06a0f8061b4d "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte()" (2/10)
+      - d8a9cd7fd2fb "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte()" (2/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
-      - 823d66601617 "mm/hugetlb: unmap the page where the other VMA maps it" (3/10)
+      - ae99c503eb36 "mm/hugetlb: unmap the page where the other VMA maps it" (3/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
-      - 3b4d5b1103ab "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held" (4/10)
+      - d42032c0fe3c "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held" (4/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
-      - 3f01125c99f3 "mm/hugetlb: fix endless write fault on a leftover uffd bit" (5/10)
+      - f61e1cf15fb4 "mm/hugetlb: fix endless write fault on a leftover uffd bit" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
-      - c9cabf385cbe "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs" (6/10)
+      - 811777d82038 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
-      - c9ff530330c4 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs" (7/10)
+      - c37e9d9411a1 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs" (7/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
-      - 952533a342df "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry" (8/10)
+      - f6605fc6b14b "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry" (8/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
     - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2 commits)
-      - eb292be388b9 "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat" (0/2)
+      - 92635a3ffe8b "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
-      - a8ead11eb518 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
+      - 02e0c8cc2815 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-    - 20fd08cd500a "mm: fix typos in various comments"
+    - c2d4ccfbba3f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - bccea2d3ff0b "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+    - bdf6fbf21268 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-    - 824eba1316e7 "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
+    - 1a5c751385dc "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/tencent_AA61551D1F50E61F46C8542F5C8874512C05@qq.com
-      - e33a7d78d000 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - ec907d58052c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+    - 2dc36cf60dde "docs: hugetlbpage.rst: fix typo in per-node attribute description"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 17239ca2f2b3 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
+    - fa71cee86530 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
-    - 016ae556b64d "mm/hugetlb: prefix log messages via pr_fmt"
+    - 4d1a248a38c6 "mm/hugetlb: prefix log messages via pr_fmt"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261010092333.137126-1-lienze@kylinos.cn
-    - 73362de349dd "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
+    - 1b0f9f70a30f "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261009142010.552614-1-lienze@kylinos.cn
-    - f68da88757ad "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
+    - bd918fca0207 "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261014031147.444733-1-lienze@kylinos.cn
-    - f50256b67ff5 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
+    - 514c9247db30 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
+  - full commits list
     - series "mm/hugetlb: fix mremap bugs", v3. (3 commits)
-      - 6d4b572ceccf "mm/hugetlb: fix mremap move length truncation" (0/3)
+      - d6d21222aa6a "mm/hugetlb: fix mremap move length truncation" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 38893b4f7eeb "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - 4f05d73c3e33 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
+      - 29f86ec94dc5 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

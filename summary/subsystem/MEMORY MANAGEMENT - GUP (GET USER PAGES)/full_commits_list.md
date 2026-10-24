@@ -1,9 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 9 total, 1 (7) series, 2 non-series commits
+- mm-stable: 11 total, 1 (9) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 9 commits
+    - no role, no role : 10 commits
+    - no role, maintainer: 1 commits
   - full commits list
     - 4f7d72267347 "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
@@ -37,17 +38,13 @@
       - d2b82fa39fda "selftests/mm: add a GUP selftest" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - fd6f68986821 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (20/39)
+      - 2d2b1c508f21 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (20/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-21-1aa3c9b139f9@kernel.org
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -3,21 +3,49 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 27 -> 27 commits (no change)
-  - series: 8 (24) -> 8 (24) (no change)
-    - no role, no role : 10 -> 10 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+- mm-stable: 27 -> 33 commits
+  - series: 8 (24) -> 8 (26)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 10 -> 11 commits
+    - no role, reviewer: 3 -> 4 commits
+    - no role, maintainer: 7 -> 9 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - c2d4ccfbba3f "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+    - f9168f2f0b06 "mm/swap: submit the last readahead batch before unplugging"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
+    - 03825d869f3f "mm/swap, PM: hibernate: atomically replace hibernation pin"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+    - 60f34fedf3a4 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
+- mm-unstable: 7 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,14 +5,15 @@
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - 83c1d5091910 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - ab52438da46d "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
-- mm-stable: 3 total, 2 (3) series, 0 non-series commits
+- mm-stable: 10 total, 2 (8) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
+    - no role, no role : 4 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 3 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
@@ -28,34 +29,32 @@
       - d96082aa3504 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-- mm-unstable: 8 total, 0 (6) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 4 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-      - 0fd9a8a4cb3a "mm: remove hugetlb_inline.h" (26/39)
+      - 94c86564538e "mm: remove hugetlb_inline.h" (26/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - d2e8fcf3b0ae "mm/uffd: use predicates for userfaultfd checks" (31/39)
+      - fb700342f506 "mm/uffd: use predicates for userfaultfd checks" (31/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-32-1aa3c9b139f9@kernel.org
-      - 0ca9235a472c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - e33a7d78d000 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - f50256b67ff5 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
+    - 514c9247db30 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
-    - d4da405e605e "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
+    - 454143aeb4c6 "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261012201514.97015-1-cenzhang@linux.microsoft.com
-      - 7f76bb22cd1d "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - 38893b4f7eeb "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

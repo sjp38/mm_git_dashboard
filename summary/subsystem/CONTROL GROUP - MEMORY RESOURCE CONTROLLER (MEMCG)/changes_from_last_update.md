@@ -3,24 +3,67 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 41 -> 41 commits (no change)
-  - series: 9 (33) -> 9 (33) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-stable: 41 -> 50 commits
+  - series: 9 (33) -> 10 (38)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 24 -> 24 commits (no change)
+    - no role, reviewer: 1 -> 6 commits
+    - no role, maintainer: 24 -> 26 commits
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-unstable: 8 -> 9 commits
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, reviewer: 0 -> 1 commits
-  - new commits
-    - bf49bc9639d7 "mm/page_counter: use WRITE_ONCE() for emin/elow when parent is the root"
+  - changed commits
+    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
+      - 02e0c8cc2815 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
+    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
+      - 127293b445ef "memcg: keep swap charging under RCU protection (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
+      - ea74172be27d "memcg: base swap charge accounting on memcgid root status (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
+      - 0262a5ee845c "memcg: manipulate memcg private ID references by ID (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
+      - 8290f45995f5 "memcg: move memcg private ID refcount to objcg (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+    - c2d4ccfbba3f "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - faaf8b406c51 "mm/shrinker: allocate shrinker_info_unit from a dedicated kmem_cache"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261019-vstor-144715-shrinker_info_unit-kmem_cache-v3-1-0fb061e09bf4@virtuozzo.com
+    - 30a397468e10 "mm/memcontrol: publish null pointer before dropping css reference"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261021010051.1529261-1-joshua.hahnjy@gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260928192349.3432886-1-joshua.hahnjy%40gmail.com [1]
+      - Link: https://lore.kernel.org/all/atfMngq7nyZpt4u-@linux.dev/ [2]
+    - 51542d55bcd5 "mm/page_counter: use WRITE_ONCE() for emin/elow when parent is the root"
       - Authored by a maintainer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20261021204818.3431099-1-shakeel.butt@linux.dev
+- mm-unstable: 9 -> 1 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 5 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - new commits
+    - 644ddedb6aa6 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261023222313.3979455-1-tjmercier@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

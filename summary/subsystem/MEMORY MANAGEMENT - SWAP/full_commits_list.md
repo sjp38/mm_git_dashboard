@@ -1,11 +1,12 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 27 total, 8 (24) series, 3 non-series commits
+- mm-stable: 33 total, 8 (26) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, no role : 10 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 7 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 11 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 9 commits
     - reviewer, nobody: 1 commits
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 4 commits
@@ -109,32 +110,29 @@
     - e4ea16e00288 "mm/swapops: remove unused is_hwpoison_entry()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-- mm-unstable: 7 total, 0 (2) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-    - 20fd08cd500a "mm: fix typos in various comments"
+    - c2d4ccfbba3f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - 14210f2e8eb7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 0ca9235a472c "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - c996df2a2ae9 "mm/swap: submit the last readahead batch before unplugging"
+    - f9168f2f0b06 "mm/swap: submit the last readahead batch before unplugging"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-    - 65b144c0dae0 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 03825d869f3f "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-    - e894fb4e90ce "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+    - 60f34fedf3a4 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
-    - eb6d6e51d134 "mm: make swapoff interruptible when unusing mms/shmem"
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 83ed761e3165 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

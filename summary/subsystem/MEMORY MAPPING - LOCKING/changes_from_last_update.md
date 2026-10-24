@@ -3,13 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+- mm-stable: 3 -> 5 commits
+  - series: 1 (3) -> 2 (4)
+    - no role, no role : 2 -> 4 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 6a9ef02c60bf "mm/vma: const-ify vma_assert_stabilised() and associated functions (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
+    - 7135a05838e8 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
+- mm-unstable: 2 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -4,15 +4,44 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-stable: 10 -> 10 commits (no change)
-  - series: 2 (9) -> 2 (9) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 10 -> 16 commits
+  - series: 2 (9) -> 3 (11)
+    - no role, nobody: 2 -> 4 commits
+    - no role, no role : 8 -> 11 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - c2d4ccfbba3f "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - 499baaff382a "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
+    - series "mm/vmalloc: fix vmalloc_dump_obj VA lookup", v4. (2)
+      - f4399c9927c4 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-0-6f288a431edc@linux.dev
+        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-1-6f288a431edc@linux.dev
+      - 4b52da012040 "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-2-6f288a431edc@linux.dev
+    - 101fea09a860 "mm: kmsan: fix iounmap metadata teardown"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
+      - Link: https://lkml.iu.edu/2609.3/12748.html
+    - bf033d04366e "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20261004071639.119857-1-jiangwenxiaomi@gmail.com
+- mm-unstable: 7 -> 1 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 3 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,9 +1,9 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 3 total, 1 (3) series, 0 non-series commits
+- mm-stable: 5 total, 2 (4) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 4 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
@@ -17,18 +17,15 @@
       - a5c0a39d0e57 "mm: change the contract for free_pgtables(), update docs" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
-- mm-unstable: 2 total, 1 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-  - full commits list
     - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3 commits)
-      - 12dda8f44beb "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
+      - 6a9ef02c60bf "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
-    - 036511252ce7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+    - 7135a05838e8 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
