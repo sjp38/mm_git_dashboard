@@ -34,7 +34,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 139767cfd8b1 "mm/ksm: keep soft-dirty when merging a page"
+    - 869ffea46b2e "mm/ksm: keep soft-dirty when merging a page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

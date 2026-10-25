@@ -179,28 +179,28 @@
     - no role, nobody: 4 commits
     - no role, no role : 3 commits
   - full commits list
-    - 8b8435b73f01 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - 97dfabb29a12 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 1d71aba42251 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - 470ff8b760ca "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - e54a10e758f0 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - c8ddbbfc994f "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - c942077da7b7 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - bdca0b172e65 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - d979bc859e3f "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - 3b99f1993078 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - bf85cbd59da9 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 7a6f859605aa "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - cbb1f59ee921 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 327fb563a1e2 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -84,15 +84,15 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 097f0b0e7065 "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 8a4679d919e3 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 4457a5b340ae "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - f514eebf46df "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
-    - 9d81cede6cff "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - f8ca800231d7 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -3,24 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 4 commits
-  - series: 0 (1) -> 0 (3)
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - da7acb8982ed "mm/sparse: remove SECTION_MARKED_PRESENT (9/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 82b1ee68b5fd "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page() (12/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
-- mm-unstable: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

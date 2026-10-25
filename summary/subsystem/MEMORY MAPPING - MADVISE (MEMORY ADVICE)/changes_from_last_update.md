@@ -3,66 +3,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 14 commits
-  - series: 0 (2) -> 0 (8)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 5 -> 9 commits
-    - no role, reviewer: 0 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - c2d4ccfbba3f "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 44debd840ec9 "mm/vma: introduce vma[_flags]_is_mm_backed() (29/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - fc95d1cf4a13 "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed() (30/39)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-31-1aa3c9b139f9@kernel.org
-      - 1d1104fe6dc6 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (32/39)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - f5cfc8e3b20a "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
-    - 246c8cc33438 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
-- mm-unstable: 9 -> 2 commits
-  - series: 0 (6) -> 1 (2)
+- mm-stable: 14 -> 14 commits (no change)
+  - series: 0 (8) -> 0 (8) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 1 commits
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - series "mm: avoid losing atomic VMA flags", v1. (4)
-      - e54a10e758f0 "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - 5b8a317f491b "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

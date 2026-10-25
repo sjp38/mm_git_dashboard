@@ -22,29 +22,29 @@
     - no role, no role : 5 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - a34f8fdd54d0 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+    - 9a4de511d139 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
       - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
-    - dc6b7ec19fb3 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - 16b0c0fe6ff8 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - 65805c050183 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - d27db49f42d0 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - ab52438da46d "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - dc628742b994 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
-      - 3f561df4d2a1 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
+      - 6a4a439ef684 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-    - 782c02b0635b "mm: memory: fix truncation removing mapped folios"
+    - acc7b164f562 "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
-    - be93ac85599e "mm: fix address wraparound when scanning large folio PTEs"
+    - 940f338eed08 "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
 - mm-stable: 498 total, 72 (376) series, 122 non-series commits
@@ -1781,80 +1781,80 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - 4a2fb42336e8 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+    - f94f771206b9 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
-    - e08f2ab6e103 "mm/page_alloc: let the highest memory node recover from hopeless state"
+    - 4dc24f91ff72 "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
     - series "mm/hugetlb: fix mremap bugs", v3. (3 commits)
-      - d6d21222aa6a "mm/hugetlb: fix mremap move length truncation" (0/3)
+      - c2faadc6e0c0 "mm/hugetlb: fix mremap move length truncation" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 38893b4f7eeb "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 357e9d03b6cb "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - 29f86ec94dc5 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
+      - 96b0bbc2cffa "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
-    - 367de6dc5a32 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - 7429b17714d5 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-    - 1d71aba42251 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - 470ff8b760ca "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - e54a10e758f0 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - c8ddbbfc994f "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - c942077da7b7 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - bdca0b172e65 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - 5b8a317f491b "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
+      - 084f566c0aec "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
-      - d979bc859e3f "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - 3b99f1993078 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - 644ddedb6aa6 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
+    - 6284b4486f16 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023222313.3979455-1-tjmercier@google.com
-    - 139767cfd8b1 "mm/ksm: keep soft-dirty when merging a page"
+    - 869ffea46b2e "mm/ksm: keep soft-dirty when merging a page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 097f0b0e7065 "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 8a4679d919e3 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 4457a5b340ae "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - f514eebf46df "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
-    - 9d81cede6cff "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - f8ca800231d7 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
-    - 83ed761e3165 "mm: make swapoff interruptible when unusing mms/shmem"
+    - 0f4fc55b61e6 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - bf85cbd59da9 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 7a6f859605aa "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - d10295141a98 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
+    - a2abad0d7f45 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
 - mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 914a87cba06c "mm: unqueue deferred split folios outside the lruvec lock"
+    - 7516697861e3 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-    - 65b43d232ea9 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - d736bff2e1d1 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

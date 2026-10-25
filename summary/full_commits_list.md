@@ -36,44 +36,44 @@
     - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - a34f8fdd54d0 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+    - 9a4de511d139 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
       - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
-    - dc6b7ec19fb3 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - 16b0c0fe6ff8 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - 65805c050183 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - d27db49f42d0 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
-    - f8f754bb4495 "xarray: fix index jumping backwards in xas_find()"
+    - a53d938241f5 "xarray: fix index jumping backwards in xas_find()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com
-    - ccecc55fe9c5 "assoc_array: discard shortcut when collapsing a leaf-only node"
+    - c4abd3dbba07 "assoc_array: discard shortcut when collapsing a leaf-only node"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260925080548.2505640-1-4ncienth@gmail.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - ab52438da46d "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - dc628742b994 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
-      - 3f561df4d2a1 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
+      - 6a4a439ef684 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-    - e76b0fdf13ba "lib/base64: silence clang-24 -Wconstant-conversion with diag pragmas"
+    - b1d720112358 "lib/base64: silence clang-24 -Wconstant-conversion with diag pragmas"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261008-base64-silence-clang-24-constant-conversion-v1-1-0858b60b23c8@kernel.org
       - Link: https://github.com/llvm/llvm-project/commit/a5ef934a8d295dc03be3960f2b3744ec2e53238e [1]
       - Link: https://github.com/llvm/llvm-project/issues/223923#issuecomment-6056856245 [2]
       - Link: https://github.com/llvm/llvm-project/pull/226775#pullrequestreview-5454407389 [3]
-    - 782c02b0635b "mm: memory: fix truncation removing mapped folios"
+    - acc7b164f562 "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
-    - be93ac85599e "mm: fix address wraparound when scanning large folio PTEs"
+    - 940f338eed08 "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-    - a26e9e40d1f9 "iov_iter: validate extracted segment for bvec alignment"
+    - 39449a507ae2 "iov_iter: validate extracted segment for bvec alignment"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261015061907.2713943-1-4ncienth@gmail.com
 - mm-stable: 752 total, 106 (574) series, 178 non-series commits
@@ -2656,7 +2656,7 @@
     - 183895979c44 "mm: multi-gen LRU: fix NULL lruvec->pgdat deref with memcg disabled on cmdline"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261017050928.128582-1-sidchintamaneni@gmail.com
-- mm-unstable: 25 total, 4 (11) series, 14 non-series commits
+- mm-unstable: 25 total, 4 (12) series, 13 non-series commits
   - author/reviewer role stat
     - no role, nobody: 8 commits
     - no role, no role : 10 commits
@@ -2664,87 +2664,89 @@
     - no role, maintainer: 4 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 4a2fb42336e8 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+    - series "mm: Fix page-table teardown during memory hot-remove", v3. (2 commits)
+      - e4a256752788 "mm: fix missing page-table destructor in pagetable_free()" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
+      - 45876c538f89 "arm64/mm: fix destructor for unconstructed hotplug page tables" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-5-songmuchun@bytedance.com
+    - f94f771206b9 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
-    - 8b8435b73f01 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - 97dfabb29a12 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - e08f2ab6e103 "mm/page_alloc: let the highest memory node recover from hopeless state"
+    - 4dc24f91ff72 "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
     - series "mm/hugetlb: fix mremap bugs", v3. (3 commits)
-      - d6d21222aa6a "mm/hugetlb: fix mremap move length truncation" (0/3)
+      - c2faadc6e0c0 "mm/hugetlb: fix mremap move length truncation" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 38893b4f7eeb "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 357e9d03b6cb "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - 29f86ec94dc5 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
+      - 96b0bbc2cffa "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
-    - 367de6dc5a32 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - 7429b17714d5 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-    - 1d71aba42251 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - 470ff8b760ca "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
-    - 9366cc6387af "xarray: clear the new head's parent before freeing the old head"
+    - d137402f8aa0 "xarray: clear the new head's parent before freeing the old head"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261012202549.772887-1-nickolai@csail.mit.edu
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - e54a10e758f0 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - c8ddbbfc994f "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - c942077da7b7 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - bdca0b172e65 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - 5b8a317f491b "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
+      - 084f566c0aec "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
-      - d979bc859e3f "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - 3b99f1993078 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - 644ddedb6aa6 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
+    - 6284b4486f16 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023222313.3979455-1-tjmercier@google.com
-    - 139767cfd8b1 "mm/ksm: keep soft-dirty when merging a page"
+    - 869ffea46b2e "mm/ksm: keep soft-dirty when merging a page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 097f0b0e7065 "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 8a4679d919e3 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 624810778968 "crypto: acomp - enforce MAX_SYNC_COMP_REQSIZE" (1/3)
+      - 85dfeb061ba9 "crypto: acomp - enforce MAX_SYNC_COMP_REQSIZE" (1/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261017160918.2738626-3-usama.arif@linux.dev
-      - 4457a5b340ae "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - f514eebf46df "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
-      - d247db742a0d "mm: fix missing page-table destructor in pagetable_free()" (None/None)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261010112457.49485-2-songmuchun@bytedance.com
-    - 6e7d4051b0cb "arm64/mm: fix destructor for unconstructed hotplug page tables"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261010112457.49485-5-songmuchun@bytedance.com
-    - 9d81cede6cff "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - f8ca800231d7 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
-    - 83ed761e3165 "mm: make swapoff interruptible when unusing mms/shmem"
+    - 0f4fc55b61e6 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - bf85cbd59da9 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 7a6f859605aa "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - cbb1f59ee921 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 327fb563a1e2 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
-    - d10295141a98 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
+    - a2abad0d7f45 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
 - mm-new: 3 total, 0 (0) series, 3 non-series commits
@@ -2752,11 +2754,11 @@
     - no role, nobody: 1 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 914a87cba06c "mm: unqueue deferred split folios outside the lruvec lock"
+    - 7516697861e3 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-    - 65b43d232ea9 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - d736bff2e1d1 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
@@ -2764,7 +2766,7 @@
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
       - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
       - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
-    - 09e0a4f618cb "riscv: mm: fix concurrency in mark_new_valid_map()"
+    - 73b6c575e9b3 "riscv: mm: fix concurrency in mark_new_valid_map()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
       - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
@@ -3214,36 +3216,61 @@
       - b6232ca8d194 "scripts/gdb: fix stack depot out-of-bounds diagnostic" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261011023044.1722-3-ue081723@gmail.com
-- mm-nonmm-unstable: 9 total, 2 (4) series, 5 non-series commits
+- mm-nonmm-unstable: 16 total, 3 (10) series, 6 non-series commits
   - author/reviewer role stat
     - no role, nobody: 7 commits
     - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 6 commits
   - full commits list
-    - ec83b96ec8ba "selftests: uevent filtering: don't shrink the socket buffer"
+    - 85eac0076028 "ocfs2/heartbeat: serialize concurrent writes to a region's dev attribute"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261020212339.46591-1-eklavyasingh2106@gmail.com
+    - series "ocfs2: fix stale xattr entry pointers and empty header reads", v1. (6 commits)
+      - 557ba9670999 "ocfs2: read the xattr entry hash before defragmenting the bucket" (0/6)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261024151012.1059683-1-joseph.qi@linux.alibaba.com
+        - Link: https://lore.kernel.org/20261024151012.1059683-2-joseph.qi@linux.alibaba.com
+      - 4820f74ce216 "ocfs2: find the xattr entry again after defragmenting a bucket" (1/6)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261024151012.1059683-3-joseph.qi@linux.alibaba.com
+      - 211b7aa5e065 "ocfs2: find the xattr entry again after converting a block to a bucket" (2/6)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261024151012.1059683-4-joseph.qi@linux.alibaba.com
+      - 4193ab427086 "ocfs2: do not read the entry array of an empty xattr bucket" (3/6)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261024151012.1059683-5-joseph.qi@linux.alibaba.com
+      - 2ebed42165e0 "ocfs2: do not index before the entry array when dividing an empty bucket" (4/6)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261024151012.1059683-6-joseph.qi@linux.alibaba.com
+      - 895b41465f60 "ocfs2: do not read the entry array of an empty xattr block" (5/6)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261024151012.1059683-7-joseph.qi@linux.alibaba.com
+    - b7dd56f7cdab "selftests: uevent filtering: don't shrink the socket buffer"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619-get-swam-a1cd4cca@mheyne-amazon
     - series "dyndbg: fix incorrect mod_ct value in dynamic_debug_init()". (2 commits)
-      - 9c8ffb7f284c "dyndbg: fix incorrect mod_ct value in dynamic_debug_init()" (0/2)
+      - 6b6950b992c5 "dyndbg: fix incorrect mod_ct value in dynamic_debug_init()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260811121831.577848-1-yuntao.wang@linux.dev
         - Link: https://lore.kernel.org/20260811121831.577848-2-yuntao.wang@linux.dev
-      - 1cced5350774 "dyndbg: clean up dynamic_debug_init() to improve readability" (1/2)
+      - 11a7f776dc8a "dyndbg: clean up dynamic_debug_init() to improve readability" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260811121831.577848-3-yuntao.wang@linux.dev
-    - 7251fe046ddb "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
+    - e9ea109eb819 "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
       - Authored by no role player, reviewed by no role player
-    - 6d3c89d4e6be "lib/group_cpus: snapshot cluster masks to keep grouping hotplug invariant"
+    - d75aec89d251 "lib/group_cpus: snapshot cluster masks to keep grouping hotplug invariant"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826171537.4167367-1-Vishal.Badole@amd.com
     - series "squashfs: harden fragment index table sizing". (2 commits)
-      - 2e27b86808f8 "squashfs: fix fragment index table sizing overflow on 32-bit" (0/2)
+      - dba7ac82f3a3 "squashfs: fix fragment index table sizing overflow on 32-bit" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260822143328.68867-1-kmehltretter@gmail.com
         - Link: https://lore.kernel.org/20260822143328.68867-2-kmehltretter@gmail.com
-      - f59913441d2e "squashfs: make the fragment index table bounds check overflow-safe" (1/2)
+      - b8b0ef07e9b5 "squashfs: make the fragment index table bounds check overflow-safe" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260822143328.68867-3-kmehltretter@gmail.com
-    - 5138f4105ba3 "profile: account for partial /proc/profile reads"
+    - eb710ca25f5f "profile: account for partial /proc/profile reads"
       - Authored by no role player, reviewed by nobody
-    - adca1802a471 "profile: simplify /proc/profile read layout"
+    - 001735629ed1 "profile: simplify /proc/profile read layout"
       - Authored by no role player, reviewed by nobody

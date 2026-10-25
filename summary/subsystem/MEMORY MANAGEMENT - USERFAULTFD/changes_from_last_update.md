@@ -4,48 +4,15 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-stable: 3 -> 10 commits
-  - series: 2 (3) -> 2 (8)
-    - no role, no role : 1 -> 4 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 1 -> 3 commits
+- mm-stable: 10 -> 10 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - 94c86564538e "mm: remove hugetlb_inline.h (26/39)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - fb700342f506 "mm/uffd: use predicates for userfaultfd checks (31/39)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-32-1aa3c9b139f9@kernel.org
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 514c9247db30 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
-    - 454143aeb4c6 "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20261012201514.97015-1-cenzhang@linux.microsoft.com
-- mm-unstable: 8 -> 1 commits
-  - series: 0 (6) -> 0 (1)
-    - no role, no role : 4 -> 1 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
