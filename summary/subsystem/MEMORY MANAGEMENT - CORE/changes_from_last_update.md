@@ -5,6 +5,13 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - e9011a65d782 "mm: memory: fix truncation removing mapped folios"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com"
+      - dropped "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
+      - Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com
+      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
 - mm-stable: 77 -> 77 commits (no change)
   - series: 9 (60) -> 9 (60) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -20,19 +27,6 @@
   - series: 2 (2) -> 2 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: Fix page-table teardown during memory hot-remove", v3. (2)
-      - e4a256752788 "mm: fix missing page-table destructor in pagetable_free() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com"
-        - added "Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com"
-        - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-        - added "Cc: <stable@vger.kernel.org> # bf9e4e30f353: x86/mm: use pagetable_free()"
-        - added "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Link: https://lore.kernel.org/20261010112457.49485-2-songmuchun@bytedance.com"
-        - dropped "Cc: <stable@vger.kernel.org> # 6.16-6.18: bf9e4e30f353: x86/mm: use pagetable_free()"
-        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

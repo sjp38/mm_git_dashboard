@@ -330,7 +330,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 97dfabb29a12 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - f097efa21b12 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

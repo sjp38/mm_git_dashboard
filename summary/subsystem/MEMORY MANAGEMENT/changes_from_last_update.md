@@ -8,6 +8,13 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - e9011a65d782 "mm: memory: fix truncation removing mapped folios"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com"
+      - dropped "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
+      - Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com
+      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
 - mm-stable: 498 -> 498 commits (no change)
   - series: 72 (376) -> 72 (376) (no change)
     - no role, nobody: 26 -> 26 commits (no change)
@@ -21,12 +28,37 @@
     - maintainer, nobody: 71 -> 71 commits (no change)
     - maintainer, no role : 37 -> 37 commits (no change)
     - maintainer, reviewer: 8 -> 8 commits (no change)
-- mm-unstable: 19 -> 19 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
+- mm-unstable: 19 -> 23 commits
+  - series: 3 (9) -> 4 (12)
     - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+    - no role, no role : 6 -> 7 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 0 -> 3 commits
+  - new commits
+    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
+    - series "mm/damon: fix three race bugs in sysfs and core", v1. (3)
+      - a8e1f6daa376 "mm/damon/sysfs-schemes: hold damon_sysfs_lock in target_metric_store() (0/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025164808.152048-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261025164808.152048-2-sj@kernel.org
+        - Link: https://sashiko.dev/#/bug/linux-7f814c9a-986f-4103-a55a-ef9537dcf62b [1]
+        - Link: https://lore.kernel.org/20261021005234.94107-1-sj@kernel.org [2]
+      - 22ab11bba18a "mm/damon/core: move static variable last_nr_regions to damon_ctx (1/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025164808.152048-3-sj@kernel.org
+      - adc5df12bea5 "mm/damon/core: move static variable rotation to damon_ctx (2/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025164808.152048-4-sj@kernel.org
+  - changed commits
+    - 0a0539b40036 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Fixes: dcfe378c81f7 ("lib: introduce support for page allocation tagging")"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Fixes: d224eb0287fb ("codetag: debug: mark codetags for reserved pages as empty")"
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)

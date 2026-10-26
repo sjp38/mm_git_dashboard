@@ -174,33 +174,39 @@
     - 68cb098eadda "mm/vma: avoid broken uffd merge on mremap"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261020-uffd-remap-fix-v1-1-0f34fc181f0a@kernel.org
-- mm-unstable: 7 total, 1 (3) series, 4 non-series commits
+- mm-unstable: 9 total, 1 (3) series, 6 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
-    - no role, no role : 3 commits
+    - no role, no role : 5 commits
   - full commits list
-    - 97dfabb29a12 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - f097efa21b12 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 470ff8b760ca "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - 048c41841479 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - c8ddbbfc994f "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 5b7f744d2e10 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - bdca0b172e65 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - 677a216bb3c5 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - 3b99f1993078 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - 1a9a0c4238c8 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - 7a6f859605aa "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 79da24ec131f "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
+    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
+    - af2cfce5fcf1 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - 327fb563a1e2 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - fd0fecc8244f "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

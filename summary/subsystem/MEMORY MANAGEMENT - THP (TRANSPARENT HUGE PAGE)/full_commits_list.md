@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 6a4a439ef684 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
+      - 74cce2864241 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-stable: 66 total, 9 (57) series, 9 non-series commits

@@ -11,10 +11,17 @@
     - no role, reviewer: 14 -> 14 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 9 commits
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 5 commits
+  - new commits
+    - 79da24ec131f "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
+    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

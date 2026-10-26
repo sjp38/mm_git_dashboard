@@ -12,6 +12,13 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 0a0539b40036 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Fixes: dcfe378c81f7 ("lib: introduce support for page allocation tagging")"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Fixes: d224eb0287fb ("codetag: debug: mark codetags for reserved pages as empty")"
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
