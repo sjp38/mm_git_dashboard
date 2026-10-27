@@ -29,7 +29,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+    - db3fdbd2577e "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

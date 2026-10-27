@@ -10,13 +10,6 @@
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - e9011a65d782 "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com"
-      - dropped "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
-      - Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com
-      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
 - mm-stable: 752 -> 752 commits (no change)
   - series: 106 (574) -> 106 (574) (no change)
     - no role, nobody: 61 -> 61 commits (no change)
@@ -30,44 +23,91 @@
     - maintainer, nobody: 100 -> 100 commits (no change)
     - maintainer, no role : 42 -> 42 commits (no change)
     - maintainer, reviewer: 9 -> 9 commits (no change)
-- mm-unstable: 25 -> 30 commits
-  - series: 4 (12) -> 5 (15)
-    - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 10 -> 12 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 30 -> 33 commits
+  - series: 5 (15) -> 5 (15) (no change)
+    - no role, nobody: 8 -> 5 commits
+    - no role, no role : 12 -> 14 commits
+    - no role, reviewer: 2 -> 6 commits
     - no role, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 1 -> 4 commits
+    - maintainer, nobody: 4 -> 4 commits (no change)
   - new commits
-    - 79da24ec131f "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
-    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
-    - series "mm/damon: fix three race bugs in sysfs and core", v1. (3)
-      - a8e1f6daa376 "mm/damon/sysfs-schemes: hold damon_sysfs_lock in target_metric_store() (0/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20261025164808.152048-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261025164808.152048-2-sj@kernel.org
-        - Link: https://sashiko.dev/#/bug/linux-7f814c9a-986f-4103-a55a-ef9537dcf62b [1]
-        - Link: https://lore.kernel.org/20261021005234.94107-1-sj@kernel.org [2]
-      - 22ab11bba18a "mm/damon/core: move static variable last_nr_regions to damon_ctx (1/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20261025164808.152048-3-sj@kernel.org
-      - adc5df12bea5 "mm/damon/core: move static variable rotation to damon_ctx (2/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20261025164808.152048-4-sj@kernel.org
-  - changed commits
-    - 0a0539b40036 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - 92ae7c062931 "mm/migrate: untag addresses when querying page nodes"
       - Authored by no role player, reviewed by a reviewer
-      - added "Fixes: dcfe378c81f7 ("lib: introduce support for page allocation tagging")"
+      - Link: https://lore.kernel.org/20261026195330.46757-1-dennylin0707@gmail.com
+    - 641fca16309a "mm/ksm: fix userfaultfd protection during merge and unmerge"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
+      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
+    - f2b32c100ee3 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
+  - changed commits
+    - 1e7ea7037c1e "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
+    - series "mm: avoid losing atomic VMA flags", v1. (4)
+      - 9f740f7a22a8 "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
+      - 3b0f2fad7cce "mm/vma: write lock source VMA before duplicating it in __split_vma() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
+      - ac19dd7310bb "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
+      - cb8e29b8cd3a "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
+    - d519a87e7161 "mm/ksm: keep soft-dirty when merging a page"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
+    - 8dc97fb29fb8 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
+    - db3fdbd2577e "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+      - Authored by no role player, reviewed by no role player
+      - added "Fixes: d9d1c2d81797 ("fs/proc/task_mmu: execute PROCMAP_QUERY ioctl under per-vma locks")"
+      - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
+    - f209fcf4bf03 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name"
+      - added "Cc: Rafael J. Wysocki <rafael.j.wysocki@intel.com>"
       - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Fixes: d224eb0287fb ("codetag: debug: mark codetags for reserved pages as empty")"
-      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-- mm-new: 3 -> 3 commits (no change)
+      - dropped "Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name"
+      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+      - dropped "Cc: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>"
+      - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
+- mm-new: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 2 -> 2 commits (no change)
+  - new commits
+    - 81cd1e96646b "mm/migrate: move NR_FILE_THPS on cross-node migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261025110209.4105994-1-ridong.chen@linux.dev
 - mm-nonmm-stable: 134 -> 134 commits (no change)
   - series: 15 (44) -> 15 (44) (no change)
     - no role, nobody: 41 -> 41 commits (no change)
@@ -76,16 +116,28 @@
     - no role, maintainer: 33 -> 33 commits (no change)
     - maintainer, nobody: 15 -> 15 commits (no change)
     - maintainer, reviewer: 10 -> 10 commits (no change)
-- mm-nonmm-unstable: 16 -> 18 commits
+- mm-nonmm-unstable: 18 -> 24 commits
   - series: 3 (10) -> 3 (10) (no change)
     - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 3 commits
+    - no role, no role : 2 -> 5 commits
+    - no role, maintainer: 3 -> 6 commits
     - maintainer, nobody: 6 -> 6 commits (no change)
   - new commits
-    - da64e58d1da2 "fat: preallocate space before expanding in fat_cont_expand()"
+    - 1b43e66b4c7d "ocfs2: validate move extents against a stable EOF"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261024013021.251898-1-matheus.aalmeida@inf.ufrgs.br
-    - 1c9f81d711ed "fat: hold truncate_lock in fat_write_failed()"
+      - Link: https://lore.kernel.org/pm-ocfs2-move-extents-isize-rrw-v6-395bdee84ea81149068e@gmail.com
+    - 052ea32e6e27 "iov_iter: take an unsigned long segment count in import_iovec()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026180619.4147910-1-parri.andrea@gmail.com
+    - 04d84bc17c86 "panic: zero the dynamically allocated taint buffer"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261024020153.830459-1-nickolai@csail.mit.edu
+    - 9af29f8482ec "ocfs2: wait for filecheck kobject release after a failed add"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261021162105.62525-1-matheus.aalmeida@inf.ufrgs.br
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0087-v6-78f3c3d6d70887d6e0cc@gmail.com
+    - ae2c341c34ce "ocfs2: cache the mount context for dentry lock callbacks"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0012-v9-eeb9084fb29577971229@gmail.com
+    - 01146870c415 "MAINTAINERS: Update Andrea Cervesato's email for LTP"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026-acer_maintainers-v2-1-4cf0f350fdf1@linux.dev

@@ -30,13 +30,18 @@
       - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
   - full commits list
-    - 6a10c7d566e3 "mm/ksm: keep soft-dirty when merging a page"
+    - d519a87e7161 "mm/ksm: keep soft-dirty when merging a page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
+    - 641fca16309a "mm/ksm: fix userfaultfd protection during merge and unmerge"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
+      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

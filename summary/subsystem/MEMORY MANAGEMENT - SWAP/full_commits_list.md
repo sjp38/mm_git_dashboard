@@ -132,9 +132,9 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 12f7429ca1fc "mm: make swapoff interruptible when unusing mms/shmem"
+    - f209fcf4bf03 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
+      - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

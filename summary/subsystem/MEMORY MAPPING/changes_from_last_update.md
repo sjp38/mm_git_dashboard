@@ -11,16 +11,48 @@
     - no role, reviewer: 14 -> 14 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 3 -> 5 commits
-  - new commits
-    - 79da24ec131f "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
-      - Authored by no role player, reviewed by no role player
+    - no role, nobody: 4 -> 1 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 0 -> 3 commits
+  - changed commits
+    - 1e7ea7037c1e "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
+    - series "mm: avoid losing atomic VMA flags", v1. (4)
+      - 9f740f7a22a8 "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
+      - 3b0f2fad7cce "mm/vma: write lock source VMA before duplicating it in __split_vma() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
+      - cb8e29b8cd3a "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
+    - 8dc97fb29fb8 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
       - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
-    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+    - db3fdbd2577e "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by no role player
+      - added "Fixes: d9d1c2d81797 ("fs/proc/task_mmu: execute PROCMAP_QUERY ioctl under per-vma locks")"
       - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

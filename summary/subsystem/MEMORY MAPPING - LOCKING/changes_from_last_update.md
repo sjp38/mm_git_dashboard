@@ -7,12 +7,13 @@
   - series: 2 (4) -> 2 (4) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 91e4082f1cd3 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - db3fdbd2577e "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by no role player
+      - added "Fixes: d9d1c2d81797 ("fs/proc/task_mmu: execute PROCMAP_QUERY ioctl under per-vma locks")"
       - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

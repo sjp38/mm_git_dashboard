@@ -11,8 +11,23 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "mm: avoid losing atomic VMA flags", v1. (4)
+      - 9f740f7a22a8 "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
+      - ac19dd7310bb "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

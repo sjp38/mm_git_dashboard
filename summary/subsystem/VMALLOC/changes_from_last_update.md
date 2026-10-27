@@ -9,9 +9,14 @@
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 11 -> 11 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - f2b32c100ee3 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

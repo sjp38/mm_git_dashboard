@@ -5,13 +5,6 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - e9011a65d782 "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com"
-      - dropped "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
-      - Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com
-      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
 - mm-stable: 77 -> 77 commits (no change)
   - series: 9 (60) -> 9 (60) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -23,10 +16,26 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 3 commits
   - series: 2 (2) -> 2 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 641fca16309a "mm/ksm: fix userfaultfd protection during merge and unmerge"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
+      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
+  - changed commits
+    - series "mm: avoid losing atomic VMA flags", v1. (4)
+      - 9f740f7a22a8 "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
+        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

@@ -16,6 +16,16 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - f209fcf4bf03 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name"
+      - added "Cc: <stable@vger.kernel.org>"
+      - added "Cc: Rafael J. Wysocki <rafael.j.wysocki@intel.com>"
+      - dropped "Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name"
+      - dropped "Cc: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>"
+      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+      - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -192,7 +192,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 8066a6ff9241 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
+    - dc60968966f7 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261023222313.3979455-1-tjmercier@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

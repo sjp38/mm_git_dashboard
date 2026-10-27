@@ -11,10 +11,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - 9e705230a5f8 "mm: fix address wraparound when scanning large folio PTEs"
+    - ac72497c7ea2 "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-    - e9011a65d782 "mm: memory: fix truncation removing mapped folios"
+    - b74d156d8360 "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/4cc521a118564b4145edf0324066ab532fb41181.1792979870.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
@@ -289,26 +289,31 @@
       - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
       - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
       - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
-- mm-unstable: 2 total, 2 (2) series, 0 non-series commits
+- mm-unstable: 3 total, 2 (2) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
   - full commits list
     - series "mm: Fix page-table teardown during memory hot-remove", v3. (2 commits)
-      - eab82f6664fc "mm: fix missing page-table destructor in pagetable_free()" (0/2)
+      - 0bc1c80483fb "mm: fix missing page-table destructor in pagetable_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 5b7f744d2e10 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
-        - Authored by no role player, reviewed by nobody
+      - 9f740f7a22a8 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
+    - 641fca16309a "mm/ksm: fix userfaultfd protection during merge and unmerge"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
+      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 1551cb595876 "mm: unqueue deferred split folios outside the lruvec lock"
+    - 6814f68281f5 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]

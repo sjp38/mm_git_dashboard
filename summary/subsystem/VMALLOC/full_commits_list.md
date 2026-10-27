@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - e85d1cd9083d "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - 3750c1f6ae32 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - c511e4b8b9f5 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - d1ab264df4b0 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-stable: 16 total, 3 (11) series, 5 non-series commits
@@ -72,11 +72,15 @@
     - bf033d04366e "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004071639.119857-1-jiangwenxiaomi@gmail.com
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 1 commits
   - full commits list
-    - 1eb363163057 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
+    - f2b32c100ee3 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
+    - 39274b454e99 "mm/vmalloc: read vm_map_ram block regions from the requested offset"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
