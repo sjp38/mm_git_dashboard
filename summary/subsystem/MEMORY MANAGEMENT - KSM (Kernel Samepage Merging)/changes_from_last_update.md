@@ -1,27 +1,52 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 7 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-- mm-unstable: 1 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
-  - new commits
-    - 641fca16309a "mm/ksm: fix userfaultfd protection during merge and unmerge"
+- mm-stable: 7 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, no role : 3 -> 0 commits
+    - no role, reviewer: 4 -> 0 commits
+  - dropped commits
+    - d3863210464f "mm/ksm: mark migration stores with WRITE_ONCE()"
       - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
+    - series "docs/ksm: fix advisor documentation and comment", v3. (2)
+      - 172c05ebab49 "docs: ksm: fix typos in sysfs knob names (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
+        - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
+      - 585bb36e6ab8 "mm/ksm: fix advisor_min_pages_to_scan description (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
+        - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
+    - 1e1ef39523fc "docs/mm: ksm: use the renamed ksm structure names"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/39)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - 041b9b7eb14f "mm/ksm: fix userfaultfd protection during merge and unmerge"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Reviewed-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
       - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
-  - changed commits
-    - d519a87e7161 "mm/ksm: keep soft-dirty when merging a page"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

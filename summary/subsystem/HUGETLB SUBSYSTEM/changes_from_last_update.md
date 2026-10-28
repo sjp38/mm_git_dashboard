@@ -1,17 +1,171 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 46 -> 46 commits (no change)
-  - series: 5 (30) -> 5 (30) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 26 -> 26 commits (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 46 -> 0 commits
+  - series: 5 (30) -> 0 (0)
+    - no role, nobody: 3 -> 0 commits
+    - no role, no role : 10 -> 0 commits
+    - no role, reviewer: 3 -> 0 commits
+    - no role, maintainer: 26 -> 0 commits
+    - maintainer, no role : 3 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - afd20f513ca4 "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260825021013.25672-1-hongfu.li@linux.dev
+    - 40965d4997f4 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260824151655.30840-1-kaitao.cheng@linux.dev
+    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17)
+      - 5e72deef11ba "mm/sparse-vmemmap: rename HVO order macros (1/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
+      - 485a1d2d53b7 "mm/mm_init: factor out pfn_to_zone() (5/17)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
+      - b8abb1c0c40f "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization (9/17)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com
+      - 4d012c702c68 "mm/hugetlb: remove HUGE_BOOTMEM_HVO (13/17)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910063256.64386-15-songmuchun@bytedance.com
+      - eedb6c38351d "mm/hugetlb: remove HUGE_BOOTMEM_CMA (14/17)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910063256.64386-16-songmuchun@bytedance.com
+      - a28e0348838f "mm/hugetlb: localize struct huge_bootmem_page (15/17)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com
+      - 3de632e08253 "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID (16/17)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910063256.64386-18-songmuchun@bytedance.com
+    - a9ce28ef2a10 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260823044118.1097121-3-xialonglong2025@163.com
+    - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2)
+      - 7857e0213aad "mm/hugetlb: preserve source surplus accounting during demotion (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260831133519.2505020-2-xialonglong2025@163.com
+      - 3c2ea15046f8 "mm/hugetlb: cap demotion at currently available free pages (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
+    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails", v2. (2)
+      - 956aeff185e7 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-1-4b4a8a19a7f7@google.com
+      - e95d29c5df84 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-2-4b4a8a19a7f7@google.com
+    - c2deb1356d82 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - e4949a80f3b0 "mm/hugetlb: fix subpool minimum reservation rollback"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
+    - 21f514ad5204 "mm/hugetlb: account for allowed nodes when gathering surplus pages"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260909074642.7308-1-yehuaisheng@open-hieco.net
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 59cbd435300c "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - d3a699634c2a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
+      - a4fabaa14c2d "powerpc/mm: switch device DAX to shared tail vmemmap pages (8/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: : https://lore.kernel.org/20260930152826.76084-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com
+      - 27ffeec7b045 "Documentation/mm: update DAX vmemmap deduplication docs (11/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - 36c9ce320c3c "mm/hugetlb: use direct assignment instead of folio_change_private() (4/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-5-bb68b6a21869@nvidia.com
+    - 1a4a3f756cd7 "mm/hugetlb: fix misspelled parameter names in comment"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/tencent_034C6FC23D4817C40657E5F17F64E260A009@qq.com
+    - series "mm/hugetlb_cgroup: move the per-node usage along with the folio", v2. (2)
+      - fe0ba1909c59 "mm/hugetlb_cgroup: move per-node usage on cross node migration (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-0-2b6d8c2bdc36@kylinos.cn
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-1-2b6d8c2bdc36@kylinos.cn
+      - 23fac055c211 "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-2-2b6d8c2bdc36@kylinos.cn
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - 824cc56bf43c "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
+      - d8a9cd7fd2fb "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
+      - ae99c503eb36 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
+      - d42032c0fe3c "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+      - f61e1cf15fb4 "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
+      - 811777d82038 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - c37e9d9411a1 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
+      - f6605fc6b14b "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
+    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
+      - 92635a3ffe8b "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
+      - 02e0c8cc2815 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
+    - c2d4ccfbba3f "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - bdf6fbf21268 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+    - 1a5c751385dc "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/tencent_AA61551D1F50E61F46C8542F5C8874512C05@qq.com
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - 2dc36cf60dde "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
+    - fa71cee86530 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
+    - 4d1a248a38c6 "mm/hugetlb: prefix log messages via pr_fmt"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261010092333.137126-1-lienze@kylinos.cn
+    - 1b0f9f70a30f "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261009142010.552614-1-lienze@kylinos.cn
+    - bd918fca0207 "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261014031147.444733-1-lienze@kylinos.cn
+    - 514c9247db30 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

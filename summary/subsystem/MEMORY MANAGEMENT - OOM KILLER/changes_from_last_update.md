@@ -1,11 +1,18 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
+- mm-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
+  - dropped commits
+    - f1dff3456c9a "mm/oom_kill: remove unreachable __GFP_THISNODE check in constrained_alloc()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260813093810.573302-1-ye.liu@linux.dev
+    - abef8c99527a "mm/oom_kill, proc: replace magic number 1000 with OOM_SCORE_ADJ_MAX"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260811033609.3992348-1-ye.liu@linux.dev
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

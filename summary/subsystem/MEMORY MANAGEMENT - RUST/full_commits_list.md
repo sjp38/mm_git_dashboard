@@ -1,19 +1,7 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 1 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-    - maintainer, no role : 1 commits
-  - full commits list
-    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 47e725702b0b "mm: make per-VMA locks available universally" (0/7)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - a3bbbd68bf2a "binder: remove mmap_lock fallback" (3/7)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260831203056.838265-5-surenb@google.com
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

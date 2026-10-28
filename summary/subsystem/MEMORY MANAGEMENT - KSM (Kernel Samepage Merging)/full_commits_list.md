@@ -1,43 +1,15 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 1 (5) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-    - no role, reviewer: 4 commits
-  - full commits list
-    - d3863210464f "mm/ksm: mark migration stores with WRITE_ONCE()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
-    - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - 172c05ebab49 "docs: ksm: fix typos in sysfs knob names" (0/2)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
-        - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 585bb36e6ab8 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
-        - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 1e1ef39523fc "docs/mm: ksm: use the renamed ksm structure names"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-      - 531e56359ffb "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 14a5c975b138 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - d519a87e7161 "mm/ksm: keep soft-dirty when merging a page"
+    - 3f73fa209506 "mm/ksm: keep soft-dirty when merging a page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
-    - 641fca16309a "mm/ksm: fix userfaultfd protection during merge and unmerge"
+    - 041b9b7eb14f "mm/ksm: fix userfaultfd protection during merge and unmerge"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/

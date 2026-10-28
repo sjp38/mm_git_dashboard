@@ -1,30 +1,151 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 33 -> 33 commits (no change)
-  - series: 8 (26) -> 8 (26) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 11 -> 11 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 33 -> 0 commits
+  - series: 8 (26) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 11 -> 0 commits
+    - no role, reviewer: 4 -> 0 commits
+    - no role, maintainer: 9 -> 0 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 4 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - d67aa44be6d9 "mm/swap: remove unused declaration swapcache_clear()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260827082722.1809702-1-yuehaibing@huawei.com
+    - series "mm/page_io: folio conversion cleanups", v2. (6)
+      - 0361b8f820c1 "mm/page_io: convert write completion handlers to folios (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-0-649728091117@columbia.edu
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-1-649728091117@columbia.edu
+      - 43999735491e "mm/page_io: use swap entries directly in zeromap helpers (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-3-649728091117@columbia.edu
+      - 48d54b07157c "mm/page_io: rename bio_associate_blkg_from_page() (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-4-649728091117@columbia.edu
+      - 7be17d6d935c "mm/page_io: refer to folios in swap_writeout() comments (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-5-649728091117@columbia.edu
+      - a6479602b783 "mm/swap: rename __swap_writepage() to __swap_writeout() (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
+    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
+      - d5e1dc71ce38 "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
+        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
+    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
+      - c50c376e1fd6 "mm: distinguish large folio swap allocation failures (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - 27517f701ff3 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - 434114544b82 "mm/swap: add folio_swap_entry() and folio_page_swap_entry() (0/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/20260913-folio_swap_entry-doc-fix-1@columbia.edu
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-0-ee6d01dfa5e1@columbia.edu
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-1-ee6d01dfa5e1@columbia.edu
+      - 73b44d0e31e3 "mm/swapfile: use folio_page_swap_entry() (4/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-5-ee6d01dfa5e1@columbia.edu
+      - 1bf185edd550 "mm/swap: remove page_swap_entry() (7/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-8-ee6d01dfa5e1@columbia.edu
+    - series "mm/swap: skip empty clusters in the swapoff scan", v4. (2)
+      - cb4936da6b37 "mm/swap: fix stale comment on swap_info_struct::cluster_info (0/2)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260909161552.2335971-1-youngjun.park@lge.com
+        - Link: https://lore.kernel.org/20260909161552.2335971-2-youngjun.park@lge.com
+      - 5b3d04dece09 "mm/swap: scan by cluster in find_next_to_unuse() (1/2)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260909161552.2335971-3-youngjun.park@lge.com
+    - 0b1b457ecc4f "mm/memcg: clear folio memcg after changing per memcg stats"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
+    - series "mm: zswap: optimize zswap invalidate and store", v3. (3)
+      - 329808c9cf41 "mm: zswap: convert zswap_invalidate() to take a range (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260910123544.818146-1-wangkefeng.wang@huawei.com
+        - Link: https://lore.kernel.org/20260910123544.818146-2-wangkefeng.wang@huawei.com
+    - series "mm, swap: some random fixes and cleanups", v3. (4)
+      - 103e9222968e "mm, swap: fix potential NULL dereference when trying a sleep table allocation (0/4)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260907091356.53026-1-shikemeng@huaweicloud.com
+        - Link: https://lore.kernel.org/20260907091356.53026-2-shikemeng@huaweicloud.com
+      - be0291c3c43f "mm, swap: move setup_swap_clusters_info() after SWP_SOLIDSTATE initialization (1/4)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260907091356.53026-3-shikemeng@huaweicloud.com
+      - 868346102067 "mm, swap: return early from swap_extend_table_try_free() on first non-zero entry (2/4)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260907091356.53026-4-shikemeng@huaweicloud.com
+      - 63a08a1124ae "mm, swap: remove unneeded swap_extend_table_try_free() in swap_dup_entries_cluster() (3/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260907091356.53026-5-shikemeng@huaweicloud.com
+    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v6. (17)
+      - bb7f5fafc9d0 "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - 4cb5edd32dfa "mm/page_io: take a const folio in bio_associate_blkg_from_folio() (3/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
+      - 56c44e678eaf "mm: memcontrol: constify the swap accounting helpers (8/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
+      - bc936f771a2d "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - 4154a1cf2f70 "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+    - e4ea16e00288 "mm/swapops: remove unused is_hwpoison_entry()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
+    - c2d4ccfbba3f "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - c911e7ebebf5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 38564710f443 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+    - f9168f2f0b06 "mm/swap: submit the last readahead batch before unplugging"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
+    - 03825d869f3f "mm/swap, PM: hibernate: atomically replace hibernation pin"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+    - 60f34fedf3a4 "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - f209fcf4bf03 "mm: make swapoff interruptible when unusing mms/shmem"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name"
-      - added "Cc: <stable@vger.kernel.org>"
-      - added "Cc: Rafael J. Wysocki <rafael.j.wysocki@intel.com>"
-      - dropped "Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name"
-      - dropped "Cc: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>"
-      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+    - b779ef016df0 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Kairui Song <kasong@tencent.com>"
       - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
