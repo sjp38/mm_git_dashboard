@@ -1,66 +1,19 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 13 -> 0 commits
-  - series: 1 (10) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 6 -> 0 commits
-    - reviewer, no role : 2 -> 0 commits
-  - dropped commits
-    - e59c9a971a9f "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
-    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
-      - ffbdf157ec6a "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private (7/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
-      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - abf8efadeb21 "treewide: remove folio_set/clear_private() usage (10/17)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
-      - bbe5d3b3d402 "treewide: remove PagePrivate() and PG_private from comments and docs (15/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-    - 103142868af5 "mm: filemap: move lruvec accounting outside the xarray lock"
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - ae33175f87fb "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
-      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4)
-      - d1450631619d "mm/truncate: align truncation boundaries to mapping minimum folio order (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
-        - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
-        - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
-        - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-      - f47dee903b9f "mm/truncate: look up the end-edge straddler by index (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
-        - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-      - ad2747979368 "mm/truncate: fix data loss when splitting straddling large folios fails (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
-        - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - f9be69fcacf0 "mm/truncate: clarify return value of truncate_inode_partial_folio() (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - 94c86564538e "mm: remove hugetlb_inline.h (26/39)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-    - 8f9039840588 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
-- mm-unstable: 1 -> 1 commits (no change)
+      - branch: mm-unstable -> mm-hotfixes-unstable
+      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

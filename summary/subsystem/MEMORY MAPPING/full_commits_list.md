@@ -1,45 +1,49 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 1 (3) series, 7 non-series commits
+- mm-hotfixes-unstable: 8 total, 1 (3) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 7b3e56a53404 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - 506b207453f5 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - a9356c96e339 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - 8a0a0e8e663d "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 052a4e5ff7da "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 3fa038bfa09a "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - 7d3922eebf8f "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - f92b6e92ff73 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - 695c8c444148 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - 05c3846b9260 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - 0616a28a77d5 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+    - fa4f6c227cf4 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
-    - 880c6252c078 "mm/vma: update VMA iterator state on error in new VMA merge"
+    - 817d0fba0767 "mm/vma: update VMA iterator state on error in new VMA merge"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261027-fix-new-merge-bug-v1-1-7023a787e6b9@kernel.org
-    - 3ab8f6258692 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+    - c8f21d419651 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261027-fix-proc-pid-maps-missing-vmas-v2-1-2791cc9fc95f@kernel.org
-    - 0bbf77f188d4 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - a0be639363c1 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - e47bf187ffee "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 0b29709815a7 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

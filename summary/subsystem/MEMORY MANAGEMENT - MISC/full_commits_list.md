@@ -1,17 +1,28 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 7b3e56a53404 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - 506b207453f5 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - eaedb8a46d76 "selftests/mm: fix khugepaged_race build with older glibc"
+    - 8cc62568692d "selftests/mm: fix khugepaged_race build with older glibc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261027122013.4286-1-zenghui.yu@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+    - f1d16b6280c2 "mm/hugetlb_vmemmap: map the shared tail page writable"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 03be3b601bba "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
+      - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

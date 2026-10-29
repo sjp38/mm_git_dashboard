@@ -1,95 +1,26 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 17 -> 0 commits
-  - series: 3 (8) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 11 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - dc954a916d53 "mm: drop stale MAX_ORDER references"
+    - no role, reviewer: 0 -> 2 commits
+  - changed commits
+    - 1c4c06728b18 "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
-    - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2)
-      - eba0e6297edd "mm/page_isolation: fix UBSAN shift-out-of-bounds warning (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 4c767c5dd9bc "mm/page_isolation: guard compound_order() against racing (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
-    - series "make unused huge shrinker memcg aware", v4. (3)
-      - 877c1d0059ca "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
-        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - cbbed3c303f9 "mm: adjust out-dated document of __GFP_NOFAIL"
+      - branch: mm-unstable -> mm-hotfixes-unstable
+      - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
+    - 442ee1fcff57 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-    - series "mm: replace custom ratelimiting logic". (2)
-      - 0685b37a7098 "mm/page_alloc: replace custom bad page ratelimiting logic (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - 44b74ec3ae5a "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
-    - e1e86503027a "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-    - cc500013c86c "mm: page_alloc: add missing hooks to bulk allocation path"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
-    - series "mm: refactor zonelist constructors and iterators", v3. (2)
-      - 5436132610d9 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - d82701f6266a "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-    - 1372648980b8 "mm/page_alloc: apply per-task GFP context in bulk allocator"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
-      - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
-      - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - 331f94007d79 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - a8c5020eeb96 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 4cd78a2dcfbb "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by no role player
-      - Link: : https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
-      - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
-    - 397e08760552 "mm: stop recalculating min_free_kbytes once set by userspace"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
-      - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
-      - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
-    - 1503710b3b0c "mm/page_alloc: count guard pages as free again when their buddy merges"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
-- mm-unstable: 2 -> 2 commits (no change)
+      - branch: mm-unstable -> mm-hotfixes-unstable
+      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 2 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 086dccff9c0f "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: "Garg, Shivank" <shivankg@amd.com>"
-      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
-      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

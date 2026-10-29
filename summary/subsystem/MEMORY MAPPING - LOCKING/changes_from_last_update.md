@@ -1,45 +1,19 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 0 commits
-  - series: 2 (4) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
-  - dropped commits
-    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
-      - 47e725702b0b "mm: make per-VMA locks available universally (0/7)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - d96082aa3504 "mm: add RCU-based VMA lookup helper that waits for writers (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-    - series "mm: make userland page table freeing RCU-safe", v5. (12)
-      - a5c0a39d0e57 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 6a9ef02c60bf "mm/vma: const-ify vma_assert_stabilised() and associated functions (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
-    - 7135a05838e8 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
     - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 3ab8f6258692 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+  - changed commits
+    - c8f21d419651 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-hotfixes-unstable
       - Link: https://lore.kernel.org/20261027-fix-proc-pid-maps-missing-vmas-v2-1-2791cc9fc95f@kernel.org
-  - dropped commits
-    - db3fdbd2577e "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261025-per_vma_maps-v1-1-c4eec45b9387@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,20 +1,25 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-  - full commits list
-    - bba1cb4bc34d "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - f1ce4414a570 "khugepaged: fix readahead lock inversion in collapse_file()"
+    - 703a71938741 "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
+    - 4d55b3a705c2 "khugepaged: fix readahead lock inversion in collapse_file()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261026152013.10511-1-lance.yang@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 03be3b601bba "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
+      - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

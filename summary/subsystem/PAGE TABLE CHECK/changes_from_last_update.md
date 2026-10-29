@@ -1,18 +1,10 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-17318-g65ba8f34ec886
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 0 commits
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 0 commits
-  - dropped commits
-    - 0224133dba05 "mm/page_table_check: add explicit pmd_none check in pte_clear_range"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260819025516.2967199-1-ye.liu@linux.dev
-    - 33afd07412a1 "mm/page_table_check: skip zero pages"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/1f8848512d2e3ded944f8d595c29faee8fdaeab0.1784645969.git.roxy520tt@gmail.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
