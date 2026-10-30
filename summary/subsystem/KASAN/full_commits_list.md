@@ -1,8 +1,27 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2 commits)
+      - 1cbf1444739c "mm/kasan: detect double-free involving kfree_rcu_sheaf()." (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
+        - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
+        - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
+      - cd2916a7a21a "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf()." (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - bb7232454fb8 "kasan/test: cover load_unaligned_zeropad()" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261023-bug-word-at-a-time-zeropad-kasan-v2-2-be0ecfbae847@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,38 +1,53 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 5 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - f1d16b6280c2 "mm/hugetlb_vmemmap: map the shared tail page writable"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
+- mm-hotfixes-unstable: 5 -> 4 commits
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/hugetlb: fix mremap bugs", v3. (3)
-      - 50a8f493cc84 "mm/hugetlb: fix mremap move length truncation (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
-        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 403505054729 "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - fb205bc431ea "mm/hugetlb: fix mremap deadlock when PMD sharing is possible (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
+    - 2c67bd746da1 "mm/hugetlb_vmemmap: map the shared tail page writable"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Oscar Salvador <osalvador@suse.de>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
+  - dropped commits
+    - 2986942af2cd "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
+      - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 0 commits
-- mm-new: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 6 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, maintainer: 0 -> 3 commits
+    - maintainer, no role : 0 -> 3 commits
+  - new commits
+    - 33a9977a1e2f "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261028113319.38544-2-kaitao.cheng@linux.dev
+    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
+      - 09943a91d5d3 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
+      - e6c28e3abd21 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo() (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
+      - 2c968272d55c "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios() (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
+    - series "kfence: fix pool allocation failure handling", v2. (3)
+      - 36bfcc1013e1 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
+    - cc0b63b2a326 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021061901.376104-1-lienze@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

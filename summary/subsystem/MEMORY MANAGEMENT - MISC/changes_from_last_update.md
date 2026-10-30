@@ -1,36 +1,66 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-hotfixes-unstable: 3 -> 5 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 2 -> 4 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - f1d16b6280c2 "mm/hugetlb_vmemmap: map the shared tail page writable"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
+    - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2)
+      - 069f5b7e8fb5 "mm/cma: accept memory of multi-range CMA areas (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
+      - 87633259358c "mm/cma: accept memory of CMA areas reserved at a fixed address (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
   - changed commits
-    - 506b207453f5 "selftests/mm: merge: keep the far mremap() targets in the carveout"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 8cc62568692d "selftests/mm: fix khugepaged_race build with older glibc"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261027122013.4286-1-zenghui.yu@linux.dev
+    - 2c67bd746da1 "mm/hugetlb_vmemmap: map the shared tail page writable"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Oscar Salvador <osalvador@suse.de>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+- mm-new: 1 -> 8 commits
+  - series: 0 (0) -> 3 (7)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 4 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, no role : 0 -> 1 commits
   - new commits
-    - 03be3b601bba "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
-      - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
+    - series "selftests/mm: run the XFS-backed THP tests when xfs is a module", v3. (2)
+      - 957e3d7438bf "selftests/mm: track the modules run_vmtests.sh loads (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-0-16ad772850ee@gmail.com
+        - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-1-16ad772850ee@gmail.com
+      - d4fdd7be0199 "selftests/mm: load xfs before checking for it in run_vmtests.sh (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-2-16ad772850ee@gmail.com
+    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
+      - 09943a91d5d3 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
+    - series "kfence: fix pool allocation failure handling", v2. (3)
+      - 36bfcc1013e1 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
+    - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3)
+      - fb2e74361893 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize() (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
+      - 3d2ba274828a "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
+      - 0c126a2e6d02 "kselftest: mm: introduce size_to_shift() helper (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-3-3d77129e0557@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

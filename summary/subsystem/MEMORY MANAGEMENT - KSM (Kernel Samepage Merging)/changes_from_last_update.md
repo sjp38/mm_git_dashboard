@@ -1,26 +1,13 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - 789c92306d43 "mm/ksm: keep soft-dirty when merging a page"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
-    - 27b8e25a9366 "mm/ksm: fix userfaultfd protection during merge and unmerge"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
-      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -7,9 +7,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, reviewer: 1 -> 3 commits
+  - new commits
+    - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2)
+      - ebbdad759bc4 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec() (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
+        - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
+      - 7b5c531d7a78 "mm: multi-gen LRU: remove get_lruvec() (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

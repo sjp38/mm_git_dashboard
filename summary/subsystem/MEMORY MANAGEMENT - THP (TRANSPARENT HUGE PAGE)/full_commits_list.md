@@ -1,25 +1,38 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 2 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 703a71938741 "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
+    - b62034695eeb "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-    - 4d55b3a705c2 "khugepaged: fix readahead lock inversion in collapse_file()"
+    - 4349139c10a2 "khugepaged: fix readahead lock inversion in collapse_file()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261026152013.10511-1-lance.yang@linux.dev
+    - 54d39b70b3a9 "mm/huge_memory: set the mmu_gather page size in zap_huge_pud()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/8b853e5f9f16145859407b28af654b0f79e12642.1793318297.git.ritesh.list@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-    - 03be3b601bba "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 0342666a3a65 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
+    - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
+      - fb2e74361893 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
+      - 3d2ba274828a "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -11,5 +11,59 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-nonmm-unstable: 0 -> 15 commits
+  - series: 0 (0) -> 1 (15)
+    - maintainer, nobody: 0 -> 9 commits
+    - maintainer, no role : 0 -> 6 commits
+  - new commits
+    - series "zram: redesign zcomp and rework backends", v7. (15)
+      - 8d2be068f875 "zram: prefix backends printk-s (0/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261025021839.1542805-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20261025021839.1542805-2-senozhatsky@chromium.org
+      - 1d16f1672cce "zram: remove debugfs entry on init failure (1/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261025021839.1542805-3-senozhatsky@chromium.org
+      - 483be7472872 "zram: reset writeback state in zram_reset_device() (2/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261025021839.1542805-4-senozhatsky@chromium.org
+      - f8aef19b4eb6 "zram: move mark_slot_accessed() under existing slot lock sections (3/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-5-senozhatsky@chromium.org
+      - 5bedbee09c3f "zram: remove stale WARN_ON() from zram_read_page() (4/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-6-senozhatsky@chromium.org
+      - 73597fe68694 "zram: zstd: do not allocate empty C/D-dictionaries (5/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-7-senozhatsky@chromium.org
+      - 232253e40704 "zram: lz4hc: pre-initialize dictionary stream in setup_params (6/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-8-senozhatsky@chromium.org
+      - 966bf2e17b53 "zram: lz4: use LZ4_decompress_safe_usingDict() (7/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-9-senozhatsky@chromium.org
+      - cf71a5d79259 "zram: lz4hc: use LZ4_decompress_safe_usingDict() (8/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261025021839.1542805-10-senozhatsky@chromium.org
+      - 277dfe06fed2 "zram: zstd: do not use kvzalloc() for zstd allocations (9/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261025021839.1542805-11-senozhatsky@chromium.org
+      - 017b16e86a87 "zram: split zcomp into separate R/W streams (10/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261025021839.1542805-12-senozhatsky@chromium.org
+      - e1349015a68c "zram: introduce shared decompression streams (11/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-13-senozhatsky@chromium.org
+      - 800c4948e0bd "zram: allocate bounce buffer for spanning objects (12/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-14-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/linux-kernel/20261014153603.1365617-1-zhangbo56@xiaomi.com [1]
+        - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
+      - 8f03d85b33d0 "zram: borrow idle decompression streams in exclusive mode (13/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-15-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/linux-kernel/20261015112440.1491168-1-zhangbo56@xiaomi.com [1]
+        - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
+      - 0c65566e8ccd "zram: use a singleton compression context for recompression (14/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261025021839.1542805-16-senozhatsky@chromium.org

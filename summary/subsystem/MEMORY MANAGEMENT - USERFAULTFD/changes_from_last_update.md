@@ -1,20 +1,13 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
-  - series: 1 (1) -> 1 (2)
-    - no role, no role : 1 -> 2 commits
-  - changed commits
-    - series "mm/hugetlb: fix mremap bugs", v3. (3)
-      - 403505054729 "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

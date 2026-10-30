@@ -7,30 +7,30 @@
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 506b207453f5 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - 3cedf9491399 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 8a0a0e8e663d "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - a8de2c8fba37 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 3fa038bfa09a "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 2d579c1e423b "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - f92b6e92ff73 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - 1850e461736f "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - 05c3846b9260 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - ada5bf009e54 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - fa4f6c227cf4 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+    - de58f197f211 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
-    - 817d0fba0767 "mm/vma: update VMA iterator state on error in new VMA merge"
+    - 0e2913e6a63c "mm/vma: update VMA iterator state on error in new VMA merge"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261027-fix-new-merge-bug-v1-1-7023a787e6b9@kernel.org
-    - c8f21d419651 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+    - dbd3ddcead99 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261027-fix-proc-pid-maps-missing-vmas-v2-1-2791cc9fc95f@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -39,11 +39,11 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - a0be639363c1 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - d245728dfdde "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - 0b29709815a7 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 9885b8dd4e20 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -6,11 +6,11 @@
     - no role, reviewer: 1 commits
   - full commits list
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 3fa038bfa09a "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 2d579c1e423b "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - 5b2245b4bba0 "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
+      - d4bedfc964fb "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

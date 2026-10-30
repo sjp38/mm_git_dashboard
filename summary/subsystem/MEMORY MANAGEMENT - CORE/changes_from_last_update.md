@@ -1,39 +1,27 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 4 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, no role : 2 -> 3 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - c6eb1cdc7313 "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/14ebbd556cc4941f0ebc43da59fa6a2fdca25dc8.1793148609.git.baolin.wang@linux.alibaba.com
-      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
-    - series "mm: avoid losing atomic VMA flags", v1. (4)
-      - 3fa038bfa09a "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-    - 27b8e25a9366 "mm/ksm: fix userfaultfd protection during merge and unmerge"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
-      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 1 commits
-  - series: 2 (2) -> 1 (1)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 1 -> 2 commits
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - 5f4910da3891 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261028100549.70689-1-hui.zhu@linux.dev
+    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
+      - e6c28e3abd21 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo() (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

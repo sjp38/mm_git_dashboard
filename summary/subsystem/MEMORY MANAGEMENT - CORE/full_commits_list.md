@@ -5,19 +5,19 @@
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 77dcb1c37cb2 "mm: fix address wraparound when scanning large folio PTEs"
+    - cfa5d23ddac6 "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-    - c6eb1cdc7313 "mm: memory: fix truncation removing mapped folios"
+    - f8f4412c0053 "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/14ebbd556cc4941f0ebc43da59fa6a2fdca25dc8.1793148609.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 3fa038bfa09a "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 2d579c1e423b "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-    - 27b8e25a9366 "mm/ksm: fix userfaultfd protection during merge and unmerge"
+    - bdaf9e6426d7 "mm/ksm: fix userfaultfd protection during merge and unmerge"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
@@ -28,17 +28,24 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: Fix page-table teardown during memory hot-remove", v3. (2 commits)
-      - dc5d86fb56e7 "mm: fix missing page-table destructor in pagetable_free()" (0/2)
+      - 2825872e43bf "mm: fix missing page-table destructor in pagetable_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 2 commits
+    - maintainer, no role : 1 commits
   - full commits list
-    - 8d64cd88339a "mm: unqueue deferred split folios outside the lruvec lock"
+    - 939b8ee805d5 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
+    - 5f4910da3891 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261028100549.70689-1-hui.zhu@linux.dev
+      - e6c28e3abd21 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

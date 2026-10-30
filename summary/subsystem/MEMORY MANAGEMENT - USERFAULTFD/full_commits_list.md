@@ -4,11 +4,11 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - 403505054729 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 5024ac0a2a79 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - 67554c4c4301 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - 4d8563461348 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com

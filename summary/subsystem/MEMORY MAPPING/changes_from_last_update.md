@@ -1,55 +1,18 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 8 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 2 commits
-    - no role, reviewer: 0 -> 4 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 506b207453f5 "selftests/mm: merge: keep the far mremap() targets in the carveout"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 8a0a0e8e663d "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
-    - series "mm: avoid losing atomic VMA flags", v1. (4)
-      - 3fa038bfa09a "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - f92b6e92ff73 "mm/vma: write lock source VMA before duplicating it in __split_vma() (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - 05c3846b9260 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - fa4f6c227cf4 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
-    - 817d0fba0767 "mm/vma: update VMA iterator state on error in new VMA merge"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261027-fix-new-merge-bug-v1-1-7023a787e6b9@kernel.org
-    - c8f21d419651 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20261027-fix-proc-pid-maps-missing-vmas-v2-1-2791cc9fc95f@kernel.org
+- mm-hotfixes-unstable: 8 -> 8 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 2 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 3 -> 1 commits
-    - no role, reviewer: 4 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
