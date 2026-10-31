@@ -7,46 +7,49 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm/hugetlb: fix mremap bugs", v3. (3 commits)
-      - ca7942ec502d "mm/hugetlb: fix mremap move length truncation" (0/3)
+      - 4c5a99c0430a "mm/hugetlb: fix mremap move length truncation" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 5024ac0a2a79 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 8ed4693545ce "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - e96395244ce8 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
+      - 5606e542c3e4 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
-    - 2c67bd746da1 "mm/hugetlb_vmemmap: map the shared tail page writable"
+    - 46ad6f44ef6c "mm/hugetlb_vmemmap: map the shared tail page writable"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 6 total, 1 (4) series, 2 non-series commits
+- mm-new: 7 total, 1 (4) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
     - maintainer, no role : 3 commits
   - full commits list
-    - 33a9977a1e2f "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
+    - 6178b797c4a1 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261028113319.38544-2-kaitao.cheng@linux.dev
     - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4 commits)
-      - 09943a91d5d3 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
+      - 078daddbfc69 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
         - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - e6c28e3abd21 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 2491a8cb256b "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
-      - 2c968272d55c "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
+      - acb9108c488d "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
-      - 36bfcc1013e1 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
+      - f06fa79087c3 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
-    - cc0b63b2a326 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
+    - de22a9f81823 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021061901.376104-1-lienze@kylinos.cn
+    - c5591a9ffd46 "mm/hugetlb_cma: remove two unused include files"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

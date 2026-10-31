@@ -7,17 +7,28 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - a7fc988ea61f "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 74dcda5e3512 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 18d29a112446 "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - 2b1c8790a903 "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
-    - 092fe33edee9 "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - 52c18918a8f2 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 2 commits
+  - full commits list
+    - series "mm/zswap: batch the writeback IO". (2 commits)
+      - 958d78e9ede7 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
+      - 4edea4828537 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

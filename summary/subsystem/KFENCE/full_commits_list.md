@@ -8,11 +8,11 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "kfence: fix pool allocation failure handling", v2. (3 commits)
-      - 6b672493e2fd "kfence: fix pool cleanup on metadata allocation failure" (0/3)
+      - d4d49727e413 "kfence: fix pool cleanup on metadata allocation failure" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793242457.git.liuyun01@kylinos.cn
         - Link: https://lore.kernel.org/7e0fc28c73fbb594c296f6121ca506392511ba5e.1793242457.git.liuyun01@kylinos.cn
-      - 7ca90d5859d7 "kfence: clear the pool pointer before freeing pages" (1/3)
+      - 5e11e94ed039 "kfence: clear the pool pointer before freeing pages" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2fab8aaa82ab2004e706fd7ec8dac20427976457.1793242457.git.liuyun01@kylinos.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

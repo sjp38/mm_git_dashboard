@@ -5,24 +5,24 @@
     - no role, reviewer: 3 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - 1b795584192b "mm/page_alloc: let the highest memory node recover from hopeless state"
+    - 9b38409dd077 "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
-    - 9e58725c7d28 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - a73c89e5ffa6 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
     - series "mm: page_alloc: fix reserve access for non-blocking requests", v2. (2 commits)
-      - 0a8ecef089ea "mm: page_alloc: do not give all non-blocking requests reserve access" (0/2)
+      - 8ce3bcd2c65f "mm: page_alloc: do not give all non-blocking requests reserve access" (0/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it [0]
         - Link: https://lore.kernel.org/linux-mm/arFBWvzXPYrKuIYi@cmpxchg.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20261001082152.2879289-1-dipiets@amazon.it/ [2]
         - Link: https://lore.kernel.org/20261028171719.2043421-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20261028171719.2043421-2-hannes@cmpxchg.org
-      - 4464578402aa "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES" (1/2)
+      - ab9e6cb24865 "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES" (1/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20261028171719.2043421-3-hannes@cmpxchg.org
-    - c5772040cb01 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - a01742e40dc5 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
@@ -36,10 +36,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - b08ea11dfbf9 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 3b238d7c2ccb "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - d4805b8a6408 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - f15d48413e79 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261030025507.115248-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

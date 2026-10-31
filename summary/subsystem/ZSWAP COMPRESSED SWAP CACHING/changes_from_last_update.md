@@ -8,8 +8,18 @@
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, maintainer: 0 -> 2 commits
+  - new commits
+    - series "mm/zswap: batch the writeback IO". (2)
+      - 958d78e9ede7 "mm/zswap: batch the writeback IO of consecutive entries (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
+      - 4edea4828537 "mm/zswap: plug the writeback IO of an LRU walk (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

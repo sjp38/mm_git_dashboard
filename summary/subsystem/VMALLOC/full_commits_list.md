@@ -4,23 +4,17 @@
   - author/reviewer role stat
     - no role, no role : 3 commits
   - full commits list
-    - 023b4766a5e7 "mm/vmalloc: bail out if in softirq context"
+    - 662f5e820927 "mm/vmalloc: bail out if in softirq context"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
-    - e42061ac4504 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - dcd03513aaea "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - c727728e840d "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - e52e9c98c435 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 95b7365accfa "mm/vmalloc: read vm_map_ram block regions from the requested offset"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

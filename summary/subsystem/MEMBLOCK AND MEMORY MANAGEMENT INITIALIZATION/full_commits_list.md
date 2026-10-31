@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 9e58725c7d28 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - a73c89e5ffa6 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

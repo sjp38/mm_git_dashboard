@@ -1,154 +1,160 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 53 total, 7 (18) series, 35 non-series commits
+- mm-hotfixes-unstable: 57 total, 8 (22) series, 35 non-series commits
   - author/reviewer role stat
     - no role, nobody: 5 commits
-    - no role, no role : 22 commits
-    - no role, reviewer: 13 commits
-    - no role, maintainer: 7 commits
+    - no role, no role : 23 commits
+    - no role, reviewer: 14 commits
+    - no role, maintainer: 8 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 3 commits
+    - maintainer, reviewer: 1 commits
   - full commits list
-    - b62034695eeb "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
+    - 260563f0306e "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-    - 108c89b5c110 "lib/base64: silence clang-24 -Wconstant-conversion with diag pragmas"
+    - 955d905c3f32 "lib/base64: silence clang-24 -Wconstant-conversion with diag pragmas"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261008-base64-silence-clang-24-constant-conversion-v1-1-0858b60b23c8@kernel.org
       - Link: https://github.com/llvm/llvm-project/commit/a5ef934a8d295dc03be3960f2b3744ec2e53238e [1]
       - Link: https://github.com/llvm/llvm-project/issues/223923#issuecomment-6056856245 [2]
       - Link: https://github.com/llvm/llvm-project/pull/226775#pullrequestreview-5454407389 [3]
-    - cfa5d23ddac6 "mm: fix address wraparound when scanning large folio PTEs"
+    - b514a006f20c "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-    - 4654206438d4 "riscv/mm: fix hotplug page-table destructor handling"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261023063428.3658761-3-songmuchun@bytedance.com
-    - 71c672166511 "riscv/mm: fix missing destructor for hotplug PUD tables"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261023063428.3658761-4-songmuchun@bytedance.com
-    - f8f4412c0053 "mm: memory: fix truncation removing mapped folios"
+    - series "mm: Fix page-table teardown during memory hot-remove", v3. (4 commits)
+      - 4f0be31f0174 "mm: fix missing page-table destructor in pagetable_free()" (0/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
+      - 52a9c49f19d5 "riscv/mm: fix hotplug page-table destructor handling" (1/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-3-songmuchun@bytedance.com
+      - d3f1afb81b18 "riscv/mm: fix missing destructor for hotplug PUD tables" (2/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-4-songmuchun@bytedance.com
+      - bd009c6604fd "arm64/mm: fix destructor for unconstructed hotplug page tables" (3/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261023063428.3658761-5-songmuchun@bytedance.com
+    - d241279e6f2e "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/14ebbd556cc4941f0ebc43da59fa6a2fdca25dc8.1793148609.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
-    - 005510d96f98 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+    - 5db2da7a8d1a "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
-    - 3cedf9491399 "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - d27caadcba5c "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 1b795584192b "mm/page_alloc: let the highest memory node recover from hopeless state"
+    - 9b38409dd077 "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
     - series "mm/hugetlb: fix mremap bugs", v3. (3 commits)
-      - ca7942ec502d "mm/hugetlb: fix mremap move length truncation" (0/3)
+      - 4c5a99c0430a "mm/hugetlb: fix mremap move length truncation" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
-      - 5024ac0a2a79 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 8ed4693545ce "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-      - e96395244ce8 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
+      - 5606e542c3e4 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
-    - 9e58725c7d28 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - a73c89e5ffa6 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-    - a8de2c8fba37 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
+    - 94261327aa3d "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
-    - aac07400b4d8 "xarray: clear the new head's parent before freeing the old head"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261012202549.772887-1-nickolai@csail.mit.edu
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 2d579c1e423b "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 46b476aab13d "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - 1850e461736f "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
+      - be81bbd28358 "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - d4bedfc964fb "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
+      - 6fbc6330a2a7 "mm/madvise: preserve VMA_SOFTDIRTY_BIT when changing anonymous names" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-3-8ff4fae1fc85@kernel.org
-      - ada5bf009e54 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
+      - cc1dec7d0160 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - 182f4e356aa7 "mm/ksm: keep soft-dirty when merging a page"
+    - 93730d8b8f57 "mm/ksm: keep soft-dirty when merging a page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
-    - de58f197f211 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
+    - 91a1c01eeb4e "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
     - series "mm/damon: fix three race bugs in sysfs and core", v1. (3 commits)
-      - 137cb7cb8dd2 "mm/damon/sysfs-schemes: hold damon_sysfs_lock in target_metric_store()" (0/3)
+      - 8c4cd1e1b9e5 "mm/damon/sysfs-schemes: hold damon_sysfs_lock in target_metric_store()" (0/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025164808.152048-1-sj@kernel.org
         - Link: https://lore.kernel.org/20261025164808.152048-2-sj@kernel.org
         - Link: https://sashiko.dev/#/bug/linux-7f814c9a-986f-4103-a55a-ef9537dcf62b [1]
         - Link: https://lore.kernel.org/20261021005234.94107-1-sj@kernel.org [2]
-      - ef43bc5c8bf9 "mm/damon/core: move static variable last_nr_regions to damon_ctx" (1/3)
+      - 01f6ed0c700a "mm/damon/core: move static variable last_nr_regions to damon_ctx" (1/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025164808.152048-3-sj@kernel.org
-      - 2c0a5bb0dd08 "mm/damon/core: move static variable rotation to damon_ctx" (2/3)
+      - 01ca6791f6bb "mm/damon/core: move static variable rotation to damon_ctx" (2/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025164808.152048-4-sj@kernel.org
-    - f62e68abdd30 "mm: make swapoff interruptible when unusing mms/shmem"
+    - 7b36750402ff "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
-    - 814636d77002 "mm/migrate: untag addresses when querying page nodes"
+    - 49a779bda166 "mm/migrate: untag addresses when querying page nodes"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261026195330.46757-1-dennylin0707@gmail.com
-    - bdaf9e6426d7 "mm/ksm: fix userfaultfd protection during merge and unmerge"
+    - d474a6c50544 "mm/ksm: fix userfaultfd protection during merge and unmerge"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
       - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
-    - 023b4766a5e7 "mm/vmalloc: bail out if in softirq context"
+    - 662f5e820927 "mm/vmalloc: bail out if in softirq context"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
-    - 25d890c133c6 "mm/migrate: snapshot the source nid before the misplaced migration"
+    - 5132ccadbcc9 "mm/migrate: snapshot the source nid before the misplaced migration"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261027021721.95781-1-laoar.shao@gmail.com
-    - 4349139c10a2 "khugepaged: fix readahead lock inversion in collapse_file()"
+    - 652c7752136f "khugepaged: fix readahead lock inversion in collapse_file()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261026152013.10511-1-lance.yang@linux.dev
-    - 0e2913e6a63c "mm/vma: update VMA iterator state on error in new VMA merge"
+    - 8bb8c47dc497 "mm/vma: update VMA iterator state on error in new VMA merge"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261027-fix-new-merge-bug-v1-1-7023a787e6b9@kernel.org
-    - 5ced3050f69f "selftests/mm: fix khugepaged_race build with older glibc"
+    - 3f4538da2033 "selftests/mm: fix khugepaged_race build with older glibc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261027122013.4286-1-zenghui.yu@linux.dev
-    - dbd3ddcead99 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
+    - 6b9d838eceeb "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261027-fix-proc-pid-maps-missing-vmas-v2-1-2791cc9fc95f@kernel.org
-    - 2c67bd746da1 "mm/hugetlb_vmemmap: map the shared tail page writable"
+    - 46ad6f44ef6c "mm/hugetlb_vmemmap: map the shared tail page writable"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
-    - 44bccefff490 "openrisc: export __mulsi3 for modules"
+    - 746941b600fc "openrisc: export __mulsi3 for modules"
       - Authored by no role player, reviewed by no role player
     - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2 commits)
-      - 1cbf1444739c "mm/kasan: detect double-free involving kfree_rcu_sheaf()." (0/2)
+      - c71f83a86b04 "mm/kasan: detect double-free involving kfree_rcu_sheaf()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
         - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
         - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
-      - cd2916a7a21a "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf()." (1/2)
+      - 7e64861da3df "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
     - series "mm: page_alloc: fix reserve access for non-blocking requests", v2. (2 commits)
-      - 0a8ecef089ea "mm: page_alloc: do not give all non-blocking requests reserve access" (0/2)
+      - 8ce3bcd2c65f "mm: page_alloc: do not give all non-blocking requests reserve access" (0/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it [0]
         - Link: https://lore.kernel.org/linux-mm/arFBWvzXPYrKuIYi@cmpxchg.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20261001082152.2879289-1-dipiets@amazon.it/ [2]
         - Link: https://lore.kernel.org/20261028171719.2043421-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20261028171719.2043421-2-hannes@cmpxchg.org
-      - 4464578402aa "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES" (1/2)
+      - ab9e6cb24865 "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES" (1/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20261028171719.2043421-3-hannes@cmpxchg.org
-    - c5772040cb01 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - a01742e40dc5 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
@@ -157,462 +163,521 @@
       - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
       - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
     - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2 commits)
-      - 069f5b7e8fb5 "mm/cma: accept memory of multi-range CMA areas" (0/2)
+      - 1d9958498233 "mm/cma: accept memory of multi-range CMA areas" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
         - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
-      - 87633259358c "mm/cma: accept memory of CMA areas reserved at a fixed address" (1/2)
+      - f549e6a77fad "mm/cma: accept memory of CMA areas reserved at a fixed address" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
-    - 805b87b1d113 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
+    - 49f8de263681 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261029201858.2932905-1-tjmercier@google.com
-    - c5ab3b8cee8b "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
+    - 04cbdd05ad94 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
-    - 76aaffa085cf "mm/migrate: move NR_FILE_THPS on cross-node migration"
+    - c401f838c0d9 "mm/migrate: move NR_FILE_THPS on cross-node migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261025110209.4105994-1-ridong.chen@linux.dev
-    - c711005a4fcb "mm/migrate: move NR_KERNEL_FILE_PAGES on cross-node migration"
+    - 01aafa33f25b "mm/migrate: move NR_KERNEL_FILE_PAGES on cross-node migration"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261027043214.2248986-1-ridong.chen@linux.dev
-    - 54d39b70b3a9 "mm/huge_memory: set the mmu_gather page size in zap_huge_pud()"
+    - afe839d2f283 "mm/huge_memory: set the mmu_gather page size in zap_huge_pud()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/8b853e5f9f16145859407b28af654b0f79e12642.1793318297.git.ritesh.list@gmail.com
-    - e42061ac4504 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - e95e9beee99b "xarray: clear the new head's parent before freeing the old head"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261027192014.844878-1-nickolai@csail.mit.edu
+    - e82bcb9a0e7d "mm/mempolicy: use one node set for interleave weights"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261030161046.1497894-1-gourry@gourry.net
+    - 19f2c9b7d083 "mm/shmem: fix swapin livelock on a mismatched large swap cache folio"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261027-shmem-swapin-mismatch-v1-1-84e30aa3b9e5@columbia.edu
+    - dcd03513aaea "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - c727728e840d "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - e52e9c98c435 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
-    - a1b01dc3c4cf "xarray: fix index jumping backwards in xas_find()"
+    - c90e42bac8cd "xarray: fix index jumping backwards in xas_find()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com
-    - f6c46b017990 "assoc_array: discard shortcut when collapsing a leaf-only node"
+    - ac37ad3a60e4 "assoc_array: discard shortcut when collapsing a leaf-only node"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260925080548.2505640-1-4ncienth@gmail.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - 4d8563461348 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - b3c9fa3b5844 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
-      - e6712c4abdc2 "iov_iter: validate extracted segment for bvec alignment" (1/2)
+      - 64703f0fee74 "iov_iter: validate extracted segment for bvec alignment" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261015061907.2713943-1-4ncienth@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 9 total, 2 (5) series, 4 non-series commits
+- mm-unstable: 6 total, 1 (3) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, maintainer: 3 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - series "mm: Fix page-table teardown during memory hot-remove", v3. (2 commits)
-      - 2825872e43bf "mm: fix missing page-table destructor in pagetable_free()" (0/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
-      - 7dedf487c9e5 "arm64/mm: fix destructor for unconstructed hotplug page tables" (1/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261023063428.3658761-5-songmuchun@bytedance.com
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - a7fc988ea61f "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 74dcda5e3512 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - b380b077cb77 "crypto: acomp - enforce MAX_SYNC_COMP_REQSIZE" (1/3)
+      - 30474ebb269f "crypto: acomp - enforce MAX_SYNC_COMP_REQSIZE" (1/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261017160918.2738626-3-usama.arif@linux.dev
-      - 18d29a112446 "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - 2b1c8790a903 "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
-    - 092fe33edee9 "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - 52c18918a8f2 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
-    - d245728dfdde "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 0ad0c8dbce1f "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - 9885b8dd4e20 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - b61fa14ce6bc "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
-    - 95b7365accfa "mm/vmalloc: read vm_map_ram block regions from the requested offset"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
-- mm-new: 40 total, 10 (27) series, 13 non-series commits
+- mm-new: 55 total, 13 (38) series, 17 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
-    - no role, no role : 9 commits
+    - no role, no role : 18 commits
     - no role, reviewer: 10 commits
-    - no role, maintainer: 14 commits
+    - no role, maintainer: 19 commits
+    - maintainer, nobody: 1 commits
     - maintainer, no role : 3 commits
   - full commits list
-    - 939b8ee805d5 "mm: unqueue deferred split folios outside the lruvec lock"
+    - 70482ade80b5 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-    - 0342666a3a65 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 547bf65a1b08 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
-    - 33a9977a1e2f "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
+    - 6178b797c4a1 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261028113319.38544-2-kaitao.cheng@linux.dev
-    - 5f4910da3891 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+    - 1b0341fd8e8d "mm/vmstat: annotate data race in zone_page_state_snapshot()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261028100549.70689-1-hui.zhu@linux.dev
     - series "selftests/mm: run the XFS-backed THP tests when xfs is a module", v3. (2 commits)
-      - 957e3d7438bf "selftests/mm: track the modules run_vmtests.sh loads" (0/2)
+      - 2f6d4eb1a371 "selftests/mm: track the modules run_vmtests.sh loads" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-0-16ad772850ee@gmail.com
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-1-16ad772850ee@gmail.com
-      - d4fdd7be0199 "selftests/mm: load xfs before checking for it in run_vmtests.sh" (1/2)
+      - e467d90663e8 "selftests/mm: load xfs before checking for it in run_vmtests.sh" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-2-16ad772850ee@gmail.com
     - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4 commits)
-      - 1e7ea889e8ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock." (0/4)
+      - e650205fdc62 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
         - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - ea7f5a0d53f4 "memcg: reduce nesting in consume_stock() and refill_stock()." (1/4)
+      - ea1ef8f162f4 "memcg: reduce nesting in consume_stock() and refill_stock()" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 38d3fceeebb8 "memcg: annotate slow paths in consume_stock() and refill_stock()." (2/4)
+      - 79e87bae4d52 "memcg: annotate slow paths in consume_stock() and refill_stock()" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - 1f42549f6d38 "memcg: uncharge pages outside memcg_stock.lock in refill_stock()." (3/4)
+      - b0d310822a97 "memcg: uncharge pages outside memcg_stock.lock in refill_stock()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
     - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4 commits)
-      - 09943a91d5d3 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
+      - 078daddbfc69 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
         - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - 3089e0dec0d1 "powerpc/mm: map shared vmemmap tail pages as read-only" (1/4)
+      - 4b539bb4816e "powerpc/mm: map shared vmemmap tail pages as read-only" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261019090830.1917657-3-songmuchun@bytedance.com
-      - e6c28e3abd21 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 2491a8cb256b "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
-      - 2c968272d55c "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
+      - acb9108c488d "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - ebbdad759bc4 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - 391382b32d1b "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
-      - 7b5c531d7a78 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - d05d5e554bef "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
     - series "kfence: fix pool allocation failure handling", v2. (3 commits)
-      - 6b672493e2fd "kfence: fix pool cleanup on metadata allocation failure" (0/3)
+      - d4d49727e413 "kfence: fix pool cleanup on metadata allocation failure" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793242457.git.liuyun01@kylinos.cn
         - Link: https://lore.kernel.org/7e0fc28c73fbb594c296f6121ca506392511ba5e.1793242457.git.liuyun01@kylinos.cn
-      - 7ca90d5859d7 "kfence: clear the pool pointer before freeing pages" (1/3)
+      - 5e11e94ed039 "kfence: clear the pool pointer before freeing pages" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2fab8aaa82ab2004e706fd7ec8dac20427976457.1793242457.git.liuyun01@kylinos.cn
-      - 36bfcc1013e1 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
+      - f06fa79087c3 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
     - series "memcg: reduce cacheline contention from lruvec stat", v3. (2 commits)
-      - 89cdf3dcdd23 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
+      - 2fa7d3586926 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261023195417.1391216-2-joannelkoong@gmail.com
         - Link: https://www.intel.com/content/dam/doc/manual/64-ia-32-architectures-optimization-manual.pdf [1] (bottom of page 62/800)
         - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/
-      - 96f376e3a577 "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
+      - 2b18f1710dc1 "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-3-joannelkoong@gmail.com
     - series "word-at-a-time: let KASAN see load_unaligned_zeropad()", v2. (2 commits)
-      - 6eb952788411 "word-at-a-time: check the first byte in load_unaligned_zeropad()" (0/2)
+      - 0289c8a90b6a "word-at-a-time: check the first byte in load_unaligned_zeropad()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/r/CAPQLkRhXZwozmfhNd_PEx1ihwdH1_5qthP6PANYJ_m-v9vfQTw@mail.gmail.com [1]
         - Link: https://lore.kernel.org/20261023-bug-word-at-a-time-zeropad-kasan-v2-0-be0ecfbae847@gmail.com
         - Link: https://lore.kernel.org/20261023-bug-word-at-a-time-zeropad-kasan-v2-1-be0ecfbae847@gmail.com
-      - bb7232454fb8 "kasan/test: cover load_unaligned_zeropad()" (1/2)
+      - 1c9a0a9af159 "kasan/test: cover load_unaligned_zeropad()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023-bug-word-at-a-time-zeropad-kasan-v2-2-be0ecfbae847@gmail.com
-    - b08ea11dfbf9 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 3b238d7c2ccb "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 76695831e529 "selftests/cpu-hotplug: use $(id -u) instead of $UID for root check"
+    - d2f22c025136 "selftests/cpu-hotplug: use $(id -u) instead of $UID for root check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261022052245.1138709-1-chihsheng@google.com
-    - 8c8fd5c64da7 "selftests/memory-hotplug: use $(id -u) instead of $UID for root check"
+    - cb8750b6852d "selftests/memory-hotplug: use $(id -u) instead of $UID for root check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261022052245.1138709-2-chihsheng@google.com
-    - d4805b8a6408 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - f15d48413e79 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261030025507.115248-1-hui.zhu@linux.dev
-    - cc0b63b2a326 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
+    - de22a9f81823 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021061901.376104-1-lienze@kylinos.cn
-    - 0f5353692e3f "mm/memory-tiers: reset demotion targets of nodes without memory"
+    - 5c12b4091ffc "mm/memory-tiers: reset demotion targets of nodes without memory"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261021024438.1942502-1-gourry@gourry.net
-    - 3e1f598c175d "mm/percpu: clean up callers of pcpu_obj_full_size()"
+    - fe1125b34ba6 "mm/percpu: clean up callers of pcpu_obj_full_size()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261021023011.3199331-1-joshua.hahnjy@gmail.com
-    - 7c7e032b680a "mm/mempolicy: convert mempolicy refcnt to refcount_t"
+    - 7a7ea4379f32 "mm/mempolicy: convert mempolicy refcnt to refcount_t"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261015231322.3392551-1-gourry@gourry.net
     - series "mm: memcontrol: remove two unused helpers", v1. (2 commits)
-      - 847cf7cdd248 "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
+      - f9ed365ca323 "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-0-240b37c53831@columbia.edu
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu
-      - 95fa8cced80f "mm: memcontrol: remove page_memcg_check()" (1/2)
+      - 1b30fcb9e1d6 "mm: memcontrol: remove page_memcg_check()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu
     - series "mm: Generalize page table allocation helpers". (3 commits)
-      - 07f70238e17e "mm: generalize kernel PTE table allocation" (0/3)
+      - 87a13057a1a3 "mm: generalize kernel PTE table allocation" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261014035910.687847-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261014035910.687847-2-songmuchun@bytedance.com
-      - be7ddb2d4cab "mm: generalize PMD page table allocation" (1/3)
+      - 9878b985447a "mm: generalize PMD page table allocation" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261014035910.687847-3-songmuchun@bytedance.com
-      - 12969b7634d4 "mm: generalize PUD page table allocation" (2/3)
+      - 7d4b0924bb85 "mm: generalize PUD page table allocation" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261014035910.687847-4-songmuchun@bytedance.com
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - fb2e74361893 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 9c350b77c58f "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 3d2ba274828a "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 9a5cd0477acb "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
-      - 0c126a2e6d02 "kselftest: mm: introduce size_to_shift() helper" (2/3)
+      - bed0d4255119 "kselftest: mm: introduce size_to_shift() helper" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-3-3d77129e0557@arm.com
-    - 5e6c45aaaf93 "riscv: mm: fix concurrency in mark_new_valid_map()"
+    - series "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests", v3. (7 commits)
+      - d89b4b42bc90 "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests" (0/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019171206.3331374-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20261019171206.3331374-2-gourry@gourry.net
+      - 6cc75211dbdb "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling" (1/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019171206.3331374-3-gourry@gourry.net
+      - 9e03e1127961 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb" (2/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019171206.3331374-4-gourry@gourry.net
+      - d1544a29a9c7 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory" (3/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019171206.3331374-5-gourry@gourry.net
+      - 1538c152911a "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs" (4/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019171206.3331374-6-gourry@gourry.net
+      - 3d1a7472f4be "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix" (5/7)
+        - Authored by a maintainer, reviewed by nobody
+      - c93baaff6600 "selftests/mm: check MADV_PAGEOUT file permissions" (6/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019171206.3331374-7-gourry@gourry.net
+    - 8686d22ac071 "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261019171206.3331374-8-gourry@gourry.net
+    - c9b495551158 "mm: kmemleak: scan modified objects as soon as they are grayed"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
+    - series "mm: Remove pagetable_dtor_free()". (2 commits)
+      - e6d3a37b93ee "mm: remove pagetable_dtor_free()" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261030083800.599152-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
+      - 2d7028453428 "mm: remove redundant pagetable_dtor() calls" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261030083800.599152-3-songmuchun@bytedance.com
+    - c5591a9ffd46 "mm/hugetlb_cma: remove two unused include files"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
+    - series "mm/zswap: batch the writeback IO". (2 commits)
+      - 958d78e9ede7 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
+      - 4edea4828537 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
+    - 5c43349efe08 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
+    - 243e8cdab641 "riscv: mm: fix concurrency in mark_new_valid_map()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
       - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 65 total, 8 (41) series, 24 non-series commits
+- mm-nonmm-unstable: 68 total, 8 (41) series, 27 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 16 commits
+    - no role, nobody: 19 commits
     - no role, no role : 12 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 15 commits
     - maintainer, nobody: 15 commits
     - maintainer, no role : 6 commits
   - full commits list
-    - 646835b12662 "ocfs2/heartbeat: serialize concurrent writes to a region's dev attribute"
+    - 12fa9b596686 "ocfs2/heartbeat: serialize concurrent writes to a region's dev attribute"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261020212339.46591-1-eklavyasingh2106@gmail.com
     - series "ocfs2: fix stale xattr entry pointers and empty header reads", v1. (6 commits)
-      - 7ccb8bb75506 "ocfs2: read the xattr entry hash before defragmenting the bucket" (0/6)
+      - 77cd94f285e8 "ocfs2: read the xattr entry hash before defragmenting the bucket" (0/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261024151012.1059683-1-joseph.qi@linux.alibaba.com
         - Link: https://lore.kernel.org/20261024151012.1059683-2-joseph.qi@linux.alibaba.com
-      - 479c056a5228 "ocfs2: find the xattr entry again after defragmenting a bucket" (1/6)
+      - a3b66b0a2652 "ocfs2: find the xattr entry again after defragmenting a bucket" (1/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261024151012.1059683-3-joseph.qi@linux.alibaba.com
-      - 5dfdf3c93126 "ocfs2: find the xattr entry again after converting a block to a bucket" (2/6)
+      - a2de733f545b "ocfs2: find the xattr entry again after converting a block to a bucket" (2/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261024151012.1059683-4-joseph.qi@linux.alibaba.com
-      - df8eb4de3ba3 "ocfs2: do not read the entry array of an empty xattr bucket" (3/6)
+      - 0ee360b4edee "ocfs2: do not read the entry array of an empty xattr bucket" (3/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261024151012.1059683-5-joseph.qi@linux.alibaba.com
-      - 0a1dcbe7195a "ocfs2: do not index before the entry array when dividing an empty bucket" (4/6)
+      - 8266af2dcffb "ocfs2: do not index before the entry array when dividing an empty bucket" (4/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261024151012.1059683-6-joseph.qi@linux.alibaba.com
-      - efad59f1e4cb "ocfs2: do not read the entry array of an empty xattr block" (5/6)
+      - c58d30d94357 "ocfs2: do not read the entry array of an empty xattr block" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261024151012.1059683-7-joseph.qi@linux.alibaba.com
-    - ddeb419c7daa "fat: preallocate space before expanding in fat_cont_expand()"
+    - 78f4a6dd7678 "fat: preallocate space before expanding in fat_cont_expand()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261024013021.251898-1-matheus.aalmeida@inf.ufrgs.br
-    - ac484bd94be8 "fat: hold truncate_lock in fat_write_failed()"
+    - 7bcea8e9f24c "fat: hold truncate_lock in fat_write_failed()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021162105.62525-1-matheus.aalmeida@inf.ufrgs.br
-    - 0b5b32ba4a4c "ocfs2: validate move extents against a stable EOF"
+    - 10d2bd18d35f "ocfs2: validate move extents against a stable EOF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-move-extents-isize-rrw-v6-395bdee84ea81149068e@gmail.com
-    - 88827402e8a4 "MAINTAINERS: add an IPC entry"
+    - 072580ed878e "MAINTAINERS: add an IPC entry"
       - Authored by no role player, reviewed by no role player
-    - 47f4a4a1ec0a "MAINTAINERS: mailmap: use Clément Léger's linux.dev mail address"
+    - 1a623fe03907 "MAINTAINERS: mailmap: use Clément Léger's linux.dev mail address"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261029095107.24985-1-clement.leger@linux.dev
-    - beef2e418a19 "ocfs2: keep locking_state within the cluster connection lifetime"
+    - a70f9ccec22b "ocfs2: keep locking_state within the cluster connection lifetime"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0011-v7-61e3ef8b1ad44ac2e817@gmail.com
-    - 85c77fc59646 "panic: zero the dynamically allocated taint buffer"
+    - cec093ee5729 "panic: zero the dynamically allocated taint buffer"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261024020153.830459-1-nickolai@csail.mit.edu
-    - 69768bc1f312 "ocfs2/dlm: serialize migration MLE cleanup on failure"
+    - 29e2edd5bac7 "ocfs2/dlm: serialize migration MLE cleanup on failure"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0038-v9-659f247ea980d5f3fbeb@gmail.com
-    - 7537f5aa9277 "ocfs2: stop recovery before shutting down local allocators"
+    - 1320e8a80b67 "ocfs2: stop recovery before shutting down local allocators"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0019-v8-574dd69fd3f47f56348b@gmail.com
-    - deca98268939 "ocfs2/cluster: unlink socket containers before releasing resources"
+    - c5401112feca "ocfs2/cluster: unlink socket containers before releasing resources"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0065-v6-3090153fd7cacb810214@gmail.com
-    - 07b36d7b86ec "fat: fix parent link count when replacing a sibling directory"
+    - ad13788b5c55 "fat: fix parent link count when replacing a sibling directory"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030060011.70237-1-dennylin0707@gmail.com
-    - a5ccfd7272c2 "profile: account for partial /proc/profile reads"
-      - Authored by no role player, reviewed by nobody
-    - 1c8656f7bf9c "profile: simplify /proc/profile read layout"
-      - Authored by no role player, reviewed by nobody
-    - a5d853bfee17 "iov_iter: take an unsigned long segment count in import_iovec()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261026180619.4147910-1-parri.andrea@gmail.com
-    - 200fdfe8e992 "ocfs2: wait for filecheck kobject release after a failed add"
+    - fb17f1229893 "ocfs2: wait for filecheck kobject release after a failed add"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0087-v6-78f3c3d6d70887d6e0cc@gmail.com
-    - 60a4ff41c224 "ocfs2: cache the mount context for dentry lock callbacks"
+    - 5b416583a55d "ocfs2: cache the mount context for dentry lock callbacks"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0012-v9-eeb9084fb29577971229@gmail.com
-    - d27a477131e6 "MAINTAINERS: Update Andrea Cervesato's email for LTP"
+    - 300cdda904f3 "profile: account for partial /proc/profile reads"
+      - Authored by no role player, reviewed by nobody
+    - 49860a3d6926 "profile: simplify /proc/profile read layout"
+      - Authored by no role player, reviewed by nobody
+    - 675af663b691 "iov_iter: take an unsigned long segment count in import_iovec()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026180619.4147910-1-parri.andrea@gmail.com
+    - e63f9824b870 "MAINTAINERS: update Andrea Cervesato's email for LTP"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026-acer_maintainers-v2-1-4cf0f350fdf1@linux.dev
     - series "fat: improve synchronous mount performance", v2. (2 commits)
-      - 39035342bf2a "fat: batch synchronous mirror writes" (0/2)
+      - 013e84bd9013 "fat: batch synchronous mirror writes" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026163941.495833-1-matheus.aalmeida@inf.ufrgs.br
         - Link: https://lore.kernel.org/20261026163941.495833-2-matheus.aalmeida@inf.ufrgs.br
-      - 5cc18080032a "fat: improve fat_sync_bhs() write submission" (1/2)
+      - cdc0f885d4ac "fat: improve fat_sync_bhs() write submission" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026163941.495833-3-matheus.aalmeida@inf.ufrgs.br
-    - 7a7c515dd621 "ipc/msg: fix saturation of percpu counts in msgctl_info()"
+    - 6d7ce738b9c9 "ipc/msg: fix saturation of percpu counts in msgctl_info()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20251119224140.8616-6-david.laight.linux@gmail.com
-    - 6e33cc07abea "ipc/msg: clamp negative MSG_INFO usage counts"
+    - 2b921208d013 "ipc/msg: clamp negative MSG_INFO usage counts"
       - Authored by no role player, reviewed by nobody
     - series "treewide: switch to __nonnull_args() macro", v1. (10 commits)
-      - c9769aef3a0a "docs: xforms_lists: support __nonnull_args()" (0/10)
+      - 102c4977dad7 "docs: xforms_lists: support __nonnull_args()" (0/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/cover.1793027261.git.d@ilvokhin.com
         - Link: https://lore.kernel.org/fd33c32bb1f1cf80721887b6e9bfa49749e03d20.1793027261.git.d@ilvokhin.com
         - Link: https://lore.kernel.org/all/20261019175633.415493-19-bvanassche@acm.org/ [1]
-      - 7fc0f0e3e50e "string: switch to __nonnull_args() macro" (1/10)
+      - 882eb8b29e9b "string: switch to __nonnull_args() macro" (1/10)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/f0d7b2f0dce916f4cde3dd466a5b51a4b88fbdd8.1793027261.git.d@ilvokhin.com
-      - 58c6154749f8 "lib/list_sort: switch to __nonnull_args() macro" (2/10)
+      - d152c99fa9a0 "lib/list_sort: switch to __nonnull_args() macro" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/580fdfbe2eb6694438cbd8f5337bd2f1edac564b.1793027261.git.d@ilvokhin.com
-      - a29ec3e21c4f "xarray: switch to __nonnull_args() macro" (3/10)
+      - 311df58c587b "xarray: switch to __nonnull_args() macro" (3/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/e2660c4c9f5e6f97be2ef7bd3752d259bce77d81.1793027261.git.d@ilvokhin.com
-      - 6f350f6893e1 "drm/amdgpu: switch to __nonnull_args() macro" (4/10)
+      - 4f2898ad992f "drm/amdgpu: switch to __nonnull_args() macro" (4/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/d57489b8bec240794a7a8aaac6e1e3e0d78ea331.1793027261.git.d@ilvokhin.com
-      - 0ec14321bda4 "drm/gem: awitch to __nonnull_args() macro" (5/10)
+      - 837a1c8fdc38 "drm/gem: awitch to __nonnull_args() macro" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/5bfdc1491d297b5e98cf42322c790f06481c28c7.1793027261.git.d@ilvokhin.com
-      - 16ba9cc1314b "leds: pwm: switch to __nonnull_args() macro" (6/10)
+      - f58f40603f56 "leds: pwm: switch to __nonnull_args() macro" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/ed2b0b67c306bb458ba389f16dc92904203a104b.1793027261.git.d@ilvokhin.com
-      - 8d63800faba3 "soc: aspeed: lpc-snoop: switch to __nonnull_args() macro" (7/10)
+      - 416715f5aeea "soc: aspeed: lpc-snoop: switch to __nonnull_args() macro" (7/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/6b82201d601c23bf8545f8d581fd6632c36cd208.1793027261.git.d@ilvokhin.com
-      - 0ba549bb2373 "checkpatch: suggest nonnull attribute conversion" (8/10)
+      - ea4ee18ccad7 "checkpatch: suggest nonnull attribute conversion" (8/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/bc2cd702455e58feb777cdb230e3ba4f7e1db60f.1793027261.git.d@ilvokhin.com
     - series "raid: remove obsolete MMX optimized code", v1. (3 commits)
-      - f847ed5d6631 "xor: remove obsolete MMX optimized code" (0/3)
+      - eaf43617d1ea "xor: remove obsolete MMX optimized code" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261025191207.86590-1-ebiggers@kernel.org
         - Link: https://lore.kernel.org/20261025191207.86590-2-ebiggers@kernel.org
-      - 26e66fae5fd9 "raid6: remove obsolete MMX optimized code" (1/3)
+      - 23b727449bdc "raid6: remove obsolete MMX optimized code" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261025191207.86590-3-ebiggers@kernel.org
-      - a91e367783f7 "raid6: simplify CPU feature checks" (2/3)
+      - 570fd1cb0834 "raid6: simplify CPU feature checks" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261025191207.86590-4-ebiggers@kernel.org
     - series "zram: redesign zcomp and rework backends", v7. (15 commits)
-      - 8d2be068f875 "zram: prefix backends printk-s" (0/15)
+      - 1c472d491649 "zram: prefix backends printk-s" (0/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20261025021839.1542805-2-senozhatsky@chromium.org
-      - 1d16f1672cce "zram: remove debugfs entry on init failure" (1/15)
+      - 335da40794ee "zram: remove debugfs entry on init failure" (1/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-3-senozhatsky@chromium.org
-      - 483be7472872 "zram: reset writeback state in zram_reset_device()" (2/15)
+      - 9e75378ff24e "zram: reset writeback state in zram_reset_device()" (2/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-4-senozhatsky@chromium.org
-      - f8aef19b4eb6 "zram: move mark_slot_accessed() under existing slot lock sections" (3/15)
+      - c0ea694d7d17 "zram: move mark_slot_accessed() under existing slot lock sections" (3/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-5-senozhatsky@chromium.org
-      - 5bedbee09c3f "zram: remove stale WARN_ON() from zram_read_page()" (4/15)
+      - 05481e028cdc "zram: remove stale WARN_ON() from zram_read_page()" (4/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-6-senozhatsky@chromium.org
-      - 73597fe68694 "zram: zstd: do not allocate empty C/D-dictionaries" (5/15)
+      - a7686d6df049 "zram: zstd: do not allocate empty C/D-dictionaries" (5/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-7-senozhatsky@chromium.org
-      - 232253e40704 "zram: lz4hc: pre-initialize dictionary stream in setup_params" (6/15)
+      - 724847818593 "zram: lz4hc: pre-initialize dictionary stream in setup_params" (6/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-8-senozhatsky@chromium.org
-      - 966bf2e17b53 "zram: lz4: use LZ4_decompress_safe_usingDict()" (7/15)
+      - 41907e836c15 "zram: lz4: use LZ4_decompress_safe_usingDict()" (7/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-9-senozhatsky@chromium.org
-      - cf71a5d79259 "zram: lz4hc: use LZ4_decompress_safe_usingDict()" (8/15)
+      - 520db16aecc9 "zram: lz4hc: use LZ4_decompress_safe_usingDict()" (8/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-10-senozhatsky@chromium.org
-      - 277dfe06fed2 "zram: zstd: do not use kvzalloc() for zstd allocations" (9/15)
+      - 83f80a0bf1bd "zram: zstd: do not use kvzalloc() for zstd allocations" (9/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-11-senozhatsky@chromium.org
-      - 017b16e86a87 "zram: split zcomp into separate R/W streams" (10/15)
+      - e36beeeb3297 "zram: split zcomp into separate R/W streams" (10/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-12-senozhatsky@chromium.org
-      - e1349015a68c "zram: introduce shared decompression streams" (11/15)
+      - 02967ca33796 "zram: introduce shared decompression streams" (11/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-13-senozhatsky@chromium.org
-      - 800c4948e0bd "zram: allocate bounce buffer for spanning objects" (12/15)
+      - 46c9a1441d0d "zram: allocate bounce buffer for spanning objects" (12/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-14-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/linux-kernel/20261014153603.1365617-1-zhangbo56@xiaomi.com [1]
         - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
-      - 8f03d85b33d0 "zram: borrow idle decompression streams in exclusive mode" (13/15)
+      - ad562cb0ed25 "zram: borrow idle decompression streams in exclusive mode" (13/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-15-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/linux-kernel/20261015112440.1491168-1-zhangbo56@xiaomi.com [1]
         - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
-      - 0c65566e8ccd "zram: use a singleton compression context for recompression" (14/15)
+      - 92033a7f188f "zram: use a singleton compression context for recompression" (14/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-16-senozhatsky@chromium.org
-    - b813bc8d534a "delayacct: preserve delay extrema when aggregating taskstats"
+    - 912cfe625711 "delayacct: preserve delay extrema when aggregating taskstats"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022160648.37411-1-dennylin0707@gmail.com
     - series "ocfs2: clean up falloc and inode flag definitions", v2. (2 commits)
-      - f21d203d4547 "ocfs2: replace ocfs2-specific falloc ioctls with generic ones" (0/2)
+      - d99fef8dba0c "ocfs2: replace ocfs2-specific falloc ioctls with generic ones" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261022130457.69343-1-ailiop@suse.com
         - Link: https://lore.kernel.org/20261022130457.69343-2-ailiop@suse.com
-      - 8c3237b395c6 "ocfs2: replace ocfs2-specific inode flags with generic ones" (1/2)
+      - a21a3a78e90a "ocfs2: replace ocfs2-specific inode flags with generic ones" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261022130457.69343-3-ailiop@suse.com
-    - ede9dc165f07 "proc: use pid_has_task() in proc_inode_is_dead()"
+    - c2870feb1da8 "proc: use pid_has_task() in proc_inode_is_dead()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/atObuVZXbl9n-zFq@redhat.com
-    - fb93bf8d6f8f "selftests: uevent filtering: don't shrink the socket buffer"
+    - cb043a48f5d5 "include/linux/jhash.h: fix kernel-doc parameter name"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261030093834.13043-1-zhangcoder@yeah.net
+    - 1051e7db303d "lib/plist: add a plist_test case for plist_requeue() on the last priority bucket"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261011115136.767838-1-nickolai@csail.mit.edu
+    - 97fbaf1c6b8d "ipc/msg: fix msg_qbytes truncation in IPC_SET"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261029-ipc-msg-qbytes-v3-1-fc3f4307c85b@gentwo.org
+    - 6f8cab86f76b "selftests: uevent filtering: don't shrink the socket buffer"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619-get-swam-a1cd4cca@mheyne-amazon
     - series "dyndbg: fix incorrect mod_ct value in dynamic_debug_init()". (2 commits)
-      - 156df2507032 "dyndbg: fix incorrect mod_ct value in dynamic_debug_init()" (0/2)
+      - e67a666dca24 "dyndbg: fix incorrect mod_ct value in dynamic_debug_init()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260811121831.577848-1-yuntao.wang@linux.dev
         - Link: https://lore.kernel.org/20260811121831.577848-2-yuntao.wang@linux.dev
-      - 459d5effacc8 "dyndbg: clean up dynamic_debug_init() to improve readability" (1/2)
+      - c596f10609ce "dyndbg: clean up dynamic_debug_init() to improve readability" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260811121831.577848-3-yuntao.wang@linux.dev
-    - b96fce221d6d "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
+    - 1cdee03909ec "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
       - Authored by no role player, reviewed by no role player
     - series "squashfs: harden fragment index table sizing". (2 commits)
-      - ed9e5352c4a8 "squashfs: fix fragment index table sizing overflow on 32-bit" (0/2)
+      - 5ee5cfb060b5 "squashfs: fix fragment index table sizing overflow on 32-bit" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260822143328.68867-1-kmehltretter@gmail.com
         - Link: https://lore.kernel.org/20260822143328.68867-2-kmehltretter@gmail.com
-      - 1c86f6a07274 "squashfs: make the fragment index table bounds check overflow-safe" (1/2)
+      - 6d0af3f23b3e "squashfs: make the fragment index table bounds check overflow-safe" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260822143328.68867-3-kmehltretter@gmail.com

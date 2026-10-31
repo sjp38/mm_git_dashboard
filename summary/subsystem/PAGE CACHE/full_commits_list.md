@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 005510d96f98 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+    - 5db2da7a8d1a "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

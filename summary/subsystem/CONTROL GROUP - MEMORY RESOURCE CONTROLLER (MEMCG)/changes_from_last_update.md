@@ -3,24 +3,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 805b87b1d113 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 49f8de263681 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
       - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
       - Link: https://lore.kernel.org/20261029201858.2932905-1-tjmercier@google.com
-  - dropped commits
-    - aa6524755e04 "mm: memcontrol: fix NULL pointer deref in high_work_func() on dying memcg"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261023222313.3979455-1-tjmercier@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 8 commits
-  - series: 0 (0) -> 3 (8)
-    - no role, maintainer: 0 -> 8 commits
+- mm-new: 8 -> 8 commits (no change)
+  - series: 3 (8) -> 3 (8) (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
   - new commits
+    - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
+      - e650205fdc62 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock (0/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
+        - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
+      - ea1ef8f162f4 "memcg: reduce nesting in consume_stock() and refill_stock() (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
+      - 79e87bae4d52 "memcg: annotate slow paths in consume_stock() and refill_stock() (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
+      - b0d310822a97 "memcg: uncharge pages outside memcg_stock.lock in refill_stock() (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
+  - dropped commits
     - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
       - 1e7ea889e8ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock. (0/4)"
         - Authored by no role player, reviewed by a maintainer
@@ -35,24 +46,6 @@
       - 1f42549f6d38 "memcg: uncharge pages outside memcg_stock.lock in refill_stock(). (3/4)"
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
-    - series "memcg: reduce cacheline contention from lruvec stat", v3. (2)
-      - 89cdf3dcdd23 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261023195417.1391216-1-joannelkoong@gmail.com
-        - Link: https://lore.kernel.org/20261023195417.1391216-2-joannelkoong@gmail.com
-        - Link: https://www.intel.com/content/dam/doc/manual/64-ia-32-architectures-optimization-manual.pdf [1] (bottom of page 62/800)
-        - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/
-      - 96f376e3a577 "memcg: don't go through the lruvec for folio and kmem lruvec stat updates (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261023195417.1391216-3-joannelkoong@gmail.com
-    - series "mm: memcontrol: remove two unused helpers", v1. (2)
-      - 847cf7cdd248 "mm: memcontrol: remove mod_memcg_page_state() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-0-240b37c53831@columbia.edu
-        - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu
-      - 95fa8cced80f "mm: memcontrol: remove page_memcg_check() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,16 +4,22 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - 5024ac0a2a79 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 8ed4693545ce "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - 4d8563461348 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - b3c9fa3b5844 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 5c43349efe08 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 805b87b1d113 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
+    - 49f8de263681 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261029201858.2932905-1-tjmercier@google.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,35 +14,35 @@
     - no role, maintainer: 8 commits
   - full commits list
     - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4 commits)
-      - 1e7ea889e8ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock." (0/4)
+      - e650205fdc62 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
         - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - ea7f5a0d53f4 "memcg: reduce nesting in consume_stock() and refill_stock()." (1/4)
+      - ea1ef8f162f4 "memcg: reduce nesting in consume_stock() and refill_stock()" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 38d3fceeebb8 "memcg: annotate slow paths in consume_stock() and refill_stock()." (2/4)
+      - 79e87bae4d52 "memcg: annotate slow paths in consume_stock() and refill_stock()" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - 1f42549f6d38 "memcg: uncharge pages outside memcg_stock.lock in refill_stock()." (3/4)
+      - b0d310822a97 "memcg: uncharge pages outside memcg_stock.lock in refill_stock()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
     - series "memcg: reduce cacheline contention from lruvec stat", v3. (2 commits)
-      - 89cdf3dcdd23 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
+      - 2fa7d3586926 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261023195417.1391216-2-joannelkoong@gmail.com
         - Link: https://www.intel.com/content/dam/doc/manual/64-ia-32-architectures-optimization-manual.pdf [1] (bottom of page 62/800)
         - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/
-      - 96f376e3a577 "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
+      - 2b18f1710dc1 "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-3-joannelkoong@gmail.com
     - series "mm: memcontrol: remove two unused helpers", v1. (2 commits)
-      - 847cf7cdd248 "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
+      - f9ed365ca323 "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-0-240b37c53831@columbia.edu
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu
-      - 95fa8cced80f "mm: memcontrol: remove page_memcg_check()" (1/2)
+      - 1b30fcb9e1d6 "mm: memcontrol: remove page_memcg_check()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

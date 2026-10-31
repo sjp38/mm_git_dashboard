@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - f62e68abdd30 "mm: make swapoff interruptible when unusing mms/shmem"
+    - 7b36750402ff "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
-    - c5ab3b8cee8b "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
+    - 04cbdd05ad94 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
