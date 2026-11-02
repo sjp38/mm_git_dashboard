@@ -3,21 +3,25 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 3 total, 1 (2) series, 1 non-series commits
+- mm-new: 4 total, 1 (2) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 4 commits
   - full commits list
-    - 2cf7c6a47c5d "mm: unqueue deferred split folios outside the lruvec lock"
+    - f52f0a7fa8dd "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - 1ae5efa93c1b "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - e654dbf8922b "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
-      - 28654beeca56 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - 937879389c62 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
+    - 10740dae12d6 "mm: move LRU size stat updates out of lru_lock in folio batches"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

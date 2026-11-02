@@ -9,14 +9,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 17 -> 17 commits (no change)
-  - series: 4 (14) -> 4 (14) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 17 -> 20 commits
+  - series: 4 (14) -> 5 (17)
+    - no role, nobody: 1 -> 4 commits
     - no role, no role : 11 -> 11 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
+      - 01f0dab18f80 "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
+        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
+      - 3d9232953d11 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
+      - 18323067c509 "tools/mm/thpmaps: fix missing mapping names (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

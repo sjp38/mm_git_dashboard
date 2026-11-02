@@ -11,7 +11,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 15 -> 15 commits (no change)
+- mm-nonmm-unstable: 15 -> 17 commits
   - series: 1 (15) -> 1 (15) (no change)
-    - maintainer, nobody: 9 -> 9 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - maintainer, nobody: 9 -> 10 commits
     - maintainer, no role : 6 -> 6 commits (no change)
+  - new commits
+    - d036c67dde12 "zram: fix quadratic writeback bitmap search"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20da9e9a5ffefd1e6875e311d3740b9f3c1061f3.1793333729.git.senozhatsky@chromium.org
+    - 5fd8fad83a29 "zram: lz4/lz4hc: accept dictionaries of more than 64 KiB"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/f2ac22a731e507e90217a5e9cf29c987ec24e2b0.1793333729.git.senozhatsky@chromium.org

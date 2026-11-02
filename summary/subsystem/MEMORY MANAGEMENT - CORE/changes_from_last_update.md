@@ -1,36 +1,25 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 5 -> 6 commits
+- mm-hotfixes-unstable: 6 -> 6 commits (no change)
   - series: 2 (2) -> 2 (2) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
-  - new commits
-    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+    - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 4 -> 7 commits
-  - series: 1 (2) -> 2 (5)
-    - no role, no role : 1 -> 4 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-new: 7 -> 8 commits
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3)
-      - a7d791975874 "mm/memory: remove unused vmf_insert_mixed_mkwrite() (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
-      - 50baf626de4e "mm/memory: remove the mkwrite argument from __vm_insert_mixed() (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
-      - 85e14cefdd53 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
+    - 10740dae12d6 "mm: move LRU size stat updates out of lru_lock in folio batches"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

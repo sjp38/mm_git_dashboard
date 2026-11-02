@@ -4,17 +4,17 @@
   - author/reviewer role stat
     - no role, no role : 4 commits
   - full commits list
-      - 4f67635030a4 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+      - 8a64919081da "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-    - dabee2873293 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
+    - 19442d33330d "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-prot-bits-fork-event-v2-1-c448e57df417@kernel.org
-    - 06dab86093ad "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 5b68cb953b08 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - 123d3cfcd54e "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - f1d11ae9e569 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -25,10 +25,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - cc8368f07d6e "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 266313d19499 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-    - 0dd385e187d7 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - bee4a8803d7b "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -6,65 +6,69 @@
     - no role, reviewer: 1 commits
     - reviewer, nobody: 1 commits
   - full commits list
-    - f3215363ffef "mm: fix address wraparound when scanning large folio PTEs"
+    - a465660a3b97 "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
     - series "mm: Fix page-table teardown during memory hot-remove", v3. (4 commits)
-      - 95d73ae4acb1 "mm: fix missing page-table destructor in pagetable_free()" (0/4)
+      - 82843509a8d4 "mm: fix missing page-table destructor in pagetable_free()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
-    - aad766815081 "mm: memory: fix truncation removing mapped folios"
+    - 8220c25d968c "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/14ebbd556cc4941f0ebc43da59fa6a2fdca25dc8.1793148609.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - c67878c53974 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 41d9ec208086 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-    - 3536855d6311 "mm/ksm: fix userfaultfd protection during merge and unmerge"
+    - 428576ac8065 "mm/ksm: fix userfaultfd protection during merge and unmerge"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
       - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
-    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - f25e70312c08 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 7 total, 2 (5) series, 2 non-series commits
+- mm-new: 8 total, 2 (5) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 4 commits
-    - no role, reviewer: 2 commits
+    - no role, reviewer: 3 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 2cf7c6a47c5d "mm: unqueue deferred split folios outside the lruvec lock"
+    - f52f0a7fa8dd "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-    - 22cdcc4b6c3e "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+    - 9eb05df000b3 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261028100549.70689-1-hui.zhu@linux.dev
-      - ed63d400dace "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 6ccca02180ed "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
     - series "mm: Remove pagetable_dtor_free()". (2 commits)
-      - ddde7195adf6 "mm: remove pagetable_dtor_free()" (0/2)
+      - 801693210ddc "mm: remove pagetable_dtor_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261030083800.599152-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
     - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3 commits)
-      - a7d791975874 "mm/memory: remove unused vmf_insert_mixed_mkwrite()" (0/3)
+      - ffb8a2b4c01f "mm/memory: remove unused vmf_insert_mixed_mkwrite()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
         - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
-      - 50baf626de4e "mm/memory: remove the mkwrite argument from __vm_insert_mixed()" (1/3)
+      - 1c6d5e5de03b "mm/memory: remove the mkwrite argument from __vm_insert_mixed()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
-      - 85e14cefdd53 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed()" (2/3)
+      - b30428b6fd47 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
+    - 10740dae12d6 "mm: move LRU size stat updates out of lru_lock in folio batches"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
