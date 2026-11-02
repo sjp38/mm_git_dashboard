@@ -1,43 +1,19 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 4 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 6 -> 7 commits
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, maintainer: 3 -> 4 commits
-    - maintainer, no role : 3 -> 3 commits (no change)
-  - new commits
-    - c5591a9ffd46 "mm/hugetlb_cma: remove two unused include files"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
-  - changed commits
-    - 6178b797c4a1 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
-      - Authored by no role player, reviewed by a maintainer
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - Link: https://lore.kernel.org/20261028113319.38544-2-kaitao.cheng@linux.dev
-    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
-      - 078daddbfc69 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - 2491a8cb256b "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo() (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
-      - acb9108c488d "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios() (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
+- mm-new: 7 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, maintainer: 4 -> 0 commits
+    - maintainer, no role : 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

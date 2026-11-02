@@ -1,51 +1,16 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 49f8de263681 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lore.kernel.org/20261029201858.2932905-1-tjmercier@google.com
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 8 -> 8 commits (no change)
-  - series: 3 (8) -> 3 (8) (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
-  - new commits
-    - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
-      - e650205fdc62 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - ea1ef8f162f4 "memcg: reduce nesting in consume_stock() and refill_stock() (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 79e87bae4d52 "memcg: annotate slow paths in consume_stock() and refill_stock() (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - b0d310822a97 "memcg: uncharge pages outside memcg_stock.lock in refill_stock() (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
-  - dropped commits
-    - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
-      - 1e7ea889e8ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock. (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - ea7f5a0d53f4 "memcg: reduce nesting in consume_stock() and refill_stock(). (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 38d3fceeebb8 "memcg: annotate slow paths in consume_stock() and refill_stock(). (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - 1f42549f6d38 "memcg: uncharge pages outside memcg_stock.lock in refill_stock(). (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
+- mm-new: 8 -> 0 commits
+  - series: 3 (8) -> 0 (0)
+    - no role, maintainer: 8 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

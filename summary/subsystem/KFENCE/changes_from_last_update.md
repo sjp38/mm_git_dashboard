@@ -12,5 +12,11 @@
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-nonmm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "hibernation: make safe_copy_page more robust and remove debug_pagealloc support", v2. (5)
+      - 10bca88a94e6 "hibernation, KFENCE: explicitly map/unmap KFENCE pages (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260926-hibernation-v2-4-235f69f3ab2a@kernel.org

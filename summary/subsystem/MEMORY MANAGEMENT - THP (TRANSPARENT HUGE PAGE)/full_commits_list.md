@@ -2,36 +2,36 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 2 commits
-    - reviewer, reviewer: 1 commits
+    - no role, maintainer: 2 commits
+    - reviewer, nobody: 1 commits
   - full commits list
-    - 260563f0306e "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
-      - Authored by no role player, reviewed by a reviewer
+    - 0cfceafb47be "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-    - 652c7752136f "khugepaged: fix readahead lock inversion in collapse_file()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261026152013.10511-1-lance.yang@linux.dev
-    - afe839d2f283 "mm/huge_memory: set the mmu_gather page size in zap_huge_pud()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/8b853e5f9f16145859407b28af654b0f79e12642.1793318297.git.ritesh.list@gmail.com
+    - 8d1548c92586 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
+    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 547bf65a1b08 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 1c764df4a9cd "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 9c350b77c58f "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
-        - Authored by no role player, reviewed by a reviewer
+      - 8ce9dd872abf "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 9a5cd0477acb "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 7fbd6069efb4 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

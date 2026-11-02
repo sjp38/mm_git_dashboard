@@ -1,128 +1,107 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 42 -> 44 commits
+- mm-hotfixes-unstable: 44 -> 47 commits
   - series: 7 (17) -> 7 (17) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 15 -> 15 commits (no change)
-    - no role, reviewer: 12 -> 13 commits
-    - no role, maintainer: 7 -> 7 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 15 -> 17 commits
+    - no role, reviewer: 13 -> 10 commits
+    - no role, maintainer: 7 -> 11 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, no role : 2 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
+    - maintainer, no role : 0 -> 2 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2)
-      - c71f83a86b04 "mm/kasan: detect double-free involving kfree_rcu_sheaf() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
-        - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
-      - 7e64861da3df "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
-    - e82bcb9a0e7d "mm/mempolicy: use one node set for interleave weights"
-      - Authored by a maintainer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261030161046.1497894-1-gourry@gourry.net
-    - 19f2c9b7d083 "mm/shmem: fix swapin livelock on a mismatched large swap cache folio"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261027-shmem-swapin-mismatch-v1-1-84e30aa3b9e5@columbia.edu
-  - changed commits
-    - 49f8de263681 "mm: memcontrol: fix NULL pointer deref and UAF from high_work_func() on dying memcg"
+    - 8d1548c92586 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lore.kernel.org/20261029201858.2932905-1-tjmercier@google.com
-  - dropped commits
+      - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
+    - 3ae3483920df "mm/mempolicy: recompute automatic interleave weights on memory hotplug"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261030161234.1505367-1-gourry@gourry.net
+    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+    - dabee2873293 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261031-uffd-prot-bits-fork-event-v2-1-c448e57df417@kernel.org
+    - 06dab86093ad "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
+  - changed commits
     - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2)
-      - 1cbf1444739c "mm/kasan: detect double-free involving kfree_rcu_sheaf(). (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
-        - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
-      - cd2916a7a21a "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf(). (1/2)"
+      - 55079b2bde79 "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf() (1/2)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Cc: <stable@vger.kernel.orgg>"
         - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
+  - dropped commits
+    - 652c7752136f "khugepaged: fix readahead lock inversion in collapse_file()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261026152013.10511-1-lance.yang@linux.dev
+    - afe839d2f283 "mm/huge_memory: set the mmu_gather page size in zap_huge_pud()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/8b853e5f9f16145859407b28af654b0f79e12642.1793318297.git.ritesh.list@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 4 commits
+- mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-  - dropped commits
-    - 95b7365accfa "mm/vmalloc: read vm_map_ram block regions from the requested offset"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261017231325.796986-1-nickolai@csail.mit.edu
-- mm-new: 21 -> 25 commits
-  - series: 4 (13) -> 5 (15)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 10 -> 14 commits
-    - maintainer, no role : 3 -> 3 commits (no change)
+- mm-new: 25 -> 36 commits
+  - series: 5 (15) -> 7 (23)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 1 -> 5 commits
+    - no role, reviewer: 7 -> 6 commits
+    - no role, maintainer: 14 -> 15 commits
+    - maintainer, no role : 3 -> 4 commits
+    - maintainer, reviewer: 0 -> 4 commits
   - new commits
-    - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
-      - e650205fdc62 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - ea1ef8f162f4 "memcg: reduce nesting in consume_stock() and refill_stock() (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 79e87bae4d52 "memcg: annotate slow paths in consume_stock() and refill_stock() (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - b0d310822a97 "memcg: uncharge pages outside memcg_stock.lock in refill_stock() (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
-    - c9b495551158 "mm: kmemleak: scan modified objects as soon as they are grayed"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
-    - c5591a9ffd46 "mm/hugetlb_cma: remove two unused include files"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
-    - series "mm/zswap: batch the writeback IO". (2)
-      - 958d78e9ede7 "mm/zswap: batch the writeback IO of consecutive entries (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
-        - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
-      - 4edea4828537 "mm/zswap: plug the writeback IO of an LRU walk (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
-  - changed commits
-    - 6178b797c4a1 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input"
-      - Authored by no role player, reviewed by a maintainer
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - Link: https://lore.kernel.org/20261028113319.38544-2-kaitao.cheng@linux.dev
-    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
-      - 078daddbfc69 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
+    - series "memcg: clean up memory.high enforcement", v2. (5)
+      - 5a6f27e7f5d8 "memcg: move memory.high enforcement out of try_charge_memcg() (0/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261030205418.341214-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20261030205418.341214-2-shakeel.butt@linux.dev
+      - 7a777cf8ab7a "memcg: force charges from reclaim before trying the limits (1/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261030205418.341214-3-shakeel.butt@linux.dev
+      - 34cb7acd043e "memcg: use high_work for kernel threads (2/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261030205418.341214-4-shakeel.butt@linux.dev
+      - eb06680cd78e "memcg: use high_work for remote charges (3/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261030205418.341214-5-shakeel.butt@linux.dev
+      - d3d223269ef5 "memcg: simplify high limit handling after a charge (4/5)"
         - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - 2491a8cb256b "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo() (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
-      - acb9108c488d "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios() (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
-  - dropped commits
-    - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
-      - 1e7ea889e8ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock. (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - ea7f5a0d53f4 "memcg: reduce nesting in consume_stock() and refill_stock(). (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 38d3fceeebb8 "memcg: annotate slow paths in consume_stock() and refill_stock(). (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - 1f42549f6d38 "memcg: uncharge pages outside memcg_stock.lock in refill_stock(). (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
+        - Link: https://lore.kernel.org/20261030205418.341214-6-shakeel.butt@linux.dev
+    - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3)
+      - a7d791975874 "mm/memory: remove unused vmf_insert_mixed_mkwrite() (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
+        - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
+      - 50baf626de4e "mm/memory: remove the mkwrite argument from __vm_insert_mixed() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
+      - 85e14cefdd53 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
+    - 0dd385e187d7 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
+    - c17df5325d9b "shmem: report casefold setting in mount options"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261020035917.693478-1-krisman@suse.de
+    - e3260dc0ec11 "mm/migrate: fix softlockup in do_pages_stat() with huge page arrays"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261031033330.3416326-1-xiqi5703@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-nonmm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "hibernation: make safe_copy_page more robust and remove debug_pagealloc support", v2. (5)
+      - 10bca88a94e6 "hibernation, KFENCE: explicitly map/unmap KFENCE pages (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260926-hibernation-v2-4-235f69f3ab2a@kernel.org

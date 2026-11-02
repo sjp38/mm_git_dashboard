@@ -5,21 +5,21 @@
     - no role, no role : 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - d27caadcba5c "selftests/mm: merge: keep the far mremap() targets in the carveout"
+    - 57b8a672eae5 "selftests/mm: merge: keep the far mremap() targets in the carveout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 3f4538da2033 "selftests/mm: fix khugepaged_race build with older glibc"
+    - 3d139e7ef040 "selftests/mm: fix khugepaged_race build with older glibc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261027122013.4286-1-zenghui.yu@linux.dev
-    - 46ad6f44ef6c "mm/hugetlb_vmemmap: map the shared tail page writable"
+    - d7e0525c4dc6 "mm/hugetlb_vmemmap: map the shared tail page writable"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
     - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2 commits)
-      - 1d9958498233 "mm/cma: accept memory of multi-range CMA areas" (0/2)
+      - a03916608cbc "mm/cma: accept memory of multi-range CMA areas" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
         - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
-      - f549e6a77fad "mm/cma: accept memory of CMA areas reserved at a fixed address" (1/2)
+      - c9d562e0aed9 "mm/cma: accept memory of CMA areas reserved at a fixed address" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -28,69 +28,68 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 11 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
     - maintainer, nobody: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 547bf65a1b08 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 1c764df4a9cd "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "selftests/mm: run the XFS-backed THP tests when xfs is a module", v3. (2 commits)
-      - 2f6d4eb1a371 "selftests/mm: track the modules run_vmtests.sh loads" (0/2)
+      - 729ff13fc81a "selftests/mm: track the modules run_vmtests.sh loads" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-0-16ad772850ee@gmail.com
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-1-16ad772850ee@gmail.com
-      - e467d90663e8 "selftests/mm: load xfs before checking for it in run_vmtests.sh" (1/2)
+      - f0fe6ed031af "selftests/mm: load xfs before checking for it in run_vmtests.sh" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-2-16ad772850ee@gmail.com
     - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4 commits)
-      - 078daddbfc69 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
+      - 80de88523d0f "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
         - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - f06fa79087c3 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
+      - 0a07fb9c31fa "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 9c350b77c58f "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
-        - Authored by no role player, reviewed by a reviewer
+      - 8ce9dd872abf "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 9a5cd0477acb "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 7fbd6069efb4 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
-      - bed0d4255119 "kselftest: mm: introduce size_to_shift() helper" (2/3)
+      - 0036a5ac53b7 "kselftest: mm: introduce size_to_shift() helper" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-3-3d77129e0557@arm.com
     - series "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests", v3. (7 commits)
-      - d89b4b42bc90 "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests" (0/7)
+      - ed34778f4b12 "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20261019171206.3331374-2-gourry@gourry.net
-      - 6cc75211dbdb "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling" (1/7)
+      - 296b380b24b2 "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-3-gourry@gourry.net
-      - 9e03e1127961 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb" (2/7)
+      - e31c6ed8cdfc "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-4-gourry@gourry.net
-      - d1544a29a9c7 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory" (3/7)
+      - 810b18e03bc7 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-5-gourry@gourry.net
-      - 1538c152911a "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs" (4/7)
+      - 07e9c1b44bfe "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-6-gourry@gourry.net
-      - 3d1a7472f4be "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix" (5/7)
+      - b28abffb59c5 "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix" (5/7)
         - Authored by a maintainer, reviewed by nobody
-      - c93baaff6600 "selftests/mm: check MADV_PAGEOUT file permissions" (6/7)
+      - 2dc991c884aa "selftests/mm: check MADV_PAGEOUT file permissions" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-7-gourry@gourry.net
-    - 8686d22ac071 "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
+    - 3508a975f2cf "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261019171206.3331374-8-gourry@gourry.net
-    - 5c43349efe08 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - cc8368f07d6e "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,18 +1,6 @@
 - baseline: v7.3-17318-g65ba8f34ec886
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-  - full commits list
-    - 662f5e820927 "mm/vmalloc: bail out if in softirq context"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
-    - dcd03513aaea "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - e52e9c98c435 "mm/vmalloc: avoid false sharing with drain_vmap_work"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -5,25 +5,12 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
+  - changed commits
     - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2)
-      - c71f83a86b04 "mm/kasan: detect double-free involving kfree_rcu_sheaf() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
-        - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
-      - 7e64861da3df "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf() (1/2)"
+      - 55079b2bde79 "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf() (1/2)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
-  - dropped commits
-    - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2)
-      - 1cbf1444739c "mm/kasan: detect double-free involving kfree_rcu_sheaf(). (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
-        - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
-        - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
-      - cd2916a7a21a "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf(). (1/2)"
-        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Cc: <stable@vger.kernel.orgg>"
         - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -1,20 +1,28 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 4 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 4 commits
+  - new commits
+    - dabee2873293 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261031-uffd-prot-bits-fork-event-v2-1-c448e57df417@kernel.org
+    - 06dab86093ad "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 5c43349efe08 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
+    - 0dd385e187d7 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

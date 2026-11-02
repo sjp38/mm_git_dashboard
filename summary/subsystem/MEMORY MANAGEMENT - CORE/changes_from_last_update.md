@@ -1,40 +1,36 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 4 -> 5 commits
-  - series: 1 (1) -> 2 (2)
-    - no role, no role : 3 -> 4 commits
+- mm-hotfixes-unstable: 5 -> 6 commits
+  - series: 2 (2) -> 2 (2) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: Fix page-table teardown during memory hot-remove", v3. (4)
-      - 4f0be31f0174 "mm: fix missing page-table destructor in pagetable_free() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-- mm-new: 3 -> 4 commits
-  - series: 0 (1) -> 1 (2)
-    - no role, no role : 0 -> 1 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 4 -> 7 commits
+  - series: 1 (2) -> 2 (5)
+    - no role, no role : 1 -> 4 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - series "mm: Remove pagetable_dtor_free()". (2)
-      - e6d3a37b93ee "mm: remove pagetable_dtor_free() (0/2)"
+    - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3)
+      - a7d791975874 "mm/memory: remove unused vmf_insert_mixed_mkwrite() (0/3)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261030083800.599152-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
-  - changed commits
-    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
-      - 2491a8cb256b "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo() (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
+        - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
+      - 50baf626de4e "mm/memory: remove the mkwrite argument from __vm_insert_mixed() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
+      - 85e14cefdd53 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

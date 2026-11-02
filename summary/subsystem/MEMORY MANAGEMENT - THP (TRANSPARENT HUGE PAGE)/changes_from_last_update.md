@@ -3,8 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 0 -> 2 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - 8d1548c92586 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
+    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+  - dropped commits
+    - 652c7752136f "khugepaged: fix readahead lock inversion in collapse_file()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261026152013.10511-1-lance.yang@linux.dev
+    - afe839d2f283 "mm/huge_memory: set the mmu_gather page size in zap_huge_pud()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/8b853e5f9f16145859407b28af654b0f79e12642.1793318297.git.ritesh.list@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
@@ -13,7 +29,8 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

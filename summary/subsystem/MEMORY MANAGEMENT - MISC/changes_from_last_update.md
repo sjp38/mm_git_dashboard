@@ -9,51 +9,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 8 -> 17 commits
-  - series: 3 (7) -> 4 (14)
+- mm-new: 17 -> 17 commits (no change)
+  - series: 4 (14) -> 4 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 11 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
-    - maintainer, nobody: 0 -> 1 commits
+    - no role, no role : 11 -> 11 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 3 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests", v3. (7)
-      - d89b4b42bc90 "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261019171206.3331374-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20261019171206.3331374-2-gourry@gourry.net
-      - 6cc75211dbdb "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261019171206.3331374-3-gourry@gourry.net
-      - 9e03e1127961 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261019171206.3331374-4-gourry@gourry.net
-      - d1544a29a9c7 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261019171206.3331374-5-gourry@gourry.net
-      - 1538c152911a "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261019171206.3331374-6-gourry@gourry.net
-      - 3d1a7472f4be "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix (5/7)"
-        - Authored by a maintainer, reviewed by nobody
-      - c93baaff6600 "selftests/mm: check MADV_PAGEOUT file permissions (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261019171206.3331374-7-gourry@gourry.net
-    - 8686d22ac071 "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261019171206.3331374-8-gourry@gourry.net
-    - 5c43349efe08 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-  - changed commits
-    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
-      - 078daddbfc69 "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Tested-by: Pavithra Prakash <pavrampu@linux.ibm.com>"
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

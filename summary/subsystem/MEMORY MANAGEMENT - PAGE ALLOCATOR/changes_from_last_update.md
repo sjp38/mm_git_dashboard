@@ -1,17 +1,25 @@
 - baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 5 -> 5 commits (no change)
+- mm-hotfixes-unstable: 5 -> 6 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 3 -> 1 commits
+    - no role, maintainer: 0 -> 2 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, no role : 2 -> 0 commits
+    - maintainer, no role : 0 -> 2 commits
+  - new commits
+    - 0077c1765806 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
