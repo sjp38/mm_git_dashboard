@@ -1,4 +1,4 @@
-- baseline: v7.3-17318-g65ba8f34ec886
+- baseline: v7.4-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 6 total, 1 (2) series, 4 non-series commits
   - author/reviewer role stat
@@ -7,24 +7,24 @@
     - reviewer, nobody: 1 commits
     - maintainer, no role : 2 commits
   - full commits list
-    - 8bd439007613 "mm/page_alloc: let the highest memory node recover from hopeless state"
+    - a0e0267eaa6d "mm/page_alloc: let the highest memory node recover from hopeless state"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
-    - 2919aa7c4a57 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
+    - 9dc4fc68c375 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
     - series "mm: page_alloc: fix reserve access for non-blocking requests", v2. (2 commits)
-      - 341b8333cda2 "mm: page_alloc: do not give all non-blocking requests reserve access" (0/2)
+      - 469b625eb9ad "mm: page_alloc: do not give all non-blocking requests reserve access" (0/2)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it [0]
         - Link: https://lore.kernel.org/linux-mm/arFBWvzXPYrKuIYi@cmpxchg.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20261001082152.2879289-1-dipiets@amazon.it/ [2]
         - Link: https://lore.kernel.org/20261028171719.2043421-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20261028171719.2043421-2-hannes@cmpxchg.org
-      - 3693e46a5955 "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES" (1/2)
+      - c1392202a115 "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES" (1/2)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261028171719.2043421-3-hannes@cmpxchg.org
-    - e50f49bd03f7 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 3e25520de716 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
@@ -32,7 +32,7 @@
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
       - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
       - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
-    - f25e70312c08 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - cc9656afabbc "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -42,10 +42,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - ffa7bab5dec4 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 584cb29456bf "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 20cdf1e1b3ed "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - 0e5693b83505 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261030025507.115248-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

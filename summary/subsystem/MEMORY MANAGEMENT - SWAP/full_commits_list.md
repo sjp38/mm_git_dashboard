@@ -1,17 +1,23 @@
-- baseline: v7.3-17318-g65ba8f34ec886
+- baseline: v7.4-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 47678e9021fe "mm: make swapoff interruptible when unusing mms/shmem"
+    - f4c2d3bc5c19 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
-    - b573fe82acf5 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
+    - f3c5574c8ce7 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 3a86bcc41d23 "mm: bypass swap readahead for zswap"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

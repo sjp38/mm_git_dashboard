@@ -1,4 +1,4 @@
-- baseline: v7.3-17318-g65ba8f34ec886
+- baseline: v7.4-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 59f3bf790bb2 "mm: kmemleak: scan modified objects as soon as they are grayed"
+    - b41411fa4be9 "mm: kmemleak: scan modified objects as soon as they are grayed"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

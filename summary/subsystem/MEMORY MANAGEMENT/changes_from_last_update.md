@@ -1,57 +1,107 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 47 -> 48 commits
+- mm-hotfixes-unstable: 48 -> 48 commits (no change)
   - series: 7 (17) -> 7 (17) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 17 -> 17 commits (no change)
+    - no role, no role : 17 -> 16 commits
     - no role, reviewer: 10 -> 10 commits (no change)
-    - no role, maintainer: 11 -> 12 commits
+    - no role, maintainer: 12 -> 13 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - 300f3a39fbea "mm: memory-failure: update statistics before emitting the trace event"
+    - b8474d43eae2 "mm/filemap: stop fault-around when the walk steps back"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/d472a9a3ccfa8c0359d7d7acabed92c8927d8e47.1793174996.git.mchehab+huawei@kernel.org
+      - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
+      - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
+  - changed commits
+    - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2)
+      - 36da2b01d425 "mm/cma: accept memory of multi-range CMA areas (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - dropped "Cc: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
+      - 7a3d1f384264 "mm/cma: accept memory of CMA areas reserved at a fixed address (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - dropped "Cc: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
+  - dropped commits
+    - 1886a7379053 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 36 -> 40 commits
-  - series: 7 (23) -> 8 (26)
-    - no role, nobody: 2 -> 5 commits
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 6 -> 7 commits
-    - no role, maintainer: 15 -> 15 commits (no change)
+- mm-new: 40 -> 49 commits
+  - series: 8 (26) -> 10 (34)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 5 -> 7 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, maintainer: 15 -> 22 commits
     - maintainer, no role : 4 -> 4 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
   - new commits
+    - series "mm/damon/core: iterate over installed probes instead of DAMON_MAX_PROBES", v5. (2)
+      - 0b31f4bb75c5 "mm/damon/core: use only installed probe in damon_merge_two_regions() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102153753.97769-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102153753.97769-2-sj@kernel.org
+      - 0dd5209a37df "mm/damon/core: copy only installed probe in damon_split_region_at() (1/2)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102153753.97769-3-sj@kernel.org
+    - series "mm/damon: various fixes and cleanup of code, test, and docs". (9)
+      - 17fb66fec1b2 "mm/damon/core: remove unnecessary zero-initialization in damon_new_ctx() (0/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102150757.93058-2-sj@kernel.org
+      - d86acc66316b "mm/damon/ops-common: align MMU notifier range when clearing PTE young bit (1/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-3-sj@kernel.org
+      - 4336d3b3a848 "mm/damon/ops-common: align MMU notifier range when clearing PMD young bit (2/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-4-sj@kernel.org
+      - 9d99ec4d7ad2 "mm/damon/stat: avoid 32-bit overflow in idle percentiles (3/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-5-sj@kernel.org
+        - Link: https://lore.kernel.org/r/CANOyQmHad1vamnZT12M5yPrJ69==Pt1U0+MGw6u0MuNtr-DRCw@mail.gmail.com [1]
+        - Link: https://lore.kernel.org/179207592479.3.11595453180868898703@gmail.com
+      - d111e8383abd "mm/damon/{p,v}addr: skip folios already on the migration target node (4/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261102150757.93058-6-sj@kernel.org
+      - bb564edcdfb6 "mm/damon/reclaim: fix typo and grammar (6/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-8-sj@kernel.org
+    - 3a86bcc41d23 "mm: bypass swap readahead for zswap"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
+  - changed commits
+    - b41411fa4be9 "mm: kmemleak: scan modified objects as soon as they are grayed"
+      - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Fixes: 04609ccc40c4 ("kmemleak: Reduce the false positives by checking for modified objects")"
+      - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
-      - 01f0dab18f80 "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 3d9232953d11 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
-        - Authored by no role player, reviewed by nobody
+      - 89886d82fe3b "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 18323067c509 "tools/mm/thpmaps: fix missing mapping names (2/3)"
-        - Authored by no role player, reviewed by nobody
+      - f97db183c0b8 "tools/mm/thpmaps: fix missing mapping names (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 10740dae12d6 "mm: move LRU size stat updates out of lru_lock in folio batches"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 2 commits
+- mm-nonmm-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - e3f9e4b1a1f5 "shmem: clamp negative used-block samples in statfs"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261028051826.23058-1-dennylin0707@gmail.com
+    - no role, reviewer: 1 -> 1 commits (no change)

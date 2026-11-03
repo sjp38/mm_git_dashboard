@@ -1,4 +1,4 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
@@ -9,22 +9,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 3 -> 6 commits
-  - series: 1 (2) -> 2 (5)
-    - no role, nobody: 1 -> 4 commits
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 6 -> 6 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 1 -> 3 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
+  - changed commits
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
-      - 01f0dab18f80 "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 3d9232953d11 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
-        - Authored by no role player, reviewed by nobody
+      - 89886d82fe3b "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 18323067c509 "tools/mm/thpmaps: fix missing mapping names (2/3)"
-        - Authored by no role player, reviewed by nobody
+      - f97db183c0b8 "tools/mm/thpmaps: fix missing mapping names (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -1,32 +1,64 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 5 -> 5 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2)
+      - 36da2b01d425 "mm/cma: accept memory of multi-range CMA areas (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - dropped "Cc: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
+      - 7a3d1f384264 "mm/cma: accept memory of CMA areas reserved at a fixed address (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - dropped "Cc: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 17 -> 20 commits
-  - series: 4 (14) -> 5 (17)
-    - no role, nobody: 1 -> 4 commits
-    - no role, no role : 11 -> 11 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-new: 20 -> 25 commits
+  - series: 5 (17) -> 6 (22)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 11 -> 13 commits
+    - no role, maintainer: 3 -> 8 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
+    - series "mm/damon: various fixes and cleanup of code, test, and docs". (9)
+      - 77d8ac743d7b "Docs/admin-guide/mm/damon/lru_sort: fix grammar and stlye (7/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-9-sj@kernel.org
+      - 0eed095876e4 "Docs/admin-guide/mm/damon/reclaim: document how to disable watermarks (8/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-10-sj@kernel.org
+    - series "Docs/admin-guide/mm/damon: minor fixes", v2. (3)
+      - c6b414ae64a5 "Docs/admin-guide/mm/damon: fix various typos (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102152849.96057-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102152849.96057-2-sj@kernel.org
+      - c2873db91931 "Docs/admin-guide/mm/damon/lru_sort: fix copy-paste mistakes (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102152849.96057-3-sj@kernel.org
+      - 76f938a295a2 "Docs/admin-guide/mm/damon/usage: fix incorrect option syntax in perf example (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102152849.96057-4-sj@kernel.org
+  - changed commits
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
-      - 01f0dab18f80 "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 3d9232953d11 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
-        - Authored by no role player, reviewed by nobody
+      - 89886d82fe3b "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 18323067c509 "tools/mm/thpmaps: fix missing mapping names (2/3)"
-        - Authored by no role player, reviewed by nobody
+      - f97db183c0b8 "tools/mm/thpmaps: fix missing mapping names (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

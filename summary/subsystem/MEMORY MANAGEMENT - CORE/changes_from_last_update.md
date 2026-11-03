@@ -1,4 +1,4 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 6 -> 6 commits (no change)
@@ -10,16 +10,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 7 -> 8 commits
+- mm-new: 8 -> 9 commits
   - series: 2 (5) -> 2 (5) (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 2 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - 10740dae12d6 "mm: move LRU size stat updates out of lru_lock in folio batches"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
+    - 3a86bcc41d23 "mm: bypass swap readahead for zswap"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

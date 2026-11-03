@@ -1,162 +1,97 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.3-17318-g65ba8f34ec886 (no change)
+- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 72 -> 73 commits
+- mm-hotfixes-unstable: 73 -> 73 commits (no change)
   - series: 10 (31) -> 10 (31) (no change)
-    - no role, nobody: 8 -> 7 commits
-    - no role, no role : 34 -> 34 commits (no change)
+    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, no role : 34 -> 33 commits
     - no role, reviewer: 11 -> 11 commits (no change)
-    - no role, maintainer: 12 -> 14 commits
+    - no role, maintainer: 14 -> 15 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - 300f3a39fbea "mm: memory-failure: update statistics before emitting the trace event"
+    - b8474d43eae2 "mm/filemap: stop fault-around when the walk steps back"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/d472a9a3ccfa8c0359d7d7acabed92c8927d8e47.1793174996.git.mchehab+huawei@kernel.org
+      - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
+      - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
   - changed commits
-    - c07581ac3fa4 "hugetlbfs: move hugetlbfs_free_inode tracepoint to ->destroy_inode()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20261101-b4-hugetlbfs-trace-v3-1-051b716f490f@gmail.com
+    - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2)
+      - 36da2b01d425 "mm/cma: accept memory of multi-range CMA areas (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - dropped "Cc: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
+      - 7a3d1f384264 "mm/cma: accept memory of CMA areas reserved at a fixed address (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - dropped "Cc: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
+        - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
+    - 17c3d127df0a "xarray: clear the new head's parent before freeing the old head"
+      - Authored by no role player, reviewed by nobody
+      - added "Signed-off-by: Nickolai Zeldovich <nickolai@csail.mit.edu>"
+      - Link: https://lore.kernel.org/20261027192014.844878-1-nickolai@csail.mit.edu
     - series "MAINTAINERS: MM updates". (7)
-      - f8db4add63b0 "MAINTAINERS: TMPFS (SHMEM FILESYSTEM) updates (1/7)"
+      - 759784f3e3bd "MAINTAINERS: mention for-next branch in MEMORY MANAGEMENT - MEMORY MAP (0/7)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261030-maintainers-v1-0-97278f8a5f54@kernel.org
+        - Link: https://lore.kernel.org/20261030-maintainers-v1-1-97278f8a5f54@kernel.org
+      - c1c65d7aafca "MAINTAINERS: TMPFS (SHMEM FILESYSTEM) updates (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
         - Link: https://lore.kernel.org/20261030-maintainers-v1-2-97278f8a5f54@kernel.org
-      - fff86cddc08d "MAINTAINERS: add Zi Yan as co-maintainer for MEMORY MANAGEMENT - THP (2/7)"
+      - 2fe57c023095 "MAINTAINERS: add Zi Yan as co-maintainer for MEMORY MANAGEMENT - THP (2/7)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
         - Link: https://lore.kernel.org/20261030-maintainers-v1-3-97278f8a5f54@kernel.org
-    - 30b5b8d90901 "MAINTAINERS: use a common prefix for MM components"
-      - Authored by no role player, reviewed by nobody
-      - dropped "Signed-off-by: Andrew Morton <akpm@linux-foundation.org>"
-      - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
-      - dropped "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-      - dropped "Cc: Byungchul Park <byungchul@sk.com>"
-      - dropped "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Christoph Lameter <cl@gentwo.org>"
-      - dropped "Cc: Dave Chinner <david@fromorbit.com>"
-      - dropped "Cc: "David Hildenbrand (Arm)" <david@kernel.org>"
-      - dropped "Cc: David Rientjes <rientjes@google.com>"
-      - dropped "Cc: Dennis Zhou <dennis@kernel.org>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Gregory Price <gourry@gourry.net>"
-      - dropped "Cc: Hao Li <hao.li@linux.dev>"
-      - dropped "Cc: Harry Yoo <harry@kernel.org>"
-      - dropped "Cc: Hugh Dickins <hughd@google.com>"
-      - dropped "Cc: Jann Horn <jannh@google.com>"
-      - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: John Hubbard <jhubbard@nvidia.com>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Naoya Horiguchi <nao.horiguchi@gmail.com>"
-      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
-      - dropped "Cc: Nicholas Piggin <npiggin@gmail.com>"
-      - dropped "Cc: Nico Pache <nico.pache@linux.dev>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Peter Xu <peterx@redhat.com>"
-      - dropped "Cc: Peter Zijlstra <peterz@infradead.org>"
-      - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
-      - dropped "Cc: Rakie Kim <rakie.kim@sk.com>"
-      - dropped "Cc: Rik van Riel <riel@surriel.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: SJ Park <sj@kernel.org>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Tejun Heo <tj@kernel.org>"
-      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
-      - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Will Deacon <will@kernel.org>"
-      - dropped "Cc: Xu Xin <xu.xin@linux.dev>"
-      - dropped "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-      - dropped "Cc: Youngjun Park <youngjun.park@lge.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-    - 88c41b4cb343 "MAINTAINERS: sort component entries alphabetically"
-      - Authored by no role player, reviewed by nobody
-      - dropped "Signed-off-by: Andrew Morton <akpm@linux-foundation.org>"
-      - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
-      - dropped "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-      - dropped "Cc: Byungchul Park <byungchul@sk.com>"
-      - dropped "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Christoph Lameter <cl@gentwo.org>"
-      - dropped "Cc: Dave Chinner <david@fromorbit.com>"
-      - dropped "Cc: "David Hildenbrand (Arm)" <david@kernel.org>"
-      - dropped "Cc: David Rientjes <rientjes@google.com>"
-      - dropped "Cc: Dennis Zhou <dennis@kernel.org>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Gregory Price <gourry@gourry.net>"
-      - dropped "Cc: Hao Li <hao.li@linux.dev>"
-      - dropped "Cc: Harry Yoo <harry@kernel.org>"
-      - dropped "Cc: Hugh Dickins <hughd@google.com>"
-      - dropped "Cc: Jann Horn <jannh@google.com>"
-      - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: John Hubbard <jhubbard@nvidia.com>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Naoya Horiguchi <nao.horiguchi@gmail.com>"
-      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
-      - dropped "Cc: Nicholas Piggin <npiggin@gmail.com>"
-      - dropped "Cc: Nico Pache <nico.pache@linux.dev>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Peter Xu <peterx@redhat.com>"
-      - dropped "Cc: Peter Zijlstra <peterz@infradead.org>"
-      - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
-      - dropped "Cc: Rakie Kim <rakie.kim@sk.com>"
-      - dropped "Cc: Rik van Riel <riel@surriel.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: SJ Park <sj@kernel.org>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Tejun Heo <tj@kernel.org>"
-      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
-      - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Will Deacon <will@kernel.org>"
-      - dropped "Cc: Xu Xin <xu.xin@linux.dev>"
-      - dropped "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-      - dropped "Cc: Youngjun Park <youngjun.park@lge.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - 4345e900943b "MAINTAINERS: sort entries in MM sections (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261030-maintainers-v1-4-97278f8a5f54@kernel.org
+      - 4c8602a18ac4 "MAINTAINERS: add missing files to MM component sections (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261030-maintainers-v1-5-97278f8a5f54@kernel.org
+      - ad4b6e532916 "MAINTAINERS: rename and move MEMORY HOT(UN)PLUG (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261030-maintainers-v1-6-97278f8a5f54@kernel.org
+      - 0b407f14681e "MAINTAINERS: route more MM changes through mm/core.git (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20261030-maintainers-v1-7-97278f8a5f54@kernel.org
+    - series "MAINTAINERS updates for page and slab allocators". (2)
+      - 6f008fe2fcf8 "MAINTAINERS: add Johannes as the page allocator co-maintainer (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261101-maint-page_alloc-update-v1-0-27e8c246b13d@kernel.org
+        - Link: https://lore.kernel.org/20261101-maint-page_alloc-update-v1-1-27e8c246b13d@kernel.org
+        - Link: https://lore.kernel.org/all/20261030-maintainers-v1-0-97278f8a5f54@kernel.org/ [1]
+        - Link: https://lore.kernel.org/all/20261030-maintainers-v1-7-97278f8a5f54@kernel.org/ [2]
+      - 9144d40c6fc2 "MAINTAINERS: move SLAB ALLOCATOR under MEMORY MANAGEMENT (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261101-maint-page_alloc-update-v1-2-27e8c246b13d@kernel.org
+  - dropped commits
+    - 1886a7379053 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 6 -> 6 commits (no change)
@@ -165,91 +100,94 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 66 -> 70 commits
-  - series: 15 (46) -> 16 (49)
-    - no role, nobody: 6 -> 9 commits
-    - no role, no role : 22 -> 22 commits (no change)
-    - no role, reviewer: 8 -> 9 commits
-    - no role, maintainer: 21 -> 21 commits (no change)
+- mm-new: 70 -> 85 commits
+  - series: 16 (49) -> 19 (63)
+    - no role, nobody: 9 -> 8 commits
+    - no role, no role : 22 -> 24 commits
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 21 -> 34 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 4 -> 4 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
   - new commits
+    - series "mm/damon/core: iterate over installed probes instead of DAMON_MAX_PROBES", v5. (2)
+      - 0b31f4bb75c5 "mm/damon/core: use only installed probe in damon_merge_two_regions() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102153753.97769-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102153753.97769-2-sj@kernel.org
+      - 0dd5209a37df "mm/damon/core: copy only installed probe in damon_split_region_at() (1/2)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102153753.97769-3-sj@kernel.org
+    - series "mm/damon: various fixes and cleanup of code, test, and docs". (9)
+      - 17fb66fec1b2 "mm/damon/core: remove unnecessary zero-initialization in damon_new_ctx() (0/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102150757.93058-2-sj@kernel.org
+      - d86acc66316b "mm/damon/ops-common: align MMU notifier range when clearing PTE young bit (1/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-3-sj@kernel.org
+      - 4336d3b3a848 "mm/damon/ops-common: align MMU notifier range when clearing PMD young bit (2/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-4-sj@kernel.org
+      - 9d99ec4d7ad2 "mm/damon/stat: avoid 32-bit overflow in idle percentiles (3/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-5-sj@kernel.org
+        - Link: https://lore.kernel.org/r/CANOyQmHad1vamnZT12M5yPrJ69==Pt1U0+MGw6u0MuNtr-DRCw@mail.gmail.com [1]
+        - Link: https://lore.kernel.org/179207592479.3.11595453180868898703@gmail.com
+      - d111e8383abd "mm/damon/{p,v}addr: skip folios already on the migration target node (4/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261102150757.93058-6-sj@kernel.org
+      - 749952c65f44 "selftests/damon/sysfs.py: stop obsolete_target shells hanging the test (5/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-7-sj@kernel.org
+      - bb564edcdfb6 "mm/damon/reclaim: fix typo and grammar (6/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-8-sj@kernel.org
+      - 77d8ac743d7b "Docs/admin-guide/mm/damon/lru_sort: fix grammar and stlye (7/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-9-sj@kernel.org
+      - 0eed095876e4 "Docs/admin-guide/mm/damon/reclaim: document how to disable watermarks (8/9)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102150757.93058-10-sj@kernel.org
+    - series "Docs/admin-guide/mm/damon: minor fixes", v2. (3)
+      - c6b414ae64a5 "Docs/admin-guide/mm/damon: fix various typos (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102152849.96057-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102152849.96057-2-sj@kernel.org
+      - c2873db91931 "Docs/admin-guide/mm/damon/lru_sort: fix copy-paste mistakes (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102152849.96057-3-sj@kernel.org
+      - 76f938a295a2 "Docs/admin-guide/mm/damon/usage: fix incorrect option syntax in perf example (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102152849.96057-4-sj@kernel.org
+    - 3a86bcc41d23 "mm: bypass swap readahead for zswap"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
+  - changed commits
+    - b41411fa4be9 "mm: kmemleak: scan modified objects as soon as they are grayed"
+      - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Fixes: 04609ccc40c4 ("kmemleak: Reduce the false positives by checking for modified objects")"
+      - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
-      - 01f0dab18f80 "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 3d9232953d11 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
-        - Authored by no role player, reviewed by nobody
+      - 89886d82fe3b "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 18323067c509 "tools/mm/thpmaps: fix missing mapping names (2/3)"
-        - Authored by no role player, reviewed by nobody
+      - f97db183c0b8 "tools/mm/thpmaps: fix missing mapping names (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 10740dae12d6 "mm: move LRU size stat updates out of lru_lock in folio batches"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 92 -> 101 commits
-  - series: 13 (57) -> 14 (61)
-    - no role, nobody: 29 -> 30 commits
-    - no role, no role : 19 -> 25 commits
-    - no role, reviewer: 2 -> 3 commits
+- mm-nonmm-unstable: 101 -> 101 commits (no change)
+  - series: 14 (61) -> 14 (61) (no change)
+    - no role, nobody: 30 -> 30 commits (no change)
+    - no role, no role : 25 -> 25 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 17 -> 17 commits (no change)
-    - maintainer, nobody: 19 -> 20 commits
+    - maintainer, nobody: 20 -> 20 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
-  - new commits
-    - 96758d52869d "selftests/proc: proc-empty-vm: wait for child's SIGSEGV instead of sleep(1)"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261023183434.9109-1-drifabdelmalekmohamedsaid@gmail.com
-    - series "checkpatch: skip more kernel-only checks for userspace code". (4)
-      - 62ec10f4c330 "checkpatch: is_userspace: exclude kernel code under tools/ (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261022224426.2756960-1-kolyshkin@gmail.com
-        - Link: https://lore.kernel.org/20261022224426.2756960-2-kolyshkin@gmail.com
-      - 99b11a66cc50 "checkpatch: don't warn about ENOSYS in userspace code (1/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261022224426.2756960-3-kolyshkin@gmail.com
-      - 7388ecd81775 "checkpatch: don't warn about BUG() in userspace code (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261022224426.2756960-4-kolyshkin@gmail.com
-      - 3329eae85d43 "checkpatch: don't suggest kstrto<type> in userspace code (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261022224426.2756960-5-kolyshkin@gmail.com
-    - 6a3315ab58e9 "async: Use ktime_us_delta() for debug timings"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/tencent_58D610F93574D60C9AE734253AF69A528506@qq.com
-    - e3f9e4b1a1f5 "shmem: clamp negative used-block samples in statfs"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261028051826.23058-1-dennylin0707@gmail.com
-    - d036c67dde12 "zram: fix quadratic writeback bitmap search"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20da9e9a5ffefd1e6875e311d3740b9f3c1061f3.1793333729.git.senozhatsky@chromium.org
-    - 5fd8fad83a29 "zram: lz4/lz4hc: accept dictionaries of more than 64 KiB"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/f2ac22a731e507e90217a5e9cf29c987ec24e2b0.1793333729.git.senozhatsky@chromium.org
-  - changed commits
-    - series "taskstats: four more tidy-ups in the genl path". (4)
-      - 02b088ec256d "taskstats: use nla_put_u32() in mk_reply() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20261101005616.3022705-1-brads@mainlining.org
-        - Link: https://lore.kernel.org/20261101005743.3022780-1-brads@mainlining.org
-      - 3fbd1f9bfccb "taskstats: take the inode once in exe_add_tsk() (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20261101005743.3022780-2-brads@mainlining.org
-      - b3cd0eb69b3d "taskstats: reuse na in cgroupstats_user_cmd() (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20261101005743.3022780-3-brads@mainlining.org
-      - fad7360bcf08 "taskstats: use div_u64() for the elapsed time in tgid_stats_add_task() (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20261101005743.3022780-4-brads@mainlining.org
