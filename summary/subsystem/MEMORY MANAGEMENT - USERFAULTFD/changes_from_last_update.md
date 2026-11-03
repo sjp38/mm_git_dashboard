@@ -1,17 +1,30 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+- baseline: v7.4-rc1 -> v7.4-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm/hugetlb: fix mremap bugs", v3. (3)
+      - 809cbe72ace8 "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+- mm-hotfixes-unstable: 4 -> 3 commits
+  - series: 1 (2) -> 1 (1)
+    - no role, no role : 4 -> 3 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 5e963f1037f6 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

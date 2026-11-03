@@ -1,20 +1,22 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.4-rc1 -> v7.4-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 740128dd1a3f "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 1 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 3a86bcc41d23 "mm: bypass swap readahead for zswap"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

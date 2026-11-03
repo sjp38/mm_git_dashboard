@@ -1,8 +1,73 @@
 - baseline: v7.4-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-stable: 4 total, 1 (3) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - series "mm/hugetlb: fix mremap bugs", v3. (3 commits)
+      - dfb190302d2b "mm/hugetlb: fix mremap move length truncation" (0/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
+      - 809cbe72ace8 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+      - 92daa8652f88 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible" (2/3)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
+    - 0120a603afad "mm/hugetlb_vmemmap: map the shared tail page writable"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 82995d3e1f7a "hugetlbfs: move hugetlbfs_free_inode tracepoint to ->destroy_inode()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261102-b4-hugetlbfs-trace-v4-1-72371825bb5e@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 6 total, 1 (4) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 3 commits
+    - maintainer, no role : 3 commits
+  - full commits list
+    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4 commits)
+      - 8f14bb65ff1a "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
+      - 8c01fa153ff6 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
+      - 7b7c7a821b3f "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
+      - 4d741584818a "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
+    - 15a9e2a7aca3 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021061901.376104-1-lienze@kylinos.cn
+    - 63b6c491640e "mm/hugetlb_cma: remove two unused include files"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
+- mm-new: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, maintainer: 2 commits
+  - full commits list
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v2. (3 commits)
+      - 13421d54bbfc "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input" (0/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102024910.31486-1-kaitao.cheng@linux.dev
+        - Link: https://lore.kernel.org/20261102024910.31486-2-kaitao.cheng@linux.dev
+      - 673b553e2bba "mm/hugetlb: preserve persistent flags when returning folios to the pool" (1/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102024910.31486-3-kaitao.cheng@linux.dev
+      - a916e1b9effd "mm/hugetlb: fix NR_HUGETLB accounting for surplus folios" (2/3)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261102024910.31486-4-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

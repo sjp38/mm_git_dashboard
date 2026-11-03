@@ -1,14 +1,105 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.4-rc1 -> v7.4-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 4 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 2 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm/hugetlb: fix mremap bugs", v3. (3)
+      - dfb190302d2b "mm/hugetlb: fix mremap move length truncation (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261022034543.51226-1-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20261022034543.51226-2-lizhe.67@bytedance.com
+      - 809cbe72ace8 "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
+      - 92daa8652f88 "mm/hugetlb: fix mremap deadlock when PMD sharing is possible (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261022034543.51226-4-lizhe.67@bytedance.com
+    - 0120a603afad "mm/hugetlb_vmemmap: map the shared tail page writable"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 82995d3e1f7a "hugetlbfs: move hugetlbfs_free_inode tracepoint to ->destroy_inode()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20261102-b4-hugetlbfs-trace-v4-1-72371825bb5e@gmail.com"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20261101-b4-hugetlbfs-trace-v3-1-051b716f490f@gmail.com"
+      - Link: https://lore.kernel.org/20261102-b4-hugetlbfs-trace-v4-1-72371825bb5e@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 6 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, maintainer: 0 -> 3 commits
+    - maintainer, no role : 0 -> 3 commits
+  - changed commits
+    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
+      - 8f14bb65ff1a "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
+      - 8c01fa153ff6 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo() (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
+      - 7b7c7a821b3f "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios() (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
+    - series "kfence: fix pool allocation failure handling", v2. (3)
+      - 4d741584818a "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
+    - 15a9e2a7aca3 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261021061901.376104-1-lienze@kylinos.cn
+    - 63b6c491640e "mm/hugetlb_cma: remove two unused include files"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 0 -> 2 commits
+  - new commits
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v2. (3)
+      - 673b553e2bba "mm/hugetlb: preserve persistent flags when returning folios to the pool (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102024910.31486-3-kaitao.cheng@linux.dev
+      - a916e1b9effd "mm/hugetlb: fix NR_HUGETLB accounting for surplus folios (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261102024910.31486-4-kaitao.cheng@linux.dev
+  - changed commits
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v2. (3)
+      - 13421d54bbfc "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20261102024910.31486-2-kaitao.cheng@linux.dev"
+        - added "Link: https://lore.kernel.org/20261102024910.31486-1-kaitao.cheng@linux.dev"
+        - added "Cc: Michal Hocko <mhocko@kernel.org>"
+        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - added "Cc: Mani Tofigh <mt4022@columbia.edu>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - added "Cc: Miaohe Lin <linmiaohe@huawei.com>"
+        - added "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: Naoya Horiguchi <nao.horiguchi@gmail.com>"
+        - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20261028113319.38544-2-kaitao.cheng@linux.dev"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - Link: https://lore.kernel.org/20261102024910.31486-1-kaitao.cheng@linux.dev
+        - Link: https://lore.kernel.org/20261102024910.31486-2-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,28 +1,35 @@
 - baseline: v7.4-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 48 total, 7 (17) series, 31 non-series commits
+- mm-hotfixes-stable: 31 total, 5 (14) series, 17 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 16 commits
-    - no role, reviewer: 10 commits
-    - no role, maintainer: 13 commits
-    - reviewer, nobody: 1 commits
+    - no role, no role : 10 commits
+    - no role, reviewer: 6 commits
+    - no role, maintainer: 8 commits
     - maintainer, nobody: 3 commits
     - maintainer, no role : 2 commits
+- mm-hotfixes-unstable: 21 total, 3 (5) series, 16 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 7 commits
+    - reviewer, nobody: 1 commits
     - maintainer, reviewer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 1 (2) series, 2 non-series commits
+- mm-unstable: 33 total, 7 (22) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, maintainer: 3 commits
-- mm-new: 49 total, 10 (34) series, 15 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 7 commits
-    - no role, reviewer: 7 commits
-    - no role, maintainer: 22 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 6 commits
+    - no role, maintainer: 17 commits
     - maintainer, no role : 4 commits
     - maintainer, reviewer: 4 commits
+- mm-new: 30 total, 7 (23) series, 7 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 5 commits
+    - no role, no role : 8 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 13 commits
     - maintainer, maintainer: 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 2 total, 0 (1) series, 1 non-series commits

@@ -1,14 +1,76 @@
-- baseline: v7.3-17318-g65ba8f34ec886 -> v7.4-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- baseline: v7.4-rc1 -> v7.4-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - maintainer, nobody: 0 -> 3 commits
+  - changed commits
+    - series "mm/damon: fix three race bugs in sysfs and core", v1. (3)
+      - a76adcace355 "mm/damon/sysfs-schemes: hold damon_sysfs_lock in target_metric_store() (0/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261025164808.152048-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261025164808.152048-2-sj@kernel.org
+        - Link: https://sashiko.dev/#/bug/linux-7f814c9a-986f-4103-a55a-ef9537dcf62b [1]
+        - Link: https://lore.kernel.org/20261021005234.94107-1-sj@kernel.org [2]
+      - 26ae50a0901a "mm/damon/core: move static variable last_nr_regions to damon_ctx (1/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261025164808.152048-3-sj@kernel.org
+      - c4ff3ea30640 "mm/damon/core: move static variable rotation to damon_ctx (2/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261025164808.152048-4-sj@kernel.org
+- mm-hotfixes-unstable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, maintainer: 0 -> 2 commits
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - series "mm/damon: fix watermark state, kunit pid leak and selftest fake pass". (3)
+      - 7cf1a090421d "mm/damon/core: reset watermark wait state on each iteration (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102144627.88843-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102144627.88843-2-sj@kernel.org
+      - 62b6cca8be24 "mm/damon/tests/sysfs-kunit: fix leaked pid reference in add_targets test (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102144627.88843-3-sj@kernel.org
+      - 550d397b7042 "selftests/damon/sysfs_memcg_path_leak: define ksft_skip (2/3)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261102144627.88843-4-sj@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 22 commits
+  - series: 0 (0) -> 4 (22)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 0 -> 20 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "Docs: damon: fix grammar and typos", v2. (8)
+      - 4c75eab6d703 "Docs/admin-guide/mm/damon/start: fix grammar (0/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261103005940.91432-2-sj@kernel.org
+      - 87bb1ddda75b "Docs/admin-guide/mm/damon/stat: fix pronoun agreement (1/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-3-sj@kernel.org
+      - af2affdcd9ab "Docs/admin-guide/mm/damon/usage: fix grammar (2/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-4-sj@kernel.org
+      - 8eb3fc31af7f "Docs/admin-guide/mm/damon/lru_sort: fix remaining grammar (3/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-5-sj@kernel.org
+      - 25d9e917fa61 "Docs/mm/damon/design: fix grammar and typos (4/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-6-sj@kernel.org
+      - cdf6e94a3186 "Docs/mm/damon/api: fix verb form (5/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-7-sj@kernel.org
+      - 9aabbac1c90c "Docs/mm/damon/maintainer-profile: fix subject-verb agreement (6/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-8-sj@kernel.org
+      - d0817c6ee400 "Docs/mm/damon/monitoring_intervals_tuning_example: fix grammar and typos (7/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103005940.91432-9-sj@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

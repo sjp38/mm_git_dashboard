@@ -1,78 +1,115 @@
 - baseline: v7.4-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 6 total, 2 (2) series, 4 non-series commits
+- mm-hotfixes-stable: 4 total, 1 (1) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 4 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 1 commits
-    - reviewer, nobody: 1 commits
   - full commits list
-    - 4521659b9701 "mm: fix address wraparound when scanning large folio PTEs"
+    - f681d4580d5c "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-    - series "mm: Fix page-table teardown during memory hot-remove", v3. (4 commits)
-      - 2e4e182e803f "mm: fix missing page-table destructor in pagetable_free()" (0/4)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
-    - 60667a2ea1b7 "mm: memory: fix truncation removing mapped folios"
+    - 243cf1f67b36 "mm: memory: fix truncation removing mapped folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/14ebbd556cc4941f0ebc43da59fa6a2fdca25dc8.1793148609.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
     - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 3c791e62c1f4 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
+      - 13fc99f46399 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
         - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-    - 041563fa14d9 "mm/ksm: fix userfaultfd protection during merge and unmerge"
+    - 990d6c2194a9 "mm/ksm: fix userfaultfd protection during merge and unmerge"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
       - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
-    - cc9656afabbc "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+- mm-hotfixes-unstable: 3 total, 1 (1) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+    - reviewer, nobody: 1 commits
+  - full commits list
+    - series "mm: Fix page-table teardown during memory hot-remove", v3. (4 commits)
+      - 9e1dfa007911 "mm: fix missing page-table destructor in pagetable_free()" (0/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
+    - ab4e28fd7021 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+    - 894ffb4d248b "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 9 total, 2 (5) series, 4 non-series commits
+- mm-unstable: 4 total, 1 (2) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 4 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 1 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 2 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 65dc5b685dd1 "mm: unqueue deferred split folios outside the lruvec lock"
+    - f6a9764b5484 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-    - 5a9b1783a825 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+    - bde4a64fbe34 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261028100549.70689-1-hui.zhu@linux.dev
-      - 8281f0b927a8 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 8c01fa153ff6 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
     - series "mm: Remove pagetable_dtor_free()". (2 commits)
-      - 72e6d275bfa1 "mm: remove pagetable_dtor_free()" (0/2)
+      - ef1623ed1c97 "mm: remove pagetable_dtor_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261030083800.599152-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
+- mm-new: 12 total, 3 (9) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 5 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 4 commits
+  - full commits list
     - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3 commits)
-      - d7b0e48e3851 "mm/memory: remove unused vmf_insert_mixed_mkwrite()" (0/3)
+      - c3ed69367ddb "mm/memory: remove unused vmf_insert_mixed_mkwrite()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
         - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
-      - 5f5d9e53cd3f "mm/memory: remove the mkwrite argument from __vm_insert_mixed()" (1/3)
+      - faefc3322eec "mm/memory: remove the mkwrite argument from __vm_insert_mixed()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
-      - 84b70e321d88 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed()" (2/3)
+      - a89489f7150d "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
-    - 5656569fc8b0 "mm: move LRU size stat updates out of lru_lock in folio batches"
+    - b96c71a4fdae "mm: move LRU size stat updates out of lru_lock in folio batches"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
-    - 3a86bcc41d23 "mm: bypass swap readahead for zswap"
+    - f43c6795d750 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
+    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
+      - 5567108f82a1 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
+        - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
+      - e6c2b1c6f373 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
+    - f3647b935bd1 "mm/shmem: remove truncated folios from the page cache in batches"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261029-bug-mm-shmem-undo-batch-v1-1-59b34212fe78@gmail.com
+    - series "mm: remove newly-unused page wrapper APIs". (8 commits)
+      - a63e2a5027e1 "mm: remove wait_on_page_writeback()" (0/8)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-0-e7280bdb31f6@columbia.edu
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-1-e7280bdb31f6@columbia.edu
+        - Link: https://lore.kernel.org/r/20260810-remove-wait-on-page-writeback-v3-0-dd7531704f26@columbia.edu/ [1]
+      - f9178a279984 "mm: remove end_page_writeback()" (1/8)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
+      - ca40636c4000 "mm: remove clear_page_dirty_for_io()" (2/8)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
+      - d8da6965d43f "mm: remove thp_size() and thp_order()" (7/8)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-8-e7280bdb31f6@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
