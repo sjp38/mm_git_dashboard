@@ -6,17 +6,17 @@
   - author/reviewer role stat
     - no role, reviewer: 3 commits
   - full commits list
-    - f6a9764b5484 "mm: unqueue deferred split folios outside the lruvec lock"
+    - bdbd49a10e69 "mm: unqueue deferred split folios outside the lruvec lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
       - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - 493d556e1aa8 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - 7dbb2b40a2b1 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/linux-mm/20261017050928.128582-2-sidchintamaneni@gmail.com/ [1]
-      - 7424fff77f77 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - 0e0f46bbb61e "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
 - mm-new: 2 total, 1 (2) series, 0 non-series commits
@@ -25,11 +25,11 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - 5567108f82a1 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - d3fc526fc1b0 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
-      - e6c2b1c6f373 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - 9fc3e27e7a2e "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -34,7 +34,7 @@
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
   - full commits list
-    - ab4e28fd7021 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - 9b63cff507f1 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -43,10 +43,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - dd036f1f33eb "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 2d821eb9c221 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 0da80ec20008 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - 66eb3af2a681 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261102081919.80625-1-hui.zhu@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

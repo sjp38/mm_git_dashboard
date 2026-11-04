@@ -1,30 +1,24 @@
 - baseline: v7.4-rc1 -> v7.4-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "mm/hugetlb: fix mremap bugs", v3. (3)
-      - 809cbe72ace8 "mm/hugetlb: disable PMD sharing for UFFD missing mode (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-- mm-hotfixes-unstable: 4 -> 3 commits
-  - series: 1 (2) -> 1 (1)
-    - no role, no role : 4 -> 3 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 5e963f1037f6 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
-      - Authored by no role player, reviewed by a maintainer
+    - a4e26e8e234c "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+      - Authored by no role player, reviewed by no role player
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-- mm-new: 2 -> 1 commits
+      - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,55 +1,59 @@
 - baseline: v7.4-rc1 -> v7.4-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 9597c2056e05 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
-- mm-hotfixes-unstable: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 9 commits
-  - series: 0 (0) -> 1 (7)
-    - no role, no role : 0 -> 5 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
+- mm-new: 9 -> 9 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
   - new commits
+    - 426a6379dcc2 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
+  - changed commits
+    - series "mm: remove newly-unused page wrapper APIs". (8)
+      - f6abdfa667ad "mm: remove end_page_writeback() (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
+      - c4b416201e7e "mm: remove clear_page_dirty_for_io() (2/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
+      - 1c5e1c1ad014 "mm: remove attach_page_private() and detach_page_private() (3/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-4-e7280bdb31f6@columbia.edu
+      - 7bebcb9f0547 "mm: remove find_get_page_flags() (4/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-5-e7280bdb31f6@columbia.edu
+      - e5867da286fb "mm: remove find_lock_page() (5/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-6-e7280bdb31f6@columbia.edu
+      - 3a0963ff3d12 "mm: remove read_cache_page_gfp() (6/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-7-e7280bdb31f6@columbia.edu
+  - dropped commits
     - f3647b935bd1 "mm/shmem: remove truncated folios from the page cache in batches"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261029-bug-mm-shmem-undo-batch-v1-1-59b34212fe78@gmail.com
-    - 30c1095094ab "mm/filemap: clear page cache marks once when removing a folio"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - series "mm: remove newly-unused page wrapper APIs". (8)
-      - a63e2a5027e1 "mm: remove wait_on_page_writeback() (0/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-0-e7280bdb31f6@columbia.edu
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-1-e7280bdb31f6@columbia.edu
-        - Link: https://lore.kernel.org/r/20260810-remove-wait-on-page-writeback-v3-0-dd7531704f26@columbia.edu/ [1]
-      - f9178a279984 "mm: remove end_page_writeback() (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
-      - ca40636c4000 "mm: remove clear_page_dirty_for_io() (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
-      - b4fb583329f4 "mm: remove attach_page_private() and detach_page_private() (3/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-4-e7280bdb31f6@columbia.edu
-      - 462bdf44e694 "mm: remove find_get_page_flags() (4/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-5-e7280bdb31f6@columbia.edu
-      - c764eb70cce2 "mm: remove find_lock_page() (5/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-6-e7280bdb31f6@columbia.edu
-      - 06799bc3764d "mm: remove read_cache_page_gfp() (6/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-7-e7280bdb31f6@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,22 +1,30 @@
 - baseline: v7.4-rc1 -> v7.4-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 740128dd1a3f "mm: make swapoff interruptible when unusing mms/shmem"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
-- mm-hotfixes-unstable: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 1 -> 4 commits
+  - series: 0 (0) -> 1 (3)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 2 commits
+  - new commits
+    - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3)
+      - b216906ccf74 "mm, swap: only allow swapped-out slots into the swap cache (0/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
+        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
+      - 4e98c8ae857b "mm, swap: give hibernation swap slots their own swap table entry type (1/3)"
+        - Authored by a reviewer, reviewed by nobody
+      - 6037753cdf94 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot() (2/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

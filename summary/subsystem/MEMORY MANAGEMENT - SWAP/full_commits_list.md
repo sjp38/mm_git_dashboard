@@ -10,17 +10,29 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 66a9ff5a115f "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
+    - e8d9832e7018 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 4 total, 1 (3) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, maintainer: 2 commits
   - full commits list
-    - f43c6795d750 "mm: bypass swap readahead for zswap"
+    - 4ea71a901ad9 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
+    - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3 commits)
+      - b216906ccf74 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
+        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
+      - 4e98c8ae857b "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
+        - Authored by a reviewer, reviewed by nobody
+      - 6037753cdf94 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

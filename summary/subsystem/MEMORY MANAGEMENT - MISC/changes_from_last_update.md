@@ -1,168 +1,58 @@
 - baseline: v7.4-rc1 -> v7.4-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 5 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 4 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 332c1bd17422 "selftests/mm: merge: keep the far mremap() targets in the carveout"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 1b8fd9a23501 "selftests/mm: fix khugepaged_race build with older glibc"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261027122013.4286-1-zenghui.yu@linux.dev
-    - 0120a603afad "mm/hugetlb_vmemmap: map the shared tail page writable"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
-    - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2)
-      - 5d002001601a "mm/cma: accept memory of multi-range CMA areas (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - added "Reviewed-by: Pankaj Gupta <pankaj.gupta@amd.com>"
-        - added "Tested-by: Pankaj Gupta <pankaj.gupta@amd.com>"
-        - dropped "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
-        - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
-        - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
-      - f8f9cbc34a30 "mm/cma: accept memory of CMA areas reserved at a fixed address (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - added "Reviewed-by: Pankaj Gupta <pankaj.gupta@amd.com>"
-        - added "Tested-by: Pankaj Gupta <pankaj.gupta@amd.com>"
-        - dropped "Tested-by: "Gupta, Pankaj" <pankaj.gupta@amd.com>"
-        - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
-- mm-hotfixes-unstable: 5 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-hotfixes-stable: 5 -> 5 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 17 commits
-  - series: 0 (0) -> 4 (14)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 11 commits
-    - no role, maintainer: 0 -> 3 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, no role : 0 -> 1 commits
+- mm-unstable: 17 -> 22 commits
+  - series: 4 (14) -> 5 (19)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 11 -> 13 commits
+    - no role, maintainer: 3 -> 5 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - aa9c39b956da "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
-      - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
-    - series "selftests/mm: run the XFS-backed THP tests when xfs is a module", v3. (2)
-      - 5abcc7566ef4 "selftests/mm: track the modules run_vmtests.sh loads (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-0-16ad772850ee@gmail.com
-        - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-1-16ad772850ee@gmail.com
-      - 3f1764ac0b58 "selftests/mm: load xfs before checking for it in run_vmtests.sh (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-2-16ad772850ee@gmail.com
-    - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4)
-      - 8f14bb65ff1a "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only (0/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-        - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-    - series "kfence: fix pool allocation failure handling", v2. (3)
-      - 4d741584818a "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
-    - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3)
-      - a6409d4d1953 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize() (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 22b50e95a37c "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro (1/3)"
+    - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
+      - 82655334252d "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
         - Authored by no role player, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
-      - cb75343bdc2e "kselftest: mm: introduce size_to_shift() helper (2/3)"
+        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
+        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
+      - a6d38f23e872 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
         - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-3-3d77129e0557@arm.com
-    - series "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests", v3. (7)
-      - 02f6d4c0a216 "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests (0/7)"
+        - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
+      - 25e9342d487f "tools/mm/thpmaps: fix missing mapping names (2/3)"
         - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261019171206.3331374-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20261019171206.3331374-2-gourry@gourry.net
-      - 3c3ca218b6a7 "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling (1/7)"
-        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
+    - series "mm/damon: various fixes and cleanup of code, test, and docs". (9)
+      - e576f9950ada "Docs/admin-guide/mm/damon/lru_sort: fix grammar and stlye (7/9)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261019171206.3331374-3-gourry@gourry.net
-      - ef15a49ae5cf "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb (2/7)"
-        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261102150757.93058-9-sj@kernel.org
+      - 2ea76ffa06fa "Docs/admin-guide/mm/damon/reclaim: document how to disable watermarks (8/9)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261019171206.3331374-4-gourry@gourry.net
-      - f60cdbc9eab6 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261019171206.3331374-5-gourry@gourry.net
-      - a8cdc9d0e669 "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261019171206.3331374-6-gourry@gourry.net
-      - 82fa7d402ba9 "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix (5/7)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-      - 8a9e8a929012 "selftests/mm: check MADV_PAGEOUT file permissions (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261019171206.3331374-7-gourry@gourry.net
-    - 96c516373e75 "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261019171206.3331374-8-gourry@gourry.net
-    - 5e963f1037f6 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-- mm-new: 25 -> 17 commits
-  - series: 6 (22) -> 3 (17)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 13 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 8 -> 13 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
+        - Link: https://lore.kernel.org/20261102150757.93058-10-sj@kernel.org
+- mm-new: 17 -> 14 commits
+  - series: 3 (17) -> 2 (13)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 13 -> 11 commits
   - new commits
-    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2)
-      - e6c2b1c6f373 "mm/mglru: stop rotating offlined memcgs to the old generation (1/2)"
+    - d0383a434e8e "selftests/mm: fix pointer width warnings on 32-bit architectures"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261103212805.1537354-1-sashal@kernel.org
+      - Link: : https://lore.kernel.org/20261103172150.3753dfa00f3106b6014e4d2c@linux-foundation.org
+    - series "mm: split underused anonymous mTHP folios", v4. (4)
+      - f8cbc169b4f8 "mm/huge_memory: add a per-order counter for underused splits (2/4)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-    - series "Docs: damon: fix grammar and typos", v2. (8)
-      - 4c75eab6d703 "Docs/admin-guide/mm/damon/start: fix grammar (0/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261103005940.91432-2-sj@kernel.org
-      - 87bb1ddda75b "Docs/admin-guide/mm/damon/stat: fix pronoun agreement (1/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-3-sj@kernel.org
-      - af2affdcd9ab "Docs/admin-guide/mm/damon/usage: fix grammar (2/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-4-sj@kernel.org
-      - 8eb3fc31af7f "Docs/admin-guide/mm/damon/lru_sort: fix remaining grammar (3/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-5-sj@kernel.org
-      - 25d9e917fa61 "Docs/mm/damon/design: fix grammar and typos (4/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-6-sj@kernel.org
-      - cdf6e94a3186 "Docs/mm/damon/api: fix verb form (5/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-7-sj@kernel.org
-      - 9aabbac1c90c "Docs/mm/damon/maintainer-profile: fix subject-verb agreement (6/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-8-sj@kernel.org
-      - d0817c6ee400 "Docs/mm/damon/monitoring_intervals_tuning_example: fix grammar and typos (7/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261103005940.91432-9-sj@kernel.org
+        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

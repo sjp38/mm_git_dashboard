@@ -3,12 +3,15 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-      - ca40636c4000 "mm: remove clear_page_dirty_for_io()" (2/8)
+      - c4b416201e7e "mm: remove clear_page_dirty_for_io()" (2/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
+    - d7bba80ca7f4 "iommufd: enforce memfd write seals for file mappings"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - e2e49ee9d4f9 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+    - b3b06c971cc2 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
-    - d2af693f199c "mm: memory-failure: update statistics before emitting the trace event"
+    - 1b5c7b8f5d15 "mm: memory-failure: update statistics before emitting the trace event"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/d472a9a3ccfa8c0359d7d7acabed92c8927d8e47.1793174996.git.mchehab+huawei@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

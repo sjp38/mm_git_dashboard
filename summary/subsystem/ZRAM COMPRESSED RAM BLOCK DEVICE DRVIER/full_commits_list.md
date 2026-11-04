@@ -12,59 +12,59 @@
     - maintainer, no role : 6 commits
   - full commits list
     - series "zram: redesign zcomp and rework backends", v7. (15 commits)
-      - 34fe24f7f9ad "zram: prefix backends printk-s" (0/15)
+      - 39e27429683d "zram: prefix backends printk-s" (0/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20261025021839.1542805-2-senozhatsky@chromium.org
-      - 8631c8b18b8a "zram: remove debugfs entry on init failure" (1/15)
+      - e1910ca409f6 "zram: remove debugfs entry on init failure" (1/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-3-senozhatsky@chromium.org
-      - 692df4fa9b91 "zram: reset writeback state in zram_reset_device()" (2/15)
+      - ec3636d3adea "zram: reset writeback state in zram_reset_device()" (2/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-4-senozhatsky@chromium.org
-      - 7345bcacae94 "zram: move mark_slot_accessed() under existing slot lock sections" (3/15)
+      - 1a466f14cf17 "zram: move mark_slot_accessed() under existing slot lock sections" (3/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-5-senozhatsky@chromium.org
-      - 71f876ea4d0d "zram: remove stale WARN_ON() from zram_read_page()" (4/15)
+      - 03a0bdec279c "zram: remove stale WARN_ON() from zram_read_page()" (4/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-6-senozhatsky@chromium.org
-      - 6e67e6745dfe "zram: zstd: do not allocate empty C/D-dictionaries" (5/15)
+      - 9420678b1a69 "zram: zstd: do not allocate empty C/D-dictionaries" (5/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-7-senozhatsky@chromium.org
-      - 9697ef0ebbe3 "zram: lz4hc: pre-initialize dictionary stream in setup_params" (6/15)
+      - e7b79422b2e3 "zram: lz4hc: pre-initialize dictionary stream in setup_params" (6/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-8-senozhatsky@chromium.org
-      - 0ee68a0a13a7 "zram: lz4: use LZ4_decompress_safe_usingDict()" (7/15)
+      - ddb021fca16c "zram: lz4: use LZ4_decompress_safe_usingDict()" (7/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-9-senozhatsky@chromium.org
-      - 7dcc3ecb73eb "zram: lz4hc: use LZ4_decompress_safe_usingDict()" (8/15)
+      - 6d2d0ecbd76b "zram: lz4hc: use LZ4_decompress_safe_usingDict()" (8/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-10-senozhatsky@chromium.org
-      - cf489a3c130b "zram: zstd: do not use kvzalloc() for zstd allocations" (9/15)
+      - b636e3555d38 "zram: zstd: do not use kvzalloc() for zstd allocations" (9/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-11-senozhatsky@chromium.org
-      - 26cad11ee8b1 "zram: split zcomp into separate R/W streams" (10/15)
+      - 720a0ea031c2 "zram: split zcomp into separate R/W streams" (10/15)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261025021839.1542805-12-senozhatsky@chromium.org
-      - 2e45c9935080 "zram: introduce shared decompression streams" (11/15)
+      - 165a61124449 "zram: introduce shared decompression streams" (11/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-13-senozhatsky@chromium.org
-      - c5608af094fb "zram: allocate bounce buffer for spanning objects" (12/15)
+      - 6f43d4e04e77 "zram: allocate bounce buffer for spanning objects" (12/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-14-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/linux-kernel/20261014153603.1365617-1-zhangbo56@xiaomi.com [1]
         - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
-      - 13b6c5cd073f "zram: borrow idle decompression streams in exclusive mode" (13/15)
+      - b007135441c4 "zram: borrow idle decompression streams in exclusive mode" (13/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-15-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/linux-kernel/20261015112440.1491168-1-zhangbo56@xiaomi.com [1]
         - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
-      - d57077d199cf "zram: use a singleton compression context for recompression" (14/15)
+      - 852ea296026a "zram: use a singleton compression context for recompression" (14/15)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261025021839.1542805-16-senozhatsky@chromium.org
-    - 5915799b8a2d "zram: fix quadratic writeback bitmap search"
+    - 58cefec75a4a "zram: fix quadratic writeback bitmap search"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20da9e9a5ffefd1e6875e311d3740b9f3c1061f3.1793333729.git.senozhatsky@chromium.org
-    - 31a46ce92c97 "zram: lz4/lz4hc: accept dictionaries of more than 64 KiB"
+    - 444dc94abb2f "zram: lz4/lz4hc: accept dictionaries of more than 64 KiB"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/f2ac22a731e507e90217a5e9cf29c987ec24e2b0.1793333729.git.senozhatsky@chromium.org

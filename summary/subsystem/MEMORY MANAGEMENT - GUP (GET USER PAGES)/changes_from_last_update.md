@@ -7,13 +7,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 1 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
+    - d7bba80ca7f4 "iommufd: enforce memfd write seals for file mappings"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
     - series "mm: remove newly-unused page wrapper APIs". (8)
-      - ca40636c4000 "mm: remove clear_page_dirty_for_io() (2/8)"
+      - c4b416201e7e "mm: remove clear_page_dirty_for_io() (2/8)"
         - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

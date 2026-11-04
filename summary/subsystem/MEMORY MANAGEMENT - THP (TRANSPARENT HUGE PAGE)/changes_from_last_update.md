@@ -1,44 +1,53 @@
 - baseline: v7.4-rc1 -> v7.4-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 854e5ff8b3ce "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-- mm-hotfixes-unstable: 3 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 3 -> 6 commits
+  - series: 1 (2) -> 2 (5)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 1 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - aa9c39b956da "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
-      - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
-    - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3)
-      - a6409d4d1953 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize() (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 22b50e95a37c "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro (1/3)"
+    - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
+      - 82655334252d "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
         - Authored by no role player, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
-- mm-new: 6 -> 3 commits
-  - series: 2 (5) -> 1 (3)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 3 -> 2 commits
-    - no role, maintainer: 1 -> 0 commits
+        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
+        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
+      - a6d38f23e872 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
+      - 25e9342d487f "tools/mm/thpmaps: fix missing mapping names (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
+- mm-new: 3 -> 4 commits
+  - series: 1 (3) -> 1 (4)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 0 -> 3 commits
+  - new commits
+    - series "mm: split underused anonymous mTHP folios", v4. (4)
+      - 07c07197634d "mm/huge_memory: scale thp_underused() to the folio size (0/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
+        - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
+      - 5679e01b142d "mm/huge_memory: don't queue folios when underused splitting is inactive (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
+      - f8cbc169b4f8 "mm/huge_memory: add a per-order counter for underused splits (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
+      - 9c199d9d989d "mm: add anonymous mTHP folios to the deferred split list (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
