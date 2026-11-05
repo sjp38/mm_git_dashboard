@@ -11,10 +11,11 @@
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - maintainer, no role : 1 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
-      - 78bf2a5dae3f "mm: hugetlb_vmemmap: simplify shared tail page handling" (6/12)
-        - Authored by a maintainer, reviewed by no role player
+      - c538e26bea56 "mm: hugetlb_vmemmap: simplify shared tail page handling" (6/12)
+        - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104023510.260766-8-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

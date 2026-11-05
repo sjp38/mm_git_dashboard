@@ -6,27 +6,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 13 commits (no change)
-  - series: 4 (13) -> 4 (13) (no change)
+- mm-unstable: 13 -> 15 commits
+  - series: 4 (13) -> 4 (15)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
   - changed commits
-    - series "memcg: clean up memory.high enforcement", v2. (5)
-      - 47e7b694f004 "memcg: force charges from reclaim before trying the limits (1/5)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Acked-by: Michal Hocko <mhocko@sus.com>"
-        - Link: https://lore.kernel.org/20261030205418.341214-3-shakeel.butt@linux.dev
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
+    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2)
+      - 08a97603342b "mm/mglru: stop rotating offlined memcgs to the old generation (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
     - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v2. (3)
-      - f45611ddb994 "mm/hugetlb: fix NR_HUGETLB accounting for surplus folios (2/3)"
+      - 0944ab4f1472 "mm/hugetlb: fix NR_HUGETLB accounting for surplus folios (2/3)"
         - Authored by no role player, reviewed by nobody
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261102024910.31486-4-kaitao.cheng@linux.dev
+- mm-new: 2 -> 1 commits
+  - series: 0 (2) -> 1 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7)
+      - e87da49ed5f2 "mm/memcontrol: drop unused vmscan tracepoint include (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261104130817.849089-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20261104130817.849089-2-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20260916095122.50cbb620@robin/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

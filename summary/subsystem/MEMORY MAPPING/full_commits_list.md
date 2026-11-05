@@ -37,13 +37,13 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 8e0c3d8d4ab1 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 5a5151d7a757 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
-    - 5d6d59cfeeca "mm/vma: read anon_vma carefully in validate_mm()"
+    - 0e0476f30c83 "mm/vma: read anon_vma carefully in validate_mm()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
-    - fff8f5962ba4 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
+    - 36b78ba790f8 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -52,11 +52,11 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - e36a9bb1725e "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 75ff74da1ccf "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - bcc036cfa167 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 32959c9a49d2 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

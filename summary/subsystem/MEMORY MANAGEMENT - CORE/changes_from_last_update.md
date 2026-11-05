@@ -10,65 +10,75 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 8 commits
-  - series: 1 (2) -> 2 (5)
-    - no role, no role : 1 -> 4 commits
-    - no role, reviewer: 2 -> 3 commits
+- mm-unstable: 8 -> 15 commits
+  - series: 2 (5) -> 4 (11)
+    - no role, no role : 4 -> 6 commits
+    - no role, reviewer: 3 -> 5 commits
+    - no role, maintainer: 0 -> 3 commits
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3)
-      - ff6b7e1443de "mm/memory: remove unused vmf_insert_mixed_mkwrite() (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
-      - 5e981e499e74 "mm/memory: remove the mkwrite argument from __vm_insert_mixed() (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
-      - 52607c14998f "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
-    - 1e61c0bd822a "mm: move LRU size stat updates out of lru_lock in folio batches"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
-- mm-new: 12 -> 9 commits
-  - series: 3 (9) -> 2 (7)
-    - no role, no role : 5 -> 2 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 4 -> 3 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - 9c199d9d989d "mm: add anonymous mTHP folios to the deferred split list (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
-    - d7bba80ca7f4 "iommufd: enforce memfd write seals for file mappings"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "mm: remove newly-unused page wrapper APIs". (8)
-      - f6abdfa667ad "mm: remove end_page_writeback() (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
-      - c4b416201e7e "mm: remove clear_page_dirty_for_io() (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
-      - c913c50a76da "mm: remove thp_size() and thp_order() (7/8)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-8-e7280bdb31f6@columbia.edu
-  - dropped commits
-    - f3647b935bd1 "mm/shmem: remove truncated folios from the page cache in batches"
+    - 1ed3a3f46f95 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261029-bug-mm-shmem-undo-batch-v1-1-59b34212fe78@gmail.com
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
+    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2)
+      - d075147138ca "mm/vmscan: remove redundant !mem_cgroup_online() checks (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
+        - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
+      - 08a97603342b "mm/mglru: stop rotating offlined memcgs to the old generation (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
+    - series "mm: remove newly-unused page wrapper APIs". (8)
+      - e0c93e6d8904 "mm: remove wait_on_page_writeback() (0/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-0-e7280bdb31f6@columbia.edu
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-1-e7280bdb31f6@columbia.edu
+        - Link: https://lore.kernel.org/r/20260810-remove-wait-on-page-writeback-v3-0-dd7531704f26@columbia.edu/ [1]
+      - bc1ee90bfe9d "mm: remove end_page_writeback() (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
+      - 3c8e147e35ca "mm: remove clear_page_dirty_for_io() (2/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
+      - ed5e130ee2c4 "mm: remove thp_size() and thp_order() (7/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-8-e7280bdb31f6@columbia.edu
+- mm-new: 9 -> 4 commits
+  - series: 2 (7) -> 0 (2)
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 3 -> 1 commits
+    - no role, maintainer: 3 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4)
+      - ecccb841cea9 "mm, swap: fix large swap-in across swap file extents (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-2-204be064be5b@tencent.com
+    - e553f47c23c7 "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+  - changed commits
+    - series "mm: split underused anonymous mTHP folios", v4. (4)
+      - 3be49a462207 "mm: add anonymous mTHP folios to the deferred split list (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
+        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

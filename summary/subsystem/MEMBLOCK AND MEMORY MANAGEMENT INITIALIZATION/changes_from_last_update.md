@@ -8,14 +8,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, no role : 1 -> 0 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
     - series "mm: Decouple folio-based vmemmap optimization from HugeTLB", v3. (12)
-      - 78bf2a5dae3f "mm: hugetlb_vmemmap: simplify shared tail page handling (6/12)"
-        - Authored by a maintainer, reviewed by no role player
+      - c538e26bea56 "mm: hugetlb_vmemmap: simplify shared tail page handling (6/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org"
+        - added "Reviewed-by: Oscar Salvador <osalvador@suse.de>"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
         - Link: https://lore.kernel.org/20261104023510.260766-8-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

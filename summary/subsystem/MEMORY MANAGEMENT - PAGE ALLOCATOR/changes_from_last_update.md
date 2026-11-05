@@ -13,8 +13,22 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, maintainer: 0 -> 3 commits
+  - new commits
+    - 001d8d4c3eab "mm: page_owner: use %u to print the stack depot handle"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
+    - e553f47c23c7 "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+    - series "alloc_tag: Introduce selective tracing for MAP", v5. (5)
+      - c4a86ce3c9b1 "alloc_tag: add trace events for tracing allocations (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
+        - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

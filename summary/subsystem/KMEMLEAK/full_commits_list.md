@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f48ed469f892 "mm: kmemleak: scan modified objects as soon as they are grayed"
+    - 5f8cc2924f76 "mm: kmemleak: scan modified objects as soon as they are grayed"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

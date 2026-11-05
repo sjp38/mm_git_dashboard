@@ -8,45 +8,49 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 6 commits
-  - series: 1 (2) -> 2 (5)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 3 commits
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
-      - 82655334252d "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - a6d38f23e872 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 25e9342d487f "tools/mm/thpmaps: fix missing mapping names (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-- mm-new: 3 -> 4 commits
-  - series: 1 (3) -> 1 (4)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 0 -> 3 commits
+- mm-new: 4 -> 6 commits
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
   - new commits
+    - 0cc882ab6ffc "selftests/mm: handle child status safely in khugepaged"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
+    - 9be64d05fa9d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+  - changed commits
     - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - 07c07197634d "mm/huge_memory: scale thp_underused() to the folio size (0/4)"
+      - d4b8948f38c5 "mm/huge_memory: scale thp_underused() to the folio size (0/4)"
         - Authored by no role player, reviewed by nobody
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
         - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
-      - 5679e01b142d "mm/huge_memory: don't queue folios when underused splitting is inactive (1/4)"
+      - 43a89838ad17 "mm/huge_memory: don't queue folios when underused splitting is inactive (1/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
         - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
-      - f8cbc169b4f8 "mm/huge_memory: add a per-order counter for underused splits (2/4)"
+      - ecf82087774d "mm/huge_memory: add a per-order counter for underused splits (2/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
         - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
-      - 9c199d9d989d "mm: add anonymous mTHP folios to the deferred split list (3/4)"
+      - 3be49a462207 "mm: add anonymous mTHP folios to the deferred split list (3/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
         - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

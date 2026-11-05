@@ -6,18 +6,21 @@
       - 809cbe72ace8 "mm/hugetlb: disable PMD sharing for UFFD missing mode" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261022034543.51226-3-lizhe.67@bytedance.com
-- mm-hotfixes-unstable: 3 total, 1 (1) series, 2 non-series commits
+- mm-hotfixes-unstable: 4 total, 1 (1) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 3 commits
+    - no role, no role : 4 commits
   - full commits list
-    - 325fce1e3909 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
+    - 4acb240c0269 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-prot-bits-fork-event-v2-1-c448e57df417@kernel.org
-    - 8e0c3d8d4ab1 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 5a5151d7a757 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
+    - 0d3079f1e682 "userfaultfd: validate the whole range before changing write protection"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261104093457.152245-1-umangpokhriyall@gmail.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - c8ed97c8bd9f "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - b543b8784403 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -27,12 +30,24 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - e28219703d97 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - c228cec68436 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-    - a4e26e8e234c "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - a2b8390438b6 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
+      - cfd770585bbc "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
+        - Link: https://lore.kernel.org/20261103102840.68903-2-azpijr@gmail.com
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org [1]
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org [2]
+        - Link: https://lore.kernel.org/20261031-fixes_core-v3-23-d6437171ecc3@kernel.org [3] (in linux-next)
+        - Link: https://lore.kernel.org/sashiko-outbox-194303@kernel.org [4]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
