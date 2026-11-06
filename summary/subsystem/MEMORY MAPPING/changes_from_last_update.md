@@ -15,8 +15,32 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 6 commits
+  - series: 0 (0) -> 1 (6)
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 0 -> 3 commits
+  - new commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 4a4cb50a967b "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (7/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+      - 7d8c3b9f8daa "mm: convert miscellaneous VMA flag tests to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+      - 828f4e6f8bbb "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
+    - series "mm/mremap: fix accounting on a partial move", v3. (5)
+      - 97086063b41f "mm/mremap: fix hugetlb reservation leak on partial move (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-0-f8789de76849@toxicpanda.com
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-1-f8789de76849@toxicpanda.com
+      - bf62ecee34d9 "mm/mremap: reaccount on unmap failure only if accounted (2/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-3-f8789de76849@toxicpanda.com
+      - afc18181fedb "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-4-f8789de76849@toxicpanda.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

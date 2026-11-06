@@ -6,17 +6,20 @@
     - 854e5ff8b3ce "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
     - reviewer, nobody: 1 commits
   - full commits list
-    - b61178803f90 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+    - 82bca7cd7bb4 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
-    - 16921060b043 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - 5f90590f3b13 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+    - a1d463611329 "mm/khugepaged: don't map folios that are not uptodate in MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261105-set_huge_pmd_uptodate-v1-1-a78d8a1b7117@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 6 total, 2 (5) series, 1 non-series commits
   - author/reviewer role stat
@@ -24,54 +27,73 @@
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 25b48c6c97e0 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 1dd0c663d752 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - dcfbe46dc346 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 17812b78eb7d "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - e3429197c1bf "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - b07a12ae5509 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - 2fdb28a9e552 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - bd139dbd776b "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - e719f1b9ecd7 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - 0b2e79fdd324 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 0537adc9b65c "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 1badc06c534c "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-- mm-new: 6 total, 1 (4) series, 2 non-series commits
+- mm-new: 12 total, 1 (9) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 1 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 2 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: split underused anonymous mTHP folios", v4. (4 commits)
-      - d4b8948f38c5 "mm/huge_memory: scale thp_underused() to the folio size" (0/4)
+      - 8a3ceeb60f08 "mm/huge_memory: scale thp_underused() to the folio size" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
-      - 43a89838ad17 "mm/huge_memory: don't queue folios when underused splitting is inactive" (1/4)
+      - 20f9c061f61a "mm/huge_memory: don't queue folios when underused splitting is inactive" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
-      - ecf82087774d "mm/huge_memory: add a per-order counter for underused splits" (2/4)
+      - ccc4565d8a82 "mm/huge_memory: add a per-order counter for underused splits" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
-      - 3be49a462207 "mm: add anonymous mTHP folios to the deferred split list" (3/4)
+      - 7160a466d34d "mm: add anonymous mTHP folios to the deferred split list" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
-    - 0cc882ab6ffc "selftests/mm: handle child status safely in khugepaged"
+    - 9d20810a551e "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
-    - 9be64d05fa9d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by nobody
+    - 1ecad9ae4c97 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+      - 7537e04d3da9 "mm: convert THP VMA flag tests to use vma_flags_t" (5/13)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
+      - 4a4cb50a967b "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (7/13)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+      - e6e22565995c "mm/huge_memory: copy file THPs at fork like copy_present_ptes() does" (1/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-2-c56d0d26f970@virtuozzo.com
+      - 3dead497eee7 "mm/huge_memory: read a special PMD under the lock in copy_huge_pmd()" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-3-c56d0d26f970@virtuozzo.com
+      - b74918f00943 "selftests/mm: test fork of PMD-mapped shmem THPs" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
+    - 82952fac6885 "selftests-mm-test-fork-of-pmd-mapped-shmem-thps-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

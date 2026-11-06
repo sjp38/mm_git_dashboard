@@ -6,72 +6,72 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 73b365017c58 "mm/filemap: stop fault-around when the walk steps back"
+    - 25daeca5a742 "mm/filemap: stop fault-around when the walk steps back"
       - Authored by no role player, reviewed by a maintainer
-      - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - added "filemap_map_pages() can dereference a PTE pointer outside the page table"
+      - added "it locked.  KASAN has reported this as a use-after-free read [1].  The"
+      - added "same path can also write out of bounds.  When the stray entry reads as"
+      - added "none, the fault-around loop maps a page there with set_pte_range()."
+      - added "Its fault-around loop walks the page cache and moves vmf->pte by the"
+      - added "change in index.  A lower index moves it back.  xas_find() can step back"
+      - added "to a lower index when a multi-index entry is split during the walk."
+      - added "[1] fixes xas_find(), but the loop still relies on the walk never stepping"
+      - added "back.  Stop the fault-around when the walk steps back.  ->fault() maps the"
+      - added "faulting page if the loop did not."
+      - added "Link: : https://lore.kernel.org/20261104-jf-filemap-v2-pedro-reply-r2-74c87c6fbcf@linux.dev"
+      - added "Tested-by: Jose Fernandez (Anthropic) <jose.fernandez@linux.dev>"
       - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
       - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
+      - Link: : https://lore.kernel.org/20261104-jf-filemap-v2-pedro-reply-r2-74c87c6fbcf@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 9 commits
-  - series: 0 (0) -> 1 (7)
-    - no role, no role : 0 -> 5 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
+- mm-unstable: 9 -> 2 commits
+  - series: 1 (7) -> 0 (0)
+    - no role, no role : 5 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 3 -> 2 commits
   - changed commits
-    - 782457df213f "mm/filemap: clear page cache marks once when removing a folio"
+    - d98ac7970c94 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
+  - dropped commits
     - series "mm: remove newly-unused page wrapper APIs". (8)
       - e0c93e6d8904 "mm: remove wait_on_page_writeback() (0/8)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-0-e7280bdb31f6@columbia.edu
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-1-e7280bdb31f6@columbia.edu
         - Link: https://lore.kernel.org/r/20260810-remove-wait-on-page-writeback-v3-0-dd7531704f26@columbia.edu/ [1]
       - bc1ee90bfe9d "mm: remove end_page_writeback() (1/8)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
       - 3c8e147e35ca "mm: remove clear_page_dirty_for_io() (2/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
       - 1ab14de6d2c0 "mm: remove attach_page_private() and detach_page_private() (3/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-4-e7280bdb31f6@columbia.edu
       - 8c8f70124af5 "mm: remove find_get_page_flags() (4/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-5-e7280bdb31f6@columbia.edu
       - c8ef43343772 "mm: remove find_lock_page() (5/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-6-e7280bdb31f6@columbia.edu
       - 4093ce55c9cb "mm: remove read_cache_page_gfp() (6/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
         - Link: https://lore.kernel.org/20261102-page-wrappers-v1-7-e7280bdb31f6@columbia.edu
-    - 14fabac41b0b "mm/page-writeback: avoid overflow when reporting BDI byte limits"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
-- mm-new: 9 -> 0 commits
-  - series: 1 (7) -> 0 (0)
-    - no role, no role : 5 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - e4740a026f29 "mm/filemap: convert fault and readahead logic to use vma_flags_t (1/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-2-0d3cd15ab75f@kernel.org
+      - e5d0a347972e "mm/filemap: cache random-read flag before dropping fault lock (2/13)"
+        - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

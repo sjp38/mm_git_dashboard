@@ -10,17 +10,17 @@
   - author/reviewer role stat
     - no role, no role : 4 commits
   - full commits list
-    - 4acb240c0269 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
+    - 3489e7717edb "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-prot-bits-fork-event-v2-1-c448e57df417@kernel.org
-    - 5a5151d7a757 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 3c9849cb243b "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
-    - 0d3079f1e682 "userfaultfd: validate the whole range before changing write protection"
+    - 05f453d2bc42 "userfaultfd: validate the whole range before changing write protection"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261104093457.152245-1-umangpokhriyall@gmail.com
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - b543b8784403 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - 80649ce19702 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -30,10 +30,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - c228cec68436 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 2438d5681261 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-    - a2b8390438b6 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - 143d79f34c79 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
 - mm-new: 1 total, 1 (1) series, 0 non-series commits
@@ -41,7 +41,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
-      - cfd770585bbc "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+      - 5f8c180f54c1 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
         - Link: https://lore.kernel.org/20261103102840.68903-2-azpijr@gmail.com

@@ -5,49 +5,31 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 6 commits
-  - series: 1 (2) -> 2 (4)
-    - no role, reviewer: 4 -> 5 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2)
-      - d075147138ca "mm/vmscan: remove redundant !mem_cgroup_online() checks (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
-        - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
-      - 08a97603342b "mm/mglru: stop rotating offlined memcgs to the old generation (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-- mm-new: 2 -> 7 commits
-  - series: 1 (2) -> 0 (6)
-    - no role, reviewer: 1 -> 6 commits
+- mm-unstable: 6 -> 5 commits
+  - series: 2 (4) -> 2 (4) (no change)
+    - no role, reviewer: 5 -> 4 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - 1113b9f406e1 "mm: move LRU size stat updates out of lru_lock in folio batches"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
+- mm-new: 7 -> 8 commits
+  - series: 0 (6) -> 0 (7)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - e553f47c23c7 "mm: split out memory-failure declarations from internal.h"
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 7d8c3b9f8daa "mm: convert miscellaneous VMA flag tests to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+  - changed commits
+    - e864ea4e9920 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-    - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7)
-      - 480e8f262f17 "mm/vmscan: move vmscan tracepoints to a local header (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
-      - 3cbadb6aea67 "mm/vmscan: move struct scan_control to a dedicated header (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261104130817.849089-4-ridong.chen@linux.dev
-      - 38b952cfe429 "mm/vmscan: pass scan_control to the vmscan tracepoints (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261104130817.849089-5-ridong.chen@linux.dev
-      - ea49fab47847 "mm/mglru: add tracepoint for scan_folios() (4/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261104130817.849089-6-ridong.chen@linux.dev
-      - f933b3c5d0bc "mm/mglru: add lruvec_gen_size() helper (5/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261104130817.849089-7-ridong.chen@linux.dev
-      - 7fed39a8e640 "mm/mglru: add tracepoint for aging (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261104130817.849089-8-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

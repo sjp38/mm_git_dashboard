@@ -2,32 +2,18 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 3 -> 4 commits
-  - new commits
-    - 0d3079f1e682 "userfaultfd: validate the whole range before changing write protection"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261104093457.152245-1-umangpokhriyall@gmail.com
+    - no role, no role : 4 -> 4 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2)
-      - cfd770585bbc "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
-        - Link: https://lore.kernel.org/20261103102840.68903-2-azpijr@gmail.com
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org [1]
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org [2]
-        - Link: https://lore.kernel.org/20261031-fixes_core-v3-23-d6437171ecc3@kernel.org [3] (in linux-next)
-        - Link: https://lore.kernel.org/sashiko-outbox-194303@kernel.org [4]
+- mm-new: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

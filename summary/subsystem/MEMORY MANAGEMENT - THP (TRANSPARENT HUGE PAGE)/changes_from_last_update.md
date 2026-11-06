@@ -2,10 +2,14 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - a1d463611329 "mm/khugepaged: don't map folios that are not uptodate in MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261105-set_huge_pmd_uptodate-v1-1-a78d8a1b7117@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 6 -> 6 commits (no change)
@@ -13,45 +17,41 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 4 -> 6 commits
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
+- mm-new: 6 -> 12 commits
+  - series: 1 (4) -> 1 (9)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 3 -> 5 commits
+    - no role, maintainer: 0 -> 2 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 0cc882ab6ffc "selftests/mm: handle child status safely in khugepaged"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
-    - 9be64d05fa9d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
-  - changed commits
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - d4b8948f38c5 "mm/huge_memory: scale thp_underused() to the folio size (0/4)"
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 7537e04d3da9 "mm: convert THP VMA flag tests to use vma_flags_t (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
+      - 4a4cb50a967b "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (7/13)"
         - Authored by no role player, reviewed by nobody
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
-        - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
-        - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
-      - 43a89838ad17 "mm/huge_memory: don't queue folios when underused splitting is inactive (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
-        - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
-      - ecf82087774d "mm/huge_memory: add a per-order counter for underused splits (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
-        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
-      - 3be49a462207 "mm: add anonymous mTHP folios to the deferred split list (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
-        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
+      - e6e22565995c "mm/huge_memory: copy file THPs at fork like copy_present_ptes() does (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-2-c56d0d26f970@virtuozzo.com
+      - 3dead497eee7 "mm/huge_memory: read a special PMD under the lock in copy_huge_pmd() (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-3-c56d0d26f970@virtuozzo.com
+      - b74918f00943 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
+    - 82952fac6885 "selftests-mm-test-fork-of-pmd-mapped-shmem-thps-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 1ecad9ae4c97 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

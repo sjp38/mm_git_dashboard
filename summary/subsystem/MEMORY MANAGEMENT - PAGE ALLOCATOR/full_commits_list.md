@@ -34,7 +34,7 @@
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
   - full commits list
-    - 16921060b043 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - 5f90590f3b13 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -43,25 +43,25 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 4defafd900e8 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 8950d9bb2822 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - ff51814cbc47 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - 1c7becc8dffe "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261102081919.80625-1-hui.zhu@linux.dev
 - mm-new: 3 total, 1 (1) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-    - 001d8d4c3eab "mm: page_owner: use %u to print the stack depot handle"
+    - 01937aee311f "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - e553f47c23c7 "mm: split out memory-failure declarations from internal.h"
+    - e864ea4e9920 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - c4a86ce3c9b1 "alloc_tag: add trace events for tracing allocations" (0/5)
+      - 7af56c52ebfa "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com

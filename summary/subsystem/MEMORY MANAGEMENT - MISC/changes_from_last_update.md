@@ -7,126 +7,51 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 22 -> 34 commits
-  - series: 5 (19) -> 7 (31)
+- mm-unstable: 34 -> 34 commits (no change)
+  - series: 7 (31) -> 7 (31) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 13 -> 13 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 5 -> 16 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 16 -> 16 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/damon: various fixes and cleanup of code, test, and docs". (9)
-      - a16f56625cd2 "Docs/admin-guide/mm/damon/lru_sort: fix grammar and style (7/9)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261104202959.128646-2-manuelebnerli@mailbox.org
-  - changed commits
-    - series "Docs/admin-guide/mm/damon: minor fixes", v2. (3)
-      - 582c22c674d6 "Docs/admin-guide/mm/damon: fix various typos (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261102152849.96057-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261102152849.96057-2-sj@kernel.org
-      - 8313e8bed881 "Docs/admin-guide/mm/damon/lru_sort: fix copy-paste mistakes (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261102152849.96057-3-sj@kernel.org
-      - fdf98dc72d36 "Docs/admin-guide/mm/damon/usage: fix incorrect option syntax in perf example (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261102152849.96057-4-sj@kernel.org
-    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2)
-      - 08a97603342b "mm/mglru: stop rotating offlined memcgs to the old generation (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-    - series "Docs: damon: fix grammar and typos", v2. (8)
-      - 431992818c8b "Docs/admin-guide/mm/damon/start: fix grammar (0/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261103005940.91432-2-sj@kernel.org
-      - ee7b0bd49b96 "Docs/admin-guide/mm/damon/stat: fix pronoun agreement (1/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-3-sj@kernel.org
-      - 2b6fdf97f8ef "Docs/admin-guide/mm/damon/usage: fix grammar (2/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-4-sj@kernel.org
-      - 18a1301e128e "Docs/admin-guide/mm/damon/lru_sort: fix remaining grammar (3/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-5-sj@kernel.org
-      - 239ff969f77f "Docs/mm/damon/design: fix grammar and typos (4/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-6-sj@kernel.org
-      - 6046e9ad56cb "Docs/mm/damon/api: fix verb form (5/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-7-sj@kernel.org
-      - 4d278c9afb40 "Docs/mm/damon/maintainer-profile: fix subject-verb agreement (6/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-8-sj@kernel.org
-      - 8b1e84bed548 "Docs/mm/damon/monitoring_intervals_tuning_example: fix grammar and typos (7/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103005940.91432-9-sj@kernel.org
-  - dropped commits
-    - series "mm/damon: various fixes and cleanup of code, test, and docs". (9)
-      - e576f9950ada "Docs/admin-guide/mm/damon/lru_sort: fix grammar and stlye (7/9)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261102150757.93058-9-sj@kernel.org
-- mm-new: 14 -> 10 commits
-  - series: 2 (13) -> 1 (4)
+- mm-new: 10 -> 16 commits
+  - series: 1 (4) -> 1 (9)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 4 commits
-    - no role, reviewer: 2 -> 1 commits
-    - no role, maintainer: 11 -> 4 commits
+    - no role, no role : 4 -> 6 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, no role : 0 -> 2 commits
   - new commits
-    - 683cdbce23e6 "tools/mm: add hwpoison-panic tool"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - f959cc433ca1 "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261104-for-mlock2-v1-1-57e6dd74c2bd@kylinos.cn
-    - bb503050e618 "selftests/mm: uffd-wp-mremap: keep the THP sizes in unsigned long"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261103150232.291827-1-sashal@kernel.org
-    - 0cc882ab6ffc "selftests/mm: handle child status safely in khugepaged"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
-    - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2)
-      - 1af06002b087 "selftests/mm: add a uffd test for re-registering during UFFDIO_COPY (1/2)"
+    - series "mm/mremap: fix accounting on a partial move", v3. (5)
+      - fce808617fbf "selftests/mm: test a partial mremap() of hugetlb memory (1/5)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261103102840.68903-3-azpijr@gmail.com
-    - series "alloc_tag: Introduce selective tracing for MAP", v5. (5)
-      - c4a86ce3c9b1 "alloc_tag: add trace events for tracing allocations (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-      - 1e11ab9ed1d8 "alloc_tag: introduce IOCTLs to toggle allocation tracepoints (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/37ae7dca766994d3872fcc65b623a80d5d506369.1793818636.git.abhishekbapat@google.com
-    - 9be64d05fa9d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-2-f8789de76849@toxicpanda.com
+      - 0670593b0ef1 "selftests/mm: test mremap() with an old size of 0 (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-5-f8789de76849@toxicpanda.com
+    - series "mm/damon: introduce age_ms damos core filter type". (4)
+      - 32285676e3fe "Docs/mm/damon/design: update for age_ms damos core filter type (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261106020559.98352-4-sj@kernel.org
+      - 3867b0004e64 "Docs/admin-guide/mm/damon/usage: update for age_ms damos core filter (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261106020559.98352-5-sj@kernel.org
+    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
+      - b74918f00943 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
+    - 82952fac6885 "selftests-mm-test-fork-of-pmd-mapped-shmem-thps-fix"
+      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - 88d89eddf25d "selftests/mm: fix pointer width warnings on 32-bit architectures"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20261103212805.1537354-1-sashal@kernel.org
-      - Link: : https://lore.kernel.org/20261103172150.3753dfa00f3106b6014e4d2c@linux-foundation.org
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - ecf82087774d "mm/huge_memory: add a per-order counter for underused splits (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - dropped "Cc: AlexandreGhiti <alex@ghiti.fr>"
-        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
+    - 1ecad9ae4c97 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
