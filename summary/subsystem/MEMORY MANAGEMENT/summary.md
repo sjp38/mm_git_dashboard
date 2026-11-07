@@ -11,32 +11,32 @@
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 7 commits
-    - no role, reviewer: 5 commits
-    - no role, maintainer: 8 commits
-    - reviewer, nobody: 1 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 9 commits
+    - reviewer, no role : 1 commits
     - maintainer, nobody: 1 commits
     - maintainer, reviewer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 58 total, 13 (41) series, 17 non-series commits
+- mm-unstable: 95 total, 20 (75) series, 20 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
-    - no role, no role : 7 commits
-    - no role, reviewer: 7 commits
-    - no role, maintainer: 30 commits
-    - maintainer, no role : 4 commits
-    - maintainer, reviewer: 4 commits
-    - maintainer, maintainer: 1 commits
-- mm-new: 57 total, 10 (51) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 6 commits
-    - no role, no role : 8 commits
-    - no role, reviewer: 15 commits
-    - no role, maintainer: 8 commits
+    - no role, nobody: 7 commits
+    - no role, no role : 9 commits
+    - no role, reviewer: 19 commits
+    - no role, maintainer: 36 commits
     - reviewer, nobody: 1 commits
     - reviewer, maintainer: 2 commits
-    - maintainer, nobody: 2 commits
-    - maintainer, no role : 2 commits
+    - maintainer, no role : 4 commits
+    - maintainer, reviewer: 4 commits
     - maintainer, maintainer: 13 commits
+- mm-new: 20 total, 3 (17) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 7 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 2 commits
+    - maintainer, nobody: 3 commits
+    - maintainer, no role : 2 commits
+    - maintainer, maintainer: 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat

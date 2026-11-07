@@ -6,17 +6,22 @@
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 2 commits
   - changed commits
-    - e864ea4e9920 "mm: split out memory-failure declarations from internal.h"
+    - 3d5f77105aa3 "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
+    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+- mm-new: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

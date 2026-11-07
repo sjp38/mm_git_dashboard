@@ -17,10 +17,10 @@
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-      - 4a4cb50a967b "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (7/13)
-        - Authored by no role player, reviewed by nobody
+      - b19b5baaab31 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

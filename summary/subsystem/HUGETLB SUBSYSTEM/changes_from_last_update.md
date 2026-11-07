@@ -9,29 +9,84 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 2 (7) -> 2 (7) (no change)
+- mm-unstable: 9 -> 21 commits
+  - series: 2 (7) -> 3 (19)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-new: 13 -> 14 commits
-  - series: 1 (12) -> 1 (12) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - maintainer, no role : 1 -> 0 commits
-    - maintainer, maintainer: 12 -> 13 commits
-  - new commits
-    - 1b0cbc71b8fc "mm/hugetlb_cgroup: prevent use-after-free during cgroup offlining"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261022022146.506005-1-4ncienth@gmail.com
-      - Link: https://lore.kernel.org/20261106060347.637480-1-4ncienth@gmail.com
+    - maintainer, maintainer: 0 -> 12 commits
   - changed commits
     - series "mm: Decouple folio-based vmemmap optimization from HugeTLB", v3. (12)
-      - 37953dcebc33 "mm: hugetlb_vmemmap: make vmemmap PTE conversion folio-oriented (11/12)"
+      - f76086ec264e "mm: hugetlb_vmemmap: remove HugeTLB-specific vmemmap optimization macros (0/12)"
         - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Oscar Salvador <osalvador@suse.de>"
-        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261104023510.260766-2-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - ef7e118c57b8 "mm: hugetlb_vmemmap: unify VMEMMAP_{SPLIT,REMAP}_NO_TLB_FLUSH (1/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-3-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - 5cdcb7b1079d "mm: hugetlb_vmemmap: simplify vmemmap head page handling (2/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-4-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - dad239fec739 "mm: hugetlb_vmemmap: generalize vmemmap page allocation (3/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-5-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - f3a6d25ccd04 "mm: hugetlb_vmemmap: unify writable vmemmap page preparation (4/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-6-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - 682ca73d59f8 "mm: hugetlb_vmemmap: rename vmemmap_remap_pte() to vmemmap_optimize_pte() (5/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-7-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - 58af6cd163a5 "mm: hugetlb_vmemmap: simplify shared tail page handling (6/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-8-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - dddfd0a5139c "mm: hugetlb_vmemmap: move alloc_vmemmap_page_list() next to its free helper (7/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-9-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - d63bfe0e8e6c "mm: hugetlb_vmemmap: make vmemmap optimization folio-oriented (8/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-10-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - 222c76885a9d "mm: hugetlb_vmemmap: make vmemmap restoration folio-oriented (9/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-11-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - 9b19ea74981e "mm: hugetlb_vmemmap: unify vmemmap range restoration (10/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104023510.260766-12-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+      - ee7df6dad5b2 "mm: hugetlb_vmemmap: make vmemmap PTE conversion folio-oriented (11/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261104023510.260766-13-songmuchun@bytedance.com
         - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
+- mm-new: 14 -> 2 commits
+  - series: 1 (12) -> 0 (0)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 13 -> 1 commits
+  - changed commits
+    - 847161e4ee77 "mm/hugetlb: fix validation of unsupported HugeTLB orders"
+      - Authored by a maintainer, reviewed by a maintainer
+      - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+      - Link: https://lore.kernel.org/20261104071858.757793-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

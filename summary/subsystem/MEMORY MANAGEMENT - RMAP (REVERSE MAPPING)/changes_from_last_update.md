@@ -1,38 +1,34 @@
 - baseline: v7.4-rc1 -> v7.4-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 98a724ce9e7b "mm: synchronize with PTE table reclaim for all folio sizes"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/affd6da4e8d0de1424a4e0b3bafcd1324dfb6c97.1793847060.git.baolin.wang@linux.alibaba.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - 46700dfd6100 "mm/rmap: convert remaining VMA flag tests to use vma_flags_t (3/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-3-0d3cd15ab75f@kernel.org
-    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
-      - 936cfbbc9784 "mm/rmap: duplicate a PMD mapping as one in folio_dup_file_rmap_pmd() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-0-c56d0d26f970@virtuozzo.com
-        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-1-c56d0d26f970@virtuozzo.com
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - e864ea4e9920 "mm: split out memory-failure declarations from internal.h"
+    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+- mm-new: 3 -> 2 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - changed commits
+    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
+      - a0e59f7795f6 "mm/rmap: duplicate a PMD mapping as one in folio_dup_file_rmap_pmd() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-0-c56d0d26f970@virtuozzo.com
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-1-c56d0d26f970@virtuozzo.com
+        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

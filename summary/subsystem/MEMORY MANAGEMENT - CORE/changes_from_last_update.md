@@ -3,62 +3,71 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 3abd18333018 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
-      - Authored by no role player, reviewed by a reviewer
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 0 -> 1 commits
+  - changed commits
+    - 5ce5be9433bc "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+    - 3a39f7422539 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Kairui Song <kasong@tencent.com>"
+      - dropped "Cc: Kairui Song <kasong@tencent.com>"
       - Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 10 commits
-  - series: 4 (11) -> 3 (7)
-    - no role, no role : 6 -> 4 commits
-    - no role, reviewer: 5 -> 3 commits
-    - no role, maintainer: 3 -> 2 commits
+- mm-unstable: 10 -> 12 commits
+  - series: 3 (7) -> 3 (9)
+    - no role, no role : 4 -> 5 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 2 -> 3 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - 1113b9f406e1 "mm: move LRU size stat updates out of lru_lock in folio batches"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261029204157.117879-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/ [1]
-    - series "mm: remove newly-unused page wrapper APIs". (8)
-      - e0c93e6d8904 "mm: remove wait_on_page_writeback() (0/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-0-e7280bdb31f6@columbia.edu
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-1-e7280bdb31f6@columbia.edu
-        - Link: https://lore.kernel.org/r/20260810-remove-wait-on-page-writeback-v3-0-dd7531704f26@columbia.edu/ [1]
-      - bc1ee90bfe9d "mm: remove end_page_writeback() (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-2-e7280bdb31f6@columbia.edu
-      - 3c8e147e35ca "mm: remove clear_page_dirty_for_io() (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-3-e7280bdb31f6@columbia.edu
-      - ed5e130ee2c4 "mm: remove thp_size() and thp_order() (7/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261102-page-wrappers-v1-8-e7280bdb31f6@columbia.edu
-- mm-new: 4 -> 5 commits
-  - series: 0 (2) -> 0 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - 7d8c3b9f8daa "mm: convert miscellaneous VMA flag tests to use vma_flags_t (8/13)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
   - changed commits
-    - e864ea4e9920 "mm: split out memory-failure declarations from internal.h"
+    - series "mm: split underused anonymous mTHP folios", v4. (4)
+      - d0a415a5ee6d "mm: add anonymous mTHP folios to the deferred split list (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
+    - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4)
+      - a5f94fdfbd68 "mm, swap: fix large swap-in across swap file extents (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-2-204be064be5b@tencent.com
+    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+  - dropped commits
+    - 84617cbbd760 "mm: unqueue deferred split folios outside the lruvec lock"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
+- mm-new: 5 -> 1 commits
+  - series: 0 (3) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - badd52dc5ac4 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+  - dropped commits
+    - 7dbb8512d61f "iommufd: enforce memfd write seals for file mappings"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -2,56 +2,81 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - a1d463611329 "mm/khugepaged: don't map folios that are not uptodate in MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261105-set_huge_pmd_uptodate-v1-1-a78d8a1b7117@kernel.org
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 0 -> 1 commits
+  - changed commits
+    - 5ce5be9433bc "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 6 -> 12 commits
-  - series: 1 (4) -> 1 (9)
+- mm-unstable: 6 -> 11 commits
+  - series: 2 (5) -> 3 (9)
     - no role, nobody: 2 -> 3 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 5 commits
-    - no role, maintainer: 0 -> 2 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - 7537e04d3da9 "mm: convert THP VMA flag tests to use vma_flags_t (5/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
-      - 4a4cb50a967b "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (7/13)"
+    - no role, no role : 3 -> 4 commits
+    - no role, reviewer: 0 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: split underused anonymous mTHP folios", v4. (4)
+      - 20df4c461afb "mm/huge_memory: scale thp_underused() to the folio size (0/4)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
+        - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
+      - 005bdb5747f2 "mm/huge_memory: don't queue folios when underused splitting is inactive (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
+      - 55d2b2e7ef26 "mm/huge_memory: add a per-order counter for underused splits (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
+      - d0a415a5ee6d "mm: add anonymous mTHP folios to the deferred split list (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
+    - 4c450cd9c1e8 "selftests/mm: handle child status safely in khugepaged"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
+- mm-new: 12 -> 7 commits
+  - series: 1 (9) -> 0 (5)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 5 -> 3 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - b19b5baaab31 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
     - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
-      - e6e22565995c "mm/huge_memory: copy file THPs at fork like copy_present_ptes() does (1/4)"
+      - 623cb9fe35bf "mm/huge_memory: copy file THPs at fork like copy_present_ptes() does (1/4)"
         - Authored by no role player, reviewed by a maintainer
+        - added "Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
         - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-2-c56d0d26f970@virtuozzo.com
-      - 3dead497eee7 "mm/huge_memory: read a special PMD under the lock in copy_huge_pmd() (2/4)"
+        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
+      - 1145b1abc526 "mm/huge_memory: read a special PMD under the lock in copy_huge_pmd() (2/4)"
         - Authored by no role player, reviewed by a maintainer
+        - added "Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
         - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-3-c56d0d26f970@virtuozzo.com
-      - b74918f00943 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
+        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
+      - 9a4d9fb667a6 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
         - Authored by no role player, reviewed by nobody
+        - added "Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
         - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
-    - 82952fac6885 "selftests-mm-test-fork-of-pmd-mapped-shmem-thps-fix"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 1ecad9ae4c97 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

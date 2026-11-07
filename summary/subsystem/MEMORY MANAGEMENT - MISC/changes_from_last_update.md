@@ -7,51 +7,72 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 34 -> 34 commits (no change)
-  - series: 7 (31) -> 7 (31) (no change)
+- mm-unstable: 34 -> 43 commits
+  - series: 7 (31) -> 8 (35)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 13 -> 13 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 16 -> 16 commits (no change)
+    - no role, no role : 13 -> 17 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 16 -> 20 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 10 -> 16 commits
-  - series: 1 (4) -> 1 (9)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 6 commits
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, no role : 0 -> 2 commits
-  - new commits
-    - series "mm/mremap: fix accounting on a partial move", v3. (5)
-      - fce808617fbf "selftests/mm: test a partial mremap() of hugetlb memory (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-2-f8789de76849@toxicpanda.com
-      - 0670593b0ef1 "selftests/mm: test mremap() with an old size of 0 (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-5-f8789de76849@toxicpanda.com
-    - series "mm/damon: introduce age_ms damos core filter type". (4)
-      - 32285676e3fe "Docs/mm/damon/design: update for age_ms damos core filter type (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261106020559.98352-4-sj@kernel.org
-      - 3867b0004e64 "Docs/admin-guide/mm/damon/usage: update for age_ms damos core filter (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261106020559.98352-5-sj@kernel.org
-    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
-      - b74918f00943 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
-    - 82952fac6885 "selftests-mm-test-fork-of-pmd-mapped-shmem-thps-fix"
-      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - 1ecad9ae4c97 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+    - 9182136eccb5 "selftests/mm: fix pointer width warnings on 32-bit architectures"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261103212805.1537354-1-sashal@kernel.org
+      - Link: : https://lore.kernel.org/20261103172150.3753dfa00f3106b6014e4d2c@linux-foundation.org
+    - series "mm: split underused anonymous mTHP folios", v4. (4)
+      - 55d2b2e7ef26 "mm/huge_memory: add a per-order counter for underused splits (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
+    - 3d5f77105aa3 "tools/mm: add hwpoison-panic tool"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
+    - 081419ea5a76 "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261104-for-mlock2-v1-1-57e6dd74c2bd@kylinos.cn
+    - 6c1b06fdd872 "selftests/mm: uffd-wp-mremap: keep the THP sizes in unsigned long"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261103150232.291827-1-sashal@kernel.org
+    - 4c450cd9c1e8 "selftests/mm: handle child status safely in khugepaged"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
+    - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2)
+      - cd3f4ae02ad5 "selftests/mm: add a uffd test for re-registering during UFFDIO_COPY (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261103102840.68903-3-azpijr@gmail.com
+    - series "alloc_tag: Introduce selective tracing for MAP", v5. (5)
+      - 6d1be0811190 "alloc_tag: add trace events for tracing allocations (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
+        - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
+      - de2b74665eaa "alloc_tag: introduce IOCTLs to toggle allocation tracepoints (1/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/37ae7dca766994d3872fcc65b623a80d5d506369.1793818636.git.abhishekbapat@google.com
+- mm-new: 16 -> 7 commits
+  - series: 1 (9) -> 0 (5)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 6 -> 2 commits
+    - no role, reviewer: 2 -> 1 commits
+    - no role, maintainer: 4 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
+      - 9a4d9fb667a6 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
+        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

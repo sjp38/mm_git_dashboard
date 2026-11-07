@@ -4,28 +4,31 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 98a724ce9e7b "mm: synchronize with PTE table reclaim for all folio sizes"
+    - 6f8808b1a0c8 "mm: synchronize with PTE table reclaim for all folio sizes"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/affd6da4e8d0de1424a4e0b3bafcd1324dfb6c97.1793847060.git.baolin.wang@linux.alibaba.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 3 total, 1 (2) series, 1 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - e864ea4e9920 "mm: split out memory-failure declarations from internal.h"
+    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - 46700dfd6100 "mm/rmap: convert remaining VMA flag tests to use vma_flags_t" (3/13)
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+      - c38a958c22ca "mm/rmap: convert remaining VMA flag tests to use vma_flags_t" (4/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-3-0d3cd15ab75f@kernel.org
     - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4 commits)
-      - 936cfbbc9784 "mm/rmap: duplicate a PMD mapping as one in folio_dup_file_rmap_pmd()" (0/4)
+      - a0e59f7795f6 "mm/rmap: duplicate a PMD mapping as one in folio_dup_file_rmap_pmd()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-0-c56d0d26f970@virtuozzo.com
         - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-1-c56d0d26f970@virtuozzo.com
+        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

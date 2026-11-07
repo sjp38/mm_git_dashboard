@@ -3,17 +3,14 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 1 (1) series, 1 non-series commits
+- mm-new: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: continue vma_flags_t conversion". (13 commits)
-      - d6e69f751527 "mm/gup: convert GUP code to use vma_flags_t" (0/13)
+      - 986cc58955f0 "mm/gup: convert GUP code to use vma_flags_t" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-0-0d3cd15ab75f@kernel.org
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-1-0d3cd15ab75f@kernel.org
-    - 7dbb8512d61f "iommufd: enforce memfd write seals for file mappings"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

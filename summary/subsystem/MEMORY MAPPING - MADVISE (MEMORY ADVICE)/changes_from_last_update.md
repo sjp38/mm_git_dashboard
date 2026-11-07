@@ -9,13 +9,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
     - series "mm: continue vma_flags_t conversion". (13)
-      - 4a4cb50a967b "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (7/13)"
-        - Authored by no role player, reviewed by nobody
+      - b19b5baaab31 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
