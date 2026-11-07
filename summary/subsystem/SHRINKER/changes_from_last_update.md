@@ -5,18 +5,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7)
-      - 6b9958fcc4ac "mm/vmscan: move vmscan tracepoints to a local header (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

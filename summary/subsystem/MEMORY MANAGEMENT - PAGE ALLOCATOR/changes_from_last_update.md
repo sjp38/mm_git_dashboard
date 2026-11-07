@@ -6,39 +6,21 @@
     - maintainer, no role : 2 -> 2 commits (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 0 -> 1 commits
+    - reviewer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 5ce5be9433bc "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by no role player
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
+      - added "Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com"
+      - dropped "Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com"
+      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 5 commits
-  - series: 0 (0) -> 1 (1)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 4 commits
-  - changed commits
-    - a6cab00366eb "mm: page_owner: use %u to print the stack depot handle"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
-      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-    - series "alloc_tag: Introduce selective tracing for MAP", v5. (5)
-      - 6d1be0811190 "alloc_tag: add trace events for tracing allocations (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-- mm-new: 3 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, maintainer: 3 -> 0 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

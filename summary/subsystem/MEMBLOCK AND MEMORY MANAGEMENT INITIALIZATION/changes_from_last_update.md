@@ -6,19 +6,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - maintainer, maintainer: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: Decouple folio-based vmemmap optimization from HugeTLB", v3. (12)
-      - 58af6cd163a5 "mm: hugetlb_vmemmap: simplify shared tail page handling (6/12)"
+    - series "mm: Decouple folio-based vmemmap optimization from HugeTLB", v4. (13)
+      - 0b7152457560 "mm: hugetlb_vmemmap: simplify shared tail page handling (7/13)"
         - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104023510.260766-8-songmuchun@bytedance.com
-        - Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - maintainer, maintainer: 1 -> 0 commits
+        - added "Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com"
+        - added "Cc: Yili Zhang <zhangyili01@baidu.com>"
+        - added "Cc: "Oscar Salvador (SUSE)" <osalvador@kernel.org>"
+        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - dropped "Link: : https://lore.kernel.org/20261103224659.2865b9ff27d09994949edd78@linux-foundation.org"
+        - dropped "Link: https://lore.kernel.org/20261104023510.260766-8-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

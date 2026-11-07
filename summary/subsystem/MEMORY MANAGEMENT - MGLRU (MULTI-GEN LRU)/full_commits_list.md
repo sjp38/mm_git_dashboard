@@ -8,49 +8,49 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - 36ecff1d0167 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - 80c414fadf1a "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/linux-mm/20261017050928.128582-2-sidchintamaneni@gmail.com/ [1]
-      - f4c1fde2a6af "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - 291298471960 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - a3a84e8007ba "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - a81cddde55ca "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
-      - 4da214d302ab "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - 629a1b4e7528 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
+    - c33288174f1b "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - 6b9958fcc4ac "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - 155f4871a21a "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
-      - 30a3fd821706 "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
+      - c49789d5e47a "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-4-ridong.chen@linux.dev
-      - 45917d0e61c3 "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
+      - 9a6465972cf4 "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-5-ridong.chen@linux.dev
-      - 5b1519024bb9 "mm/mglru: add tracepoint for scan_folios()" (4/7)
+      - 3766679404b2 "mm/mglru: add tracepoint for scan_folios()" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-6-ridong.chen@linux.dev
-      - 0d1303bf8e89 "mm/mglru: add lruvec_gen_size() helper" (5/7)
+      - 2df8bd123e23 "mm/mglru: add lruvec_gen_size() helper" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-7-ridong.chen@linux.dev
-      - 4db65807f543 "mm/mglru: add tracepoint for aging" (6/7)
+      - bc7ab5fe0cec "mm/mglru: add tracepoint for aging" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-8-ridong.chen@linux.dev
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - badd52dc5ac4 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
+      - dada70355015 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

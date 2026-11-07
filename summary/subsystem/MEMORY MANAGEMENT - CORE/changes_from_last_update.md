@@ -7,67 +7,25 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 5ce5be9433bc "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
       - Authored by a reviewer, reviewed by no role player
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com
-    - 3a39f7422539 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
+      - added "Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com"
+      - dropped "Link: https://lore.kernel.org/20261029-fix-split_folio_to_order-race-v1-1-a483c7451b0d@nvidia.com"
+      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 12 commits
-  - series: 3 (7) -> 3 (9)
-    - no role, no role : 4 -> 5 commits
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 3 (9) -> 3 (9) (no change)
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - d0a415a5ee6d "mm: add anonymous mTHP folios to the deferred split list (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
-    - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4)
-      - a5f94fdfbd68 "mm, swap: fix large swap-in across swap file extents (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-2-204be064be5b@tencent.com
-    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
-      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-  - dropped commits
-    - 84617cbbd760 "mm: unqueue deferred split folios outside the lruvec lock"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-- mm-new: 5 -> 1 commits
-  - series: 0 (3) -> 0 (1)
-    - no role, nobody: 1 -> 0 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - changed commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - badd52dc5ac4 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
-  - dropped commits
-    - 7dbb8512d61f "iommufd: enforce memfd write seals for file mappings"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

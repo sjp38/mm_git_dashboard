@@ -5,50 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 11 commits
-  - series: 2 (4) -> 2 (10)
-    - no role, reviewer: 4 -> 9 commits
-    - no role, maintainer: 1 -> 2 commits
-  - changed commits
-    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
-      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-    - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7)
-      - 6b9958fcc4ac "mm/vmscan: move vmscan tracepoints to a local header (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
-      - 30a3fd821706 "mm/vmscan: move struct scan_control to a dedicated header (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-4-ridong.chen@linux.dev
-      - 45917d0e61c3 "mm/vmscan: pass scan_control to the vmscan tracepoints (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-5-ridong.chen@linux.dev
-      - 5b1519024bb9 "mm/mglru: add tracepoint for scan_folios() (4/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-6-ridong.chen@linux.dev
-      - 0d1303bf8e89 "mm/mglru: add lruvec_gen_size() helper (5/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-7-ridong.chen@linux.dev
-      - 4db65807f543 "mm/mglru: add tracepoint for aging (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104130817.849089-8-ridong.chen@linux.dev
-  - dropped commits
-    - 84617cbbd760 "mm: unqueue deferred split folios outside the lruvec lock"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261019230646.3510790-1-joannelkoong@gmail.com
-      - Link: https://lore.kernel.org/linux-mm/CAJnrk1a2PpUGTsCgS7jct2KET4K2zAL+_h+te8G1MaU9bXs99w@mail.gmail.com/ [1]
-- mm-new: 7 -> 0 commits
-  - series: 0 (6) -> 0 (0)
-    - no role, reviewer: 6 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (10) -> 2 (10) (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

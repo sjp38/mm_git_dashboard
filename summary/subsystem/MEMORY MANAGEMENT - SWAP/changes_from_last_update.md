@@ -4,56 +4,17 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 2 commits
-  - changed commits
-    - 3a39f7422539 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 7 commits
-  - series: 0 (0) -> 2 (6)
-    - no role, reviewer: 0 -> 3 commits
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3)
-      - 026ffba74ef3 "mm, swap: only allow swapped-out slots into the swap cache (0/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
-        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
-      - 1e2952297a5b "mm, swap: give hibernation swap slots their own swap table entry type (1/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-      - d5c99e9bf52f "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot() (2/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
-    - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4)
-      - 9e4f3c6b9685 "mm/zswap: drop the stale zswap entry of a zero folio (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
-        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
-      - b2a5eb6afbdb "mm/swap: account synchronous swap reads as memory stall (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
-      - be66c99db403 "mm/swap: keep the swap-in pressure window open across a batch (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-4-204be064be5b@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/auOz00OGB_8dgniC@cmpxchg.org/
-- mm-new: 6 -> 0 commits
-  - series: 2 (6) -> 0 (0)
-    - no role, reviewer: 3 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, maintainer: 2 -> 0 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

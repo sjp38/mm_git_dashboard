@@ -6,33 +6,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 3be32e60c03c "mm: split out memory-failure declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
-      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-- mm-new: 3 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-  - changed commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - 8ec75954b2a1 "mm/ksm: convert VMA flag tests to use vma_flags_t (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Xu Xin (vivo) <xu.xin@linux.dev>"
-        - dropped "Cc: Xu Xin <xu.xin@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-6-0d3cd15ab75f@kernel.org
-      - b19b5baaab31 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

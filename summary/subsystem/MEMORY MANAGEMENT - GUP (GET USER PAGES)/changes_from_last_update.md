@@ -7,13 +7,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - dropped commits
-    - 7dbb8512d61f "iommufd: enforce memfd write seals for file mappings"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

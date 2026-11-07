@@ -37,13 +37,13 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - e1e4e0beff2e "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 5d031fe0d054 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
-    - 4aa888f68f3c "mm/vma: read anon_vma carefully in validate_mm()"
+    - 802a1e9c1378 "mm/vma: read anon_vma carefully in validate_mm()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
-    - 92cc50da113d "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
+    - b0099573b4d6 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -52,11 +52,11 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 7c570f0a4ea7 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 386fb0c66b09 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - a3d27154a205 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 2e2af33bf51d "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 6 total, 1 (6) series, 0 non-series commits
@@ -64,24 +64,24 @@
     - no role, no role : 5 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - b19b5baaab31 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
+      - a1331df24a58 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
-      - badd52dc5ac4 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
+      - dada70355015 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
-      - 9dc37a319583 "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t" (10/13)
+      - 0040f1e0d33b "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
     - series "mm/mremap: fix accounting on a partial move", v3. (5 commits)
-      - ee25534f8eaa "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
+      - 1456423dcec5 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-0-f8789de76849@toxicpanda.com
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-1-f8789de76849@toxicpanda.com
-      - c4b1600b229f "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
+      - 9d3fb7eee983 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-3-f8789de76849@toxicpanda.com
-      - 3fb59825e2f7 "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
+      - f2597ed073dc "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-4-f8789de76849@toxicpanda.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

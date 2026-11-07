@@ -17,26 +17,8 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 6 -> 6 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 3 -> 0 commits
-    - no role, no role : 3 -> 5 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - b19b5baaab31 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
-      - badd52dc5ac4 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
-      - 9dc37a319583 "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t (10/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

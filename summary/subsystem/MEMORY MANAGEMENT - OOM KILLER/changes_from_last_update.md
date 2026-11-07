@@ -9,15 +9,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - badd52dc5ac4 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
