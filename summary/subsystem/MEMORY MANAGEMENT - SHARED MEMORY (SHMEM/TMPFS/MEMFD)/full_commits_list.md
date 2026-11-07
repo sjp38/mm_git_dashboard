@@ -1,0 +1,36 @@
+- baseline: v7.4-rc1
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 740128dd1a3f "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/at9kJwdGkHPsWwgG@chrisdown.name
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - 32cf13f85ba1 "mm/shmem: fix swapin livelock on a mismatched large swap cache folio"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261027-shmem-swapin-mismatch-v1-1-84e30aa3b9e5@columbia.edu
+    - 13b0f71302d1 "shmem: consume the reserved xattr space despite remount"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261105082717.c459bb33778fcf27e5675082@linux-foundation.org
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 2f7acb2db471 "shmem: report casefold setting in mount options"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261020035917.693478-1-krisman@suse.de
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - d8816ce5fc75 "shmem: clamp negative used-block samples in statfs"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261028051826.23058-1-dennylin0707@gmail.com

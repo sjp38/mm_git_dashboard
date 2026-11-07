@@ -15,26 +15,12 @@
     - no role, maintainer: 20 -> 20 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 7 -> 6 commits
-  - series: 0 (5) -> 0 (4)
+- mm-new: 6 -> 6 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
     - maintainer, no role : 2 -> 2 commits (no change)
-  - new commits
-    - f512d9d89724 "selftests/mm: pkeys: wait for the child in become_child()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261106164639.2959195-1-clopez@suse.de
-      - Link: https://lore.kernel.org/all/20240419115027.3848958-1-usama.anjum@collabora.com [1]
-  - dropped commits
-    - series "mm/huge_memory: copy PMDs at fork like the PTE path does", v5. (4)
-      - 9a4d9fb667a6 "selftests/mm: test fork of PMD-mapped shmem THPs (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261104-b4-prep-vstor-149847-copy_huge_pmd-recheck-special-pmd-v5-4-c56d0d26f970@virtuozzo.com
-        - Link: : https://lore.kernel.org/20261106084856.4b254c973694345ee58a9b63@linux-foundation.org
-    - 9611ef60d46e "selftests-mm-test-fork-of-pmd-mapped-shmem-thps-fix"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

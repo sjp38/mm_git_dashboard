@@ -1,0 +1,19 @@
+- baseline: v7.4-rc1
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 5da7698c9162 "selftests/memory-hotplug: use $(id -u) instead of $UID for root check"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261022052245.1138709-2-chihsheng@google.com
+    - c33288174f1b "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

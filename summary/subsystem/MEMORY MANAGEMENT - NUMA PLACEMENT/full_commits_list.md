@@ -1,0 +1,29 @@
+- baseline: v7.4-rc1
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, reviewer: 1 commits
+  - full commits list
+    - 6ef2729103ac "mm/mempolicy: use one node set for interleave weights"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261030161046.1497894-1-gourry@gourry.net
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 2 commits
+  - full commits list
+    - df2189897c88 "mm/memory-tiers: reset demotion targets of nodes without memory"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261021024438.1942502-1-gourry@gourry.net
+    - e7d71ce2a2b7 "mm/mempolicy: convert mempolicy refcnt to refcount_t"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261015231322.3392551-1-gourry@gourry.net
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - dada70355015 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

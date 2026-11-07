@@ -1,0 +1,39 @@
+- baseline: v7.4-rc1
+- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 2 commits
+  - full commits list
+    - 7d8746d7dc9c "mm/migrate: untag addresses when querying page nodes"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261026195330.46757-1-dennylin0707@gmail.com
+    - fe623a81ad9e "mm/migrate: snapshot the source nid before the misplaced migration"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261027021721.95781-1-laoar.shao@gmail.com
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 51846fbf9c52 "mm/migrate: move NR_FILE_THPS on cross-node migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261025110209.4105994-1-ridong.chen@linux.dev
+    - 847560bf6adb "mm/migrate: move NR_KERNEL_FILE_PAGES on cross-node migration"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261027043214.2248986-1-ridong.chen@linux.dev
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - f57361841d76 "mm/migrate: fix softlockup in do_pages_stat() with huge page arrays"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261031033330.3416326-1-xiqi5703@163.com
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - 48db71a7bab3 "mm/migrate: convert VMA flag tests to use vma_flags_t" (5/13)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-4-0d3cd15ab75f@kernel.org
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
