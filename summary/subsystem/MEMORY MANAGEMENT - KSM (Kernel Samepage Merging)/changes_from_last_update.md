@@ -1,16 +1,6 @@
-- baseline: v7.4-rc1 -> v7.4-rc1-914-gfa4ad798f6f68
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
-  - dropped commits
-    - 2efc6332f18b "mm/ksm: keep soft-dirty when merging a page"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261021182157.1873726-1-samarth.colleges@gmail.com
-    - 990d6c2194a9 "mm/ksm: fix userfaultfd protection during merge and unmerge"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
-      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

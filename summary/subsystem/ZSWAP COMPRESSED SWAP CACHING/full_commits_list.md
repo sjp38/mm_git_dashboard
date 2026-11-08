@@ -7,26 +7,26 @@
     - no role, maintainer: 6 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 78599cbc883a "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 9f92cb16c741 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 1d9bec3b2e29 "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - d2edb4c16e45 "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
     - series "mm/zswap: batch the writeback IO". (2 commits)
-      - 46fba4e9ddeb "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+      - 26f93d363733 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
-      - 9b2104ca5af9 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+      - e958c24ceeff "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
-    - 2310684ec11d "mm: bypass swap readahead for zswap"
+    - d2bf99b731aa "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
-    - 747a16bd4288 "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - 2bcbab16a70f "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

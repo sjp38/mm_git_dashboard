@@ -1,37 +1,17 @@
-- baseline: v7.4-rc1 -> v7.4-rc1-914-gfa4ad798f6f68
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 854e5ff8b3ce "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 10 commits
-  - series: 3 (11) -> 2 (7)
-    - no role, nobody: 3 -> 2 commits
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 2 (7) -> 2 (7) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 6 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - c5c64306b344 "mm/huge_memory: scale thp_underused() to the folio size (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
-        - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
-      - c1d123fdac73 "mm/huge_memory: don't queue folios when underused splitting is inactive (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
-      - 694f8228e72d "mm/huge_memory: add a per-order counter for underused splits (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
-      - 8843fffe4f75 "mm: add anonymous mTHP folios to the deferred split list (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

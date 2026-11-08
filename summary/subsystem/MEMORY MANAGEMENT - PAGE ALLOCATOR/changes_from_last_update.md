@@ -1,35 +1,6 @@
-- baseline: v7.4-rc1 -> v7.4-rc1-914-gfa4ad798f6f68
-- mm-hotfixes-stable: 5 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-    - maintainer, no role : 2 -> 0 commits
-  - dropped commits
-    - 83367658a010 "mm/page_alloc: let the highest memory node recover from hopeless state"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261019184850.3427905-1-gourry@gourry.net
-    - b6732c6d4313 "mm/page_alloc: mark pages freed by __free_pages_core() as not tagged"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261022122752.74774-1-zenghui.yu@linux.dev
-    - series "mm: page_alloc: fix reserve access for non-blocking requests", v2. (2)
-      - 6ee3d87b9408 "mm: page_alloc: do not give all non-blocking requests reserve access (0/2)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it [0]
-        - Link: https://lore.kernel.org/linux-mm/arFBWvzXPYrKuIYi@cmpxchg.org/ [1]
-        - Link: https://lore.kernel.org/linux-mm/20261001082152.2879289-1-dipiets@amazon.it/ [2]
-        - Link: https://lore.kernel.org/20261028171719.2043421-1-hannes@cmpxchg.org
-        - Link: https://lore.kernel.org/20261028171719.2043421-2-hannes@cmpxchg.org
-      - fe21f930d1e6 "mm: page_alloc: remove ALLOC_NON_BLOCK from ALLOC_RESERVES (1/2)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261028171719.2043421-3-hannes@cmpxchg.org
-    - 0e05a469c294 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
-      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

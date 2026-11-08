@@ -1,43 +1,18 @@
-- baseline: v7.4-rc1 -> v7.4-rc1-914-gfa4ad798f6f68
-- mm-hotfixes-stable: 5 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 332c1bd17422 "selftests/mm: merge: keep the far mremap() targets in the carveout"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 1b8fd9a23501 "selftests/mm: fix khugepaged_race build with older glibc"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261027122013.4286-1-zenghui.yu@linux.dev
-    - 0120a603afad "mm/hugetlb_vmemmap: map the shared tail page writable"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261028132623.2560146-1-kirill@shutemov.name
-    - series "mm/cma: accept memory of CMA areas reserved with memblock_reserve()", v1. (2)
-      - 5d002001601a "mm/cma: accept memory of multi-range CMA areas (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261029-cma-multi-v1-0-2cbced8b5cb7@kernel.org
-        - Link: https://lore.kernel.org/20261029-cma-multi-v1-1-2cbced8b5cb7@kernel.org
-      - f8f9cbc34a30 "mm/cma: accept memory of CMA areas reserved at a fixed address (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261029-cma-multi-v1-2-2cbced8b5cb7@kernel.org
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 44 -> 43 commits
-  - series: 8 (35) -> 8 (34)
+- mm-unstable: 43 -> 43 commits (no change)
+  - series: 8 (34) -> 8 (34) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 17 -> 17 commits (no change)
-    - no role, reviewer: 3 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 20 -> 20 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - 694f8228e72d "mm/huge_memory: add a per-order counter for underused splits (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
 - mm-new: 5 -> 5 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

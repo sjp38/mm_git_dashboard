@@ -1,26 +1,6 @@
-- baseline: v7.4-rc1 -> v7.4-rc1-914-gfa4ad798f6f68
-- mm-hotfixes-stable: 4 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - f681d4580d5c "mm: fix address wraparound when scanning large folio PTEs"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
-    - 243cf1f67b36 "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/14ebbd556cc4941f0ebc43da59fa6a2fdca25dc8.1793148609.git.baolin.wang@linux.alibaba.com
-      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
-    - series "mm: avoid losing atomic VMA flags", v1. (4)
-      - 13fc99f46399 "mm: do not unintentionally overwrite atomic VMA flags (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-    - 990d6c2194a9 "mm/ksm: fix userfaultfd protection during merge and unmerge"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
-      - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -28,17 +8,12 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 12 commits
-  - series: 3 (10) -> 3 (9)
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 3 (9) -> 3 (9) (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 3 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - series "mm: split underused anonymous mTHP folios", v4. (4)
-      - 8843fffe4f75 "mm: add anonymous mTHP folios to the deferred split list (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)

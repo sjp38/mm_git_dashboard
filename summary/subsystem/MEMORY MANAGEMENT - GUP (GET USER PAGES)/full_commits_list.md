@@ -7,7 +7,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: continue vma_flags_t conversion". (13 commits)
-      - 7518a1c89308 "mm/gup: convert GUP code to use vma_flags_t" (0/13)
+      - f4aa09f61633 "mm/gup: convert GUP code to use vma_flags_t" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-0-0d3cd15ab75f@kernel.org
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-1-0d3cd15ab75f@kernel.org
