@@ -1,49 +1,17 @@
-- baseline: v7.4-rc1
-- mm-hotfixes-stable: 8 total, 1 (3) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 332c1bd17422 "selftests/mm: merge: keep the far mremap() targets in the carveout"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261022121837.28723-1-danishkhateeb03@gmail.com
-    - 8146c6478224 "mm/vma: fix expansion of VMA_MIXEDMAP_BIT VMAs"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261023-vma-expansion-fix-v1-1-6142baf1f46b@kernel.org
-    - series "mm: avoid losing atomic VMA flags", v1. (4 commits)
-      - 13fc99f46399 "mm: do not unintentionally overwrite atomic VMA flags" (0/4)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-0-8ff4fae1fc85@kernel.org
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-1-8ff4fae1fc85@kernel.org
-      - 769417e410dd "mm/vma: write lock source VMA before duplicating it in __split_vma()" (1/4)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-2-8ff4fae1fc85@kernel.org
-      - c386d799f423 "mm/vma: avoid losing atomic VMA flags when setting sticky VMA flags" (3/4)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261023-fix-vma-atomic-v1-4-8ff4fae1fc85@kernel.org
-    - bfc1d9724c78 "fs/proc/task_mmu: return -ENOTTY for unknown pagemap ioctls"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261023181300.3366487-1-hengyul@cs.unc.edu
-    - 168ed9c5d5ec "mm/vma: update VMA iterator state on error in new VMA merge"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261027-fix-new-merge-bug-v1-1-7023a787e6b9@kernel.org
-    - ee1afc5539b6 "fs/proc/task_mmu: fix missed VMAs when reading /proc/PID/maps and friends"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261027-fix-proc-pid-maps-missing-vmas-v2-1-2791cc9fc95f@kernel.org
+- baseline: v7.4-rc1-914-gfa4ad798f6f68
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 6cca1a4d74b6 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 196af736156f "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
-    - 36f558cb9acf "mm/vma: read anon_vma carefully in validate_mm()"
+    - c530cd386e2a "mm/vma: read anon_vma carefully in validate_mm()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
-    - 1884e6cf2f9c "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
+    - c6d635d045b4 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -53,20 +21,20 @@
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - db20e4fc2014 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
+      - a0cc9744a612 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
-      - a70e4b6ca6b5 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
+      - 8fbeb9a0139f "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
-      - 268d523c1d96 "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t" (10/13)
+      - 561451838c3c "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
-    - b4669277f6c0 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - 407f8ecf28ed "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - a138ea1fbf2f "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - 58243c0a1bf3 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 3 total, 1 (3) series, 0 non-series commits
@@ -74,14 +42,14 @@
     - no role, no role : 3 commits
   - full commits list
     - series "mm/mremap: fix accounting on a partial move", v3. (5 commits)
-      - f040e52d2765 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
+      - f84c7aa63af2 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-0-f8789de76849@toxicpanda.com
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-1-f8789de76849@toxicpanda.com
-      - e7753d00d2b1 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
+      - ddb3299e8bf9 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-3-f8789de76849@toxicpanda.com
-      - e9885498fa05 "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
+      - 198ccd59ce30 "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-4-f8789de76849@toxicpanda.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

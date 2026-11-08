@@ -1,34 +1,23 @@
-- baseline: v7.4-rc1 -> v7.4-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.4-rc1 -> v7.4-rc1-914-gfa4ad798f6f68
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 9597c2056e05 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 5 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 2 commits
-  - changed commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - 2478ba2914f7 "mm/filemap: convert fault and readahead logic to use vma_flags_t (1/13)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-2-0d3cd15ab75f@kernel.org
-      - be560a840e63 "mm/filemap: cache random-read flag before dropping fault lock (2/13)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/au2_PPpdAMgRJZtX@gremlin
-      - cf9305f3fcb0 "mm-filemap-convert-fault-and-readahead-logic-to-use-vma_flags_t-fix-fix (3/13)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-- mm-new: 3 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 0 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

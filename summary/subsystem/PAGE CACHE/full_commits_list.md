@@ -1,16 +1,10 @@
-- baseline: v7.4-rc1
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 9597c2056e05 "mm/page-writeback: avoid 32-bit overflow in dirty threshold shares"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261021060654.27855-1-dennylin0707@gmail.com
+- baseline: v7.4-rc1-914-gfa4ad798f6f68
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 16c36d929e8f "mm/filemap: stop fault-around when the walk steps back"
+    - 2dcd84097671 "mm/filemap: stop fault-around when the walk steps back"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
       - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
@@ -21,19 +15,19 @@
     - no role, maintainer: 2 commits
     - maintainer, nobody: 2 commits
   - full commits list
-    - f5f68b862676 "mm/filemap: clear page cache marks once when removing a folio"
+    - 42004b68ae8f "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - cc26dfeb4339 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+    - 17063bc75866 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
-      - 2478ba2914f7 "mm/filemap: convert fault and readahead logic to use vma_flags_t" (1/13)
+      - 455aa1d8fa6c "mm/filemap: convert fault and readahead logic to use vma_flags_t" (1/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-2-0d3cd15ab75f@kernel.org
-      - be560a840e63 "mm/filemap: cache random-read flag before dropping fault lock" (2/13)
+      - 11b63be1e880 "mm/filemap: cache random-read flag before dropping fault lock" (2/13)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/au2_PPpdAMgRJZtX@gremlin
-      - cf9305f3fcb0 "mm-filemap-convert-fault-and-readahead-logic-to-use-vma_flags_t-fix-fix" (3/13)
+      - e105a4cda915 "mm-filemap-convert-fault-and-readahead-logic-to-use-vma_flags_t-fix-fix" (3/13)
         - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
