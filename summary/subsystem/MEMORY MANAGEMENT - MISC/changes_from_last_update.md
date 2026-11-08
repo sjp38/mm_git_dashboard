@@ -7,19 +7,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 43 -> 43 commits (no change)
+- mm-unstable: 43 -> 44 commits
   - series: 8 (35) -> 8 (35) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 17 -> 17 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 20 -> 20 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 6 -> 6 commits (no change)
+  - changed commits
+    - cb75c24bb9d9 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+- mm-new: 6 -> 5 commits
   - series: 0 (4) -> 0 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
     - maintainer, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

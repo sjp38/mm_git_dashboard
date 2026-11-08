@@ -10,10 +10,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 4f806b4c3864 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
+    - 137598aab0a7 "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
-    - 8bcbf335167b "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+    - 31882bf0bca8 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -24,28 +24,28 @@
     - reviewer, nobody: 1 commits
     - reviewer, maintainer: 2 commits
   - full commits list
-    - 64ae32b5467b "mm: bypass swap readahead for zswap"
+    - f09cfc2fa296 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
     - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3 commits)
-      - d34120f0e682 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
+      - 3cb121fde782 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
-      - 3a6d15c19a47 "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
+      - 8e7df9ee6b9b "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
         - Authored by a reviewer, reviewed by nobody
-      - 44975d21b638 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
+      - a60b1470c555 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
     - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4 commits)
-      - 08a444fd5b68 "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
+      - 3f7f48cf4381 "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
-      - a82a1f570a99 "mm/swap: account synchronous swap reads as memory stall" (2/4)
+      - 69a154a34ff2 "mm/swap: account synchronous swap reads as memory stall" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
-      - 79ca9815fe21 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
+      - f01195c4be70 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-4-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/linux-mm/auOz00OGB_8dgniC@cmpxchg.org/

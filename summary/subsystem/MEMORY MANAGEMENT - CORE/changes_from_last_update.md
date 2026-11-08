@@ -3,23 +3,42 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 4 -> 4 commits (no change)
+- mm-hotfixes-unstable: 4 -> 3 commits
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
+  - dropped commits
+    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+- mm-unstable: 12 -> 13 commits
+  - series: 3 (9) -> 3 (10)
+    - no role, no role : 5 -> 6 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - a70e4b6ca6b5 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, no role : 1 -> 0 commits
+    - maintainer, nobody: 0 -> 2 commits
+  - new commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - 2df28552474c "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+      - d574e99fbf8c "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

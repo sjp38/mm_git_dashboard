@@ -21,85 +21,87 @@
       - Link: https://lore.kernel.org/20261026130054.91461-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20261019010934.697895-1-samarth.colleges@gmail.com/
       - Link: https://lore.kernel.org/all/20261020055518.36087-1-lance.yang@linux.dev/
-- mm-hotfixes-unstable: 4 total, 1 (1) series, 3 non-series commits
+- mm-hotfixes-unstable: 3 total, 1 (1) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
-    - reviewer, no role : 1 commits
   - full commits list
     - series "mm: Fix page-table teardown during memory hot-remove", v3. (4 commits)
-      - a3014c02e55d "mm: fix missing page-table destructor in pagetable_free()" (0/4)
+      - 796833f47073 "mm: fix missing page-table destructor in pagetable_free()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
-    - b0099573b4d6 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
+    - 1884e6cf2f9c "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
-    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
-    - 8bcbf335167b "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+    - 31882bf0bca8 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 12 total, 3 (9) series, 3 non-series commits
+- mm-unstable: 13 total, 3 (10) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, no role : 6 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 3 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - ca6ea694a9df "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+    - 85712d1ea0f6 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261028100549.70689-1-hui.zhu@linux.dev
-      - b4ca61942658 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - c54e955e4fe5 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
     - series "mm: Remove pagetable_dtor_free()". (2 commits)
-      - cfc42a7ec8dc "mm: remove pagetable_dtor_free()" (0/2)
+      - 43ca0eea118f "mm: remove pagetable_dtor_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261030083800.599152-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
     - series "mm/memory: remove unused vmf_insert_mixed_mkwrite()", v2. (3 commits)
-      - c1e31572a75c "mm/memory: remove unused vmf_insert_mixed_mkwrite()" (0/3)
+      - 29ab4fbe8499 "mm/memory: remove unused vmf_insert_mixed_mkwrite()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-1-ekffu200098@gmail.com
         - Link: https://lore.kernel.org/20261002160535.661399-2-ekffu200098@gmail.com
-      - 89f151bd14da "mm/memory: remove the mkwrite argument from __vm_insert_mixed()" (1/3)
+      - 0cdfe6d94b85 "mm/memory: remove the mkwrite argument from __vm_insert_mixed()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-3-ekffu200098@gmail.com
-      - 03be48f93224 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed()" (2/3)
+      - 66db34c68271 "mm/memory: merge __vm_insert_mixed() into vmf_insert_mixed()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261002160535.661399-4-ekffu200098@gmail.com
-    - 64ae32b5467b "mm: bypass swap readahead for zswap"
+    - f09cfc2fa296 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - a81cddde55ca "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - 40eef5ceaf3a "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
-      - 629a1b4e7528 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - e09d26efaad5 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-      - 0f54510f51e5 "mm: add anonymous mTHP folios to the deferred split list" (3/4)
+      - 8843fffe4f75 "mm: add anonymous mTHP folios to the deferred split list" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
-      - 3257578956ce "mm, swap: fix large swap-in across swap file extents" (1/4)
+      - d4b487adf0c3 "mm, swap: fix large swap-in across swap file extents" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-2-204be064be5b@tencent.com
-    - c33288174f1b "mm: split out memory-failure declarations from internal.h"
+    - c03cb774548e "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - dada70355015 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
+      - a70e4b6ca6b5 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 2 commits
+  - full commits list
+      - 2df28552474c "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+      - d574e99fbf8c "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs" (4/5)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

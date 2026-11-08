@@ -7,36 +7,105 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 25 -> 25 commits (no change)
+- mm-hotfixes-unstable: 25 -> 23 commits
   - series: 3 (5) -> 3 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 9 -> 8 commits
+    - reviewer, no role : 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - dropped commits
+    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
+    - ba0791097726 "mm/khugepaged: don't map folios that are not uptodate in MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261105-set_huge_pmd_uptodate-v1-1-a78d8a1b7117@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 96 -> 96 commits (no change)
-  - series: 20 (76) -> 20 (76) (no change)
+- mm-unstable: 96 -> 106 commits
+  - series: 20 (76) -> 21 (86)
     - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 19 -> 19 commits (no change)
+    - no role, no role : 9 -> 13 commits
+    - no role, reviewer: 19 -> 22 commits
     - no role, maintainer: 36 -> 36 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 0 -> 2 commits
     - maintainer, no role : 4 -> 4 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, maintainer: 13 -> 13 commits (no change)
-- mm-new: 17 -> 17 commits (no change)
-  - series: 3 (15) -> 3 (15) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 13 -> 14 commits
+  - changed commits
+    - f2a3071b48ca "mm/hugetlb: fix validation of unsupported HugeTLB orders"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261104071858.757793-1-songmuchun@bytedance.com
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 9f3916047ee7 "mm/gup: convert GUP code to use vma_flags_t (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-0-0d3cd15ab75f@kernel.org
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-1-0d3cd15ab75f@kernel.org
+      - 2478ba2914f7 "mm/filemap: convert fault and readahead logic to use vma_flags_t (1/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-2-0d3cd15ab75f@kernel.org
+      - be560a840e63 "mm/filemap: cache random-read flag before dropping fault lock (2/13)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/au2_PPpdAMgRJZtX@gremlin
+      - cf9305f3fcb0 "mm-filemap-convert-fault-and-readahead-logic-to-use-vma_flags_t-fix-fix (3/13)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+      - b5b2ed6bc323 "mm/rmap: convert remaining VMA flag tests to use vma_flags_t (4/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-3-0d3cd15ab75f@kernel.org
+      - 5049f27b09f5 "mm/migrate: convert VMA flag tests to use vma_flags_t (5/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-4-0d3cd15ab75f@kernel.org
+      - 906904bd6b81 "mm: convert THP VMA flag tests to use vma_flags_t (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
+      - 6e12318d578e "mm/ksm: convert VMA flag tests to use vma_flags_t (7/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-6-0d3cd15ab75f@kernel.org
+      - db20e4fc2014 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+      - a70e4b6ca6b5 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+  - dropped commits
+    - f57361841d76 "mm/migrate: fix softlockup in do_pages_stat() with huge page arrays"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261031033330.3416326-1-xiqi5703@163.com
+- mm-new: 17 -> 9 commits
+  - series: 3 (15) -> 2 (8)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 7 -> 3 commits
+    - no role, reviewer: 3 -> 0 commits
+    - maintainer, nobody: 2 -> 3 commits
     - maintainer, no role : 2 -> 2 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - 8c7c170bc2c1 "powerpc/mm: drop powerpc vmemmap_can_optimize() (1/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
+      - 2df28552474c "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+      - d574e99fbf8c "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

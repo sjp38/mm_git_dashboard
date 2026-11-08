@@ -5,13 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 2 (10) -> 2 (10) (no change)
+- mm-unstable: 11 -> 12 commits
+  - series: 2 (10) -> 2 (11)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - a70e4b6ca6b5 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

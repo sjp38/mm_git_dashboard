@@ -6,80 +6,70 @@
     - 854e5ff8b3ce "mm/khugepaged: flush deferred unmaps before dropping a failed folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
-    - reviewer, no role : 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - e19716f6c55a "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+    - b3dc123c807d "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
-    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
-    - ba0791097726 "mm/khugepaged: don't map folios that are not uptodate in MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261105-set_huge_pmd_uptodate-v1-1-a78d8a1b7117@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 11 total, 3 (9) series, 2 non-series commits
+- mm-unstable: 14 total, 3 (11) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 3 commits
     - no role, no role : 4 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 83dad4948497 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 211ecb65011e "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 58a7e548f15b "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 483fce0859e0 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - ebf4154e68d6 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 61a5b10fc429 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - 2193401d2319 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - a26415750ee5 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 05efd591000d "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - 26d98808a55d "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - f9ae7e64a3cf "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 6c292df6c281 "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
     - series "mm: split underused anonymous mTHP folios", v4. (4 commits)
-      - 78b39c4f68ff "mm/huge_memory: scale thp_underused() to the folio size" (0/4)
+      - c5c64306b344 "mm/huge_memory: scale thp_underused() to the folio size" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261103212004.1356327-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261103212004.1356327-2-joannelkoong@gmail.com
-      - 5830843e978a "mm/huge_memory: don't queue folios when underused splitting is inactive" (1/4)
+      - c1d123fdac73 "mm/huge_memory: don't queue folios when underused splitting is inactive" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-3-joannelkoong@gmail.com
-      - ffb1620157b5 "mm/huge_memory: add a per-order counter for underused splits" (2/4)
+      - 694f8228e72d "mm/huge_memory: add a per-order counter for underused splits" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-4-joannelkoong@gmail.com
-      - 0f54510f51e5 "mm: add anonymous mTHP folios to the deferred split list" (3/4)
+      - 8843fffe4f75 "mm: add anonymous mTHP folios to the deferred split list" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261103212004.1356327-5-joannelkoong@gmail.com
-    - 88a524b9d741 "selftests/mm: handle child status safely in khugepaged"
+    - 4dd2917ac379 "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
-- mm-new: 3 total, 0 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 3 commits
-  - full commits list
-    - 4327b7243f1c "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+    - cb75c24bb9d9 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
-      - 8ebd7b5db431 "mm: convert THP VMA flag tests to use vma_flags_t" (6/13)
+      - 906904bd6b81 "mm: convert THP VMA flag tests to use vma_flags_t" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
-      - a1331df24a58 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
+      - db20e4fc2014 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

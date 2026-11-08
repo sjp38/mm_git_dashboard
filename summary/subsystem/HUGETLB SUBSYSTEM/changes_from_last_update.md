@@ -9,16 +9,30 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 22 -> 22 commits (no change)
+- mm-unstable: 22 -> 23 commits
   - series: 3 (20) -> 3 (20) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, maintainer: 12 -> 12 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, maintainer: 12 -> 13 commits
+  - changed commits
+    - f2a3071b48ca "mm/hugetlb: fix validation of unsupported HugeTLB orders"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261104071858.757793-1-songmuchun@bytedance.com
+- mm-new: 2 -> 3 commits
+  - series: 0 (0) -> 0 (2)
     - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 2 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - 8c7c170bc2c1 "powerpc/mm: drop powerpc vmemmap_can_optimize() (1/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
+      - 2df28552474c "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

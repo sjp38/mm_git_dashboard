@@ -6,12 +6,12 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2 commits)
-      - 0e366a3bec1b "mm/kasan: detect double-free involving kfree_rcu_sheaf()" (0/2)
+      - b993f5e9e91b "mm/kasan: detect double-free involving kfree_rcu_sheaf()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
         - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
         - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
-      - 1a33a4ac93ea "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf()" (1/2)
+      - 78f91c6c1cb9 "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -19,7 +19,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-      - 0b2e4fde6ae7 "kasan/test: cover load_unaligned_zeropad()" (1/2)
+      - 950b62123862 "kasan/test: cover load_unaligned_zeropad()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023-bug-word-at-a-time-zeropad-kasan-v2-2-be0ecfbae847@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

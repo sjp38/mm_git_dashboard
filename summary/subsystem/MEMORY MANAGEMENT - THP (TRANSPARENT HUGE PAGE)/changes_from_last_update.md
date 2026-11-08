@@ -2,21 +2,42 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 1 commits
+    - reviewer, no role : 1 -> 0 commits
+  - dropped commits
+    - ade2998d25b4 "mm/huge_memory: prevent losing PG_waiters in __split_folio_to_order()"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261106-fix-split_folio_to_order-race-v2-1-1b59c67b8af3@nvidia.com
+    - ba0791097726 "mm/khugepaged: don't map folios that are not uptodate in MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261105-set_huge_pmd_uptodate-v1-1-a78d8a1b7117@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
+- mm-unstable: 11 -> 14 commits
+  - series: 3 (9) -> 3 (11)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 6 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+  - changed commits
+    - cb75c24bb9d9 "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 906904bd6b81 "mm: convert THP VMA flag tests to use vma_flags_t (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
+      - db20e4fc2014 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+- mm-new: 3 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, reviewer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

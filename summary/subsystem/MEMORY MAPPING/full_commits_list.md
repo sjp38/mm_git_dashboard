@@ -37,51 +37,51 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 5d031fe0d054 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+    - 6cca1a4d74b6 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
-    - 802a1e9c1378 "mm/vma: read anon_vma carefully in validate_mm()"
+    - 36f558cb9acf "mm/vma: read anon_vma carefully in validate_mm()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
-    - b0099573b4d6 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
+    - 1884e6cf2f9c "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-unstable: 5 total, 0 (3) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
+    - no role, no role : 3 commits
+    - no role, reviewer: 1 commits
   - full commits list
-    - 386fb0c66b09 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+      - db20e4fc2014 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+      - a70e4b6ca6b5 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+      - 268d523c1d96 "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t" (10/13)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
+    - b4669277f6c0 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - 2e2af33bf51d "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - a138ea1fbf2f "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
-- mm-new: 6 total, 1 (6) series, 0 non-series commits
+- mm-new: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
-    - no role, reviewer: 1 commits
+    - no role, no role : 3 commits
   - full commits list
-      - a1331df24a58 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
-      - dada70355015 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (9/13)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
-      - 0040f1e0d33b "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t" (10/13)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
     - series "mm/mremap: fix accounting on a partial move", v3. (5 commits)
-      - 1456423dcec5 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
+      - f040e52d2765 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-0-f8789de76849@toxicpanda.com
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-1-f8789de76849@toxicpanda.com
-      - 9d3fb7eee983 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
+      - e7753d00d2b1 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-3-f8789de76849@toxicpanda.com
-      - f2597ed073dc "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
+      - e9885498fa05 "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-4-f8789de76849@toxicpanda.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
