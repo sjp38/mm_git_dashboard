@@ -5,11 +5,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 12 -> 11 commits
+  - series: 2 (11) -> 2 (10)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - 72b6d95db336 "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+  - dropped commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 604f3aa151bb "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

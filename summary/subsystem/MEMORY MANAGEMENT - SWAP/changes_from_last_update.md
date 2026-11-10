@@ -1,9 +1,16 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 3 commits
+  - new commits
+    - fefaa69d498b "mm, swap: only prefer nonfull clusters on synchronous devices"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
+      - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
+      - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
+      - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)

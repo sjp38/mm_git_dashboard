@@ -1,22 +1,64 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 4 commits
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 209e5322aa83 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261109021611.22247-1-hui.zhu@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+- mm-unstable: 12 -> 13 commits
+  - series: 3 (9) -> 3 (10)
+    - no role, no role : 6 -> 5 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 3 commits
+  - changed commits
+    - 72b6d95db336 "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - 0d86c6d4dff0 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Signed-off-by: Muchun Song <songmuchun@bytedance.com>"
+        - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+      - 722a83462179 "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Signed-off-by: Muchun Song <songmuchun@bytedance.com>"
+        - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
+  - dropped commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 604f3aa151bb "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (1)
+    - no role, no role : 0 -> 2 commits
+    - maintainer, nobody: 2 -> 0 commits
+  - new commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
+      - 2f7fef1a52e5 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings (2/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-4-jiangwenxiaomi@gmail.com
+    - 203a99370b84 "mm: free unused page table allocated by do_set_pmd()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/c13cdd25-7d7b-4059-a22d-af0a48fabaac@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

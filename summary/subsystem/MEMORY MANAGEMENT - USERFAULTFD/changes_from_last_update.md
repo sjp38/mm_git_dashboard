@@ -2,7 +2,7 @@
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 4 -> 4 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+  - series: 1 (1) -> 0 (0)
     - no role, no role : 4 -> 4 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

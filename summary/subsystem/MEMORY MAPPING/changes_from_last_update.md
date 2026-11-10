@@ -7,14 +7,52 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+- mm-unstable: 5 -> 6 commits
+  - series: 0 (3) -> 1 (3)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 3 -> 6 commits
+    - no role, reviewer: 1 -> 0 commits
+  - new commits
+    - f2b7e110ca27 "mm/mprotect: don't skip uffd marker install when racing with PTE table reclaim"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261107-uffd_shmem_marker-v1-1-91fa2d653cfe@kernel.org
+  - changed commits
+    - 5d8ad48a7882 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+      - Authored by no role player, reviewed by no role player
+      - added "[akpm@linux-foundation.org: chagelog updates per Michel]"
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Assisted-by: LLM"
+      - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
+      - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
+    - series "mm/mremap: fix accounting on a partial move", v3. (5)
+      - d5664ae8ccd2 "mm/mremap: fix hugetlb reservation leak on partial move (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-0-f8789de76849@toxicpanda.com
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-1-f8789de76849@toxicpanda.com
+      - febfd1503b27 "mm/mremap: reaccount on unmap failure only if accounted (2/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-3-f8789de76849@toxicpanda.com
+      - d0682954eb2a "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-4-f8789de76849@toxicpanda.com
+  - dropped commits
+    - series "mm: continue vma_flags_t conversion". (13)
+      - 4e5789eac5c5 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
+      - 604f3aa151bb "mm: convert miscellaneous VMA flag tests to use vma_flags_t (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-8-0d3cd15ab75f@kernel.org
+      - dc875d198dd1 "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-9-0d3cd15ab75f@kernel.org
+- mm-new: 3 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, no role : 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

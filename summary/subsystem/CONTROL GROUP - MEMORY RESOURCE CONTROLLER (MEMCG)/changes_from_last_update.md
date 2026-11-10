@@ -1,8 +1,13 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - e756e58e9695 "mm: memcontrol: don't lose track of exiting OOM victims"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/avA1wXhTMs9eY2NF@chrisdown.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 16 -> 16 commits (no change)
@@ -12,6 +17,16 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
+  - new commits
+    - series "Subject: [PATCH v3 0/4] mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
+      - 68d1ae2eff66 "mm/hugetlb: account NR_HUGETLB at folio state transitions (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261106100521.30099-5-kaitao.cheng@linux.dev
+  - dropped commits
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v2. (3)
+      - a4c2091614ee "mm/hugetlb: fix NR_HUGETLB accounting for surplus folios (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261102024910.31486-4-kaitao.cheng@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

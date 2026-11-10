@@ -4,52 +4,42 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - cd1c80983c34 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+    - 03ed3571d4a1 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 2 (7) series, 3 non-series commits
+- mm-unstable: 7 total, 2 (5) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 4 commits
-    - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 55e61f385de7 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 66eb25446911 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 57b55c1bb47c "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 2e0825f90144 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 912ec30e2b5e "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - b830845afcf0 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - 7fcc1dc2aee4 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - 307fa07c06e1 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - c2534788908d "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - bef974b8478f "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 110bd99ef717 "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 276725dbdc45 "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 7084f8cfb644 "selftests/mm: handle child status safely in khugepaged"
+    - 4fbdf817734d "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
-    - 07c3f486476d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
-      - ca52504d9b41 "mm: convert THP VMA flag tests to use vma_flags_t" (6/13)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
-      - 4e5789eac5c5 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (8/13)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

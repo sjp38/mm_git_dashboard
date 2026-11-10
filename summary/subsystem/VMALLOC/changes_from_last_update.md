@@ -1,15 +1,48 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
+  - new commits
+    - 3ce28623d9d6 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
+  - changed commits
+    - 3b2570ae8222 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: Hillf Danton <hdanton@sina.com>"
+      - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 7 commits
+  - series: 0 (0) -> 0 (6)
+    - no role, no role : 0 -> 7 commits
+  - new commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
+      - 2f7fef1a52e5 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings (2/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-4-jiangwenxiaomi@gmail.com
+      - 87f618bb7a60 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-7-jiangwenxiaomi@gmail.com
+      - 24bbe1c56f63 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-8-jiangwenxiaomi@gmail.com
+      - 35e9caf6349f "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-9-jiangwenxiaomi@gmail.com
+      - ccd264101b67 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-10-jiangwenxiaomi@gmail.com
+      - f6ab218672d8 "mm/vmalloc: align vm_area so vmap() can batch mappings (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107134953.748622-11-jiangwenxiaomi@gmail.com
+    - f7999f5c34fa "mm/vmalloc: reject overflowing vm_map_ram page counts"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

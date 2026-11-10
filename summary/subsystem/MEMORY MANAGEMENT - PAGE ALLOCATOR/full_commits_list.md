@@ -7,21 +7,21 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - 762ae44d36b0 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 4fd2a7edbc39 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 47bf6046051d "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - e1452376ab1f "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261102081919.80625-1-hui.zhu@linux.dev
-    - a0e910492e4b "mm: page_owner: use %u to print the stack depot handle"
+    - a66f61851eee "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - 8ffa3fa47398 "mm: split out memory-failure declarations from internal.h"
+    - 72b6d95db336 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - 8f629cfcad49 "alloc_tag: add trace events for tracing allocations" (0/5)
+      - eb034382dbf9 "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com

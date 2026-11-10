@@ -6,12 +6,23 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 2 (7) -> 2 (7) (no change)
+- mm-unstable: 10 -> 7 commits
+  - series: 2 (7) -> 2 (5)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - 07c3f486476d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
+    - series "mm: continue vma_flags_t conversion". (13)
+      - ca52504d9b41 "mm: convert THP VMA flag tests to use vma_flags_t (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-5-0d3cd15ab75f@kernel.org
+      - 4e5789eac5c5 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-7-0d3cd15ab75f@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
