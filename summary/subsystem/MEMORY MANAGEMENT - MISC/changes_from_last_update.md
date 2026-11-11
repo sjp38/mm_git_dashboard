@@ -5,61 +5,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 43 -> 48 commits
-  - series: 8 (34) -> 8 (38)
-    - no role, nobody: 2 -> 4 commits
-    - no role, no role : 17 -> 19 commits
-    - no role, reviewer: 2 -> 1 commits
+- mm-unstable: 48 -> 48 commits (no change)
+  - series: 8 (38) -> 8 (38) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 19 -> 19 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 20 -> 20 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 3 commits
-  - new commits
-    - 51b5d2581dc2 "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261003103030.63380-3-donggeunyoo.kernel@gmail.com
+    - maintainer, no role : 3 -> 3 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/mremap: fix accounting on a partial move", v3. (5)
-      - d82878a2bdee "selftests/mm: test a partial mremap() of hugetlb memory (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-2-f8789de76849@toxicpanda.com
-      - 036a9194d962 "selftests/mm: test mremap() with an old size of 0 (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-5-f8789de76849@toxicpanda.com
-    - series "mm/damon: introduce age_ms damos core filter type". (4)
-      - 7a124a585125 "Docs/mm/damon/design: update for age_ms damos core filter type (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261106020559.98352-4-sj@kernel.org
-      - a2a2f50ee496 "Docs/admin-guide/mm/damon/usage: update for age_ms damos core filter (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261106020559.98352-5-sj@kernel.org
-    - ba6c046faaef "selftests/mm: pkeys: wait for the child in become_child()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261106164639.2959195-1-clopez@suse.de
-      - Link: https://lore.kernel.org/all/20240419115027.3848958-1-usama.anjum@collabora.com [1]
-  - dropped commits
-    - 07c3f486476d "selftests/mm: skip split_huge_page_test without the split_huge_pages file"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261105030242.1241448-1-sashal@kernel.org
-- mm-new: 5 -> 2 commits
-  - series: 0 (4) -> 0 (1)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, no role : 2 -> 0 commits
-  - new commits
-    - 70f2949d4e06 "tools/mm: add page_owner_filter to .gitignore"
+    - adde3521a7b6 "tools/mm: add page_owner_filter to .gitignore"
       - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
       - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
-    - series "mm/damon: cleanup region iterator and damon_reclaim user doc". (2)
-      - 2ff538cff5bf "Docs/admin-guide/mm/damon/reclaim: improve language (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261110010558.104905-3-sj@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
+- mm-nonmm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - dadbd0accd24 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
+      - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

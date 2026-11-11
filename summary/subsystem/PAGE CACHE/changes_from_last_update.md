@@ -1,43 +1,30 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - new commits
-    - 6e217147fa75 "filemap: prefault writes starting beyond EOF"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261104071002.49693-1-dennylin0707@gmail.com
-      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 3 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 2 -> 3 commits
-    - maintainer, nobody: 2 -> 0 commits
-  - new commits
-    - 42f0e0c0bd9b "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261108085456.2093096-2-thnkslprpt@gmail.com
-  - dropped commits
-    - series "mm: continue vma_flags_t conversion". (13)
-      - 0c4c6c36730c "mm/filemap: convert fault and readahead logic to use vma_flags_t (1/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261105-late-2026-vma-flags-v1-2-0d3cd15ab75f@kernel.org
-      - 1252d1636ab7 "mm/filemap: cache random-read flag before dropping fault lock (2/13)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/au2_PPpdAMgRJZtX@gremlin
-      - d69b1b7f9ee6 "mm-filemap-convert-fault-and-readahead-logic-to-use-vma_flags_t-fix-fix (3/13)"
-        - Authored by a maintainer, reviewed by nobody
-- mm-new: 0 -> 1 commits
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - d1ae92e35fb4 "mm: skip empty finite ranges in truncate_pagecache_range"
+  - changed commits
+    - cf5518aa1832 "mm/filemap: stop fault-around when the walk steps back"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
+      - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
+- mm-hotfixes-unstable: 2 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 2 -> 1 commits
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 3 -> 4 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 3 -> 4 commits
+  - changed commits
+    - 44038a8ffec3 "mm: skip empty finite ranges in truncate_pagecache_range"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

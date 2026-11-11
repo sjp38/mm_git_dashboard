@@ -2,33 +2,36 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 2 (4) series, 2 non-series commits
+- mm-unstable: 7 total, 2 (4) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 6 commits
+    - no role, maintainer: 7 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 255186f7c8de "mm: zswap: use separate compression and decompression requests" (0/3)
+      - ec501c60d100 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - a79d13822bda "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - 3dc09f124102 "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
     - series "mm/zswap: batch the writeback IO". (2 commits)
-      - 14530d562cf3 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+      - 3eef46879bfd "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
-      - 206cd7642f8a "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+      - 225c65e27783 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
-    - bd1b3f0f98bc "mm: bypass swap readahead for zswap"
+    - e5a646f2e1a8 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
-    - 536bacdb0e1c "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - 066259da0b54 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
+    - ca73db3fd9f5 "selftests/cgroup: test_zswap: check malloc() return value"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261104095315.2326-1-zhangchujun@cmss.chinamobile.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,6 +1,14 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - series "mm: fix swapcache writeout and cluster table races", v2. (3 commits)
+      - 9b4df0dbda5a "mm: vmscan: allow writeout of swapcache folios without anon mappings" (0/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
+        - Link: https://lore.kernel.org/20261110151407.789960-2-nphamcs@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 11 total, 2 (10) series, 1 non-series commits
   - author/reviewer role stat
@@ -8,42 +16,42 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - 5bded20874b6 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - ff004ea38009 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/linux-mm/20261017050928.128582-2-sidchintamaneni@gmail.com/ [1]
-      - 8e36509de22b "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - b0d9b7a4fcdc "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - 2e203d692b0c "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - ca0f5734ace7 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
-      - 108022ba818a "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - 03619159e329 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-    - 72b6d95db336 "mm: split out memory-failure declarations from internal.h"
+    - a42da9d487af "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - ec64e7251ba4 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - 8c79677e86bd "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
-      - a78dce584f96 "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
+      - 3681aaabd4ea "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-4-ridong.chen@linux.dev
-      - 6a708a73a150 "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
+      - b896c695e229 "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-5-ridong.chen@linux.dev
-      - 307623015d93 "mm/mglru: add tracepoint for scan_folios()" (4/7)
+      - 9043485b68a8 "mm/mglru: add tracepoint for scan_folios()" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-6-ridong.chen@linux.dev
-      - 2be50de3aa9a "mm/mglru: add lruvec_gen_size() helper" (5/7)
+      - b35100a5d0e4 "mm/mglru: add lruvec_gen_size() helper" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-7-ridong.chen@linux.dev
-      - afd2b962f473 "mm/mglru: add tracepoint for aging" (6/7)
+      - 1c586c5c42a2 "mm/mglru: add tracepoint for aging" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-8-ridong.chen@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
