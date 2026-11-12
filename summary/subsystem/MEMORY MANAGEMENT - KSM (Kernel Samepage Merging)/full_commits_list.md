@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - a42da9d487af "mm: split out memory-failure declarations from internal.h"
+    - 5b9e7378a9b0 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/

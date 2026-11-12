@@ -14,48 +14,48 @@
     - no role, no role : 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 4205c441fe67 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 2208dc142c35 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 4d9a90faea26 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 3fe017016527 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 0707df784cd1 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 6fb83f2e65e0 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - 801da0d590a2 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - 32309fd40ab5 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - c8333c4ef9ad "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - 8f6f0ff7ef1f "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 29804a42d991 "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 149e0e97ab7d "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 2b16c45be673 "selftests/mm: handle child status safely in khugepaged"
+    - 6d9a8ce0e8cc "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
 - mm-new: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 2 commits
   - full commits list
     - series "mm/khugepaged: bound mmap_lock hold time when walking an mm's VMAs", v3. (3 commits)
-      - e1c9d8db7aff "Revert "mm/khugepaged: remove definition of struct khugepaged_mm_slot"" (0/3)
+      - dd9c0b9748cb "Revert "mm/khugepaged: remove definition of struct khugepaged_mm_slot"" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-0-6eea743cf9a3@kernel.org
         - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-1-6eea743cf9a3@kernel.org
         - Link: https://lore.kernel.org/all/20261105-rwsem-dont-steal-from-queued-writer-v1-1-275e070f426f@kernel.org/ [0]
-      - dd907d24d29f "mm/khugepaged: scan mm's more efficiently under mmap_lock contention" (1/3)
+      - a9ecb9b89dd1 "mm/khugepaged: scan mm's more efficiently under mmap_lock contention" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-2-6eea743cf9a3@kernel.org
-      - 6ad383e7c29d "mm/khugepaged: release contended mmap read lock after scanning enough VMAs" (2/3)
-        - Authored by no role player, reviewed by nobody
+      - 053b80c36df4 "mm/khugepaged: release contended mmap read lock after scanning enough VMAs" (2/3)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-3-6eea743cf9a3@kernel.org
         - Link: https://lore.kernel.org/all/20261105-rwsem-dont-steal-from-queued-writer-v1-1-275e070f426f@kernel.org/
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -63,7 +63,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - dadbd0accd24 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
+    - 9b73623cc1aa "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
       - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

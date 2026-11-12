@@ -8,13 +8,9 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - d2f392ecb59d "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261106165142.2847916-1-usama.arif@linux.dev
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

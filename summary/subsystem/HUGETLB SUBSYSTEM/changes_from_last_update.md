@@ -1,15 +1,9 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - ccf8bda05b19 "hugetlbfs: move hugetlbfs_free_inode tracepoint to ->destroy_inode()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261102-b4-hugetlbfs-trace-v4-1-72371825bb5e@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 27 -> 27 commits (no change)
@@ -19,32 +13,16 @@
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 5 -> 5 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
-  - changed commits
-    - series "Subject: [PATCH v3 0/4] mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
-      - 566e1777d639 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-        - Link: https://lore.kernel.org/20261106100521.30099-1-kaitao.cheng@linux.dev
-        - Link: https://lore.kernel.org/20261106100521.30099-2-kaitao.cheng@linux.dev
-      - ce07b93b562f "mm/hugetlb: preserve persistent flags when returning folios to the pool (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-        - Link: https://lore.kernel.org/20261106100521.30099-3-kaitao.cheng@linux.dev
-      - 6a2b04b64b31 "mm/hugetlb: fix NR_HUGETLB accounting for unused surplus folios (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-        - Link: https://lore.kernel.org/20261106100521.30099-4-kaitao.cheng@linux.dev
-      - d6af2ff4036b "mm/hugetlb: account NR_HUGETLB at folio state transitions (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-        - Link: https://lore.kernel.org/20261106100521.30099-5-kaitao.cheng@linux.dev
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 3 commits
   - new commits
-    - d2f392ecb59d "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
+    - 3d564eea72b0 "hugetlbfs: report inode limits without a memory subpool"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261106165142.2847916-1-usama.arif@linux.dev
+      - Link: https://lore.kernel.org/20261111130145.96534-1-dennylin0707@gmail.com
+    - 7e411f110775 "mm/hugetlb: charge hugetlb cgroup and memcg in alloc_hugetlb_folio_reserve()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112-for-alloc_hugetlb-1109-v3-1-7a144510a373@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

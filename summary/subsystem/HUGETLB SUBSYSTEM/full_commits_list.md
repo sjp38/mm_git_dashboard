@@ -17,100 +17,106 @@
     - maintainer, maintainer: 13 commits
   - full commits list
     - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4 commits)
-      - 44f49f3f1b6b "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
+      - e191def1c08f "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
         - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - ef927c1ac4ab "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 9adfc9dbf5c4 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-4-songmuchun@bytedance.com
-      - 5066a39bd77e "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
+      - 084bd83f797a "mm/hugetlb_vmemmap: remove hugetlb_vmemmap_optimize_bootmem_folios()" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261019090830.1917657-5-songmuchun@bytedance.com
-      - 5f4c123f6526 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
+      - c456ee663e1f "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
-    - cf5b80827b5f "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
+    - c0207dc725b2 "mm/hugetlb: drop unused mm parameter from unmap_ref_private()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261021061901.376104-1-lienze@kylinos.cn
-    - 43e9db17a1a6 "mm/hugetlb_cma: remove two unused include files"
+    - b9ac4b9f631c "mm/hugetlb_cma: remove two unused include files"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261005142040.675204-1-lienze@kylinos.cn
     - series "Subject: [PATCH v3 0/4] mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4 commits)
-      - 566e1777d639 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input" (0/4)
+      - 9b9cef2efda8 "mm/hugetlb_cma: fix incorrect hugetlb_cma_size assignment on malformed input" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261106100521.30099-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20261106100521.30099-2-kaitao.cheng@linux.dev
-      - ce07b93b562f "mm/hugetlb: preserve persistent flags when returning folios to the pool" (1/4)
+      - 501e4fcc5a8d "mm/hugetlb: preserve persistent flags when returning folios to the pool" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261106100521.30099-3-kaitao.cheng@linux.dev
-      - 6a2b04b64b31 "mm/hugetlb: fix NR_HUGETLB accounting for unused surplus folios" (2/4)
+      - 4183e2b12113 "mm/hugetlb: fix NR_HUGETLB accounting for unused surplus folios" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261106100521.30099-4-kaitao.cheng@linux.dev
-      - d6af2ff4036b "mm/hugetlb: account NR_HUGETLB at folio state transitions" (3/4)
+      - 76f4378d7067 "mm/hugetlb: account NR_HUGETLB at folio state transitions" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261106100521.30099-5-kaitao.cheng@linux.dev
     - series "mm: Decouple folio-based vmemmap optimization from HugeTLB", v4. (13 commits)
-      - d504bb06822a "mm: hugetlb_vmemmap: fix OOM during head page allocation" (0/13)
+      - 4697f7d88bb8 "mm: hugetlb_vmemmap: fix OOM during head page allocation" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261107022756.77731-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261107022756.77731-2-songmuchun@bytedance.com
-      - 1624c004e8a4 "mm: hugetlb_vmemmap: remove HugeTLB-specific vmemmap optimization macros" (1/13)
+      - 0d3b28516295 "mm: hugetlb_vmemmap: remove HugeTLB-specific vmemmap optimization macros" (1/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-3-songmuchun@bytedance.com
-      - 5679e3be379b "mm: hugetlb_vmemmap: unify VMEMMAP_{SPLIT,REMAP}_NO_TLB_FLUSH" (2/13)
+      - d294a9a61db0 "mm: hugetlb_vmemmap: unify VMEMMAP_{SPLIT,REMAP}_NO_TLB_FLUSH" (2/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-4-songmuchun@bytedance.com
-      - ee5e8a98d675 "mm: hugetlb_vmemmap: simplify vmemmap head page handling" (3/13)
+      - b696e469a6f7 "mm: hugetlb_vmemmap: simplify vmemmap head page handling" (3/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-5-songmuchun@bytedance.com
-      - c5d434bdeb6c "mm: hugetlb_vmemmap: generalize vmemmap page allocation" (4/13)
+      - f0a68767edca "mm: hugetlb_vmemmap: generalize vmemmap page allocation" (4/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-6-songmuchun@bytedance.com
-      - efa5096095b1 "mm: hugetlb_vmemmap: unify writable vmemmap page preparation" (5/13)
+      - ea89af7504fd "mm: hugetlb_vmemmap: unify writable vmemmap page preparation" (5/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-7-songmuchun@bytedance.com
-      - 01fdd4ef1293 "mm: hugetlb_vmemmap: rename vmemmap_remap_pte() to vmemmap_optimize_pte()" (6/13)
+      - 6e6c46cf3b56 "mm: hugetlb_vmemmap: rename vmemmap_remap_pte() to vmemmap_optimize_pte()" (6/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-8-songmuchun@bytedance.com
-      - 91cd35c3b0d3 "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
+      - f03e5858a446 "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com
-      - a96832c05cd7 "mm: hugetlb_vmemmap: move alloc_vmemmap_page_list() next to its free helper" (8/13)
+      - fd84a88aff64 "mm: hugetlb_vmemmap: move alloc_vmemmap_page_list() next to its free helper" (8/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-10-songmuchun@bytedance.com
-      - fdb6a700a9f4 "mm: hugetlb_vmemmap: make vmemmap optimization folio-oriented" (9/13)
+      - 40e04cf99788 "mm: hugetlb_vmemmap: make vmemmap optimization folio-oriented" (9/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-11-songmuchun@bytedance.com
-      - 9873f45ab11e "mm: hugetlb_vmemmap: make vmemmap restoration folio-oriented" (10/13)
+      - ab07df024c40 "mm: hugetlb_vmemmap: make vmemmap restoration folio-oriented" (10/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-12-songmuchun@bytedance.com
-      - e9a12c46d13b "mm: hugetlb_vmemmap: unify vmemmap range restoration" (11/13)
+      - e67892b120c5 "mm: hugetlb_vmemmap: unify vmemmap range restoration" (11/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-13-songmuchun@bytedance.com
-      - 86f3d898f465 "mm: hugetlb_vmemmap: make vmemmap PTE conversion folio-oriented" (12/13)
+      - a7d962b70a48 "mm: hugetlb_vmemmap: make vmemmap PTE conversion folio-oriented" (12/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-14-songmuchun@bytedance.com
-    - a5c2429d81fe "mm/hugetlb: fix validation of unsupported HugeTLB orders"
+    - c39886b42c47 "mm/hugetlb: fix validation of unsupported HugeTLB orders"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104071858.757793-1-songmuchun@bytedance.com
-    - 29f7947264e9 "mm/hugetlb_cgroup: prevent use-after-free during cgroup offlining"
+    - 505103786b03 "mm/hugetlb_cgroup: prevent use-after-free during cgroup offlining"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261022022146.506005-1-4ncienth@gmail.com
       - Link: https://lore.kernel.org/20261106060347.637480-1-4ncienth@gmail.com
-      - 826eb4c12308 "powerpc/mm: drop powerpc vmemmap_can_optimize()" (1/5)
+      - 1ce58c9e7c85 "powerpc/mm: drop powerpc vmemmap_can_optimize()" (1/5)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
-      - ef8660cfc1d3 "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
+      - 08af8ba9e3bb "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 3 commits
   - full commits list
-    - d2f392ecb59d "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
+    - 5d7732622827 "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261106165142.2847916-1-usama.arif@linux.dev
+    - 3d564eea72b0 "hugetlbfs: report inode limits without a memory subpool"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261111130145.96534-1-dennylin0707@gmail.com
+    - 7e411f110775 "mm/hugetlb: charge hugetlb cgroup and memcg in alloc_hugetlb_folio_reserve()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112-for-alloc_hugetlb-1109-v3-1-7a144510a373@kylinos.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

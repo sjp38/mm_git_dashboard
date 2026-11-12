@@ -1,15 +1,9 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - cd5f5bf781b4 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)
@@ -17,31 +11,21 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 2 commits
-  - new commits
+- mm-new: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
     - series "mm/khugepaged: bound mmap_lock hold time when walking an mm's VMAs", v3. (3)
-      - e1c9d8db7aff "Revert "mm/khugepaged: remove definition of struct khugepaged_mm_slot" (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-0-6eea743cf9a3@kernel.org
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-1-6eea743cf9a3@kernel.org
-        - Link: https://lore.kernel.org/all/20261105-rwsem-dont-steal-from-queued-writer-v1-1-275e070f426f@kernel.org/ [0]
-      - dd907d24d29f "mm/khugepaged: scan mm's more efficiently under mmap_lock contention (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-2-6eea743cf9a3@kernel.org
-      - 6ad383e7c29d "mm/khugepaged: release contended mmap read lock after scanning enough VMAs (2/3)"
-        - Authored by no role player, reviewed by nobody
+      - 053b80c36df4 "mm/khugepaged: release contended mmap read lock after scanning enough VMAs (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-3-6eea743cf9a3@kernel.org
         - Link: https://lore.kernel.org/all/20261105-rwsem-dont-steal-from-queued-writer-v1-1-275e070f426f@kernel.org/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 1 commits
+- mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - dadbd0accd24 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
-      - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/
+    - no role, reviewer: 1 -> 1 commits (no change)

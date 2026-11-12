@@ -19,7 +19,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-      - 767ca586e33d "kasan/test: cover load_unaligned_zeropad()" (1/2)
+      - 14bda13e9ee0 "kasan/test: cover load_unaligned_zeropad()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023-bug-word-at-a-time-zeropad-kasan-v2-2-be0ecfbae847@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

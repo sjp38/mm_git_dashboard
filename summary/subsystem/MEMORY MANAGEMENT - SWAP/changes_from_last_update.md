@@ -1,25 +1,11 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 53a6f71c147a "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
-- mm-hotfixes-unstable: 3 -> 4 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, maintainer: 3 -> 2 commits
-    - reviewer, nobody: 0 -> 2 commits
-  - new commits
-    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - 45d3f24c31f4 "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
-        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - 1302ff62b69b "mm/swap: skip relocation of tableless clusters (2/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20261110151407.789960-4-nphamcs@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)

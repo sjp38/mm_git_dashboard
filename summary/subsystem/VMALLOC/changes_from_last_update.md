@@ -6,38 +6,18 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 6 commits
-  - series: 0 (0) -> 0 (6)
-    - no role, no role : 0 -> 6 commits
-  - changed commits
+- mm-unstable: 6 -> 7 commits
+  - series: 0 (6) -> 0 (6) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 6 -> 6 commits (no change)
+  - new commits
     - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
-      - 685a45a21d2d "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings (2/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-4-jiangwenxiaomi@gmail.com
-      - 567c874ea2a7 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (5/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-7-jiangwenxiaomi@gmail.com
-      - 276e35484eb1 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-8-jiangwenxiaomi@gmail.com
-      - 92f647181b56 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (7/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-9-jiangwenxiaomi@gmail.com
-      - 72dd6b03987b "mm/vmalloc: map contiguous pages in batches for vmap() if possible (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-10-jiangwenxiaomi@gmail.com
-      - 1542776f7b2e "mm/vmalloc: align vm_area so vmap() can batch mappings (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-11-jiangwenxiaomi@gmail.com
-- mm-new: 7 -> 1 commits
-  - series: 0 (6) -> 0 (0)
-    - no role, no role : 7 -> 1 commits
+      - 514a5f3b3a63 "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix (7/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261111030920.1297625-1-jiangwenxiaomi@gmail.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

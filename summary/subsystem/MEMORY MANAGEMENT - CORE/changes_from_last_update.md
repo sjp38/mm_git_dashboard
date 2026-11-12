@@ -1,49 +1,34 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "mm: Fix page-table teardown during memory hot-remove", v3. (4)
-      - 2a700ab99228 "mm: fix missing page-table destructor in pagetable_free() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - dropped "Assisted-by: LLM"
-        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
-    - ff82ce7f90f5 "mm/vma: read anon_vma carefully in validate_mm()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "[kas@kernel.org: reduce ifdeffery]"
-      - added "Link: : https://lore.kernel.org/auhn01dpDzK47igy@thinkstation"
-      - Link: : https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
-      - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
-- mm-hotfixes-unstable: 4 -> 2 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 1 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - af6f5d433d82 "mm-vma-read-anon_vma-carefully-in-validate_mm-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
+  - changed commits
+    - 76f5384740b2 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - Link: https://lore.kernel.org/20261109021611.22247-1-hui.zhu@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 14 commits
-  - series: 3 (10) -> 3 (11)
-    - no role, no role : 5 -> 6 commits
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 3 (11) -> 3 (11) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
-      - 685a45a21d2d "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings (2/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261107134953.748622-4-jiangwenxiaomi@gmail.com
-- mm-new: 2 -> 1 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 2 -> 1 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

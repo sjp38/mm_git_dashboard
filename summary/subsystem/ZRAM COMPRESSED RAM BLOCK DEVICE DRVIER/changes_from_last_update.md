@@ -5,14 +5,117 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 24 commits
+  - series: 0 (0) -> 2 (22)
+    - no role, nobody: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 14 commits
+    - maintainer, no role : 0 -> 6 commits
+    - maintainer, maintainer: 0 -> 3 commits
+  - new commits
+    - series "zsmalloc: redesign object alloc API", v3. (11)
+      - 3a8d11870b76 "zram: drop stale comment in write_incompressible_page() (0/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261111064707.2568433-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20261111064707.2568433-2-senozhatsky@chromium.org
+      - 33f273f2ca85 "zram: drop get_slot_handle() and set_slot_handle() (1/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261111064707.2568433-3-senozhatsky@chromium.org
+      - 4b9154f1a1b6 "zsmalloc: switch handle type to struct zs_handle (3/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
+      - 9c1094418d7f "zram: check mem_limit before allocating zsmalloc object (4/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261111064707.2568433-6-senozhatsky@chromium.org
+      - 9bcb6c0d408b "zram: allocate zsmalloc object under slot lock (5/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261111064707.2568433-7-senozhatsky@chromium.org
+      - ec3e30831e1f "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 678262b51b7c "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
+  - changed commits
+    - series "zram: redesign zcomp and rework backends", v7. (15)
+      - 33c0c2ad48c4 "zram: prefix backends printk-s (0/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20261025021839.1542805-2-senozhatsky@chromium.org
+      - 9c1d1d969743 "zram: remove debugfs entry on init failure (1/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-3-senozhatsky@chromium.org
+      - 2b4368ab77ca "zram: reset writeback state in zram_reset_device() (2/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-4-senozhatsky@chromium.org
+      - baa3fa824d82 "zram: move mark_slot_accessed() under existing slot lock sections (3/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-5-senozhatsky@chromium.org
+      - eeab7f2ffbc5 "zram: remove stale WARN_ON() from zram_read_page() (4/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-6-senozhatsky@chromium.org
+      - fcc2dd5369ca "zram: zstd: do not allocate empty C/D-dictionaries (5/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-7-senozhatsky@chromium.org
+      - bf1d98f8baf8 "zram: lz4hc: pre-initialize dictionary stream in setup_params (6/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-8-senozhatsky@chromium.org
+      - 59c0140a4058 "zram: lz4: use LZ4_decompress_safe_usingDict() (7/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-9-senozhatsky@chromium.org
+      - 3692b33154aa "zram: lz4hc: use LZ4_decompress_safe_usingDict() (8/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-10-senozhatsky@chromium.org
+      - fc02950a6bfe "zram: zstd: do not use kvzalloc() for zstd allocations (9/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-11-senozhatsky@chromium.org
+      - 1c31a3fc220b "zram: split zcomp into separate R/W streams (10/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-12-senozhatsky@chromium.org
+      - a8d01f35cc1a "zram: introduce shared decompression streams (11/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-13-senozhatsky@chromium.org
+      - a5bb324cbf8f "zram: allocate bounce buffer for spanning objects (12/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-14-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/linux-kernel/20261014153603.1365617-1-zhangbo56@xiaomi.com [1]
+        - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
+      - a10eac03ad4d "zram: borrow idle decompression streams in exclusive mode (13/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-15-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/linux-kernel/20261015112440.1491168-1-zhangbo56@xiaomi.com [1]
+        - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
+      - 7b4591a9c225 "zram: use a singleton compression context for recompression (14/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lore.kernel.org/20261025021839.1542805-16-senozhatsky@chromium.org
+    - f95484fcc350 "zram: fix quadratic writeback bitmap search"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-unstable
+      - Link: https://lore.kernel.org/20da9e9a5ffefd1e6875e311d3740b9f3c1061f3.1793333729.git.senozhatsky@chromium.org
+    - aa540281a47b "zram: lz4/lz4hc: accept dictionaries of more than 64 KiB"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-unstable
+      - Link: https://lore.kernel.org/f2ac22a731e507e90217a5e9cf29c987ec24e2b0.1793333729.git.senozhatsky@chromium.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 17 -> 17 commits (no change)
-  - series: 1 (15) -> 1 (15) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 10 -> 10 commits (no change)
-    - maintainer, no role : 6 -> 6 commits (no change)
+- mm-nonmm-unstable: 17 -> 0 commits
+  - series: 1 (15) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - maintainer, nobody: 10 -> 0 commits
+    - maintainer, no role : 6 -> 0 commits

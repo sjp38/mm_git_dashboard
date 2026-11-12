@@ -1,9 +1,14 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - 2bdf0a59f006 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112013220.4064478-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 16 -> 16 commits (no change)
@@ -13,12 +18,6 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-  - changed commits
-    - series "Subject: [PATCH v3 0/4] mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
-      - d6af2ff4036b "mm/hugetlb: account NR_HUGETLB at folio state transitions (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-        - Link: https://lore.kernel.org/20261106100521.30099-5-kaitao.cheng@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,30 +5,39 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 48 -> 48 commits (no change)
-  - series: 8 (38) -> 8 (38) (no change)
+- mm-unstable: 48 -> 50 commits
+  - series: 8 (38) -> 8 (40)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 19 -> 19 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 20 -> 20 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 0 -> 2 commits
+  - new commits
+    - series "zsmalloc: redesign object alloc API", v3. (11)
+      - ec3e30831e1f "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 678262b51b7c "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
+- mm-new: 2 -> 5 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - adde3521a7b6 "tools/mm: add page_owner_filter to .gitignore"
+    - no role, no role : 1 -> 2 commits
+    - no role, maintainer: 1 -> 2 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com
+    - 11f05fe0c70f "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
+      - Link: https://lore.kernel.org/avPOlMOmUdjPe5NJ@chrisdown.name
+    - c6a3307f63df "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 1 commits
+- mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - dadbd0accd24 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
-      - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/
+    - no role, reviewer: 1 -> 1 commits (no change)

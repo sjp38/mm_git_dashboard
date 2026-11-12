@@ -5,10 +5,37 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 6 commits
+  - series: 0 (0) -> 0 (6)
+    - maintainer, no role : 0 -> 3 commits
+    - maintainer, maintainer: 0 -> 3 commits
+  - new commits
+    - series "zsmalloc: redesign object alloc API", v3. (11)
+      - 64cdf4364b3f "zsmalloc: return handle from obj_allocated() (2/11)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261111064707.2568433-4-senozhatsky@chromium.org
+      - 4b9154f1a1b6 "zsmalloc: switch handle type to struct zs_handle (3/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
+      - 1e65622619c1 "zsmalloc: encode 1-based obj_idx so valid obj is never 0 (7/11)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261111064707.2568433-9-senozhatsky@chromium.org
+      - ec3e30831e1f "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 678262b51b7c "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
+      - b31e10c4b4f4 "zsmalloc: populate new zspage outside class->lock in zs_store() (10/11)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261111064707.2568433-12-senozhatsky@chromium.org
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

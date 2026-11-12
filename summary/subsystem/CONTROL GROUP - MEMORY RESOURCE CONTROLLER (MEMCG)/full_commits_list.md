@@ -1,12 +1,16 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
+    - maintainer, no role : 1 commits
   - full commits list
-    - 255369e517e1 "mm: memcontrol: don't lose track of exiting OOM victims"
+    - 178d112d92d0 "mm: memcontrol: don't lose track of exiting OOM victims"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/avA1wXhTMs9eY2NF@chrisdown.name
+    - 2bdf0a59f006 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112013220.4064478-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 16 total, 5 (16) series, 0 non-series commits
   - author/reviewer role stat
@@ -17,62 +21,62 @@
     - maintainer, reviewer: 4 commits
   - full commits list
     - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4 commits)
-      - c659b3eca8e5 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock" (0/4)
+      - a8381c075a3f "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
         - Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com
-      - b8df483421a5 "memcg: reduce nesting in consume_stock() and refill_stock()" (1/4)
+      - 5fb4549b1ea7 "memcg: reduce nesting in consume_stock() and refill_stock()" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com
-      - 4f2aca5a6161 "memcg: annotate slow paths in consume_stock() and refill_stock()" (2/4)
+      - 3a2354cbf554 "memcg: annotate slow paths in consume_stock() and refill_stock()" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com
-      - 7c9155f54eef "memcg: uncharge pages outside memcg_stock.lock in refill_stock()" (3/4)
+      - e170774befb7 "memcg: uncharge pages outside memcg_stock.lock in refill_stock()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com
     - series "memcg: reduce cacheline contention from lruvec stat", v3. (2 commits)
-      - 75b1170b9013 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
+      - d3fceab716e8 "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261023195417.1391216-2-joannelkoong@gmail.com
         - Link: https://www.intel.com/content/dam/doc/manual/64-ia-32-architectures-optimization-manual.pdf [1] (bottom of page 62/800)
         - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/
-      - 443be1dc8d9d "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
+      - 4103085dafab "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-3-joannelkoong@gmail.com
     - series "mm: memcontrol: remove two unused helpers", v1. (2 commits)
-      - afc9b5c4878c "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
+      - 8d7b11adf153 "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-0-240b37c53831@columbia.edu
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu
-      - 8ba6820d44c6 "mm: memcontrol: remove page_memcg_check()" (1/2)
+      - 2c02d47be8f0 "mm: memcontrol: remove page_memcg_check()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu
     - series "memcg: clean up memory.high enforcement", v2. (5 commits)
-      - 8f719c261ae1 "memcg: move memory.high enforcement out of try_charge_memcg()" (0/5)
+      - 320c7a78c3b7 "memcg: move memory.high enforcement out of try_charge_memcg()" (0/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261030205418.341214-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20261030205418.341214-2-shakeel.butt@linux.dev
-      - 0fe4dc0608e8 "memcg: force charges from reclaim before trying the limits" (1/5)
+      - ef71de268f53 "memcg: force charges from reclaim before trying the limits" (1/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261030205418.341214-3-shakeel.butt@linux.dev
-      - fc409ceb2ae9 "memcg: use high_work for kernel threads" (2/5)
+      - 04c4c5f3fab6 "memcg: use high_work for kernel threads" (2/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261030205418.341214-4-shakeel.butt@linux.dev
-      - d08bb605d604 "memcg: use high_work for remote charges" (3/5)
+      - 61a0155b5481 "memcg: use high_work for remote charges" (3/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261030205418.341214-5-shakeel.butt@linux.dev
-      - 17726f9f1508 "memcg: simplify high limit handling after a charge" (4/5)
+      - d87daf629918 "memcg: simplify high limit handling after a charge" (4/5)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261030205418.341214-6-shakeel.butt@linux.dev
-      - 03619159e329 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - 283358678de4 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-      - d6af2ff4036b "mm/hugetlb: account NR_HUGETLB at folio state transitions" (3/4)
+      - 76f4378d7067 "mm/hugetlb: account NR_HUGETLB at folio state transitions" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261106100521.30099-5-kaitao.cheng@linux.dev
     - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7 commits)
-      - 1b08af8db81b "mm/memcontrol: drop unused vmscan tracepoint include" (0/7)
+      - e55e2320e092 "mm/memcontrol: drop unused vmscan tracepoint include" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20261104130817.849089-2-ridong.chen@linux.dev

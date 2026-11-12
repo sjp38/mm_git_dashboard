@@ -2,36 +2,49 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 2 (4) series, 3 non-series commits
+- mm-unstable: 11 total, 2 (8) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 7 commits
+    - no role, maintainer: 8 commits
+    - maintainer, maintainer: 3 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - ec501c60d100 "mm: zswap: use separate compression and decompression requests" (0/3)
+      - e880dd09f87e "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 3dc09f124102 "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - 7b5b06d201fe "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
     - series "mm/zswap: batch the writeback IO". (2 commits)
-      - 3eef46879bfd "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+      - d63ebbdf0c34 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
-      - 225c65e27783 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+      - 0ca5da8b3448 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
-    - e5a646f2e1a8 "mm: bypass swap readahead for zswap"
+    - c7177dc2fd4a "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
-    - 066259da0b54 "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - e2f30d0815d7 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
-    - ca73db3fd9f5 "selftests/cgroup: test_zswap: check malloc() return value"
+    - 1c1786a5cf0e "selftests/cgroup: test_zswap: check malloc() return value"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104095315.2326-1-zhangchujun@cmss.chinamobile.com
+      - 4b9154f1a1b6 "zsmalloc: switch handle type to struct zs_handle" (3/11)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
+      - f476e2fd0550 "zswap: do not free the entry if its pool is NULL" (6/11)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-8-senozhatsky@chromium.org
+      - ec3e30831e1f "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 678262b51b7c "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
