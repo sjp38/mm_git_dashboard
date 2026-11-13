@@ -1,13 +1,27 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - 2bdf0a59f006 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
-      - Authored by a maintainer, reviewed by no role player
+    - maintainer, no role : 1 -> 0 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - abbc358d0181 "mm: memcontrol: don't lose track of exiting OOM victims"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com"
+      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Tested-by: elenchist <elenchist.dev@gmail.com>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - Link: https://lore.kernel.org/avA1wXhTMs9eY2NF@chrisdown.name
+      - Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com
+    - b7bd21984c03 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
+      - Authored by a maintainer, reviewed by a maintainer
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Reviewed-by: Harry Yoo (Meta) <harry@kernel.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
       - Link: https://lore.kernel.org/20261112013220.4064478-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

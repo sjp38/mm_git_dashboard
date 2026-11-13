@@ -1,8 +1,21 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - c6e62eed7471 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112061231.2469026-1-shakeel.butt@linux.dev
+    - 096f76a8de83 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261112221248.3512447-1-shakeel.butt@linux.dev
+    - 1a2a9f228f48 "mm/list_lru: verify memcg owner before skipping allocation"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)

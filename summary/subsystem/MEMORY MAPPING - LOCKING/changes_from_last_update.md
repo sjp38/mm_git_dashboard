@@ -5,32 +5,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 4 commits
+- mm-unstable: 0 -> 4 commits
   - series: 0 (0) -> 1 (3)
     - no role, no role : 0 -> 3 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - c0a78521ee08 "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261110-vma-fixup-debug-asserts-v1-1-0b2e0680cd7e@kernel.org
+      - Link: : https://lore.kernel.org/MN2PR06MB6639D846B30A3357B01BC61DD2722@MN2PR06MB6639.namprd06.prod.outlook.com
     - series "mm: only assert mmap and VMA locks if CONFIG_DEBUG_VM is set". (3)
-      - 6a2784f39dc0 "mm: only assert mmap locks if CONFIG_DEBUG_VM or lockdep is set (0/3)"
+      - cc64477b86ab "mm: only assert mmap locks if CONFIG_DEBUG_VM or lockdep is set (0/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261110-tame-vma-asserts-v1-0-be293ff499a7@kernel.org
         - Link: https://lore.kernel.org/20261110-tame-vma-asserts-v1-1-be293ff499a7@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20261110-vma-fixup-debug-asserts-v1-1-0b2e0680cd7e@kernel.org/ [0]
-      - b6f2dd33371d "mm: only assert VMA locks if CONFIG_DEBUG_VM is set (1/3)"
+      - 7e3c83a0e1aa "mm: only assert VMA locks if CONFIG_DEBUG_VM is set (1/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261110-tame-vma-asserts-v1-2-be293ff499a7@kernel.org
-      - f2adde94dab5 "mm: convert WARN_ON_ONCE()'s to VM_WARN_ON_ONCE() in VMA lock code (2/3)"
+      - 7a0c664f50bd "mm: convert WARN_ON_ONCE()'s to VM_WARN_ON_ONCE() in VMA lock code (2/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261110-tame-vma-asserts-v1-3-be293ff499a7@kernel.org
-  - changed commits
-    - 1ce0023eba71 "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20261110-vma-fixup-debug-asserts-v1-1-0b2e0680cd7e@kernel.org
-      - Link: : https://lore.kernel.org/MN2PR06MB6639D846B30A3357B01BC61DD2722@MN2PR06MB6639.namprd06.prod.outlook.com
+- mm-new: 4 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, no role : 3 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

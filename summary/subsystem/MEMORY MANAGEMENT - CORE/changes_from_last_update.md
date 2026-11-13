@@ -7,25 +7,29 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 76f5384740b2 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - Link: https://lore.kernel.org/20261109021611.22247-1-hui.zhu@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
+- mm-unstable: 14 -> 15 commits
   - series: 3 (11) -> 3 (11) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+    - no role, no role : 6 -> 7 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-new: 1 -> 2 commits
+  - changed commits
+    - b29145ea4e83 "mm: free unused page table allocated by do_set_pmd()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/c13cdd25-7d7b-4059-a22d-af0a48fabaac@kernel.org
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
   - new commits
+    - 90c5521bb2d4 "mm/pagewalk: document missing struct members"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
+  - dropped commits
     - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com

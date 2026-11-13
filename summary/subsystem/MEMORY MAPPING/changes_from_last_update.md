@@ -7,19 +7,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
+- mm-unstable: 6 -> 7 commits
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 6 -> 6 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - 1ce0023eba71 "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
+    - c0a78521ee08 "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261110-vma-fixup-debug-asserts-v1-1-0b2e0680cd7e@kernel.org
       - Link: : https://lore.kernel.org/MN2PR06MB6639D846B30A3357B01BC61DD2722@MN2PR06MB6639.namprd06.prod.outlook.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - b950394b853d "fs/proc/task_mmu: advance seq_file position on interrupted VMA lookup"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261112140101.647-1-adrianhuang0701@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,37 +5,54 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 48 -> 50 commits
-  - series: 8 (38) -> 8 (40)
+- mm-unstable: 50 -> 55 commits
+  - series: 8 (40) -> 8 (42)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 19 -> 19 commits (no change)
+    - no role, no role : 19 -> 21 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 20 -> 20 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 20 -> 21 commits
+    - maintainer, nobody: 1 -> 3 commits
     - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, maintainer: 0 -> 2 commits
+    - maintainer, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - series "zsmalloc: redesign object alloc API", v3. (11)
-      - ec3e30831e1f "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 678262b51b7c "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
-- mm-new: 2 -> 5 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 1 -> 2 commits
-    - maintainer, nobody: 0 -> 1 commits
+    - series "mm/damon: add lru-active probe filter type". (4)
+      - 1c0c134fcb9e "Docs/mm/damon/design: update for DAMON_FILTER_TYPE_ACTIVE (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261113051711.89274-5-sj@kernel.org
+  - changed commits
+    - bba0ec62dbdd "tools/mm: add page_owner_filter to .gitignore"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
+    - series "mm/damon: cleanup region iterator and damon_reclaim user doc". (2)
+      - 767fb55ca4a0 "Docs/admin-guide/mm/damon/reclaim: improve language (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261110010558.104905-3-sj@kernel.org
+    - 544eee0bdea1 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/avPOlMOmUdjPe5NJ@chrisdown.name
+    - 307645e6d6f7 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+- mm-new: 5 -> 2 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
   - new commits
+    - 4d8269c5297a "selftests/mm: handle implicit read permissions in madv_populate"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
+    - 4cbc68cde0e1 "mm/cma: simplify cma_declare_contiguous_multi()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112-cma-multi-v3-1-663407328e0a@kernel.org
+  - dropped commits
     - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com
-    - 11f05fe0c70f "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/avPOlMOmUdjPe5NJ@chrisdown.name
-    - c6a3307f63df "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

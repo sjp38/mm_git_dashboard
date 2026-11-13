@@ -15,10 +15,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 46fe6f0c093b "tools/mm: add hwpoison-panic tool"
+    - 0a936c44f2dc "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - 5b9e7378a9b0 "mm: split out memory-failure declarations from internal.h"
+    - ad24873a27b3 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/

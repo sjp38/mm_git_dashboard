@@ -5,24 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 11 commits
-  - series: 2 (4) -> 2 (8)
-    - no role, maintainer: 7 -> 8 commits
-    - maintainer, maintainer: 0 -> 3 commits
-  - new commits
-    - series "zsmalloc: redesign object alloc API", v3. (11)
-      - 4b9154f1a1b6 "zsmalloc: switch handle type to struct zs_handle (3/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
-      - f476e2fd0550 "zswap: do not free the entry if its pool is NULL (6/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-8-senozhatsky@chromium.org
-      - ec3e30831e1f "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 678262b51b7c "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
+    - maintainer, maintainer: 3 -> 3 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,12 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 0 -> 1 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - d3724a179299 "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20261106165142.2847916-1-usama.arif@linux.dev
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

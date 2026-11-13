@@ -6,23 +6,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 27 commits (no change)
+- mm-unstable: 27 -> 29 commits
   - series: 3 (23) -> 3 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 4 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 5 -> 5 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
-- mm-new: 1 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 3 commits
-  - new commits
-    - 3d564eea72b0 "hugetlbfs: report inode limits without a memory subpool"
+  - changed commits
+    - d3724a179299 "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20261106165142.2847916-1-usama.arif@linux.dev
+    - 43b83076e811 "hugetlbfs: report inode limits without a memory subpool"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261111130145.96534-1-dennylin0707@gmail.com
-    - 7e411f110775 "mm/hugetlb: charge hugetlb cgroup and memcg in alloc_hugetlb_folio_reserve()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261112-for-alloc_hugetlb-1109-v3-1-7a144510a373@kylinos.cn
+- mm-new: 3 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 3 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
