@@ -11,24 +11,8 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-  - dropped commits
-    - series "mm/khugepaged: bound mmap_lock hold time when walking an mm's VMAs", v3. (3)
-      - dd9c0b9748cb "Revert "mm/khugepaged: remove definition of struct khugepaged_mm_slot" (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-0-6eea743cf9a3@kernel.org
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-1-6eea743cf9a3@kernel.org
-        - Link: https://lore.kernel.org/all/20261105-rwsem-dont-steal-from-queued-writer-v1-1-275e070f426f@kernel.org/ [0]
-      - a9ecb9b89dd1 "mm/khugepaged: scan mm's more efficiently under mmap_lock contention (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-2-6eea743cf9a3@kernel.org
-      - 053b80c36df4 "mm/khugepaged: release contended mmap read lock after scanning enough VMAs (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261110-khugepaged-latency-fix-v3-3-6eea743cf9a3@kernel.org
-        - Link: https://lore.kernel.org/all/20261105-rwsem-dont-steal-from-queued-writer-v1-1-275e070f426f@kernel.org/
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

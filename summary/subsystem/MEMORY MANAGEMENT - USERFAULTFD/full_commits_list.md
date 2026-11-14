@@ -16,7 +16,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - f0a451cc4368 "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
+    - f6b86f530629 "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
       - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -26,14 +26,14 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 63a0d8dfe3a1 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 44b4a8e9bd92 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-    - bc48f29da18a "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - 53123da89335 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
     - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
-      - e9c3e2ff386d "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+      - 0f3de2048b85 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
         - Link: https://lore.kernel.org/20261103102840.68903-2-azpijr@gmail.com

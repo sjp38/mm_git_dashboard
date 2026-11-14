@@ -5,21 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 2 commits
+- mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - changed commits
-    - 6fe71184e4df "mm: kmemleak: serialize disable-time cleanup"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/149d93f2cfe20d355f4d9882ce2bf99030217772.1793871596.git.tongweilin@linux.alibaba.com
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 6aad39eb0a4a "mm: kmemleak: drop kmemleak_lock in scan_block() when it is contended"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261112-kmemleak-scan-lock-break-v1-1-95808108d03c@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

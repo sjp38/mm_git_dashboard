@@ -7,8 +7,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 6ec534d64f85 "mm/madvise: zap markers from guard regions"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261113-disallow-uffd-guard-install-v2-1-9d0063c70542@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -9,13 +9,9 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 23f11fa5087b "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -14,30 +14,30 @@
     - no role, no role : 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - c323733afad4 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 5c5dc00b40c3 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 3efdd6bf7186 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - ef6949af723a "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - a31848b25145 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 60c9edf7ad9e "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - df843967f61c "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - de35dd31d43a "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 6afe157380c8 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - 8b580ccf1833 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - ba60e31074e7 "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 5bf071086c77 "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 8661c5765a0d "selftests/mm: handle child status safely in khugepaged"
+    - d656dfbc18da "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
@@ -46,7 +46,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 4e0ffe080312 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
+    - 0ff14eb9e1ad "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
       - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

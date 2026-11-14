@@ -3,28 +3,22 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 0c76c40cc1d8 "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - c0a78521ee08 "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261110-vma-fixup-debug-asserts-v1-1-0b2e0680cd7e@kernel.org
-      - Link: : https://lore.kernel.org/MN2PR06MB6639D846B30A3357B01BC61DD2722@MN2PR06MB6639.namprd06.prod.outlook.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - b950394b853d "fs/proc/task_mmu: advance seq_file position on interrupted VMA lookup"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261112140101.647-1-adrianhuang0701@gmail.com
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,28 +6,18 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 0 (6) -> 0 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 6 -> 7 commits
-  - new commits
-    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
-      - c2e4e4585c2c "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix (7/10)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261111030920.1297625-1-jiangwenxiaomi@gmail.com
+    - no role, no role : 7 -> 7 commits (no change)
   - changed commits
-    - 9fdea5416704 "mm/vmalloc: reject overflowing vm_map_ram page counts"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org
-  - dropped commits
     - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
-      - 514a5f3b3a63 "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix (7/10)"
+      - f8525612742e "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix (7/10)"
         - Authored by no role player, reviewed by nobody
+        - dropped "Cc: <jiangwen6@xiaomi.com>"
         - Link: https://lore.kernel.org/20261111030920.1297625-1-jiangwenxiaomi@gmail.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

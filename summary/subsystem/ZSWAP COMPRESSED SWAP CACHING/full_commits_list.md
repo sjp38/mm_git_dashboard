@@ -8,41 +8,41 @@
     - maintainer, maintainer: 3 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 3ee445d494a1 "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 365b5e829d25 "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - bf6d78de880c "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - dbc96276434d "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-4-usama.arif@linux.dev
     - series "mm/zswap: batch the writeback IO". (2 commits)
-      - 53b7d5d20943 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+      - 6587d3c21759 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20261007153507.50715-2-alex@ghiti.fr
-      - eb4dc36dba5b "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+      - fa40fb8b805e "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-3-alex@ghiti.fr
-    - d55f32564e63 "mm: bypass swap readahead for zswap"
+    - bedbb5662dc6 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
-    - d93f433146a2 "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - 444944f67b77 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022232734.496064-1-suseendranb@google.com
-    - a37773268132 "selftests/cgroup: test_zswap: check malloc() return value"
+    - 8d04b23eaae1 "selftests/cgroup: test_zswap: check malloc() return value"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104095315.2326-1-zhangchujun@cmss.chinamobile.com
-      - bb72e94e9cbc "zsmalloc: switch handle type to struct zs_handle" (3/11)
+      - 545fec01a477 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
-      - 510b91111d27 "zswap: do not free the entry if its pool is NULL" (6/11)
+      - 01ae1e910f19 "zswap: do not free the entry if its pool is NULL" (6/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-8-senozhatsky@chromium.org
-      - ea6a21baaad6 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - 44e264986d5e "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 6d15d0a48162 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - e633f6d906ba "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

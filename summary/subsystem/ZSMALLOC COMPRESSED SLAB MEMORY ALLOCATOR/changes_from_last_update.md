@@ -9,13 +9,8 @@
   - series: 0 (6) -> 0 (6) (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

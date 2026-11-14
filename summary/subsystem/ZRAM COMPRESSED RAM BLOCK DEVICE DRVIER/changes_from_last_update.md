@@ -11,13 +11,9 @@
     - maintainer, nobody: 14 -> 14 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 31a696f9c37d "zram: avoid duplicate slots in batched writeback"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/F24EF6333964B482+20261110061830.272091-1-raoxu@uniontech.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

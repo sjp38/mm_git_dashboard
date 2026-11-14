@@ -11,7 +11,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f286f3a9a86e "filemap: prefault writes starting beyond EOF"
+    - 72c778a10d45 "filemap: prefault writes starting beyond EOF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104071002.49693-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
@@ -20,16 +20,16 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-    - f431903deba8 "mm/filemap: clear page cache marks once when removing a folio"
+    - 9c2b42f8de99 "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - a50db2d881be "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+    - 1b8846bc8ec3 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
-    - b016a3f94369 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+    - 5f5c3dcb2177 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261108085456.2093096-2-thnkslprpt@gmail.com
-    - 5330bd5c3511 "mm: skip empty finite ranges in truncate_pagecache_range"
+    - 806c769336fa "mm: skip empty finite ranges in truncate_pagecache_range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com

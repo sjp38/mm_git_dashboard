@@ -1,58 +1,32 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 0c76c40cc1d8 "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 50 -> 55 commits
-  - series: 8 (40) -> 8 (42)
+- mm-unstable: 55 -> 55 commits (no change)
+  - series: 8 (42) -> 8 (42) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 19 -> 21 commits
+    - no role, no role : 21 -> 21 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 20 -> 21 commits
-    - maintainer, nobody: 1 -> 3 commits
+    - no role, maintainer: 21 -> 21 commits (no change)
+    - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
+- mm-new: 2 -> 3 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - series "mm/damon: add lru-active probe filter type". (4)
-      - 1c0c134fcb9e "Docs/mm/damon/design: update for DAMON_FILTER_TYPE_ACTIVE (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113051711.89274-5-sj@kernel.org
-  - changed commits
-    - bba0ec62dbdd "tools/mm: add page_owner_filter to .gitignore"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
-    - series "mm/damon: cleanup region iterator and damon_reclaim user doc". (2)
-      - 767fb55ca4a0 "Docs/admin-guide/mm/damon/reclaim: improve language (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261110010558.104905-3-sj@kernel.org
-    - 544eee0bdea1 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/avPOlMOmUdjPe5NJ@chrisdown.name
-    - 307645e6d6f7 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+    - 3ccef1844524 "mm-cma-simplify-cma_declare_contiguous_multi-fix"
       - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-- mm-new: 5 -> 2 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 2 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - 4d8269c5297a "selftests/mm: handle implicit read permissions in madv_populate"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
-    - 4cbc68cde0e1 "mm/cma: simplify cma_declare_contiguous_multi()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261112-cma-multi-v3-1-663407328e0a@kernel.org
-  - dropped commits
-    - 85d2b46a7c88 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261111-zsmalloc_stat-v3-1-2d85ed51570e@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
