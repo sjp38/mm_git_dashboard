@@ -11,164 +11,122 @@
   - series: 2 (10) -> 2 (10) (no change)
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 16 -> 16 commits (no change)
+- mm-new: 16 -> 17 commits
   - series: 1 (16) -> 1 (16) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, nobody: 6 -> 7 commits
     - no role, no role : 2 -> 2 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
-    - reviewer, no role : 6 -> 5 commits
-    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, no role : 5 -> 5 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm: mglru: fix swappiness behavior", v8. (16)
-      - 7dbc1395fb55 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
+    - series "mm: mglru: fix swappiness behavior", v9. (16)
+      - ebc36fb9b4ee "mm/mglru: Avoid placing rejected folios below populated gen (8/16)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
+      - e9df84211d7e "mm/mglru: Run aging when pages are rare outside the youngest gen (9/16)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-11-baohua@kernel.org
+        - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
+      - 921f421b3445 "mm/mglru: Run aging when one type is drained (10/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
+      - ad2a5be6f3aa "Fix-mm-mglru-Run-aging-when-one-type-is-drained.patch (11/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
+      - 667c6fe4f086 "mm/mglru: Restrict eviction accounting to eligible zones (12/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
+      - bc47b6730d3f "mm/mglru: Reduce LRU lock contention by shrinking folio batches in inc_min_seq (13/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
+      - 2ce0384932f5 "mm/mglru: Avoid prolonged anon reclaim with swappiness=200 (14/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
+      - 24792bb5d29a "mm/mglru: Make swappiness=1 file reclaim more aggressive (15/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
+    - c378b7c078a0 "mm/mglru: Avoid scan anon while swapcache is low for GFP_NOIO allocation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
   - changed commits
-    - series "mm: mglru: fix swappiness behavior", v8. (16)
-      - ecc55d8c55bb "mm/mglru: report evictable sizes per type (0/16)"
+    - series "mm: mglru: fix swappiness behavior", v9. (16)
+      - 5664541f40f6 "mm/mglru: report evictable sizes per type (0/16)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261113185541.70203-2-baohua@kernel.org"
-        - added "Link: https://lore.kernel.org/20261113185541.70203-1-baohua@kernel.org"
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-1-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-2-baohua@kernel.org"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20261113185541.70203-2-baohua@kernel.org
+        - added "Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org"
+        - added "Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-1-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-2-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
-      - ecaaf88f9699 "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
+      - b348e6f6a22f "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-3-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-3-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-3-baohua@kernel.org
-      - 140801c0370d "mm/mglru: reclaim from the oldest populated gen (2/16)"
+        - added "Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-3-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org
+      - 43f42eb484c7 "mm/mglru: reclaim from the oldest populated gen (2/16)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-4-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-4-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-4-baohua@kernel.org
+        - added "Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-4-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
-      - 9e2d797651c2 "mm/mglru: lift the forced protection of reclaimer (3/16)"
+      - 3613365dafdd "mm/mglru: lift the forced protection of reclaimer (3/16)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-5-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-5-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-5-baohua@kernel.org
+        - added "Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-5-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [3]
-      - e355ccfe1378 "mm/mglru: skip zones above reclaim_idx instead of rotating them (4/16)"
+      - 1e11cd79b0cc "mm/mglru: skip zones above reclaim_idx instead of rotating them (4/16)"
         - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-6-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-6-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-6-baohua@kernel.org
-      - 5df3f1fa1159 "mm/mglru: return for unavailable anon reclaim earlier (5/16)"
+        - added "Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-6-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org
+      - ccc4b63a8d67 "mm/mglru: return for unavailable anon reclaim earlier (5/16)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-7-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-7-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-7-baohua@kernel.org
-      - 20b57ea66426 "mm/mglru: balance anon and file scan budget by refault rate (6/16)"
+        - added "Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-7-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org
+      - 0226d011f602 "mm/mglru: balance anon and file scan budget by refault rate (6/16)"
         - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-8-baohua@kernel.org"
-        - added "Signed-off-by: Gaofei Lyu <lyugaofei@xiaomi.com>"
-        - added "Co-developed-by: Gaofei Lyu <lyugaofei@xiaomi.com>"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-8-baohua@kernel.org"
-        - dropped "Signed-off-by: lyugaofei <lyugaofei@xiaomi.com>"
-        - dropped "Co-developed-by: lyugaofei <lyugaofei@xiaomi.com>"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-8-baohua@kernel.org
-      - 349954be4897 "mm/mglru: lift youngest gen protection for higher priority (7/16)"
+        - added "Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-8-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org
+      - 8b43f1357437 "mm/mglru: lift youngest gen protection for higher priority (7/16)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-9-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-9-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - Link: https://lore.kernel.org/20261113185541.70203-9-baohua@kernel.org
+        - added "Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261113185541.70203-9-baohua@kernel.org"
+        - Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org
+  - dropped commits
+    - series "mm: mglru: fix swappiness behavior", v8. (16)
       - 003ab7baafda "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-10-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-10-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-10-baohua@kernel.org
+      - 7dbc1395fb55 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261113185541.70203-11-baohua@kernel.org
       - 811b25c371c6 "mm/mglru: run aging when one type has no populatable folios (10/16)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-12-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-12-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-12-baohua@kernel.org
       - 48d1dcb80b5e "mm/mglru: restrict eviction accounting to eligible zones (11/16)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-13-baohua@kernel.org"
-        - added "Signed-off-by: Bo Zhang <zhangbo56@xiaomi.com>"
-        - added "Co-developed-by: Bo Zhang <zhangbo56@xiaomi.com>"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-13-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - dropped "Cc: Bo Zhang <zhangbo56@xiaomi.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-13-baohua@kernel.org
       - f33a052f8d50 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (12/16)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-14-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-14-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-14-baohua@kernel.org
       - 26c66c1ce03f "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (13/16)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-15-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-15-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-15-baohua@kernel.org
       - bdf92392826f "mm/mglru: make swappiness=1 file reclaim more aggressive (14/16)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261113185541.70203-16-baohua@kernel.org"
-        - added "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-16-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-16-baohua@kernel.org
       - b1cf640f528c "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation (15/16)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261113185541.70203-17-baohua@kernel.org"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261111232603.9934-17-baohua@kernel.org"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20261113185541.70203-17-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
-  - dropped commits
-    - series "mm: mglru: fix swappiness behavior", v7. (16)
-      - 16ad9d20c77f "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261111232603.9934-11-baohua@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

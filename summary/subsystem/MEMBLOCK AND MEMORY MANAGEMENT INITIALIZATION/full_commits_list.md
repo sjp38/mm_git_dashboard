@@ -7,10 +7,10 @@
     - no role, no role : 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 4ba1888560c5 "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
+      - 4fb3c225419d "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com
-    - 40a4202f1c7f "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
+    - ed27d3cb114d "mm/hugetlb: allow crashkernel to reuse hugetlb CMA memory"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261106165142.2847916-1-usama.arif@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -9,10 +9,26 @@
 - mm-unstable: 29 -> 29 commits (no change)
   - series: 3 (23) -> 3 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 6 commits
     - no role, maintainer: 5 -> 5 commits (no change)
-    - maintainer, no role : 5 -> 5 commits (no change)
+    - maintainer, no role : 5 -> 3 commits
     - maintainer, maintainer: 13 -> 13 commits (no change)
+  - new commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - 84b5f2556f21 "powerpc/mm: drop powerpc vmemmap_can_optimize() (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
+      - 53e1f7f22331 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+  - dropped commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - f052837b0b22 "powerpc/mm: drop powerpc vmemmap_can_optimize() (1/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
+      - dceef94d5d55 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

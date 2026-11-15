@@ -11,10 +11,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 15 -> 15 commits (no change)
   - series: 3 (11) -> 3 (11) (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, no role : 7 -> 9 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
+    - maintainer, no role : 3 -> 1 commits
+  - new commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - 53e1f7f22331 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+      - 68b38b95124a "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
+  - dropped commits
+    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
+      - dceef94d5d55 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
+      - 3e941d5688cb "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

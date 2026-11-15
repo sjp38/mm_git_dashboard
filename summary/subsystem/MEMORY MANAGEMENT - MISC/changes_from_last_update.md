@@ -1,32 +1,63 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 0c76c40cc1d8 "mm: use PFN_PHYS() in phys_mem_access_prot()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 55 -> 55 commits (no change)
+- mm-unstable: 55 -> 54 commits
   - series: 8 (42) -> 8 (42) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 21 -> 21 commits (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 21 -> 22 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 21 -> 21 commits (no change)
+    - no role, maintainer: 21 -> 20 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 2 -> 3 commits
+  - changed commits
+    - 51a0bd39eaf1 "selftests/mm: pkeys: wait for the child in become_child()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
+      - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+      - added "Tested-by: Hongfu Li <lihongfu@kylinos.cn>"
+      - dropped "Cc: Hongfu Li <lihongfu@kylinos.cn>"
+      - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+      - Link: https://lore.kernel.org/20261106164639.2959195-1-clopez@suse.de
+      - Link: https://lore.kernel.org/all/20240419115027.3848958-1-usama.anjum@collabora.com [1]
+    - 82c0ca99b00c "tools/mm: add page_owner_filter to .gitignore"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Zenghui Yu <zenghui.yu@linux.dev>"
+      - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
+- mm-new: 3 -> 7 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 1 -> 2 commits
+    - maintainer, nobody: 1 -> 3 commits
   - new commits
-    - 3ccef1844524 "mm-cma-simplify-cma_declare_contiguous_multi-fix"
+    - 4c0fd6c4c5a0 "selftests/mm: allocate nr_pages based on pmd size for uffd pmd_move tests"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261113040045.1439391-1-jocolema@redhat.com
+      - Link: https://lore.kernel.org/all/20261103202049.499206-1-jocolema@redhat.com
+    - b0b2cf92cb74 "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
       - Authored by a maintainer, reviewed by nobody
+    - 294d4688df90 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
+  - changed commits
+    - f34263fbdcb3 "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-new
+      - added "Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn"
+      - added "Fixes: b3b0d09c7a23 ("selftests: vm: add tests for lock on fault")"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Cc: <hongfu.li@linux.dev>"
+      - dropped "Link: https://lore.kernel.org/20261104-for-mlock2-v1-1-57e6dd74c2bd@kylinos.cn"
+      - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
