@@ -3,34 +3,23 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 205efcdb6efe "mm/huge_memory: flush dirty file PMDs before removing rmap"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261113-dirty_file_pmd-v1-1-8c11f2a2e65f@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 15 -> 15 commits (no change)
   - series: 3 (11) -> 3 (11) (no change)
-    - no role, no role : 7 -> 9 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, no role : 3 -> 1 commits
-  - new commits
-    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
-      - 53e1f7f22331 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
-      - 68b38b95124a "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
-  - dropped commits
-    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
-      - dceef94d5d55 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
-      - 3e941d5688cb "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, reviewer: 2 -> 1 commits
+    - no role, maintainer: 3 -> 4 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

@@ -6,97 +6,115 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 21 -> 21 commits (no change)
+- mm-hotfixes-unstable: 21 -> 22 commits
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, nobody: 2 -> 1 commits
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 3 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 205efcdb6efe "mm/huge_memory: flush dirty file PMDs before removing rmap"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261113-dirty_file_pmd-v1-1-8c11f2a2e65f@kernel.org
   - changed commits
     - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - 02b441f2e318 "mm/swap: skip relocation of tableless clusters (2/3)"
+      - 648142c859fb "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
         - Authored by a reviewer, reviewed by a maintainer
         - added "Acked-by: Kairui Song <kasong@tencent.com>"
         - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - Link: https://lore.kernel.org/20261110151407.789960-4-nphamcs@gmail.com
+        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
+        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
+    - 5dadacedd0ab "mm: mglru: splice all generations when reparenting a memcg"
+      - Authored by a reviewer, reviewed by a maintainer
+      - added "Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems"
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - added "Tested-by: Noah Feldt <noah@feldt.systems>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - Link: https://lore.kernel.org/20261111000913.22943-1-shakeel.butt@linux.dev
+      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
+    - 27246bb517d0 "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 128 -> 128 commits (no change)
   - series: 21 (97) -> 21 (97) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 27 -> 30 commits
-    - no role, reviewer: 16 -> 16 commits (no change)
-    - no role, maintainer: 41 -> 41 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, maintainer: 2 -> 3 commits
+    - no role, no role : 30 -> 30 commits (no change)
+    - no role, reviewer: 16 -> 15 commits
+    - no role, maintainer: 41 -> 42 commits
+    - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-    - maintainer, no role : 12 -> 9 commits
+    - maintainer, no role : 9 -> 9 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
-  - new commits
-    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
-      - 84b5f2556f21 "powerpc/mm: drop powerpc vmemmap_can_optimize() (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
-      - 53e1f7f22331 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
-      - 68b38b95124a "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
-  - changed commits
-    - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3)
-      - 07e2ac6705b6 "mm, swap: give hibernation swap slots their own swap table entry type (1/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[kasong@tencent.com: renamed the layout entry to HIB and reworded its doc]"
-        - added "Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/"
-        - added "Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com"
-        - added "Signed-off-by: Youngjun Park <youngjun.park@lge.com>"
-        - added "Signed-off-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Signed-off-by: Kairui Song <kasong@tencent.com>"
-        - added "Suggested-by: Kairui Song <kasong@tencent.com>"
-        - added "Acked-by: Kairui Song <kasong@tencent.com>"
-        - added "Reviewed-by: Nhat Pham <nphamcs@gmail.com>"
-        - added "Cc: Chris Li <chrisl@kernel.org>"
-        - added "Cc: Barry Song <baohua@kernel.org>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-        - added "Cc: Kairui Song <ryncsn@gmail.com>"
-        - added "Cc: Jianyue Wu <wujianyue000@gmail.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
-    - 82c0ca99b00c "tools/mm: add page_owner_filter to .gitignore"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Zenghui Yu <zenghui.yu@linux.dev>"
-      - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
-  - dropped commits
-    - series "mm: Simplify device DAX vmemmap optimization plumbing", v3. (5)
-      - f052837b0b22 "powerpc/mm: drop powerpc vmemmap_can_optimize() (1/5)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-3-songmuchun@bytedance.com
-      - dceef94d5d55 "mm/sparse-vmemmap: drop vmemmap_can_optimize() (3/5)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-5-songmuchun@bytedance.com
-      - 3e941d5688cb "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs (4/5)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261107043122.25650-6-songmuchun@bytedance.com
-- mm-new: 22 -> 25 commits
+- mm-new: 25 -> 25 commits (no change)
   - series: 1 (16) -> 1 (16) (no change)
-    - no role, nobody: 7 -> 8 commits
-    - no role, no role : 5 -> 6 commits
-    - no role, maintainer: 1 -> 2 commits
-    - reviewer, nobody: 2 -> 2 commits (no change)
-    - reviewer, no role : 5 -> 5 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 8 -> 7 commits
+    - no role, no role : 6 -> 5 commits
+    - no role, maintainer: 2 -> 5 commits
+    - reviewer, nobody: 2 -> 0 commits
+    - reviewer, no role : 5 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 2 commits
+    - maintainer, no role : 0 -> 5 commits
+    - maintainer, reviewer: 0 -> 1 commits
   - new commits
+    - series "mm: mglru: fix swappiness behavior", v9. (16)
+      - c38a1c2f9c58 "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
+      - fccdc6a6db6b "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
+      - dddefb353e6d "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen (10/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261116042556.42111-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/CAMgjq7C_cH75JrYs8=P5LbxnDjDD6bqeqsCidOPa=r8Z+42sCQ@mail.gmail.com/ [1]
+      - 48f604a8ad07 "mm/mglru: run aging when one type is drained (11/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
+      - bf1fda8b681b "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch (12/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
+      - 166a8c231b8b "mm/mglru: restrict eviction accounting to eligible zones (13/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
+      - 614109eb71d3 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (14/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
+      - d9151f8df38e "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (15/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
+    - bdc2488a68c0 "mm/mglru: make swappiness=1 file reclaim more aggressive"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
+    - f4cd98b3e26e "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
+  - changed commits
+    - 15876a724708 "mm/cma: simplify cma_declare_contiguous_multi()"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20261112-cma-multi-v3-1-663407328e0a@kernel.org"
+      - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
+    - fabf165b3b54 "mm/hmm: reject shadow-stack mappings"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Alistair Popple <apopple@nvidia.com>"
+      - Link: https://lore.kernel.org/20261113195536.2660763-1-gourry@gourry.net
+      - Link: https://lore.kernel.org/linux-mm/20261111-mason-migrate-et-al-fixes-v1-10-3d2454362e8d@kernel.org/
+  - dropped commits
     - series "mm: mglru: fix swappiness behavior", v9. (16)
       - ebc36fb9b4ee "mm/mglru: Avoid placing rejected folios below populated gen (8/16)"
         - Authored by no role player, reviewed by no role player
@@ -126,93 +144,8 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
-    - 55c134b47ded "mm/readahead: don't skip the fallback after aligning index down"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261113072711.235264-1-gopalmalaviya53@gmail.com
-      - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
-    - faf35b068c52 "mm/hmm: reject shadow-stack mappings"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261113195536.2660763-1-gourry@gourry.net
-      - Link: https://lore.kernel.org/linux-mm/20261111-mason-migrate-et-al-fixes-v1-10-3d2454362e8d@kernel.org/
-  - changed commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - 5664541f40f6 "mm/mglru: report evictable sizes per type (0/16)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org"
-        - added "Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-1-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-2-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
-        - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
-        - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
-      - b348e6f6a22f "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-3-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org
-      - 43f42eb484c7 "mm/mglru: reclaim from the oldest populated gen (2/16)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-4-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
-      - 3613365dafdd "mm/mglru: lift the forced protection of reclaimer (3/16)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-5-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
-        - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [2]
-        - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [3]
-      - 1e11cd79b0cc "mm/mglru: skip zones above reclaim_idx instead of rotating them (4/16)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-6-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org
-      - ccc4b63a8d67 "mm/mglru: return for unavailable anon reclaim earlier (5/16)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-7-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org
-      - 0226d011f602 "mm/mglru: balance anon and file scan budget by refault rate (6/16)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-8-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org
-      - 8b43f1357437 "mm/mglru: lift youngest gen protection for higher priority (7/16)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261113185541.70203-9-baohua@kernel.org"
-        - Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org
-  - dropped commits
-    - series "mm: mglru: fix swappiness behavior", v8. (16)
-      - 003ab7baafda "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261113185541.70203-10-baohua@kernel.org
-      - 7dbc1395fb55 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-11-baohua@kernel.org
-      - 811b25c371c6 "mm/mglru: run aging when one type has no populatable folios (10/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-12-baohua@kernel.org
-      - 48d1dcb80b5e "mm/mglru: restrict eviction accounting to eligible zones (11/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-13-baohua@kernel.org
-      - f33a052f8d50 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (12/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-14-baohua@kernel.org
-      - 26c66c1ce03f "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (13/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-15-baohua@kernel.org
-      - bdf92392826f "mm/mglru: make swappiness=1 file reclaim more aggressive (14/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261113185541.70203-16-baohua@kernel.org
-      - b1cf640f528c "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation (15/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261113185541.70203-17-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
+    - b4f5e153a914 "mm-cma-simplify-cma_declare_contiguous_multi-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 3 -> 3 commits (no change)

@@ -4,60 +4,67 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 27246bb517d0 "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 55 -> 54 commits
+- mm-unstable: 54 -> 54 commits (no change)
   - series: 8 (42) -> 8 (42) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 21 -> 22 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 21 -> 20 commits
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 22 -> 22 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 20 -> 21 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - 51a0bd39eaf1 "selftests/mm: pkeys: wait for the child in become_child()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
-      - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-      - added "Tested-by: Hongfu Li <lihongfu@kylinos.cn>"
-      - dropped "Cc: Hongfu Li <lihongfu@kylinos.cn>"
-      - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
-      - Link: https://lore.kernel.org/20261106164639.2959195-1-clopez@suse.de
-      - Link: https://lore.kernel.org/all/20240419115027.3848958-1-usama.anjum@collabora.com [1]
-    - 82c0ca99b00c "tools/mm: add page_owner_filter to .gitignore"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Zenghui Yu <zenghui.yu@linux.dev>"
-      - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
-- mm-new: 3 -> 7 commits
+- mm-new: 7 -> 6 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 2 commits
-    - maintainer, nobody: 1 -> 3 commits
-  - new commits
-    - 4c0fd6c4c5a0 "selftests/mm: allocate nr_pages based on pmd size for uffd pmd_move tests"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261113040045.1439391-1-jocolema@redhat.com
-      - Link: https://lore.kernel.org/all/20261103202049.499206-1-jocolema@redhat.com
-    - b0b2cf92cb74 "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 294d4688df90 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - maintainer, nobody: 3 -> 2 commits
   - changed commits
-    - f34263fbdcb3 "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
+    - 15876a724708 "mm/cma: simplify cma_declare_contiguous_multi()"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-new
-      - added "Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn"
-      - added "Fixes: b3b0d09c7a23 ("selftests: vm: add tests for lock on fault")"
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Cc: <hongfu.li@linux.dev>"
-      - dropped "Link: https://lore.kernel.org/20261104-for-mlock2-v1-1-57e6dd74c2bd@kylinos.cn"
-      - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+      - added "Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20261112-cma-multi-v3-1-663407328e0a@kernel.org"
+      - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
+    - 241d8b15cf0f "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
+      - Authored by a maintainer, reviewed by nobody
       - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: "Zenghui Yu (Huawei)" <zenghui.yu@linux.dev>"
       - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - dropped "Cc: Audra Mitchell <audra@redhat.com>"
+      - dropped "Cc: Peter Xu <peterx@redhat.com>"
+    - 4b8942962812 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com"
+      - added "Tested-by: John J. Coleman <jocolema@redhat.com>"
+      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Cc: Liam R. Howlett <liam@infradead.org>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - added "Cc: "Zenghui Yu (Huawei)" <zenghui.yu@linux.dev>"
+      - added "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Cc: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - added "Cc: Audra Mitchell <audra@redhat.com>"
+      - added "Cc: Peter Xu <peterx@redhat.com>"
+      - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
+      - Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com
+  - dropped commits
+    - b4f5e153a914 "mm-cma-simplify-cma_declare_contiguous_multi-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

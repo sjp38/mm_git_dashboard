@@ -5,45 +5,23 @@
 - mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 2 -> 1 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 2 commits
   - changed commits
     - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - 02b441f2e318 "mm/swap: skip relocation of tableless clusters (2/3)"
+      - 648142c859fb "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
         - Authored by a reviewer, reviewed by a maintainer
         - added "Acked-by: Kairui Song <kasong@tencent.com>"
         - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - Link: https://lore.kernel.org/20261110151407.789960-4-nphamcs@gmail.com
+        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
+        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)
   - series: 2 (6) -> 2 (6) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, maintainer: 2 -> 3 commits
-  - changed commits
-    - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3)
-      - 07e2ac6705b6 "mm, swap: give hibernation swap slots their own swap table entry type (1/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[kasong@tencent.com: renamed the layout entry to HIB and reworded its doc]"
-        - added "Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com"
-        - added "Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/"
-        - added "Signed-off-by: Kairui Song <kasong@tencent.com>"
-        - added "Signed-off-by: Andrew Morton <akpm@linux-foundation.org>"
-        - added "Signed-off-by: Youngjun Park <youngjun.park@lge.com>"
-        - added "Suggested-by: Kairui Song <kasong@tencent.com>"
-        - added "Acked-by: Kairui Song <kasong@tencent.com>"
-        - added "Reviewed-by: Nhat Pham <nphamcs@gmail.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - added "Cc: Kairui Song <ryncsn@gmail.com>"
-        - added "Cc: Barry Song <baohua@kernel.org>"
-        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Jianyue Wu <wujianyue000@gmail.com>"
-        - added "Cc: Chris Li <chrisl@kernel.org>"
-        - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
+    - reviewer, maintainer: 3 -> 3 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

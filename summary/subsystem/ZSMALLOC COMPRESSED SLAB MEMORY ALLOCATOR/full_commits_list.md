@@ -7,22 +7,22 @@
     - maintainer, no role : 3 commits
     - maintainer, maintainer: 3 commits
   - full commits list
-      - 99573e33d25c "zsmalloc: return handle from obj_allocated()" (2/11)
+      - a600613576b5 "zsmalloc: return handle from obj_allocated()" (2/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261111064707.2568433-4-senozhatsky@chromium.org
-      - 0869237dfc5a "zsmalloc: switch handle type to struct zs_handle" (3/11)
+      - 032373438e33 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
-      - 4ca31366d238 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
+      - 2375d60efd52 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261111064707.2568433-9-senozhatsky@chromium.org
-      - 1baa0fb69d43 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - a6cc5519a38f "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 589708fa1cd7 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - cf3988b74bfb "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
-      - 84a6dc173754 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
+      - d57047247de7 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261111064707.2568433-12-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
