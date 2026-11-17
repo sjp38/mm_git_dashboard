@@ -7,24 +7,30 @@
     - maintainer, no role : 3 commits
     - maintainer, maintainer: 3 commits
   - full commits list
-      - a600613576b5 "zsmalloc: return handle from obj_allocated()" (2/11)
+      - bada82a882f2 "zsmalloc: return handle from obj_allocated()" (2/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261111064707.2568433-4-senozhatsky@chromium.org
-      - 032373438e33 "zsmalloc: switch handle type to struct zs_handle" (3/11)
+      - 6e531f452b13 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
-      - 2375d60efd52 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
+      - 665515798aa4 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261111064707.2568433-9-senozhatsky@chromium.org
-      - a6cc5519a38f "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - 3ea8272f5048 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - cf3988b74bfb "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - 4b23837ea333 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
-      - d57047247de7 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
+      - d8492c230ab2 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261111064707.2568433-12-senozhatsky@chromium.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - c37b2f8a9967 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

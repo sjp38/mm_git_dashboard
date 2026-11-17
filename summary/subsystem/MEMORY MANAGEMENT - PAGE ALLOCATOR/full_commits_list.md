@@ -7,21 +7,21 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - aef3a822a440 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - bf7fbfe6b64b "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 28c3b0446652 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - 29c0ab7e33cb "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261102081919.80625-1-hui.zhu@linux.dev
-    - 1baf5a382ca1 "mm: page_owner: use %u to print the stack depot handle"
+    - b5b63f91dfc0 "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - 04a0a9272e2f "mm: split out memory-failure declarations from internal.h"
+    - cc991b18a817 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - 9374811ad4a1 "alloc_tag: add trace events for tracing allocations" (0/5)
+      - 483702ca1bc9 "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
@@ -29,7 +29,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 2c0a3dcda42a "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
+    - abd62b47853f "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

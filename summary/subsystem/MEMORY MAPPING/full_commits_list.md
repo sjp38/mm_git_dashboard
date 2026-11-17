@@ -15,7 +15,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 27246bb517d0 "mm: use PFN_PHYS() in phys_mem_access_prot()"
+    - 7a6bbb7d2de1 "mm: use PFN_PHYS() in phys_mem_access_prot()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -24,36 +24,36 @@
     - no role, no role : 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 617c15411915 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - dc4df9f3511d "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
       - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
     - series "mm/mremap: fix accounting on a partial move", v3. (5 commits)
-      - fc51445b6053 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
+      - c23b1b7da653 "mm/mremap: fix hugetlb reservation leak on partial move" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-0-f8789de76849@toxicpanda.com
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-1-f8789de76849@toxicpanda.com
-      - 79f2ee34fed2 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
+      - d6c2cc0ef998 "mm/mremap: reaccount on unmap failure only if accounted" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-3-f8789de76849@toxicpanda.com
-      - ea18c5ed7d71 "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
+      - e89a603c6a4c "mm/mremap: restore VMA_ACCOUNT_BIT if the unmap fails" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-4-f8789de76849@toxicpanda.com
-    - 9964750877d1 "mm/mprotect: don't skip uffd marker install when racing with PTE table reclaim"
+    - 5ea513cbeafc "mm/mprotect: don't skip uffd marker install when racing with PTE table reclaim"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261107-uffd_shmem_marker-v1-1-91fa2d653cfe@kernel.org
-    - a50759f9ebea "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
+    - 8403b144d354 "mm/vma: predicate vma_assert_stabilised() on CONFIG_DEBUG_VM"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261110-vma-fixup-debug-asserts-v1-1-0b2e0680cd7e@kernel.org
       - Link: : https://lore.kernel.org/MN2PR06MB6639D846B30A3357B01BC61DD2722@MN2PR06MB6639.namprd06.prod.outlook.com
-    - e1f34fb16e02 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+    - d0b3eb0ef4ff "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - a9c945f2de55 "fs/proc/task_mmu: advance seq_file position on interrupted VMA lookup"
+    - fb128bcfd770 "fs/proc/task_mmu: advance seq_file position on interrupted VMA lookup"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261112140101.647-1-adrianhuang0701@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

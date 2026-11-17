@@ -5,16 +5,7 @@
 - mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 2 commits
-  - changed commits
-    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - 648142c859fb "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Acked-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
-        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
+    - reviewer, maintainer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)

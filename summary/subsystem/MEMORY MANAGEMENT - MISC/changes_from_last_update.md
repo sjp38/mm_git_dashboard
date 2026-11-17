@@ -4,67 +4,40 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 27246bb517d0 "mm: use PFN_PHYS() in phys_mem_access_prot()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 54 -> 54 commits (no change)
   - series: 8 (42) -> 8 (42) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 22 -> 22 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 20 -> 21 commits
+    - no role, maintainer: 21 -> 21 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 7 -> 6 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - maintainer, nobody: 3 -> 2 commits
-  - changed commits
-    - 15876a724708 "mm/cma: simplify cma_declare_contiguous_multi()"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20261112-cma-multi-v3-1-663407328e0a@kernel.org"
-      - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
-    - 241d8b15cf0f "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: "Zenghui Yu (Huawei)" <zenghui.yu@linux.dev>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Audra Mitchell <audra@redhat.com>"
-      - dropped "Cc: Peter Xu <peterx@redhat.com>"
-    - 4b8942962812 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
-      - Authored by a maintainer, reviewed by nobody
-      - added "Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com"
-      - added "Tested-by: John J. Coleman <jocolema@redhat.com>"
-      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Cc: Liam R. Howlett <liam@infradead.org>"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: "Zenghui Yu (Huawei)" <zenghui.yu@linux.dev>"
-      - added "Cc: David Hildenbrand <david@kernel.org>"
-      - added "Cc: Michal Hocko <mhocko@suse.com>"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - added "Cc: Audra Mitchell <audra@redhat.com>"
-      - added "Cc: Peter Xu <peterx@redhat.com>"
-      - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
-      - Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com
-  - dropped commits
-    - b4f5e153a914 "mm-cma-simplify-cma_declare_contiguous_multi-fix"
-      - Authored by a maintainer, reviewed by nobody
+- mm-new: 6 -> 11 commits
+  - series: 0 (0) -> 0 (3)
+    - no role, nobody: 2 -> 4 commits
+    - no role, no role : 2 -> 3 commits
+    - no role, maintainer: 0 -> 2 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - series "mm/damon: add paddr kunit and replace weird "same to" uses in design doc". (2)
+      - de0ba97b97eb "Docs/mm/damon/design: replace "same to" with "same as" (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261116151057.81692-3-sj@kernel.org
+    - series "mm/hugetlb: various fixes", v2. (15)
+      - 79b0bab12628 "mm/hugetlb: fix reservation leak on min_size= mounts (12/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
+      - a320046bd4d7 "mm/hugetlb: account restored reservations before freeing folios (13/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
+    - a79b42fe3a75 "selftests/mm: protection_keys: use _exit() in aarch64 ptrace tracee"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261116-for-pkey-exit-v1-1-ca4c76b32ff7@kylinos.cn
+    - c37b2f8a9967 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

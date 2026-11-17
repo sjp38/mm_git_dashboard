@@ -4,98 +4,48 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - changed commits
-    - 5dadacedd0ab "mm: mglru: splice all generations when reparenting a memcg"
-      - Authored by a reviewer, reviewed by a maintainer
-      - added "Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems"
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - added "Tested-by: Noah Feldt <noah@feldt.systems>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - Link: https://lore.kernel.org/20261111000913.22943-1-shakeel.butt@linux.dev
-      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
+    - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 11 -> 11 commits (no change)
   - series: 2 (10) -> 2 (10) (no change)
-    - no role, reviewer: 9 -> 8 commits
-    - no role, maintainer: 2 -> 3 commits
-- mm-new: 17 -> 18 commits
+    - no role, reviewer: 8 -> 8 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-new: 18 -> 19 commits
   - series: 1 (16) -> 1 (16) (no change)
-    - no role, nobody: 7 -> 6 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
-    - reviewer, nobody: 2 -> 0 commits
-    - reviewer, no role : 5 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 0 -> 2 commits
-    - maintainer, no role : 0 -> 5 commits
-    - maintainer, reviewer: 0 -> 1 commits
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 2 -> 2 commits (no change)
+    - maintainer, no role : 5 -> 5 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
+    - 3f7757aeb523 "mm/mglru: use a smaller batch in fill/drain_evictable()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261116061158.333826-1-hui.zhu@linux.dev
+  - changed commits
     - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - c38a1c2f9c58 "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
-      - fccdc6a6db6b "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
-      - dddefb353e6d "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen (10/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261116042556.42111-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7C_cH75JrYs8=P5LbxnDjDD6bqeqsCidOPa=r8Z+42sCQ@mail.gmail.com/ [1]
-      - 48f604a8ad07 "mm/mglru: run aging when one type is drained (11/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
-      - bf1fda8b681b "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch (12/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
-      - 166a8c231b8b "mm/mglru: restrict eviction accounting to eligible zones (13/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
-      - 614109eb71d3 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (14/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
-      - d9151f8df38e "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (15/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
-    - bdc2488a68c0 "mm/mglru: make swappiness=1 file reclaim more aggressive"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
-    - f4cd98b3e26e "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
-  - dropped commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - ebc36fb9b4ee "mm/mglru: Avoid placing rejected folios below populated gen (8/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
-      - e9df84211d7e "mm/mglru: Run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
-      - 921f421b3445 "mm/mglru: Run aging when one type is drained (10/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
-      - ad2a5be6f3aa "Fix-mm-mglru-Run-aging-when-one-type-is-drained.patch (11/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
-      - 667c6fe4f086 "mm/mglru: Restrict eviction accounting to eligible zones (12/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
-      - bc47b6730d3f "mm/mglru: Reduce LRU lock contention by shrinking folio batches in inc_min_seq (13/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
-      - 2ce0384932f5 "mm/mglru: Avoid prolonged anon reclaim with swappiness=200 (14/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
-      - 24792bb5d29a "mm/mglru: Make swappiness=1 file reclaim more aggressive (15/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
-    - c378b7c078a0 "mm/mglru: Avoid scan anon while swapcache is low for GFP_NOIO allocation"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
+      - 51bfebc10dc1 "mm/mglru: report evictable sizes per type (0/16)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org
+        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
+        - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
+        - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
+      - d28ea7a5186f "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org
+      - b82c39c938c2 "mm/mglru: reclaim from the oldest populated gen (2/16)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

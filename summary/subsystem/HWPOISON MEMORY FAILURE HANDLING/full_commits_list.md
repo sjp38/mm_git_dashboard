@@ -15,13 +15,21 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - c71ba7fd6a59 "tools/mm: add hwpoison-panic tool"
+    - 5b00c3878c56 "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - 04a0a9272e2f "mm: split out memory-failure declarations from internal.h"
+    - cc991b18a817 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3 commits)
+      - 15ffe5416b81 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261114112523.75208-2-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
