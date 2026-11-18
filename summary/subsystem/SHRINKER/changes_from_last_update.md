@@ -1,11 +1,22 @@
 - baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 0 commits
+  - changed commits
+    - 1ff5a3dbd0ba "mm: list_lru: don't use a new memcg's lists for an offline memcg"
+      - Authored by no role player, reviewed by nobody
+      - added "[akpm@linux-foundation.org: verify memcg owner before skipping allocation]"
+      - added "Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org"
+      - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
+      - Link: https://lore.kernel.org/20261112221248.3512447-1-shakeel.butt@linux.dev
+  - dropped commits
+    - f58af162a04e "mm/list_lru: verify memcg owner before skipping allocation"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)

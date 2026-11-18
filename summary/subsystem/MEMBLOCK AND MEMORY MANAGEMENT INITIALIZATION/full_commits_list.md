@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 172b48c30dbc "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
+      - a9140c4c722f "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -6,44 +6,66 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 54 -> 54 commits (no change)
+- mm-unstable: 54 -> 60 commits
   - series: 8 (42) -> 8 (42) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 22 -> 22 commits (no change)
-    - no role, maintainer: 21 -> 21 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 22 -> 24 commits
+    - no role, maintainer: 21 -> 22 commits
+    - maintainer, nobody: 3 -> 5 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
   - changed commits
-    - series "zsmalloc: redesign object alloc API", v3. (11)
-      - ae9a6b435875 "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
-        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 6f79f1811ea9 "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
-        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
-- mm-new: 11 -> 11 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+    - 38f485fcd4b3 "mm/cma: simplify cma_declare_contiguous_multi()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
+    - 0b56c1d17b0f "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn
+    - a82f2daaf5e8 "selftests/mm: allocate nr_pages based on pmd size for uffd pmd_move tests"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - added "Link: : https://lore.kernel.org/38118330-5cd6-4f32-9098-a3d07cc7b3cf@linux.dev"
+      - added "Tested-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
+      - dropped "Cc: "Zenghui Yu (Huawei)" <zenghui.yu@linux.dev>"
+      - Link: https://lore.kernel.org/20261113040045.1439391-1-jocolema@redhat.com
+      - Link: https://lore.kernel.org/all/20261103202049.499206-1-jocolema@redhat.com
+      - Link: : https://lore.kernel.org/38118330-5cd6-4f32-9098-a3d07cc7b3cf@linux.dev
+    - 8ee5cbd2fe3b "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+    - 6e30b6634438 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
+      - Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com
+    - 07cb588546fb "Docs/mm/damon/design: replace "same to" with "same as""
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261116151057.81692-3-sj@kernel.org
+- mm-new: 11 -> 7 commits
+  - series: 0 (3) -> 0 (4)
+    - no role, nobody: 4 -> 2 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm/hugetlb: various fixes", v2. (15)
-      - 144b3dd725db "mm/hugetlb: fix reservation leak on min_size= mounts (12/15)"
+    - maintainer, nobody: 2 -> 0 commits
+  - new commits
+    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
+      - 39e7957560d2 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-      - 6fee4505683f "mm/hugetlb: account restored reservations before freeing folios (13/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
+        - Link: https://lore.kernel.org/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
+      - e86e3efcdbcb "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
+  - changed commits
+    - 290fe085f005 "selftests/mm: handle implicit read permissions in madv_populate"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20261117070606.3752-1-evers_chen@163.com"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261117070606.3752-1-evers_chen@163.com
+      - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

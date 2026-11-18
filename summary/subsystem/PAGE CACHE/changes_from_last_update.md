@@ -7,12 +7,18 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 5 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 5 commits
+  - changed commits
+    - 11d969d24671 "mm/readahead: don't skip the fallback after aligning index down"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261113072711.235264-1-gopalmalaviya53@gmail.com
+      - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

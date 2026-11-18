@@ -5,13 +5,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - 91ab87fcb905 "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

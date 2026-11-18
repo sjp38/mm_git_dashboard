@@ -16,7 +16,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - d4e3df851e9f "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
+    - b67c910d081d "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
       - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -26,14 +26,14 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9c2dfa8d89b4 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 28804c101e73 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-    - bbfd6c6f53f3 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - 47df25338656 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
     - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
-      - d12afad34575 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+      - b9560ade899a "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
         - Link: https://lore.kernel.org/20261103102840.68903-2-azpijr@gmail.com
@@ -41,6 +41,16 @@
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org [2]
         - Link: https://lore.kernel.org/20261031-fixes_core-v3-23-d6437171ecc3@kernel.org [3] (in linux-next)
         - Link: https://lore.kernel.org/sashiko-outbox-194303@kernel.org [4]
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+  - full commits list
+    - d153dfce42a8 "mm/userfaultfd: prevent poison marker loss"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+    - a89e8b90a1af "mm/userfaultfd: check exclusivity of the page being moved"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
+      - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

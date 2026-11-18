@@ -9,21 +9,30 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 15 commits (no change)
+- mm-unstable: 15 -> 16 commits
   - series: 3 (11) -> 3 (11) (no change)
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, no role : 9 -> 10 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 4 -> 3 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - 5f60cd37f093 "mm/util: fix retry detection and handling in snapshot_page()"
+  - changed commits
+    - 13558735a2ba "mm/pagewalk: document missing struct members"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261116-snapshot_page_fix-v1-1-8e425984e8d1@kernel.org
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
+- mm-new: 3 -> 4 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - d153dfce42a8 "mm/userfaultfd: prevent poison marker loss"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
+      - 39e7957560d2 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

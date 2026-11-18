@@ -7,85 +7,108 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 2 (10) -> 2 (10) (no change)
+- mm-unstable: 11 -> 29 commits
+  - series: 2 (10) -> 3 (26)
+    - no role, nobody: 0 -> 6 commits
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 19 -> 19 commits (no change)
-  - series: 1 (16) -> 1 (16) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
-    - maintainer, no role : 5 -> 5 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 6 commits
+    - maintainer, nobody: 0 -> 2 commits
+    - maintainer, no role : 0 -> 5 commits
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
     - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - 6e122e726da5 "mm/mglru: report evictable sizes per type (0/16)"
+      - 560db1b80214 "mm/mglru: report evictable sizes per type (0/16)"
         - Authored by a maintainer, reviewed by a reviewer
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
-      - ef6e6dfce1fe "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
+      - 44275b2341d4 "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
         - Authored by a maintainer, reviewed by no role player
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org
-      - 8349e498c0df "mm/mglru: reclaim from the oldest populated gen (2/16)"
+      - e374cc8703ba "mm/mglru: reclaim from the oldest populated gen (2/16)"
         - Authored by a maintainer, reviewed by no role player
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
-      - c63182e5335d "mm/mglru: lift the forced protection of reclaimer (3/16)"
+      - d9f1331c975e "mm/mglru: lift the forced protection of reclaimer (3/16)"
         - Authored by a maintainer, reviewed by no role player
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [3]
-      - 78bf9572be19 "mm/mglru: skip zones above reclaim_idx instead of rotating them (4/16)"
+      - fbf3b959e755 "mm/mglru: skip zones above reclaim_idx instead of rotating them (4/16)"
         - Authored by a maintainer, reviewed by nobody
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org
-      - 7b70502cfde0 "mm/mglru: return for unavailable anon reclaim earlier (5/16)"
+      - c6924a450e85 "mm/mglru: return for unavailable anon reclaim earlier (5/16)"
         - Authored by a maintainer, reviewed by no role player
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org
-      - 40ea1f2e8877 "mm/mglru: balance anon and file scan budget by refault rate (6/16)"
+      - b6297bfe82a6 "mm/mglru: balance anon and file scan budget by refault rate (6/16)"
         - Authored by a maintainer, reviewed by nobody
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org
-      - abfd12f3cc2a "mm/mglru: lift youngest gen protection for higher priority (7/16)"
+      - d71c440bc384 "mm/mglru: lift youngest gen protection for higher priority (7/16)"
         - Authored by a maintainer, reviewed by no role player
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org
-      - 0da96a7a79f7 "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
+      - 1875743ddc20 "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
         - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
-      - 7b6e66ecbd29 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
+      - 8b1fa9953f85 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
         - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
-      - 2f23c1fae6a7 "mm/mglru: run aging when one type is drained (11/16)"
+      - 4a5f7b6d3bb6 "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen (10/16)"
         - Authored by no role player, reviewed by nobody
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261116042556.42111-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/CAMgjq7C_cH75JrYs8=P5LbxnDjDD6bqeqsCidOPa=r8Z+42sCQ@mail.gmail.com/ [1]
+      - 8cf9cc5670be "mm/mglru: run aging when one type is drained (11/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
-      - d924a1ed3a13 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (14/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
-        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
-      - c313af2c39a7 "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (15/16)"
+      - 51cb3caaa451 "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch (12/16)"
         - Authored by no role player, reviewed by nobody
-        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
+      - a8502f3cb9a4 "mm/mglru: restrict eviction accounting to eligible zones (13/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
+      - 18c43ce78a3d "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (14/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
+      - d9b9a440e65b "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (15/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
-    - 2e9bd66bbe5d "mm/mglru: make swappiness=1 file reclaim more aggressive"
+    - 8a0864f29e04 "mm/mglru: make swappiness=1 file reclaim more aggressive"
       - Authored by no role player, reviewed by nobody
-      - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
+    - 423375454fe3 "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
+- mm-new: 19 -> 1 commits
+  - series: 1 (16) -> 0 (0)
+    - no role, nobody: 6 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 0 commits
+    - maintainer, nobody: 2 -> 0 commits
+    - maintainer, no role : 5 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,247 +4,254 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - e116fdd20f48 "mm: use PFN_PHYS() in phys_mem_access_prot()"
+    - c10759098667 "mm: use PFN_PHYS() in phys_mem_access_prot()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 54 total, 8 (42) series, 12 non-series commits
+- mm-unstable: 60 total, 8 (42) series, 18 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 22 commits
-    - no role, maintainer: 21 commits
-    - maintainer, nobody: 3 commits
+    - no role, nobody: 4 commits
+    - no role, no role : 24 commits
+    - no role, maintainer: 22 commits
+    - maintainer, nobody: 5 commits
     - maintainer, no role : 3 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-    - ddc07ce69740 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - e2ca6311e3ac "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "selftests/mm: run the XFS-backed THP tests when xfs is a module", v3. (2 commits)
-      - 04a8a96a83d4 "selftests/mm: track the modules run_vmtests.sh loads" (0/2)
+      - 100905b98f2d "selftests/mm: track the modules run_vmtests.sh loads" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-0-16ad772850ee@gmail.com
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-1-16ad772850ee@gmail.com
-      - 342cb355df33 "selftests/mm: load xfs before checking for it in run_vmtests.sh" (1/2)
+      - 50f81f8758f3 "selftests/mm: load xfs before checking for it in run_vmtests.sh" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261029-bug-selftests-mm-run-vmtests-xfs-modprobe-v3-2-16ad772850ee@gmail.com
     - series "mm: Enforce read-only shared vmemmap tail mappings", v1. (4 commits)
-      - 3daa3cb84c3c "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
+      - ec8a59fdd99e "mm/sparse-vmemmap: map shared vmemmap tail pages as read-only" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
         - Link: https://lore.kernel.org/20261019090830.1917657-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20261019090830.1917657-2-songmuchun@bytedance.com
-      - 04f361422af5 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
+      - aa9e44f90df9 "docs: hugetlbpage.rst: clarify HugePages_Total in hugetlbpage.rst" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261026080856.76175-1-lienze@kylinos.cn
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 6f053b5f42e0 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 7560fb2cdf41 "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 617e05045f16 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+      - 9db2e544e98d "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
-      - 4178362f8412 "kselftest: mm: introduce size_to_shift() helper" (2/3)
+      - ce16dd340481 "kselftest: mm: introduce size_to_shift() helper" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-3-3d77129e0557@arm.com
     - series "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests", v3. (7 commits)
-      - 3886b12ed75e "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests" (0/7)
+      - 411dfdea4404 "selftests/mm: add MADV_COLD and MADV_PAGEOUT contract tests" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20261019171206.3331374-2-gourry@gourry.net
-      - 521455ecf6c7 "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling" (1/7)
+      - 927bd836ffb4 "selftests/mm: check MADV_COLD and MADV_PAGEOUT range handling" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-3-gourry@gourry.net
-      - 3e2dbee85a00 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb" (2/7)
+      - 0898c1af69dd "selftests/mm: check that MADV_COLD and MADV_PAGEOUT reject hugetlb" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-4-gourry@gourry.net
-      - dbd686a79900 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory" (3/7)
+      - bd2918f029a3 "selftests/mm: check that MADV_COLD and MADV_PAGEOUT preserve shared memory" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-5-gourry@gourry.net
-      - 7703b3bf57a1 "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs" (4/7)
+      - f8356937e312 "selftests/mm: check MADV_COLD and MADV_PAGEOUT on partly advised THPs" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-6-gourry@gourry.net
-      - dfaf08e58616 "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix" (5/7)
+      - d6ac1489e28e "selftests-mm-check-madv_cold-and-madv_pageout-on-partly-advised-thps-fix" (5/7)
         - Authored by a maintainer, reviewed by nobody
-      - d61982aa1cf6 "selftests/mm: check MADV_PAGEOUT file permissions" (6/7)
+      - c63a8476c1bc "selftests/mm: check MADV_PAGEOUT file permissions" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261019171206.3331374-7-gourry@gourry.net
-    - 5a91cd63086f "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
+    - eb398a1f3f72 "selftests/mm: check that unauthorized MADV_PAGEOUT skips large file folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261019171206.3331374-8-gourry@gourry.net
-    - 9c2dfa8d89b4 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 28804c101e73 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - ec7b45fcd6ee "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - 1321c985612a "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 3a1cfe85f435 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - ca970f0a8269 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 76da129d0d7d "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 456c2cb2a7a2 "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-      - 2956de07d5f3 "Docs/admin-guide/mm/damon/lru_sort: fix grammar and style" (7/9)
+      - 5ba0d3317827 "Docs/admin-guide/mm/damon/lru_sort: fix grammar and style" (7/9)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104202959.128646-2-manuelebnerli@mailbox.org
-      - 5837369cdf98 "Docs/admin-guide/mm/damon/reclaim: document how to disable watermarks" (8/9)
+      - ef4f704a1833 "Docs/admin-guide/mm/damon/reclaim: document how to disable watermarks" (8/9)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261102150757.93058-10-sj@kernel.org
     - series "Docs/admin-guide/mm/damon: minor fixes", v2. (3 commits)
-      - a3419b482b16 "Docs/admin-guide/mm/damon: fix various typos" (0/3)
+      - 85c6e6ea135d "Docs/admin-guide/mm/damon: fix various typos" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261102152849.96057-1-sj@kernel.org
         - Link: https://lore.kernel.org/20261102152849.96057-2-sj@kernel.org
-      - a5df51168daf "Docs/admin-guide/mm/damon/lru_sort: fix copy-paste mistakes" (1/3)
+      - fa68edcb1074 "Docs/admin-guide/mm/damon/lru_sort: fix copy-paste mistakes" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261102152849.96057-3-sj@kernel.org
-      - eebfd66dae58 "Docs/admin-guide/mm/damon/usage: fix incorrect option syntax in perf example" (2/3)
+      - 0913a0cd6e9e "Docs/admin-guide/mm/damon/usage: fix incorrect option syntax in perf example" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261102152849.96057-4-sj@kernel.org
-      - 6bb581c73d18 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - 2100fc17609a "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
     - series "Docs: damon: fix grammar and typos", v2. (8 commits)
-      - 17e9f5951f97 "Docs/admin-guide/mm/damon/start: fix grammar" (0/8)
+      - 133a38767e96 "Docs/admin-guide/mm/damon/start: fix grammar" (0/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-1-sj@kernel.org
         - Link: https://lore.kernel.org/20261103005940.91432-2-sj@kernel.org
-      - 7ab8afa7e546 "Docs/admin-guide/mm/damon/stat: fix pronoun agreement" (1/8)
+      - 10944a6531f3 "Docs/admin-guide/mm/damon/stat: fix pronoun agreement" (1/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-3-sj@kernel.org
-      - 9e8b3f765f7e "Docs/admin-guide/mm/damon/usage: fix grammar" (2/8)
+      - d7fa6a0a6f6e "Docs/admin-guide/mm/damon/usage: fix grammar" (2/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-4-sj@kernel.org
-      - 3e3a6e42caa7 "Docs/admin-guide/mm/damon/lru_sort: fix remaining grammar" (3/8)
+      - dd3c77f20c93 "Docs/admin-guide/mm/damon/lru_sort: fix remaining grammar" (3/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-5-sj@kernel.org
-      - e59e27075d0c "Docs/mm/damon/design: fix grammar and typos" (4/8)
+      - 3193f75a3fb0 "Docs/mm/damon/design: fix grammar and typos" (4/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-6-sj@kernel.org
-      - 1fe64288b702 "Docs/mm/damon/api: fix verb form" (5/8)
+      - c54b11009d68 "Docs/mm/damon/api: fix verb form" (5/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-7-sj@kernel.org
-      - 881450220a12 "Docs/mm/damon/maintainer-profile: fix subject-verb agreement" (6/8)
+      - adef07913320 "Docs/mm/damon/maintainer-profile: fix subject-verb agreement" (6/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-8-sj@kernel.org
-      - e8e9c9ed49d3 "Docs/mm/damon/monitoring_intervals_tuning_example: fix grammar and typos" (7/8)
+      - 87a1d50d87b7 "Docs/mm/damon/monitoring_intervals_tuning_example: fix grammar and typos" (7/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103005940.91432-9-sj@kernel.org
-    - 7d190cd9e9b4 "selftests/mm: fix pointer width warnings on 32-bit architectures"
+    - db66f807246d "selftests/mm: fix pointer width warnings on 32-bit architectures"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261103212805.1537354-1-sashal@kernel.org
       - Link: : https://lore.kernel.org/20261103172150.3753dfa00f3106b6014e4d2c@linux-foundation.org
-    - f7dbc5814a76 "tools/mm: add hwpoison-panic tool"
+    - f604c0ffe860 "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - e5b0ea77797d "selftests/mm: uffd-wp-mremap: keep the THP sizes in unsigned long"
+    - 5f38d7eb0cd4 "selftests/mm: uffd-wp-mremap: keep the THP sizes in unsigned long"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261103150232.291827-1-sashal@kernel.org
-    - eb6a8f2c181c "selftests/mm: handle child status safely in khugepaged"
+    - faf26a403518 "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
-      - fcc5bd8e8d3e "selftests/mm: add a uffd test for re-registering during UFFDIO_COPY" (1/2)
+      - a159b0805c90 "selftests/mm: add a uffd test for re-registering during UFFDIO_COPY" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-3-azpijr@gmail.com
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - db662155fabc "alloc_tag: add trace events for tracing allocations" (0/5)
+      - 5517b215b98f "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-      - e6bb53623ac7 "alloc_tag: introduce IOCTLs to toggle allocation tracepoints" (1/5)
+      - ab75d8264478 "alloc_tag: introduce IOCTLs to toggle allocation tracepoints" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/37ae7dca766994d3872fcc65b623a80d5d506369.1793818636.git.abhishekbapat@google.com
-    - a96790863f5c "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry"
+    - 2fe135433352 "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261003103030.63380-3-donggeunyoo.kernel@gmail.com
-      - 00af81da3458 "selftests/mm: test a partial mremap() of hugetlb memory" (1/5)
+      - b2cc8efd7b88 "selftests/mm: test a partial mremap() of hugetlb memory" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-2-f8789de76849@toxicpanda.com
-      - 439a2b62c7d5 "selftests/mm: test mremap() with an old size of 0" (4/5)
+      - 86503de50f80 "selftests/mm: test mremap() with an old size of 0" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261105-b4-mremap-pre-split-v3-5-f8789de76849@toxicpanda.com
-      - 4c88fa2c689f "Docs/mm/damon/design: update for age_ms damos core filter type" (2/4)
+      - 06d57739d114 "Docs/mm/damon/design: update for age_ms damos core filter type" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261106020559.98352-4-sj@kernel.org
-      - fd2774a8a2b3 "Docs/admin-guide/mm/damon/usage: update for age_ms damos core filter" (3/4)
+      - 35f1384586a4 "Docs/admin-guide/mm/damon/usage: update for age_ms damos core filter" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261106020559.98352-5-sj@kernel.org
-    - 8772d717a23d "selftests/mm: pkeys: wait for the child in become_child()"
+    - 0be96f5d5b7a "selftests/mm: pkeys: wait for the child in become_child()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261106164639.2959195-1-clopez@suse.de
       - Link: https://lore.kernel.org/all/20240419115027.3848958-1-usama.anjum@collabora.com [1]
-      - ae9a6b435875 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - ffc6f066e9b5 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 6f79f1811ea9 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - ce7a7b317993 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
-    - 35c5fc59a352 "tools/mm: add page_owner_filter to .gitignore"
+    - cc7833cd9744 "tools/mm: add page_owner_filter to .gitignore"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261109110139.216653-1-sarthak.sharma@arm.com
-      - d8beb7439f93 "Docs/admin-guide/mm/damon/reclaim: improve language" (1/2)
+      - d793cd5cbda3 "Docs/admin-guide/mm/damon/reclaim: improve language" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261110010558.104905-3-sj@kernel.org
-    - e684ec2dfd54 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - 9831086387fa "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/avPOlMOmUdjPe5NJ@chrisdown.name
-    - 24c9025ef645 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+    - 1ea896416598 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
       - Authored by a maintainer, reviewed by nobody
-      - 360088159da5 "Docs/mm/damon/design: update for DAMON_FILTER_TYPE_ACTIVE" (3/4)
+      - af2c80cf797f "Docs/mm/damon/design: update for DAMON_FILTER_TYPE_ACTIVE" (3/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261113051711.89274-5-sj@kernel.org
-- mm-new: 11 total, 0 (3) series, 8 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 2 commits
-    - maintainer, nobody: 2 commits
-  - full commits list
-    - 8b708ef100d1 "selftests/mm: handle implicit read permissions in madv_populate"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
-    - 3d986f822797 "mm/cma: simplify cma_declare_contiguous_multi()"
+    - 38f485fcd4b3 "mm/cma: simplify cma_declare_contiguous_multi()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
-    - b6e9691cc74f "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
+    - 0b56c1d17b0f "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn
-    - de14662bae02 "selftests/mm: allocate nr_pages based on pmd size for uffd pmd_move tests"
+    - a82f2daaf5e8 "selftests/mm: allocate nr_pages based on pmd size for uffd pmd_move tests"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261113040045.1439391-1-jocolema@redhat.com
       - Link: https://lore.kernel.org/all/20261103202049.499206-1-jocolema@redhat.com
-    - abb89b384053 "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
+      - Link: : https://lore.kernel.org/38118330-5cd6-4f32-9098-a3d07cc7b3cf@linux.dev
+    - 8ee5cbd2fe3b "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 2ab04ab5d8f1 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
+    - 6e30b6634438 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
       - Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com
-      - c5c149a09347 "Docs/mm/damon/design: replace "same to" with "same as"" (1/2)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261116151057.81692-3-sj@kernel.org
-      - 144b3dd725db "mm/hugetlb: fix reservation leak on min_size= mounts" (12/15)
+    - 07cb588546fb "Docs/mm/damon/design: replace "same to" with "same as""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261116151057.81692-3-sj@kernel.org
+- mm-new: 7 total, 0 (4) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 3 commits
+    - no role, maintainer: 2 commits
+  - full commits list
+      - b22e35706d84 "mm/hugetlb: fix reservation leak on min_size= mounts" (12/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
         - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-      - 6fee4505683f "mm/hugetlb: account restored reservations before freeing folios" (13/15)
+      - 09c48feb7421 "mm/hugetlb: account restored reservations before freeing folios" (13/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
-    - 738f9270eb8f "selftests/mm: protection_keys: use _exit() in aarch64 ptrace tracee"
+    - 4b5046c33e5a "selftests/mm: protection_keys: use _exit() in aarch64 ptrace tracee"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261116-for-pkey-exit-v1-1-ca4c76b32ff7@kylinos.cn
-    - 25fee5b1762b "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+    - c6ed81f2e523 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
+      - 39e7957560d2 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
+      - e86e3efcdbcb "mm: hugetlb: fix GFP mask propagation to CMA" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
+    - 290fe085f005 "selftests/mm: handle implicit read permissions in madv_populate"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261117070606.3752-1-evers_chen@163.com
+      - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 0fc889b404f3 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
+    - b858f5200ac1 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
       - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

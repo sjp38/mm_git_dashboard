@@ -12,13 +12,13 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - fb128bcfd770 "fs/proc/task_mmu: advance seq_file position on interrupted VMA lookup"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261112140101.647-1-adrianhuang0701@gmail.com
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - d153dfce42a8 "mm/userfaultfd: prevent poison marker loss"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,119 +6,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 28 commits (no change)
+- mm-unstable: 28 -> 29 commits
   - series: 3 (23) -> 3 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+    - no role, no role : 5 -> 6 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
   - changed commits
-    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
-      - 800886149472 "mm/hugetlb: fix NR_HUGETLB accounting for unused surplus folios (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - dropped "Cc: "Oscar Salvador (SUSE)" <osalvador@kernel.org>"
-        - Link: https://lore.kernel.org/20261106100521.30099-4-kaitao.cheng@linux.dev
+    - 19d8575c1939 "mm/hugetlb: charge hugetlb cgroup and memcg in alloc_hugetlb_folio_reserve()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261112-for-alloc_hugetlb-1109-v3-1-7a144510a373@kylinos.cn
 - mm-new: 19 -> 19 commits (no change)
-  - series: 2 (17) -> 2 (17) (no change)
+  - series: 2 (17) -> 2 (18)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
-  - changed commits
-    - series "mm/hugetlb: various fixes", v2. (15)
-      - b244a5b7a0ec "hugetlbfs: fix integer overflow in fallocate() (0/15)"
+    - no role, no role : 6 -> 5 commits
+    - no role, maintainer: 9 -> 10 commits
+  - new commits
+    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
+      - e86e3efcdbcb "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-0-4dd9e94ea9ac@kernel.org
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-      - bd1425837652 "mm/hugetlb: compare against persistent count when freeing lowmem folios (1/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-2-4dd9e94ea9ac@kernel.org
-      - e09749f7a9ca "mm/hugetlb: preserve reservations when shrinking on HIGHMEM (2/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-3-4dd9e94ea9ac@kernel.org
-      - 8349abcb43cc "mm/hugetlb: account temporary folios separately (3/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/179490324902.482102.8381563244741940633.b4-reply@b4"
-        - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-        - added "Tested-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - dropped "Cc: "Gregory Price (Meta)" <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-4-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/179490324902.482102.8381563244741940633.b4-reply@b4
-      - 7b1257def15c "mm/hugetlb: keep surplus folios when the pool shrinks (4/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-5-4dd9e94ea9ac@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-5-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-5-4dd9e94ea9ac@kernel.org
-      - e8b642ac0325 "mm/hugetlb: fix mremap() racing with page migration (5/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4"
-        - added "Tested-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - dropped "Cc: "Gregory Price (Meta)" <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-6-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4
-      - 88b8e4f3341d "hugetlbfs: fix unmapping folios from private VMAs (6/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org"
-        - added "Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4"
-        - added "Tested-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - dropped "Cc: "Gregory Price (Meta)" <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4
-      - 004c4199d9b2 "mm/hugetlb: serialize page-cache allocations with truncation (7/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-8-4dd9e94ea9ac@kernel.org
-      - f7c25cf27fe4 "mm/hugetlb: count again if the reserve map shrank (9/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-10-4dd9e94ea9ac@kernel.org
-      - 32086d9bd738 "hugetlbfs: do not grow a sealed file in mmap() (10/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-11-4dd9e94ea9ac@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-11-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-11-4dd9e94ea9ac@kernel.org
-      - 2caf9e7e5f1e "mm/hugetlb: keep surplus folios that are reserved (11/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-12-4dd9e94ea9ac@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-12-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-12-4dd9e94ea9ac@kernel.org
-      - 144b3dd725db "mm/hugetlb: fix reservation leak on min_size= mounts (12/15)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-      - 6fee4505683f "mm/hugetlb: account restored reservations before freeing folios (13/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@kernel.org>"
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
+        - Link: https://lore.kernel.org/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

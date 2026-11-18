@@ -11,8 +11,17 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 2 commits
+  - new commits
+    - d153dfce42a8 "mm/userfaultfd: prevent poison marker loss"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+    - a89e8b90a1af "mm/userfaultfd: check exclusivity of the page being moved"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
+      - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

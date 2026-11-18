@@ -4,13 +4,13 @@
   - author/reviewer role stat
     - no role, no role : 3 commits
   - full commits list
-    - 411958dac6ba "mm/vmalloc: bail out if in softirq context"
+    - 3821185d9838 "mm/vmalloc: bail out if in softirq context"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com
-    - 133530507af9 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - 805e28f9833d "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
-    - f8da8c3ffbef "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - 16e621f24e92 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -19,28 +19,28 @@
     - no role, nobody: 1 commits
     - no role, no role : 7 commits
   - full commits list
-      - ae76c7d441f1 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
+      - 43430c82cbbc "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261107134953.748622-4-jiangwenxiaomi@gmail.com
-      - d75b922e946c "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (5/10)
+      - a7fa42f2a202 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261107134953.748622-7-jiangwenxiaomi@gmail.com
-      - bdba280b88b6 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (6/10)
+      - e095667a9fa2 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261107134953.748622-8-jiangwenxiaomi@gmail.com
-      - bdba44cd4b94 "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix" (7/10)
+      - 7649b2132b5a "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix" (7/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261111030920.1297625-1-jiangwenxiaomi@gmail.com
-      - 68fcfd09b6b3 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (8/10)
+      - 11048fb0289a "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (8/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261107134953.748622-9-jiangwenxiaomi@gmail.com
-      - 2ef567eb1064 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (9/10)
+      - 3dc247c9d12d "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (9/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261107134953.748622-10-jiangwenxiaomi@gmail.com
-    - 0c9b9f3ee585 "mm/vmalloc: align vm_area so vmap() can batch mappings"
+    - 7f83bd6713b1 "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261107134953.748622-11-jiangwenxiaomi@gmail.com
-    - 47aa41c8eba3 "mm/vmalloc: reject overflowing vm_map_ram page counts"
+    - 876d8ac77b8d "mm/vmalloc: reject overflowing vm_map_ram page counts"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
