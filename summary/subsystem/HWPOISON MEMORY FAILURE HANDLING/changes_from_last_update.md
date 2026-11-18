@@ -9,15 +9,9 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3)
-      - 15ffe5416b81 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261114112523.75208-2-songmuchun@bytedance.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -11,6 +11,82 @@
     - maintainer, nobody: 14 -> 14 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "zram: redesign zcomp and rework backends", v7. (15)
+      - 09d607942d1f "zram: prefix backends printk-s (0/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20261025021839.1542805-2-senozhatsky@chromium.org
+      - d45b15884bba "zram: remove debugfs entry on init failure (1/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-3-senozhatsky@chromium.org
+      - 3c458c9bf636 "zram: reset writeback state in zram_reset_device() (2/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-4-senozhatsky@chromium.org
+      - f9895a68e9c7 "zram: move mark_slot_accessed() under existing slot lock sections (3/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-5-senozhatsky@chromium.org
+      - c0b327f6941a "zram: remove stale WARN_ON() from zram_read_page() (4/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-6-senozhatsky@chromium.org
+      - 71ebc892251b "zram: zstd: do not allocate empty C/D-dictionaries (5/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-7-senozhatsky@chromium.org
+      - 1648a054a4a5 "zram: lz4hc: pre-initialize dictionary stream in setup_params (6/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-8-senozhatsky@chromium.org
+      - 85a6eecc854f "zram: lz4: use LZ4_decompress_safe_usingDict() (7/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-9-senozhatsky@chromium.org
+      - 69bbd786e232 "zram: lz4hc: use LZ4_decompress_safe_usingDict() (8/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-10-senozhatsky@chromium.org
+      - 56a6501c2587 "zram: zstd: do not use kvzalloc() for zstd allocations (9/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-11-senozhatsky@chromium.org
+      - ad0964ba4b9c "zram: split zcomp into separate R/W streams (10/15)"
+        - Authored by a maintainer, reviewed by no role player
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-12-senozhatsky@chromium.org
+      - d706ffda8a0a "zram: introduce shared decompression streams (11/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-13-senozhatsky@chromium.org
+      - 14ba0b42e234 "zram: allocate bounce buffer for spanning objects (12/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-14-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/linux-kernel/20261014153603.1365617-1-zhangbo56@xiaomi.com [1]
+        - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
+      - d3920ada298d "zram: borrow idle decompression streams in exclusive mode (13/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-15-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/linux-kernel/20261015112440.1491168-1-zhangbo56@xiaomi.com [1]
+        - Link: https://lore.kernel.org/linux-kernel/20261016134847.1620103-1-zhangbo0325@gmail.com [2]
+      - ea27b2646e5b "zram: use a singleton compression context for recompression (14/15)"
+        - Authored by a maintainer, reviewed by nobody
+        - dropped "Cc: Bo Zhang <zhangbo0325@gmail.com>"
+        - Link: https://lore.kernel.org/20261025021839.1542805-16-senozhatsky@chromium.org
+    - series "zsmalloc: redesign object alloc API", v3. (11)
+      - ae9a6b435875 "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 6f79f1811ea9 "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

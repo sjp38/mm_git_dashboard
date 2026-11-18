@@ -11,7 +11,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b8eae42f6522 "filemap: prefault writes starting beyond EOF"
+    - 55322d39022a "filemap: prefault writes starting beyond EOF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104071002.49693-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
@@ -20,16 +20,16 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-    - 89eca40ad1c7 "mm/filemap: clear page cache marks once when removing a folio"
+    - 846cb932f7f6 "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - 261865694e4a "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+    - 1fa01138d08c "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
-    - 8c52bb956bfb "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+    - e09315ab4258 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261108085456.2093096-2-thnkslprpt@gmail.com
-    - 7c19dff66b92 "mm: skip empty finite ranges in truncate_pagecache_range"
+    - db41504b2575 "mm: skip empty finite ranges in truncate_pagecache_range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com
@@ -37,7 +37,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - be2b24f56974 "mm/readahead: don't skip the fallback after aligning index down"
+    - a4ae4c85d88c "mm/readahead: don't skip the fallback after aligning index down"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261113072711.235264-1-gopalmalaviya53@gmail.com
       - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]

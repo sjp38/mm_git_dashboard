@@ -9,13 +9,23 @@
   - series: 0 (6) -> 0 (6) (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 1 commits
+  - changed commits
+    - series "zsmalloc: redesign object alloc API", v3. (11)
+      - ae9a6b435875 "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 6f79f1811ea9 "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
+      - 483499ee6c97 "zsmalloc: populate new zspage outside class->lock in zs_store() (10/11)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-12-senozhatsky@chromium.org
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - c37b2f8a9967 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

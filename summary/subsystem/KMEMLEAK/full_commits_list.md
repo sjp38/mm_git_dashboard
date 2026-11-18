@@ -6,17 +6,17 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 4409ff47ee7b "mm: kmemleak: scan modified objects as soon as they are grayed"
+    - 71f79fa00e1f "mm: kmemleak: scan modified objects as soon as they are grayed"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
-    - 3c3bb150505b "mm: kmemleak: serialize disable-time cleanup"
+    - fdc04bc0d780 "mm: kmemleak: serialize disable-time cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/149d93f2cfe20d355f4d9882ce2bf99030217772.1793871596.git.tongweilin@linux.alibaba.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - fc6e446f964b "mm: kmemleak: drop kmemleak_lock in scan_block() when it is contended"
+    - 558608cfd3db "mm: kmemleak: drop kmemleak_lock in scan_block() when it is contended"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261112-kmemleak-scan-lock-break-v1-1-95808108d03c@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

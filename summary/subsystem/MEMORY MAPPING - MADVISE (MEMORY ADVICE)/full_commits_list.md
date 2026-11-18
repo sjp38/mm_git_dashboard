@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 4126965b3a14 "mm/madvise: zap markers from guard regions"
+    - 23a665f5c3ad "mm/madvise: zap markers from guard regions"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261113-disallow-uffd-guard-install-v2-1-9d0063c70542@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

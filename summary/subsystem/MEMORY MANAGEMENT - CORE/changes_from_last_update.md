@@ -3,15 +3,10 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - 205efcdb6efe "mm/huge_memory: flush dirty file PMDs before removing rmap"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261113-dirty_file_pmd-v1-1-8c11f2a2e65f@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 15 -> 15 commits (no change)
@@ -20,27 +15,15 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 4 commits
-  - series: 0 (0) -> 0 (1)
+- mm-new: 4 -> 3 commits
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
+    - no role, no role : 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
     - 5f60cd37f093 "mm/util: fix retry detection and handling in snapshot_page()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261116-snapshot_page_fix-v1-1-8e425984e8d1@kernel.org
-    - series "mm/hugetlb: various fixes", v2. (15)
-      - 22a04cbcb602 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush (14/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
-    - c37b2f8a9967 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-  - changed commits
-    - 8e271e7aa30d "mm/pagewalk: document missing struct members"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

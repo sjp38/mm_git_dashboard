@@ -6,11 +6,11 @@
     - reviewer, maintainer: 1 commits
   - full commits list
     - series "mm: fix swapcache writeout and cluster table races", v2. (3 commits)
-      - 0cf798dff0a5 "mm: vmscan: allow writeout of swapcache folios without anon mappings" (0/3)
+      - 4ee1161ab60c "mm: vmscan: allow writeout of swapcache folios without anon mappings" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
         - Link: https://lore.kernel.org/20261110151407.789960-2-nphamcs@gmail.com
-    - 56e4db920099 "mm: mglru: splice all generations when reparenting a memcg"
+    - 840df0eb0140 "mm: mglru: splice all generations when reparenting a memcg"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261111000913.22943-1-shakeel.butt@linux.dev
       - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
@@ -21,42 +21,42 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - 4546a0ef56a5 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - 2c76b57dc575 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/20261026202313.63122-2-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/linux-mm/20261017050928.128582-2-sidchintamaneni@gmail.com/ [1]
-      - b1d953d802c4 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - 2dae6d0b8626 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-3-sidchintamaneni@gmail.com
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - a004be74e04c "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - 1386077eaa1e "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://lore.kernel.org/20261028010611.3929937-2-tjmercier@google.com
-      - 9b3bc1382b12 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - 6bb581c73d18 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com
-    - cc991b18a817 "mm: split out memory-failure declarations from internal.h"
+    - 646aa3f2e1dc "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - b1b5078db614 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - cdb592a58d4f "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
-      - 83cb34aa6d13 "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
+      - 6dcaf93206ca "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-4-ridong.chen@linux.dev
-      - 789a39b5ff9c "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
+      - c7be5c73064f "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-5-ridong.chen@linux.dev
-      - edd48ca0145d "mm/mglru: add tracepoint for scan_folios()" (4/7)
+      - 1f43b4442b50 "mm/mglru: add tracepoint for scan_folios()" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-6-ridong.chen@linux.dev
-      - 4877756bd090 "mm/mglru: add lruvec_gen_size() helper" (5/7)
+      - 2b1290f3a34e "mm/mglru: add lruvec_gen_size() helper" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-7-ridong.chen@linux.dev
-      - bac8e0333fda "mm/mglru: add tracepoint for aging" (6/7)
+      - 0057e3e179a8 "mm/mglru: add tracepoint for aging" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-8-ridong.chen@linux.dev
 - mm-new: 19 total, 1 (16) series, 3 non-series commits
@@ -70,71 +70,71 @@
     - maintainer, reviewer: 1 commits
   - full commits list
     - series "mm: mglru: fix swappiness behavior", v9. (16 commits)
-      - 51bfebc10dc1 "mm/mglru: report evictable sizes per type" (0/16)
+      - 6e122e726da5 "mm/mglru: report evictable sizes per type" (0/16)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
-      - d28ea7a5186f "mm/mglru: extract lruvec_populated_min_seq() helper" (1/16)
+      - ef6e6dfce1fe "mm/mglru: extract lruvec_populated_min_seq() helper" (1/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org
-      - b82c39c938c2 "mm/mglru: reclaim from the oldest populated gen" (2/16)
+      - 8349e498c0df "mm/mglru: reclaim from the oldest populated gen" (2/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
-      - dc5ef40fae2f "mm/mglru: lift the forced protection of reclaimer" (3/16)
+      - c63182e5335d "mm/mglru: lift the forced protection of reclaimer" (3/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [3]
-      - f093d65297b3 "mm/mglru: skip zones above reclaim_idx instead of rotating them" (4/16)
+      - 78bf9572be19 "mm/mglru: skip zones above reclaim_idx instead of rotating them" (4/16)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org
-      - 18a114683f6e "mm/mglru: return for unavailable anon reclaim earlier" (5/16)
+      - 7b70502cfde0 "mm/mglru: return for unavailable anon reclaim earlier" (5/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org
-      - 31ed8a69f3dc "mm/mglru: balance anon and file scan budget by refault rate" (6/16)
+      - 40ea1f2e8877 "mm/mglru: balance anon and file scan budget by refault rate" (6/16)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org
-      - a92e86c3e084 "mm/mglru: lift youngest gen protection for higher priority" (7/16)
+      - abfd12f3cc2a "mm/mglru: lift youngest gen protection for higher priority" (7/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org
-      - 36c1f70ce709 "mm/mglru: avoid placing rejected folios below populated gen" (8/16)
+      - 0da96a7a79f7 "mm/mglru: avoid placing rejected folios below populated gen" (8/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
-      - 3195e3ebc2be "mm/mglru: run aging when pages are rare outside the youngest gen" (9/16)
+      - 7b6e66ecbd29 "mm/mglru: run aging when pages are rare outside the youngest gen" (9/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
-      - 93a188f6d5de "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen" (10/16)
+      - a922608e2d8d "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen" (10/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261116042556.42111-1-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/CAMgjq7C_cH75JrYs8=P5LbxnDjDD6bqeqsCidOPa=r8Z+42sCQ@mail.gmail.com/ [1]
-      - c7802b90e417 "mm/mglru: run aging when one type is drained" (11/16)
+      - 2f23c1fae6a7 "mm/mglru: run aging when one type is drained" (11/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
-      - 07af3c329f00 "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch" (12/16)
+      - 81cf9a9cf0bf "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch" (12/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
-      - 473e4e54edcb "mm/mglru: restrict eviction accounting to eligible zones" (13/16)
+      - ca2acc89b65f "mm/mglru: restrict eviction accounting to eligible zones" (13/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
-      - ae5e916fd812 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq" (14/16)
+      - d924a1ed3a13 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq" (14/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
-      - 86d36f223d41 "mm/mglru: avoid prolonged anon reclaim with swappiness=200" (15/16)
+      - c313af2c39a7 "mm/mglru: avoid prolonged anon reclaim with swappiness=200" (15/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
-    - b62796d8edba "mm/mglru: make swappiness=1 file reclaim more aggressive"
+    - 2e9bd66bbe5d "mm/mglru: make swappiness=1 file reclaim more aggressive"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
-    - 0100f8fb6fd3 "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
+    - a88aeb91c7f1 "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
-    - 3f7757aeb523 "mm/mglru: use a smaller batch in fill/drain_evictable()"
+    - 6d93cbf0c340 "mm/mglru: use a smaller batch in fill/drain_evictable()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261116061158.333826-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

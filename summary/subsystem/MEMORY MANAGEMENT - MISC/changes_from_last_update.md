@@ -14,30 +14,36 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 6 -> 11 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, nobody: 2 -> 4 commits
-    - no role, no role : 2 -> 3 commits
-    - no role, maintainer: 0 -> 2 commits
+  - changed commits
+    - series "zsmalloc: redesign object alloc API", v3. (11)
+      - ae9a6b435875 "zsmalloc: embed struct zs_handle into zram and zswap entries (8/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
+      - 6f79f1811ea9 "zsmalloc: fold zs_obj_write() into zs_store() (9/11)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Xueyuan Chen <xueyuan.chen21@gmail.com>"
+        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
+- mm-new: 11 -> 11 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - new commits
-    - series "mm/damon: add paddr kunit and replace weird "same to" uses in design doc". (2)
-      - de0ba97b97eb "Docs/mm/damon/design: replace "same to" with "same as" (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261116151057.81692-3-sj@kernel.org
+  - changed commits
     - series "mm/hugetlb: various fixes", v2. (15)
-      - 79b0bab12628 "mm/hugetlb: fix reservation leak on min_size= mounts (12/15)"
+      - 144b3dd725db "mm/hugetlb: fix reservation leak on min_size= mounts (12/15)"
         - Authored by no role player, reviewed by no role player
+        - added "Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org"
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Cc: <stable@kernel.org>"
         - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-      - a320046bd4d7 "mm/hugetlb: account restored reservations before freeing folios (13/15)"
+        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
+      - 6fee4505683f "mm/hugetlb: account restored reservations before freeing folios (13/15)"
         - Authored by no role player, reviewed by nobody
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Cc: <stable@kernel.org>"
         - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
-    - a79b42fe3a75 "selftests/mm: protection_keys: use _exit() in aarch64 ptrace tracee"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261116-for-pkey-exit-v1-1-ca4c76b32ff7@kylinos.cn
-    - c37b2f8a9967 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

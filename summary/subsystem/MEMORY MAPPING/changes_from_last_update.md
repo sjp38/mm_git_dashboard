@@ -12,9 +12,13 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+  - dropped commits
+    - fb128bcfd770 "fs/proc/task_mmu: advance seq_file position on interrupted VMA lookup"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261112140101.647-1-adrianhuang0701@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
