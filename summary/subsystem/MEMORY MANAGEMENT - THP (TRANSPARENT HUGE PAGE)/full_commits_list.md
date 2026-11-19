@@ -8,45 +8,45 @@
     - no role, no role : 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - b36d6b29e708 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 65d4a5598bb0 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev
+      - Link: https://patch.msgid.link/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 9f840cbc5e8c "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - 38f2e58dc72d "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - e885f04a49a5 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
+        - Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
+      - fcbc2950d7f1 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (1/3)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
+        - Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - 3491dc084543 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - 3ff2787a26dd "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 959e698d443f "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+        - Link: https://patch.msgid.link/20261027074904.3328878-2-tongweilin@linux.alibaba.com
+      - b25899f201f8 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - e129c217e9be "tools/mm/thpmaps: fix missing mapping names" (2/3)
+        - Link: https://patch.msgid.link/20261027074904.3328878-3-tongweilin@linux.alibaba.com
+      - af0b5593b4fd "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - b78ff991d738 "selftests/mm: handle child status safely in khugepaged"
+        - Link: https://patch.msgid.link/20261027074904.3328878-4-tongweilin@linux.alibaba.com
+    - 812ed43ba960 "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com
+      - Link: https://patch.msgid.link/20261102185130.30504-1-ampr.mhd@gmail.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - d24e12c15f52 "mm/userfaultfd: prevent poison marker loss"
+    - 1a1b3e61dcfe "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - fdcea7553790 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
+    - 0806fba8ffa2 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com
+      - Link: https://patch.msgid.link/20261104061641.1115805-1-tongweilin@linux.alibaba.com
       - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

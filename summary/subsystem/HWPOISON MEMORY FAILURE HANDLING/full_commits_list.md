@@ -6,21 +6,31 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 865c30655e72 "tools/mm: add hwpoison-panic tool"
+    - 62ae832464b0 "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - af657912910d "mm: split out memory-failure declarations from internal.h"
+      - Link: https://patch.msgid.link/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
+    - e3351b5ade25 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
+- mm-new: 3 total, 2 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3 commits)
-      - 1affae10a43f "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
+      - 3cdcf0c7b0be "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20261114112523.75208-2-songmuchun@bytedance.com
+        - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
+    - series "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio", v2. (2 commits)
+      - 06f34c006154 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261103-hugetlb-hwpoison-leak-v2-0-98085750c145@columbia.edu
+        - Link: https://patch.msgid.link/20261103-hugetlb-hwpoison-leak-v2-1-98085750c145@columbia.edu
+        - Link: https://lore.kernel.org/all/20261102024910.31486-3-kaitao.cheng@linux.dev/ [1]
+      - 282262e9f49c "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix" (1/2)
+        - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

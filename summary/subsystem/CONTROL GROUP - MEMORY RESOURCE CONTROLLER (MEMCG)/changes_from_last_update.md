@@ -1,10 +1,22 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 8c8a36d0de57 "mm: memcontrol: don't lose track of exiting OOM victims"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/avA1wXhTMs9eY2NF@chrisdown.name"
+      - dropped "Link: https://lore.kernel.org/avA1wXhTMs9eY2NF@chrisdown.name"
+      - Link: https://patch.msgid.link/avA1wXhTMs9eY2NF@chrisdown.name
+      - Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com
+    - a0f272cc0c6d "memcg: flush nr_charged_bytes when the obj stock trylock fails"
+      - Authored by a maintainer, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261112013220.4064478-1-shakeel.butt@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20261112013220.4064478-1-shakeel.butt@linux.dev"
+      - Link: https://patch.msgid.link/20261112013220.4064478-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 16 -> 16 commits (no change)
@@ -14,6 +26,94 @@
     - no role, maintainer: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
+  - changed commits
+    - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4)
+      - 4570b82886ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock (0/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261029194452.3189365-2-kuniyu@google.com"
+        - dropped "Link: https://lore.kernel.org/20261029194452.3189365-2-kuniyu@google.com"
+        - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
+        - Link: https://patch.msgid.link/20261029194452.3189365-2-kuniyu@google.com
+      - 763c42a85c2c "memcg: reduce nesting in consume_stock() and refill_stock() (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261029194452.3189365-3-kuniyu@google.com"
+        - dropped "Link: https://lore.kernel.org/20261029194452.3189365-3-kuniyu@google.com"
+        - Link: https://patch.msgid.link/20261029194452.3189365-3-kuniyu@google.com
+      - 3175270c40b8 "memcg: annotate slow paths in consume_stock() and refill_stock() (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261029194452.3189365-4-kuniyu@google.com"
+        - dropped "Link: https://lore.kernel.org/20261029194452.3189365-4-kuniyu@google.com"
+        - Link: https://patch.msgid.link/20261029194452.3189365-4-kuniyu@google.com
+      - 51218f765950 "memcg: uncharge pages outside memcg_stock.lock in refill_stock() (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261029194452.3189365-5-kuniyu@google.com"
+        - dropped "Link: https://lore.kernel.org/20261029194452.3189365-5-kuniyu@google.com"
+        - Link: https://patch.msgid.link/20261029194452.3189365-5-kuniyu@google.com
+    - series "memcg: reduce cacheline contention from lruvec stat", v3. (2)
+      - da9b21751788 "memcg: don't go through the lruvec for folio and kmem lruvec stat updates (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261023195417.1391216-3-joannelkoong@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261023195417.1391216-3-joannelkoong@gmail.com"
+        - Link: https://patch.msgid.link/20261023195417.1391216-3-joannelkoong@gmail.com
+    - series "mm: memcontrol: remove two unused helpers", v1. (2)
+      - 840d9d0f2e19 "mm: memcontrol: remove mod_memcg_page_state() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu"
+        - dropped "Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu"
+        - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-0-240b37c53831@columbia.edu
+        - Link: https://patch.msgid.link/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu
+      - d38658425d17 "mm: memcontrol: remove page_memcg_check() (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu"
+        - dropped "Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu"
+        - Link: https://patch.msgid.link/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu
+    - series "memcg: clean up memory.high enforcement", v2. (5)
+      - ff8fd3633388 "memcg: move memory.high enforcement out of try_charge_memcg() (0/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261030205418.341214-2-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261030205418.341214-2-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20261030205418.341214-1-shakeel.butt@linux.dev
+        - Link: https://patch.msgid.link/20261030205418.341214-2-shakeel.butt@linux.dev
+      - a3435d5e36d1 "memcg: force charges from reclaim before trying the limits (1/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261030205418.341214-3-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261030205418.341214-3-shakeel.butt@linux.dev"
+        - Link: https://patch.msgid.link/20261030205418.341214-3-shakeel.butt@linux.dev
+      - fe55b767656f "memcg: use high_work for kernel threads (2/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261030205418.341214-4-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261030205418.341214-4-shakeel.butt@linux.dev"
+        - Link: https://patch.msgid.link/20261030205418.341214-4-shakeel.butt@linux.dev
+      - af1b2d4324ff "memcg: use high_work for remote charges (3/5)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261030205418.341214-5-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261030205418.341214-5-shakeel.butt@linux.dev"
+        - Link: https://patch.msgid.link/20261030205418.341214-5-shakeel.butt@linux.dev
+      - bceae7cf5663 "memcg: simplify high limit handling after a charge (4/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://patch.msgid.link/20261030205418.341214-6-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261030205418.341214-6-shakeel.butt@linux.dev"
+        - Link: https://patch.msgid.link/20261030205418.341214-6-shakeel.butt@linux.dev
+    - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2)
+      - 6fc94c40cec2 "mm/mglru: stop rotating offlined memcgs to the old generation (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261028010611.3929937-3-tjmercier@google.com"
+        - dropped "Link: https://lore.kernel.org/20261028010611.3929937-3-tjmercier@google.com"
+        - Link: https://patch.msgid.link/20261028010611.3929937-3-tjmercier@google.com
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
+      - 91420fc38c72 "mm/hugetlb: account NR_HUGETLB at folio state transitions (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://patch.msgid.link/20261106100521.30099-5-kaitao.cheng@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261106100521.30099-5-kaitao.cheng@linux.dev"
+        - Link: https://patch.msgid.link/20261106100521.30099-5-kaitao.cheng@linux.dev
+    - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7)
+      - ccb4374eeca6 "mm/memcontrol: drop unused vmscan tracepoint include (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261104130817.849089-2-ridong.chen@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20261104130817.849089-2-ridong.chen@linux.dev"
+        - Link: https://lore.kernel.org/20261104130817.849089-1-ridong.chen@linux.dev
+        - Link: https://patch.msgid.link/20261104130817.849089-2-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20260916095122.50cbb620@robin/ [1]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

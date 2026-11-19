@@ -7,30 +7,40 @@
     - maintainer, no role : 3 commits
     - maintainer, maintainer: 3 commits
   - full commits list
-      - 87502b65c9e8 "zsmalloc: return handle from obj_allocated()" (2/11)
+      - 2c0b2d0d1121 "zsmalloc: return handle from obj_allocated()" (2/11)
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261111064707.2568433-4-senozhatsky@chromium.org
-      - c054e44553c7 "zsmalloc: switch handle type to struct zs_handle" (3/11)
+        - Link: https://patch.msgid.link/20261111064707.2568433-4-senozhatsky@chromium.org
+      - ad72387eaa19 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-5-senozhatsky@chromium.org
-      - a06a35c2e52c "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
+        - Link: https://patch.msgid.link/20261111064707.2568433-5-senozhatsky@chromium.org
+      - 4820135fb784 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261111064707.2568433-9-senozhatsky@chromium.org
-      - 7db7a4e0a741 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+        - Link: https://patch.msgid.link/20261111064707.2568433-9-senozhatsky@chromium.org
+      - 0cd41dd0c976 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 59ec57697523 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+        - Link: https://patch.msgid.link/20261111064707.2568433-10-senozhatsky@chromium.org
+      - e041a0fdf481 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261111064707.2568433-11-senozhatsky@chromium.org
-      - c2e89327d526 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
+        - Link: https://patch.msgid.link/20261111064707.2568433-11-senozhatsky@chromium.org
+      - e8e60aee9c7b "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261111064707.2568433-12-senozhatsky@chromium.org
+        - Link: https://patch.msgid.link/20261111064707.2568433-12-senozhatsky@chromium.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 80ff05b7c050 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+    - 45a890d8b454 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
+      - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 2 total, 0 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - ad9f81fa1e7e "zsmalloc: fix SPDX license identifier"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://patch.msgid.link/39f6056e0c8834fc3eca2001fcb44f3b6048f74d.1795061575.git.senozhatsky@chromium.org
+      - 218600f2d59d "mm/zsmalloc: remove unused zpdesc_lock()" (3/5)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-4-2f845e94dd50@amd.com

@@ -1,4 +1,4 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,6 +8,13 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: Decouple folio-based vmemmap optimization from HugeTLB", v4. (13)
+      - 471c7bf7df5b "mm: hugetlb_vmemmap: simplify shared tail page handling (7/13)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261107022756.77731-9-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com"
+        - Link: https://patch.msgid.link/20261107022756.77731-9-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

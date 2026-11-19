@@ -1,15 +1,27 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 53a6f71c147a "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
-- mm-hotfixes-unstable: 4 -> 4 commits (no change)
+- mm-hotfixes-unstable: 4 -> 5 commits
   - series: 0 (2) -> 0 (2) (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
+  - new commits
+    - cc3360cff683 "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
+  - changed commits
+    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
+      - 5a4405895aa9 "mm/swap: skip relocation of tableless clusters (2/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261110151407.789960-4-nphamcs@gmail.com"
+        - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
+    - 60c183de2c70 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu"
+      - dropped "Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu"
+      - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)
@@ -17,9 +29,48 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - 0a8979f08de7 "mm: bypass swap readahead for zswap"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr"
+      - dropped "Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr"
+      - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
+    - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3)
+      - d879677706e7 "mm, swap: give hibernation swap slots their own swap table entry type (1/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com"
+        - dropped "Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com"
+        - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
+        - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
+      - c09220eca7cd "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot() (2/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com"
+        - dropped "Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com"
+        - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
+    - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4)
+      - 2679ddad0cfe "mm/zswap: drop the stale zswap entry of a zero folio (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261104-swap-fixes-v2-1-204be064be5b@tencent.com"
+        - dropped "Link: https://lore.kernel.org/20261104-swap-fixes-v2-1-204be064be5b@tencent.com"
+        - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
+        - Link: https://patch.msgid.link/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
+      - 578b370b55c9 "mm/swap: account synchronous swap reads as memory stall (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://patch.msgid.link/20261104-swap-fixes-v2-3-204be064be5b@tencent.com"
+        - dropped "Link: https://lore.kernel.org/20261104-swap-fixes-v2-3-204be064be5b@tencent.com"
+        - Link: https://patch.msgid.link/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-nonmm-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, reviewer: 0 -> 2 commits
+  - new commits
+    - series "mm: remove unused functions", v2. (5)
+      - 69cbe47cc6fe "mm/swapops: remove unused make_guard_swp_entry() (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-2-2f845e94dd50@amd.com
+      - 80713f3954f4 "mm/swap: remove unused folio_to_swp_tb() (2/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-3-2f845e94dd50@amd.com

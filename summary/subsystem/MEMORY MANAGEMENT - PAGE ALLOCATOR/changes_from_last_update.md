@@ -1,4 +1,4 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -10,6 +10,40 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
+  - changed commits
+    - 06644d0e5e8d "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261022124504.75642-1-zenghui.yu@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev"
+      - Link: https://patch.msgid.link/20261022124504.75642-1-zenghui.yu@linux.dev
+    - 6a4455deef02 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://patch.msgid.link/20261102081919.80625-1-hui.zhu@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20261102081919.80625-1-hui.zhu@linux.dev"
+      - Link: https://patch.msgid.link/20261102081919.80625-1-hui.zhu@linux.dev
+    - fc051f8614cf "mm: page_owner: use %u to print the stack depot handle"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com"
+      - dropped "Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com"
+      - Link: https://patch.msgid.link/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
+    - e3351b5ade25 "mm: split out memory-failure declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org"
+      - dropped "Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org"
+      - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
+    - series "alloc_tag: Introduce selective tracing for MAP", v5. (5)
+      - 3c44aa9f78ff "alloc_tag: add trace events for tracing allocations (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://patch.msgid.link/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com"
+        - dropped "Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com"
+        - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
+        - Link: https://patch.msgid.link/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
+    - 017cc938fc9c "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://patch.msgid.link/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com"
+      - Link: https://patch.msgid.link/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

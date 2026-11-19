@@ -1,15 +1,73 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
+  - changed commits
+    - 73bf7fb1b83e "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://patch.msgid.link/20261026102503.30860-1-urezki@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261026102503.30860-1-urezki@gmail.com"
+      - Link: https://patch.msgid.link/20261026102503.30860-1-urezki@gmail.com
+    - 0e81f2b23056 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://patch.msgid.link/20260905152717.11711-1-urezki@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com"
+      - Link: https://patch.msgid.link/20260905152717.11711-1-urezki@gmail.com
+    - 7e05c1dc97ee "mm/vmalloc: avoid false sharing with drain_vmap_work"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com"
+      - dropped "Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com"
+      - Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
   - series: 0 (6) -> 0 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
+  - changed commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v12. (10)
+      - c512d64f5f23 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings (2/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://patch.msgid.link/20261107134953.748622-4-jiangwenxiaomi@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261107134953.748622-4-jiangwenxiaomi@gmail.com"
+        - Link: https://patch.msgid.link/20261107134953.748622-4-jiangwenxiaomi@gmail.com
+      - 7652d77bebe6 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://patch.msgid.link/20261107134953.748622-7-jiangwenxiaomi@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261107134953.748622-7-jiangwenxiaomi@gmail.com"
+        - Link: https://patch.msgid.link/20261107134953.748622-7-jiangwenxiaomi@gmail.com
+      - 08dc1a6cf068 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://patch.msgid.link/20261107134953.748622-8-jiangwenxiaomi@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261107134953.748622-8-jiangwenxiaomi@gmail.com"
+        - Link: https://patch.msgid.link/20261107134953.748622-8-jiangwenxiaomi@gmail.com
+      - 4d4b9358ef3b "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix (7/10)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://patch.msgid.link/20261111030920.1297625-1-jiangwenxiaomi@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261111030920.1297625-1-jiangwenxiaomi@gmail.com"
+        - Link: https://patch.msgid.link/20261111030920.1297625-1-jiangwenxiaomi@gmail.com
+      - 0391fc7c54bb "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://patch.msgid.link/20261107134953.748622-9-jiangwenxiaomi@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261107134953.748622-9-jiangwenxiaomi@gmail.com"
+        - Link: https://patch.msgid.link/20261107134953.748622-9-jiangwenxiaomi@gmail.com
+      - 1d1aa2a5bf24 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://patch.msgid.link/20261107134953.748622-10-jiangwenxiaomi@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20261107134953.748622-10-jiangwenxiaomi@gmail.com"
+        - Link: https://patch.msgid.link/20261107134953.748622-10-jiangwenxiaomi@gmail.com
+    - 70d7b86c8ac8 "mm/vmalloc: align vm_area so vmap() can batch mappings"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://patch.msgid.link/20261107134953.748622-11-jiangwenxiaomi@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261107134953.748622-11-jiangwenxiaomi@gmail.com"
+      - Link: https://patch.msgid.link/20261107134953.748622-11-jiangwenxiaomi@gmail.com
+    - e62ecaaa78de "mm/vmalloc: reject overflowing vm_map_ram page counts"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://patch.msgid.link/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org"
+      - dropped "Link: https://lore.kernel.org/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org"
+      - Link: https://patch.msgid.link/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

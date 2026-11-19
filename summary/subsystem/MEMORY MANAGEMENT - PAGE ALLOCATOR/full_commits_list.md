@@ -8,27 +8,27 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - 9031c8149400 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 06644d0e5e8d "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 8a68cb2a0a69 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+      - Link: https://patch.msgid.link/20261022124504.75642-1-zenghui.yu@linux.dev
+    - 6a4455deef02 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261102081919.80625-1-hui.zhu@linux.dev
-    - 555e80936309 "mm: page_owner: use %u to print the stack depot handle"
+      - Link: https://patch.msgid.link/20261102081919.80625-1-hui.zhu@linux.dev
+    - fc051f8614cf "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - af657912910d "mm: split out memory-failure declarations from internal.h"
+      - Link: https://patch.msgid.link/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
+    - e3351b5ade25 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
+      - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - 43577db4711c "alloc_tag: add trace events for tracing allocations" (0/5)
+      - 3c44aa9f78ff "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-    - 650303f78437 "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
+        - Link: https://patch.msgid.link/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
+    - 017cc938fc9c "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
+      - Link: https://patch.msgid.link/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

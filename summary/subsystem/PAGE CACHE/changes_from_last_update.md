@@ -1,23 +1,55 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - cf5518aa1832 "mm/filemap: stop fault-around when the walk steps back"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
-      - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - c26b6a86c68f "filemap: prefault writes starting beyond EOF"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261104071002.49693-1-dennylin0707@gmail.com"
+      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
+      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
+  - changed commits
+    - d70bd2b0b4ab "mm/filemap: clear page cache marks once when removing a folio"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com"
+      - Link: https://patch.msgid.link/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
+    - d7b61b6643c3 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261103193627.71959-1-dennylin0707@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com"
+      - Link: https://patch.msgid.link/20261103193627.71959-1-dennylin0707@gmail.com
+    - 018f99e0648b "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261108085456.2093096-2-thnkslprpt@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261108085456.2093096-2-thnkslprpt@gmail.com"
+      - Link: https://patch.msgid.link/20261108085456.2093096-2-thnkslprpt@gmail.com
+    - 0ff3e344d63a "mm/readahead: don't skip the fallback after aligning index down"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://patch.msgid.link/20261113072711.235264-1-gopalmalaviya53@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20261113072711.235264-1-gopalmalaviya53@gmail.com"
+      - Link: https://patch.msgid.link/20261113072711.235264-1-gopalmalaviya53@gmail.com
+      - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-nonmm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "mm: remove unused functions", v2. (5)
+      - ce4b06730e05 "mm: remove unused helpers from pagemap.h (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261117-unused-sym-mm-v2-0-2f845e94dd50@amd.com
+        - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-1-2f845e94dd50@amd.com
+        - Link: https://github.com/AMDESE/linux-mm/tree/shivank/kunused [1]
+        - Link: https://lore.kernel.org/r/20261026-unused-sym-v1-0-82ca2dceabe1@amd.com [2]

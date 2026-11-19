@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - f680f4685710 "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
+    - f037d1771b59 "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
       - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -14,17 +14,17 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - f30e6f7c8c7a "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 9298c7760473 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261003110137.88619-1-kmehltretter@gmail.com
-    - 94cf08f024fb "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+      - Link: https://patch.msgid.link/20261003110137.88619-1-kmehltretter@gmail.com
+    - 76b568ca8fb3 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
+      - Link: https://patch.msgid.link/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
     - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
-      - cac56a42e206 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+      - 645065a490fb "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
-        - Link: https://lore.kernel.org/20261103102840.68903-2-azpijr@gmail.com
+        - Link: https://patch.msgid.link/20261103102840.68903-2-azpijr@gmail.com
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org [1]
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org [2]
         - Link: https://lore.kernel.org/20261031-fixes_core-v3-23-d6437171ecc3@kernel.org [3] (in linux-next)
@@ -33,10 +33,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - d24e12c15f52 "mm/userfaultfd: prevent poison marker loss"
+    - 1a1b3e61dcfe "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - c1c3a789d730 "mm/userfaultfd: check exclusivity of the page being moved"
+      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+    - cab989daab0f "mm/userfaultfd: check exclusivity of the page being moved"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
       - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/

@@ -4,32 +4,42 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 2ae63314580e "filemap: prefault writes starting beyond EOF"
+    - c26b6a86c68f "filemap: prefault writes starting beyond EOF"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261104071002.49693-1-dennylin0707@gmail.com
+      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 5 commits
   - full commits list
-    - 78a5d958738c "mm/filemap: clear page cache marks once when removing a folio"
+    - d70bd2b0b4ab "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - 757c9eb4885a "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+      - Link: https://patch.msgid.link/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
+    - d7b61b6643c3 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261103193627.71959-1-dennylin0707@gmail.com
-    - c80f12426e11 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+      - Link: https://patch.msgid.link/20261103193627.71959-1-dennylin0707@gmail.com
+    - 018f99e0648b "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261108085456.2093096-2-thnkslprpt@gmail.com
-    - 5caf274a71df "mm: skip empty finite ranges in truncate_pagecache_range"
+      - Link: https://patch.msgid.link/20261108085456.2093096-2-thnkslprpt@gmail.com
+    - 45a57e1cded1 "mm: skip empty finite ranges in truncate_pagecache_range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com
-    - 5556067ec1e7 "mm/readahead: don't skip the fallback after aligning index down"
+    - 0ff3e344d63a "mm/readahead: don't skip the fallback after aligning index down"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261113072711.235264-1-gopalmalaviya53@gmail.com
+      - Link: https://patch.msgid.link/20261113072711.235264-1-gopalmalaviya53@gmail.com
       - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm: remove unused functions", v2. (5 commits)
+      - ce4b06730e05 "mm: remove unused helpers from pagemap.h" (0/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261117-unused-sym-mm-v2-0-2f845e94dd50@amd.com
+        - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-1-2f845e94dd50@amd.com
+        - Link: https://github.com/AMDESE/linux-mm/tree/shivank/kunused [1]
+        - Link: https://lore.kernel.org/r/20261026-unused-sym-v1-0-82ca2dceabe1@amd.com [2]
