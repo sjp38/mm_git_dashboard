@@ -1,12 +1,68 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 16 -> 16 commits (no change)
-  - series: 2 (3) -> 2 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 20 -> 19 commits
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- mm-hotfixes-stable: 16 -> 0 commits
+  - series: 2 (3) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 4 -> 0 commits
+    - no role, reviewer: 3 -> 0 commits
+    - no role, maintainer: 7 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - series "mm/kasan: Detect double-free involving kfree_rcu_sheaf().", v3. (2)
+      - e212c463eee9 "mm/kasan: detect double-free involving kfree_rcu_sheaf() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261028194014.3671161-1-kuniyu@google.com
+        - Link: https://lore.kernel.org/20261028194014.3671161-2-kuniyu@google.com
+        - Link: https://lore.kernel.org/all/6ac959ee.70ed5d86.2ac85.007d.GAE@google.com/ #[0]
+    - 97a5aa11cc0c "mm/kasan/kunit: add double-free tests involving kfree_rcu_sheaf()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261028194014.3671161-3-kuniyu@google.com
+    - 53a6f71c147a "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
+    - a2108a958143 "mm/migrate: move NR_FILE_THPS on cross-node migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261025110209.4105994-1-ridong.chen@linux.dev
+    - 4ac11db025da "mm/migrate: move NR_KERNEL_FILE_PAGES on cross-node migration"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261027043214.2248986-1-ridong.chen@linux.dev
+    - d7e3ce464470 "mm/mempolicy: use one node set for interleave weights"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261030161046.1497894-1-gourry@gourry.net
+    - fc2c19648d68 "mm/shmem: fix swapin livelock on a mismatched large swap cache folio"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261027-shmem-swapin-mismatch-v1-1-84e30aa3b9e5@columbia.edu
+    - cd5f5bf781b4 "mm/memory-failure: fix folio refcount leak and min_order_for_split() locking"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261030-try_to_split_thp_page-v2-1-c957c9b42eab@kernel.org
+    - 111894c595a0 "userfaultfd: clear uffd state in child PTEs if uffd is released during fork"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261031-uffd-prot-bits-fork-event-v2-1-c448e57df417@kernel.org
+    - f987d9f38a46 "mm/vma: undo userfaultfd unmap preparation when unmapping fails"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261101-uffd-unmap-abort-v1-1-1588d7a7c61a@kernel.org
+    - 043b024a4160 "mm: memory-failure: update statistics before emitting the trace event"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/d472a9a3ccfa8c0359d7d7acabed92c8927d8e47.1793174996.git.mchehab+huawei@kernel.org
+    - cf5518aa1832 "mm/filemap: stop fault-around when the walk steps back"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261031-jf-mm-filemap-map-pages-lower-bound-v2-1-21029744e589@linux.dev
+      - Link: https://lore.kernel.org/20260904121301.200049-1-krystianmkaniewski@gmail.com [1]
+    - series "mm/damon: fix watermark state, kunit pid leak and selftest fake pass". (3)
+      - 5fe092741502 "mm/damon/core: reset watermark wait state on each iteration (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102144627.88843-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20261102144627.88843-2-sj@kernel.org
+      - 9d2cc214935a "mm/damon/tests/sysfs-kunit: fix leaked pid reference in add_targets test (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261102144627.88843-3-sj@kernel.org
+    - ff82ce7f90f5 "mm/vma: read anon_vma carefully in validate_mm()"
+      - Authored by no role player, reviewed by nobody
+      - Link: : https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
+      - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
+    - 28ae0385b638 "userfaultfd: validate the whole range before changing write protection"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261104093457.152245-1-umangpokhriyall@gmail.com
+- mm-hotfixes-unstable: 19 -> 19 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
@@ -14,185 +70,37 @@
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 0 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 1ff5a3dbd0ba "mm: list_lru: don't use a new memcg's lists for an offline memcg"
-      - Authored by no role player, reviewed by nobody
-      - added "[akpm@linux-foundation.org: verify memcg owner before skipping allocation]"
-      - added "Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org"
-      - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
-      - Link: https://lore.kernel.org/20261112221248.3512447-1-shakeel.butt@linux.dev
-  - dropped commits
-    - f58af162a04e "mm/list_lru: verify memcg owner before skipping allocation"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 127 -> 154 commits
-  - series: 21 (97) -> 23 (115)
-    - no role, nobody: 6 -> 14 commits
-    - no role, no role : 29 -> 34 commits
+- mm-unstable: 154 -> 154 commits (no change)
+  - series: 23 (115) -> 23 (115) (no change)
+    - no role, nobody: 14 -> 14 commits (no change)
+    - no role, no role : 34 -> 34 commits (no change)
     - no role, reviewer: 15 -> 15 commits (no change)
-    - no role, maintainer: 42 -> 48 commits
+    - no role, maintainer: 48 -> 48 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 2 -> 4 commits
-    - maintainer, no role : 9 -> 14 commits
-    - maintainer, reviewer: 4 -> 5 commits
+    - maintainer, nobody: 4 -> 4 commits (no change)
+    - maintainer, no role : 14 -> 14 commits (no change)
+    - maintainer, reviewer: 5 -> 5 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
-  - new commits
-    - series "mm/damon: add paddr kunit and replace weird "same to" uses in design doc". (2)
-      - a5cfb339b12c "mm/damon/paddr: avoid truncation warning in high-address KUnit test (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261118-fix-damon-paddr-sparse-20261118-v1-1-3a0e943406d5@gmail.com
   - changed commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - 560db1b80214 "mm/mglru: report evictable sizes per type (0/16)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20261114200803.23129-2-baohua@kernel.org
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
-        - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
-        - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
-      - 44275b2341d4 "mm/mglru: extract lruvec_populated_min_seq() helper (1/16)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-3-baohua@kernel.org
-      - e374cc8703ba "mm/mglru: reclaim from the oldest populated gen (2/16)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-4-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
-      - d9f1331c975e "mm/mglru: lift the forced protection of reclaimer (3/16)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-5-baohua@kernel.org
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
-        - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [2]
-        - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [3]
-      - fbf3b959e755 "mm/mglru: skip zones above reclaim_idx instead of rotating them (4/16)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-6-baohua@kernel.org
-      - c6924a450e85 "mm/mglru: return for unavailable anon reclaim earlier (5/16)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-7-baohua@kernel.org
-      - b6297bfe82a6 "mm/mglru: balance anon and file scan budget by refault rate (6/16)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-8-baohua@kernel.org
-      - d71c440bc384 "mm/mglru: lift youngest gen protection for higher priority (7/16)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-9-baohua@kernel.org
-      - 1875743ddc20 "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
+      - 13cb9c7d6995 "mm/hugetlb: preserve persistent flags when returning folios to the pool (1/4)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-10-baohua@kernel.org
-      - 8b1fa9953f85 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-11-baohua@kernel.org
-      - 4a5f7b6d3bb6 "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen (10/16)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261116042556.42111-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7C_cH75JrYs8=P5LbxnDjDD6bqeqsCidOPa=r8Z+42sCQ@mail.gmail.com/ [1]
-      - 8cf9cc5670be "mm/mglru: run aging when one type is drained (11/16)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-12-baohua@kernel.org
-      - 51cb3caaa451 "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch (12/16)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114214438.70148-1-baohua@kernel.org
-      - a8502f3cb9a4 "mm/mglru: restrict eviction accounting to eligible zones (13/16)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-13-baohua@kernel.org
-      - 18c43ce78a3d "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (14/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-14-baohua@kernel.org
-      - d9b9a440e65b "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (15/16)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261114200803.23129-15-baohua@kernel.org
-    - 8a0864f29e04 "mm/mglru: make swappiness=1 file reclaim more aggressive"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261114200803.23129-16-baohua@kernel.org
-    - 423375454fe3 "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261114200803.23129-17-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
-    - 19d8575c1939 "mm/hugetlb: charge hugetlb cgroup and memcg in alloc_hugetlb_folio_reserve()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261112-for-alloc_hugetlb-1109-v3-1-7a144510a373@kylinos.cn
-    - 52f288dd8d87 "mm: kmemleak: drop kmemleak_lock in scan_block() when it is contended"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261112-kmemleak-scan-lock-break-v1-1-95808108d03c@debian.org
-    - 91ab87fcb905 "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
-    - fc70927c37a5 "mm/madvise: zap markers from guard regions"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Link: : https://lore.kernel.org/8092de9e-3146-4fe7-a235-01ea8efab08c@columbia.edu"
-      - added "Reviewed-by: Tal Zussman <tz2294@columbia.edu>"
-      - added "Tested-by: Tal Zussman <tz2294@columbia.edu>"
-      - Link: https://lore.kernel.org/20261113-disallow-uffd-guard-install-v2-1-9d0063c70542@kernel.org
-      - Link: : https://lore.kernel.org/8092de9e-3146-4fe7-a235-01ea8efab08c@columbia.edu
-    - 38f485fcd4b3 "mm/cma: simplify cma_declare_contiguous_multi()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
-    - 11d969d24671 "mm/readahead: don't skip the fallback after aligning index down"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261113072711.235264-1-gopalmalaviya53@gmail.com
-      - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
-    - 365014fc9e2e "mm/hmm: reject shadow-stack mappings"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261113195536.2660763-1-gourry@gourry.net
-      - Link: https://lore.kernel.org/linux-mm/20261111-mason-migrate-et-al-fixes-v1-10-3d2454362e8d@kernel.org/
-    - series "mm/damon: add paddr kunit and replace weird "same to" uses in design doc". (2)
-      - b77124adfd9e "mm/damon/paddr: add KUnit tests for addr_unit conversion (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261116151057.81692-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261116151057.81692-2-sj@kernel.org
-- mm-new: 44 -> 22 commits
-  - series: 3 (32) -> 1 (17)
-    - no role, nobody: 11 -> 4 commits
-    - no role, no role : 11 -> 9 commits
+        - dropped "Cc: "Oscar Salvador (SUSE)" <osalvador@kernel.org>"
+        - Link: https://lore.kernel.org/20261106100521.30099-3-kaitao.cheng@linux.dev
+- mm-new: 22 -> 21 commits
+  - series: 1 (17) -> 1 (17) (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 13 -> 8 commits
-    - maintainer, nobody: 2 -> 0 commits
-    - maintainer, no role : 5 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-  - new commits
-    - d153dfce42a8 "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - a89e8b90a1af "mm/userfaultfd: check exclusivity of the page being moved"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
-      - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - 39e7957560d2 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
-      - e86e3efcdbcb "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
+    - no role, maintainer: 8 -> 8 commits (no change)
+  - dropped commits
+    - series "mm/hugetlb: various fixes", v2. (15)
+      - 93487434a683 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 3 -> 3 commits (no change)

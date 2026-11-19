@@ -1,4 +1,4 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68
+- baseline: v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-      - a9140c4c722f "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
+      - 7ac18fbd2e01 "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261107022756.77731-9-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

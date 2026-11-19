@@ -1,30 +1,24 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 53a6f71c147a "mm, swap: stop cluster list scans once swapoff clears SWP_WRITEOK"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261026-swapoff-writeok-v1-1-4f4cd420aa33@columbia.edu
+- baseline: v7.4-rc3-230-g4405c18c95d2d
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 4 total, 0 (2) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 2 commits
     - reviewer, maintainer: 2 commits
   - full commits list
-    - 7cadb3d30d97 "mm, swap: only prefer nonfull clusters on synchronous devices"
+    - b3e02989c26c "mm, swap: only prefer nonfull clusters on synchronous devices"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
       - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
       - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
       - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
-      - df3d6dd01f67 "mm/swap: publish cluster tables after reacquiring allocator locks" (1/3)
+      - 58b5e479f8f9 "mm/swap: publish cluster tables after reacquiring allocator locks" (1/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
         - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - a68e75e40e49 "mm/swap: skip relocation of tableless clusters" (2/3)
+      - b7e7dbf71daa "mm/swap: skip relocation of tableless clusters" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261110151407.789960-4-nphamcs@gmail.com
-    - 4b0e5264b345 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+    - c80c03f741ca "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -34,30 +28,30 @@
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 3 commits
   - full commits list
-    - 0d7639dc05ce "mm: bypass swap readahead for zswap"
+    - ea74cc4d09c1 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261102144835.304017-1-alex@ghiti.fr
     - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3 commits)
-      - a93c23cb5b51 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
+      - e0d2190cb2aa "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
-      - 97ef7fe8cdf9 "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
+      - ed4954ceca2e "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
-      - 845de6dbb1ec "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
+      - 630b31815c08 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
     - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4 commits)
-      - 5c4c07979540 "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
+      - 055f7e5be01f "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
-      - e32f2dec47b0 "mm/swap: account synchronous swap reads as memory stall" (2/4)
+      - 3bbff3e5d8ed "mm/swap: account synchronous swap reads as memory stall" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
-      - f0ce11b7f631 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
+      - b53b36ff1b67 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-4-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/linux-mm/auOz00OGB_8dgniC@cmpxchg.org/

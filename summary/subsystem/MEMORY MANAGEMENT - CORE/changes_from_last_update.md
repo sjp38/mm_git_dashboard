@@ -1,38 +1,40 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- mm-hotfixes-stable: 2 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - series "mm: Fix page-table teardown during memory hot-remove", v3. (4)
+      - 2a700ab99228 "mm: fix missing page-table destructor in pagetable_free() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261023063428.3658761-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20261023063428.3658761-2-songmuchun@bytedance.com
+    - ff82ce7f90f5 "mm/vma: read anon_vma carefully in validate_mm()"
+      - Authored by no role player, reviewed by nobody
+      - Link: : https://lore.kernel.org/auhn01dpDzK47igy@thinkstation
+      - Link: https://lore.kernel.org/20261102-fix-validate_mm-v1-1-5c309614ef15@kernel.org
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 16 commits
+- mm-unstable: 16 -> 16 commits (no change)
   - series: 3 (11) -> 3 (11) (no change)
-    - no role, no role : 9 -> 10 commits
+    - no role, no role : 10 -> 10 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 13558735a2ba "mm/pagewalk: document missing struct members"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
-- mm-new: 3 -> 4 commits
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
+- mm-new: 4 -> 3 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - d153dfce42a8 "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - 39e7957560d2 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
+  - dropped commits
+    - series "mm/hugetlb: various fixes", v2. (15)
+      - 93487434a683 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

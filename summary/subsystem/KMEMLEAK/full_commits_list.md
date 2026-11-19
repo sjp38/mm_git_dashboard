@@ -1,4 +1,4 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68
+- baseline: v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -6,13 +6,13 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-    - 046fad39515b "mm: kmemleak: scan modified objects as soon as they are grayed"
+    - 814f754b8ddc "mm: kmemleak: scan modified objects as soon as they are grayed"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261030-kmemleak-gray-drain-v2-1-3ec29a96668e@debian.org
-    - 96139fb2b134 "mm: kmemleak: serialize disable-time cleanup"
+    - 5d35ae05df56 "mm: kmemleak: serialize disable-time cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/149d93f2cfe20d355f4d9882ce2bf99030217772.1793871596.git.tongweilin@linux.alibaba.com
-    - 52f288dd8d87 "mm: kmemleak: drop kmemleak_lock in scan_block() when it is contended"
+    - cbb91ee3af95 "mm: kmemleak: drop kmemleak_lock in scan_block() when it is contended"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261112-kmemleak-scan-lock-break-v1-1-95808108d03c@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

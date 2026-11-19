@@ -1,14 +1,14 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68
+- baseline: v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 30f4f4d557a7 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
+    - f563d33b2825 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261112061231.2469026-1-shakeel.butt@linux.dev
-    - 1ff5a3dbd0ba "mm: list_lru: don't use a new memcg's lists for an offline memcg"
+    - 1de2a0a34d67 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
       - Link: https://lore.kernel.org/20261112221248.3512447-1-shakeel.butt@linux.dev
@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - ad9e25615937 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - 8171723ce5af "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-3-ridong.chen@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

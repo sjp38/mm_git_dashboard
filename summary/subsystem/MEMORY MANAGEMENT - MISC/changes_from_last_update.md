@@ -1,4 +1,4 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,64 +6,24 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 54 -> 60 commits
+- mm-unstable: 60 -> 60 commits (no change)
   - series: 8 (42) -> 8 (42) (no change)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 22 -> 24 commits
-    - no role, maintainer: 21 -> 22 commits
-    - maintainer, nobody: 3 -> 5 commits
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 24 -> 24 commits (no change)
+    - no role, maintainer: 22 -> 22 commits (no change)
+    - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - 38f485fcd4b3 "mm/cma: simplify cma_declare_contiguous_multi()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261115-cma-multi-v4-1-d159631171d5@kernel.org
-    - 0b56c1d17b0f "selftests/mm: mlock2-tests: fix fclose(NULL) in is_vmflag_set()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261113-for-mlock2-v2-1-f62195fc8394@kylinos.cn
-    - a82f2daaf5e8 "selftests/mm: allocate nr_pages based on pmd size for uffd pmd_move tests"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - added "Link: : https://lore.kernel.org/38118330-5cd6-4f32-9098-a3d07cc7b3cf@linux.dev"
-      - added "Tested-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-      - dropped "Cc: "Zenghui Yu (Huawei)" <zenghui.yu@linux.dev>"
-      - Link: https://lore.kernel.org/20261113040045.1439391-1-jocolema@redhat.com
-      - Link: https://lore.kernel.org/all/20261103202049.499206-1-jocolema@redhat.com
-      - Link: : https://lore.kernel.org/38118330-5cd6-4f32-9098-a3d07cc7b3cf@linux.dev
-    - 8ee5cbd2fe3b "selftests-mm-allocate-nr_pages-based-on-pmd-size-for-uffd-pmd_move-tests-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 6e30b6634438 "selftests/mm: retain move-pmd coverage and verify huge PMDs"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/r/20261113040045.1439391-1-jocolema@redhat.com [1]
-      - Link: : https://lore.kernel.org/20261115153013.1801047-1-jocolema@redhat.com
-    - 07cb588546fb "Docs/mm/damon/design: replace "same to" with "same as""
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261116151057.81692-3-sj@kernel.org
-- mm-new: 11 -> 7 commits
-  - series: 0 (3) -> 0 (4)
-    - no role, nobody: 4 -> 2 commits
+- mm-new: 7 -> 7 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 2 -> 0 commits
-  - new commits
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - 39e7957560d2 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
-      - e86e3efcdbcb "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
   - changed commits
-    - 290fe085f005 "selftests/mm: handle implicit read permissions in madv_populate"
+    - be03a6cf5532 "selftests/mm: handle implicit read permissions in madv_populate"
       - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20261117070606.3752-1-evers_chen@163.com"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Fixes: 6c7559f22b6f ("riscv/mm: ensure PROT_WRITE leads to VM_READ | VM_WRITE")"
+      - dropped "Fixes: e5bfac53e310 ("selftests/vm: add test for MADV_POPULATE_(READ|WRITE)")"
       - Link: https://lore.kernel.org/20261117070606.3752-1-evers_chen@163.com
       - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)

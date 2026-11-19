@@ -1,33 +1,46 @@
-- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc1-914-gfa4ad798f6f68 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.4-rc1-914-gfa4ad798f6f68 -> v7.4-rc3-230-g4405c18c95d2d
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - ccf8bda05b19 "hugetlbfs: move hugetlbfs_free_inode tracepoint to ->destroy_inode()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261102-b4-hugetlbfs-trace-v4-1-72371825bb5e@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 29 commits
+- mm-unstable: 29 -> 29 commits (no change)
   - series: 3 (23) -> 3 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 6 commits
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
   - changed commits
-    - 19d8575c1939 "mm/hugetlb: charge hugetlb cgroup and memcg in alloc_hugetlb_folio_reserve()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261112-for-alloc_hugetlb-1109-v3-1-7a144510a373@kylinos.cn
-- mm-new: 19 -> 19 commits (no change)
-  - series: 2 (17) -> 2 (18)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 6 -> 5 commits
-    - no role, maintainer: 9 -> 10 commits
-  - new commits
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - e86e3efcdbcb "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
+    - series "mm/hugetlb: Fix CMA parsing, flags and usage accounting", v3. (4)
+      - 13cb9c7d6995 "mm/hugetlb: preserve persistent flags when returning folios to the pool (1/4)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
+        - dropped "Cc: "Oscar Salvador (SUSE)" <osalvador@kernel.org>"
+        - Link: https://lore.kernel.org/20261106100521.30099-3-kaitao.cheng@linux.dev
+- mm-new: 19 -> 18 commits
+  - series: 2 (18) -> 2 (18) (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, maintainer: 10 -> 10 commits (no change)
+  - changed commits
+    - series "mm/hugetlb: various fixes", v2. (15)
+      - 8ea67e48e22b "hugetlbfs: fix unmapping folios from private VMAs (6/15)"
+        - Authored by no role player, reviewed by a maintainer
+        - dropped "Cc: "Oscar Salvador (SUSE)" <osalvador@kernel.org>"
+        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
+        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
+        - Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4
+  - dropped commits
+    - series "mm/hugetlb: various fixes", v2. (15)
+      - 93487434a683 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
