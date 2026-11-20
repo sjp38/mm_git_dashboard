@@ -5,43 +5,39 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - 62ae832464b0 "tools/mm: add hwpoison-panic tool"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://patch.msgid.link/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org"
-      - dropped "Link: https://lore.kernel.org/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org"
-      - Link: https://patch.msgid.link/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - e3351b5ade25 "mm: split out memory-failure declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org"
-      - dropped "Link: https://lore.kernel.org/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org"
-      - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
-      - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-- mm-new: 1 -> 3 commits
-  - series: 1 (1) -> 2 (3)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 2 -> 5 commits
+  - series: 0 (0) -> 2 (3)
+    - no role, maintainer: 2 -> 4 commits
     - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio", v2. (2)
-      - 06f34c006154 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio (0/2)"
+  - changed commits
+    - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3)
+      - 45f504b571b2 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization (0/3)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org"
+        - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
+        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
+        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
+        - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
+        - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
+        - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
+    - series "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio", v2. (2)
+      - c3b36ed0d905 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
         - Link: https://lore.kernel.org/20261103-hugetlb-hwpoison-leak-v2-0-98085750c145@columbia.edu
         - Link: https://patch.msgid.link/20261103-hugetlb-hwpoison-leak-v2-1-98085750c145@columbia.edu
         - Link: https://lore.kernel.org/all/20261102024910.31486-3-kaitao.cheng@linux.dev/ [1]
-      - 282262e9f49c "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix (1/2)"
+      - ea64f9746357 "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix (1/2)"
         - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3)
-      - 3cdcf0c7b0be "mm/hugetlb_vmemmap: fix HWPoison state races during optimization (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/20261114112523.75208-2-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
-        - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
+- mm-new: 3 -> 0 commits
+  - series: 2 (3) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

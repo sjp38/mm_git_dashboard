@@ -1,30 +1,30 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 5 total, 0 (2) series, 3 non-series commits
+- mm-hotfixes-unstable: 5 total, 0 (3) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
     - no role, maintainer: 2 commits
     - reviewer, maintainer: 2 commits
   - full commits list
-    - bb24eec79745 "mm, swap: only prefer nonfull clusters on synchronous devices"
+    - 41934b54f7b1 "mm, swap: only prefer nonfull clusters on synchronous devices"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
       - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
       - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
       - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
-      - 4e95b59d0bfc "mm/swap: publish cluster tables after reacquiring allocator locks" (1/3)
+      - 6edd7c1c6377 "mm/swap: publish cluster tables after reacquiring allocator locks" (1/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
         - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - 5a4405895aa9 "mm/swap: skip relocation of tableless clusters" (2/3)
+      - e3af774520fd "mm/swap: skip relocation of tableless clusters" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
-    - cc3360cff683 "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
+    - 4017a338acae "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
-    - 60c183de2c70 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
+      - 67db608d517c "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()" (6/15)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 7 total, 2 (6) series, 1 non-series commits
   - author/reviewer role stat
@@ -32,30 +32,30 @@
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 3 commits
   - full commits list
-    - 0a8979f08de7 "mm: bypass swap readahead for zswap"
+    - 96e77f931022 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
     - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3 commits)
-      - 70dae30cfb51 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
+      - b745ea078bad "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
-      - d879677706e7 "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
+      - d9b7df62b1de "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
-      - c09220eca7cd "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
+      - 2bf6868906aa "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
     - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4 commits)
-      - 2679ddad0cfe "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
+      - c3c53dfa4a4f "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
-      - 578b370b55c9 "mm/swap: account synchronous swap reads as memory stall" (2/4)
+      - fad034116bd5 "mm/swap: account synchronous swap reads as memory stall" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
-      - 24359feedfaf "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
+      - 1160b166e000 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-4-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/linux-mm/auOz00OGB_8dgniC@cmpxchg.org/
@@ -65,9 +65,9 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-      - 69cbe47cc6fe "mm/swapops: remove unused make_guard_swp_entry()" (1/5)
+      - 258f5c336da6 "mm/swapops: remove unused make_guard_swp_entry()" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-2-2f845e94dd50@amd.com
-      - 80713f3954f4 "mm/swap: remove unused folio_to_swp_tb()" (2/5)
+      - 0fa233161203 "mm/swap: remove unused folio_to_swp_tb()" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-3-2f845e94dd50@amd.com

@@ -1,82 +1,85 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 60c183de2c70 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
-    - 6cc4899e34de "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261109021611.22247-1-hui.zhu@linux.dev
+      - 67db608d517c "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()" (6/15)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
+      - 2ba4d2c9ae3c "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()" (7/15)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261109021611.22247-1-hui.zhu@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 13 total, 2 (8) series, 5 non-series commits
+- mm-unstable: 16 total, 2 (9) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, no role : 7 commits
+    - no role, no role : 9 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 4 commits
+    - no role, maintainer: 5 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - b4881d5b2a0f "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+    - 11781f27a22b "mm/vmstat: annotate data race in zone_page_state_snapshot()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261028100549.70689-1-hui.zhu@linux.dev
-      - ef430b868f34 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 0e42a07dec30 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261019090830.1917657-4-songmuchun@bytedance.com
     - series "mm: Remove pagetable_dtor_free()". (2 commits)
-      - a54f118b7eef "mm: remove pagetable_dtor_free()" (0/2)
+      - 5c2f5f44a5dd "mm: remove pagetable_dtor_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
         - Link: https://patch.msgid.link/20261030083800.599152-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
-    - 0a8979f08de7 "mm: bypass swap readahead for zswap"
+    - 96e77f931022 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - e2add0417368 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - 4280583e5edd "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://patch.msgid.link/20261028010611.3929937-2-tjmercier@google.com
-      - 6fc94c40cec2 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - d4d53bb5565d "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261028010611.3929937-3-tjmercier@google.com
-      - 40c21b6fb265 "mm, swap: fix large swap-in across swap file extents" (1/4)
+      - 6a1703041ebd "mm, swap: fix large swap-in across swap file extents" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-2-204be064be5b@tencent.com
-    - e3351b5ade25 "mm: split out memory-failure declarations from internal.h"
+    - 7501a41cd70f "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - 5cfb16b4dc5b "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
+      - 5d3097907fdd "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107043122.25650-5-songmuchun@bytedance.com
-      - 367349975b28 "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs" (4/5)
+      - e173005d46b3 "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107043122.25650-6-songmuchun@bytedance.com
-      - c512d64f5f23 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
+      - b57430cec4f5 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-4-jiangwenxiaomi@gmail.com
-    - 591bb5b29123 "mm: free unused page table allocated by do_set_pmd()"
+    - 894ddee50ce7 "mm: free unused page table allocated by do_set_pmd()"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/c13cdd25-7d7b-4059-a22d-af0a48fabaac@kernel.org
-    - 08ad1f338292 "mm/pagewalk: document missing struct members"
+    - 431bdd58960d "mm/pagewalk: document missing struct members"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
-- mm-new: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 45a890d8b454 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+    - 1f697bf44af8 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-    - 1a1b3e61dcfe "mm/userfaultfd: prevent poison marker loss"
+    - 972e30eda570 "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-      - ff7b65d35ee7 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios" (1/3)
+      - 4ed9d6529623 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
+        - Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - a8ce63a2d6e6 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

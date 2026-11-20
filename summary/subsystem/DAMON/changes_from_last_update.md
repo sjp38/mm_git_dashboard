@@ -1,18 +1,12 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 35 -> 0 commits
-  - series: 8 (34) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 25 -> 0 commits
-    - maintainer, nobody: 4 -> 0 commits
-    - maintainer, no role : 4 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

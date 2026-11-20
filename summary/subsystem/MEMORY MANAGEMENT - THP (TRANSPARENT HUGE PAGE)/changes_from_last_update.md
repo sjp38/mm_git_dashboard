@@ -5,70 +5,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 8 commits
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 5 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 65d4a5598bb0 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - 972e30eda570 "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
-      - added "Link: https://patch.msgid.link/20261028100119.11340-1-zenghui.yu@linux.dev"
-      - dropped "Link: https://lore.kernel.org/20261028100119.11340-1-zenghui.yu@linux.dev"
-      - Link: https://patch.msgid.link/20261028100119.11340-1-zenghui.yu@linux.dev
-      - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
-    - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3)
-      - 38f2e58dc72d "kselftest: mm: rename read_pmd_pagesize() to pmd_psize() (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com"
-        - dropped "Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com"
-        - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
-        - Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - fcbc2950d7f1 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com"
-        - dropped "Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com"
-        - Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
-    - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3)
-      - 3ff2787a26dd "tools/mm/thpmaps: fix partial THP anon/file accounting (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261027074904.3328878-2-tongweilin@linux.alibaba.com"
-        - dropped "Link: https://lore.kernel.org/20261027074904.3328878-2-tongweilin@linux.alibaba.com"
-        - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
-        - Link: https://patch.msgid.link/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - b25899f201f8 "tools/mm/thpmaps: fix missing order-1 file THP statistics (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://patch.msgid.link/20261027074904.3328878-3-tongweilin@linux.alibaba.com"
-        - dropped "Link: https://lore.kernel.org/20261027074904.3328878-3-tongweilin@linux.alibaba.com"
-        - Link: https://patch.msgid.link/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - af0b5593b4fd "tools/mm/thpmaps: fix missing mapping names (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://patch.msgid.link/20261027074904.3328878-4-tongweilin@linux.alibaba.com"
-        - dropped "Link: https://lore.kernel.org/20261027074904.3328878-4-tongweilin@linux.alibaba.com"
-        - Link: https://patch.msgid.link/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 812ed43ba960 "selftests/mm: handle child status safely in khugepaged"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://patch.msgid.link/20261102185130.30504-1-ampr.mhd@gmail.com"
-      - dropped "Link: https://lore.kernel.org/20261102185130.30504-1-ampr.mhd@gmail.com"
-      - Link: https://patch.msgid.link/20261102185130.30504-1-ampr.mhd@gmail.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 1a1b3e61dcfe "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org"
+      - branch: mm-new -> mm-unstable
       - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 0806fba8ffa2 "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://patch.msgid.link/20261104061641.1115805-1-tongweilin@linux.alibaba.com"
-      - dropped "Link: https://lore.kernel.org/20261104061641.1115805-1-tongweilin@linux.alibaba.com"
-      - Link: https://patch.msgid.link/20261104061641.1115805-1-tongweilin@linux.alibaba.com
-      - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

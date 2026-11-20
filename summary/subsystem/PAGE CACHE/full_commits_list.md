@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - c26b6a86c68f "filemap: prefault writes starting beyond EOF"
+    - 1bbb750184b8 "filemap: prefault writes starting beyond EOF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
@@ -13,20 +13,20 @@
   - author/reviewer role stat
     - no role, maintainer: 5 commits
   - full commits list
-    - d70bd2b0b4ab "mm/filemap: clear page cache marks once when removing a folio"
+    - cb07060b8be5 "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - d7b61b6643c3 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+    - e3b27066bdb8 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261103193627.71959-1-dennylin0707@gmail.com
-    - 018f99e0648b "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+    - 5d64deb9f21b "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261108085456.2093096-2-thnkslprpt@gmail.com
-    - 45a57e1cded1 "mm: skip empty finite ranges in truncate_pagecache_range"
+    - 2ef84ea069a5 "mm: skip empty finite ranges in truncate_pagecache_range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com
-    - 0ff3e344d63a "mm/readahead: don't skip the fallback after aligning index down"
+    - a179a6930f79 "mm/readahead: don't skip the fallback after aligning index down"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261113072711.235264-1-gopalmalaviya53@gmail.com
       - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
@@ -37,7 +37,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: remove unused functions", v2. (5 commits)
-      - ce4b06730e05 "mm: remove unused helpers from pagemap.h" (0/5)
+      - dfe620a0296d "mm: remove unused helpers from pagemap.h" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261117-unused-sym-mm-v2-0-2f845e94dd50@amd.com
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-1-2f845e94dd50@amd.com
