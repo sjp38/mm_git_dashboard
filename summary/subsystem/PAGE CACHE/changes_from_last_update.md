@@ -1,16 +1,29 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 76e1b20670b5 "filemap: prefault writes starting beyond EOF"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
+      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
+      - 3d57cec83782 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

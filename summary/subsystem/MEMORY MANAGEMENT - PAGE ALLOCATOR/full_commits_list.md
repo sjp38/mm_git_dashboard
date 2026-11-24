@@ -8,27 +8,48 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - e9c9cea5db90 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 6b65e6296204 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 659fbb3c056c "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - bc2e0b9a297b "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261102081919.80625-1-hui.zhu@linux.dev
-    - 483100575e6c "mm: page_owner: use %u to print the stack depot handle"
+    - 06186388b0a7 "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - 7501a41cd70f "mm: split out memory-failure declarations from internal.h"
+    - 8b041d64196b "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - 10b6320d7ff1 "alloc_tag: add trace events for tracing allocations" (0/5)
+      - f54cb4dccac5 "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://patch.msgid.link/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-    - 0329dde057d8 "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
+    - eff8ddb518f0 "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
       - Authored by no role player, reviewed by nobody
       - Link: https://patch.msgid.link/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 6 total, 0 (6) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 6 commits
+  - full commits list
+      - 0acedaf39e51 "mm/page_ext: fix client data alignment" (1/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
+      - 9443603b890a "mm/page_ext: always use vmalloc for section page extensions" (2/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
+      - a8e3ddb2fc25 "mm/page_ext: use common allocation and initialization entry points" (3/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
+      - 406742dadf20 "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
+      - 671c069c262f "mm/page_ext: inline unchecked page extension lookup" (5/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
+      - 5bd93e4b0b35 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

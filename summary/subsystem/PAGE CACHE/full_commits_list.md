@@ -1,43 +1,49 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 1bbb750184b8 "filemap: prefault writes starting beyond EOF"
+    - 76e1b20670b5 "filemap: prefault writes starting beyond EOF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 5 commits
   - full commits list
-    - cb07060b8be5 "mm/filemap: clear page cache marks once when removing a folio"
+    - fdefb1904600 "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - e3b27066bdb8 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+    - 31e04700cdd1 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261103193627.71959-1-dennylin0707@gmail.com
-    - 5d64deb9f21b "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+    - e9dd2dd4b858 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261108085456.2093096-2-thnkslprpt@gmail.com
-    - 2ef84ea069a5 "mm: skip empty finite ranges in truncate_pagecache_range"
+    - fec3fad0be20 "mm: skip empty finite ranges in truncate_pagecache_range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com
-    - a179a6930f79 "mm/readahead: don't skip the fallback after aligning index down"
+    - 000c791bd240 "mm/readahead: don't skip the fallback after aligning index down"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261113072711.235264-1-gopalmalaviya53@gmail.com
       - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - maintainer, no role : 1 commits
+  - full commits list
+      - 3d57cec83782 "mm/mglru: make PG_workingset helpers work based on folio LRU refs" (15/18)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
     - series "mm: remove unused functions", v2. (5 commits)
-      - dfe620a0296d "mm: remove unused helpers from pagemap.h" (0/5)
+      - 135d5300b2f7 "mm: remove unused helpers from pagemap.h" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261117-unused-sym-mm-v2-0-2f845e94dd50@amd.com
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-1-2f845e94dd50@amd.com

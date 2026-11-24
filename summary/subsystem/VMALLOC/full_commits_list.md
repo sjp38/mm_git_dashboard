@@ -1,48 +1,56 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 0 (3) series, 0 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
   - full commits list
-      - 0abd20d2bb19 "mm/vmalloc: bail out if in softirq context" (3/15)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261026102503.30860-1-urezki@gmail.com
-      - 2ad76326668c "mm/vmalloc: use dedicated unbound workqueues for vmap drain" (4/15)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20260905152717.11711-1-urezki@gmail.com
-      - 0199d03ed323 "mm/vmalloc: avoid false sharing with drain_vmap_work" (5/15)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
+    - 2e243f44ce10 "mm/vmalloc: bail out if in softirq context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261026102503.30860-1-urezki@gmail.com
+    - 0c2c857afaeb "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20260905152717.11711-1-urezki@gmail.com
+    - f60649e9ccb5 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 0 (6) series, 2 non-series commits
+- mm-unstable: 10 total, 1 (8) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 7 commits
+    - no role, no role : 9 commits
   - full commits list
-      - b57430cec4f5 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
+      - de118e105097 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-4-jiangwenxiaomi@gmail.com
-      - b9df3c7e1f08 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (5/10)
+      - b93a9ce41706 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-7-jiangwenxiaomi@gmail.com
-      - 57fbf13693fe "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (6/10)
+      - 377bf550b537 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-8-jiangwenxiaomi@gmail.com
-      - b7353e1da8dd "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix" (7/10)
+      - 8cd940c4a29e "mm-vmalloc-extend-page-table-walk-to-support-larger-page_shift-sizes-and-eliminate-page-table-rewalk-fix" (7/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261111030920.1297625-1-jiangwenxiaomi@gmail.com
-      - c7c5bbbeae37 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (8/10)
+      - 006bcce6be12 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (8/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-9-jiangwenxiaomi@gmail.com
-      - adce573f5d17 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (9/10)
+      - 11677e3d8e2e "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (9/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-10-jiangwenxiaomi@gmail.com
-    - 4fdf306392af "mm/vmalloc: align vm_area so vmap() can batch mappings"
+    - 184bc3e0c11f "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261107134953.748622-11-jiangwenxiaomi@gmail.com
-    - df71b1fa1f39 "mm/vmalloc: reject overflowing vm_map_ram page counts"
+    - e2c867628809 "mm/vmalloc: reject overflowing vm_map_ram page counts"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261022-vmalloc-reject-overflow-v2-1-0db7a20c53f0@gentwo.org
+    - series "mm/vmalloc: harden remap_vmalloc_range_partial against NULL pages", v2. (2 commits)
+      - d1a29dd0ef28 "mm/vmalloc: drop VM_DMA_COHERENT from remap_vmalloc_range_partial" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261029-vmalloc_remap-v2-0-c4705cbf26c2@linux.dev
+        - Link: https://patch.msgid.link/20261029-vmalloc_remap-v2-1-c4705cbf26c2@linux.dev
+      - f65a7a58bb40 "mm/vmalloc: reject NULL pages in remap_vmalloc_range_partial" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261029-vmalloc_remap-v2-2-c4705cbf26c2@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

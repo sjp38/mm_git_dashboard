@@ -1,67 +1,92 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - fe7e4ee305cf "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261113193812.1239880-1-ivanrwcm25@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 60 -> 66 commits
-  - series: 8 (42) -> 8 (44)
-    - no role, nobody: 4 -> 5 commits
-    - no role, no role : 24 -> 26 commits
-    - no role, maintainer: 22 -> 24 commits
-    - maintainer, nobody: 5 -> 6 commits
+- mm-unstable: 66 -> 74 commits
+  - series: 8 (44) -> 8 (48)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 26 -> 30 commits
+    - no role, maintainer: 24 -> 26 commits
+    - maintainer, nobody: 6 -> 7 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3)
-      - 41b6633ca92d "kselftest-mm-rename-read_pmd_pagesize-to-pmd_psize-fix (1/3)"
-        - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 94f7747ddaa5 "selftests/mm: protection_keys: use _exit() in aarch64 ptrace tracee"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-for-pkey-exit-v1-1-ca4c76b32ff7@kylinos.cn
-    - 1f697bf44af8 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - 4ed9d6529623 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
+    - 5cbbd205947d "lib/test_hmm: invalidate all mirrors on device-private migration"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/20261122015246.d8b6b98ff5a8157168156339@linux-foundation.org
+      - Link: https://lore.kernel.org/r/179535872126.34.4789080961796247940.b4-reply@b4
+    - series "mm: Unify memmap initialization for compound pages", v3. (11)
+      - 55c1868b5812 "mm/cma: centralize CMA pageblock initialization (8/11)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - Link: https://patch.msgid.link/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
-        - Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org
-      - 5117a84e0cf3 "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
+        - Link: https://patch.msgid.link/20261120100856.16929-10-songmuchun@bytedance.com
+      - 0260c3944a66 "mm/cma: localize init_cma_pageblock() to cma.c (9/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-11-songmuchun@bytedance.com
+    - series "mm/damon: add sz_ops_filter_passed_last DAMOS stat", v3. (6)
+      - 946d70e0e0aa "Docs/mm/damon/design: update for sz_ops_filter_passed_last (3/6)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - Link: https://patch.msgid.link/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
-        - Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org
-    - 9da91bc6add7 "selftests/mm: handle implicit read permissions in madv_populate"
+        - Link: https://patch.msgid.link/20261123151309.82675-5-sj@kernel.org
+      - f0712c4524fc "Docs/admin-guide/mm/damon/usage: update for sz_ops_filter_passed_last (4/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20261123151309.82675-6-sj@kernel.org
+  - changed commits
+    - 5f30c23413e0 "mm/hugetlb: fix reservation leak on min_size= mounts"
       - Authored by no role player, reviewed by no role player
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261117070606.3752-1-evers_chen@163.com
-      - Link: https://lore.kernel.org/20261112031811.56500-1-evers_chen@163.com
-- mm-new: 7 -> 3 commits
-  - series: 0 (4) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 3 -> 2 commits
-    - no role, maintainer: 2 -> 0 commits
-  - new commits
-    - 122253a99502 "mm/backing-dev: pass "%s" format string to device_create() in bdi_register_va()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261119170517.1515872-1-irogers@google.com
-  - changed commits
-    - 6aecafb67a05 "mm/hugetlb: fix reservation leak on min_size= mounts"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - added "Link: : https://lore.kernel.org/179467919954.482102.5381456550239958011.b4-reply@b4"
       - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
       - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179467919954.482102.5381456550239958011.b4-reply@b4
+    - f1149748f4ce "mm/hugetlb: account restored reservations before freeing folios"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
+    - 261a57d64276 "mm/backing-dev: pass "%s" format string to device_create() in bdi_register_va()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261119170517.1515872-1-irogers@google.com
+- mm-new: 3 -> 11 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - maintainer, nobody: 0 -> 10 commits
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - 4be7ee54ee99 "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+      - Authored by a maintainer, reviewed by nobody
+    - 613a06bccd80 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+      - Authored by a maintainer, reviewed by nobody
+    - df5ca9f317cc "selftests/mm: skip poisoned dirty page-cache on NILFS2"
+      - Authored by a maintainer, reviewed by nobody
+    - 6080ed52778e "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
+      - Authored by a maintainer, reviewed by nobody
+    - ab78109a3f1e "selftests/mm: skip hard dirty page-cache test on CephFS"
+      - Authored by a maintainer, reviewed by nobody
+    - 6b8edb07cb82 "selftests/mm: close dirty page-cache files before unlinking them"
+      - Authored by a maintainer, reviewed by nobody
+    - d613a98e440e "selftests/mm: extend page-cache test files with pwrite()"
+      - Authored by a maintainer, reviewed by nobody
+    - d4b29b53d0e2 "selftests/mm: write the whole page-cache test file for OMFS"
+      - Authored by a maintainer, reviewed by nobody
+    - ec0fdcb584df "selftests/mm: accept EIO from close after poisoning dirty data"
+      - Authored by a maintainer, reviewed by nobody
+    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
+      - c09a09347da6 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
+    - 5e68beacbae1 "selftests/mm: hmm: speed up migrate_remap_fault"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/20261119133955.54001-1-zenghui.yu@linux.dev [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

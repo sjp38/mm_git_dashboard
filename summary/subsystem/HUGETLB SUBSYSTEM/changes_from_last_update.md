@@ -1,105 +1,128 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
     - no role, maintainer: 0 -> 3 commits
   - changed commits
-    - series "mm/hugetlb: various fixes", v2. (15)
-      - 4578da1c0ed1 "hugetlbfs: fix integer overflow in fallocate() (0/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-hotfixes-unstable
-        - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-0-4dd9e94ea9ac@kernel.org
-        - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-      - 92d3b1aba52a "mm/hugetlb: fix mremap() racing with page migration (1/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-hotfixes-unstable
-        - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-6-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4
-      - 76591e3c00fc "hugetlbfs: fix unmapping folios from private VMAs (2/15)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-hotfixes-unstable
-        - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-        - Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4
+    - 49b51228a108 "hugetlbfs: fix integer overflow in fallocate()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-0-4dd9e94ea9ac@kernel.org
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
+    - 39e0ae8bf729 "mm/hugetlb: fix mremap() racing with page migration"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-6-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4
+    - da48afefa78d "hugetlbfs: fix unmapping folios from private VMAs"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4
+- mm-hotfixes-unstable: 3 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, maintainer: 3 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 35 commits
-  - series: 3 (23) -> 4 (27)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 10 commits
-    - no role, maintainer: 5 -> 7 commits
+- mm-unstable: 35 -> 53 commits
+  - series: 4 (27) -> 4 (32)
+    - no role, nobody: 2 -> 6 commits
+    - no role, no role : 10 -> 18 commits
+    - no role, maintainer: 7 -> 13 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
-  - changed commits
-    - 5bb39933cef7 "hugetlb: don't restore vmemmap of non-HVOed folios on bulk restore error"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116221557.3128331-1-jthoughton@google.com
-    - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3)
-      - 45f504b571b2 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org"
-        - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-        - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
-        - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
-        - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
-      - 54afc6b6afac "mm/hugetlb_vmemmap: fix PMD split TLB flush race (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - Link: https://patch.msgid.link/20261114112523.75208-3-songmuchun@bytedance.com
-        - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
-      - d16bed3604fb "mm/hugetlb_vmemmap: fix deadlock during PMD split (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - Link: https://patch.msgid.link/20261114112523.75208-4-songmuchun@bytedance.com
-        - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - 5117a84e0cf3 "mm: hugetlb: fix GFP mask propagation to CMA (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - Link: https://patch.msgid.link/990efc61c4c3b2a4186cd578a56c6a74348fcdb1.1794907279.git.zhengqi.arch@bytedance.com
-        - Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org
-    - f8e741155d26 "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - Link: https://patch.msgid.link/20261103-hugetlb-hwpoison-leak-v2-2-98085750c145@columbia.edu
-- mm-new: 19 -> 11 commits
-  - series: 2 (18) -> 0 (0)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 6 -> 1 commits
-    - no role, maintainer: 10 -> 6 commits
   - new commits
-    - a8ce63a2d6e6 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
+    - 4de2d87968d8 "mm-hugetlb-account-temporary-folios-separately-fix"
       - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
+      - Link: https://patch.msgid.link/45997a78-95bd-4e50-b433-f64237f9ec1a@kernel.org
+    - 358080a184b4 "mm: hugetlb: allocate larger early CMA pages first"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261122065527.33123-1-qi.zheng@linux.dev
+    - series "mm: Unify memmap initialization for compound pages", v3. (11)
+      - 11b7d1702b77 "mm/hugetlb: drop boot-time HVO handling for gigantic folios (4/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-6-songmuchun@bytedance.com
+      - a141560aa9c8 "mm/hugetlb: initialize all struct pages for bootmem hugepages (5/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-7-songmuchun@bytedance.com
+      - fdc4d9bfc9e1 "mm/hugetlb: use common compound page initialization helper (6/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-8-songmuchun@bytedance.com
+      - 55c1868b5812 "mm/cma: centralize CMA pageblock initialization (8/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-10-songmuchun@bytedance.com
+      - 24740c9a3be7 "mm/mm_init: move pageblock migratetype init to memmap helpers (10/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-12-songmuchun@bytedance.com
   - changed commits
-    - 15eee8e84d03 "hugetlbfs: do not grow a sealed file in mmap()"
+    - b40d44a0272a "mm/hugetlb: compare against persistent count when freeing lowmem folios"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-2-4dd9e94ea9ac@kernel.org
+    - 1c3b1a3a19fb "mm/hugetlb: preserve reservations when shrinking on HIGHMEM"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-3-4dd9e94ea9ac@kernel.org
+    - 8973a211a666 "mm/hugetlb: account temporary folios separately"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-4-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179490324902.482102.8381563244741940633.b4-reply@b4
+    - 30c63058c74f "mm/hugetlb: keep surplus folios when the pool shrinks"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Link: : https://lore.kernel.org/179460643069.482102.17806419339613384754.b4-reply@b4"
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-5-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-5-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179460643069.482102.17806419339613384754.b4-reply@b4
+    - d8147803b7fc "mm/hugetlb: serialize page-cache allocations with truncation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-8-4dd9e94ea9ac@kernel.org
+    - b6de25b67d19 "mm/hugetlb: count again if the reserve map shrank"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-10-4dd9e94ea9ac@kernel.org
+    - 96b99b9f323f "hugetlbfs: do not grow a sealed file in mmap()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Link: : https://lore.kernel.org/179460657279.482102.3328777708780344971.b4-reply@b4"
       - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-11-4dd9e94ea9ac@kernel.org
       - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-11-4dd9e94ea9ac@kernel.org
-    - 75ab9d23e33a "mm/hugetlb: keep surplus folios that are reserved"
+      - Link: : https://lore.kernel.org/179460657279.482102.3328777708780344971.b4-reply@b4
+    - 58314ab567c5 "mm/hugetlb: keep surplus folios that are reserved"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - branch: mm-new -> mm-unstable
+      - added "Link: : https://lore.kernel.org/179467830214.482102.2328406932805572650.b4-reply@b4"
       - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-12-4dd9e94ea9ac@kernel.org
       - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-12-4dd9e94ea9ac@kernel.org
-    - 6aecafb67a05 "mm/hugetlb: fix reservation leak on min_size= mounts"
+      - Link: : https://lore.kernel.org/179467830214.482102.2328406932805572650.b4-reply@b4
+    - 5f30c23413e0 "mm/hugetlb: fix reservation leak on min_size= mounts"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - branch: mm-new -> mm-unstable
+      - added "Link: : https://lore.kernel.org/179467919954.482102.5381456550239958011.b4-reply@b4"
       - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
       - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179467919954.482102.5381456550239958011.b4-reply@b4
+    - f1149748f4ce "mm/hugetlb: account restored reservations before freeing folios"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
+    - d8a7c2108b12 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
+- mm-new: 11 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 4 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 6 -> 0 commits
+  - new commits
+    - 323ed4035455 "mm/hugetlb: fix NR_HUGETLB accounting for kept surplus folios"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261124-for-gather-surplus-v1-1-231e5660f3d8@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

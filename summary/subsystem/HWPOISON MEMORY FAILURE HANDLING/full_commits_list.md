@@ -7,27 +7,48 @@
     - no role, maintainer: 4 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 12b5a5423937 "tools/mm: add hwpoison-panic tool"
+    - 46cae0f398c1 "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - 7501a41cd70f "mm: split out memory-failure declarations from internal.h"
+    - 8b041d64196b "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3 commits)
-      - 45f504b571b2 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
+      - 85e0c313955d "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
         - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
         - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
     - series "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio", v2. (2 commits)
-      - c3b36ed0d905 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio" (0/2)
+      - b085163f9761 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103-hugetlb-hwpoison-leak-v2-0-98085750c145@columbia.edu
         - Link: https://patch.msgid.link/20261103-hugetlb-hwpoison-leak-v2-1-98085750c145@columbia.edu
         - Link: https://lore.kernel.org/all/20261102024910.31486-3-kaitao.cheng@linux.dev/ [1]
-      - ea64f9746357 "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix" (1/2)
+      - 971591e0bd03 "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix" (1/2)
         - Authored by a maintainer, reviewed by nobody
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 9 total, 0 (0) series, 9 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 9 commits
+  - full commits list
+    - 4be7ee54ee99 "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+      - Authored by a maintainer, reviewed by nobody
+    - 613a06bccd80 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+      - Authored by a maintainer, reviewed by nobody
+    - df5ca9f317cc "selftests/mm: skip poisoned dirty page-cache on NILFS2"
+      - Authored by a maintainer, reviewed by nobody
+    - 6080ed52778e "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
+      - Authored by a maintainer, reviewed by nobody
+    - ab78109a3f1e "selftests/mm: skip hard dirty page-cache test on CephFS"
+      - Authored by a maintainer, reviewed by nobody
+    - 6b8edb07cb82 "selftests/mm: close dirty page-cache files before unlinking them"
+      - Authored by a maintainer, reviewed by nobody
+    - d613a98e440e "selftests/mm: extend page-cache test files with pwrite()"
+      - Authored by a maintainer, reviewed by nobody
+    - d4b29b53d0e2 "selftests/mm: write the whole page-cache test file for OMFS"
+      - Authored by a maintainer, reviewed by nobody
+    - ec0fdcb584df "selftests/mm: accept EIO from close after poisoning dirty data"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

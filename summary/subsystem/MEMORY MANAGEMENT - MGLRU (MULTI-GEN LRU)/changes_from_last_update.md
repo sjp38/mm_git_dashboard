@@ -1,49 +1,86 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-stable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
+      - 4436e171b0a4 "mm: vmscan: allow writeout of swapcache folios without anon mappings (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
+        - Link: https://patch.msgid.link/20261110151407.789960-2-nphamcs@gmail.com
+    - 9436a736a148 "mm: mglru: splice all generations when reparenting a memcg"
+      - Authored by a reviewer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261111000913.22943-1-shakeel.butt@linux.dev
+      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
+- mm-hotfixes-unstable: 2 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 30 commits
+- mm-unstable: 30 -> 31 commits
   - series: 3 (26) -> 3 (26) (no change)
-    - no role, nobody: 6 -> 5 commits
+    - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 8 -> 9 commits
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - a890f662e76a "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "[baohua@kernel.org: cleanup, per Kairu]"
-        - added "Link: : https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org"
-        - Link: : https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org
-        - Link: https://patch.msgid.link/20261114200803.23129-11-baohua@kernel.org
-    - 59b7a053c340 "mm/mglru: use a smaller batch in fill/drain_evictable()"
-      - Authored by no role player, reviewed by a reviewer
+    - a146d22f2f0f "mm: workingset: compare shadow nodes node-wide without kmem accounting"
+      - Authored by no role player, reviewed by a maintainer
       - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116061158.333826-1-hui.zhu@linux.dev
-    - 475c97e0f8c4 "mm: mglru: use pte_table_clamped_end() helper to calculate the end"
-      - Authored by a reviewer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/b2386c5da61f9a15e60daa421b033bc1e0bcdd41.1794481498.git.baolin.wang@linux.alibaba.com
-  - dropped commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - d745d1daa596 "cleanup-mm-mglru-Run-aging-when-pages-are-rare-outside-the-youngest-gen (10/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7C_cH75JrYs8=P5LbxnDjDD6bqeqsCidOPa=r8Z+42sCQ@mail.gmail.com/ [1]
-- mm-new: 3 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
+      - Link: https://patch.msgid.link/20261106235904.1092712-1-tjmercier@google.com
+- mm-new: 1 -> 12 commits
+  - series: 0 (0) -> 1 (12)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
+    - maintainer, no role : 0 -> 8 commits
+    - maintainer, reviewer: 0 -> 2 commits
+  - new commits
+    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
+      - a4a282ec3178 "mm/mglru: rename the generation offset in lru_gen_folio_seq() (0/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261124-mglru-fg-v6-0-8ffea39934a6@tencent.com
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-1-8ffea39934a6@tencent.com
+      - 045f01541851 "mm/memcontrol: allow update of LRU statistic without holding LRU lock (1/18)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-2-8ffea39934a6@tencent.com
+      - f1291cd28982 "mm/mglru: make generation page counters atomic (3/18)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
+      - 35a4ef767849 "mm/mglru: skip the flags cmpxchg when nothing changes (5/18)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-6-8ffea39934a6@tencent.com
+      - 36e73a1323bd "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
+      - 2ceb6271aee1 "mm/mglru: make folio lru referenced times count a generic API (7/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-8-8ffea39934a6@tencent.com
+      - 0aed60f5d0a3 "mm/mglru: move add/del LRU size accounting out of lru_gen_update_size() (8/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-9-8ffea39934a6@tencent.com
+      - 12990be2995d "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-10-8ffea39934a6@tencent.com
+      - e149c305c1e7 "mm/mglru, smaps: convert to LRU refs based operations for MGLRU (10/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-11-8ffea39934a6@tencent.com
+      - 3d57cec83782 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
+      - c09a09347da6 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
+      - b4e2320a2cd2 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

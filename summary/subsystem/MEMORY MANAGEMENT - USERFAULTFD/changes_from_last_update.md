@@ -1,30 +1,29 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 50abb4245e1e "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
+      - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 2 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 972e30eda570 "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - 42dbc9711538 "mm/userfaultfd: check exclusivity of the page being moved"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
-      - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/
-- mm-new: 2 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - dabcff607543 "mm/userfaultfd: reject DAX mappings"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

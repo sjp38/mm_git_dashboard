@@ -5,10 +5,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
+- mm-unstable: 11 -> 12 commits
   - series: 2 (8) -> 2 (8) (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+    - no role, maintainer: 8 -> 9 commits
     - maintainer, maintainer: 3 -> 3 commits (no change)
+  - new commits
+    - 452775e28bd8 "mm: zswap: remove dead length check in zswap_store_page()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261123032512.6119-1-raizudeen.kerneldev@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

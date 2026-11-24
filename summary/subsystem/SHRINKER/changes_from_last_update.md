@@ -1,17 +1,39 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - f6ed0f2a0304 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261112061231.2469026-1-shakeel.butt@linux.dev
+    - 642abe844867 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
+      - Link: https://patch.msgid.link/20261112221248.3512447-1-shakeel.butt@linux.dev
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
+  - new commits
+    - afc5c92923c6 "mm/list_lru: fix potential infinite loop on xa node allocation failure"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261122031143.3639941-1-songmuchun@bytedance.com
+      - Link: : https://lore.kernel.org/awPVQ3aJxojMSEhb@chrisdown.name
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 69570e1adeb5 "mm: shrinker: stop counting when the seq buffer overflows"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261123055020.287151-1-wangxuewen_ky@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

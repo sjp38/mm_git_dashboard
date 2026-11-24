@@ -5,39 +5,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 5 commits
-  - series: 0 (0) -> 2 (3)
-    - no role, maintainer: 2 -> 4 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - changed commits
-    - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3)
-      - 45f504b571b2 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org"
-        - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-        - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
-        - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
-        - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
-    - series "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio", v2. (2)
-      - c3b36ed0d905 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-        - Link: https://lore.kernel.org/20261103-hugetlb-hwpoison-leak-v2-0-98085750c145@columbia.edu
-        - Link: https://patch.msgid.link/20261103-hugetlb-hwpoison-leak-v2-1-98085750c145@columbia.edu
-        - Link: https://lore.kernel.org/all/20261102024910.31486-3-kaitao.cheng@linux.dev/ [1]
-      - ea64f9746357 "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-- mm-new: 3 -> 0 commits
-  - series: 2 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 2 (3) -> 2 (3) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-new: 0 -> 9 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, nobody: 0 -> 9 commits
+  - new commits
+    - 4be7ee54ee99 "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+      - Authored by a maintainer, reviewed by nobody
+    - 613a06bccd80 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+      - Authored by a maintainer, reviewed by nobody
+    - df5ca9f317cc "selftests/mm: skip poisoned dirty page-cache on NILFS2"
+      - Authored by a maintainer, reviewed by nobody
+    - 6080ed52778e "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
+      - Authored by a maintainer, reviewed by nobody
+    - ab78109a3f1e "selftests/mm: skip hard dirty page-cache test on CephFS"
+      - Authored by a maintainer, reviewed by nobody
+    - 6b8edb07cb82 "selftests/mm: close dirty page-cache files before unlinking them"
+      - Authored by a maintainer, reviewed by nobody
+    - d613a98e440e "selftests/mm: extend page-cache test files with pwrite()"
+      - Authored by a maintainer, reviewed by nobody
+    - d4b29b53d0e2 "selftests/mm: write the whole page-cache test file for OMFS"
+      - Authored by a maintainer, reviewed by nobody
+    - ec0fdcb584df "selftests/mm: accept EIO from close after poisoning dirty data"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,25 +1,35 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - c6c75479d4c2 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
+    - f6ed0f2a0304 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261112061231.2469026-1-shakeel.butt@linux.dev
-    - 89e854958f92 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
+    - 642abe844867 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
       - Link: https://patch.msgid.link/20261112221248.3512447-1-shakeel.butt@linux.dev
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 2 commits
+  - full commits list
+      - 71da8dc8cc28 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261104130817.849089-3-ridong.chen@linux.dev
+    - afc5c92923c6 "mm/list_lru: fix potential infinite loop on xa node allocation failure"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261122031143.3639941-1-songmuchun@bytedance.com
+      - Link: : https://lore.kernel.org/awPVQ3aJxojMSEhb@chrisdown.name
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - bb0c15831d8a "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://patch.msgid.link/20261104130817.849089-3-ridong.chen@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+    - 69570e1adeb5 "mm: shrinker: stop counting when the seq buffer overflows"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261123055020.287151-1-wangxuewen_ky@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

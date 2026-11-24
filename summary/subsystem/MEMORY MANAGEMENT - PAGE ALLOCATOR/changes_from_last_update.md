@@ -10,8 +10,29 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 6 commits
+  - series: 0 (0) -> 0 (6)
+    - no role, no role : 0 -> 6 commits
+  - new commits
+    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
+      - 0acedaf39e51 "mm/page_ext: fix client data alignment (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
+      - 9443603b890a "mm/page_ext: always use vmalloc for section page extensions (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
+      - a8e3ddb2fc25 "mm/page_ext: use common allocation and initialization entry points (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
+      - 406742dadf20 "mm/page_ext: allocate page extensions early for SPARSEMEM (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
+      - 671c069c262f "mm/page_ext: inline unchecked page extension lookup (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
+      - 5bd93e4b0b35 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

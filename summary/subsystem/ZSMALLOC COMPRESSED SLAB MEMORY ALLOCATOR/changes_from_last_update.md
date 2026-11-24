@@ -5,29 +5,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 0 (6) -> 0 (6) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - 1f697bf44af8 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "zram: zsmalloc: speed up zspage free path", v3. (2)
+      - 1a40c59e2292 "zsmalloc: free a zspage's pages in one batch (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20261123054746.2579253-1-senozhatsky@chromium.org
+        - Link: https://patch.msgid.link/20261123054746.2579253-2-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/all/20261016120927.3191690-1-hongfengchen@xiaomi.com/ [1]
+        - Link: https://lore.kernel.org/20261109105957.2577351-1-chenhongfeng0212@gmail.com [2]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: remove unused functions", v2. (5)
-      - 03e9ca6d4455 "mm/zsmalloc: remove unused zpdesc_lock() (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Nhat Pham <nphamcs@gmail.com>"
-        - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-4-2f845e94dd50@amd.com

@@ -2,14 +2,23 @@
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
-  - series: 0 (0) -> 0 (3)
+  - series: 0 (3) -> 0 (0)
     - no role, no role : 3 -> 3 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 0 (6) -> 0 (6) (no change)
+- mm-unstable: 8 -> 10 commits
+  - series: 0 (6) -> 1 (8)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, no role : 7 -> 9 commits
+  - new commits
+    - series "mm/vmalloc: harden remap_vmalloc_range_partial against NULL pages", v2. (2)
+      - d1a29dd0ef28 "mm/vmalloc: drop VM_DMA_COHERENT from remap_vmalloc_range_partial (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261029-vmalloc_remap-v2-0-c4705cbf26c2@linux.dev
+        - Link: https://patch.msgid.link/20261029-vmalloc_remap-v2-1-c4705cbf26c2@linux.dev
+      - f65a7a58bb40 "mm/vmalloc: reject NULL pages in remap_vmalloc_range_partial (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261029-vmalloc_remap-v2-2-c4705cbf26c2@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

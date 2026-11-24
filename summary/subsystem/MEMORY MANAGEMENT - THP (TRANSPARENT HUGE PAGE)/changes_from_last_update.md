@@ -5,19 +5,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 5 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 972e30eda570 "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 2 commits
+  - new commits
+    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
+      - 41b0c6c292b2 "mm/khugepaged: convert to LRU refs based operations for MGLRU (12/18)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-13-8ffea39934a6@tencent.com
+      - 4a4dcb386164 "mm/huge_memory: mark folio as accessed more accurately on split (14/18)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-15-8ffea39934a6@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

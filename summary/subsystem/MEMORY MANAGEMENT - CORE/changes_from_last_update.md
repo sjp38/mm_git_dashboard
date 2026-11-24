@@ -1,44 +1,66 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 448293c44d86 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://patch.msgid.link/20261109021611.22247-1-hui.zhu@linux.dev
+- mm-hotfixes-unstable: 2 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 16 commits
-  - series: 2 (8) -> 2 (9)
-    - no role, no role : 7 -> 9 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 5 commits
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 1f697bf44af8 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-    - 972e30eda570 "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - series "mm: hugetlb: fix CMA-related issues", v5. (3)
-      - 4ed9d6529623 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org"
-        - added "Tested-by: Andrew Morton <akpm@linux-foundation.org>"
-        - Link: https://patch.msgid.link/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
-        - Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org
-- mm-new: 3 -> 1 commits
-  - series: 0 (1) -> 0 (0)
+- mm-unstable: 16 -> 20 commits
+  - series: 2 (9) -> 2 (10)
     - no role, nobody: 0 -> 1 commits
-    - no role, no role : 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+    - no role, no role : 9 -> 11 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - a8ce63a2d6e6 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
+    - 255900b89602 "mm: vmstat_kunit: add synthetic benchmark for mm stats"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/21183f5b-2697-cbe6-6370-dbd27c5e2b60@google.com
+    - 9a5fe9f02b2d "mm/vmstat_kunit: avoid sparse warning in vm event cleanup"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/21183f5b-2697-cbe6-6370-dbd27c5e2b60@google.com
+    - series "mm: Unify memmap initialization for compound pages", v3. (11)
+      - 5256e839bd41 "mm/mm_init: factor out common struct page initialization (1/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261120100856.16929-3-songmuchun@bytedance.com
+  - changed commits
+    - d8a7c2108b12 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
+- mm-new: 1 -> 5 commits
+  - series: 0 (0) -> 0 (5)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - maintainer, no role : 0 -> 3 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
+      - f1291cd28982 "mm/mglru: make generation page counters atomic (3/18)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
+      - 36e73a1323bd "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
+      - c09a09347da6 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
+      - b4e2320a2cd2 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
+    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
+      - 5bd93e4b0b35 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
