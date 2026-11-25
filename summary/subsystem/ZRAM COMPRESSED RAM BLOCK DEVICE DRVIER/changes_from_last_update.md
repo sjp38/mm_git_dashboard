@@ -5,22 +5,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 25 -> 25 commits (no change)
-  - series: 2 (22) -> 2 (22) (no change)
+- mm-unstable: 25 -> 26 commits
+  - series: 2 (22) -> 2 (23)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 14 -> 14 commits (no change)
+    - maintainer, nobody: 14 -> 15 commits
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "zram: zsmalloc: speed up zspage free path", v3. (2)
-      - 83b76223bc7f "zram: keep the hot statistics per CPU (1/2)"
+      - c8117bff6843 "zram: keep the hot statistics per CPU (1/2)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261123054746.2579253-3-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20261017031542.3504947-1-hongfengchen@xiaomi.com [1]
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - maintainer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

@@ -6,10 +6,16 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 8b041d64196b "mm: split out memory-failure declarations from internal.h"
+    - 33b9aed570e9 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+      - db89a044769a "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (1/11)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

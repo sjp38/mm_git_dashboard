@@ -1,56 +1,30 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 4 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 2 commits
-  - changed commits
-    - 2ec6ad932675 "mm, swap: only prefer nonfull clusters on synchronous devices"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
-    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - afc0507d6e15 "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
-        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - f6f10d976c8a "mm/swap: skip relocation of tableless clusters (2/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
-    - 190936e7a5da "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
-- mm-hotfixes-unstable: 5 -> 2 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 2 -> 1 commits
-    - reviewer, maintainer: 2 -> 0 commits
-  - new commits
-    - f71542655ca9 "mm: swap: make swap_header badpages a flexible array"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261120061750.2973004-1-kaleshsingh@google.com
+- mm-hotfixes-stable: 4 -> 4 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
+- mm-unstable: 7 -> 8 commits
+  - series: 2 (6) -> 2 (7)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
     - maintainer, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 3d57cec83782 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
+      - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - maintainer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

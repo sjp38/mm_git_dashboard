@@ -8,48 +8,48 @@
     - no role, no role : 8 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 0f251c722d6b "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
+      - bd4ed14fdaa7 "mm: hugetlb_vmemmap: simplify shared tail page handling" (7/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261107022756.77731-9-songmuchun@bytedance.com
-    - 47800f35f0e0 "arch_numa: fix broken NUMA emulation with dummy_numa_init()"
+    - 71ee79a1e180 "arch_numa: fix broken NUMA emulation with dummy_numa_init()"
       - Authored by no role player, reviewed by nobody
       - Link: https://patch.msgid.link/20261114132625.1710476-1-ekffu200098@gmail.com
     - series "mm: Unify memmap initialization for compound pages", v3. (11 commits)
-      - 2988e9f01e5d "mm/mm_init: verify zones for template-initialized pages" (0/11)
+      - cc366ffd9b84 "mm/mm_init: verify zones for template-initialized pages" (0/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261120100856.16929-1-songmuchun@bytedance.com
         - Link: https://patch.msgid.link/20261120100856.16929-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
         - Link: https://lore.kernel.org/20261112112816.55095-1-lizhe.67@bytedance.com/ [2]
-      - 5256e839bd41 "mm/mm_init: factor out common struct page initialization" (1/11)
+      - 7cbdd079b0d1 "mm/mm_init: factor out common struct page initialization" (1/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-3-songmuchun@bytedance.com
-      - 3570d9d423e9 "mm/mm_init: simplify zone device page initialization" (2/11)
+      - 2a8cf5838b7f "mm/mm_init: simplify zone device page initialization" (2/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-4-songmuchun@bytedance.com
-      - de4374b8ce7a "mm/mm_init: factor out compound page initialization" (3/11)
+      - 6d60f1e5f9cb "mm/mm_init: factor out compound page initialization" (3/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-5-songmuchun@bytedance.com
-      - fdc4d9bfc9e1 "mm/hugetlb: use common compound page initialization helper" (6/11)
+      - e4e2446fab69 "mm/hugetlb: use common compound page initialization helper" (6/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-8-songmuchun@bytedance.com
-      - 0ee4aa98282b "mm/mm_init: make __init_single_page() static" (7/11)
+      - b24f0b156e41 "mm/mm_init: make __init_single_page() static" (7/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-9-songmuchun@bytedance.com
-      - 0260c3944a66 "mm/cma: localize init_cma_pageblock() to cma.c" (9/11)
+      - c4299f276a36 "mm/cma: localize init_cma_pageblock() to cma.c" (9/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-11-songmuchun@bytedance.com
-      - 24740c9a3be7 "mm/mm_init: move pageblock migratetype init to memmap helpers" (10/11)
+      - f54c23279f39 "mm/mm_init: move pageblock migratetype init to memmap helpers" (10/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-12-songmuchun@bytedance.com
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - a8e3ddb2fc25 "mm/page_ext: use common allocation and initialization entry points" (3/7)
+      - 27b1a116bbfc "mm/page_ext: use common allocation and initialization entry points" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
-      - 406742dadf20 "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
+      - 3c24780668bb "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

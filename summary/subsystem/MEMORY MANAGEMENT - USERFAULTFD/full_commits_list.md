@@ -14,14 +14,14 @@
     - no role, no role : 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 6a8a9fd02cbb "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 58dd90f30853 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261003110137.88619-1-kmehltretter@gmail.com
-    - 92aac49e6a56 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - a9cd4cd75b5c "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
     - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
-      - bdc7a1c79801 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+      - a609f3505678 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
         - Link: https://patch.msgid.link/20261103102840.68903-2-azpijr@gmail.com
@@ -29,19 +29,38 @@
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org [2]
         - Link: https://lore.kernel.org/20261031-fixes_core-v3-23-d6437171ecc3@kernel.org [3] (in linux-next)
         - Link: https://lore.kernel.org/sashiko-outbox-194303@kernel.org [4]
-    - e6e2032a7897 "mm/userfaultfd: prevent poison marker loss"
+    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - f17125148d54 "mm/userfaultfd: check exclusivity of the page being moved"
+    - ff633934b42c "mm/userfaultfd: check exclusivity of the page being moved"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
       - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 6 commits
   - full commits list
-    - dabcff607543 "mm/userfaultfd: reject DAX mappings"
+    - c581213919c5 "mm/userfaultfd: reject DAX mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
+    - series "userfaultfd: assorted fixes (part 1)", v3. (7 commits)
+      - 29eb880cc9a8 "userfaultfd: use anonymous memory for UFFDIO_ZEROPAGE on private file mappings" (0/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261117-uffd-state-fixes-v3-0-b617009d1a4a@columbia.edu
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-1-b617009d1a4a@columbia.edu
+      - aa0775f7181f "userfaultfd: refuse UFFDIO_MOVE into a non-present huge destination PMD" (1/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-2-b617009d1a4a@columbia.edu
+      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move" (5/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
+      - cd5ff4ce9070 "mm/userfaultfd: check the hugetlb alignment of every VMA in the pre-scan" (6/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-9-b617009d1a4a@columbia.edu
+    - 563aebd7f97d "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/
+      - Link: https://lore.kernel.org/linux-mm/avWnaR7VVEGa7yNp@thinkstation/
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

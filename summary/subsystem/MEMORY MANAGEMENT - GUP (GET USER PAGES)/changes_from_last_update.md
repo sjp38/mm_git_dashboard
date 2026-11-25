@@ -5,16 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (1)
     - maintainer, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 12990be2995d "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
+      - 7167fa3ce738 "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-10-8ffea39934a6@tencent.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - maintainer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,18 +7,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 2 commits
-  - new commits
-    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
-      - d977f6cfc157 "kmsan: encapsulate per-page metadata access (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261119065812.89959-1-songmuchun@bytedance.com
-        - Link: https://patch.msgid.link/20261119065812.89959-2-songmuchun@bytedance.com
-      - 5bd93e4b0b35 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

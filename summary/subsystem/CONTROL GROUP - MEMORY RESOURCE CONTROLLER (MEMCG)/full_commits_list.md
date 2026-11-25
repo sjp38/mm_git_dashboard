@@ -15,91 +15,91 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - d13f3e028ba6 "memcg: free the private ID of a memcg that never comes online"
+    - 4d7bfa359003 "memcg: free the private ID of a memcg that never comes online"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://patch.msgid.link/20261124000439.967403-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 16 total, 5 (16) series, 0 non-series commits
+- mm-unstable: 18 total, 5 (18) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 2 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 9 commits
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 4 commits
   - full commits list
     - series "memcg: Misc cleanup and perf improvement for TCP.", v3. (4 commits)
-      - 681a42fd61c3 "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock" (0/4)
+      - 26feb30166ad "memcg: remove unnecessary READ_ONCE() under memcg_stock.lock" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261029194452.3189365-1-kuniyu@google.com
         - Link: https://patch.msgid.link/20261029194452.3189365-2-kuniyu@google.com
-      - c16e4ca4356a "memcg: reduce nesting in consume_stock() and refill_stock()" (1/4)
+      - 432747b4439c "memcg: reduce nesting in consume_stock() and refill_stock()" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261029194452.3189365-3-kuniyu@google.com
-      - f44b70d6e2b3 "memcg: annotate slow paths in consume_stock() and refill_stock()" (2/4)
+      - b3d26c7e9975 "memcg: annotate slow paths in consume_stock() and refill_stock()" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261029194452.3189365-4-kuniyu@google.com
-      - 41056c8c494e "memcg: uncharge pages outside memcg_stock.lock in refill_stock()" (3/4)
+      - 1c9ed98c2d8d "memcg: uncharge pages outside memcg_stock.lock in refill_stock()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261029194452.3189365-5-kuniyu@google.com
     - series "memcg: reduce cacheline contention from lruvec stat", v3. (2 commits)
-      - 2a9e5076d05c "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
+      - aff272bbd46c "memcg: reduce cacheline contention between lruvec stat updates and LRU lists" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261023195417.1391216-1-joannelkoong@gmail.com
         - Link: https://lore.kernel.org/20261023195417.1391216-2-joannelkoong@gmail.com
         - Link: https://www.intel.com/content/dam/doc/manual/64-ia-32-architectures-optimization-manual.pdf [1] (bottom of page 62/800)
         - Link: https://lore.kernel.org/linux-fsdevel/CAJnrk1ZezmmzrYdf8KP6re_a76izMS=qGPeC8ZZXiteHyZZC-Q@mail.gmail.com/
-      - 004884dc67cc "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
+      - 5d2730cca2ab "memcg: don't go through the lruvec for folio and kmem lruvec stat updates" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261023195417.1391216-3-joannelkoong@gmail.com
     - series "mm: memcontrol: remove two unused helpers", v1. (2 commits)
-      - 5506bf23a22a "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
+      - 907d8fd3fa6e "mm: memcontrol: remove mod_memcg_page_state()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261014-memcg-unused-page-helpers-v1-0-240b37c53831@columbia.edu
         - Link: https://patch.msgid.link/20261014-memcg-unused-page-helpers-v1-1-240b37c53831@columbia.edu
-      - f55b7941a18b "mm: memcontrol: remove page_memcg_check()" (1/2)
+      - cbbe120f661f "mm: memcontrol: remove page_memcg_check()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261014-memcg-unused-page-helpers-v1-2-240b37c53831@columbia.edu
     - series "memcg: clean up memory.high enforcement", v2. (5 commits)
-      - 2f4b770b0c02 "memcg: move memory.high enforcement out of try_charge_memcg()" (0/5)
+      - 661ce6cb2d24 "memcg: move memory.high enforcement out of try_charge_memcg()" (0/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261030205418.341214-1-shakeel.butt@linux.dev
         - Link: https://patch.msgid.link/20261030205418.341214-2-shakeel.butt@linux.dev
-      - b28b696e598f "memcg: force charges from reclaim before trying the limits" (1/5)
+      - d60da5622c5f "memcg: force charges from reclaim before trying the limits" (1/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261030205418.341214-3-shakeel.butt@linux.dev
-      - 33c938a8c944 "memcg: use high_work for kernel threads" (2/5)
+      - 4d0991249ff3 "memcg: use high_work for kernel threads" (2/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261030205418.341214-4-shakeel.butt@linux.dev
-      - 55968742892a "memcg: use high_work for remote charges" (3/5)
+      - 5676f0d1ce3e "memcg: use high_work for remote charges" (3/5)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261030205418.341214-5-shakeel.butt@linux.dev
-      - 458bc92a96f0 "memcg: simplify high limit handling after a charge" (4/5)
+      - b1b08e6d4d36 "memcg: simplify high limit handling after a charge" (4/5)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261030205418.341214-6-shakeel.butt@linux.dev
-      - d1b26c733a61 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - defbab1e3374 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261028010611.3929937-3-tjmercier@google.com
-      - 3c762bbf6eaa "mm/hugetlb: account NR_HUGETLB at folio state transitions" (3/4)
+      - 338f2b79b2f4 "mm/hugetlb: account NR_HUGETLB at folio state transitions" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261106100521.30099-5-kaitao.cheng@linux.dev
     - series "mm/vmscan: move tracepoints to mm/ and add MGLRU tracepoints", v7. (7 commits)
-      - 5db04e23b058 "mm/memcontrol: drop unused vmscan tracepoint include" (0/7)
+      - 373b34fdda5f "mm/memcontrol: drop unused vmscan tracepoint include" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104130817.849089-1-ridong.chen@linux.dev
         - Link: https://patch.msgid.link/20261104130817.849089-2-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/linux-mm/20260916095122.50cbb620@robin/ [1]
-- mm-new: 3 total, 0 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - maintainer, no role : 1 commits
-  - full commits list
-      - 5bd239042e7a "mm/memcontrol: avoid potential counter leak when reparenting local stats" (2/18)
+      - 5b66a4ba98f9 "mm/memcontrol: avoid potential counter leak when reparenting local stats" (2/18)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-3-8ffea39934a6@tencent.com
-      - e538adeae871 "mm/memcg: add folio-based lruvec live helper" (4/18)
+      - eeb3873d6ba9 "mm/memcg: add folio-based lruvec live helper" (4/18)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-5-8ffea39934a6@tencent.com
-    - 221063be9b1f "memcg: warn when memory cgroup IDs run out"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, no role : 1 commits
+  - full commits list
+    - 1fad53fe8555 "memcg: warn when memory cgroup IDs run out"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://patch.msgid.link/20261124020800.2313930-1-shakeel.butt@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

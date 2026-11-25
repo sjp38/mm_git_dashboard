@@ -5,22 +5,44 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
+- mm-unstable: 8 -> 10 commits
+  - series: 2 (5) -> 2 (7)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-  - new commits
+    - no role, no role : 5 -> 6 commits
+    - no role, maintainer: 1 -> 2 commits
+  - changed commits
+    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 41b0c6c292b2 "mm/khugepaged: convert to LRU refs based operations for MGLRU (12/18)"
+      - 89514bd84c49 "mm/khugepaged: convert to LRU refs based operations for MGLRU (12/18)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-13-8ffea39934a6@tencent.com
-      - 4a4dcb386164 "mm/huge_memory: mark folio as accessed more accurately on split (14/18)"
-        - Authored by no role player, reviewed by no role player
+      - 7eb7df818be1 "mm/huge_memory: mark folio as accessed more accurately on split (14/18)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-15-8ffea39934a6@tencent.com
+- mm-new: 2 -> 3 commits
+  - series: 0 (2) -> 0 (3)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: continue vma_flags_t conversion", v2. (11)
+      - db89a044769a "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (1/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
+    - series "userfaultfd: assorted fixes (part 1)", v3. (7)
+      - a580a58b9809 "mm/huge_memory: build the moved huge zero PMD from the destination VMA (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-6-b617009d1a4a@columbia.edu
+      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

@@ -15,147 +15,142 @@
       - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 31 total, 3 (26) series, 5 non-series commits
+- mm-unstable: 36 total, 3 (31) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 5 commits
     - no role, no role : 1 commits
     - no role, reviewer: 9 commits
-    - no role, maintainer: 7 commits
+    - no role, maintainer: 8 commits
     - reviewer, nobody: 1 commits
     - maintainer, nobody: 1 commits
-    - maintainer, no role : 6 commits
-    - maintainer, reviewer: 1 commits
+    - maintainer, no role : 9 commits
+    - maintainer, reviewer: 2 commits
   - full commits list
     - series "mm: multi-gen LRU: replace get_lruvec() with mem_cgroup_lruvec()", v2. (2 commits)
-      - e23bb8618c0d "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
+      - a6a3ca2dc056 "mm: multi-gen LRU: use mem_cgroup_lruvec() in get_lruvec()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261026202313.63122-1-sidchintamaneni@gmail.com
         - Link: https://patch.msgid.link/20261026202313.63122-2-sidchintamaneni@gmail.com
         - Link: https://lore.kernel.org/linux-mm/20261017050928.128582-2-sidchintamaneni@gmail.com/ [1]
-      - 16c30f0e2555 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
+      - 46a4bd840cf0 "mm: multi-gen LRU: remove get_lruvec()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261026202313.63122-3-sidchintamaneni@gmail.com
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - 4db5eaf88709 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - 3d518f8e9936 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://patch.msgid.link/20261028010611.3929937-2-tjmercier@google.com
-      - d1b26c733a61 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - defbab1e3374 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261028010611.3929937-3-tjmercier@google.com
-    - 8b041d64196b "mm: split out memory-failure declarations from internal.h"
+    - 33b9aed570e9 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - 71da8dc8cc28 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - e9977d01e859 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-3-ridong.chen@linux.dev
-      - 23fc5af79571 "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
+      - 18254c3c6503 "mm/vmscan: move struct scan_control to a dedicated header" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-4-ridong.chen@linux.dev
-      - c8cce2756ec1 "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
+      - e5f63cdd1298 "mm/vmscan: pass scan_control to the vmscan tracepoints" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-5-ridong.chen@linux.dev
-      - a6ae701988c5 "mm/mglru: add tracepoint for scan_folios()" (4/7)
+      - dd5559e92aef "mm/mglru: add tracepoint for scan_folios()" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-6-ridong.chen@linux.dev
-      - 8dd55e6a102e "mm/mglru: add lruvec_gen_size() helper" (5/7)
+      - b67fff1fa137 "mm/mglru: add lruvec_gen_size() helper" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-7-ridong.chen@linux.dev
-      - 2a2a876a2934 "mm/mglru: add tracepoint for aging" (6/7)
+      - 0204dc261a7e "mm/mglru: add tracepoint for aging" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-8-ridong.chen@linux.dev
     - series "mm: mglru: fix swappiness behavior", v9. (16 commits)
-      - 28d82a48bb18 "mm/mglru: report evictable sizes per type" (0/16)
+      - 8406963dc75e "mm/mglru: report evictable sizes per type" (0/16)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261114200803.23129-1-baohua@kernel.org
         - Link: https://patch.msgid.link/20261114200803.23129-2-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/all/20260318-mglru-reclaim-v1-0-2c46f9eb0508@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [3]
-      - 981ece2215c4 "mm/mglru: extract lruvec_populated_min_seq() helper" (1/16)
+      - 0e32cfd89796 "mm/mglru: extract lruvec_populated_min_seq() helper" (1/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261114200803.23129-3-baohua@kernel.org
-      - b556f826cec5 "mm/mglru: reclaim from the oldest populated gen" (2/16)
+      - 7cbd6bb09bd5 "mm/mglru: reclaim from the oldest populated gen" (2/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261114200803.23129-4-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260726122123.7614-4-baohua@kernel.org/ [1]
-      - 1993c36add66 "mm/mglru: lift the forced protection of reclaimer" (3/16)
+      - 73bd6dc5c163 "mm/mglru: lift the forced protection of reclaimer" (3/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261114200803.23129-5-baohua@kernel.org
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [1]
         - Link: https://lore.kernel.org/linux-mm/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [3]
-      - 2bbb3dc532f3 "mm/mglru: skip zones above reclaim_idx instead of rotating them" (4/16)
+      - 46d7add93701 "mm/mglru: skip zones above reclaim_idx instead of rotating them" (4/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261114200803.23129-6-baohua@kernel.org
-      - 5943543fd757 "mm/mglru: return for unavailable anon reclaim earlier" (5/16)
+      - 29d633312623 "mm/mglru: return for unavailable anon reclaim earlier" (5/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261114200803.23129-7-baohua@kernel.org
-      - 4eaadaa1041f "mm/mglru: balance anon and file scan budget by refault rate" (6/16)
+      - 159bd413cb93 "mm/mglru: balance anon and file scan budget by refault rate" (6/16)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://patch.msgid.link/20261114200803.23129-8-baohua@kernel.org
-      - dbf1cbeab67d "mm/mglru: lift youngest gen protection for higher priority" (7/16)
+      - 3f64d3fe7146 "mm/mglru: lift youngest gen protection for higher priority" (7/16)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261114200803.23129-9-baohua@kernel.org
-      - 2c0ad0174892 "mm/mglru: avoid placing rejected folios below populated gen" (8/16)
+      - c558f5ea69ea "mm/mglru: avoid placing rejected folios below populated gen" (8/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261114200803.23129-10-baohua@kernel.org
-      - 1e16c90f57a4 "mm/mglru: run aging when pages are rare outside the youngest gen" (9/16)
+      - b7a30d54abec "mm/mglru: run aging when pages are rare outside the youngest gen" (9/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: : https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org
         - Link: https://patch.msgid.link/20261114200803.23129-11-baohua@kernel.org
-      - 1d4aac96f259 "mm/mglru: run aging when one type is drained" (10/16)
+      - 2d2979a1fd9b "mm/mglru: run aging when one type is drained" (10/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261114200803.23129-12-baohua@kernel.org
-      - 60d5f335a38e "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch" (11/16)
+      - d6238e7a263e "fix-mm-mglru-Run-aging-when-one-type-is-drained.patch" (11/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261114214438.70148-1-baohua@kernel.org
-      - 57069140c2c2 "mm/mglru: restrict eviction accounting to eligible zones" (12/16)
+      - a1a69c59d4ba "mm/mglru: restrict eviction accounting to eligible zones" (12/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261114200803.23129-13-baohua@kernel.org
-      - 7ab9e578266d "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq" (13/16)
+      - 8da6b50f4e92 "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq" (13/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261114200803.23129-14-baohua@kernel.org
-      - ec805bc7b67f "mm/mglru: avoid prolonged anon reclaim with swappiness=200" (14/16)
+      - e0830d63a539 "mm/mglru: avoid prolonged anon reclaim with swappiness=200" (14/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261114200803.23129-15-baohua@kernel.org
-      - 324588f307ee "mm/mglru: make swappiness=1 file reclaim more aggressive" (15/16)
+      - 3fc92f583625 "mm/mglru: make swappiness=1 file reclaim more aggressive" (15/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261114200803.23129-16-baohua@kernel.org
-    - ea1bdf08059a "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
+    - b618ae5acd61 "mm/mglru: avoid scan anon while swapcache is low for GFP_NOIO allocation"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261114200803.23129-17-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/179248830836.1744016.8424217811286616919.noio-mglru-rfc-v2@bytedance.com/ [1]
-    - 30fb153b4024 "mm/mglru: use a smaller batch in fill/drain_evictable()"
+    - e2d6b7492c55 "mm/mglru: use a smaller batch in fill/drain_evictable()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261116061158.333826-1-hui.zhu@linux.dev
-    - 84372a98523e "mm: mglru: use pte_table_clamped_end() helper to calculate the end"
+    - 0d2644c9e477 "mm: mglru: use pte_table_clamped_end() helper to calculate the end"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://patch.msgid.link/b2386c5da61f9a15e60daa421b033bc1e0bcdd41.1794481498.git.baolin.wang@linux.alibaba.com
-    - a146d22f2f0f "mm: workingset: compare shadow nodes node-wide without kmem accounting"
+    - e5ea5d23691e "mm: workingset: compare shadow nodes node-wide without kmem accounting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261106235904.1092712-1-tjmercier@google.com
-- mm-new: 5 total, 0 (5) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-    - maintainer, no role : 3 commits
-    - maintainer, reviewer: 1 commits
-  - full commits list
-      - f1291cd28982 "mm/mglru: make generation page counters atomic" (3/18)
+      - dde3058d5031 "mm/mglru: make generation page counters atomic" (3/18)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
-      - 35a4ef767849 "mm/mglru: skip the flags cmpxchg when nothing changes" (5/18)
+      - 3c38f629cb79 "mm/mglru: skip the flags cmpxchg when nothing changes" (5/18)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-6-8ffea39934a6@tencent.com
-      - 36e73a1323bd "mm/mglru: frequency guided workingset promotion (MGLRU-FG)" (6/18)
+      - fa15914d292f "mm/mglru: frequency guided workingset promotion (MGLRU-FG)" (6/18)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
-      - c09a09347da6 "mm/mglru: folio LRU refs based active/inactive number accounting" (16/18)
+      - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting" (16/18)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
-      - b4e2320a2cd2 "mm/mglru: make folio_inc_lru_refs lruvec lockless" (17/18)
+      - 4bc2e2af4110 "mm/mglru: make folio_inc_lru_refs lruvec lockless" (17/18)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

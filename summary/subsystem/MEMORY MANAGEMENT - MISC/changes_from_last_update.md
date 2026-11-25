@@ -1,89 +1,115 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - fe7e4ee305cf "mm: use PFN_PHYS() in phys_mem_access_prot()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://patch.msgid.link/20261113193812.1239880-1-ivanrwcm25@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 66 -> 74 commits
-  - series: 8 (44) -> 8 (48)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 26 -> 30 commits
-    - no role, maintainer: 24 -> 26 commits
-    - maintainer, nobody: 6 -> 7 commits
-    - maintainer, no role : 3 -> 3 commits (no change)
+- mm-unstable: 74 -> 87 commits
+  - series: 8 (48) -> 8 (52)
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 30 -> 30 commits (no change)
+    - no role, maintainer: 26 -> 26 commits (no change)
+    - maintainer, nobody: 7 -> 19 commits
+    - maintainer, no role : 3 -> 4 commits
     - maintainer, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - 5cbbd205947d "lib/test_hmm: invalidate all mirrors on device-private migration"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/r/20261122015246.d8b6b98ff5a8157168156339@linux-foundation.org
-      - Link: https://lore.kernel.org/r/179535872126.34.4789080961796247940.b4-reply@b4
-    - series "mm: Unify memmap initialization for compound pages", v3. (11)
-      - 55c1868b5812 "mm/cma: centralize CMA pageblock initialization (8/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-10-songmuchun@bytedance.com
-      - 0260c3944a66 "mm/cma: localize init_cma_pageblock() to cma.c (9/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-11-songmuchun@bytedance.com
-    - series "mm/damon: add sz_ops_filter_passed_last DAMOS stat", v3. (6)
-      - 946d70e0e0aa "Docs/mm/damon/design: update for sz_ops_filter_passed_last (3/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261123151309.82675-5-sj@kernel.org
-      - f0712c4524fc "Docs/admin-guide/mm/damon/usage: update for sz_ops_filter_passed_last (4/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261123151309.82675-6-sj@kernel.org
+    - series "mm/damon: update documents for mm-next onboarding". (4)
+      - 7df0129eefd2 "Docs/mm/damon/maintainer-profile: use damon.git for patch baselines (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://patch.msgid.link/20261124160124.93482-3-sj@kernel.org
+        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
+        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
+      - 64d972c9aa3d "Docs/mm/damon/maintainer-profile: drop 'SCM Trees' section (2/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://patch.msgid.link/20261124160124.93482-4-sj@kernel.org
+        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
+        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
+      - 5cb22c60be88 "Docs/mm/damon/maintainer-profile: update key cycle dates for damon.git (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://patch.msgid.link/20261124160124.93482-5-sj@kernel.org
+        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
   - changed commits
-    - 5f30c23413e0 "mm/hugetlb: fix reservation leak on min_size= mounts"
-      - Authored by no role player, reviewed by no role player
+    - b99236fd46fe "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+      - Authored by a maintainer, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - added "Link: : https://lore.kernel.org/179467919954.482102.5381456550239958011.b4-reply@b4"
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-13-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/179467919954.482102.5381456550239958011.b4-reply@b4
-    - f1149748f4ce "mm/hugetlb: account restored reservations before freeing folios"
-      - Authored by no role player, reviewed by nobody
+    - 062ad5d99ee2 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+      - Authored by a maintainer, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-14-4dd9e94ea9ac@kernel.org
-    - 261a57d64276 "mm/backing-dev: pass "%s" format string to device_create() in bdi_register_va()"
-      - Authored by no role player, reviewed by no role player
+    - 40614258e3f5 "selftests/mm: skip poisoned dirty page-cache on NILFS2"
+      - Authored by a maintainer, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261119170517.1515872-1-irogers@google.com
-- mm-new: 3 -> 11 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 0 commits
-    - maintainer, nobody: 0 -> 10 commits
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - 4be7ee54ee99 "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+    - 8dc6448b1621 "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
       - Authored by a maintainer, reviewed by nobody
-    - 613a06bccd80 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+      - branch: mm-new -> mm-unstable
+    - e1d5122775f6 "selftests/mm: skip hard dirty page-cache test on CephFS"
       - Authored by a maintainer, reviewed by nobody
-    - df5ca9f317cc "selftests/mm: skip poisoned dirty page-cache on NILFS2"
+      - branch: mm-new -> mm-unstable
+    - 0a6f7458be17 "selftests/mm: close dirty page-cache files before unlinking them"
       - Authored by a maintainer, reviewed by nobody
-    - 6080ed52778e "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
+      - branch: mm-new -> mm-unstable
+    - 56b46ce36db4 "selftests/mm: extend page-cache test files with pwrite()"
       - Authored by a maintainer, reviewed by nobody
-    - ab78109a3f1e "selftests/mm: skip hard dirty page-cache test on CephFS"
+      - branch: mm-new -> mm-unstable
+    - 6d9846140601 "selftests/mm: write the whole page-cache test file for OMFS"
       - Authored by a maintainer, reviewed by nobody
-    - 6b8edb07cb82 "selftests/mm: close dirty page-cache files before unlinking them"
+      - branch: mm-new -> mm-unstable
+    - 2914d4f7352b "selftests/mm: accept EIO from close after poisoning dirty data"
       - Authored by a maintainer, reviewed by nobody
-    - d613a98e440e "selftests/mm: extend page-cache test files with pwrite()"
-      - Authored by a maintainer, reviewed by nobody
-    - d4b29b53d0e2 "selftests/mm: write the whole page-cache test file for OMFS"
-      - Authored by a maintainer, reviewed by nobody
-    - ec0fdcb584df "selftests/mm: accept EIO from close after poisoning dirty data"
-      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - c09a09347da6 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
+      - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
+- mm-new: 11 -> 11 commits (no change)
+  - series: 0 (1) -> 1 (9)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 3 commits
+    - maintainer, nobody: 10 -> 0 commits
+    - maintainer, no role : 1 -> 6 commits
+  - new commits
+    - series "mm/damon: let users report their data attribute findings", v2. (27)
+      - 3e68c35b902f "Docs/mm/damon/design: update for report system (8/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
+      - bd97f50bd1d3 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
+      - 2e200cd14891 "Docs/mm/damon/design: update for report_made probe filter type (16/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124153636.91854-18-sj@kernel.org
+      - f980722094c3 "Docs/admin-guide/mm/damon/usage: update for REPORT_MADE probe filter (17/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124153636.91854-19-sj@kernel.org
+      - 866923f74231 "Docs/mm/damon/design: update for user report support (24/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124153636.91854-26-sj@kernel.org
+      - ec93a0bf7d66 "Docs/admin-guide/mm/damon/usage: update for user_report report support (25/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124153636.91854-27-sj@kernel.org
+    - series "selftests/mm: fix userfaultfd tests with CONFIG_PTE_MARKER_UFFD_WP=n". (2)
+      - 0074e737c591 "selftests/mm: uffd-wp-mremap: skip unsupported shmem and hugetlb cases (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261122082020.1255434-1-kaleshsingh@google.com
+        - Link: https://patch.msgid.link/20261122082020.1255434-2-kaleshsingh@google.com
+      - 469a5ecf7a40 "selftests/mm: uffd-unit-tests: filter required features per memory type (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261122082020.1255434-3-kaleshsingh@google.com
+    - 563aebd7f97d "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/
+      - Link: https://lore.kernel.org/linux-mm/avWnaR7VVEGa7yNp@thinkstation/
+    - 472cd5a809c2 "tools/mm/page_owner_sort: fix slab allocator labelling"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://patch.msgid.link/20261117214947.13471-1-evanfengff@gmail.com
+    - series "fs/proc: fix PAGEMAP_SCAN walk_end after a buffer refill", v2. (2)
+      - a036649714c3 "selftests/mm: cover PAGEMAP_SCAN refill and HugeTLB retry (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://patch.msgid.link/20261118-pagemap-walk-end-v2-2-94cd92d838b3@gmail.com
+  - dropped commits
     - 5e68beacbae1 "selftests/mm: hmm: speed up migrate_remap_fault"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/r/20261119133955.54001-1-zenghui.yu@linux.dev [1]

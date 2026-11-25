@@ -1,29 +1,41 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 76e1b20670b5 "filemap: prefault writes starting beyond EOF"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
-      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-unstable: 5 -> 8 commits
   - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 2 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, no role : 0 -> 1 commits
   - new commits
+    - c65060379c30 "mm: cachestat: count each page only once"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-2-50a2ed382b61@kernel.org
+      - Link: : https://lore.kernel.org/20261114115635.8346206195d50372@chrisdown.name
+    - 3c73fa525184 "mm: cachestat: restart the walk after each entry"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-3-50a2ed382b61@kernel.org
+      - Link: : https://lore.kernel.org/20261114115640.c707f5c9496fcea4@chrisdown.name
+  - changed commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 3d57cec83782 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
+      - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 1 (1)
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, no role : 1 -> 0 commits
+  - new commits
+    - series "mm: continue vma_flags_t conversion", v2. (11)
+      - 87f9c757fc4e "mm/filemap: convert fault and readahead logic to use vma_flags_t (0/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

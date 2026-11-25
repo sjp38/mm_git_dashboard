@@ -1,86 +1,85 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - 4436e171b0a4 "mm: vmscan: allow writeout of swapcache folios without anon mappings (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
-        - Link: https://patch.msgid.link/20261110151407.789960-2-nphamcs@gmail.com
-    - 9436a736a148 "mm: mglru: splice all generations when reparenting a memcg"
-      - Authored by a reviewer, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://patch.msgid.link/20261111000913.22943-1-shakeel.butt@linux.dev
-      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
-- mm-hotfixes-unstable: 2 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 31 commits
-  - series: 3 (26) -> 3 (26) (no change)
+- mm-unstable: 31 -> 43 commits
+  - series: 3 (26) -> 4 (38)
     - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
-    - no role, maintainer: 6 -> 7 commits
+    - no role, reviewer: 9 -> 10 commits
+    - no role, maintainer: 7 -> 8 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 6 -> 6 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, no role : 6 -> 14 commits
+    - maintainer, reviewer: 1 -> 3 commits
   - changed commits
-    - a146d22f2f0f "mm: workingset: compare shadow nodes node-wide without kmem accounting"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261106235904.1092712-1-tjmercier@google.com
-- mm-new: 1 -> 12 commits
-  - series: 0 (0) -> 1 (12)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 0 -> 8 commits
-    - maintainer, reviewer: 0 -> 2 commits
-  - new commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - a4a282ec3178 "mm/mglru: rename the generation offset in lru_gen_folio_seq() (0/18)"
+      - 20b541d793e4 "mm/mglru: rename the generation offset in lru_gen_folio_seq() (0/18)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261124-mglru-fg-v6-0-8ffea39934a6@tencent.com
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-1-8ffea39934a6@tencent.com
-      - 045f01541851 "mm/memcontrol: allow update of LRU statistic without holding LRU lock (1/18)"
+      - 4be2aad0c188 "mm/memcontrol: allow update of LRU statistic without holding LRU lock (1/18)"
         - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-2-8ffea39934a6@tencent.com
-      - f1291cd28982 "mm/mglru: make generation page counters atomic (3/18)"
+      - dde3058d5031 "mm/mglru: make generation page counters atomic (3/18)"
         - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
-      - 35a4ef767849 "mm/mglru: skip the flags cmpxchg when nothing changes (5/18)"
+      - 3c38f629cb79 "mm/mglru: skip the flags cmpxchg when nothing changes (5/18)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-6-8ffea39934a6@tencent.com
-      - 36e73a1323bd "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
+      - fa15914d292f "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
-      - 2ceb6271aee1 "mm/mglru: make folio lru referenced times count a generic API (7/18)"
+      - ed2d40800549 "mm/mglru: make folio lru referenced times count a generic API (7/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-8-8ffea39934a6@tencent.com
-      - 0aed60f5d0a3 "mm/mglru: move add/del LRU size accounting out of lru_gen_update_size() (8/18)"
+      - 0b292e28c193 "mm/mglru: move add/del LRU size accounting out of lru_gen_update_size() (8/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-9-8ffea39934a6@tencent.com
-      - 12990be2995d "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
+      - 7167fa3ce738 "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-10-8ffea39934a6@tencent.com
-      - e149c305c1e7 "mm/mglru, smaps: convert to LRU refs based operations for MGLRU (10/18)"
+      - c06f12bcb784 "mm/mglru, smaps: convert to LRU refs based operations for MGLRU (10/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-11-8ffea39934a6@tencent.com
-      - 3d57cec83782 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
+      - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
-      - c09a09347da6 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
+      - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
-      - b4e2320a2cd2 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
+      - 4bc2e2af4110 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
+- mm-new: 12 -> 1 commits
+  - series: 1 (12) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, no role : 8 -> 0 commits
+    - maintainer, reviewer: 2 -> 0 commits
+  - new commits
+    - series "mm: continue vma_flags_t conversion", v2. (11)
+      - 7cba6aaad6fe "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

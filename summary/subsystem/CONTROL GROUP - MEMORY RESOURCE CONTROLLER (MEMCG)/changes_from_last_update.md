@@ -1,51 +1,35 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - ff056011e9f7 "mm: memcontrol: don't lose track of exiting OOM victims"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://patch.msgid.link/avA1wXhTMs9eY2NF@chrisdown.name
-      - Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com
-    - 391f7207cb87 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
-      - Authored by a maintainer, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://patch.msgid.link/20261112013220.4064478-1-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, no role : 0 -> 1 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - new commits
-    - d13f3e028ba6 "memcg: free the private ID of a memcg that never comes online"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://patch.msgid.link/20261124000439.967403-1-shakeel.butt@linux.dev
+    - maintainer, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 16 commits (no change)
-  - series: 5 (16) -> 5 (16) (no change)
+- mm-unstable: 16 -> 18 commits
+  - series: 5 (16) -> 5 (18)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 5bd239042e7a "mm/memcontrol: avoid potential counter leak when reparenting local stats (2/18)"
+      - 5b66a4ba98f9 "mm/memcontrol: avoid potential counter leak when reparenting local stats (2/18)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-3-8ffea39934a6@tencent.com
-      - e538adeae871 "mm/memcg: add folio-based lruvec live helper (4/18)"
+      - eeb3873d6ba9 "mm/memcg: add folio-based lruvec live helper (4/18)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-5-8ffea39934a6@tencent.com
-    - 221063be9b1f "memcg: warn when memory cgroup IDs run out"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://patch.msgid.link/20261124020800.2313930-1-shakeel.butt@linux.dev
+- mm-new: 3 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

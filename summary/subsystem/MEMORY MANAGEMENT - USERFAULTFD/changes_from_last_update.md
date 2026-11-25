@@ -1,29 +1,44 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 50abb4245e1e "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
-      - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - dabcff607543 "mm/userfaultfd: reject DAX mappings"
+  - changed commits
+    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
+      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+- mm-new: 1 -> 6 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, no role : 1 -> 6 commits
+  - new commits
+    - series "userfaultfd: assorted fixes (part 1)", v3. (7)
+      - 29eb880cc9a8 "userfaultfd: use anonymous memory for UFFDIO_ZEROPAGE on private file mappings (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261117-uffd-state-fixes-v3-0-b617009d1a4a@columbia.edu
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-1-b617009d1a4a@columbia.edu
+      - aa0775f7181f "userfaultfd: refuse UFFDIO_MOVE into a non-present huge destination PMD (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-2-b617009d1a4a@columbia.edu
+      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
+      - cd5ff4ce9070 "mm/userfaultfd: check the hugetlb alignment of every VMA in the pre-scan (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-9-b617009d1a4a@columbia.edu
+    - 563aebd7f97d "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
+      - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/
+      - Link: https://lore.kernel.org/linux-mm/avWnaR7VVEGa7yNp@thinkstation/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

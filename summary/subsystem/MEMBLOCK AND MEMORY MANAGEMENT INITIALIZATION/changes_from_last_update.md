@@ -5,54 +5,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 10 commits
-  - series: 0 (1) -> 1 (9)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 8 commits
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 47800f35f0e0 "arch_numa: fix broken NUMA emulation with dummy_numa_init()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261114132625.1710476-1-ekffu200098@gmail.com
-    - series "mm: Unify memmap initialization for compound pages", v3. (11)
-      - 2988e9f01e5d "mm/mm_init: verify zones for template-initialized pages (0/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261120100856.16929-1-songmuchun@bytedance.com
-        - Link: https://patch.msgid.link/20261120100856.16929-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-        - Link: https://lore.kernel.org/20261112112816.55095-1-lizhe.67@bytedance.com/ [2]
-      - 5256e839bd41 "mm/mm_init: factor out common struct page initialization (1/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-3-songmuchun@bytedance.com
-      - 3570d9d423e9 "mm/mm_init: simplify zone device page initialization (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-4-songmuchun@bytedance.com
-      - de4374b8ce7a "mm/mm_init: factor out compound page initialization (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-5-songmuchun@bytedance.com
-      - fdc4d9bfc9e1 "mm/hugetlb: use common compound page initialization helper (6/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-8-songmuchun@bytedance.com
-      - 0ee4aa98282b "mm/mm_init: make __init_single_page() static (7/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-9-songmuchun@bytedance.com
-      - 0260c3944a66 "mm/cma: localize init_cma_pageblock() to cma.c (9/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-11-songmuchun@bytedance.com
-      - 24740c9a3be7 "mm/mm_init: move pageblock migratetype init to memmap helpers (10/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261120100856.16929-12-songmuchun@bytedance.com
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-  - new commits
-    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
-      - a8e3ddb2fc25 "mm/page_ext: use common allocation and initialization entry points (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
-      - 406742dadf20 "mm/page_ext: allocate page extensions early for SPARSEMEM (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,11 +7,11 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "kfence: fix pool allocation failure handling", v2. (3 commits)
-      - 9b8a5a954e7b "kfence: fix pool cleanup on metadata allocation failure" (0/3)
+      - 765aff245314 "kfence: fix pool cleanup on metadata allocation failure" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793242457.git.liuyun01@kylinos.cn
         - Link: https://patch.msgid.link/7e0fc28c73fbb594c296f6121ca506392511ba5e.1793242457.git.liuyun01@kylinos.cn
-      - 38ffc0dbe289 "kfence: clear the pool pointer before freeing pages" (1/3)
+      - 45a9ba5aeb24 "kfence: clear the pool pointer before freeing pages" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/2fab8aaa82ab2004e706fd7ec8dac20427976457.1793242457.git.liuyun01@kylinos.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
@@ -20,6 +20,6 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 480abfdddf17 "hibernation, KFENCE: explicitly map/unmap KFENCE pages" (3/5)
+      - b670fc3c3e6c "hibernation, KFENCE: explicitly map/unmap KFENCE pages" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20260926-hibernation-v2-4-235f69f3ab2a@kernel.org

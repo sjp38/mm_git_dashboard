@@ -13,23 +13,20 @@
       - Link: https://patch.msgid.link/20261112221248.3512447-1-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 2 commits
+    - no role, reviewer: 3 commits
   - full commits list
-      - 71da8dc8cc28 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - e9977d01e859 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-3-ridong.chen@linux.dev
-    - afc5c92923c6 "mm/list_lru: fix potential infinite loop on xa node allocation failure"
+    - 81fc549590f8 "mm/list_lru: fix potential infinite loop on xa node allocation failure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261122031143.3639941-1-songmuchun@bytedance.com
       - Link: : https://lore.kernel.org/awPVQ3aJxojMSEhb@chrisdown.name
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - 69570e1adeb5 "mm: shrinker: stop counting when the seq buffer overflows"
+    - 1c645385b8fb "mm: shrinker: stop counting when the seq buffer overflows"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261123055020.287151-1-wangxuewen_ky@163.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

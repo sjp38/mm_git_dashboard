@@ -2,53 +2,50 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 0 (6) series, 1 non-series commits
+- mm-unstable: 8 total, 1 (7) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
-    - maintainer, no role : 3 commits
+    - maintainer, no role : 4 commits
     - maintainer, maintainer: 3 commits
   - full commits list
-      - fc644528c221 "zsmalloc: return handle from obj_allocated()" (2/11)
+      - b2fd3148892b "zsmalloc: return handle from obj_allocated()" (2/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261111064707.2568433-4-senozhatsky@chromium.org
-      - 4db283dd0a49 "zsmalloc: switch handle type to struct zs_handle" (3/11)
+      - 3f4c48382a35 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-5-senozhatsky@chromium.org
-      - 747c26d3651e "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
+      - 0fbab90f4227 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261111064707.2568433-9-senozhatsky@chromium.org
-      - b293a1e98a53 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - 75abc3da4bb5 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 9b583614eb85 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - 98760f4f6b6d "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-11-senozhatsky@chromium.org
-      - b1bf99abb108 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
+      - 27beb1e71293 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261111064707.2568433-12-senozhatsky@chromium.org
-    - 6347638b5dd6 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+    - 89babbe2fdb3 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-  - full commits list
     - series "zram: zsmalloc: speed up zspage free path", v3. (2 commits)
-      - 1a40c59e2292 "zsmalloc: free a zspage's pages in one batch" (0/2)
-        - Authored by a maintainer, reviewed by nobody
+      - 4525ccca6beb "zsmalloc: free a zspage's pages in one batch" (0/2)
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261123054746.2579253-1-senozhatsky@chromium.org
         - Link: https://patch.msgid.link/20261123054746.2579253-2-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/all/20261016120927.3191690-1-hongfengchen@xiaomi.com/ [1]
         - Link: https://lore.kernel.org/20261109105957.2577351-1-chenhongfeng0212@gmail.com [2]
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - ffc229dc039d "zsmalloc: fix SPDX license identifier"
+    - 14f565b7aa2c "zsmalloc: fix SPDX license identifier"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://patch.msgid.link/39f6056e0c8834fc3eca2001fcb44f3b6048f74d.1795061575.git.senozhatsky@chromium.org
-      - 44a4cb036ef7 "mm/zsmalloc: remove unused zpdesc_lock()" (3/5)
+      - 041b352e00e6 "mm/zsmalloc: remove unused zpdesc_lock()" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-4-2f845e94dd50@amd.com
