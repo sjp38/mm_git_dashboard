@@ -26,59 +26,55 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - fa059fe4b1c2 "mm: swap: make swap_header badpages a flexible array"
+    - 7bd32722299a "mm: swap: make swap_header badpages a flexible array"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261120061750.2973004-1-kaleshsingh@google.com
-    - 8ebcd6182056 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+    - 29378f5cd79a "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 2 (7) series, 1 non-series commits
+- mm-unstable: 7 total, 2 (6) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 3 commits
-    - maintainer, no role : 1 commits
   - full commits list
-    - fceca8a5a7cb "mm: bypass swap readahead for zswap"
+    - 2d1808cd1645 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
     - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3 commits)
-      - 328ba05b0dc0 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
+      - 11b38901022a "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
-      - e83c549424ca "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
+      - 867a70e67d64 "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
-      - e74053eb7540 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
+      - 2ec47d5e7717 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
     - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4 commits)
-      - af9f0b820c2e "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
+      - 37862c20a6d9 "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
-      - 8f15dc60889a "mm/swap: account synchronous swap reads as memory stall" (2/4)
+      - c6595dde898a "mm/swap: account synchronous swap reads as memory stall" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
-      - e780f2b570e7 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
+      - 46ad427cdde6 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-4-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/linux-mm/auOz00OGB_8dgniC@cmpxchg.org/
-      - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs" (15/18)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-      - 954ea3c441ed "mm/swapops: remove unused make_guard_swp_entry()" (1/5)
+      - 59e2ae5e6305 "mm/swapops: remove unused make_guard_swp_entry()" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-2-2f845e94dd50@amd.com
-      - 339a16a81bb6 "mm/swap: remove unused folio_to_swp_tb()" (2/5)
+      - 1b93373f0979 "mm/swap: remove unused folio_to_swp_tb()" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-3-2f845e94dd50@amd.com

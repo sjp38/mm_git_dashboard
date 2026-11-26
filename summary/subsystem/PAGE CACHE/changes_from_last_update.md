@@ -2,40 +2,45 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - e7509cfacfcf "mm: report all-zero cachestat for DAX mappings"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261125030432.274396-1-bsdhenrymartin@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 8 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - c65060379c30 "mm: cachestat: count each page only once"
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 0 (1) -> 1 (1)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 5 -> 6 commits
+    - maintainer, no role : 1 -> 0 commits
+  - changed commits
+    - f8ba1f9b5d85 "mm: cachestat: count each page only once"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-2-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115635.8346206195d50372@chrisdown.name
-    - 3c73fa525184 "mm: cachestat: restart the walk after each entry"
+    - 846409e88034 "mm: cachestat: restart the walk after each entry"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-3-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115640.c707f5c9496fcea4@chrisdown.name
-  - changed commits
+    - series "mm: continue vma_flags_t conversion", v2. (11)
+      - 1b2ed65e9917 "mm/filemap: convert fault and readahead logic to use vma_flags_t (0/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
+  - dropped commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
       - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 1 (1)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, no role : 1 -> 0 commits
-  - new commits
-    - series "mm: continue vma_flags_t conversion", v2. (11)
-      - 87f9c757fc4e "mm/filemap: convert fault and readahead logic to use vma_flags_t (0/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

@@ -5,25 +5,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
-  - series: 0 (6) -> 1 (7)
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 3 -> 4 commits
+    - maintainer, no role : 4 -> 4 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "zram: zsmalloc: speed up zspage free path", v3. (2)
-      - 4525ccca6beb "zsmalloc: free a zspage's pages in one batch (0/2)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Nhat Pham <nphamcs@gmail.com>"
-        - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - Link: https://lore.kernel.org/20261123054746.2579253-1-senozhatsky@chromium.org
-        - Link: https://patch.msgid.link/20261123054746.2579253-2-senozhatsky@chromium.org
-        - Link: https://lore.kernel.org/all/20261016120927.3191690-1-hongfengchen@xiaomi.com/ [1]
-        - Link: https://lore.kernel.org/20261109105957.2577351-1-chenhongfeng0212@gmail.com [2]
-- mm-new: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - maintainer, nobody: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

@@ -6,113 +6,62 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 74 -> 87 commits
-  - series: 8 (48) -> 8 (52)
+- mm-unstable: 87 -> 91 commits
+  - series: 8 (52) -> 8 (57)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 30 -> 30 commits (no change)
     - no role, maintainer: 26 -> 26 commits (no change)
-    - maintainer, nobody: 7 -> 19 commits
-    - maintainer, no role : 3 -> 4 commits
+    - maintainer, nobody: 19 -> 18 commits
+    - maintainer, no role : 4 -> 9 commits
     - maintainer, maintainer: 2 -> 2 commits (no change)
-  - new commits
-    - series "mm/damon: update documents for mm-next onboarding". (4)
-      - 7df0129eefd2 "Docs/mm/damon/maintainer-profile: use damon.git for patch baselines (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124160124.93482-3-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
-        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
-      - 64d972c9aa3d "Docs/mm/damon/maintainer-profile: drop 'SCM Trees' section (2/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124160124.93482-4-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
-        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
-      - 5cb22c60be88 "Docs/mm/damon/maintainer-profile: update key cycle dates for damon.git (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124160124.93482-5-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
   - changed commits
-    - b99236fd46fe "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+    - series "mm/damon: let users report their data attribute findings", v2. (27)
+      - fe40672bfb6a "Docs/mm/damon/design: update for report system (8/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
+      - 88d29f537c25 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
+      - 4a49c23af1ca "Docs/mm/damon/design: update for report_made probe filter type (16/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-18-sj@kernel.org
+      - ccdf62973d8a "Docs/admin-guide/mm/damon/usage: update for REPORT_MADE probe filter (17/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-19-sj@kernel.org
+      - 5c709530faef "Docs/mm/damon/design: update for user report support (24/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-26-sj@kernel.org
+      - 183f1166f327 "Docs/admin-guide/mm/damon/usage: update for user_report report support (25/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-27-sj@kernel.org
+  - dropped commits
+    - 8662b5fa771d "lib/test_hmm: invalidate all mirrors on device-private migration"
       - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 062ad5d99ee2 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 40614258e3f5 "selftests/mm: skip poisoned dirty page-cache on NILFS2"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 8dc6448b1621 "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - e1d5122775f6 "selftests/mm: skip hard dirty page-cache test on CephFS"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 0a6f7458be17 "selftests/mm: close dirty page-cache files before unlinking them"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 56b46ce36db4 "selftests/mm: extend page-cache test files with pwrite()"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 6d9846140601 "selftests/mm: write the whole page-cache test file for OMFS"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 2914d4f7352b "selftests/mm: accept EIO from close after poisoning dirty data"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/r/20261122015246.d8b6b98ff5a8157168156339@linux-foundation.org
+      - Link: https://lore.kernel.org/r/179535872126.34.4789080961796247940.b4-reply@b4
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
       - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
-- mm-new: 11 -> 11 commits (no change)
-  - series: 0 (1) -> 1 (9)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 0 -> 3 commits
-    - maintainer, nobody: 10 -> 0 commits
-    - maintainer, no role : 1 -> 6 commits
+- mm-new: 11 -> 7 commits
+  - series: 1 (9) -> 1 (4)
+    - no role, nobody: 2 -> 4 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - maintainer, no role : 6 -> 0 commits
   - new commits
-    - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - 3e68c35b902f "Docs/mm/damon/design: update for report system (8/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
-      - bd97f50bd1d3 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
-      - 2e200cd14891 "Docs/mm/damon/design: update for report_made probe filter type (16/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-18-sj@kernel.org
-      - f980722094c3 "Docs/admin-guide/mm/damon/usage: update for REPORT_MADE probe filter (17/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-19-sj@kernel.org
-      - 866923f74231 "Docs/mm/damon/design: update for user report support (24/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-26-sj@kernel.org
-      - ec93a0bf7d66 "Docs/admin-guide/mm/damon/usage: update for user_report report support (25/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-27-sj@kernel.org
-    - series "selftests/mm: fix userfaultfd tests with CONFIG_PTE_MARKER_UFFD_WP=n". (2)
-      - 0074e737c591 "selftests/mm: uffd-wp-mremap: skip unsupported shmem and hugetlb cases (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261122082020.1255434-1-kaleshsingh@google.com
-        - Link: https://patch.msgid.link/20261122082020.1255434-2-kaleshsingh@google.com
-      - 469a5ecf7a40 "selftests/mm: uffd-unit-tests: filter required features per memory type (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261122082020.1255434-3-kaleshsingh@google.com
-    - 563aebd7f97d "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
-      - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/
-      - Link: https://lore.kernel.org/linux-mm/avWnaR7VVEGa7yNp@thinkstation/
-    - 472cd5a809c2 "tools/mm/page_owner_sort: fix slab allocator labelling"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261117214947.13471-1-evanfengff@gmail.com
-    - series "fs/proc: fix PAGEMAP_SCAN walk_end after a buffer refill", v2. (2)
-      - a036649714c3 "selftests/mm: cover PAGEMAP_SCAN refill and HugeTLB retry (1/2)"
+    - series "mm/mlock: make zero length requests a no-op and reject wrapping ranges". (3)
+      - edd013110a98 "selftests/mm: test mlock() and munlock() range normalisation (2/3)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261118-pagemap-walk-end-v2-2-94cd92d838b3@gmail.com
-  - dropped commits
-    - 5e68beacbae1 "selftests/mm: hmm: speed up migrate_remap_fault"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/r/20261119133955.54001-1-zenghui.yu@linux.dev [1]
+        - Link: https://patch.msgid.link/20261102074412.189554-4-azpijr@gmail.com
+    - 3d27e49eb905 "tools/mm: page-types: flush pending idle bitmap bits after walking"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://patch.msgid.link/20261125091408.1584017-1-wangxuewen_ky@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

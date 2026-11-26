@@ -6,39 +6,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 5 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
+    - 259dad41caeb "mm/userfaultfd: reject DAX mappings"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-- mm-new: 1 -> 6 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, no role : 1 -> 6 commits
-  - new commits
-    - series "userfaultfd: assorted fixes (part 1)", v3. (7)
-      - 29eb880cc9a8 "userfaultfd: use anonymous memory for UFFDIO_ZEROPAGE on private file mappings (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261117-uffd-state-fixes-v3-0-b617009d1a4a@columbia.edu
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-1-b617009d1a4a@columbia.edu
-      - aa0775f7181f "userfaultfd: refuse UFFDIO_MOVE into a non-present huge destination PMD (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-2-b617009d1a4a@columbia.edu
-      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
-      - cd5ff4ce9070 "mm/userfaultfd: check the hugetlb alignment of every VMA in the pre-scan (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-9-b617009d1a4a@columbia.edu
-    - 563aebd7f97d "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
-      - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/
-      - Link: https://lore.kernel.org/linux-mm/avWnaR7VVEGa7yNp@thinkstation/
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
+- mm-new: 6 -> 5 commits
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, no role : 6 -> 5 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

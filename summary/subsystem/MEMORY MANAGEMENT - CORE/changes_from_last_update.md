@@ -2,75 +2,49 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - new commits
-    - 549e0b6c9835 "mm/vma: drop mm asynchronously in vma_start_read()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261124-vma-read-lock-mmdrop-async-v1-1-257f99f551de@kernel.org
-      - Link: https://lore.kernel.org/all/DN267JUKDRNS.2VMV07CQ58R4X@gmail.com/
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 22 commits
-  - series: 2 (10) -> 2 (14)
+- mm-unstable: 22 -> 20 commits
+  - series: 2 (14) -> 2 (12)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 11 -> 9 commits
+    - no role, no role : 9 -> 11 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 4 commits
-    - maintainer, reviewer: 0 -> 1 commits
+    - maintainer, no role : 4 -> 1 commits
+    - maintainer, reviewer: 1 -> 0 commits
   - changed commits
-    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
+    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
+      - 5d83861a79f8 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
+    - series "mm: continue vma_flags_t conversion", v2. (11)
+      - 328413649409 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
+  - dropped commits
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
       - dde3058d5031 "mm/mglru: make generation page counters atomic (3/18)"
         - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
       - fa15914d292f "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
       - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
       - 4bc2e2af4110 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
-  - dropped commits
-    - 0e6508518e59 "mm: free unused page table allocated by do_set_pmd()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/c13cdd25-7d7b-4059-a22d-af0a48fabaac@kernel.org
-    - 10902e7939a5 "mm/pagewalk: document missing struct members"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
-- mm-new: 5 -> 4 commits
-  - series: 0 (5) -> 0 (4)
-    - no role, no role : 1 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, no role : 3 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-  - new commits
-    - series "mm: continue vma_flags_t conversion", v2. (11)
-      - 7cba6aaad6fe "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
-    - series "userfaultfd: assorted fixes (part 1)", v3. (7)
-      - d6c137de0e12 "fs/proc/task_mmu: downgrade writable migration entries in PAGEMAP_SCAN write-protect (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-3-b617009d1a4a@columbia.edu
-    - series "mm: reworked AI-generated VMA and mremap fixes". (6)
-      - 3dd9a260908f "mm/mremap: apply the mmap() offset limits on expansion (3/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-5-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536260304.412063.8485838901368834162.b4-reply@b4
+- mm-new: 4 -> 2 commits
+  - series: 0 (4) -> 0 (2)
+    - no role, no role : 3 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

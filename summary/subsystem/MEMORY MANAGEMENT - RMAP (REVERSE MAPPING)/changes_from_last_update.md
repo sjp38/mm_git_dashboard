@@ -9,6 +9,12 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 25e10126a408 "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: <stable@kernel.org>"
+      - Link: https://patch.msgid.link/68dcdfbc-2755-437f-bf58-d175b1740afd@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -7,773 +7,491 @@
     - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 10 -> 13 commits
+- mm-hotfixes-unstable: 13 -> 15 commits
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 5 -> 4 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 4 -> 5 commits
-    - maintainer, nobody: 0 -> 2 commits
+    - no role, no role : 4 -> 5 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 5 -> 6 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - 549e0b6c9835 "mm/vma: drop mm asynchronously in vma_start_read()"
+    - e7509cfacfcf "mm: report all-zero cachestat for DAX mappings"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261124-vma-read-lock-mmdrop-async-v1-1-257f99f551de@kernel.org
-      - Link: https://lore.kernel.org/all/DN267JUKDRNS.2VMV07CQ58R4X@gmail.com/
-    - 3f445d864c27 "mm-vma-drop-mm-asynchronously-in-vma_start_read-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/awXHR007d8MlhJUC@gremlin
-    - 48f528483336 "mm-vma-drop-mm-asynchronously-in-vma_start_read-fix-2"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/CAJuCfpEmFEX5iqLw_c94a97rVrC+xBWpKnO4rVpeDgkUfAPq7Q@mail.gmail.com
+      - Link: https://patch.msgid.link/20261125030432.274396-1-bsdhenrymartin@gmail.com
   - changed commits
-    - dd17ce593f36 "mm/msync: return -ENOMEM if page-aligned length overflows"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - Link: https://patch.msgid.link/20261120-msync-enomem-fix-v1-1-80282c8c5beb@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20230321074035.1526157-5-mawupeng1@huawei.com/
+    - 3551c84218c7 "mm/hmm: account for subpage offsets in device-private PMDs"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-hotfixes-unstable
+      - Link: https://patch.msgid.link/179342234355.4.16705453209886955762@gmail.com
+      - Link: : https://lore.kernel.org/20261121160037.1a479f3c8b4e860bc23c106d@linux-foundation.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 331 -> 369 commits
-  - series: 48 (222) -> 51 (246)
-    - no role, nobody: 32 -> 34 commits
-    - no role, no role : 103 -> 111 commits
-    - no role, reviewer: 20 -> 21 commits
-    - no role, maintainer: 96 -> 99 commits
+- mm-unstable: 369 -> 413 commits
+  - series: 51 (246) -> 55 (290)
+    - no role, nobody: 34 -> 32 commits
+    - no role, no role : 111 -> 130 commits
+    - no role, reviewer: 21 -> 21 commits (no change)
+    - no role, maintainer: 99 -> 110 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 31 -> 44 commits
-    - maintainer, no role : 23 -> 32 commits
-    - maintainer, reviewer: 5 -> 7 commits
+    - maintainer, nobody: 44 -> 43 commits
+    - maintainer, no role : 32 -> 51 commits
+    - maintainer, reviewer: 7 -> 5 commits
     - maintainer, maintainer: 17 -> 17 commits (no change)
-  - new commits
-    - f11b8bd3c216 "mm/mmap: free gathered pages before MMF_OOM_SKIP"
+  - changed commits
+    - series "mm: mglru: fix swappiness behavior", v9. (16)
+      - f1616d4ea47a "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://patch.msgid.link/20261114200803.23129-10-baohua@kernel.org
+      - 559d8fd0b5e8 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: : https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org
+        - Link: https://patch.msgid.link/20261114200803.23129-11-baohua@kernel.org
+      - 1aa28a3ebb7c "mm/mglru: run aging when one type is drained (10/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://patch.msgid.link/20261114200803.23129-12-baohua@kernel.org
+      - 921872e63d51 "mm/mglru: restrict eviction accounting to eligible zones (12/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://patch.msgid.link/20261114200803.23129-13-baohua@kernel.org
+      - a4a77f2d5feb "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (13/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://patch.msgid.link/20261114200803.23129-14-baohua@kernel.org
+      - cbc6f2105a27 "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (14/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://patch.msgid.link/20261114200803.23129-15-baohua@kernel.org
+      - 0d7d501b18da "mm/mglru: make swappiness=1 file reclaim more aggressive (15/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
+        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
+        - Link: https://patch.msgid.link/20261114200803.23129-16-baohua@kernel.org
+    - 25e10126a408 "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: <stable@kernel.org>"
+      - Link: https://patch.msgid.link/68dcdfbc-2755-437f-bf58-d175b1740afd@kernel.org
+    - c0933f655cad "mm/mmap: free gathered pages before MMF_OOM_SKIP"
       - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-1-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115630.0b75d0b49869d4fa@chrisdown.name
-    - c65060379c30 "mm: cachestat: count each page only once"
+    - f8ba1f9b5d85 "mm: cachestat: count each page only once"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-2-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115635.8346206195d50372@chrisdown.name
-    - 3c73fa525184 "mm: cachestat: restart the walk after each entry"
+    - 846409e88034 "mm: cachestat: restart the walk after each entry"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-3-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115640.c707f5c9496fcea4@chrisdown.name
-    - 37e895794fd0 "percpu: fix contig hints that are too low"
+    - e0498d3c0d44 "percpu: fix contig hints that are too low"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-11-50a2ed382b61@kernel.org
-    - 61c0c918d0b9 "percpu: search the whole reserved chunk"
+    - 312c84446f96 "percpu: search the whole reserved chunk"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-12-50a2ed382b61@kernel.org
-    - 575cb1ded75c "percpu: queue the balance work on an unbound workqueue"
+    - 9f38d5724442 "percpu: queue the balance work on an unbound workqueue"
       - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-13-50a2ed382b61@kernel.org
-    - series "mm/damon: update documents for mm-next onboarding". (4)
-      - a8732228cbf1 "MAINTAINERS: change DAMON SCM tree to mm/damon.git (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261124160124.93482-1-sj@kernel.org
-        - Link: https://patch.msgid.link/20261124160124.93482-2-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
-        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
-      - 7df0129eefd2 "Docs/mm/damon/maintainer-profile: use damon.git for patch baselines (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124160124.93482-3-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
-        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
-      - 64d972c9aa3d "Docs/mm/damon/maintainer-profile: drop 'SCM Trees' section (2/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124160124.93482-4-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
-        - Link: https://git.kernel.org/pub/scm/linux/kernel/git/mm/damon.git/ [2]
-      - 5cb22c60be88 "Docs/mm/damon/maintainer-profile: update key cycle dates for damon.git (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124160124.93482-5-sj@kernel.org
-        - Link: https://lore.kernel.org/bed81e01-7303-4957-bd7d-38e3a094e96f@kernel.org/ [1]
-  - changed commits
-    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
+    - 7a4576caa02a "memcg: warn when memory cgroup IDs run out"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261124020800.2313930-1-shakeel.butt@linux.dev
+    - 75b902f21f95 "mm/hugetlb: fix NR_HUGETLB accounting for kept surplus folios"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - 4b215bb587a3 "afs: don't put an error pointer after a failed address lookup"
-      - Authored by no role player, reviewed by nobody
       - branch: mm-new -> mm-unstable
-    - b99236fd46fe "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+      - Link: https://patch.msgid.link/20261124-for-gather-surplus-v1-1-231e5660f3d8@kylinos.cn
+    - 259dad41caeb "mm/userfaultfd: reject DAX mappings"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
+    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
+      - 73b6fc903bdd "kmsan: encapsulate per-page metadata access (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261119065812.89959-1-songmuchun@bytedance.com
+        - Link: https://patch.msgid.link/20261119065812.89959-2-songmuchun@bytedance.com
+      - c559eb989f85 "mm/page_ext: fix client data alignment (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
+      - a3027d451583 "mm/page_ext: always use vmalloc for section page extensions (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
+      - 64d638e996fc "mm/page_ext: use common allocation and initialization entry points (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
+      - e4367a7197de "mm/page_ext: allocate page extensions early for SPARSEMEM (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
+      - ed7787a0b69d "mm/page_ext: inline unchecked page extension lookup (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
+      - 5d83861a79f8 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
+    - series "mm/damon: improve efficiency (paddr, core), fix a selftest, add a kunit". (4)
+      - 5cdf0d5dd609 "mm/damon/paddr: skip non-LRU folios as a whole in pageout (0/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261124153021.90142-1-sj@kernel.org
+        - Link: https://patch.msgid.link/20261124153021.90142-2-sj@kernel.org
+      - 0362e9a224e9 "mm/damon/core: skip apply_probes() when no probes are installed (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153021.90142-3-sj@kernel.org
+      - 6070ac8c4ee0 "selftests/damon/damos_quota: skip the last sample when counting exceeds (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153021.90142-4-sj@kernel.org
+      - 6d498c9063f9 "mm/damon/tests/core-kunit: add test for damon_call() (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153021.90142-5-sj@kernel.org
+    - series "mm/damon: let users report their data attribute findings", v2. (27)
+      - f7c04eb1d36c "mm/damon/api: introduce struct damon_report (0/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
+        - Link: https://lore.kernel.org/20261124153636.91854-1-sj@kernel.org
+        - Link: https://patch.msgid.link/20261124153636.91854-2-sj@kernel.org
+        - Link: https://github.com/damonitor/damo [1]
+      - e50f6c9475fb "mm/damon/core: implement data attribute report queue (1/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-3-sj@kernel.org
+      - 37649d365699 "mm/damon/core: introduce damon_submit_report() (2/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-4-sj@kernel.org
+      - 6811454971da "mm/damon/sysfs: add admin/reports/ directory (3/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-5-sj@kernel.org
+      - 018697a3625e "mm/damon/sysfs: add reports/producers/ directory (4/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-6-sj@kernel.org
+      - aa5306afad8a "mm/damon/sysfs: add producers/nr_producers file (5/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-7-sj@kernel.org
+      - deffc45cd7c1 "mm/damon/sysfs: implement report producer directory (6/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-8-sj@kernel.org
+      - 9a5f91b7ba84 "mm/damon/sysfs: implement report producer type and state files (7/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-9-sj@kernel.org
+      - fe40672bfb6a "Docs/mm/damon/design: update for report system (8/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
+      - 88d29f537c25 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
+      - 164c97f292bd "Docs/ABI/damon: update for report producer sysfs files (10/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-12-sj@kernel.org
+      - 69b3a34a298b "mm/damon/core: introduce DAMON_FILTER_TYPE_REPORT_MADE (11/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-13-sj@kernel.org
+      - e3b120d75dd6 "mm/damon/core: introduce damon_report_exist() (12/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-14-sj@kernel.org
+      - 20eefd7ece05 "mm/damon/paddr: support REPORT_MADE type probe filter (13/27)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-15-sj@kernel.org
+      - f3481579e186 "mm/damon/sysfs: add filter_report_type file under probe filter directory (14/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-16-sj@kernel.org
+      - 9f0546c37810 "mm/damon/sysfs: support REPORT_MADE type probe filter setup (15/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-17-sj@kernel.org
+      - 4a49c23af1ca "Docs/mm/damon/design: update for report_made probe filter type (16/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-18-sj@kernel.org
+      - ccdf62973d8a "Docs/admin-guide/mm/damon/usage: update for REPORT_MADE probe filter (17/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-19-sj@kernel.org
+      - 74ac7e8f5d61 "Docs/ABI/damon: update for REPORT_MADE probe filter (18/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-20-sj@kernel.org
+      - 2dc939ebdaf3 "mm/damon/api: introduce user_report report type (19/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-21-sj@kernel.org
+      - 9ab5f855d0c3 "mm/damon/sysfs: add user_report support for report type input (20/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-22-sj@kernel.org
+      - f76ee789fcbb "mm/damon/sysfs: implement report producer addr_{start,end} files (21/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-23-sj@kernel.org
+      - ac9b00e520f0 "mm/damon/sysfs: implement submit command for report producer (22/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-24-sj@kernel.org
+      - 073581def757 "selftests/damon/sysfs.sh: add basic tests for admin/reports/ (23/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-25-sj@kernel.org
+      - 5c709530faef "Docs/mm/damon/design: update for user report support (24/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-26-sj@kernel.org
+      - 183f1166f327 "Docs/admin-guide/mm/damon/usage: update for user_report report support (25/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-27-sj@kernel.org
+      - 7eaa545bc304 "Docs/ABI/damon: update for user_report report support (26/27)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124153636.91854-28-sj@kernel.org
+    - series "mm: continue vma_flags_t conversion", v2. (11)
+      - 1b2ed65e9917 "mm/filemap: convert fault and readahead logic to use vma_flags_t (0/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
+      - e94cbda0f126 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (1/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
+      - 328413649409 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
+      - 68db4745b5fa "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t (3/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-4-bf3fade93064@kernel.org
+      - 27905863ae79 "fs/coredump: convert vma_dump_size() to use vma_flags_t (4/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-5-bf3fade93064@kernel.org
+      - 92857815427e "uprobes: convert VMA flag tests to use vma_flags_t (5/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-6-bf3fade93064@kernel.org
+      - 900955450020 "perf: convert VMA flag tests to use vma_flags_t (6/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-7-bf3fade93064@kernel.org
+      - 8fd68e984f65 "selinux: convert VMA flag tests to use vma_flags_t (7/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-8-bf3fade93064@kernel.org
+      - 74412bebed1a "apparmor: convert VMA flag tests to use vma_flags_t (8/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-9-bf3fade93064@kernel.org
+      - 5f03f26d934b "ima: convert VMA flag tests to use vma_flags_t (9/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-10-bf3fade93064@kernel.org
+      - c1d3ba801bfa "ipe: convert VMA flag tests to use vma_flags_t (10/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-11-bf3fade93064@kernel.org
+    - series "mm: convert further simple mmap hooks to mmap_prepare", v2. (13)
+      - 7d7fb4783337 "xen/privcmd: convert mmap hook to mmap_prepare (0/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://lore.kernel.org/20261124-late-2026-mmap_prepare-v2-0-0b0d99d655f9@kernel.org
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-1-0b0d99d655f9@kernel.org
+      - 73f36965d380 "KVM: PPC: Book3S: convert spapr TCE mmap hook to mmap_prepare (1/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-2-0b0d99d655f9@kernel.org
+      - e15af9c84cfa "mshv_vtl: convert mmap hooks to mmap_prepare (2/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-3-0b0d99d655f9@kernel.org
+      - 46750836a799 "x86/sgx: convert vepc mmap hook to mmap_prepare (3/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-4-0b0d99d655f9@kernel.org
+      - 3fb384d1be49 "udf: convert mmap hook to mmap_prepare (4/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-5-0b0d99d655f9@kernel.org
+      - 70ab530b3784 "selinuxfs: convert mmap hooks to mmap_prepare (5/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-6-0b0d99d655f9@kernel.org
+      - 233121b9d09d "xen: convert xenstore interface mmap hooks to mmap_prepare (6/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-7-0b0d99d655f9@kernel.org
+      - 4f402dc4b4da "soc: aspeed: convert LPC and P2A control mmap hooks to mmap_prepare (7/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-8-0b0d99d655f9@kernel.org
+      - ecf684a3eb60 "soc: qcom: rmtfs_mem: convert mmap hook to mmap_prepare (8/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-9-0b0d99d655f9@kernel.org
+      - 23086d2d5ec2 "tee: convert shm mmap hook to mmap_prepare (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-10-0b0d99d655f9@kernel.org
+      - b21a45381e8d "misc: bcm-vk: convert mmap hook to mmap_prepare (10/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-11-0b0d99d655f9@kernel.org
+      - 92cdcfbf7034 "ptp: vmclock: convert mmap hook to mmap_prepare (11/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-12-0b0d99d655f9@kernel.org
+      - 739e2d979b66 "vhost-vdpa: convert mmap hook to mmap_prepare (12/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - dropped "Cc: Jens Wiklander <jens.wiklander@oss.qualcomm.com>"
+        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-13-0b0d99d655f9@kernel.org
+  - dropped commits
+    - 8662b5fa771d "lib/test_hmm: invalidate all mirrors on device-private migration"
       - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 062ad5d99ee2 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+      - Link: https://lore.kernel.org/r/20261122015246.d8b6b98ff5a8157168156339@linux-foundation.org
+      - Link: https://lore.kernel.org/r/179535872126.34.4789080961796247940.b4-reply@b4
+    - 3845b180fbc1 "lib/test_hmm: fix device-private backing subpage selection"
       - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 40614258e3f5 "selftests/mm: skip poisoned dirty page-cache on NILFS2"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 8dc6448b1621 "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - e1d5122775f6 "selftests/mm: skip hard dirty page-cache test on CephFS"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 0a6f7458be17 "selftests/mm: close dirty page-cache files before unlinking them"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 56b46ce36db4 "selftests/mm: extend page-cache test files with pwrite()"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 6d9846140601 "selftests/mm: write the whole page-cache test file for OMFS"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 2914d4f7352b "selftests/mm: accept EIO from close after poisoning dirty data"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
     - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
       - 20b541d793e4 "mm/mglru: rename the generation offset in lru_gen_folio_seq() (0/18)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20261124-mglru-fg-v6-0-8ffea39934a6@tencent.com
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-1-8ffea39934a6@tencent.com
       - 4be2aad0c188 "mm/memcontrol: allow update of LRU statistic without holding LRU lock (1/18)"
         - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-2-8ffea39934a6@tencent.com
       - 5b66a4ba98f9 "mm/memcontrol: avoid potential counter leak when reparenting local stats (2/18)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-3-8ffea39934a6@tencent.com
       - dde3058d5031 "mm/mglru: make generation page counters atomic (3/18)"
         - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
       - eeb3873d6ba9 "mm/memcg: add folio-based lruvec live helper (4/18)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-5-8ffea39934a6@tencent.com
       - 3c38f629cb79 "mm/mglru: skip the flags cmpxchg when nothing changes (5/18)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-6-8ffea39934a6@tencent.com
       - fa15914d292f "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
       - ed2d40800549 "mm/mglru: make folio lru referenced times count a generic API (7/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-8-8ffea39934a6@tencent.com
       - 0b292e28c193 "mm/mglru: move add/del LRU size accounting out of lru_gen_update_size() (8/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-9-8ffea39934a6@tencent.com
       - 7167fa3ce738 "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-10-8ffea39934a6@tencent.com
       - c06f12bcb784 "mm/mglru, smaps: convert to LRU refs based operations for MGLRU (10/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-11-8ffea39934a6@tencent.com
       - e8c28cbeccb0 "mm/damon: convert to LRU refs based operations for MGLRU (11/18)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-12-8ffea39934a6@tencent.com
       - 89514bd84c49 "mm/khugepaged: convert to LRU refs based operations for MGLRU (12/18)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-13-8ffea39934a6@tencent.com
       - c4be721cc233 "mm/madvise: adapt for LRU refs based operations for MGLRU (13/18)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-14-8ffea39934a6@tencent.com
       - 7eb7df818be1 "mm/huge_memory: mark folio as accessed more accurately on split (14/18)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-15-8ffea39934a6@tencent.com
       - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
       - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
       - 4bc2e2af4110 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
-    - e5bfd4721e28 "alloc_tag: use __ prefixed ELF section names"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261119170353.1835737-2-ardb%2Bgit@google.com
-    - 1c645385b8fb "mm: shrinker: stop counting when the seq buffer overflows"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261123055020.287151-1-wangxuewen_ky@163.com
-    - series "zram: zsmalloc: speed up zspage free path", v3. (2)
-      - 4525ccca6beb "zsmalloc: free a zspage's pages in one batch (0/2)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Nhat Pham <nphamcs@gmail.com>"
-        - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - Link: https://lore.kernel.org/20261123054746.2579253-1-senozhatsky@chromium.org
-        - Link: https://patch.msgid.link/20261123054746.2579253-2-senozhatsky@chromium.org
-        - Link: https://lore.kernel.org/all/20261016120927.3191690-1-hongfengchen@xiaomi.com/ [1]
-        - Link: https://lore.kernel.org/20261109105957.2577351-1-chenhongfeng0212@gmail.com [2]
-      - c8117bff6843 "zram: keep the hot statistics per CPU (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261123054746.2579253-3-senozhatsky@chromium.org
-        - Link: https://lore.kernel.org/20261017031542.3504947-1-hongfengchen@xiaomi.com [1]
-  - dropped commits
-    - 445e02e415e2 "mm/memory-tiers: reset demotion targets of nodes without memory"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://patch.msgid.link/20261021024438.1942502-1-gourry@gourry.net
-    - 0e6508518e59 "mm: free unused page table allocated by do_set_pmd()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/c13cdd25-7d7b-4059-a22d-af0a48fabaac@kernel.org
-    - eff8ddb518f0 "mm/page_reporting: document @order parameter in page_reporting_notify_free()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261112-page-reporting-doc-v1-1-593af69f3801@gmail.com
-    - 10902e7939a5 "mm/pagewalk: document missing struct members"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261112-pagewalk-doc-v1-1-6cc5ce7148da@gmail.com
-- mm-new: 43 -> 85 commits
-  - series: 3 (27) -> 9 (79)
-    - no role, nobody: 2 -> 6 commits
-    - no role, no role : 15 -> 31 commits
-    - no role, reviewer: 2 -> 1 commits
-    - no role, maintainer: 1 -> 19 commits
-    - maintainer, nobody: 12 -> 1 commits
-    - maintainer, no role : 9 -> 27 commits
-    - maintainer, reviewer: 2 -> 0 commits
+- mm-new: 85 -> 25 commits
+  - series: 9 (79) -> 5 (20)
+    - no role, nobody: 6 -> 8 commits
+    - no role, no role : 31 -> 10 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 19 -> 6 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 27 -> 0 commits
   - new commits
-    - series "mm/damon: improve efficiency (paddr, core), fix a selftest, add a kunit". (4)
-      - 4f76d2f4cc26 "mm/damon/paddr: skip non-LRU folios as a whole in pageout (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261124153021.90142-1-sj@kernel.org
-        - Link: https://patch.msgid.link/20261124153021.90142-2-sj@kernel.org
-      - ff4d5208422e "mm/damon/core: skip apply_probes() when no probes are installed (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124153021.90142-3-sj@kernel.org
-      - 5f74d937313c "selftests/damon/damos_quota: skip the last sample when counting exceeds (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124153021.90142-4-sj@kernel.org
-      - 2cdee8673666 "mm/damon/tests/core-kunit: add test for damon_call() (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124153021.90142-5-sj@kernel.org
-    - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - e120d77f9189 "mm/damon/api: introduce struct damon_report (0/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20261124153636.91854-1-sj@kernel.org
-        - Link: https://patch.msgid.link/20261124153636.91854-2-sj@kernel.org
-        - Link: https://github.com/damonitor/damo [1]
-      - 43a24359b320 "mm/damon/core: implement data attribute report queue (1/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-3-sj@kernel.org
-      - 741987be520b "mm/damon/core: introduce damon_submit_report() (2/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-4-sj@kernel.org
-      - 06e4440b7f95 "mm/damon/sysfs: add admin/reports/ directory (3/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-5-sj@kernel.org
-      - 7b6b87922340 "mm/damon/sysfs: add reports/producers/ directory (4/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-6-sj@kernel.org
-      - ef8512d47b1f "mm/damon/sysfs: add producers/nr_producers file (5/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-7-sj@kernel.org
-      - 33979d3963cf "mm/damon/sysfs: implement report producer directory (6/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-8-sj@kernel.org
-      - 22da2c9b2628 "mm/damon/sysfs: implement report producer type and state files (7/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-9-sj@kernel.org
-      - 3e68c35b902f "Docs/mm/damon/design: update for report system (8/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
-      - bd97f50bd1d3 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
-      - ac440f9720ad "Docs/ABI/damon: update for report producer sysfs files (10/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-12-sj@kernel.org
-      - a84baad025ba "mm/damon/core: introduce DAMON_FILTER_TYPE_REPORT_MADE (11/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-13-sj@kernel.org
-      - 2a7f6498d967 "mm/damon/core: introduce damon_report_exist() (12/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-14-sj@kernel.org
-      - dcd3d457a414 "mm/damon/paddr: support REPORT_MADE type probe filter (13/27)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124153636.91854-15-sj@kernel.org
-      - 3627586b44ef "mm/damon/sysfs: add filter_report_type file under probe filter directory (14/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-16-sj@kernel.org
-      - e543f43db47b "mm/damon/sysfs: support REPORT_MADE type probe filter setup (15/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-17-sj@kernel.org
-      - 2e200cd14891 "Docs/mm/damon/design: update for report_made probe filter type (16/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-18-sj@kernel.org
-      - f980722094c3 "Docs/admin-guide/mm/damon/usage: update for REPORT_MADE probe filter (17/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-19-sj@kernel.org
-      - 43ca9afcc9ea "Docs/ABI/damon: update for REPORT_MADE probe filter (18/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-20-sj@kernel.org
-      - b5e2431b6369 "mm/damon/api: introduce user_report report type (19/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-21-sj@kernel.org
-      - ddf4458bc835 "mm/damon/sysfs: add user_report support for report type input (20/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-22-sj@kernel.org
-      - 8f04e3e17082 "mm/damon/sysfs: implement report producer addr_{start,end} files (21/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-23-sj@kernel.org
-      - 3b2ae1a669d2 "mm/damon/sysfs: implement submit command for report producer (22/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-24-sj@kernel.org
-      - f62795a3a3ae "selftests/damon/sysfs.sh: add basic tests for admin/reports/ (23/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-25-sj@kernel.org
-      - 866923f74231 "Docs/mm/damon/design: update for user report support (24/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-26-sj@kernel.org
-      - ec93a0bf7d66 "Docs/admin-guide/mm/damon/usage: update for user_report report support (25/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-27-sj@kernel.org
-      - 71bd9fc2300a "Docs/ABI/damon: update for user_report report support (26/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124153636.91854-28-sj@kernel.org
-    - series "mm: continue vma_flags_t conversion", v2. (11)
-      - 87f9c757fc4e "mm/filemap: convert fault and readahead logic to use vma_flags_t (0/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
-      - db89a044769a "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
-      - 7cba6aaad6fe "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
-      - 4620ea65f9ea "fs/proc/task_mmu: convert VMA flag tests to use vma_flags_t (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-4-bf3fade93064@kernel.org
-      - bf2c84596341 "fs/coredump: convert vma_dump_size() to use vma_flags_t (4/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-5-bf3fade93064@kernel.org
-      - 371982eb8a1f "uprobes: convert VMA flag tests to use vma_flags_t (5/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-6-bf3fade93064@kernel.org
-      - 36427714ba4a "perf: convert VMA flag tests to use vma_flags_t (6/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-7-bf3fade93064@kernel.org
-      - 6e925009db5e "selinux: convert VMA flag tests to use vma_flags_t (7/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-8-bf3fade93064@kernel.org
-      - abd6c669100f "apparmor: convert VMA flag tests to use vma_flags_t (8/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-9-bf3fade93064@kernel.org
-      - 180f34224248 "ima: convert VMA flag tests to use vma_flags_t (9/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-10-bf3fade93064@kernel.org
-      - 960c9550d34a "ipe: convert VMA flag tests to use vma_flags_t (10/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-11-bf3fade93064@kernel.org
-    - series "mm: convert further simple mmap hooks to mmap_prepare", v2. (13)
-      - c981627d558b "xen/privcmd: convert mmap hook to mmap_prepare (0/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261124-late-2026-mmap_prepare-v2-0-0b0d99d655f9@kernel.org
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-1-0b0d99d655f9@kernel.org
-      - d5efd32127d4 "KVM: PPC: Book3S: convert spapr TCE mmap hook to mmap_prepare (1/13)"
+    - series "mm/mlock: make zero length requests a no-op and reject wrapping ranges". (3)
+      - 51b2fc77de00 "mm/mlock: make a zero length request a no-op whatever the alignment (0/3)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-2-0b0d99d655f9@kernel.org
-      - d85c5a00b281 "mshv_vtl: convert mmap hooks to mmap_prepare (2/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-3-0b0d99d655f9@kernel.org
-      - 2d566ab0b7ea "x86/sgx: convert vepc mmap hook to mmap_prepare (3/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-4-0b0d99d655f9@kernel.org
-      - 5d9f84f954d9 "udf: convert mmap hook to mmap_prepare (4/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-5-0b0d99d655f9@kernel.org
-      - 1a2032a048ad "selinuxfs: convert mmap hooks to mmap_prepare (5/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-6-0b0d99d655f9@kernel.org
-      - c30c35372869 "xen: convert xenstore interface mmap hooks to mmap_prepare (6/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-7-0b0d99d655f9@kernel.org
-      - 782a344cd384 "soc: aspeed: convert LPC and P2A control mmap hooks to mmap_prepare (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-8-0b0d99d655f9@kernel.org
-      - 443ba363d538 "soc: qcom: rmtfs_mem: convert mmap hook to mmap_prepare (8/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-9-0b0d99d655f9@kernel.org
-      - 1210bfd95f40 "tee: convert shm mmap hook to mmap_prepare (9/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-10-0b0d99d655f9@kernel.org
-      - 9de4f13e8b63 "misc: bcm-vk: convert mmap hook to mmap_prepare (10/13)"
+        - Link: https://lore.kernel.org/20261102074412.189554-1-azpijr@gmail.com
+        - Link: https://patch.msgid.link/20261102074412.189554-2-azpijr@gmail.com
+        - Link: https://lore.kernel.org/all/179066531783.50175.13377521828379196177@dgu.ac.kr/ [1]
+      - f9a5d07d90bc "mm/mlock: reject ranges that cannot be represented (1/3)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-11-0b0d99d655f9@kernel.org
-      - 9f147c7d2679 "ptp: vmclock: convert mmap hook to mmap_prepare (11/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-12-0b0d99d655f9@kernel.org
-      - 85f5eddf13d5 "vhost-vdpa: convert mmap hook to mmap_prepare (12/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-late-2026-mmap_prepare-v2-13-0b0d99d655f9@kernel.org
-    - series "userfaultfd: assorted fixes (part 1)", v3. (7)
-      - 29eb880cc9a8 "userfaultfd: use anonymous memory for UFFDIO_ZEROPAGE on private file mappings (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261117-uffd-state-fixes-v3-0-b617009d1a4a@columbia.edu
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-1-b617009d1a4a@columbia.edu
-      - aa0775f7181f "userfaultfd: refuse UFFDIO_MOVE into a non-present huge destination PMD (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-2-b617009d1a4a@columbia.edu
-      - d6c137de0e12 "fs/proc/task_mmu: downgrade writable migration entries in PAGEMAP_SCAN write-protect (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-3-b617009d1a4a@columbia.edu
-      - 6f3d4111b3ca "fs/proc/task_mmu: write-protect device-private THPs in PAGEMAP_SCAN (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-5-b617009d1a4a@columbia.edu
-      - a580a58b9809 "mm/huge_memory: build the moved huge zero PMD from the destination VMA (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-6-b617009d1a4a@columbia.edu
-      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
-      - cd5ff4ce9070 "mm/userfaultfd: check the hugetlb alignment of every VMA in the pre-scan (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-9-b617009d1a4a@columbia.edu
-    - series "mm: reworked AI-generated VMA and mremap fixes". (6)
-      - 4180d03d7b87 "mm/vma: error out on invalid bounds in unmapped_area_topdown() (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261121-some-more-ai-fixes-v1-0-236e925d9b64@kernel.org
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-1-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536291280.412063.6169498898856535364.b4-reply@b4
-      - 92477063c2fe "mm/vma: lock VMAs before taking mm_all_locks_mutex (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-2-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536280440.412063.5336368383648661511.b4-reply@b4
-      - e7880f7fbe5e "mm/vma: fix uncharge after failed stack relocation (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-4-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536262938.412063.9413830491196612418.b4-reply@b4
-      - 3dd9a260908f "mm/mremap: apply the mmap() offset limits on expansion (3/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-5-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536260304.412063.8485838901368834162.b4-reply@b4
-      - 32dd5972dd8e "mm/mremap: respect guard gaps on in-place expansion (4/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-6-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536256259.412063.8859349312024671580.b4-reply@b4
-      - e02f59213d31 "mm/vma: make brk mappings non-executable under MDWE (5/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-7-236e925d9b64@kernel.org
-        - Link: : https://lore.kernel.org/179536252140.412063.16869457803147347876.b4-reply@b4
-    - series "selftests/mm: fix userfaultfd tests with CONFIG_PTE_MARKER_UFFD_WP=n". (2)
-      - 0074e737c591 "selftests/mm: uffd-wp-mremap: skip unsupported shmem and hugetlb cases (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261122082020.1255434-1-kaleshsingh@google.com
-        - Link: https://patch.msgid.link/20261122082020.1255434-2-kaleshsingh@google.com
-      - 469a5ecf7a40 "selftests/mm: uffd-unit-tests: filter required features per memory type (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261122082020.1255434-3-kaleshsingh@google.com
-    - 3bdb89e17f01 "percpu: skip sidelined slot in pcpu_balance_populated()"
+        - Link: https://patch.msgid.link/20261102074412.189554-3-azpijr@gmail.com
+      - edd013110a98 "selftests/mm: test mlock() and munlock() range normalisation (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://patch.msgid.link/20261102074412.189554-4-azpijr@gmail.com
+    - a5324839fe83 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261125113518.1207280-1-hui.zhu@linux.dev
+    - 3d27e49eb905 "tools/mm: page-types: flush pending idle bitmap bits after walking"
       - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/18e88cd2a725491b.3137322e32332e3235332e313736.c1dd7.0000sendgmr@google.com
-    - 563aebd7f97d "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
-      - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/
-      - Link: https://lore.kernel.org/linux-mm/avWnaR7VVEGa7yNp@thinkstation/
-    - 472cd5a809c2 "tools/mm/page_owner_sort: fix slab allocator labelling"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261117214947.13471-1-evanfengff@gmail.com
-    - series "fs/proc: fix PAGEMAP_SCAN walk_end after a buffer refill", v2. (2)
-      - 09986d8e4215 "fs/proc/task_mmu: reset walk_end before each pagemap walk (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261118-pagemap-walk-end-v2-0-94cd92d838b3@gmail.com
-        - Link: https://patch.msgid.link/20261118-pagemap-walk-end-v2-1-94cd92d838b3@gmail.com
-      - a036649714c3 "selftests/mm: cover PAGEMAP_SCAN refill and HugeTLB retry (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261118-pagemap-walk-end-v2-2-94cd92d838b3@gmail.com
-  - dropped commits
-    - 5e68beacbae1 "selftests/mm: hmm: speed up migrate_remap_fault"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/r/20261119133955.54001-1-zenghui.yu@linux.dev [1]
+      - Link: https://patch.msgid.link/20261125091408.1584017-1-wangxuewen_ky@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 184 -> 191 commits
-  - series: 19 (111) -> 20 (112)
-    - no role, nobody: 50 -> 52 commits
-    - no role, no role : 44 -> 46 commits
+- mm-nonmm-unstable: 191 -> 192 commits
+  - series: 20 (112) -> 20 (112) (no change)
+    - no role, nobody: 52 -> 52 commits (no change)
+    - no role, no role : 46 -> 47 commits
     - no role, reviewer: 11 -> 11 commits (no change)
     - no role, maintainer: 17 -> 17 commits (no change)
-    - maintainer, nobody: 62 -> 65 commits
+    - maintainer, nobody: 65 -> 65 commits (no change)
   - new commits
-    - 416a79e468ed "proc: serialize task owner lookup and inode updates"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/r/20191020173010.GA14744@avx2 [1]
-      - Link: https://lkml.iu.edu/1910.2/05407.html [2]
-      - Link: https://groups.google.com/g/syzkaller-bugs/c/mzwiXt4ml68/m/GuAUQrWtBQAJ [3]
-    - 262ae352515b "proc: don't lock task inodes whose owner has not changed"
-      - Authored by no role player, reviewed by nobody
-    - 4398a70e95e7 "reboot: validate reboot CPU against the possible mask"
+    - c342663a9467 "selftests/proc: skip fd-003-kthread if run as non-root"
       - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261124082914.564587-1-thnkslprpt@gmail.com
-      - Link: https://lore.kernel.org/r/D92156F5-5924-45CD-BCFE-AF385BDD15CF@mainlining.org
-    - 0d3dd11845c4 "ocfs2: don't BUG_ON when a group extend leaves too few free bits"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://patch.msgid.link/20261125025505.343454-1-joseph.qi@linux.alibaba.com
-    - ca841fd42aaf "ocfs2: validate chain allocator clusters per group"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://patch.msgid.link/20261125025505.343454-2-joseph.qi@linux.alibaba.com
-    - 39e4fb5eccf2 "ocfs2: check chain allocator clusters per group in online filecheck"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://patch.msgid.link/20261125025505.343454-3-joseph.qi@linux.alibaba.com
-    - 9a84806c3bdc "init, arch: make CONFIG_COMMAND_LINE_SIZE globally configurable"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20260818231646.804507-2-wfelipe@google.com
-    - series "init, arch: make command line size and init arg limit configurable", v2. (2)
-      - 0321fc853902 "init/Kconfig: make config INIT_ENV_ARG_LIMIT user-configurable (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260818231646.804507-1-wfelipe@google.com
-        - Link: https://patch.msgid.link/20260818231646.804507-3-wfelipe@google.com
-  - changed commits
-    - series "Squashfs: fix a lot of AI issues and AI style issues", v4. (23)
-      - 7c83467d29e8 "Squashfs: convert SQUASHFS_COMPRESSED_* to inline functions (0/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-2-phillip@squashfs.org.uk"
-        - added "Link: https://lore.kernel.org/20261125014737.347231-1-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-2-phillip@squashfs.org.uk"
-        - dropped "Link: https://lore.kernel.org/20261123034304.261742-1-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20261125014737.347231-1-phillip@squashfs.org.uk
-        - Link: https://patch.msgid.link/20261125014737.347231-2-phillip@squashfs.org.uk
-      - d8d72be94104 "Squashfs: convert SQUASHFS_INODE_* and SQUASHFS_MKINODE to inline functions (1/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-3-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-3-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-3-phillip@squashfs.org.uk
-      - 6ee49d048cf3 "Squashfs: convert SQUASHFS_FRAGMENT_* to inline functions (2/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-4-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-4-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-4-phillip@squashfs.org.uk
-      - eff7fe755005 "Squashfs: convert SQUASHFS_LOOKUP_* to inline functions (3/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-5-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-5-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-5-phillip@squashfs.org.uk
-      - 5b3da2d2b522 "Squashfs: convert SQUASHFS_ID_* to inline functions (4/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-6-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-6-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-6-phillip@squashfs.org.uk
-      - 6f81a901bd22 "Squashfs: convert SQUASHFS_XATTR_* to inline functions (5/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-7-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-7-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-7-phillip@squashfs.org.uk
-      - 40972de642f3 "Squashfs: fix offset in squashfs_read_inode() TRACE statements (6/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-8-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-8-phillip@squashfs.org.uk"
-        - dropped "Fixes: 6545b246a2c8 ("Squashfs: inode operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-8-phillip@squashfs.org.uk
-      - 2e8b20a15a40 "Squashfs: don't compute start or alloc memory on empty directory or index (7/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-9-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-9-phillip@squashfs.org.uk"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-9-phillip@squashfs.org.uk
-      - 4bbc66bdab21 "Squashfs: fix fragment bytes overflow on 32-bit architectures (8/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-10-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-10-phillip@squashfs.org.uk"
-        - dropped "Fixes: ffae2cd73a9e ("Squashfs: header files")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-10-phillip@squashfs.org.uk
-      - ac4d791ac748 "Squashfs: fix fragment index table length too large exploit (9/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-11-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-11-phillip@squashfs.org.uk"
-        - dropped "Fixes: 1cac63cc9b2f ("Squashfs: add sanity checks to fragment reading at mount time")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-11-phillip@squashfs.org.uk
-      - 51fe99420c4a "Squashfs: sanity check inode metadata block location (10/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-12-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-12-phillip@squashfs.org.uk"
-        - dropped "Fixes: 6545b246a2c8 (" Squashfs: inode operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-12-phillip@squashfs.org.uk
-      - 5fa02d962186 "Squashfs: sanity check directory metadata block location (11/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-13-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-13-phillip@squashfs.org.uk"
-        - dropped "Fixes: c88da2c97936 ("Squashfs: directory lookup operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-13-phillip@squashfs.org.uk
-      - c607f33e2933 "Squashfs: widen xattr count variables and add sanity check (12/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-14-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-14-phillip@squashfs.org.uk"
-        - dropped "Fixes: f41d207cbede ("squashfs: add support for xattr reading")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-14-phillip@squashfs.org.uk
-      - 5e5ab304c10d "Squashfs: very large files can exceed an int or size_t (13/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-15-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-15-phillip@squashfs.org.uk"
-        - dropped "Fixes: 1701aecb6849 ("Squashfs: regular file operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-15-phillip@squashfs.org.uk
-      - dc3958a8ac8c "Squashfs: add more sanity checking to squashfs_block_size() (14/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-16-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-16-phillip@squashfs.org.uk"
-        - dropped "Fixes: 1701aecb6849 ("Squashfs: regular file operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-16-phillip@squashfs.org.uk
-      - 1db36fb41159 "Squashfs: sanity check fragment block location and range (15/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-17-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-17-phillip@squashfs.org.uk"
-        - dropped "Fixes: f400e12656ab ("Squashfs: cache operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-17-phillip@squashfs.org.uk
-      - d59de2ea5a0d "Squashfs: sanity check block list sizes and range (16/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-18-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-18-phillip@squashfs.org.uk"
-        - dropped "Fixes: 1701aecb6849 ("Squashfs: regular file operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-18-phillip@squashfs.org.uk
-      - 1a21ee6339f7 "Squashfs: don't store large export table indexes in memory (17/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-19-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-19-phillip@squashfs.org.uk"
-        - dropped "Fixes: 122601408d20 ("Squashfs: export operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-19-phillip@squashfs.org.uk
-      - 689b887e4fd2 "Squashfs: don't store large fragment table indexes in memory (18/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-20-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-20-phillip@squashfs.org.uk"
-        - dropped "Fixes: 122edd1514aa ("Squashfs: fragment block operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-20-phillip@squashfs.org.uk
-      - 8614e72aaeba "Squashfs: don't store large xattr id table indexes in memory (19/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-21-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-21-phillip@squashfs.org.uk"
-        - dropped "Fixes: 4b5397dc24ab ("squashfs: add xattr id support")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-21-phillip@squashfs.org.uk
-      - 7e0c586c8a5f "Squashfs: fix variables in directory code and add more sanity checks (20/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-22-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-22-phillip@squashfs.org.uk"
-        - dropped "Fixes: 07972dde75c3 ("Squashfs: directory readdir operations")"
-        - dropped "Fixes: c88da2c97936 ("Squashfs: directory lookup operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-22-phillip@squashfs.org.uk
-      - ff1bd0b094ab "Squashfs: fix regression in squashfs_copy_cache() (21/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-23-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-23-phillip@squashfs.org.uk"
-        - dropped "Fixes: 5641371fd0b3 ("squashfs; convert squashfs_copy_cache() to take a folio")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-23-phillip@squashfs.org.uk
-      - 54defcd5159f "Squashfs: check index isn't greater than S64_MAX in squashfs_read_data() (22/23)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://patch.msgid.link/20261125014737.347231-24-phillip@squashfs.org.uk"
-        - dropped "Link: https://patch.msgid.link/20261123034304.261742-24-phillip@squashfs.org.uk"
-        - dropped "Fixes: e2780ab159ac ("Squashfs: block operations")"
-        - dropped "Cc: Christian Loehle <christian.loehle@arm.com>"
-        - dropped "Cc: Dan Carpenter <error27@gmail.com>"
-        - dropped "Cc: Phillip Lougher <phillip.lougher@gmail.com>"
-        - dropped "Cc: syzbot ci <syzbot+ci04e7314748e3f6be@syzkaller.appspotmail.com>"
-        - Link: https://patch.msgid.link/20261125014737.347231-24-phillip@squashfs.org.uk
-    - dda98f40adc4 "lib/group_cpus: snapshot cluster masks to keep grouping hotplug invariant"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Wangyang Guo <wangyang.guo@intel.com>"
-      - dropped "Cc: Wangyang Guo <wangyang.guo@intel.com>"
-      - Link: https://patch.msgid.link/20261114151403.1379591-1-Vishal.Badole@amd.com
-  - dropped commits
-    - series "Squashfs: fix a lot of AI issues and AI style issues", v3. (23)
-      - 696bae790073 "squashfs-dont-compute-start-or-alloc-memory-on-empty-directory-or-index-fix (8/23)"
-        - Authored by no role player, reviewed by nobody
+      - Link: https://patch.msgid.link/20261120062933.3169112-1-fuqingshuang@kylinos.cn

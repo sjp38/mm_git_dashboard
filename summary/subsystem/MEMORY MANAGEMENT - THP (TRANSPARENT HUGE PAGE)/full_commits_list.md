@@ -2,59 +2,53 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 2 (7) series, 3 non-series commits
+- mm-unstable: 9 total, 2 (6) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 6 commits
-    - no role, maintainer: 2 commits
+    - no role, no role : 5 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 5c655c70bd14 "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
+    - a7cb713a89ee "selftests/mm: skip collapse_compound_extreme() on THP allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261028100119.11340-1-zenghui.yu@linux.dev
       - Link: https://lore.kernel.org/all/atiQmWnz8zx2AKI7@thinkstation
     - series "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro", v7. (3 commits)
-      - 2fb2ce529e7c "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
+      - e4eaf664a50c "kselftest: mm: rename read_pmd_pagesize() to pmd_psize()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-fix_hpage_macro-v7-0-3d77129e0557@arm.com
         - Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-1-3d77129e0557@arm.com
-      - 234ac6359fa5 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (2/3)
+      - bbfb6224f499 "kselftest: mm: remove HPAGE_SIZE and HPAGE_SHIFT macro" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://patch.msgid.link/20261013-fix_hpage_macro-v7-2-3d77129e0557@arm.com
     - series "tools/mm/thpmaps: fix THP statistics and mapping names". (3 commits)
-      - a02bca117682 "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
+      - 5927ff081c2d "tools/mm/thpmaps: fix partial THP anon/file accounting" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20261027074904.3328878-1-tongweilin@linux.alibaba.com
         - Link: https://patch.msgid.link/20261027074904.3328878-2-tongweilin@linux.alibaba.com
-      - 54a1faa3bf3a "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
+      - a11defec9289 "tools/mm/thpmaps: fix missing order-1 file THP statistics" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261027074904.3328878-3-tongweilin@linux.alibaba.com
-      - 212c349740ab "tools/mm/thpmaps: fix missing mapping names" (2/3)
+      - 0bfbd460a20c "tools/mm/thpmaps: fix missing mapping names" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261027074904.3328878-4-tongweilin@linux.alibaba.com
-    - 1b3a4b3298c7 "selftests/mm: handle child status safely in khugepaged"
+    - fe4a1cce2075 "selftests/mm: handle child status safely in khugepaged"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261102185130.30504-1-ampr.mhd@gmail.com
-    - 8f24db39e72d "mm/userfaultfd: prevent poison marker loss"
+    - dbda9c1151f4 "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-      - 89514bd84c49 "mm/khugepaged: convert to LRU refs based operations for MGLRU" (12/18)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-13-8ffea39934a6@tencent.com
-      - 7eb7df818be1 "mm/huge_memory: mark folio as accessed more accurately on split" (14/18)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-15-8ffea39934a6@tencent.com
-- mm-new: 3 total, 0 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-      - db89a044769a "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (1/11)
+      - e94cbda0f126 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t" (1/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
-      - a580a58b9809 "mm/huge_memory: build the moved huge zero PMD from the destination VMA" (4/7)
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+  - full commits list
+      - 0ab4ab3d542e "mm/huge_memory: build the moved huge zero PMD from the destination VMA" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-6-b617009d1a4a@columbia.edu
-      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move" (5/7)
+      - 66b4247ab4d5 "mm/mremap: resolve uffd state when the context is dropped, not during the move" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -62,7 +56,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 5f6fcc294fea "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
+    - 8ed7496b815b "tools/mm/thpmaps: handle carriage returns and non-UTF-8 filenames"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261104061641.1115805-1-tongweilin@linux.alibaba.com
       - Link: https://lore.kernel.org/linux-mm/20261101211644.c63a2028bbede0f763f41f80@linux-foundation.org/

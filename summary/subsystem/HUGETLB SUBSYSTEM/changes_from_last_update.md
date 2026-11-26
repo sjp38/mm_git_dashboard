@@ -6,21 +6,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 53 -> 53 commits (no change)
+- mm-unstable: 53 -> 54 commits
   - series: 4 (32) -> 4 (32) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 18 -> 18 commits (no change)
+    - no role, no role : 18 -> 19 commits
     - no role, maintainer: 13 -> 13 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 1 -> 2 commits
-  - new commits
-    - series "userfaultfd: assorted fixes (part 1)", v3. (7)
-      - 68ac37de2eb0 "mm/mremap: resolve uffd state when the context is dropped, not during the move (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
+  - changed commits
+    - 75b902f21f95 "mm/hugetlb: fix NR_HUGETLB accounting for kept surplus folios"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://patch.msgid.link/20261124-for-gather-surplus-v1-1-231e5660f3d8@kylinos.cn
+- mm-new: 2 -> 1 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

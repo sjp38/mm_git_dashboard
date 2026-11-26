@@ -5,14 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
+- mm-unstable: 10 -> 12 commits
+  - series: 1 (9) -> 1 (11)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
+    - no role, no role : 8 -> 10 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
+      - 64d638e996fc "mm/page_ext: use common allocation and initialization entry points (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
+      - e4367a7197de "mm/page_ext: allocate page extensions early for SPARSEMEM (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -2,20 +2,18 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - f11b8bd3c216 "mm/mmap: free gathered pages before MMF_OOM_SKIP"
+    - c0933f655cad "mm/mmap: free gathered pages before MMF_OOM_SKIP"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-1-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115630.0b75d0b49869d4fa@chrisdown.name
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - 7cba6aaad6fe "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (2/11)
+      - 328413649409 "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (2/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -8,44 +8,44 @@
     - maintainer, maintainer: 3 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v4. (3 commits)
-      - 159bb1906b2c "mm: zswap: use separate compression and decompression requests" (0/3)
+      - 152a5d6184ed "mm: zswap: use separate compression and decompression requests" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261017160918.2738626-1-usama.arif@linux.dev
         - Link: https://patch.msgid.link/20261017160918.2738626-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - 23b0f6bc9161 "mm: zswap: use stack requests for synchronous decompression" (2/3)
+      - 27687d04833a "mm: zswap: use stack requests for synchronous decompression" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261017160918.2738626-4-usama.arif@linux.dev
     - series "mm/zswap: batch the writeback IO". (2 commits)
-      - 46c907c7f2c2 "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
+      - c2be48ac134b "mm/zswap: batch the writeback IO of consecutive entries" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261007153507.50715-1-alex@ghiti.fr
         - Link: https://patch.msgid.link/20261007153507.50715-2-alex@ghiti.fr
-      - 7b58f3a96724 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
+      - 815ddb359a46 "mm/zswap: plug the writeback IO of an LRU walk" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261007153507.50715-3-alex@ghiti.fr
-    - fceca8a5a7cb "mm: bypass swap readahead for zswap"
+    - 2d1808cd1645 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
-    - ee669497b422 "mm/zswap: validate dlen and normalize comp_ret on compression success"
+    - 084eff73fd02 "mm/zswap: validate dlen and normalize comp_ret on compression success"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261022232734.496064-1-suseendranb@google.com
-    - 5001d896ddf9 "selftests/cgroup: test_zswap: check malloc() return value"
+    - 42847045896d "selftests/cgroup: test_zswap: check malloc() return value"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104095315.2326-1-zhangchujun@cmss.chinamobile.com
-      - 3f4c48382a35 "zsmalloc: switch handle type to struct zs_handle" (3/11)
+      - 40ea3bf31226 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-5-senozhatsky@chromium.org
-      - 49a470fdd15f "zswap: do not free the entry if its pool is NULL" (6/11)
+      - 65265502605f "zswap: do not free the entry if its pool is NULL" (6/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-8-senozhatsky@chromium.org
-      - 75abc3da4bb5 "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - 193de9d5363d "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-10-senozhatsky@chromium.org
-      - 98760f4f6b6d "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - b916a320f42a "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-11-senozhatsky@chromium.org
-    - 89f8c9059ce9 "mm: zswap: remove dead length check in zswap_store_page()"
+    - 4338d003acc6 "mm: zswap: remove dead length check in zswap_store_page()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261123032512.6119-1-raizudeen.kerneldev@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -17,14 +17,14 @@
   - author/reviewer role stat
     - no role, reviewer: 3 commits
   - full commits list
-      - e9977d01e859 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
+      - 47c71e9ae984 "mm/vmscan: move vmscan tracepoints to a local header" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104130817.849089-3-ridong.chen@linux.dev
-    - 81fc549590f8 "mm/list_lru: fix potential infinite loop on xa node allocation failure"
+    - c07002d868ee "mm/list_lru: fix potential infinite loop on xa node allocation failure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261122031143.3639941-1-songmuchun@bytedance.com
       - Link: : https://lore.kernel.org/awPVQ3aJxojMSEhb@chrisdown.name
-    - 1c645385b8fb "mm: shrinker: stop counting when the seq buffer overflows"
+    - b13feecc3b46 "mm: shrinker: stop counting when the seq buffer overflows"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261123055020.287151-1-wangxuewen_ky@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

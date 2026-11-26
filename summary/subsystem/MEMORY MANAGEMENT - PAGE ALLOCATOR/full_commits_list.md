@@ -2,53 +2,53 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (1) series, 4 non-series commits
+- mm-unstable: 11 total, 1 (7) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, no role : 6 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - a77b72c87fd8 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - e064afdc1328 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 6e1794624c64 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - f059c0638e89 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261102081919.80625-1-hui.zhu@linux.dev
-    - 416a1d943cfd "mm: page_owner: use %u to print the stack depot handle"
+    - 27d61753421c "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - 33b9aed570e9 "mm: split out memory-failure declarations from internal.h"
+    - 2e85804fb7c3 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - ce436660d948 "alloc_tag: add trace events for tracing allocations" (0/5)
+      - 8a77ebc33705 "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://patch.msgid.link/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-- mm-new: 7 total, 0 (6) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 6 commits
-  - full commits list
-      - 72d7b574d99e "mm/page_ext: fix client data alignment" (1/7)
+      - c559eb989f85 "mm/page_ext: fix client data alignment" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
-      - b4e699a2b1d8 "mm/page_ext: always use vmalloc for section page extensions" (2/7)
+      - a3027d451583 "mm/page_ext: always use vmalloc for section page extensions" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
-      - 27b1a116bbfc "mm/page_ext: use common allocation and initialization entry points" (3/7)
+      - 64d638e996fc "mm/page_ext: use common allocation and initialization entry points" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
-      - 3c24780668bb "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
+      - e4367a7197de "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
-      - 1a054c1af08c "mm/page_ext: inline unchecked page extension lookup" (5/7)
+      - ed7787a0b69d "mm/page_ext: inline unchecked page extension lookup" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
-      - d58b2bee9d84 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
+      - 5d83861a79f8 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
-    - 472cd5a809c2 "tools/mm/page_owner_sort: fix slab allocator labelling"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 60ff312a681b "tools/mm/page_owner_sort: fix slab allocator labelling"
       - Authored by no role player, reviewed by nobody
       - Link: https://patch.msgid.link/20261117214947.13471-1-evanfengff@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
