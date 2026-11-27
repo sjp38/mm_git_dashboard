@@ -1,8 +1,18 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
+- mm-hotfixes-stable: 2 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
+      - 4436e171b0a4 "mm: vmscan: allow writeout of swapcache folios without anon mappings (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
+        - Link: https://patch.msgid.link/20261110151407.789960-2-nphamcs@gmail.com
+    - 9436a736a148 "mm: mglru: splice all generations when reparenting a memcg"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261111000913.22943-1-shakeel.butt@linux.dev
+      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
@@ -17,24 +27,16 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 3 commits
+- mm-new: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - ae7b7e63ace1 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
-    - f3e166bac174 "mm/vmscan: scope freeze writeback skip to the reclaim target"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20261126180228.9b672a945d480e3d3f301985@linux-foundation.org
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - 49b187a4aad5 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - Link: https://patch.msgid.link/20261125113518.1207280-1-hui.zhu@linux.dev
+    - 2a780f78c6dd "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

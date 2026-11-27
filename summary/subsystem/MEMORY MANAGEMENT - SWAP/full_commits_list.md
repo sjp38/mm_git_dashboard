@@ -1,35 +1,14 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d
-- mm-hotfixes-stable: 4 total, 0 (2) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
-    - reviewer, maintainer: 2 commits
-  - full commits list
-    - 2ec6ad932675 "mm, swap: only prefer nonfull clusters on synchronous devices"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
-      - afc0507d6e15 "mm/swap: publish cluster tables after reacquiring allocator locks" (1/3)
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
-        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - f6f10d976c8a "mm/swap: skip relocation of tableless clusters" (2/3)
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
-    - 190936e7a5da "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
+- baseline: v7.4-rc4-745-g6cce17ffe54a
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - afbd2545f1c1 "mm: swap: make swap_header badpages a flexible array"
+    - d07e4572b91d "mm: swap: make swap_header badpages a flexible array"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261120061750.2973004-1-kaleshsingh@google.com
-    - daba53bdc1a5 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+    - eb48df365c0f "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -39,30 +18,30 @@
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 3 commits
   - full commits list
-    - 6c00e26d820f "mm: bypass swap readahead for zswap"
+    - 9610667287ab "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
     - series "mm, swap: keep hibernation swap slots out of the swap cache", v4. (3 commits)
-      - 41d3f9b4c247 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
+      - 7fd75d5ad213 "mm, swap: only allow swapped-out slots into the swap cache" (0/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-0-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/20261104-swap-hibernation-slots-v4-1-0ba9393609e1@tencent.com
-      - 0dc01aabb7bd "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
+      - d7b328d6d7d7 "mm, swap: give hibernation swap slots their own swap table entry type" (1/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-2-0ba9393609e1@tencent.com
         - Link: https://lore.kernel.org/linux-mm/abp7aDgYLrxF3Me8@KASONG-MC4/
-      - 297cfce8a617 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
+      - b7cd62ff8a68 "mm, swap: drop the swap cache guard and reclaim in swap_free_hibernation_slot()" (2/3)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261104-swap-hibernation-slots-v4-3-0ba9393609e1@tencent.com
     - series "mm/swap, zswap: fix stale zswap data and swap-in bugs", v2. (4 commits)
-      - bcf19b409821 "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
+      - 013fa5465612 "mm/zswap: drop the stale zswap entry of a zero folio" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-0-204be064be5b@tencent.com
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-1-204be064be5b@tencent.com
-      - 8d2cd8465acf "mm/swap: account synchronous swap reads as memory stall" (2/4)
+      - 309e62b37133 "mm/swap: account synchronous swap reads as memory stall" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-3-204be064be5b@tencent.com
-      - b0a3b09eb35e "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
+      - 8b6b8f026569 "mm/swap: keep the swap-in pressure window open across a batch" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261104-swap-fixes-v2-4-204be064be5b@tencent.com
         - Link: https://lore.kernel.org/linux-mm/auOz00OGB_8dgniC@cmpxchg.org/
@@ -72,9 +51,9 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-      - 5e7724ef09f2 "mm/swapops: remove unused make_guard_swp_entry()" (1/5)
+      - 1d789291f73e "mm/swapops: remove unused make_guard_swp_entry()" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-2-2f845e94dd50@amd.com
-      - b199af3b2f79 "mm/swap: remove unused folio_to_swp_tb()" (2/5)
+      - 47291f59b42a "mm/swap: remove unused folio_to_swp_tb()" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-3-2f845e94dd50@amd.com

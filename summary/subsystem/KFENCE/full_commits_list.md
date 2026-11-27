@@ -1,4 +1,4 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d
+- baseline: v7.4-rc4-745-g6cce17ffe54a
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,11 +7,11 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "kfence: fix pool allocation failure handling", v2. (3 commits)
-      - dfe4f780d38c "kfence: fix pool cleanup on metadata allocation failure" (0/3)
+      - a8d40605e463 "kfence: fix pool cleanup on metadata allocation failure" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793242457.git.liuyun01@kylinos.cn
         - Link: https://patch.msgid.link/7e0fc28c73fbb594c296f6121ca506392511ba5e.1793242457.git.liuyun01@kylinos.cn
-      - c1d8364cb518 "kfence: clear the pool pointer before freeing pages" (1/3)
+      - c7d120138949 "kfence: clear the pool pointer before freeing pages" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/2fab8aaa82ab2004e706fd7ec8dac20427976457.1793242457.git.liuyun01@kylinos.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
@@ -20,6 +20,6 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - bb2a4f37365b "hibernation, KFENCE: explicitly map/unmap KFENCE pages" (3/5)
+      - 922f5fee523c "hibernation, KFENCE: explicitly map/unmap KFENCE pages" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20260926-hibernation-v2-4-235f69f3ab2a@kernel.org

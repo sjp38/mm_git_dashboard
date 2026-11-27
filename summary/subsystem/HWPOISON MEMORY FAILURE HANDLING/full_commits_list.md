@@ -1,4 +1,4 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d
+- baseline: v7.4-rc4-745-g6cce17ffe54a
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,44 +7,44 @@
     - no role, maintainer: 4 commits
     - maintainer, nobody: 10 commits
   - full commits list
-    - 15a31600da60 "tools/mm: add hwpoison-panic tool"
+    - 9f932dcd19a4 "tools/mm: add hwpoison-panic tool"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20260813-memory_failure_rewrite_test-v3-1-f9fb6542cbff@debian.org
-    - dbf04454210d "mm: split out memory-failure declarations from internal.h"
+    - 175fcbef13a1 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "mm/hugetlb_vmemmap: Fix HVO races and deadlock", v3. (3 commits)
-      - d4a265e04cc7 "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
+      - ad2419a1f8ff "mm/hugetlb_vmemmap: fix HWPoison state races during optimization" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261114112523.75208-1-songmuchun@bytedance.com
         - Link: https://patch.msgid.link/20261114112523.75208-2-songmuchun@bytedance.com
         - Link: : https://lore.kernel.org/20261119090050.6858fd2871d2756c6d3c809a@linux-foundation.org
     - series "mm/hugetlb: clear the hugetlb flag before leaking a hwpoisoned folio", v2. (2 commits)
-      - 58885e6c23c9 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio" (0/2)
+      - 985a903d4928 "mm/memory-failure: don't unpoison a leaked raw_hwp_unreliable folio" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261103-hugetlb-hwpoison-leak-v2-0-98085750c145@columbia.edu
         - Link: https://patch.msgid.link/20261103-hugetlb-hwpoison-leak-v2-1-98085750c145@columbia.edu
         - Link: https://lore.kernel.org/all/20261102024910.31486-3-kaitao.cheng@linux.dev/ [1]
-      - 7d9261e13df4 "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix" (1/2)
+      - 6e26ae9bffcc "mm-memory-failure-dont-unpoison-a-leaked-raw_hwp_unreliable-folio-fix" (1/2)
         - Authored by a maintainer, reviewed by nobody
-    - c26654675e2c "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
+    - aac37401d7ac "selftests/mm: check that fsync() reports hard-poisoned dirty page-cache"
       - Authored by a maintainer, reviewed by nobody
-    - 8972c18d8722 "selftests/mm: truncate poisoned FUSE page-cache before teardown"
+    - ac0183b3e45d "selftests/mm: truncate poisoned FUSE page-cache before teardown"
       - Authored by a maintainer, reviewed by nobody
-    - ec61de8dbee8 "selftests/mm: skip poisoned dirty page-cache on NILFS2"
+    - 379a99f8ca8d "selftests/mm: skip poisoned dirty page-cache on NILFS2"
       - Authored by a maintainer, reviewed by nobody
-    - f95b22e6b0ec "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
+    - 8bfb294f09f3 "selftest/mm/memory-failure: keep page-cache files linked until cleanup"
       - Authored by a maintainer, reviewed by nobody
-    - a1a82e8152b9 "selftests/mm: skip hard dirty page-cache test on CephFS"
+    - 32f2965ef1a4 "selftests/mm: skip hard dirty page-cache test on CephFS"
       - Authored by a maintainer, reviewed by nobody
-    - 922b3f762b35 "selftests/mm: close dirty page-cache files before unlinking them"
+    - 6a1d0775794b "selftests/mm: close dirty page-cache files before unlinking them"
       - Authored by a maintainer, reviewed by nobody
-    - fc4d2c319398 "selftests/mm: extend page-cache test files with pwrite()"
+    - 052030aad057 "selftests/mm: extend page-cache test files with pwrite()"
       - Authored by a maintainer, reviewed by nobody
-    - ede8a9c70717 "selftests/mm: write the whole page-cache test file for OMFS"
+    - 88271b98979a "selftests/mm: write the whole page-cache test file for OMFS"
       - Authored by a maintainer, reviewed by nobody
-    - 8fd2a05fb676 "selftests/mm: accept EIO from close after poisoning dirty data"
+    - 299de8f849bd "selftests/mm: accept EIO from close after poisoning dirty data"
       - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

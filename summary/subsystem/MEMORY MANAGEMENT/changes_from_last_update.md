@@ -1,32 +1,86 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 16 -> 16 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 14 -> 13 commits
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 4 -> 3 commits
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
+- mm-hotfixes-stable: 16 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 4 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 5 -> 0 commits
+    - reviewer, maintainer: 3 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - ff056011e9f7 "mm: memcontrol: don't lose track of exiting OOM victims"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/avA1wXhTMs9eY2NF@chrisdown.name
+      - Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com
+    - 76e1b20670b5 "filemap: prefault writes starting beyond EOF"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
+      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
+    - 2ec6ad932675 "mm, swap: only prefer nonfull clusters on synchronous devices"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
+      - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
+      - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
+      - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
+    - dedc63739690 "mm/damon/stat: avoid overflow in estimated_memory_bandwidth calculation"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261110004816.100066-1-sj@kernel.org
+    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
+      - 4436e171b0a4 "mm: vmscan: allow writeout of swapcache folios without anon mappings (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
+        - Link: https://patch.msgid.link/20261110151407.789960-2-nphamcs@gmail.com
+      - afc0507d6e15 "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
+        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
+      - f6f10d976c8a "mm/swap: skip relocation of tableless clusters (2/3)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
+    - 9436a736a148 "mm: mglru: splice all generations when reparenting a memcg"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261111000913.22943-1-shakeel.butt@linux.dev
+      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
+    - 391f7207cb87 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261112013220.4064478-1-shakeel.butt@linux.dev
+    - f6ed0f2a0304 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261112061231.2469026-1-shakeel.butt@linux.dev
+    - 642abe844867 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
+      - Authored by no role player, reviewed by nobody
+      - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
+      - Link: https://patch.msgid.link/20261112221248.3512447-1-shakeel.butt@linux.dev
+    - fe7e4ee305cf "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261113193812.1239880-1-ivanrwcm25@gmail.com
+    - 50abb4245e1e "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
+      - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
+    - 190936e7a5da "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
+    - 39e0ae8bf729 "mm/hugetlb: fix mremap() racing with page migration"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-6-4dd9e94ea9ac@kernel.org
+      - Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4
+    - 448293c44d86 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261109021611.22247-1-hui.zhu@linux.dev
+- mm-hotfixes-unstable: 13 -> 13 commits (no change)
+  - series: 1 (3) -> 1 (1)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - b750457848d9 "mm/vma: drop mm asynchronously in vma_start_read()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - Link: https://patch.msgid.link/20261124-vma-read-lock-mmdrop-async-v1-1-257f99f551de@kernel.org
-      - Link: https://lore.kernel.org/all/DN267JUKDRNS.2VMV07CQ58R4X@gmail.com/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 242 -> 243 commits
+- mm-unstable: 243 -> 243 commits (no change)
   - series: 32 (167) -> 32 (167) (no change)
     - no role, nobody: 14 -> 14 commits (no change)
-    - no role, no role : 76 -> 77 commits
+    - no role, no role : 77 -> 77 commits (no change)
     - no role, reviewer: 18 -> 18 commits (no change)
     - no role, maintainer: 70 -> 70 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
@@ -36,66 +90,23 @@
     - maintainer, reviewer: 5 -> 5 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
   - changed commits
-    - c61e70e3469e "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
-      - Authored by no role player, reviewed by nobody
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - Link: https://patch.msgid.link/68dcdfbc-2755-437f-bf58-d175b1740afd@kernel.org
     - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - 1f2272a4d330 "mm/damon/core: implement data attribute report queue (1/27)"
+      - d8592faf9df6 "mm/damon/core: introduce damon_report_exist() (12/27)"
         - Authored by a maintainer, reviewed by no role player
         - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-3-sj@kernel.org
-      - 2d3f20a61f9e "mm/damon/core: introduce damon_submit_report() (2/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-4-sj@kernel.org
-      - 938eecab0ba9 "mm/damon/sysfs: add admin/reports/ directory (3/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-5-sj@kernel.org
-      - 07040fff796a "mm/damon/sysfs: add reports/producers/ directory (4/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-6-sj@kernel.org
-      - 2d7874eed2a6 "mm/damon/sysfs: add producers/nr_producers file (5/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-7-sj@kernel.org
-      - 10c04d50c213 "mm/damon/sysfs: implement report producer directory (6/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-8-sj@kernel.org
-      - a2f35420b947 "mm/damon/sysfs: implement report producer type and state files (7/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-9-sj@kernel.org
-    - d6b4d2466625 "mm/vmalloc: avoid false sharing with drain_vmap_work"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-unstable
-      - Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
-- mm-new: 17 -> 20 commits
+        - Link: https://patch.msgid.link/20261124153636.91854-14-sj@kernel.org
+- mm-new: 20 -> 20 commits (no change)
   - series: 3 (13) -> 3 (13) (no change)
     - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 8 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 1cd448defa18 "mm/memcontrol: expose anon and file reclaim statistics in memory.stat"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261124-memcg-reclain-stat-v1-1-c6cb14b0d917@gmail.com
-    - ae7b7e63ace1 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
-    - f3e166bac174 "mm/vmscan: scope freeze writeback skip to the reclaim target"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20261126180228.9b672a945d480e3d3f301985@linux-foundation.org
+    - no role, maintainer: 8 -> 8 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - 49b187a4aad5 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - Link: https://patch.msgid.link/20261125113518.1207280-1-hui.zhu@linux.dev
+    - 2a780f78c6dd "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 7 -> 7 commits (no change)

@@ -1,7 +1,11 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - fe7e4ee305cf "mm: use PFN_PHYS() in phys_mem_access_prot()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://patch.msgid.link/20261113193812.1239880-1-ivanrwcm25@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
@@ -14,24 +18,10 @@
     - maintainer, nobody: 18 -> 18 commits (no change)
     - maintainer, no role : 9 -> 9 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - efa5f2765a5d "Docs/mm/damon/design: update for report system (8/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
-      - c5c9fccd4a27 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
-- mm-new: 7 -> 8 commits
+- mm-new: 8 -> 8 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 4 -> 5 commits
+    - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-  - new commits
-    - 2508d83efc1c "mm/page_owner: document shell usage of page_owner filters"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261126-page_owner_filter_shell-v1-1-cbbcff2fcb08@igalia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

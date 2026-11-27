@@ -75,10 +75,10 @@ Cc: <stable@vger.kernel.org>
  3 files changed, 23 insertions(+), 9 deletions(-)
 
 diff --git a/mm/memory.c b/mm/memory.c
-index 7f019afc35ca0..dace5a672c2c6 100644
+index 05d350efc84b..7d09749c2676 100644
 --- a/mm/memory.c
 +++ b/mm/memory.c
-@@ -5219,18 +5219,13 @@ vm_fault_t do_swap_page(struct vm_fault *vmf)
+@@ -5222,18 +5222,13 @@ vm_fault_t do_swap_page(struct vm_fault *vmf)
  	 * If a large folio already belongs to anon mapping, then we
  	 * can just go on and map it partially.
  	 * If not, with the large swapin check above failing, the page table
@@ -102,7 +102,7 @@ index 7f019afc35ca0..dace5a672c2c6 100644
  	}
  
 diff --git a/mm/swap.h b/mm/swap.h
-index d5bf21f517dce..7779ccff5a0da 100644
+index d5bf21f517dc..7779ccff5a0d 100644
 --- a/mm/swap.h
 +++ b/mm/swap.h
 @@ -464,6 +464,16 @@ static inline void __swap_cache_replace_folio(struct swap_cluster_info *ci,
@@ -123,7 +123,7 @@ index d5bf21f517dce..7779ccff5a0da 100644
  
  int shmem_writeout(struct swap_io_ctx *ctx, struct folio *folio,
 diff --git a/mm/swapfile.c b/mm/swapfile.c
-index 226230dda0aa6..697ee88f7010a 100644
+index 226230dda0aa..697ee88f7010 100644
 --- a/mm/swapfile.c
 +++ b/mm/swapfile.c
 @@ -2574,6 +2574,15 @@ static int unuse_pte(struct vm_area_struct *vma, pmd_t *pmd,

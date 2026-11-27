@@ -1,4 +1,4 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
+- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -12,14 +12,9 @@
     - maintainer, nobody: 15 -> 15 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - f06b9dc29855 "zram: do not modify cont sysfs store buffers"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://patch.msgid.link/20261126014518.1318583-1-senozhatsky@chromium.org
-      - Link: https://lore.kernel.org/all/awcpkJD6K1xtx_Pe@devuan/
+    - maintainer, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
