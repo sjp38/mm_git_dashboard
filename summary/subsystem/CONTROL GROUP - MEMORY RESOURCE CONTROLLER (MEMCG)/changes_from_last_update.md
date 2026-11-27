@@ -8,30 +8,24 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 17 commits
-  - series: 5 (18) -> 5 (16)
+- mm-unstable: 17 -> 17 commits (no change)
+  - series: 5 (16) -> 5 (16) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
-    - maintainer, no role : 1 -> 2 commits
+    - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-  - changed commits
-    - 7a4576caa02a "memcg: warn when memory cgroup IDs run out"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261124020800.2313930-1-shakeel.butt@linux.dev
-  - dropped commits
-    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 5b66a4ba98f9 "mm/memcontrol: avoid potential counter leak when reparenting local stats (2/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-3-8ffea39934a6@tencent.com
-      - eeb3873d6ba9 "mm/memcg: add folio-based lruvec live helper (4/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-5-8ffea39934a6@tencent.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 1cd448defa18 "mm/memcontrol: expose anon and file reclaim statistics in memory.stat"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261124-memcg-reclain-stat-v1-1-c6cb14b0d917@gmail.com
+    - f3e166bac174 "mm/vmscan: scope freeze writeback skip to the reclaim target"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261126180228.9b672a945d480e3d3f301985@linux-foundation.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

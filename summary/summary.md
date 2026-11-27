@@ -7,18 +7,18 @@
     - no role, maintainer: 7 commits
     - reviewer, maintainer: 3 commits
     - maintainer, maintainer: 1 commits
-- mm-hotfixes-unstable: 15 total, 1 (3) series, 12 non-series commits
+- mm-hotfixes-unstable: 14 total, 1 (3) series, 11 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 6 commits
     - maintainer, nobody: 2 commits
     - maintainer, no role : 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 413 total, 55 (290) series, 123 non-series commits
+- mm-unstable: 414 total, 55 (290) series, 124 non-series commits
   - author/reviewer role stat
     - no role, nobody: 32 commits
-    - no role, no role : 130 commits
+    - no role, no role : 131 commits
     - no role, reviewer: 21 commits
     - no role, maintainer: 110 commits
     - reviewer, nobody: 1 commits
@@ -27,17 +27,19 @@
     - maintainer, no role : 51 commits
     - maintainer, reviewer: 5 commits
     - maintainer, maintainer: 17 commits
-- mm-new: 25 total, 5 (20) series, 5 non-series commits
+- mm-new: 30 total, 5 (20) series, 10 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 8 commits
+    - no role, nobody: 9 commits
     - no role, no role : 10 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 6 commits
+    - no role, maintainer: 8 commits
+    - maintainer, nobody: 1 commits
+    - maintainer, no role : 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 192 total, 20 (112) series, 80 non-series commits
+- mm-nonmm-unstable: 195 total, 20 (112) series, 83 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 52 commits
-    - no role, no role : 47 commits
+    - no role, nobody: 54 commits
+    - no role, no role : 48 commits
     - no role, reviewer: 11 commits
     - no role, maintainer: 17 commits
     - maintainer, nobody: 65 commits

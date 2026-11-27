@@ -5,30 +5,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 9 commits
-  - series: 2 (7) -> 2 (6)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 5 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 2 -> 1 commits
-  - changed commits
-    - series "mm: continue vma_flags_t conversion", v2. (11)
-      - e94cbda0f126 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
-  - dropped commits
-    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 89514bd84c49 "mm/khugepaged: convert to LRU refs based operations for MGLRU (12/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-13-8ffea39934a6@tencent.com
-      - 7eb7df818be1 "mm/huge_memory: mark folio as accessed more accurately on split (14/18)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-15-8ffea39934a6@tencent.com
-- mm-new: 3 -> 2 commits
-  - series: 0 (3) -> 0 (2)
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

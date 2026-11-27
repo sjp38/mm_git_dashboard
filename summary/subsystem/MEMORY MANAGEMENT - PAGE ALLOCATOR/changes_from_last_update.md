@@ -5,41 +5,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 11 commits
-  - series: 1 (1) -> 1 (7)
-    - no role, no role : 0 -> 6 commits
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-  - changed commits
-    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
-      - c559eb989f85 "mm/page_ext: fix client data alignment (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
-      - a3027d451583 "mm/page_ext: always use vmalloc for section page extensions (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
-      - 64d638e996fc "mm/page_ext: use common allocation and initialization entry points (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
-      - e4367a7197de "mm/page_ext: allocate page extensions early for SPARSEMEM (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
-      - ed7787a0b69d "mm/page_ext: inline unchecked page extension lookup (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
-      - 5d83861a79f8 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
-- mm-new: 7 -> 1 commits
-  - series: 0 (6) -> 0 (0)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 6 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

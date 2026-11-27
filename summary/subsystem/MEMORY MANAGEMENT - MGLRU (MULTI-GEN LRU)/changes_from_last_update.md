@@ -7,105 +7,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 43 -> 32 commits
-  - series: 4 (38) -> 3 (27)
-    - no role, nobody: 5 -> 1 commits
-    - no role, no role : 1 -> 6 commits
-    - no role, reviewer: 10 -> 9 commits
-    - no role, maintainer: 8 -> 7 commits
+- mm-unstable: 32 -> 32 commits (no change)
+  - series: 3 (27) -> 3 (27) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 14 -> 6 commits
-    - maintainer, reviewer: 3 -> 1 commits
-  - changed commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - f1616d4ea47a "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-10-baohua@kernel.org
-      - 559d8fd0b5e8 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: : https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org
-        - Link: https://patch.msgid.link/20261114200803.23129-11-baohua@kernel.org
-      - 1aa28a3ebb7c "mm/mglru: run aging when one type is drained (10/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-12-baohua@kernel.org
-      - 921872e63d51 "mm/mglru: restrict eviction accounting to eligible zones (12/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-13-baohua@kernel.org
-      - a4a77f2d5feb "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (13/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-14-baohua@kernel.org
-      - cbc6f2105a27 "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (14/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-15-baohua@kernel.org
-      - 0d7d501b18da "mm/mglru: make swappiness=1 file reclaim more aggressive (15/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-16-baohua@kernel.org
-    - series "mm: continue vma_flags_t conversion", v2. (11)
-      - 328413649409 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
-  - dropped commits
-    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 20b541d793e4 "mm/mglru: rename the generation offset in lru_gen_folio_seq() (0/18)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261124-mglru-fg-v6-0-8ffea39934a6@tencent.com
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-1-8ffea39934a6@tencent.com
-      - 4be2aad0c188 "mm/memcontrol: allow update of LRU statistic without holding LRU lock (1/18)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-2-8ffea39934a6@tencent.com
-      - dde3058d5031 "mm/mglru: make generation page counters atomic (3/18)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
-      - 3c38f629cb79 "mm/mglru: skip the flags cmpxchg when nothing changes (5/18)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-6-8ffea39934a6@tencent.com
-      - fa15914d292f "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
-      - ed2d40800549 "mm/mglru: make folio lru referenced times count a generic API (7/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-8-8ffea39934a6@tencent.com
-      - 0b292e28c193 "mm/mglru: move add/del LRU size accounting out of lru_gen_update_size() (8/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-9-8ffea39934a6@tencent.com
-      - 7167fa3ce738 "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-10-8ffea39934a6@tencent.com
-      - c06f12bcb784 "mm/mglru, smaps: convert to LRU refs based operations for MGLRU (10/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-11-8ffea39934a6@tencent.com
-      - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
-      - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
-      - 4bc2e2af4110 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
+    - maintainer, no role : 6 -> 6 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - a5324839fe83 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
+    - ae7b7e63ace1 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
+    - f3e166bac174 "mm/vmscan: scope freeze writeback skip to the reclaim target"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261126180228.9b672a945d480e3d3f301985@linux-foundation.org
+  - changed commits
+    - 49b187a4aad5 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
       - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
       - Link: https://patch.msgid.link/20261125113518.1207280-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

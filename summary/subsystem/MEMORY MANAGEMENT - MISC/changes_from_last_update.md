@@ -6,62 +6,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 87 -> 91 commits
-  - series: 8 (52) -> 8 (57)
+- mm-unstable: 91 -> 91 commits (no change)
+  - series: 8 (57) -> 8 (57) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 30 -> 30 commits (no change)
     - no role, maintainer: 26 -> 26 commits (no change)
-    - maintainer, nobody: 19 -> 18 commits
-    - maintainer, no role : 4 -> 9 commits
+    - maintainer, nobody: 18 -> 18 commits (no change)
+    - maintainer, no role : 9 -> 9 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
   - changed commits
     - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - fe40672bfb6a "Docs/mm/damon/design: update for report system (8/27)"
+      - efa5f2765a5d "Docs/mm/damon/design: update for report system (8/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-10-sj@kernel.org
-      - 88d29f537c25 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
+      - c5c9fccd4a27 "Docs/admin-guide/mm/damon/usage: update for report producer sysfs (9/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-11-sj@kernel.org
-      - 4a49c23af1ca "Docs/mm/damon/design: update for report_made probe filter type (16/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-18-sj@kernel.org
-      - ccdf62973d8a "Docs/admin-guide/mm/damon/usage: update for REPORT_MADE probe filter (17/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-19-sj@kernel.org
-      - 5c709530faef "Docs/mm/damon/design: update for user report support (24/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-26-sj@kernel.org
-      - 183f1166f327 "Docs/admin-guide/mm/damon/usage: update for user_report report support (25/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-27-sj@kernel.org
-  - dropped commits
-    - 8662b5fa771d "lib/test_hmm: invalidate all mirrors on device-private migration"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/r/20261122015246.d8b6b98ff5a8157168156339@linux-foundation.org
-      - Link: https://lore.kernel.org/r/179535872126.34.4789080961796247940.b4-reply@b4
-    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
-- mm-new: 11 -> 7 commits
-  - series: 1 (9) -> 1 (4)
-    - no role, nobody: 2 -> 4 commits
+- mm-new: 7 -> 8 commits
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 4 -> 5 commits
     - no role, no role : 3 -> 3 commits (no change)
-    - maintainer, no role : 6 -> 0 commits
   - new commits
-    - series "mm/mlock: make zero length requests a no-op and reject wrapping ranges". (3)
-      - edd013110a98 "selftests/mm: test mlock() and munlock() range normalisation (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261102074412.189554-4-azpijr@gmail.com
-    - 3d27e49eb905 "tools/mm: page-types: flush pending idle bitmap bits after walking"
+    - 2508d83efc1c "mm/page_owner: document shell usage of page_owner filters"
       - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261125091408.1584017-1-wangxuewen_ky@163.com
+      - Link: https://patch.msgid.link/20261126-page_owner_filter_shell-v1-1-cbbcff2fcb08@igalia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

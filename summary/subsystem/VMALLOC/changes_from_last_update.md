@@ -1,15 +1,20 @@
 - baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc3-230-g4405c18c95d2d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 2 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
+- mm-unstable: 10 -> 11 commits
   - series: 1 (8) -> 1 (8) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, no role : 9 -> 10 commits
+  - changed commits
+    - d6b4d2466625 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-unstable
+      - Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -11,7 +11,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - e7509cfacfcf "mm: report all-zero cachestat for DAX mappings"
+    - b3a2e818882b "mm: report all-zero cachestat for DAX mappings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261125030432.274396-1-bsdhenrymartin@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -20,44 +20,50 @@
     - no role, no role : 2 commits
     - no role, maintainer: 6 commits
   - full commits list
-    - 78644d01d04b "mm/filemap: clear page cache marks once when removing a folio"
+    - 54dfb4c2486e "mm/filemap: clear page cache marks once when removing a folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102-bug-mm-filemap-init-marks-once-v2-1-985753b11173@gmail.com
-    - b1ba4c61b5cf "mm/page-writeback: avoid overflow when reporting BDI byte limits"
+    - e22b52f9e948 "mm/page-writeback: avoid overflow when reporting BDI byte limits"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261103193627.71959-1-dennylin0707@gmail.com
-    - 44c458d1d9b7 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
+    - a0c132860b61 "mm/page-writeback: avoid unnecessary strictlimit background wakeups"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261108085456.2093096-2-thnkslprpt@gmail.com
-    - a36e1522f01a "mm: skip empty finite ranges in truncate_pagecache_range"
+    - b378de946aec "mm: skip empty finite ranges in truncate_pagecache_range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261104182700.88789-1-dennylin0707@gmail.com
       - Link: https://lore.kernel.org/r/20261027211505.22044-1-dennylin0707@gmail.com
-    - 9007bc33a609 "mm/readahead: don't skip the fallback after aligning index down"
+    - f96eb72586ec "mm/readahead: don't skip the fallback after aligning index down"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261113072711.235264-1-gopalmalaviya53@gmail.com
       - Link: https://sashiko.dev/#/bug/linux-da6e8836-f808-4b39-9f04-de52995a0162 [1]
-    - f8ba1f9b5d85 "mm: cachestat: count each page only once"
+    - 683104d31273 "mm: cachestat: count each page only once"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-2-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115635.8346206195d50372@chrisdown.name
-    - 846409e88034 "mm: cachestat: restart the walk after each entry"
+    - f76f1718a905 "mm: cachestat: restart the walk after each entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-3-50a2ed382b61@kernel.org
       - Link: : https://lore.kernel.org/20261114115640.c707f5c9496fcea4@chrisdown.name
     - series "mm: continue vma_flags_t conversion", v2. (11 commits)
-      - 1b2ed65e9917 "mm/filemap: convert fault and readahead logic to use vma_flags_t" (0/11)
+      - 01f9ddf65154 "mm/filemap: convert fault and readahead logic to use vma_flags_t" (0/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
         - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - ae7b7e63ace1 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
     - series "mm: remove unused functions", v2. (5 commits)
-      - 27c3f77b419e "mm: remove unused helpers from pagemap.h" (0/5)
+      - 4e0354ec1c0f "mm: remove unused helpers from pagemap.h" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261117-unused-sym-mm-v2-0-2f845e94dd50@amd.com
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-1-2f845e94dd50@amd.com

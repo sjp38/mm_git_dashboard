@@ -8,29 +8,29 @@
     - maintainer, no role : 4 commits
     - maintainer, maintainer: 3 commits
   - full commits list
-      - 950c97b76306 "zsmalloc: return handle from obj_allocated()" (2/11)
+      - 1c2d7302deb0 "zsmalloc: return handle from obj_allocated()" (2/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261111064707.2568433-4-senozhatsky@chromium.org
-      - 40ea3bf31226 "zsmalloc: switch handle type to struct zs_handle" (3/11)
+      - 95cf516109f9 "zsmalloc: switch handle type to struct zs_handle" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-5-senozhatsky@chromium.org
-      - 767108cdfa1f "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
+      - 278a210da235 "zsmalloc: encode 1-based obj_idx so valid obj is never 0" (7/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261111064707.2568433-9-senozhatsky@chromium.org
-      - 193de9d5363d "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
+      - b41d20450f4a "zsmalloc: embed struct zs_handle into zram and zswap entries" (8/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-10-senozhatsky@chromium.org
-      - b916a320f42a "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
+      - dcb4472ff225 "zsmalloc: fold zs_obj_write() into zs_store()" (9/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261111064707.2568433-11-senozhatsky@chromium.org
-      - 0836d866f579 "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
+      - 557cab2e477b "zsmalloc: populate new zspage outside class->lock in zs_store()" (10/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261111064707.2568433-12-senozhatsky@chromium.org
-    - 07211a809174 "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+    - fcd61efb16ea "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
     - series "zram: zsmalloc: speed up zspage free path", v3. (2 commits)
-      - 1cfaae288b48 "zsmalloc: free a zspage's pages in one batch" (0/2)
+      - 07dac9117dd9 "zsmalloc: free a zspage's pages in one batch" (0/2)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20261123054746.2579253-1-senozhatsky@chromium.org
         - Link: https://patch.msgid.link/20261123054746.2579253-2-senozhatsky@chromium.org
@@ -43,9 +43,9 @@
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 69ccdc18c8af "zsmalloc: fix SPDX license identifier"
+    - aeb110bb8a88 "zsmalloc: fix SPDX license identifier"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://patch.msgid.link/39f6056e0c8834fc3eca2001fcb44f3b6048f74d.1795061575.git.senozhatsky@chromium.org
-      - df89bbc39947 "mm/zsmalloc: remove unused zpdesc_lock()" (3/5)
+      - 99ef696f4200 "mm/zsmalloc: remove unused zpdesc_lock()" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261117-unused-sym-mm-v2-4-2f845e94dd50@amd.com

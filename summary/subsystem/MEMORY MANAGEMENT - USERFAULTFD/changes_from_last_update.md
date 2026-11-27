@@ -6,18 +6,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 4 -> 5 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 259dad41caeb "mm/userfaultfd: reject DAX mappings"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
-- mm-new: 6 -> 5 commits
+- mm-new: 5 -> 5 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 6 -> 5 commits
+    - no role, no role : 5 -> 5 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

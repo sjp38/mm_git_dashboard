@@ -12,8 +12,14 @@
     - maintainer, nobody: 15 -> 15 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - f06b9dc29855 "zram: do not modify cont sysfs store buffers"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://patch.msgid.link/20261126014518.1318583-1-senozhatsky@chromium.org
+      - Link: https://lore.kernel.org/all/awcpkJD6K1xtx_Pe@devuan/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

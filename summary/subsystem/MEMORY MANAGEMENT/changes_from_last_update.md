@@ -7,303 +7,95 @@
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 12 -> 14 commits
+- mm-hotfixes-unstable: 14 -> 13 commits
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 3 -> 4 commits
+    - no role, no role : 4 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 6 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - e7509cfacfcf "mm: report all-zero cachestat for DAX mappings"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261125030432.274396-1-bsdhenrymartin@gmail.com
   - changed commits
-    - 3551c84218c7 "mm/hmm: account for subpage offsets in device-private PMDs"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://patch.msgid.link/179342234355.4.16705453209886955762@gmail.com
-      - Link: : https://lore.kernel.org/20261121160037.1a479f3c8b4e860bc23c106d@linux-foundation.org
+    - b750457848d9 "mm/vma: drop mm asynchronously in vma_start_read()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Liam R. Howlett (Google) <liam@infradead.org>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - Link: https://patch.msgid.link/20261124-vma-read-lock-mmdrop-async-v1-1-257f99f551de@kernel.org
+      - Link: https://lore.kernel.org/all/DN267JUKDRNS.2VMV07CQ58R4X@gmail.com/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 225 -> 242 commits
-  - series: 29 (152) -> 32 (167)
-    - no role, nobody: 18 -> 14 commits
-    - no role, no role : 67 -> 76 commits
-    - no role, reviewer: 17 -> 18 commits
-    - no role, maintainer: 68 -> 70 commits
+- mm-unstable: 242 -> 243 commits
+  - series: 32 (167) -> 32 (167) (no change)
+    - no role, nobody: 14 -> 14 commits (no change)
+    - no role, no role : 76 -> 77 commits
+    - no role, reviewer: 18 -> 18 commits (no change)
+    - no role, maintainer: 70 -> 70 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 6 -> 7 commits
-    - maintainer, no role : 22 -> 31 commits
-    - maintainer, reviewer: 6 -> 5 commits
+    - maintainer, nobody: 7 -> 7 commits (no change)
+    - maintainer, no role : 31 -> 31 commits (no change)
+    - maintainer, reviewer: 5 -> 5 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
   - changed commits
-    - series "mm: mglru: fix swappiness behavior", v9. (16)
-      - f1616d4ea47a "mm/mglru: avoid placing rejected folios below populated gen (8/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-10-baohua@kernel.org
-      - 559d8fd0b5e8 "mm/mglru: run aging when pages are rare outside the youngest gen (9/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: : https://patch.msgid.link/20261116042556.42111-1-baohua@kernel.org
-        - Link: https://patch.msgid.link/20261114200803.23129-11-baohua@kernel.org
-      - 1aa28a3ebb7c "mm/mglru: run aging when one type is drained (10/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-12-baohua@kernel.org
-      - 921872e63d51 "mm/mglru: restrict eviction accounting to eligible zones (12/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-13-baohua@kernel.org
-      - a4a77f2d5feb "mm/mglru: reduce LRU lock contention by shrinking folio batches in inc_min_seq (13/16)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-14-baohua@kernel.org
-      - cbc6f2105a27 "mm/mglru: avoid prolonged anon reclaim with swappiness=200 (14/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-15-baohua@kernel.org
-      - 0d7d501b18da "mm/mglru: make swappiness=1 file reclaim more aggressive (15/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
-        - Link: https://patch.msgid.link/20261114200803.23129-16-baohua@kernel.org
-    - 25e10126a408 "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
+    - c61e70e3469e "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
       - Authored by no role player, reviewed by nobody
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: <stable@kernel.org>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
       - Link: https://patch.msgid.link/68dcdfbc-2755-437f-bf58-d175b1740afd@kernel.org
-    - c0933f655cad "mm/mmap: free gathered pages before MMF_OOM_SKIP"
-      - Authored by no role player, reviewed by a maintainer
-      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
-      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-1-50a2ed382b61@kernel.org
-      - Link: : https://lore.kernel.org/20261114115630.0b75d0b49869d4fa@chrisdown.name
-    - f8ba1f9b5d85 "mm: cachestat: count each page only once"
-      - Authored by no role player, reviewed by no role player
-      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
-      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-2-50a2ed382b61@kernel.org
-      - Link: : https://lore.kernel.org/20261114115635.8346206195d50372@chrisdown.name
-    - 846409e88034 "mm: cachestat: restart the walk after each entry"
-      - Authored by no role player, reviewed by no role player
-      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
-      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-3-50a2ed382b61@kernel.org
-      - Link: : https://lore.kernel.org/20261114115640.c707f5c9496fcea4@chrisdown.name
-    - e0498d3c0d44 "percpu: fix contig hints that are too low"
-      - Authored by no role player, reviewed by no role player
-      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
-      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-11-50a2ed382b61@kernel.org
-    - 312c84446f96 "percpu: search the whole reserved chunk"
-      - Authored by no role player, reviewed by no role player
-      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
-      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-12-50a2ed382b61@kernel.org
-    - 9f38d5724442 "percpu: queue the balance work on an unbound workqueue"
-      - Authored by no role player, reviewed by no role player
-      - dropped "Cc: Dennis Zhou (Facebook) <dennisszhou@gmail.com>"
-      - Link: https://patch.msgid.link/20261113-mason-migrate-et-al-fixes-v2-13-50a2ed382b61@kernel.org
-    - 7a4576caa02a "memcg: warn when memory cgroup IDs run out"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261124020800.2313930-1-shakeel.butt@linux.dev
-    - 75b902f21f95 "mm/hugetlb: fix NR_HUGETLB accounting for kept surplus folios"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261124-for-gather-surplus-v1-1-231e5660f3d8@kylinos.cn
-    - 259dad41caeb "mm/userfaultfd: reject DAX mappings"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
-    - series "KMSAN: Move per-page metadata out of struct page", v3. (7)
-      - 73b6fc903bdd "kmsan: encapsulate per-page metadata access (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261119065812.89959-1-songmuchun@bytedance.com
-        - Link: https://patch.msgid.link/20261119065812.89959-2-songmuchun@bytedance.com
-      - c559eb989f85 "mm/page_ext: fix client data alignment (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
-      - a3027d451583 "mm/page_ext: always use vmalloc for section page extensions (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
-      - 64d638e996fc "mm/page_ext: use common allocation and initialization entry points (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
-      - e4367a7197de "mm/page_ext: allocate page extensions early for SPARSEMEM (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
-      - ed7787a0b69d "mm/page_ext: inline unchecked page extension lookup (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
-      - 5d83861a79f8 "kmsan: fix metadata loss during HugeTLB struct page reinitialization (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
-    - series "mm/damon: improve efficiency (paddr, core), fix a selftest, add a kunit". (4)
-      - 5cdf0d5dd609 "mm/damon/paddr: skip non-LRU folios as a whole in pageout (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261124153021.90142-1-sj@kernel.org
-        - Link: https://patch.msgid.link/20261124153021.90142-2-sj@kernel.org
-      - 0362e9a224e9 "mm/damon/core: skip apply_probes() when no probes are installed (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153021.90142-3-sj@kernel.org
-      - 6d498c9063f9 "mm/damon/tests/core-kunit: add test for damon_call() (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153021.90142-5-sj@kernel.org
     - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - e50f6c9475fb "mm/damon/core: implement data attribute report queue (1/27)"
+      - 1f2272a4d330 "mm/damon/core: implement data attribute report queue (1/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-3-sj@kernel.org
-      - 37649d365699 "mm/damon/core: introduce damon_submit_report() (2/27)"
+      - 2d3f20a61f9e "mm/damon/core: introduce damon_submit_report() (2/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-4-sj@kernel.org
-      - 6811454971da "mm/damon/sysfs: add admin/reports/ directory (3/27)"
+      - 938eecab0ba9 "mm/damon/sysfs: add admin/reports/ directory (3/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-5-sj@kernel.org
-      - 018697a3625e "mm/damon/sysfs: add reports/producers/ directory (4/27)"
+      - 07040fff796a "mm/damon/sysfs: add reports/producers/ directory (4/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-6-sj@kernel.org
-      - aa5306afad8a "mm/damon/sysfs: add producers/nr_producers file (5/27)"
+      - 2d7874eed2a6 "mm/damon/sysfs: add producers/nr_producers file (5/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-7-sj@kernel.org
-      - deffc45cd7c1 "mm/damon/sysfs: implement report producer directory (6/27)"
+      - 10c04d50c213 "mm/damon/sysfs: implement report producer directory (6/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-8-sj@kernel.org
-      - 9a5f91b7ba84 "mm/damon/sysfs: implement report producer type and state files (7/27)"
+      - a2f35420b947 "mm/damon/sysfs: implement report producer type and state files (7/27)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
         - Link: https://patch.msgid.link/20261124153636.91854-9-sj@kernel.org
-      - 69b3a34a298b "mm/damon/core: introduce DAMON_FILTER_TYPE_REPORT_MADE (11/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-13-sj@kernel.org
-      - e3b120d75dd6 "mm/damon/core: introduce damon_report_exist() (12/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-14-sj@kernel.org
-      - 20eefd7ece05 "mm/damon/paddr: support REPORT_MADE type probe filter (13/27)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-15-sj@kernel.org
-      - f3481579e186 "mm/damon/sysfs: add filter_report_type file under probe filter directory (14/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-16-sj@kernel.org
-      - 9f0546c37810 "mm/damon/sysfs: support REPORT_MADE type probe filter setup (15/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-17-sj@kernel.org
-      - 9ab5f855d0c3 "mm/damon/sysfs: add user_report support for report type input (20/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-22-sj@kernel.org
-      - f76ee789fcbb "mm/damon/sysfs: implement report producer addr_{start,end} files (21/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-23-sj@kernel.org
-      - ac9b00e520f0 "mm/damon/sysfs: implement submit command for report producer (22/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124153636.91854-24-sj@kernel.org
-    - series "mm: continue vma_flags_t conversion", v2. (11)
-      - 1b2ed65e9917 "mm/filemap: convert fault and readahead logic to use vma_flags_t (0/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20261124-late-2026-vma-flags-v2-0-bf3fade93064@kernel.org
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-1-bf3fade93064@kernel.org
-      - e94cbda0f126 "mm/madvise: convert madvise_vma_behavior() to use vma_flags_t (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-2-bf3fade93064@kernel.org
-      - 328413649409 "mm: convert miscellaneous VMA flag tests to use vma_flags_t (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
-  - dropped commits
-    - series "mm/mglru: frequency guided promotion (MGLRU-FG) and flag cleanup", v6. (18)
-      - 5b66a4ba98f9 "mm/memcontrol: avoid potential counter leak when reparenting local stats (2/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-3-8ffea39934a6@tencent.com
-      - dde3058d5031 "mm/mglru: make generation page counters atomic (3/18)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-4-8ffea39934a6@tencent.com
-      - 3c38f629cb79 "mm/mglru: skip the flags cmpxchg when nothing changes (5/18)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-6-8ffea39934a6@tencent.com
-      - fa15914d292f "mm/mglru: frequency guided workingset promotion (MGLRU-FG) (6/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-7-8ffea39934a6@tencent.com
-      - ed2d40800549 "mm/mglru: make folio lru referenced times count a generic API (7/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-8-8ffea39934a6@tencent.com
-      - 7167fa3ce738 "mm/mglru, gup: mark folios referenced via a fast helper (9/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-10-8ffea39934a6@tencent.com
-      - e8c28cbeccb0 "mm/damon: convert to LRU refs based operations for MGLRU (11/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-12-8ffea39934a6@tencent.com
-      - 89514bd84c49 "mm/khugepaged: convert to LRU refs based operations for MGLRU (12/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-13-8ffea39934a6@tencent.com
-      - c4be721cc233 "mm/madvise: adapt for LRU refs based operations for MGLRU (13/18)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-14-8ffea39934a6@tencent.com
-      - 7eb7df818be1 "mm/huge_memory: mark folio as accessed more accurately on split (14/18)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-15-8ffea39934a6@tencent.com
-      - 3afc31bee8e8 "mm/mglru: make PG_workingset helpers work based on folio LRU refs (15/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-16-8ffea39934a6@tencent.com
-      - 5a8409d2b5c8 "mm/mglru: folio LRU refs based active/inactive number accounting (16/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-17-8ffea39934a6@tencent.com
-      - 4bc2e2af4110 "mm/mglru: make folio_inc_lru_refs lruvec lockless (17/18)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://patch.msgid.link/20261124-mglru-fg-v6-18-8ffea39934a6@tencent.com
-- mm-new: 44 -> 17 commits
-  - series: 5 (39) -> 3 (13)
-    - no role, nobody: 2 -> 5 commits
-    - no role, no role : 15 -> 5 commits
+    - d6b4d2466625 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-unstable
+      - Link: https://patch.msgid.link/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
+- mm-new: 17 -> 20 commits
+  - series: 3 (13) -> 3 (13) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 10 -> 6 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, no role : 15 -> 0 commits
+    - no role, maintainer: 6 -> 8 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - series "mm/mlock: make zero length requests a no-op and reject wrapping ranges". (3)
-      - 51b2fc77de00 "mm/mlock: make a zero length request a no-op whatever the alignment (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261102074412.189554-1-azpijr@gmail.com
-        - Link: https://patch.msgid.link/20261102074412.189554-2-azpijr@gmail.com
-        - Link: https://lore.kernel.org/all/179066531783.50175.13377521828379196177@dgu.ac.kr/ [1]
-      - f9a5d07d90bc "mm/mlock: reject ranges that cannot be represented (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://patch.msgid.link/20261102074412.189554-3-azpijr@gmail.com
-    - a5324839fe83 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
+    - 1cd448defa18 "mm/memcontrol: expose anon and file reclaim statistics in memory.stat"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/20261124-memcg-reclain-stat-v1-1-c6cb14b0d917@gmail.com
+    - ae7b7e63ace1 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
+    - f3e166bac174 "mm/vmscan: scope freeze writeback skip to the reclaim target"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261126180228.9b672a945d480e3d3f301985@linux-foundation.org
+  - changed commits
+    - 49b187a4aad5 "mm: mglru: reset the mm iteration cursor in try_to_inc_max_seq_nowalk()"
       - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
       - Link: https://patch.msgid.link/20261125113518.1207280-1-hui.zhu@linux.dev
-    - 3d27e49eb905 "tools/mm: page-types: flush pending idle bitmap bits after walking"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://patch.msgid.link/20261125091408.1584017-1-wangxuewen_ky@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 7 -> 7 commits (no change)

@@ -7,11 +7,11 @@
     - no role, no role : 2 commits
   - full commits list
     - series "KMSAN: Move per-page metadata out of struct page", v3. (7 commits)
-      - 73b6fc903bdd "kmsan: encapsulate per-page metadata access" (0/7)
+      - fbb864e0c8f9 "kmsan: encapsulate per-page metadata access" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261119065812.89959-1-songmuchun@bytedance.com
         - Link: https://patch.msgid.link/20261119065812.89959-2-songmuchun@bytedance.com
-      - 5d83861a79f8 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
+      - fdedbfcccc04 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
