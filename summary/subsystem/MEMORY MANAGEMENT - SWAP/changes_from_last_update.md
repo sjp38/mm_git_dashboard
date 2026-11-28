@@ -1,27 +1,6 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
-- mm-hotfixes-stable: 4 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, maintainer: 2 -> 0 commits
-  - dropped commits
-    - 2ec6ad932675 "mm, swap: only prefer nonfull clusters on synchronous devices"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
-    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - afc0507d6e15 "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
-        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - f6f10d976c8a "mm/swap: skip relocation of tableless clusters (2/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
-    - 190936e7a5da "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
+- baseline: v7.4-rc4-745-g6cce17ffe54a -> v7.4-rc4-745-g6cce17ffe54a (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

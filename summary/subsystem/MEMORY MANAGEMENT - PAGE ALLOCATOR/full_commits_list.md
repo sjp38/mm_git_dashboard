@@ -8,47 +8,47 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - b93c67dbaec1 "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
+    - 918e6077dd7f "mm/page_alloc: remove unneeded forward declaration of __free_pages_ok()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261022124504.75642-1-zenghui.yu@linux.dev
-    - 66608b77d888 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
+    - 1f8477e17ee0 "mm/compaction: annotate data race for zone->free_area[order].nr_free"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261102081919.80625-1-hui.zhu@linux.dev
-    - 0b188ff2ec39 "mm: page_owner: use %u to print the stack depot handle"
+    - 1ce350125570 "mm: page_owner: use %u to print the stack depot handle"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104073328.1737-1-zhangchujun@cmss.chinamobile.com
-    - 175fcbef13a1 "mm: split out memory-failure declarations from internal.h"
+    - 78a5108aef76 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
     - series "alloc_tag: Introduce selective tracing for MAP", v5. (5 commits)
-      - e107e23d926e "alloc_tag: add trace events for tracing allocations" (0/5)
+      - 8ffca28a48da "alloc_tag: add trace events for tracing allocations" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1793818636.git.abhishekbapat@google.com
         - Link: https://patch.msgid.link/ba221f76f8bee0ec8ac32e7ffaba35fd78b67a7f.1793818636.git.abhishekbapat@google.com
-      - fb81c17c7371 "mm/page_ext: fix client data alignment" (1/7)
+      - fca33ab36037 "mm/page_ext: fix client data alignment" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-3-songmuchun@bytedance.com
-      - 5e3d3c08d947 "mm/page_ext: always use vmalloc for section page extensions" (2/7)
+      - 06b31e5dd9b4 "mm/page_ext: always use vmalloc for section page extensions" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-4-songmuchun@bytedance.com
-      - f6da554bf6ac "mm/page_ext: use common allocation and initialization entry points" (3/7)
+      - 03258032eafd "mm/page_ext: use common allocation and initialization entry points" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-5-songmuchun@bytedance.com
-      - 7a2af1ce6896 "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
+      - 22885fdd3a9c "mm/page_ext: allocate page extensions early for SPARSEMEM" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-6-songmuchun@bytedance.com
-      - 7fe1f0a774be "mm/page_ext: inline unchecked page extension lookup" (5/7)
+      - 2b5421529456 "mm/page_ext: inline unchecked page extension lookup" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-7-songmuchun@bytedance.com
-      - decc01561f30 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
+      - 8581c4282998 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - d062c907426c "tools/mm/page_owner_sort: fix slab allocator labelling"
+    - 81198eca3cef "tools/mm/page_owner_sort: fix slab allocator labelling"
       - Authored by no role player, reviewed by nobody
       - Link: https://patch.msgid.link/20261117214947.13471-1-evanfengff@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

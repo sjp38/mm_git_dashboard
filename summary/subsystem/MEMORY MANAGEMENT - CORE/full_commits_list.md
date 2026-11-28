@@ -4,11 +4,11 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 0d50b9fabcf5 "mm/vma: drop mm asynchronously in vma_start_read()"
+    - cc3e8825ba86 "mm/vma: drop mm asynchronously in vma_start_read()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261124-vma-read-lock-mmdrop-async-v1-1-257f99f551de@kernel.org
       - Link: https://lore.kernel.org/all/DN267JUKDRNS.2VMV07CQ58R4X@gmail.com/
-    - eb48df365c0f "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
+    - 67663045c243 "mm/swapfile: drop a large unmapped swap-in folio in unuse_pte()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261105-swapin-large-unmapped-v3-1-d5906e4cf18d@columbia.edu
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -21,71 +21,71 @@
     - maintainer, nobody: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - a477616a16c0 "mm/vmstat: annotate data race in zone_page_state_snapshot()"
+    - 562e2c0fed5b "mm/vmstat: annotate data race in zone_page_state_snapshot()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://patch.msgid.link/20261028100549.70689-1-hui.zhu@linux.dev
-      - 5c244c07ba6d "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
+      - 32f86fc88113 "mm/hugetlb_vmemmap: remove vmemmap_wrprotect_hvo()" (2/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://patch.msgid.link/20261019090830.1917657-4-songmuchun@bytedance.com
     - series "mm: Remove pagetable_dtor_free()". (2 commits)
-      - 49b2b09351cd "mm: remove pagetable_dtor_free()" (0/2)
+      - 5c888b2456fd "mm: remove pagetable_dtor_free()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261030083800.599152-1-songmuchun@bytedance.com
         - Link: https://patch.msgid.link/20261030083800.599152-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/r/20261023063428.3658761-1-songmuchun@bytedance.com [1]
-    - 9610667287ab "mm: bypass swap readahead for zswap"
+    - 5718da00f9d0 "mm: bypass swap readahead for zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261102144835.304017-1-alex@ghiti.fr
     - series "mm/vmscan: remove obsolete offlined memcg reclaim handling". (2 commits)
-      - a600a28eb548 "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
+      - 37a278c319bb "mm/vmscan: remove redundant !mem_cgroup_online() checks" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261028010611.3929937-1-tjmercier@google.com
         - Link: https://patch.msgid.link/20261028010611.3929937-2-tjmercier@google.com
-      - 662582ea3027 "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
+      - a19b1e296b5a "mm/mglru: stop rotating offlined memcgs to the old generation" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261028010611.3929937-3-tjmercier@google.com
-      - 24fe9db73a45 "mm, swap: fix large swap-in across swap file extents" (1/4)
+      - 2fc2fcf6f810 "mm, swap: fix large swap-in across swap file extents" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261104-swap-fixes-v2-2-204be064be5b@tencent.com
-    - 175fcbef13a1 "mm: split out memory-failure declarations from internal.h"
+    - 78a5108aef76 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-      - 5d0f646209ac "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
+      - 3b43640287ca "mm/sparse-vmemmap: drop vmemmap_can_optimize()" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107043122.25650-5-songmuchun@bytedance.com
-      - 6145b8c82a82 "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs" (4/5)
+      - 9ec142c1b034 "mm/sparse-vmemmap: drop @pgmap from vmemmap population APIs" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107043122.25650-6-songmuchun@bytedance.com
-      - ec0040510386 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
+      - 676331413805 "mm/vmalloc: use vmap_pte_set_huge()/vmap_pte_clear_huge() for PTE-level block mappings" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261107134953.748622-4-jiangwenxiaomi@gmail.com
-    - 2094d9876cdd "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
+    - b2d26fff9cec "mm/zsmalloc: remove CONFIG_ZSMALLOC_STAT"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261116-zsmalloc_stat-v4-1-fa9197a2e580@gmail.com
-    - 9c42744ee52f "mm/userfaultfd: prevent poison marker loss"
+    - 065bb7d226fc "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-      - 8347854307f4 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios" (1/3)
+      - c577081396e5 "mm: gup: allow long-term pins of CMA-allocated HugeTLB folios" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/295af6601ce79f2c2b3dc4352a3279f0e6ac513e.1794907279.git.zhengqi.arch@bytedance.com
         - Link: : https://lore.kernel.org/20261119004339.98c7e39ba863695691c7b921@linux-foundation.org
-    - 5a7c0c5e349b "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
+    - d68312707fb6 "mm/hugetlb: delay anon folio rmap removal until after the TLB flush"
       - Authored by no role player, reviewed by nobody
       - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
-    - 517ce75406f6 "mm: vmstat_kunit: add synthetic benchmark for mm stats"
+    - 1092c6463472 "mm: vmstat_kunit: add synthetic benchmark for mm stats"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/21183f5b-2697-cbe6-6370-dbd27c5e2b60@google.com
-    - 2a350771bbc1 "mm/vmstat_kunit: avoid sparse warning in vm event cleanup"
+    - 1d6025b04afc "mm/vmstat_kunit: avoid sparse warning in vm event cleanup"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/r/21183f5b-2697-cbe6-6370-dbd27c5e2b60@google.com
-      - e3c8fd5303a1 "mm/mm_init: factor out common struct page initialization" (1/11)
+      - 746295042834 "mm/mm_init: factor out common struct page initialization" (1/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261120100856.16929-3-songmuchun@bytedance.com
-      - decc01561f30 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
+      - 8581c4282998 "kmsan: fix metadata loss during HugeTLB struct page reinitialization" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261119065812.89959-8-songmuchun@bytedance.com
-      - e1a7d3059fec "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (2/11)
+      - 26daf53a7c4e "mm: convert miscellaneous VMA flag tests to use vma_flags_t" (2/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261124-late-2026-vma-flags-v2-3-bf3fade93064@kernel.org
 - mm-new: 3 total, 0 (2) series, 1 non-series commits
@@ -93,15 +93,16 @@
     - no role, no role : 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - 62ecf5b673ad "fs/proc/task_mmu: downgrade writable migration entries in PAGEMAP_SCAN write-protect" (2/7)
+      - 61e197210ba5 "fs/proc/task_mmu: downgrade writable migration entries in PAGEMAP_SCAN write-protect" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-3-b617009d1a4a@columbia.edu
-      - 2fe2bd5cdd96 "mm/mremap: apply the mmap() offset limits on expansion" (3/6)
+      - 5afdfd2576a4 "mm/mremap: apply the mmap() offset limits on expansion" (3/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20261121-some-more-ai-fixes-v1-5-236e925d9b64@kernel.org
         - Link: : https://lore.kernel.org/179536260304.412063.8485838901368834162.b4-reply@b4
-    - 2a780f78c6dd "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+    - 5096f8d4f458 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
+      - Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

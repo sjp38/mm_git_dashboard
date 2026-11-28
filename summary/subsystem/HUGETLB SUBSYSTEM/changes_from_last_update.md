@@ -1,33 +1,22 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
-- mm-hotfixes-stable: 3 -> 0 commits
+- baseline: v7.4-rc4-745-g6cce17ffe54a -> v7.4-rc4-745-g6cce17ffe54a (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 3 -> 0 commits
-  - dropped commits
-    - 49b51228a108 "hugetlbfs: fix integer overflow in fallocate()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-0-4dd9e94ea9ac@kernel.org
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-    - 39e0ae8bf729 "mm/hugetlb: fix mremap() racing with page migration"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-6-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4
-    - da48afefa78d "hugetlbfs: fix unmapping folios from private VMAs"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 54 -> 54 commits (no change)
+- mm-unstable: 54 -> 55 commits
   - series: 4 (32) -> 4 (32) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 19 -> 19 commits (no change)
     - no role, maintainer: 13 -> 13 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
+  - new commits
+    - 61aa6888b988 "mm/hugetlb: use tlb_can_delay_rmap() when unmapping"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)

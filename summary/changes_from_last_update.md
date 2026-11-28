@@ -1,112 +1,8 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
-- mm-hotfixes-stable: 26 -> 0 commits
-  - series: 3 (9) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 12 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 7 -> 0 commits
-    - reviewer, maintainer: 3 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - ff056011e9f7 "mm: memcontrol: don't lose track of exiting OOM victims"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/avA1wXhTMs9eY2NF@chrisdown.name
-      - Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com
-    - 76e1b20670b5 "filemap: prefault writes starting beyond EOF"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
-      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
-    - 2ec6ad932675 "mm, swap: only prefer nonfull clusters on synchronous devices"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/r/20261105155032.240457-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261105155032.240457-2-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/20261022145615.2184343-1-alex@ghiti.fr
-      - Link: https://lore.kernel.org/r/CAMgjq7BFbXEKEt9faj_rg5AStfLkpJ0j57EQOOJ+L3-w2xRvtg@mail.gmail.com
-    - dedc63739690 "mm/damon/stat: avoid overflow in estimated_memory_bandwidth calculation"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261110004816.100066-1-sj@kernel.org
-    - series "MAINTAINERS: remove my reviewerships, add CREDITS entry for THP". (4)
-      - 19fbd11621c7 "MAINTAINERS: remove myself from MM core reviewership (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261110-drop-reviewerships-v1-0-07c2f06e8dfa@kernel.org
-        - Link: https://patch.msgid.link/20261110-drop-reviewerships-v1-1-07c2f06e8dfa@kernel.org
-      - cedc74686fd6 "MAINTAINERS: remove myself from MM misc, reclaim reviewership (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261110-drop-reviewerships-v1-2-07c2f06e8dfa@kernel.org
-      - 6de077ea0a7d "MAINTAINERS: remove myself from MM rust reviewerships (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261110-drop-reviewerships-v1-3-07c2f06e8dfa@kernel.org
-      - 85bb39720690 "CREDITS: add entry for THP maintenance (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261110-drop-reviewerships-v1-4-07c2f06e8dfa@kernel.org
-    - series "mm: fix swapcache writeout and cluster table races", v2. (3)
-      - 4436e171b0a4 "mm: vmscan: allow writeout of swapcache folios without anon mappings (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261110151407.789960-1-nphamcs@gmail.com
-        - Link: https://patch.msgid.link/20261110151407.789960-2-nphamcs@gmail.com
-      - afc0507d6e15 "mm/swap: publish cluster tables after reacquiring allocator locks (1/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261110151407.789960-3-nphamcs@gmail.com
-        - Link: https://lore.kernel.org/all/sashiko-outbox-181086@kernel.org/
-      - f6f10d976c8a "mm/swap: skip relocation of tableless clusters (2/3)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20261110151407.789960-4-nphamcs@gmail.com
-    - 9436a736a148 "mm: mglru: splice all generations when reparenting a memcg"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261111000913.22943-1-shakeel.butt@linux.dev
-      - Link: : https://lore.kernel.org/20261115124954.7146-1-noah@feldt.systems
-    - 391f7207cb87 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261112013220.4064478-1-shakeel.butt@linux.dev
-    - f6ed0f2a0304 "mm: list_lru: fix NULL deref when a folio moves to the root memcg"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261112061231.2469026-1-shakeel.butt@linux.dev
-    - 642abe844867 "mm: list_lru: don't use a new memcg's lists for an offline memcg"
-      - Authored by no role player, reviewed by nobody
-      - Link: : https://lore.kernel.org/20261112161502.18d9d72c0139b8f69bb88ff4@linux-foundation.org
-      - Link: https://patch.msgid.link/20261112221248.3512447-1-shakeel.butt@linux.dev
-    - fe7e4ee305cf "mm: use PFN_PHYS() in phys_mem_access_prot()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261113193812.1239880-1-ivanrwcm25@gmail.com
-    - series "MAINTAINERS: MM updates (2)". (2)
-      - 75ce6ae1ce0f "MAINTAINERS: MEMORY MANAGEMENT - MGLRU (MULTI-GEN LRU) update (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261109-maintainers_mglru-v1-0-c25e6de60bcc@kernel.org
-        - Link: https://patch.msgid.link/20261109-maintainers_mglru-v1-1-c25e6de60bcc@kernel.org
-      - ccc54eb67faa "MAINTAINERS: remove myself from MEMORY MANAGEMENT - RECLAIM (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://patch.msgid.link/20261109-maintainers_mglru-v1-2-c25e6de60bcc@kernel.org
-    - 6e6d8a0ab2f3 "MAINTAINERS: add page_ext.h to MEMORY MANAGEMENT - PAGE ALLOCATOR"
-      - Authored by no role player, reviewed by no role player
-    - 50abb4245e1e "userfaultfd: clear the inherited uffd bit in move_swap_pte()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
-      - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
-    - 034008e9ce52 "MAINTAINERS: consolidate the memory mapping entries into a VMA entry"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261118-maintainers-consolidate-vma-entry-v1-1-8019b0e9928f@kernel.org
-    - 190936e7a5da "mm/swapfile: really fix integer overflow in swap_show() and swapon()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://patch.msgid.link/20261118112610.122799-1-oleksandr@natalenko.name
-    - 49b51228a108 "hugetlbfs: fix integer overflow in fallocate()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261116-fixes_hugetlb-v2-0-4dd9e94ea9ac@kernel.org
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-1-4dd9e94ea9ac@kernel.org
-    - 39e0ae8bf729 "mm/hugetlb: fix mremap() racing with page migration"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-6-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/179490494079.482102.4618915344813254218.b4-reply@b4
-    - da48afefa78d "hugetlbfs: fix unmapping folios from private VMAs"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/20261116-fixes_hugetlb-v2-7-4dd9e94ea9ac@kernel.org
-      - Link: : https://lore.kernel.org/179490430300.482102.17633361840450824485.b4-reply@b4
-    - 448293c44d86 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261109021611.22247-1-hui.zhu@linux.dev
+- baseline: v7.4-rc4-745-g6cce17ffe54a -> v7.4-rc4-745-g6cce17ffe54a (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 14 -> 14 commits (no change)
-  - series: 1 (3) -> 1 (1)
+  - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
@@ -114,7 +10,7 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 414 -> 414 commits (no change)
+- mm-unstable: 414 -> 416 commits
   - series: 55 (290) -> 55 (290) (no change)
     - no role, nobody: 32 -> 32 commits (no change)
     - no role, no role : 131 -> 131 commits (no change)
@@ -122,40 +18,43 @@
     - no role, maintainer: 110 -> 110 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 43 -> 43 commits (no change)
+    - maintainer, nobody: 43 -> 45 commits
     - maintainer, no role : 51 -> 51 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
-  - changed commits
-    - series "mm/damon: let users report their data attribute findings", v2. (27)
-      - d8592faf9df6 "mm/damon/core: introduce damon_report_exist() (12/27)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Enze Li <lienze@kylinos.cn>"
-        - Link: https://patch.msgid.link/20261124153636.91854-14-sj@kernel.org
-- mm-new: 30 -> 30 commits (no change)
+  - new commits
+    - 61aa6888b988 "mm/hugetlb: use tlb_can_delay_rmap() when unmapping"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
+    - 44395cb005c8 "mm/huge_memory: pass false to __tlb_remove_page_size()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/r/20261116-fixes_hugetlb-v2-15-4dd9e94ea9ac@kernel.org
+- mm-new: 30 -> 31 commits
   - series: 5 (20) -> 5 (20) (no change)
-    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, nobody: 9 -> 10 commits
     - no role, no role : 10 -> 10 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 23cd68262288 "tmpfs: reset the memory policy on remount with mpol=default"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://patch.msgid.link/20261127230015.30733-1-evanfengff@gmail.com
   - changed commits
-    - 2a780f78c6dd "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+    - 5096f8d4f458 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name"
+      - added "Reviewed-by: Chris Down <chris@chrisdown.name>"
+      - added "Tested-by: Chris Down <chris@chrisdown.name>"
       - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
+      - Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 195 -> 195 commits (no change)
   - series: 20 (112) -> 20 (112) (no change)
-    - no role, nobody: 54 -> 53 commits
-    - no role, no role : 48 -> 49 commits
+    - no role, nobody: 53 -> 53 commits (no change)
+    - no role, no role : 49 -> 49 commits (no change)
     - no role, reviewer: 11 -> 11 commits (no change)
     - no role, maintainer: 17 -> 17 commits (no change)
     - maintainer, nobody: 65 -> 65 commits (no change)
-  - changed commits
-    - f4cafa58e60a "MAINTAINERS: add mm and block lists to zram entry"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: SJ Park <sj@kernel.org>"
-      - Link: https://patch.msgid.link/20261127031658.2049871-1-senozhatsky@chromium.org

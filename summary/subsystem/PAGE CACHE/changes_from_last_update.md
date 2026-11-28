@@ -1,12 +1,6 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.4-rc4-745-g6cce17ffe54a -> v7.4-rc4-745-g6cce17ffe54a (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 76e1b20670b5 "filemap: prefault writes starting beyond EOF"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261104071002.49693-1-dennylin0707@gmail.com
-      - Link: https://lore.kernel.org/all/at-XtWBQg3jv3H8Z@thinkstation/
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
@@ -20,10 +14,13 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 2a780f78c6dd "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+    - 5096f8d4f458 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name"
+      - added "Reviewed-by: Chris Down <chris@chrisdown.name>"
+      - added "Tested-by: Chris Down <chris@chrisdown.name>"
       - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
+      - Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

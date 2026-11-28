@@ -7,11 +7,11 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 175fcbef13a1 "mm: split out memory-failure declarations from internal.h"
+    - 78a5108aef76 "mm: split out memory-failure declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261104-memory-failure-split-v1-1-3b0a85f0b7e7@debian.org
       - Link: https://lore.kernel.org/all/aumt-4kfGGtoXuh-@kernel.org/
-    - f2c2299604c1 "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
+    - aece457af66b "fixup: mm/hugetlb: serialize page-cache allocations with truncation"
       - Authored by no role player, reviewed by nobody
       - Link: https://patch.msgid.link/68dcdfbc-2755-437f-bf58-d175b1740afd@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

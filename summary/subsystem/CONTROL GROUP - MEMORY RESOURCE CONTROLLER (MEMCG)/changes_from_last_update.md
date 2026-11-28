@@ -1,16 +1,6 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.4-rc4-745-g6cce17ffe54a -> v7.4-rc4-745-g6cce17ffe54a (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - ff056011e9f7 "mm: memcontrol: don't lose track of exiting OOM victims"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://patch.msgid.link/avA1wXhTMs9eY2NF@chrisdown.name
-      - Link: : https://lore.kernel.org/6B8E9261-3FF8-441B-8F47-7D35834A8D35@gmail.com
-    - 391f7207cb87 "memcg: flush nr_charged_bytes when the obj stock trylock fails"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://patch.msgid.link/20261112013220.4064478-1-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)

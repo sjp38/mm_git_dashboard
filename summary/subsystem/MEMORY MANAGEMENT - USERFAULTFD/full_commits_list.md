@@ -7,14 +7,14 @@
     - no role, no role : 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - e2ccaf0a39b9 "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
+    - 0e6876c1e44f "userfaultfd: docs: fix an error code, two names and the POLLERR cause"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://patch.msgid.link/20261003110137.88619-1-kmehltretter@gmail.com
-    - e4af501d6f58 "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
+    - 76d17b8d2b5d "mm/userfaultfd: store the child's new uffd context in the wait queue entry"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261031-uffd-fork-ctx-v1-1-a837fd576ffc@columbia.edu
     - series "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry", v3. (2 commits)
-      - 42c478d70903 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
+      - ab3aa6f6c777 "mm/userfaultfd: recheck WP registration in the hugetlb UFFDIO_COPY retry" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261103102840.68903-1-azpijr@gmail.com
         - Link: https://patch.msgid.link/20261103102840.68903-2-azpijr@gmail.com
@@ -22,14 +22,14 @@
         - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org [2]
         - Link: https://lore.kernel.org/20261031-fixes_core-v3-23-d6437171ecc3@kernel.org [3] (in linux-next)
         - Link: https://lore.kernel.org/sashiko-outbox-194303@kernel.org [4]
-    - 9c42744ee52f "mm/userfaultfd: prevent poison marker loss"
+    - 065bb7d226fc "mm/userfaultfd: prevent poison marker loss"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261116-b4-uffd_marker_loss-v2-1-0fe9c5d1b43a@kernel.org
-    - 49c308c1c752 "mm/userfaultfd: check exclusivity of the page being moved"
+    - d93fd5373235 "mm/userfaultfd: check exclusivity of the page being moved"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261117212400.1890820-1-nakixii@gmail.com
       - Link: https://lore.kernel.org/all/20261116110122.309748-1-nakixii@gmail.com/
-    - 1f2a660af11b "mm/userfaultfd: reject DAX mappings"
+    - 95df4d4de503 "mm/userfaultfd: reject DAX mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261118-dax_uffd-v1-1-d776cca1ae17@kernel.org
 - mm-new: 5 total, 1 (4) series, 1 non-series commits
@@ -37,20 +37,20 @@
     - no role, no role : 5 commits
   - full commits list
     - series "userfaultfd: assorted fixes (part 1)", v3. (7 commits)
-      - eb5a0bafd288 "userfaultfd: use anonymous memory for UFFDIO_ZEROPAGE on private file mappings" (0/7)
+      - 3c5c07f61bdf "userfaultfd: use anonymous memory for UFFDIO_ZEROPAGE on private file mappings" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261117-uffd-state-fixes-v3-0-b617009d1a4a@columbia.edu
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-1-b617009d1a4a@columbia.edu
-      - 97d27bcd9671 "userfaultfd: refuse UFFDIO_MOVE into a non-present huge destination PMD" (1/7)
+      - 4fa9c47e2f38 "userfaultfd: refuse UFFDIO_MOVE into a non-present huge destination PMD" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-2-b617009d1a4a@columbia.edu
-      - f8b731e43424 "mm/mremap: resolve uffd state when the context is dropped, not during the move" (5/7)
+      - 0435449ad925 "mm/mremap: resolve uffd state when the context is dropped, not during the move" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-7-b617009d1a4a@columbia.edu
-      - 6ef13a43f02d "mm/userfaultfd: check the hugetlb alignment of every VMA in the pre-scan" (6/7)
+      - 47f2ef0f9142 "mm/userfaultfd: check the hugetlb alignment of every VMA in the pre-scan" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://patch.msgid.link/20261117-uffd-state-fixes-v3-9-b617009d1a4a@columbia.edu
-    - be8d77c2b2b0 "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
+    - 08b85812e51e "Documentation/userfaultfd: document RWP behavior when the PTE is dropped"
       - Authored by no role player, reviewed by no role player
       - Link: https://patch.msgid.link/20261117210423.11598-1-azpijr@gmail.com
       - Link: https://lore.kernel.org/linux-mm/856cdf21-7982-475a-b244-a7ceff4eb6aa@kernel.org/

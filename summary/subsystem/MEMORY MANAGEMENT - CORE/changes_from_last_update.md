@@ -1,11 +1,6 @@
-- baseline: v7.4-rc3-230-g4405c18c95d2d -> v7.4-rc4-745-g6cce17ffe54a
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.4-rc4-745-g6cce17ffe54a -> v7.4-rc4-745-g6cce17ffe54a (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 448293c44d86 "mm/mglru: fix a no-op lru_gen_clear_refs() call in lru_lazyfree()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://patch.msgid.link/20261109021611.22247-1-hui.zhu@linux.dev
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
@@ -24,10 +19,13 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
   - changed commits
-    - 2a780f78c6dd "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
+    - 5096f8d4f458 "mm/vmscan: fix legacy memcg reclaim deadlock against filesystem freeze"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name"
+      - added "Reviewed-by: Chris Down <chris@chrisdown.name>"
+      - added "Tested-by: Chris Down <chris@chrisdown.name>"
       - Link: https://patch.msgid.link/17d0d1395c0237d201a1abb2473d51f5@kernel.org
+      - Link: : https://lore.kernel.org/awom5tLa6tNWPZYK@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
